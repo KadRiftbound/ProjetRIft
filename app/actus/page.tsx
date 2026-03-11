@@ -9,7 +9,7 @@ interface NewsItem {
   pubDate: string;
   author: string;
   category: string;
-  source: 'official' | 'community';
+  source: 'official' | 'community' | 'selfmade';
   sourceName: string;
   sourceUrl: string;
   imageUrl?: string;
@@ -50,19 +50,28 @@ async function fetchNews(): Promise<NewsItem[]> {
     const data = await res.json();
     
     // Transform API response to NewsItem format
-    return data.news.map((item: any) => ({
-      title: item.title,
-      link: item.link,
-      description: item.description,
-      pubDate: item.pubDate,
-      author: item.source,
-      category: 'News',
-      source: item.sourceType,
-      sourceName: item.source,
-      sourceUrl: item.source === 'riftbound.gg' ? 'https://riftbound.gg' : 'https://reddit.com',
-      confidence: item.confidence,
-      sources: item.sources,
-    }));
+    return data.news.map((item: any) => {
+      const sourceUrlMap: Record<string, string> = {
+        'riftbound.gg': 'https://riftbound.gg',
+        'riftbound.gg/news': 'https://riftbound.gg/news',
+        'Riot Games': 'https://www.riotgames.com',
+        'Reddit': 'https://reddit.com/r/Riftbound',
+        'Riftbound Guide': 'https://riftbound-guide.vercel.app',
+      };
+      return {
+        title: item.title,
+        link: item.link,
+        description: item.description,
+        pubDate: item.pubDate,
+        author: item.source,
+        category: item.sourceType === 'selfmade' ? 'Récap' : 'News',
+        source: item.sourceType as 'official' | 'community' | 'selfmade',
+        sourceName: item.source,
+        sourceUrl: sourceUrlMap[item.source] ?? 'https://riftbound.gg',
+        confidence: item.confidence,
+        sources: item.sources,
+      };
+    });
   } catch {
     return getStaticNews();
   }
@@ -121,45 +130,30 @@ function formatDate(dateStr: string): string {
   }
 }
 
-// ─── COUNTDOWN TIMER COMPONENT ───────────────────────────────────────────────
+// ─── RELEASE DATE CARD ───────────────────────────────────────────────────────
 
-function CountdownTimer({ 
-  targetDate, 
+function ReleaseDateCard({ 
   label, 
+  date, 
   description,
-  isApproximate = false 
+  isApproximate = false,
+  icon,
 }: { 
-  targetDate: Date; 
   label: string;
+  date: string;
   description: string;
   isApproximate?: boolean;
+  icon?: string;
 }) {
-  const now = new Date();
-  const diff = targetDate.getTime() - now.getTime();
-  
-  const days = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
-  const hours = Math.max(0, Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-  const minutes = Math.max(0, Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)));
-  
-  const isPast = diff <= 0;
-  
   return (
     <div className="p-6 rounded-2xl bg-gradient-to-br from-rift-dark-secondary to-rift-dark border border-white/10">
       <div className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2">{label}</div>
-      {isPast ? (
-        <div className="text-2xl font-black text-rift-gold">Sorti !</div>
-      ) : (
-        <div className="flex items-baseline gap-1">
-          <div className="text-3xl font-black text-white">{days}</div>
-          <div className="text-xs font-black text-gray-500">j</div>
-          <div className="text-3xl font-black text-white">{hours}</div>
-          <div className="text-xs font-black text-gray-500">h</div>
-          <div className="text-3xl font-black text-white">{minutes}</div>
-          <div className="text-xs font-black text-gray-500">min</div>
-        </div>
-      )}
+      <div className="flex items-baseline gap-2">
+        {icon && <span className="text-xl">{icon}</span>}
+        <div className="text-2xl font-black text-rift-gold">{date}</div>
+      </div>
       <div className="text-xs text-gray-500 mt-2">{description}</div>
-      {isApproximate && !isPast && (
+      {isApproximate && (
         <div className="text-[10px] text-yellow-500 mt-1">Date approximative</div>
       )}
     </div>
@@ -187,12 +181,16 @@ function getCategoryColor(cat: string) {
 
 const SOURCE_LABELS: Record<string, { label: string; color: string; icon: string }> = {
   'Riftbound.gg': { label: 'Riftbound.gg', color: 'bg-rift-gold/15 text-rift-gold border-rift-gold/30', icon: '⭐' },
+  'riftbound.gg': { label: 'Riftbound.gg', color: 'bg-rift-gold/15 text-rift-gold border-rift-gold/30', icon: '⭐' },
+  'riftbound.gg/news': { label: 'Riftbound.gg', color: 'bg-rift-gold/15 text-rift-gold border-rift-gold/30', icon: '⭐' },
+  'Riot Games': { label: 'Riot Games', color: 'bg-red-500/15 text-red-400 border-red-500/30', icon: '🎮' },
   'Reddit': { label: 'Reddit', color: 'bg-orange-500/15 text-orange-400 border-orange-500/30', icon: '💬' },
-  'Riftbound Guide': { label: 'Guide', color: 'bg-rift-blue/15 text-rift-blue border-rift-blue/30', icon: '📖' },
+  'Riftbound Guide': { label: 'Récap', color: 'bg-rift-blue/15 text-rift-blue border-rift-blue/30', icon: '📖' },
 };
 
-function getSourceStyle(name: string, type: 'official' | 'community') {
+function getSourceStyle(name: string, type: 'official' | 'community' | 'selfmade') {
   if (SOURCE_LABELS[name]) return SOURCE_LABELS[name];
+  if (type === 'selfmade') return { label: 'Récap', color: 'bg-rift-blue/15 text-rift-blue border-rift-blue/30', icon: '📖' };
   if (type === 'official') return { label: name, color: 'bg-rift-gold/15 text-rift-gold border-rift-gold/30', icon: '🏆' };
   return { label: name, color: 'bg-rift-purple/15 text-purple-400 border-rift-purple/30', icon: '🌐' };
 }
@@ -200,12 +198,6 @@ function getSourceStyle(name: string, type: 'official' | 'community') {
 // ─── PAGE ──────────────────────────────────────────────────────────────────────
 
 export default async function ActusPage() {
-  // Dates estimées (à ajuster quand les dates officielles seront connues)
-  // France: basé sur les tendances du marché chinois, estimation Q2-Q3 2025
-  const franceRelease = new Date('2025-06-15T00:00:00+02:00');
-  // Set 3 Chine: basé sur le cycle des sets (environ 6 mois entre chaque)
-  const set3China = new Date('2025-09-01T00:00:00+08:00');
-
   const [apiNews, staticNews] = await Promise.all([
     fetchNews(),
     Promise.resolve(getStaticNews()),
@@ -252,19 +244,21 @@ export default async function ActusPage() {
           accentClassName="text-rift-blue italic"
         />
 
-        {/* Countdown Timers */}
+        {/* Release Dates */}
         <div className="grid md:grid-cols-2 gap-4 mb-10">
-          <CountdownTimer 
-            targetDate={franceRelease}
+          <ReleaseDateCard
             label="Sortie France"
+            date="Mi-2026"
             description="Lancement officiel de Riftbound en France"
             isApproximate={true}
+            icon="🇫🇷"
           />
-          <CountdownTimer 
-            targetDate={set3China}
-            label="Set 3 - Chine"
-            description="Prochaine expansion en Chine (Spirit Forge)"
+          <ReleaseDateCard
+            label="Set 3 — Chine"
+            date="2025 — TBA"
+            description="Prochaine expansion (Spirit Forge cycle), date non annoncée"
             isApproximate={true}
+            icon="🀄"
           />
         </div>
 
