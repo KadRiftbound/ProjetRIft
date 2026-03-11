@@ -212,8 +212,17 @@ export default async function ActusPage() {
     return db - da;
   });
 
+  // Remove duplicates by title (normalized)
+  const seen = new Set<string>();
+  const uniqueNews = all.filter(item => {
+    const norm = item.title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 30);
+    if (seen.has(norm)) return false;
+    seen.add(norm);
+    return true;
+  });
+
   // Add artwork images to news items
-  const newsWithImages = all.map((item, index) => ({
+  const newsWithImages = uniqueNews.map((item, index) => ({
     ...item,
     imageUrl: item.imageUrl || getRandomArtwork(index),
   }));
@@ -450,31 +459,28 @@ export default async function ActusPage() {
               </p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {[
-                  { city: 'Bologne', country: 'Italie', date: '20 au 22 février', flag: '🇮🇹' },
-                  { city: 'Las Vegas', country: 'États-Unis', date: '27 fév. au 1er mars', flag: '🇺🇸' },
-                  { city: 'Lille', country: 'France', date: '17 au 19 avril', flag: '🇫🇷' },
-                  { city: 'Atlanta', country: 'États-Unis', date: '24 au 26 avril', flag: '🇺🇸' },
-                  { city: 'Sydney', country: 'Australie', date: '15 au 17 mai', flag: '🇦🇺' },
-                  { city: 'Vancouver', country: 'Canada', date: '29 mai au 31 mai', flag: '🇨🇦' },
-                  { city: 'Utrecht', country: 'Pays-Bas', date: '12 au 14 juin', flag: '🇳🇱' },
-                  { city: 'Hartford', country: 'États-Unis', date: '19 au 21 juin', flag: '🇺🇸' },
-                  { city: 'Barcelone', country: 'Espagne', date: '21 au 23 août', flag: '🇪🇸' },
-                  { city: 'Singapour', country: 'Singapour', date: '4 au 6 septembre', flag: '🇸🇬' },
-                  { city: 'Los Angeles', country: 'États-Unis', date: '25 au 27 septembre', flag: '🇺🇸' },
+                  { city: 'Bologne', country: 'IT', date: '20-22 fév.', color: 'from-blue-500/20 to-blue-600/10 border-blue-500/30' },
+                  { city: 'Las Vegas', country: 'US', date: '27 fév.-1er mars', color: 'from-red-500/20 to-red-600/10 border-red-500/30' },
+                  { city: 'Lille', country: 'FR', date: '17-19 avril', color: 'from-blue-500/20 to-blue-600/10 border-blue-500/30' },
+                  { city: 'Atlanta', country: 'US', date: '24-26 avril', color: 'from-red-500/20 to-red-600/10 border-red-500/30' },
+                  { city: 'Sydney', country: 'AU', date: '15-17 mai', color: 'from-yellow-500/20 to-yellow-600/10 border-yellow-500/30' },
+                  { city: 'Vancouver', country: 'CA', date: '29-31 mai', color: 'from-red-500/20 to-red-600/10 border-red-500/30' },
+                  { city: 'Utrecht', country: 'NL', date: '12-14 juin', color: 'from-orange-500/20 to-orange-600/10 border-orange-500/30' },
+                  { city: 'Hartford', country: 'US', date: '19-21 juin', color: 'from-red-500/20 to-red-600/10 border-red-500/30' },
+                  { city: 'Barcelone', country: 'ES', date: '21-23 août', color: 'from-yellow-500/20 to-yellow-600/10 border-yellow-500/30' },
+                  { city: 'Singapour', country: 'SG', date: '4-6 sept.', color: 'from-red-500/20 to-red-600/10 border-red-500/30' },
+                  { city: 'Los Angeles', country: 'US', date: '25-27 sept.', color: 'from-red-500/20 to-red-600/10 border-red-500/30' },
                 ].map((event, i) => (
                   <div
                     key={i}
-                    className="relative flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-white/5 to-white/[0.02] border border-white/8 hover:border-rift-blue/50 hover:shadow-[0_0_20px_rgba(10,200,255,0.1)] transition-all group"
+                    className={`relative flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r ${event.color} border hover:border-rift-blue/50 hover:shadow-[0_0_20px_rgba(10,200,255,0.1)] transition-all group`}
                   >
                     <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-rift-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <div className="relative text-3xl min-w-[40px] text-center drop-shadow-lg filter">
-                      {event.flag}
+                    <div className="relative min-w-[44px] h-11 rounded-lg bg-black/30 flex items-center justify-center border border-white/10">
+                      <span className="text-sm font-black text-white">{event.country}</span>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-sm font-black text-white flex items-center gap-1">
-                        {event.city}
-                        <span className="text-gray-500 font-medium">({event.country})</span>
-                      </div>
+                      <div className="text-sm font-black text-white">{event.city}</div>
                       <div className="text-xs text-rift-blue font-bold mt-0.5">{event.date}</div>
                     </div>
                   </div>
