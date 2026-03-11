@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { getLocalDecks, deleteLocalDeck } from '../lib/local-storage';
 import type { Deck as SavedDeck } from '../deckbuilder/types';
@@ -23,6 +23,53 @@ const BEAUTIFUL_CARDS = [
 ];
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
+
+// Get card stats from decklist
+function getDeckStats(decklist: { name: string; count: number }[] | undefined) {
+  if (!decklist || decklist.length === 0) return { costs: [], recycles: [], powers: [] };
+  
+  const costs: number[] = [];
+  const recycles: number[] = [];
+  const powers: number[] = [];
+  
+  for (const card of decklist) {
+    // Find card in ALL_CARDS by name (fuzzy match)
+    const matchedCard = ALL_CARDS.find(c => 
+      c.name.toLowerCase().includes(card.name.toLowerCase()) ||
+      card.name.toLowerCase().includes(c.name.toLowerCase())
+    );
+    
+    if (matchedCard) {
+      for (let i = 0; i < card.count; i++) {
+        costs.push(matchedCard.energy);
+        recycles.push(matchedCard.might);
+        powers.push(matchedCard.power);
+      }
+    }
+  }
+  
+  return { costs, recycles, powers };
+}
+
+// Check if deck has any card matching the filter value
+function deckHasStatValue(decklist: { name: string; count: number }[] | undefined, statType: 'cost' | 'recycle' | 'power', value: number): boolean {
+  if (!decklist || decklist.length === 0 || !value) return true;
+  
+  for (const card of decklist) {
+    const matchedCard = ALL_CARDS.find(c => 
+      c.name.toLowerCase().includes(card.name.toLowerCase()) ||
+      card.name.toLowerCase().includes(c.name.toLowerCase())
+    );
+    
+    if (matchedCard) {
+      const cardValue = statType === 'cost' ? matchedCard.energy : 
+                        statType === 'recycle' ? matchedCard.might : 
+                        matchedCard.power;
+      if (cardValue === value) return true;
+    }
+  }
+  return false;
+}
 
 function getLegendImage(champion: string): string | null {
   const legendId = CHAMPION_TO_PRIMARY_LEGEND_ID[champion];
@@ -58,87 +105,88 @@ function DeckCard({
   onToggle: () => void;
 }) {
   const imageUrl = getLegendImage(deck.champion);
+  const totalCards = deck.decklist?.reduce((sum, c) => sum + c.count, 0) || null;
 
   return (
     <div
-      className={`group relative bg-[var(--surface-3)] rounded-[var(--radius-xl)] border overflow-hidden transition-all duration-500 ${
+      className={`group relative bg-[var(--surface-3)] rounded-2xl border overflow-hidden transition-all duration-500 ${
         expanded
-          ? 'border-rift-purple/40 shadow-[0_0_40px_rgba(139,92,246,0.1)]'
+          ? 'border-rift-purple/50 shadow-[0_0_50px_rgba(139,92,246,0.15)]'
           : 'border-[var(--border-subtle)] hover:border-[var(--border-strong)]'
       }`}
     >
       {/* Card Header — click to expand */}
       <div
         onClick={onToggle}
-        className="cursor-pointer flex items-stretch gap-0"
+        className="cursor-pointer flex items-stretch"
       >
         {/* Legend Portrait */}
-        <div className="relative w-28 md:w-36 shrink-0 overflow-hidden">
+        <div className="relative w-24 md:w-32 shrink-0 overflow-hidden">
           {imageUrl ? (
             <img
               src={imageUrl}
               alt={deck.champion}
-              className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-              style={{ minHeight: '9rem' }}
+              className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+              style={{ minHeight: '8rem' }}
             />
           ) : (
-            <div className="w-full h-full min-h-[9rem] bg-gradient-to-b from-[var(--border-subtle)] to-transparent flex items-center justify-center">
+            <div className="w-full h-full min-h-[8rem] bg-gradient-to-b from-[var(--border-subtle)] to-transparent flex items-center justify-center">
               <span className="text-4xl opacity-20">🃏</span>
             </div>
           )}
-          {/* Gradient fade to the right */}
+          {/* Gradient fade */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[var(--surface-3)] pointer-events-none" />
-          {/* Tier badge overlay on portrait */}
-          <div className={`absolute top-3 left-3 w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black ${TIER_COLORS[deck.tier]}`}>
+          {/* Tier badge */}
+          <div className={`absolute top-2 left-2 w-7 h-7 rounded-lg flex items-center justify-center text-[10px] font-black ${TIER_COLORS[deck.tier]}`}>
             {deck.tier}
           </div>
         </div>
 
         {/* Info */}
-        <div className="flex-1 px-6 py-5 flex flex-col md:flex-row md:items-center gap-4 min-w-0">
+        <div className="flex-1 px-5 py-4 flex flex-col md:flex-row md:items-center gap-3 min-w-0">
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 flex-wrap mb-1">
-              <h3 className="text-xl font-black text-[var(--text-primary)] uppercase tracking-tight truncate">
+              <h3 className="text-lg font-black text-[var(--text-primary)] uppercase tracking-tight truncate">
                 {deck.champion}
               </h3>
-              <span className="text-[9px] font-black text-[var(--text-disabled)] uppercase tracking-widest shrink-0">
+              <span className="text-[8px] font-black text-[var(--text-disabled)] uppercase tracking-widest shrink-0">
                 {deck.archetype}
               </span>
             </div>
-            <p className="text-xs text-[var(--text-tertiary)] font-medium line-clamp-1 mb-2">{deck.fullName}</p>
             <div className="flex flex-wrap gap-1.5">
-              <span className={`text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded border ${domainBadgeClasses(deck.domain)}`}>
+              <span className={`text-[7px] font-black uppercase tracking-widest px-2 py-0.5 rounded border ${domainBadgeClasses(deck.domain)}`}>
                 {deck.domain}
               </span>
               {deck.secondDomain && (
-                <span className={`text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded border ${domainBadgeClasses(deck.secondDomain)}`}>
+                <span className={`text-[7px] font-black uppercase tracking-widest px-2 py-0.5 rounded border ${domainBadgeClasses(deck.secondDomain)}`}>
                   {deck.secondDomain}
                 </span>
               )}
               {deck.difficulty && (
-                <span className={`text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded border ${DIFFICULTY_COLORS[deck.difficulty] ?? ''}`}>
+                <span className={`text-[7px] font-black uppercase tracking-widest px-2 py-0.5 rounded border ${DIFFICULTY_COLORS[deck.difficulty] ?? ''}`}>
                   {deck.difficulty}
+                </span>
+              )}
+              {totalCards && (
+                <span className="text-[7px] font-black uppercase tracking-widest px-2 py-0.5 rounded border bg-white/5 text-gray-400 border-white/10">
+                  {totalCards} cartes
                 </span>
               )}
             </div>
           </div>
 
           {/* Stats */}
-          <div className="flex items-center gap-8 shrink-0">
+          <div className="flex items-center gap-6 shrink-0">
             {deck.metaShare > 0 && (
-              <div className="text-center">
-                <div className="text-lg font-black text-rift-blue">{deck.metaShare}%</div>
-                <div className="text-[8px] font-bold text-[var(--text-disabled)] uppercase tracking-widest">Part de méta</div>
-              </div>
-            )}
-            {deck.placement && (
-              <div className="text-center hidden md:block">
-                <div className="text-xs font-black text-rift-gold truncate max-w-[120px]">{deck.placement}</div>
-                <div className="text-[8px] font-bold text-[var(--text-disabled)] uppercase tracking-widest">Résultat</div>
+              <div className="text-center hidden sm:block">
+                <div className="text-base font-black text-rift-blue">{deck.metaShare}%</div>
+                <div className="text-[7px] font-bold text-[var(--text-disabled)] uppercase tracking-widest">Méta</div>
               </div>
             )}
             <div className={`text-[var(--text-tertiary)] transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`}>
-              ▼
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
             </div>
           </div>
         </div>
@@ -146,75 +194,112 @@ function DeckCard({
 
       {/* Expanded Panel */}
       {expanded && (
-        <div className="border-t border-[var(--border-subtle)] bg-black/20 animate-in slide-in-from-top-2 duration-300">
-          {/* Description */}
-          <div className="px-8 pt-8 pb-4">
-            <p className="text-base text-[var(--text-secondary)] font-medium italic leading-relaxed">
-              &ldquo;{deck.description}&rdquo;
-            </p>
+        <div className="border-t border-[var(--border-subtle)] bg-black/30 animate-in slide-in-from-top-2 duration-300">
+          {/* Quick stats bar */}
+          <div className="px-6 py-3 bg-gradient-to-r from-rift-purple/10 to-transparent flex items-center gap-6 text-xs">
+            <span className="text-gray-400">
+              <span className="text-white font-bold">{totalCards || '—'}</span> cartes
+            </span>
+            <span className="text-gray-500">|</span>
+            <span className="text-gray-400">
+              <span className="text-rift-gold font-bold">{deck.keyCards.length}</span> cartes clés
+            </span>
+            {deck.prerequisites && deck.prerequisites.length > 0 && (
+              <>
+                <span className="text-gray-500">|</span>
+                <span className="text-yellow-400">
+                  <span className="font-bold">{deck.prerequisites.length}</span> prérequis
+                </span>
+              </>
+            )}
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-[var(--border-subtle)]">
-            {/* Gauche : Style de jeu + Cartes clés */}
-            <div className="px-8 py-6 space-y-6">
+          <div className="grid lg:grid-cols-12 gap-0">
+            {/* Left: Strategy + Decklist */}
+            <div className="lg:col-span-7 px-6 py-5 space-y-5">
+              {/* Description */}
+              <p className="text-sm text-[var(--text-secondary)] italic leading-relaxed border-l-2 border-rift-purple/30 pl-4">
+                &ldquo;{deck.description}&rdquo;
+              </p>
+
+              {/* Playstyle */}
               <div>
-                <h4 className="text-[9px] font-black text-rift-purple uppercase tracking-[0.3em] mb-3">
-                  Style de jeu &amp; Stratégie
+                <h4 className="text-[8px] font-black text-rift-purple uppercase tracking-[0.3em] mb-2">
+                  Style de jeu
                 </h4>
-                <p className="text-sm text-[var(--text-secondary)] leading-relaxed font-medium">{deck.playstyle}</p>
+                <p className="text-xs text-[var(--text-secondary)] leading-relaxed">{deck.playstyle}</p>
               </div>
-              <div>
-                <h4 className="text-[9px] font-black text-rift-gold uppercase tracking-[0.3em] mb-3">
-                  Cartes clés
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {deck.keyCards.map(c => (
-                    <span key={c} className="px-3 py-1 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-lg text-[11px] font-bold text-[var(--text-secondary)]">
-                      {c}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              {/* Résultats tournois */}
-              {deck.results && deck.results.length > 0 && (
-                <div>
-                  <h4 className="text-[9px] font-black text-[var(--text-tertiary)] uppercase tracking-[0.3em] mb-3">
-                    Résultats Tournois
+
+              {/* Decklist - displayed prominently */}
+              {deck.decklist && deck.decklist.length > 0 && (
+                <div className="bg-[var(--surface-2)] rounded-xl p-4 border border-[var(--border-subtle)]">
+                  <h4 className="text-[9px] font-black text-rift-blue uppercase tracking-[0.3em] mb-3 flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    Decklist complète
                   </h4>
-                  <div className="space-y-2">
-                    {deck.results.slice(0, 3).map((r, i) => (
-                      <div key={i} className="flex items-start gap-3 text-xs">
-                        <span className="text-rift-gold font-black shrink-0">{r.placement.slice(0, 2)}</span>
-                        <div>
-                          <span className="text-[var(--text-primary)] font-bold">{r.event}</span>
-                          <span className="text-[var(--text-disabled)] ml-2">{r.date}</span>
-                        </div>
+                  <div className="grid grid-cols-2 gap-x-6 gap-y-1 max-h-40 overflow-y-auto pr-2 scrollbar-thin">
+                    {deck.decklist.map((card, i) => (
+                      <div key={i} className="flex items-center justify-between text-[10px] py-0.5">
+                        <span className="text-[var(--text-secondary)] font-medium truncate">{card.name}</span>
+                        <span className="text-[var(--text-disabled)] font-black ml-3 shrink-0">×{card.count}</span>
                       </div>
                     ))}
                   </div>
                 </div>
               )}
+
+              {/* Prerequisites */}
+              {deck.prerequisites && deck.prerequisites.length > 0 && (
+                <div>
+                  <h4 className="text-[8px] font-black text-yellow-400 uppercase tracking-[0.3em] mb-2">
+                    Prérequis nécessaires
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {deck.prerequisites.map((req, i) => (
+                      <span key={i} className="px-3 py-1.5 bg-yellow-500/10 border border-yellow-500/30 rounded-lg text-[10px] font-bold text-yellow-400">
+                        {req}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Key Cards */}
+              <div>
+                <h4 className="text-[8px] font-black text-rift-gold uppercase tracking-[0.3em] mb-2">
+                  Cartes clés
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {deck.keyCards.map(c => (
+                    <span key={c} className="px-2.5 py-1 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-lg text-[10px] font-bold text-[var(--text-secondary)]">
+                      {c}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Right: Strengths + Weaknesses + CTA */}
-            <div className="px-8 py-6 space-y-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-5 rounded-2xl bg-green-500/5 border border-green-500/10">
-                  <h4 className="text-[9px] font-black text-green-400 uppercase tracking-widest mb-3">Forces</h4>
-                  <ul className="text-xs text-[var(--text-secondary)] space-y-1.5">
+            <div className="lg:col-span-5 px-6 py-5 bg-black/20 border-t lg:border-t-0 lg:border-l border-[var(--border-subtle)] space-y-4">
+              <div className="grid grid-cols-2 gap-3">
+                <div className="p-4 rounded-xl bg-green-500/5 border border-green-500/20">
+                  <h4 className="text-[8px] font-black text-green-400 uppercase tracking-widest mb-2">Forces</h4>
+                  <ul className="text-[10px] text-[var(--text-secondary)] space-y-1">
                     {deck.strengths.map(s => (
-                      <li key={s} className="flex gap-2">
+                      <li key={s} className="flex gap-1.5">
                         <span className="text-green-500 shrink-0">+</span>
                         {s}
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="p-5 rounded-2xl bg-red-500/5 border border-red-500/10">
-                  <h4 className="text-[9px] font-black text-red-400 uppercase tracking-widest mb-3">Faiblesses</h4>
-                  <ul className="text-xs text-[var(--text-secondary)] space-y-1.5">
+                <div className="p-4 rounded-xl bg-red-500/5 border border-red-500/20">
+                  <h4 className="text-[8px] font-black text-red-400 uppercase tracking-widest mb-2">Faiblesses</h4>
+                  <ul className="text-[10px] text-[var(--text-secondary)] space-y-1">
                     {deck.weaknesses.map(w => (
-                      <li key={w} className="flex gap-2">
+                      <li key={w} className="flex gap-1.5">
                         <span className="text-red-500 shrink-0">−</span>
                         {w}
                       </li>
@@ -222,11 +307,15 @@ function DeckCard({
                   </ul>
                 </div>
               </div>
+              
               <Link
                 href={`/deckbuilder?deck=${encodeURIComponent(deck.champion)}`}
-                className="flex items-center justify-center gap-2 w-full py-3.5 bg-white text-black font-black text-xs rounded-xl hover:scale-[1.02] transition-all tracking-widest"
+                className="flex items-center justify-center gap-2 w-full py-3 bg-white text-black font-black text-xs rounded-xl hover:scale-[1.02] transition-all tracking-widest"
               >
-                COPIER CE DECK 📋
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                </svg>
+                COPIER CE DECK
               </Link>
             </div>
           </div>
@@ -312,6 +401,9 @@ export default function DeckLibraryPage() {
   const [tab, setTab] = useState<Tab>('meta');
   const [search, setSearch] = useState('');
   const [filterTier, setFilterTier] = useState<string>('all');
+  const [filterCost, setFilterCost] = useState<string>('');
+  const [filterRecycle, setFilterRecycle] = useState<string>('');
+  const [filterPower, setFilterPower] = useState<string>('');
   const [expandedDeck, setExpandedDeck] = useState<string | null>(null);
   const [localDecks, setLocalDecks] = useState<SavedDeck[]>([]);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
@@ -325,12 +417,45 @@ export default function DeckLibraryPage() {
     const matchSearch =
       search === '' ||
       d.champion.toLowerCase().includes(search.toLowerCase()) ||
-      d.archetype.toLowerCase().includes(search.toLowerCase());
+      d.archetype.toLowerCase().includes(search.toLowerCase()) ||
+      d.domain.toLowerCase().includes(search.toLowerCase()) ||
+      d.secondDomain.toLowerCase().includes(search.toLowerCase());
     const matchTier = filterTier === 'all' || d.tier === filterTier;
-    return matchSearch && matchTier;
+    const matchCost = !filterCost || deckHasStatValue(d.decklist, 'cost', parseInt(filterCost));
+    const matchRecycle = !filterRecycle || deckHasStatValue(d.decklist, 'recycle', parseInt(filterRecycle));
+    const matchPower = !filterPower || deckHasStatValue(d.decklist, 'power', parseInt(filterPower));
+    return matchSearch && matchTier && matchCost && matchRecycle && matchPower;
   });
 
   const allDecks = [...META_DECKS, ...OFFMETA_DECKS];
+
+  const filteredAllDecks = allDecks.filter(d => {
+    const matchSearch =
+      search === '' ||
+      d.champion.toLowerCase().includes(search.toLowerCase()) ||
+      d.archetype.toLowerCase().includes(search.toLowerCase()) ||
+      d.domain.toLowerCase().includes(search.toLowerCase()) ||
+      d.secondDomain.toLowerCase().includes(search.toLowerCase());
+    const matchTier = filterTier === 'all' || d.tier === filterTier;
+    const matchCost = !filterCost || deckHasStatValue(d.decklist, 'cost', parseInt(filterCost));
+    const matchRecycle = !filterRecycle || deckHasStatValue(d.decklist, 'recycle', parseInt(filterRecycle));
+    const matchPower = !filterPower || deckHasStatValue(d.decklist, 'power', parseInt(filterPower));
+    return matchSearch && matchTier && matchCost && matchRecycle && matchPower;
+  });
+
+  const filteredOffmeta = OFFMETA_DECKS.filter(d => {
+    const matchSearch =
+      search === '' ||
+      d.champion.toLowerCase().includes(search.toLowerCase()) ||
+      d.archetype.toLowerCase().includes(search.toLowerCase()) ||
+      d.domain.toLowerCase().includes(search.toLowerCase()) ||
+      d.secondDomain.toLowerCase().includes(search.toLowerCase());
+    const matchTier = filterTier === 'all' || d.tier === filterTier;
+    const matchCost = !filterCost || deckHasStatValue(d.decklist, 'cost', parseInt(filterCost));
+    const matchRecycle = !filterRecycle || deckHasStatValue(d.decklist, 'recycle', parseInt(filterRecycle));
+    const matchPower = !filterPower || deckHasStatValue(d.decklist, 'power', parseInt(filterPower));
+    return matchSearch && matchTier && matchCost && matchRecycle && matchPower;
+  });
 
   return (
     <div className="min-h-screen bg-[var(--surface-2)] py-20 px-4 md:px-8">
@@ -396,7 +521,7 @@ export default function DeckLibraryPage() {
             ] as [Tab, string, string][]).map(([id, label, count]) => (
               <button
                 key={id}
-                onClick={() => { setTab(id); setExpandedDeck(null); setGridExpanded(null); }}
+                onClick={() => { setTab(id); setExpandedDeck(null); setGridExpanded(null); setSearch(''); setFilterTier('all'); setFilterCost(''); setFilterRecycle(''); setFilterPower(''); }}
                 className={`flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-[10px] font-black tracking-widest transition-all whitespace-nowrap ${
                   tab === id ? 'bg-white text-black shadow-[var(--shadow-md)]' : 'text-[var(--text-tertiary)] hover:text-[var(--text-primary)]'
                 }`}
@@ -413,25 +538,119 @@ export default function DeckLibraryPage() {
 
           {/* Search/filter for meta */}
           {tab === 'meta' && (
-            <div className="flex items-center gap-3 flex-1 lg:max-w-sm">
+            <div className="flex flex-wrap items-center gap-3 w-full">
               <input
                 type="text"
-                placeholder="Filtrer..."
+                placeholder="Rechercher..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="flex-1 px-4 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-sm font-bold text-[var(--text-primary)] placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+                className="flex-1 min-w-[150px] px-4 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-sm font-bold text-[var(--text-primary)] placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
               />
               <select
                 value={filterTier}
                 onChange={(e) => setFilterTier(e.target.value)}
                 className="px-3 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-[10px] font-black text-[var(--text-secondary)] focus:outline-none uppercase tracking-widest appearance-none cursor-pointer"
               >
-                <option value="all" className="bg-rift-dark">TOUS</option>
-                <option value="S" className="bg-rift-dark">TIER S</option>
-                <option value="A" className="bg-rift-dark">TIER A</option>
-                <option value="B" className="bg-rift-dark">TIER B</option>
-                <option value="C" className="bg-rift-dark">TIER C</option>
+                <option value="all" className="bg-rift-dark">TIER</option>
+                <option value="S" className="bg-rift-dark">S</option>
+                <option value="A" className="bg-rift-dark">A</option>
+                <option value="B" className="bg-rift-dark">B</option>
+                <option value="C" className="bg-rift-dark">C</option>
               </select>
+              <input
+                type="number"
+                placeholder="Coût"
+                value={filterCost}
+                onChange={(e) => setFilterCost(e.target.value)}
+                min="0"
+                max="10"
+                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+              />
+              <input
+                type="number"
+                placeholder="Recycle"
+                value={filterRecycle}
+                onChange={(e) => setFilterRecycle(e.target.value)}
+                min="0"
+                max="10"
+                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+              />
+              <input
+                type="number"
+                placeholder="Puissance"
+                value={filterPower}
+                onChange={(e) => setFilterPower(e.target.value)}
+                min="0"
+                max="20"
+                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+              />
+              {(filterCost || filterRecycle || filterPower) && (
+                <button
+                  onClick={() => { setFilterCost(''); setFilterRecycle(''); setFilterPower(''); }}
+                  className="px-3 py-2 text-xs font-bold text-red-400 hover:text-red-300"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+          )}
+
+          {/* Search/filter for all and offmeta */}
+          {(tab === 'all' || tab === 'offmeta') && (
+            <div className="flex flex-wrap items-center gap-3 w-full">
+              <input
+                type="text"
+                placeholder="Rechercher..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="flex-1 min-w-[150px] px-4 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-sm font-bold text-[var(--text-primary)] placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+              />
+              <select
+                value={filterTier}
+                onChange={(e) => setFilterTier(e.target.value)}
+                className="px-3 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-[10px] font-black text-[var(--text-secondary)] focus:outline-none uppercase tracking-widest appearance-none cursor-pointer"
+              >
+                <option value="all" className="bg-rift-dark">TIER</option>
+                <option value="S" className="bg-rift-dark">S</option>
+                <option value="A" className="bg-rift-dark">A</option>
+                <option value="B" className="bg-rift-dark">B</option>
+                <option value="C" className="bg-rift-dark">C</option>
+              </select>
+              <input
+                type="number"
+                placeholder="Coût"
+                value={filterCost}
+                onChange={(e) => setFilterCost(e.target.value)}
+                min="0"
+                max="10"
+                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+              />
+              <input
+                type="number"
+                placeholder="Recycle"
+                value={filterRecycle}
+                onChange={(e) => setFilterRecycle(e.target.value)}
+                min="0"
+                max="10"
+                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+              />
+              <input
+                type="number"
+                placeholder="Puissance"
+                value={filterPower}
+                onChange={(e) => setFilterPower(e.target.value)}
+                min="0"
+                max="20"
+                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+              />
+              {(filterCost || filterRecycle || filterPower) && (
+                <button
+                  onClick={() => { setFilterCost(''); setFilterRecycle(''); setFilterPower(''); }}
+                  className="px-3 py-2 text-xs font-bold text-red-400 hover:text-red-300"
+                >
+                  ✕
+                </button>
+              )}
             </div>
           )}
         </div>
@@ -461,6 +680,11 @@ export default function DeckLibraryPage() {
           {/* TOUS */}
           {tab === 'all' && (
             <div className="space-y-8">
+              {filteredAllDecks.length === 0 && (
+                <div className="text-center py-24 bg-[var(--border-subtle)] rounded-[var(--radius-xl)] border border-[var(--border-subtle)]">
+                  <p className="text-[var(--text-tertiary)] text-lg font-medium">Aucun deck ne correspond.</p>
+                </div>
+              )}
               {gridExpanded ? (
                 <div className="space-y-4">
                   <button
@@ -469,7 +693,7 @@ export default function DeckLibraryPage() {
                   >
                     ← RETOUR À LA GRILLE
                   </button>
-                  {allDecks.filter(d => d.id === gridExpanded).map(deck => (
+                  {filteredAllDecks.filter(d => d.id === gridExpanded).map(deck => (
                     <DeckCard
                       key={deck.id}
                       deck={deck}
@@ -480,7 +704,7 @@ export default function DeckLibraryPage() {
                 </div>
               ) : (
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-                  {allDecks.map((deck, i) => (
+                  {filteredAllDecks.map((deck, i) => (
                     <DeckGridCard
                       key={`${deck.id}-${i}`}
                       deck={deck}
@@ -499,6 +723,11 @@ export default function DeckLibraryPage() {
                 <h2 className="text-2xl font-black text-[var(--text-primary)] uppercase tracking-tighter mb-2">Decks Hors-Méta</h2>
                 <p className="text-[var(--text-tertiary)] font-medium text-sm">Decks amusants et expérimentaux pour varier des stratégies classiques.</p>
               </div>
+              {filteredOffmeta.length === 0 && (
+                <div className="text-center py-24 bg-[var(--border-subtle)] rounded-[var(--radius-xl)] border border-[var(--border-subtle)]">
+                  <p className="text-[var(--text-tertiary)] text-lg font-medium">Aucun deck ne correspond.</p>
+                </div>
+              )}
               {gridExpanded ? (
                 <div className="space-y-4">
                   <button
@@ -507,7 +736,7 @@ export default function DeckLibraryPage() {
                   >
                     ← RETOUR À LA GRILLE
                   </button>
-                  {OFFMETA_DECKS.filter(d => d.id === gridExpanded).map(deck => (
+                  {filteredOffmeta.filter(d => d.id === gridExpanded).map(deck => (
                     <DeckCard
                       key={deck.id}
                       deck={deck}
@@ -518,7 +747,7 @@ export default function DeckLibraryPage() {
                 </div>
               ) : (
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-                  {OFFMETA_DECKS.map((deck, i) => (
+                  {filteredOffmeta.map((deck, i) => (
                     <DeckGridCard
                       key={`offmeta-${i}`}
                       deck={deck}

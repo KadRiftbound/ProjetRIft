@@ -50,9 +50,12 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
     return initialCards.filter(card => {
       const matchesSearch = search === '' || 
         card.name.toLowerCase().includes(search.toLowerCase());
-      const matchesDomain = domainFilter === '' || card.domain === domainFilter;
-      const matchesType = typeFilter === '' || card.type === typeFilter;
-      const matchesRarity = rarityFilter === '' || card.rarity === rarityFilter;
+      const matchesDomain = domainFilter === '' || 
+        card.domain?.toLowerCase() === domainFilter.toLowerCase();
+      const matchesType = typeFilter === '' || 
+        card.type?.toLowerCase() === typeFilter.toLowerCase();
+      const matchesRarity = rarityFilter === '' || 
+        card.rarity?.toLowerCase() === rarityFilter.toLowerCase();
       
       return matchesSearch && matchesDomain && matchesType && matchesRarity;
     });
