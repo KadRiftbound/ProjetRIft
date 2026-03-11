@@ -7,6 +7,7 @@ type PageHeaderProps = {
   className?: string;
   eyebrowClassName?: string;
   accentClassName?: string;
+  subtitle?: string;
 };
 
 export function PageHeader({
@@ -14,10 +15,11 @@ export function PageHeader({
   title,
   titleAccent,
   description,
+  subtitle,
   align = "center",
   className = "",
   eyebrowClassName = "",
-  accentClassName = "text-rift-gold italic",
+  accentClassName = "text-rift-blue",
 }: PageHeaderProps) {
   const isCentered = align === "center";
 
@@ -26,29 +28,35 @@ export function PageHeader({
       {eyebrow && (
         <div
           className={`
-            inline-flex items-center px-4 py-1.5 mb-6
-            rounded-full bg-white/5 border border-white/10
+            inline-flex items-center px-5 py-2 mb-8
+            rounded-full bg-rift-blue/10 border border-rift-blue/20
             backdrop-blur-md
             ${eyebrowClassName}
           `.trim()}
         >
-          <span className="text-[10px] font-black tracking-[0.3em] text-rift-gold uppercase leading-none">
+          <span className="text-[11px] font-bold tracking-[0.25em] text-rift-blue uppercase leading-none">
             {eyebrow}
           </span>
         </div>
       )}
 
-      <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter uppercase leading-[0.95]">
+      <h1 className="text-5xl md:text-7xl font-black text-white mb-4 tracking-tight uppercase leading-[0.92] font-[family-name:var(--font-cinzel),serif]">
         {title}{" "}
         {titleAccent && (
-          <span className={accentClassName}>{titleAccent}</span>
+          <span className={`${accentClassName} font-[family-name:var(--font-cinzel),serif]`}>{titleAccent}</span>
         )}
       </h1>
+
+      {subtitle && (
+        <p className="text-xl md:text-2xl font-semibold text-white/90 mb-6 tracking-wide">
+          {subtitle}
+        </p>
+      )}
 
       {description && (
         <p
           className={`
-            text-lg text-gray-400 max-w-2xl font-medium leading-relaxed
+            text-base md:text-lg text-gray-300 max-w-2xl font-normal leading-relaxed
             ${isCentered ? "mx-auto" : ""}
           `.trim()}
         >

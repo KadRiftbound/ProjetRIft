@@ -2,33 +2,33 @@
 
 /* ─── Brand palette ──────────────────────────────────────────────────────── */
 :root {
-  --background: #1a1c2c;
+  --background: #0f1117;
   --foreground: #ffffff;
   --rift-blue: #0ac8ff;
   --rift-gold: #c8aa6e;
   --rift-purple: #a855f7;
   --rift-red: #f43f5e;
-  --rift-dark: #252839;
-  --rift-dark-secondary: #323854;
+  --rift-dark: #1a1d2b;
+  --rift-dark-secondary: #252838;
   --rift-green: #22c55e;
 
   /* ── Semantic surface tokens ─────────────────────────────────────────── */
-  --surface-0: #13141f;          /* deepest bg, scrollbar track              */
+  --surface-0: #0a0c10;          /* deepest bg, scrollbar track              */
   --surface-1: var(--background);/* page background                          */
   --surface-2: var(--rift-dark); /* card/panel bg                            */
   --surface-3: var(--rift-dark-secondary); /* raised panel, nav scrolled bg  */
 
   /* ── Border tokens ───────────────────────────────────────────────────── */
-  --border-subtle:  rgba(255,255,255,0.05);
-  --border-default: rgba(255,255,255,0.10);
-  --border-strong:  rgba(255,255,255,0.20);
+  --border-subtle:  rgba(255,255,255,0.06);
+  --border-default: rgba(255,255,255,0.12);
+  --border-strong:  rgba(255,255,255,0.25);
   --border-focus:   var(--rift-blue);
 
   /* ── Text hierarchy tokens ───────────────────────────────────────────── */
   --text-primary:   #ffffff;
-  --text-secondary: #9ca3af; /* gray-400 */
-  --text-tertiary:  #6b7280; /* gray-500 */
-  --text-disabled:  #374151; /* gray-700 */
+  --text-secondary: #c4c9d4; /* gray-300 - improved contrast */
+  --text-tertiary:  #8b95a5; /* gray-400 - improved contrast */
+  --text-disabled:  #4b5563; /* gray-600 - improved contrast */
 
   /* ── Elevation / shadow tokens ───────────────────────────────────────── */
   --shadow-sm:  0 1px 3px rgba(0,0,0,0.4);
@@ -38,8 +38,8 @@
   --shadow-2xl: 0 24px 64px rgba(0,0,0,0.75);
 
   /* Glow helpers */
-  --glow-blue:   0 0 20px rgba(10,200,255,0.25);
-  --glow-purple: 0 0 20px rgba(168,85,247,0.25);
+  --glow-blue:   0 0 25px rgba(10,200,255,0.3);
+  --glow-purple: 0 0 25px rgba(168,85,247,0.3);
   --glow-gold:   0 0 20px rgba(200,170,110,0.25);
 
   /* ── Radius tokens ───────────────────────────────────────────────────── */
@@ -79,6 +79,9 @@
   --color-rift-dark: var(--rift-dark);
   --color-rift-dark-secondary: var(--rift-dark-secondary);
   --color-rift-green: var(--rift-green);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-cinzel), serif;
 
   --animate-scroll-fast: scroll-fast 25s linear infinite;
   --animate-scroll-slow-reverse: scroll-slow-reverse 35s linear infinite;

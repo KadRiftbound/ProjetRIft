@@ -57,7 +57,7 @@ export function Navbar() {
     <nav
       className={`sticky top-0 z-[100] transition-all duration-300 ${
         scrolled
-          ? 'bg-[var(--surface-0)]/80 backdrop-blur-xl py-3 border-b border-[var(--border-default)] shadow-[var(--shadow-xl)]'
+          ? 'bg-[#0a0c10]/90 backdrop-blur-xl py-3 border-b border-white/10 shadow-xl'
           : 'bg-transparent py-5 border-b border-transparent'
       }`}
     >
@@ -79,24 +79,27 @@ export function Navbar() {
               <div key={group.id} className="flex items-center">
                 <div className="flex items-center gap-1">
                   {group.links.map(link => {
-                    const isActive = pathname === link.href;
+                    const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
                     return (
                       <Link
                         key={link.href}
                         href={link.href}
-                        className={`px-4 py-2 rounded-xl text-sm font-bold transition-all border-b-2 ${
+                        className={`relative px-5 py-2.5 rounded-xl text-sm font-bold transition-all ${
                           isActive
-                            ? 'text-[var(--text-primary)] bg-[var(--border-subtle)] border-[var(--border-focus)]'
-                            : 'text-[var(--text-secondary)] border-transparent hover:text-[var(--text-primary)] hover:bg-[var(--border-subtle)]'
+                            ? 'text-white bg-rift-blue/15 border-b-2 border-rift-blue'
+                            : 'text-gray-400 border-b-2 border-transparent hover:text-white hover:bg-white/5'
                         }`}
                       >
                         {link.label}
+                        {isActive && (
+                          <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-rift-blue" />
+                        )}
                       </Link>
                     );
                   })}
                 </div>
                 {groupIndex < navGroups.length - 1 && (
-                  <div className="w-px h-6 bg-[var(--border-default)] mx-4" />
+                  <div className="w-px h-6 bg-white/10 mx-3" />
                 )}
               </div>
             ))}
@@ -105,7 +108,7 @@ export function Navbar() {
               <div className="flex items-center gap-4">
                 <Link
                   href="/premium"
-                  className="px-5 py-2 bg-gradient-to-r from-rift-purple to-pink-600 text-white text-sm font-black rounded-xl hover:shadow-[var(--glow-purple)] transition-all"
+                  className="px-5 py-2 bg-gradient-to-r from-rift-blue to-cyan-500 text-white text-sm font-bold rounded-xl hover:shadow-[0_0_20px_rgba(10,200,255,0.4)] transition-all"
                 >
                   PREMIUM
                 </Link>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cinzel } from "next/font/google";
+import { Cinzel, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./components/Navbar";
 import { Providers } from "./components/Providers";
@@ -8,6 +8,12 @@ const cinzel = Cinzel({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
   variable: "--font-cinzel",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -29,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={cinzel.variable}>
-      <body className="antialiased bg-background text-foreground">
+    <html lang="fr" className={`${cinzel.variable} ${inter.variable} font-sans`}>
+      <body className="antialiased bg-background text-foreground font-sans">
         <Providers>
           <Navbar />
           {children}
