@@ -15,6 +15,7 @@ interface NewsItem {
   imageUrl?: string;
   confidence?: 'confirmed' | 'single' | 'rumor';
   sources?: string[];
+  isDuplicate?: boolean;
 }
 
 // ─── CARD ARTWORK FOR NEWS IMAGES ────────────────────────────────────────────
@@ -70,6 +71,7 @@ async function fetchNews(): Promise<NewsItem[]> {
         sourceUrl: sourceUrlMap[item.source] ?? 'https://riftbound.gg',
         confidence: item.confidence,
         sources: item.sources,
+        isDuplicate: item.isDuplicate,
       };
     });
   } catch {
@@ -325,6 +327,11 @@ export default async function ActusPage() {
                         {featured.confidence === 'confirmed' ? '✓ Confirmé' : '🔶 Source unique'}
                       </span>
                     )}
+                    {featured.isDuplicate && (
+                      <span className="px-3 py-1 rounded-full text-[10px] font-black border uppercase tracking-widest bg-red-500/20 text-red-400 border-red-500/30">
+                        🔄 Doublon
+                      </span>
+                    )}
                     <span className="text-gray-500 text-xs font-medium">{getDateLabel(featured.pubDate)}</span>
                   </div>
 
@@ -386,6 +393,11 @@ export default async function ActusPage() {
                               : 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30'
                           }`}>
                             {item.confidence === 'confirmed' ? '✓' : '?'}
+                          </span>
+                        )}
+                        {item.isDuplicate && (
+                          <span className="px-2.5 py-0.5 rounded-full text-[9px] font-black border uppercase tracking-widest bg-red-500/20 text-red-400 border-red-500/30">
+                            🔄
                           </span>
                         )}
                       </div>
@@ -452,14 +464,18 @@ export default async function ActusPage() {
                 ].map((event, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-rift-blue/30 transition-colors"
+                    className="relative flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-white/5 to-white/[0.02] border border-white/8 hover:border-rift-blue/50 hover:shadow-[0_0_20px_rgba(10,200,255,0.1)] transition-all group"
                   >
-                    <span className="text-xl">{event.flag}</span>
+                    <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-rift-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="relative text-3xl min-w-[40px] text-center drop-shadow-lg filter">
+                      {event.flag}
+                    </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-sm font-black text-white truncate">
-                        {event.city} <span className="text-gray-500">({event.country})</span>
+                      <div className="text-sm font-black text-white flex items-center gap-1">
+                        {event.city}
+                        <span className="text-gray-500 font-medium">({event.country})</span>
                       </div>
-                      <div className="text-xs text-gray-400">{event.date}</div>
+                      <div className="text-xs text-rift-blue font-bold mt-0.5">{event.date}</div>
                     </div>
                   </div>
                 ))}

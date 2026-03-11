@@ -16,6 +16,8 @@ interface RawNewsItem {
 interface ProcessedNewsItem extends RawNewsItem {
   confidence: 'confirmed' | 'single' | 'rumor';
   sources: string[];
+  isDuplicate?: boolean;
+  duplicateOf?: string;
 }
 
 // ─── SOURCE CONFIG ────────────────────────────────────────────────────────────
@@ -455,11 +457,31 @@ function crossReference(allItems: RawNewsItem[]): ProcessedNewsItem[] {
   }
 
   // Sort: confirmed first, then by date
-  return result.sort((a, b) => {
+  result.sort((a, b) => {
     const co = { confirmed: 0, single: 1, rumor: 2 };
     if (co[a.confidence] !== co[b.confidence]) return co[a.confidence] - co[b.confidence];
     return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
   });
+
+  // Mark duplicates: items too similar to an earlier item
+  const seen = new Set<string>();
+  for (const item of result) {
+    const normTitle = normalizeForMatch(item.title).slice(0, 20);
+    let isDup = false;
+    for (const s of seen) {
+      if (normTitle.includes(s) || s.includes(normTitle)) {
+        isDup = true;
+        break;
+      }
+    }
+    if (isDup) {
+      item.isDuplicate = true;
+    } else {
+      seen.add(normTitle);
+    }
+  }
+
+  return result;
 }
 
 // ─── DECK-BASED NEWS GENERATOR ───────────────────────────────────────────────
@@ -541,6 +563,7 @@ export async function GET() {
     sourceType: item.sourceType,
     confidence: item.confidence,
     sources: item.sources,
+    isDuplicate: item.isDuplicate ?? false,
   }));
 
   return NextResponse.json({
