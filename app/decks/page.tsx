@@ -522,13 +522,15 @@ export default function DeckLibraryPage() {
               <button
                 key={id}
                 onClick={() => { setTab(id); setExpandedDeck(null); setGridExpanded(null); setSearch(''); setFilterTier('all'); setFilterCost(''); setFilterRecycle(''); setFilterPower(''); }}
-                className={`flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-[10px] font-black tracking-widest transition-all whitespace-nowrap ${
-                  tab === id ? 'bg-white text-black shadow-[var(--shadow-md)]' : 'text-[var(--text-tertiary)] hover:text-[var(--text-primary)]'
+                className={`flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold tracking-wider transition-all whitespace-nowrap border-2 ${
+                  tab === id 
+                    ? 'bg-rift-blue text-black border-rift-blue shadow-[0_0_20px_rgba(10,200,255,0.3)]' 
+                    : 'bg-white/5 text-gray-300 border-transparent hover:bg-white/10 hover:text-white hover:border-white/20'
                 }`}
               >
                 {label}
                 {count && (
-                  <span className={`text-[9px] px-1.5 py-0.5 rounded-full ${tab === id ? 'bg-black/10' : 'bg-[var(--border-default)]'}`}>
+                  <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold ${tab === id ? 'bg-black/20' : 'bg-white/10'}`}>
                     {count}
                   </span>
                 )}
@@ -541,17 +543,17 @@ export default function DeckLibraryPage() {
             <div className="flex flex-wrap items-center gap-3 w-full">
               <input
                 type="text"
-                placeholder="Rechercher..."
+                placeholder="Rechercher decks..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="flex-1 min-w-[150px] px-4 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-sm font-bold text-[var(--text-primary)] placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+                className="flex-1 min-w-[180px] px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-medium text-white placeholder-gray-500 focus:border-rift-blue focus:outline-none"
               />
               <select
                 value={filterTier}
                 onChange={(e) => setFilterTier(e.target.value)}
-                className="px-3 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-[10px] font-black text-[var(--text-secondary)] focus:outline-none uppercase tracking-widest appearance-none cursor-pointer"
+                className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-xs font-bold text-white focus:outline-none uppercase tracking-wider appearance-none cursor-pointer min-w-[80px]"
               >
-                <option value="all" className="bg-rift-dark">TIER</option>
+                <option value="all" className="bg-rift-dark">Tier</option>
                 <option value="S" className="bg-rift-dark">S</option>
                 <option value="A" className="bg-rift-dark">A</option>
                 <option value="B" className="bg-rift-dark">B</option>
@@ -564,7 +566,7 @@ export default function DeckLibraryPage() {
                 onChange={(e) => setFilterCost(e.target.value)}
                 min="0"
                 max="10"
-                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+                className="w-20 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
               />
               <input
                 type="number"
@@ -573,7 +575,7 @@ export default function DeckLibraryPage() {
                 onChange={(e) => setFilterRecycle(e.target.value)}
                 min="0"
                 max="10"
-                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+                className="w-20 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
               />
               <input
                 type="number"
@@ -582,12 +584,12 @@ export default function DeckLibraryPage() {
                 onChange={(e) => setFilterPower(e.target.value)}
                 min="0"
                 max="20"
-                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+                className="w-24 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
               />
               {(filterCost || filterRecycle || filterPower) && (
                 <button
                   onClick={() => { setFilterCost(''); setFilterRecycle(''); setFilterPower(''); }}
-                  className="px-3 py-2 text-xs font-bold text-red-400 hover:text-red-300"
+                  className="px-4 py-3 text-sm font-bold text-red-400 hover:text-red-300"
                 >
                   ✕
                 </button>
@@ -600,17 +602,17 @@ export default function DeckLibraryPage() {
             <div className="flex flex-wrap items-center gap-3 w-full">
               <input
                 type="text"
-                placeholder="Rechercher..."
+                placeholder="Rechercher decks..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="flex-1 min-w-[150px] px-4 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-sm font-bold text-[var(--text-primary)] placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+                className="flex-1 min-w-[180px] px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-medium text-white placeholder-gray-500 focus:border-rift-blue focus:outline-none"
               />
               <select
                 value={filterTier}
                 onChange={(e) => setFilterTier(e.target.value)}
-                className="px-3 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-[10px] font-black text-[var(--text-secondary)] focus:outline-none uppercase tracking-widest appearance-none cursor-pointer"
+                className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-xs font-bold text-white focus:outline-none uppercase tracking-wider appearance-none cursor-pointer min-w-[80px]"
               >
-                <option value="all" className="bg-rift-dark">TIER</option>
+                <option value="all" className="bg-rift-dark">Tier</option>
                 <option value="S" className="bg-rift-dark">S</option>
                 <option value="A" className="bg-rift-dark">A</option>
                 <option value="B" className="bg-rift-dark">B</option>
@@ -623,7 +625,7 @@ export default function DeckLibraryPage() {
                 onChange={(e) => setFilterCost(e.target.value)}
                 min="0"
                 max="10"
-                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+                className="w-20 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
               />
               <input
                 type="number"
@@ -632,7 +634,7 @@ export default function DeckLibraryPage() {
                 onChange={(e) => setFilterRecycle(e.target.value)}
                 min="0"
                 max="10"
-                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+                className="w-20 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
               />
               <input
                 type="number"
@@ -641,12 +643,12 @@ export default function DeckLibraryPage() {
                 onChange={(e) => setFilterPower(e.target.value)}
                 min="0"
                 max="20"
-                className="w-16 px-2 py-2.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl text-xs font-bold text-[var(--text-primary)] text-center placeholder-[var(--text-disabled)] focus:border-rift-purple focus:outline-none"
+                className="w-24 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
               />
               {(filterCost || filterRecycle || filterPower) && (
                 <button
                   onClick={() => { setFilterCost(''); setFilterRecycle(''); setFilterPower(''); }}
-                  className="px-3 py-2 text-xs font-bold text-red-400 hover:text-red-300"
+                  className="px-4 py-3 text-sm font-bold text-red-400 hover:text-red-300"
                 >
                   ✕
                 </button>

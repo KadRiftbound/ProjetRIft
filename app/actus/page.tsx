@@ -149,14 +149,14 @@ function ReleaseDateCard({
 }) {
   return (
     <div className="p-6 rounded-2xl bg-gradient-to-br from-rift-dark-secondary to-rift-dark border border-white/10">
-      <div className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2">{label}</div>
+      <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">{label}</div>
       <div className="flex items-baseline gap-2">
         {icon && <span className="text-xl">{icon}</span>}
-        <div className="text-2xl font-black text-rift-gold">{date}</div>
+        <div className="text-2xl font-black text-rift-blue">{date}</div>
       </div>
-      <div className="text-xs text-gray-500 mt-2">{description}</div>
+      <div className="text-sm text-gray-400 mt-2">{description}</div>
       {isApproximate && (
-        <div className="text-[10px] text-yellow-500 mt-1">Date approximative</div>
+        <div className="text-xs text-yellow-400 mt-2 font-medium">Date approximative</div>
       )}
     </div>
   );
@@ -319,16 +319,16 @@ export default async function ActusPage() {
                     {(() => {
                       const s = getSourceStyle(featured.sourceName, featured.source);
                       return (
-                        <span className={`px-3 py-1 rounded-full text-[10px] font-black border uppercase tracking-widest ${s.color}`}>
+                        <span className={`px-3 py-1.5 rounded-full text-xs font-bold border uppercase tracking-wider ${s.color}`}>
                           {s.icon} {s.label}
                         </span>
                       );
                     })()}
-                    <span className={`px-3 py-1 rounded-full text-[10px] font-black border uppercase tracking-widest ${getCategoryColor(featured.category)}`}>
+                    <span className={`px-3 py-1.5 rounded-full text-xs font-bold border uppercase tracking-wider ${getCategoryColor(featured.category)}`}>
                       {featured.category}
                     </span>
                     {featured.confidence && (
-                      <span className={`px-3 py-1 rounded-full text-[10px] font-black border uppercase tracking-widest ${
+                      <span className={`px-3 py-1.5 rounded-full text-xs font-bold border uppercase tracking-wider ${
                         featured.confidence === 'confirmed' 
                           ? 'bg-green-500/20 text-green-400 border-green-500/30' 
                           : 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30'
@@ -337,22 +337,22 @@ export default async function ActusPage() {
                       </span>
                     )}
                     {featured.isDuplicate && (
-                      <span className="px-3 py-1 rounded-full text-[10px] font-black border uppercase tracking-widest bg-red-500/20 text-red-400 border-red-500/30">
+                      <span className="px-3 py-1.5 rounded-full text-xs font-bold border uppercase tracking-wider bg-red-500/20 text-red-400 border-red-500/30">
                         🔄 Doublon
                       </span>
                     )}
-                    <span className="text-gray-500 text-xs font-medium">{getDateLabel(featured.pubDate)}</span>
+                    <span className="text-gray-400 text-sm font-medium">{getDateLabel(featured.pubDate)}</span>
                   </div>
 
                   <h2 className="text-2xl md:text-3xl font-black text-white leading-tight mb-3 group-hover:text-rift-blue transition-colors">
                     {featured.title}
                   </h2>
                   {featured.description && (
-                    <p className="text-gray-400 text-base leading-relaxed line-clamp-2 mb-5">
+                    <p className="text-gray-300 text-base leading-relaxed line-clamp-2 mb-5">
                       {featured.description}
                     </p>
                   )}
-                  <span className="inline-flex items-center gap-2 text-xs font-black text-rift-blue uppercase tracking-widest">
+                  <span className="inline-flex items-center gap-2 text-sm font-bold text-rift-blue uppercase tracking-wider">
                     Lire l&apos;article
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -389,14 +389,14 @@ export default async function ActusPage() {
                     <div className="flex-1 p-5">
                       {/* Meta */}
                       <div className="flex flex-wrap items-center gap-2 mb-3">
-                        <span className={`px-2.5 py-0.5 rounded-full text-[9px] font-black border uppercase tracking-widest ${srcStyle.color}`}>
+                        <span className={`px-3 py-1 rounded-full text-xs font-bold border uppercase tracking-wider ${srcStyle.color}`}>
                           {srcStyle.icon} {srcStyle.label}
                         </span>
-                        <span className={`px-2.5 py-0.5 rounded-full text-[9px] font-black border uppercase tracking-widest ${getCategoryColor(item.category)}`}>
+                        <span className={`px-3 py-1 rounded-full text-xs font-bold border uppercase tracking-wider ${getCategoryColor(item.category)}`}>
                           {item.category}
                         </span>
                         {item.confidence && (
-                          <span className={`px-2.5 py-0.5 rounded-full text-[9px] font-black border uppercase tracking-widest ${
+                          <span className={`px-3 py-1 rounded-full text-xs font-bold border uppercase tracking-wider ${
                             item.confidence === 'confirmed' 
                               ? 'bg-green-500/20 text-green-400 border-green-500/30' 
                               : 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30'
@@ -405,7 +405,7 @@ export default async function ActusPage() {
                           </span>
                         )}
                         {item.isDuplicate && (
-                          <span className="px-2.5 py-0.5 rounded-full text-[9px] font-black border uppercase tracking-widest bg-red-500/20 text-red-400 border-red-500/30">
+                          <span className="px-3 py-1 rounded-full text-xs font-bold border uppercase tracking-wider bg-red-500/20 text-red-400 border-red-500/30">
                             🔄
                           </span>
                         )}

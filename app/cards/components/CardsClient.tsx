@@ -105,22 +105,22 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
         <CardPanel className="p-8 mb-12 bg-white/5 border-white/10 backdrop-blur-xl">
           <div className="grid md:grid-cols-4 gap-6">
             <div className="md:col-span-1">
-              <label className="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3 px-2">Recherche</label>
+              <label className="block text-xs font-bold text-gray-300 uppercase tracking-widest mb-3 px-2">Recherche</label>
               <input
                 type="text"
                 placeholder="Nom de la carte..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full px-6 py-3 bg-black/40 border border-white/10 rounded-2xl text-white placeholder-gray-600 focus:border-rift-blue focus:outline-none transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:border-rift-blue focus:outline-none transition-all text-sm"
               />
             </div>
             
             <div>
-              <label className="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3 px-2">Domaine</label>
+              <label className="block text-xs font-bold text-gray-300 uppercase tracking-widest mb-3 px-2">Domaine</label>
               <select 
                 value={domainFilter}
                 onChange={(e) => setDomainFilter(e.target.value)}
-                className="w-full px-6 py-3 bg-black/40 border border-white/10 rounded-2xl text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer text-sm"
               >
                 <option value="" className="bg-rift-dark">Tous</option>
                 {domains.map(domain => (
@@ -130,11 +130,11 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
             </div>
             
             <div>
-              <label className="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3 px-2">Type</label>
+              <label className="block text-xs font-bold text-gray-300 uppercase tracking-widest mb-3 px-2">Type</label>
               <select 
                 value={typeFilter}
                 onChange={(e) => setTypeFilter(e.target.value)}
-                className="w-full px-6 py-3 bg-black/40 border border-white/10 rounded-2xl text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer text-sm"
               >
                 <option value="" className="bg-rift-dark">Tous</option>
                 {types.map(type => (
@@ -144,11 +144,11 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
             </div>
             
             <div>
-              <label className="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3 px-2">Rareté</label>
+              <label className="block text-xs font-bold text-gray-300 uppercase tracking-widest mb-3 px-2">Rareté</label>
               <select 
                 value={rarityFilter}
                 onChange={(e) => setRarityFilter(e.target.value)}
-                className="w-full px-6 py-3 bg-black/40 border border-white/10 rounded-2xl text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer text-sm"
               >
                 <option value="" className="bg-rift-dark">Toutes</option>
                 <option value="Champion" className="bg-rift-dark">Champion</option>
@@ -192,7 +192,7 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
                 </div>
                 <div className="mt-3 px-1">
                   <p className="font-bold text-xs text-white truncate group-hover:text-rift-blue transition-colors uppercase tracking-tight">{card.name}</p>
-                  <p className="text-[9px] font-bold text-gray-600 uppercase tracking-widest mt-1">{card.rarity}</p>
+                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">{card.rarity}</p>
                 </div>
               </Link>
             ))}

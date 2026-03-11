@@ -68,20 +68,20 @@ export default function LegendsPage() {
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-6">
-          <h1 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter mb-2">
-            Légendes <span className="text-rift-gold italic">Riftbound</span>
+        <div className="text-center mb-8">
+          <h1 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-3">
+            Légendes <span className="text-rift-blue italic">Riftbound</span>
           </h1>
-          <p className="text-sm text-gray-500">Cliquez sur une carte pour accéder au guide</p>
+          <p className="text-base text-gray-400">Cliquez sur une carte pour accéder au guide</p>
         </div>
 
         {/* Domain Filter Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
           <button
-            className={`px-4 py-1.5 font-black rounded-lg text-[10px] tracking-widest transition-all ${
+            className={`px-5 py-2.5 font-bold rounded-xl text-xs tracking-wider transition-all border-2 ${
               selectedDomain === "all"
-                ? "bg-white text-black"
-                : "bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 border border-white/5"
+                ? "bg-rift-blue text-black border-rift-blue shadow-[0_0_15px_rgba(10,200,255,0.3)]"
+                : "bg-white/5 text-gray-300 hover:text-white hover:bg-white/10 border-white/10 hover:border-white/30"
             }`}
             onClick={() => setSelectedDomain("all")}
           >
@@ -90,10 +90,10 @@ export default function LegendsPage() {
           {DOMAINS.map(domain => (
             <button 
               key={domain}
-              className={`px-4 py-1.5 font-bold rounded-lg text-[10px] tracking-widest transition-all border border-white/5 ${
+              className={`px-5 py-2.5 font-bold rounded-xl text-xs tracking-wider transition-all border-2 ${
                 selectedDomain === domain
-                  ? "bg-white text-black"
-                  : "bg-white/5 text-gray-400 hover:text-white hover:bg-white/10"
+                  ? "bg-rift-blue text-black border-rift-blue shadow-[0_0_15px_rgba(10,200,255,0.3)]"
+                  : "bg-white/5 text-gray-300 hover:text-white hover:bg-white/10 border-white/10 hover:border-white/30"
               }`}
               onClick={() => setSelectedDomain(domain)}
             >
@@ -127,19 +127,19 @@ export default function LegendsPage() {
                   
                   {/* Domain badges */}
                   <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1">
-                    <span className={`text-[8px] font-black px-1.5 py-0.5 rounded ${DOMAIN_COLORS[legend.domain]}`}>
-                      {legend.domain.slice(0, 3).toUpperCase()}
+                    <span className={`text-[9px] font-bold px-2 py-0.5 rounded ${DOMAIN_COLORS[legend.domain]}`}>
+                      {legend.domain.slice(0, 4).toUpperCase()}
                     </span>
                     {legend.secondaryDomain && (
-                      <span className={`text-[8px] font-black px-1.5 py-0.5 rounded ${DOMAIN_COLORS[legend.secondaryDomain]}`}>
-                        {legend.secondaryDomain.slice(0, 3).toUpperCase()}
+                      <span className={`text-[9px] font-bold px-2 py-0.5 rounded ${DOMAIN_COLORS[legend.secondaryDomain]}`}>
+                        {legend.secondaryDomain.slice(0, 4).toUpperCase()}
                       </span>
                     )}
                   </div>
 
                   {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-[9px] font-black text-white bg-rift-gold/90 px-2 py-1 rounded tracking-widest">VOIR</span>
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-xs font-bold text-white bg-rift-blue px-4 py-2 rounded-lg tracking-wider shadow-lg">VOIR</span>
                   </div>
                 </div>
               </Link>

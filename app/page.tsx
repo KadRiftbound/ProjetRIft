@@ -208,8 +208,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="inline-flex items-center gap-2 px-6 md:px-8 py-2.5 mb-10 md:mb-12 rounded-full bg-[var(--border-subtle)] border border-[var(--border-default)] backdrop-blur-3xl animate-in fade-in slide-in-from-top-4 duration-1000">
-            <span className="text-[10px] font-black tracking-[0.4em] text-rift-gold uppercase">
+          <div className="inline-flex items-center gap-3 px-6 md:px-8 py-3 mb-10 md:mb-12 rounded-full bg-white/5 border border-white/10 backdrop-blur-3xl animate-in fade-in slide-in-from-top-4 duration-1000">
+            <span className="text-xs font-bold tracking-[0.3em] text-rift-blue uppercase">
               La référence Riftbound en France
             </span>
           </div>
@@ -221,7 +221,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-4xl text-[var(--text-secondary)] mb-14 md:mb-20 max-w-5xl mx-auto font-medium leading-tight animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200 opacity-90 tracking-tight">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-14 md:mb-20 max-w-5xl mx-auto font-medium leading-tight animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200 opacity-90 tracking-tight">
             Construisez vos decks, analysez la méta et maîtrisez Riftbound.
             <br />
             La plateforme compétitive ultime pour les joueurs.
@@ -249,14 +249,14 @@ export default function Home() {
       <section className="px-6 py-16 md:py-24 bg-background">
         <div className="max-w-5xl mx-auto text-center md:text-left">
           <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight mb-4">Guides Riftbound, Deck Builder et Bibliothèque de decks</h2>
-          <p className="text-[var(--text-secondary)] text-base md:text-lg leading-relaxed">
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed">
             Riftbound Guide est votre référence francophone pour{" "}
-            <Link href="/legends?utm_source=home&utm_medium=seo-block&utm_campaign=guides" className="text-rift-gold hover:underline">les guides de légendes</Link>,
+            <Link href="/legends?utm_source=home&utm_medium=seo-block&utm_campaign=guides" className="text-rift-blue hover:underline">les guides de légendes</Link>,
             un{" "}
-            <Link href="/deckbuilder?utm_source=home&utm_medium=seo-block&utm_campaign=builder" className="text-rift-gold hover:underline">constructeur de decks</Link>{" "}
+            <Link href="/deckbuilder?utm_source=home&utm_medium=seo-block&utm_campaign=builder" className="text-rift-blue hover:underline">constructeur de decks</Link>{" "}
             complet, et une{" "}
-            <Link href="/decks?utm_source=home&utm_medium=seo-block&utm_campaign=decks" className="text-rift-gold hover:underline">bibliothèque de decks</Link>{" "}
-            mise à jour. Retrouvez chaque carte, variantes et règles, et perfectionnez vos decks pour la compétition.
+            <Link href="/decks?utm_source=home&utm_medium=seo-block&utm_campaign=decks" className="text-rift-blue hover:underline">bibliothèque de decks</Link>{" "}
+            mise à jour. Retrievedouvez chaque carte, variantes et règles, et perfectionnez vos decks pour la compétition.
           </p>
         </div>
       </section>
