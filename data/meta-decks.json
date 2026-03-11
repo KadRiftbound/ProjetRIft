@@ -1,0 +1,570 @@
+[
+  {
+    "id": "draven-midrange",
+    "champion": "Draven",
+    "fullName": "Draven Glorious Executioner — Midrange",
+    "domain": "Fury",
+    "secondDomain": "Chaos",
+    "archetype": "Midrange",
+    "tier": "S",
+    "description": "Le deck le plus dominant de Spiritforged. Combine des unités Fury efficaces avec la synergie Darius/Kai'Sa et Spinning Axes pour une pression constante. Gagne les showdowns et contrôle le battlefield.",
+    "playstyle": "Joue des unités midrange solides, utilise Spinning Axe pour recycler et draw, et cherche à contrôler le battlefield tour après tour. Plus linéaire que la version Miracle, plus facile à prendre en main.",
+    "difficulty": "Intermédiaire",
+    "winRate": 64.3,
+    "conversionRate": 37,
+    "metaShare": 18,
+    "tournament": "RQ Las Vegas — 1er place",
+    "placement": "🥇 Vainqueur Las Vegas",
+    "keyCards": [
+      "Spinning Axe",
+      "Darius Trifarian",
+      "Kai'Sa",
+      "Rebuke",
+      "Ride the Wind"
+    ],
+    "strengths": [
+      "Meilleur winrate du jeu",
+      "Très consistant en Swiss",
+      "Deux archetypes = difficile à counter",
+      "Forte capacité de draw"
+    ],
+    "weaknesses": [
+      "Métagame construit pour le battre",
+      "Vulnerable aux decks \"miracle\" bien joués",
+      "Les meilleurs joueurs sur d'autres légendes peuvent l'overperform"
+    ],
+    "results": [
+      {
+        "event": "RQ Las Vegas",
+        "date": "Mars 2026",
+        "players": 1670,
+        "placement": "🥇 Vainqueur + Top 4 ×4",
+        "notes": "Domine la meta, 5/8 top 8 slots, 4 semi-finalistes sur 4"
+      },
+      {
+        "event": "RQ Bologna",
+        "date": "Fév. 2026",
+        "players": 1719,
+        "placement": "Top 8 ×3",
+        "notes": "Top conversion rate mais éliminé en QF par les control decks"
+      },
+      {
+        "event": "RQ Chengdu (Chine)",
+        "date": "Jan. 2026",
+        "players": 530,
+        "placement": "🥇 Vainqueur",
+        "notes": "1er des deux tournois China remportés par Draven Midrange"
+      },
+      {
+        "event": "RQ Fuzhou (Chine)",
+        "date": "Jan. 2026",
+        "players": 480,
+        "placement": "🥇 Vainqueur",
+        "notes": "Domination totale, représentait >50% du Top 64"
+      }
+    ]
+  },
+  {
+    "id": "draven-miracle",
+    "champion": "Draven",
+    "fullName": "Draven Glorious Executioner — Miracle",
+    "domain": "Fury",
+    "secondDomain": "Chaos",
+    "archetype": "Miracle",
+    "tier": "S",
+    "description": "La version explosive de Draven. Utilise Ezreal Prodigy + Called Shot pour draw massivement, puis pose plusieurs Rhasa the Sunderer et Battering Rams en un seul tour. Impossible à counter en un seul gameplan.",
+    "playstyle": "Setup patient jusqu'au tour \"Miracle\" : combo Called Shot + Ezreal Prodigy pour vider le deck, puis dump toutes les unités gratuites. Deux builds différents = très difficile à préparer pour l'adversaire.",
+    "difficulty": "Expert",
+    "winRate": 64.3,
+    "conversionRate": 37,
+    "metaShare": 18,
+    "tournament": "RQ Las Vegas — 1er place",
+    "placement": "🥇 Vainqueur Las Vegas",
+    "keyCards": [
+      "Called Shot",
+      "Ezreal Prodigy",
+      "Rhasa the Sunderer",
+      "Battering Ram",
+      "Hidden cards"
+    ],
+    "strengths": [
+      "Tours explosifs impossibles à répondre",
+      "Meilleure version en métagame control",
+      "Partage les stats de Draven Midrange"
+    ],
+    "weaknesses": [
+      "Plus difficile à jouer",
+      "Nécessite connaissance approfondie du deck",
+      "Vulnerable aux disruptions sur le setup"
+    ],
+    "results": [
+      {
+        "event": "RQ Las Vegas",
+        "date": "Mars 2026",
+        "players": 1670,
+        "placement": "🥇 Vainqueur + Top 4 ×2",
+        "notes": "Deux Midrange et deux Miracle en semi-finales, perfect balance"
+      },
+      {
+        "event": "RQ Bologna",
+        "date": "Fév. 2026",
+        "players": 1719,
+        "placement": "Top 8",
+        "notes": "Meilleure version de Draven à Bologna, surpasse le Midrange"
+      }
+    ]
+  },
+  {
+    "id": "irelia-tempo",
+    "champion": "Irelia",
+    "fullName": "Irelia Blade Dancer — Tempo",
+    "domain": "Calm",
+    "secondDomain": "Chaos",
+    "archetype": "Tempo",
+    "tier": "S",
+    "description": "La légende la plus constante de Spiritforged après Draven. Présente dans chaque Top 8 en China et en Occident. Son ability \"Ready a unit\" combinée avec Stellacorn Herder génère une card advantage massive.",
+    "playstyle": "Développe le board avec des unités mobiles, utilise Ride the Wind et Charm pour repositionner et draw. Stellacorn Herder = draw 2-3 cartes par tour si bien protégée. Timing critique sur l'ability.",
+    "difficulty": "Expert",
+    "winRate": 54,
+    "conversionRate": 22,
+    "metaShare": 14,
+    "tournament": "RQ Las Vegas — Top 8",
+    "placement": "Top 8 chaque Regional",
+    "keyCards": [
+      "Stellacorn Herder",
+      "Ride the Wind",
+      "Charm",
+      "The Syren",
+      "En Garde",
+      "Discipline"
+    ],
+    "strengths": [
+      "Top 8 dans chaque Regional Spiritforged",
+      "Card draw exceptionnel",
+      "Forte protection contre les removal",
+      "Angles d'attaque uniques"
+    ],
+    "weaknesses": [
+      "0 finale en 6 tournois majeurs",
+      "Matchup difficile vs Ezreal",
+      "Mauvais draws peuvent bloquer complètement"
+    ],
+    "results": [
+      {
+        "event": "RQ Las Vegas",
+        "date": "Mars 2026",
+        "players": 1670,
+        "placement": "Top 8",
+        "notes": "Présente mais éliminée par Draven en QF"
+      },
+      {
+        "event": "RQ Bologna",
+        "date": "Fév. 2026",
+        "players": 1719,
+        "placement": "Top 4",
+        "notes": "Meilleur résultat occidental, perd en semi vs Ezreal"
+      },
+      {
+        "event": "RQ Dalian (Chine)",
+        "date": "Jan. 2026",
+        "players": 420,
+        "placement": "Top 8",
+        "notes": "Meilleur conversion rate du tournoi, dépasse Draven"
+      },
+      {
+        "event": "RQ Nanjing (Chine)",
+        "date": "Fév. 2026",
+        "players": 390,
+        "placement": "Top 8",
+        "notes": "2ème conversion rate derrière Annie"
+      }
+    ]
+  },
+  {
+    "id": "ezreal-control",
+    "champion": "Ezreal",
+    "fullName": "Ezreal Prodigal Explorer — Control",
+    "domain": "Cunning",
+    "secondDomain": "Chaos",
+    "archetype": "Control",
+    "tier": "S",
+    "description": "Vainqueur de Bologna (AlanZQ). Deck control par excellence : control le board, draw énormément, et finit la game avec des units efficaces. Vex est devenu un staple après la performance de Vegas.",
+    "playstyle": "Joue lentement, répond à chaque menace, puis prend le board dans les tours tardifs. Stacked Deck + Called Shot + Ezreal Prodigy = main permanente. Vex rend le combat cauchemardesque pour l'adversaire.",
+    "difficulty": "Expert",
+    "winRate": 51,
+    "conversionRate": 18,
+    "metaShare": 8,
+    "tournament": "RQ Bologna — 🥇 Vainqueur",
+    "placement": "🥇 Vainqueur Bologna",
+    "keyCards": [
+      "Stacked Deck",
+      "Called Shot",
+      "Ezreal Prodigy",
+      "Vex",
+      "Tideturner",
+      "Edge of Night"
+    ],
+    "strengths": [
+      "Plafond de skill très élevé",
+      "Extrêmement flexible",
+      "Favorisé par les top pilots",
+      "Bat Draven Miracle dans les mains expertes"
+    ],
+    "weaknesses": [
+      "Courbe d'apprentissage extrême",
+      "Un mauvais choix = lose",
+      "Difficile à adapter rapidement"
+    ],
+    "results": [
+      {
+        "event": "RQ Bologna",
+        "date": "Fév. 2026",
+        "players": 1719,
+        "placement": "🥇 Vainqueur (AlanZQ, undefeated)",
+        "notes": "Undefeated sur 13 rounds de Swiss, performance légendaire"
+      },
+      {
+        "event": "RQ Las Vegas",
+        "date": "Mars 2026",
+        "players": 1670,
+        "placement": "Top 8",
+        "notes": "Peu représenté, \"une semaine n'est pas assez pour apprendre le deck\""
+      }
+    ]
+  },
+  {
+    "id": "kaisa-control",
+    "champion": "Kai'Sa",
+    "fullName": "Kai'Sa Daughter of the Void — Control",
+    "domain": "Fury",
+    "secondDomain": "Mind",
+    "archetype": "Control",
+    "tier": "S",
+    "description": "Meilleure légende control avant l'émergence des builds Miracle. Son ability donne 1 Power gratuit pour les sorts, rendant Hextech Ray et Falling Star extrêmement efficaces. Vainqueur du Regional Nanjing.",
+    "playstyle": "Board control via spells efficients, accumule l'avantage de cartes avec OGN-114, puis close la game avec ses units. Fury/Mind offre la gamme de spells la plus large du jeu.",
+    "difficulty": "Intermédiaire",
+    "winRate": 50.4,
+    "conversionRate": 19,
+    "metaShare": 11,
+    "tournament": "RQ Nanjing (Chine) — 🥇 Vainqueur",
+    "placement": "🥇 Vainqueur Nanjing",
+    "keyCards": [
+      "Hextech Ray",
+      "Falling Star",
+      "Void Seeker",
+      "Stupefy",
+      "Singularity",
+      "Icathian Rain"
+    ],
+    "strengths": [
+      "Spells très efficaces grâce à l'ability",
+      "Card advantage solide",
+      "Large pool de spells disponibles",
+      "Bonne flexibilité de build"
+    ],
+    "weaknesses": [
+      "Problème contre les builds Miracle",
+      "Vulnérable aux tours multi-units",
+      "Moins dominant depuis Bologna"
+    ],
+    "results": [
+      {
+        "event": "RQ Nanjing (Chine)",
+        "date": "Fév. 2026",
+        "players": 390,
+        "placement": "🥇 Vainqueur",
+        "notes": "Victoire propre dans un méta plus ouvert"
+      },
+      {
+        "event": "RQ Dalian (Chine)",
+        "date": "Jan. 2026",
+        "players": 420,
+        "placement": "Top 4",
+        "notes": "Finale surprise, joue control vs Ezreal"
+      },
+      {
+        "event": "RQ Bologna",
+        "date": "Fév. 2026",
+        "players": 1719,
+        "placement": "Top 8",
+        "notes": "50.4% WR, solid mais pas dominant"
+      },
+      {
+        "event": "RQ Las Vegas",
+        "date": "Mars 2026",
+        "players": 1670,
+        "placement": "Top 32",
+        "notes": "Aucun Kai'Sa en Top 8, deck en difficulté face au Miracle"
+      }
+    ]
+  },
+  {
+    "id": "annie-aggro",
+    "champion": "Annie",
+    "fullName": "Annie Dark Child — Aggro",
+    "domain": "Fury",
+    "secondDomain": "Chaos",
+    "archetype": "Aggro",
+    "tier": "A",
+    "description": "Meilleure légende aggressive de Spiritforged. Son ability active 2 Runes à la fin de son tour, permettant des réactions en dehors de son propre tour. Vainqueur du Regional Fuzhou (Chine).",
+    "playstyle": "Snowball tôt, score des points rapidement avant que l'adversaire stabilise. Cards low-cost, pression constante. Problème vs les builds Miracle qui peuvent stabiler et contre-attaquer massivement.",
+    "difficulty": "Débutant",
+    "winRate": 48,
+    "conversionRate": 15,
+    "metaShare": 4,
+    "tournament": "RQ Fuzhou (Chine) — 🥇 Vainqueur",
+    "placement": "🥇 Vainqueur Fuzhou",
+    "keyCards": [
+      "SFD-025",
+      "SFD-021",
+      "OGN-192 (side)",
+      "Units low-cost Fury/Chaos"
+    ],
+    "strengths": [
+      "Idéale pour débuter",
+      "Très rapide",
+      "Bonne réactivité grâce à l'ability",
+      "Forte en bo1"
+    ],
+    "weaknesses": [
+      "Mauvais matchup vs Miracle",
+      "Popularité effondrée à Las Vegas (23ème)",
+      "Ralentie par les decks control capables de stabiliser"
+    ],
+    "results": [
+      {
+        "event": "RQ Fuzhou (Chine)",
+        "date": "Jan. 2026",
+        "players": 480,
+        "placement": "🥇 Vainqueur",
+        "notes": "Meilleure aggro du méta pre-Bologna"
+      },
+      {
+        "event": "RQ Nanjing (Chine)",
+        "date": "Fév. 2026",
+        "players": 390,
+        "placement": "Top 4 + Best conversion",
+        "notes": "Meilleur taux de conversion ET vainqueur"
+      },
+      {
+        "event": "RQ Bologna",
+        "date": "Fév. 2026",
+        "players": 1719,
+        "placement": "Top 32",
+        "notes": "High conversion rate mais aucun Annie en Top 8"
+      },
+      {
+        "event": "RQ Las Vegas",
+        "date": "Mars 2026",
+        "players": 1670,
+        "placement": "23ème popularité",
+        "notes": "Effondrement total en représentation, méta trop Miracle"
+      }
+    ]
+  },
+  {
+    "id": "jax-offmeta",
+    "champion": "Jax",
+    "fullName": "Jax Grandmaster at Arms — Off-Meta",
+    "domain": "Order",
+    "secondDomain": "Fury",
+    "archetype": "Midrange",
+    "tier": "B",
+    "description": "La grosse surprise de Las Vegas. TheVeryBestGamer a propulsé Jax en Top 8 avec une liste que personne n'attendait. Toujours un joueur trouvant un moyen de passer dans les tournois majeurs.",
+    "playstyle": "Unités Order/Fury solides, quelques tools de board control. Pas de consensus sur la meilleure liste, ce qui le rend imprévisible. Jax fait régulièrement des Top 8 surprise dans les grands events.",
+    "difficulty": "Intermédiaire",
+    "winRate": 46,
+    "conversionRate": 12,
+    "metaShare": 3,
+    "tournament": "RQ Las Vegas — Top 8",
+    "placement": "Top 8 Las Vegas",
+    "keyCards": [
+      "Order/Fury units",
+      "Board control tools"
+    ],
+    "strengths": [
+      "Imprévisible, peu de counter-play préparé",
+      "Régulièrement présent en Top 8 surprise",
+      "Adapté par des joueurs créatifs"
+    ],
+    "weaknesses": [
+      "Pas de consensus sur la liste",
+      "Stats faibles globalement",
+      "Conversion rate basse hors top players"
+    ],
+    "results": [
+      {
+        "event": "RQ Las Vegas",
+        "date": "Mars 2026",
+        "players": 1670,
+        "placement": "Top 8 (TheVeryBestGamer)",
+        "notes": "Grosse surprise, seul non-Draven en Top 4 à avoir tenu autant"
+      },
+      {
+        "event": "RQ Bologna",
+        "date": "Fév. 2026",
+        "players": 1719,
+        "placement": "Top 64",
+        "notes": "2ème Top 8 en 6 tournois Spiritforged"
+      }
+    ]
+  },
+  {
+    "id": "sett-control",
+    "champion": "Sett",
+    "fullName": "Sett The Boss — Control",
+    "domain": "Fury",
+    "secondDomain": "Body",
+    "archetype": "Control",
+    "tier": "A",
+    "description": "2ème meilleur winrate à Las Vegas (55.3%). Body legends avec SFD-097 garantissent presque une victoire en showdown. Sett est l'option control la plus sous-estimée du méta actuel.",
+    "playstyle": "Entre en showdown avec SFD-097 et les prend quasi-toujours. Grind value, control le board, et ferme la game avec des units Body solides. Moins explosif que les autres top decks mais très consistant.",
+    "difficulty": "Intermédiaire",
+    "winRate": 55.3,
+    "conversionRate": 14,
+    "metaShare": 5,
+    "tournament": "RQ Nanjing — Top 16",
+    "placement": "Top 16 Nanjing",
+    "keyCards": [
+      "SFD-097",
+      "Body units",
+      "Fury spells"
+    ],
+    "strengths": [
+      "2ème meilleur WR à Vegas",
+      "Showdowns quasi-garantis",
+      "Très peu ciblé par le méta"
+    ],
+    "weaknesses": [
+      "Metagame pas préparé pour lui mais le sera",
+      "Moins de représentation = moins de data",
+      "Conversion rate modeste"
+    ],
+    "results": [
+      {
+        "event": "RQ Las Vegas",
+        "date": "Mars 2026",
+        "players": 1670,
+        "placement": "Top 32",
+        "notes": "55.3% WR, 2ème du tournoi, sous-représenté"
+      },
+      {
+        "event": "RQ Nanjing (Chine)",
+        "date": "Fév. 2026",
+        "players": 390,
+        "placement": "Top 16",
+        "notes": "37.5% conversion rate, proche du podium"
+      }
+    ]
+  },
+  {
+    "id": "viktor-combo",
+    "champion": "Viktor",
+    "fullName": "Viktor The Machine Herald — Combo",
+    "domain": "Knowledge",
+    "secondDomain": "Chaos",
+    "archetype": "Combo",
+    "tier": "A",
+    "description": "Seule légende hors Chaos à atteindre le Top 8 à Bologna. Knowledge/Chaos offre une combinaison unique de combo et control. Régulièrement présent en Top 64 dans tous les tournois majeurs.",
+    "playstyle": "Build autour de OGN-160 (Miracle shell) ou d'une stratégie combo Knowledge. Setup des synergies au fil des tours, puis éclate avec un tour décisif. Nécessite de la patience et une bonne lecture du board.",
+    "difficulty": "Expert",
+    "winRate": 49,
+    "conversionRate": 15,
+    "metaShare": 6,
+    "tournament": "RQ Bologna — Top 8",
+    "placement": "Top 8 Bologna",
+    "keyCards": [
+      "OGN-160",
+      "Knowledge spells",
+      "Chaos units"
+    ],
+    "strengths": [
+      "Seule non-Chaos en Top 8 Bologna",
+      "Combo très puissant si setup",
+      "Peu anticipé par le méta"
+    ],
+    "weaknesses": [
+      "Setup peut être disrupté",
+      "WR moyen globalement",
+      "Matchup difficile vs les decks agressifs"
+    ],
+    "results": [
+      {
+        "event": "RQ Bologna",
+        "date": "Fév. 2026",
+        "players": 1719,
+        "placement": "Top 8",
+        "notes": "Seule légende sans Chaos en Top 8"
+      },
+      {
+        "event": "RQ Chengdu (Chine)",
+        "date": "Jan. 2026",
+        "players": 530,
+        "placement": "Top 32",
+        "notes": "2 joueurs en Top 64"
+      }
+    ]
+  },
+  {
+    "id": "fiora-combo",
+    "champion": "Fiora",
+    "fullName": "Fiora Grand Duelist — Combo",
+    "domain": "Body",
+    "secondDomain": "Order",
+    "archetype": "Combo",
+    "tier": "A",
+    "description": "La légende combo basée sur OGN-242. Constamment présente en Top 8 en China (QF dans chaque tournoi). Moins performante en Occident mais reste un tier A solide dans les bonnes mains.",
+    "playstyle": "Setup OGN-242 (gear combo) et ferme la game avec un équipement impossible à répondre. Les meilleurs résultats viennent des builds OGN-242, pas du Midrange initial.",
+    "difficulty": "Expert",
+    "winRate": 47,
+    "conversionRate": 9,
+    "metaShare": 4,
+    "tournament": "RQ Fuzhou — Top 4",
+    "placement": "Top 4 Fuzhou",
+    "keyCards": [
+      "OGN-242",
+      "Body units",
+      "Order gear"
+    ],
+    "strengths": [
+      "QF dans chaque tournoi China",
+      "Combo parfois impossible à stopper",
+      "Imprévisible"
+    ],
+    "weaknesses": [
+      "Vulnerable au gear removal",
+      "Conversion rate la plus basse du Tier 1",
+      "Moins performante en Occident"
+    ],
+    "results": [
+      {
+        "event": "RQ Fuzhou (Chine)",
+        "date": "Jan. 2026",
+        "players": 480,
+        "placement": "Top 4",
+        "notes": "Finales via le build midrange"
+      },
+      {
+        "event": "RQ Dalian (Chine)",
+        "date": "Jan. 2026",
+        "players": 420,
+        "placement": "Top 8",
+        "notes": "Build OGN-242 dominant"
+      },
+      {
+        "event": "RQ Nanjing (Chine)",
+        "date": "Fév. 2026",
+        "players": 390,
+        "placement": "Top 8",
+        "notes": "Confirme sa régularité chinoise"
+      },
+      {
+        "event": "RQ Bologna",
+        "date": "Fév. 2026",
+        "players": 1719,
+        "placement": "Top 64",
+        "notes": "Moins impactante en Occident"
+      }
+    ]
+  }
+]

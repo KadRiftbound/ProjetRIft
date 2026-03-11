@@ -1,0 +1,205 @@
+[
+  {
+    "id": "vegas-2026",
+    "name": "Regional Qualifier Las Vegas",
+    "date": "28 Fév – 1 Mars 2026",
+    "location": "🇺🇸 Las Vegas, USA",
+    "players": 1670,
+    "prizePool": "$25 000",
+    "winner": "Draven Midrange",
+    "winnerDomain": "Fury",
+    "top8": [
+      {
+        "legend": "Draven Midrange",
+        "player": "Samdsherman",
+        "placement": "🥇 1er"
+      },
+      {
+        "legend": "Draven Miracle",
+        "placement": "🥈 2ème"
+      },
+      {
+        "legend": "Draven Midrange",
+        "placement": "🥉 3ème"
+      },
+      {
+        "legend": "Draven Miracle",
+        "placement": "4ème"
+      },
+      {
+        "legend": "Ezreal",
+        "player": "Alanzq",
+        "placement": "Top 8"
+      },
+      {
+        "legend": "Jax",
+        "player": "TheVeryBestGamer",
+        "placement": "Top 8"
+      },
+      {
+        "legend": "Irelia",
+        "placement": "Top 8"
+      },
+      {
+        "legend": "Miss Fortune",
+        "placement": "Top 8"
+      }
+    ]
+  },
+  {
+    "id": "bologna-2026",
+    "name": "Regional Qualifier Bologna",
+    "date": "Fév. 2026",
+    "location": "🇮🇹 Bologna, Italie",
+    "players": 1719,
+    "winner": "Ezreal",
+    "winnerDomain": "Cunning",
+    "top8": [
+      {
+        "legend": "Ezreal",
+        "player": "AlanZQ (undefeated)",
+        "placement": "🥇 1er"
+      },
+      {
+        "legend": "Miss Fortune",
+        "placement": "🥈 2ème"
+      },
+      {
+        "legend": "Irelia",
+        "placement": "Top 4"
+      },
+      {
+        "legend": "Draven",
+        "placement": "Top 8 ×3"
+      },
+      {
+        "legend": "Viktor",
+        "placement": "Top 8"
+      }
+    ]
+  },
+  {
+    "id": "nanjing-2026",
+    "name": "Regional Open Nanjing",
+    "date": "Fév. 2026",
+    "location": "🇨🇳 Nanjing, Chine",
+    "players": 390,
+    "winner": "Kai'Sa / Annie",
+    "winnerDomain": "Fury",
+    "top8": [
+      {
+        "legend": "Annie",
+        "placement": "🥇 Vainqueur (meilleure conversion)"
+      },
+      {
+        "legend": "Kai'Sa",
+        "placement": "Top 4"
+      },
+      {
+        "legend": "Irelia",
+        "placement": "Top 8"
+      },
+      {
+        "legend": "Draven",
+        "placement": "Top 8"
+      },
+      {
+        "legend": "Sett",
+        "placement": "Top 8 (37.5% conversion)"
+      }
+    ]
+  },
+  {
+    "id": "dalian-2026",
+    "name": "Regional Open Dalian",
+    "date": "Jan. 2026",
+    "location": "🇨🇳 Dalian, Chine",
+    "players": 420,
+    "winner": "Kai'Sa",
+    "winnerDomain": "Fury",
+    "top8": [
+      {
+        "legend": "Kai'Sa",
+        "placement": "🥇 Vainqueur (Finale Kai'Sa vs Ezreal)"
+      },
+      {
+        "legend": "Ezreal",
+        "placement": "🥈 Finaliste"
+      },
+      {
+        "legend": "Irelia",
+        "placement": "Top 8 (meilleure conversion)"
+      },
+      {
+        "legend": "Sivir Miracle",
+        "placement": "Top 4"
+      },
+      {
+        "legend": "Draven",
+        "placement": "Top 8"
+      },
+      {
+        "legend": "Fiora",
+        "placement": "Top 8"
+      }
+    ]
+  },
+  {
+    "id": "chengdu-2026",
+    "name": "Regional Open Chengdu",
+    "date": "Jan. 2026",
+    "location": "🇨🇳 Chengdu, Chine",
+    "players": 530,
+    "winner": "Draven",
+    "winnerDomain": "Fury",
+    "top8": [
+      {
+        "legend": "Draven",
+        "placement": "🥇 Vainqueur (Spinning Axe build)"
+      },
+      {
+        "legend": "Irelia",
+        "placement": "Top 8"
+      },
+      {
+        "legend": "Fiora",
+        "placement": "Top 8"
+      },
+      {
+        "legend": "Annie",
+        "placement": "Top 32"
+      }
+    ]
+  },
+  {
+    "id": "fuzhou-2026",
+    "name": "Regional Open Fuzhou",
+    "date": "Jan. 2026",
+    "location": "🇨🇳 Fuzhou, Chine",
+    "players": 480,
+    "winner": "Annie",
+    "winnerDomain": "Fury",
+    "top8": [
+      {
+        "legend": "Annie",
+        "placement": "🥇 Vainqueur"
+      },
+      {
+        "legend": "Fiora",
+        "placement": "Top 4"
+      },
+      {
+        "legend": "Draven",
+        "placement": "Top 8 (>50% du Top 64)"
+      },
+      {
+        "legend": "Irelia",
+        "placement": "Top 8"
+      },
+      {
+        "legend": "Azir",
+        "placement": "Top 8"
+      }
+    ]
+  }
+]

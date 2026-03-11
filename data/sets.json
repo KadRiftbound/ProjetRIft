@@ -1,0 +1,14 @@
+{
+  "OGN": {
+    "id": "OGN",
+    "name": "Origins"
+  },
+  "OGS": {
+    "id": "OGS",
+    "name": "Proving Grounds"
+  },
+  "SFD": {
+    "id": "SFD",
+    "name": "Spiritforged"
+  }
+}

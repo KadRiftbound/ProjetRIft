@@ -1,0 +1,274 @@
+[
+  {
+    "id": "teemo-mushroom",
+    "champion": "Teemo",
+    "fullName": "Teemo Swift Scout — Mushroom",
+    "domain": "Cunning",
+    "secondDomain": "Chaos",
+    "archetype": "Control",
+    "tier": "C",
+    "description": "Deck fun basé sur les champignons et la mécaniques Hidden. Contrôle le board avec des pièges et utilise Teemo pour scouter.",
+    "playstyle": "Placez des mushrooms sur le board pour contrôler les mouvements adverses. Teemo permet de révéler les cartes cachées et de récuperer vos units.",
+    "difficulty": "Intermédiaire",
+    "winRate": 38,
+    "conversionRate": 5,
+    "metaShare": 1,
+    "tournament": "Fun Deck",
+    "placement": "Non compétitif",
+    "keyCards": [
+      "Teemo",
+      "Mushroom",
+      "Guerrilla",
+      "Camouflage"
+    ],
+    "strengths": [
+      "Fun à jouer",
+      "Surprise l'adversaire",
+      "Contrôle de zone"
+    ],
+    "weaknesses": [
+      "Trop slow",
+      "Pas assez de support",
+      "Weak aux aggro"
+    ],
+    "results": []
+  },
+  {
+    "id": "heimer-turret",
+    "champion": "Heimerdinger",
+    "fullName": "Heimerdinger Inventor — Turret",
+    "domain": "Knowledge",
+    "secondDomain": "Chaos",
+    "archetype": "Control",
+    "tier": "C",
+    "description": "Deck basé sur les tourelles d'Heimerdinger. Accumulez des tourelles pour contrôler le board et finish avec des gros spells.",
+    "playstyle": "Build des tourelles early pour contrôler le board. Utilisez les upgrades pour rendre vos tourelles plus puissantes.",
+    "difficulty": "Expert",
+    "winRate": 36,
+    "conversionRate": 3,
+    "metaShare": 0.5,
+    "tournament": "Fun Deck",
+    "placement": "Non compétitif",
+    "keyCards": [
+      "Heimerdinger",
+      "Turret",
+      "UPGRADE",
+      "Flash of Insight"
+    ],
+    "strengths": [
+      "Value enorme",
+      "Board resistant",
+      "Late game fort"
+    ],
+    "weaknesses": [
+      "Trop lent",
+      "Vulnerable aux removal",
+      "Difficile à masteriser"
+    ],
+    "results": []
+  },
+  {
+    "id": "volibear-frost",
+    "champion": "Volibear",
+    "fullName": "Volibear Thunder Lord — Frost",
+    "domain": "Order",
+    "secondDomain": "Knowledge",
+    "archetype": "Control",
+    "tier": "C",
+    "description": "Deck Frostbite avec Volibear. Contrôlez le board avec des effets de freezing et finish avec des grosses unités.",
+    "playstyle": "Utilisez des spells de Frostbite pour contrôler les unités adverses. Volibear buff vos attaques et peut finish la partie.",
+    "difficulty": "Intermédiaire",
+    "winRate": 40,
+    "conversionRate": 4,
+    "metaShare": 0.8,
+    "tournament": "Fun Deck",
+    "placement": "Non compétitif",
+    "keyCards": [
+      "Volibear",
+      "Frostbite",
+      "Stormbringer",
+      "Glacial Wall"
+    ],
+    "strengths": [
+      "Contrôle total",
+      "Fun mechanics",
+      "Bon vs control"
+    ],
+    "weaknesses": [
+      "Slow vs aggro",
+      "Pas assez de draw",
+      "Mauvais matchups"
+    ],
+    "results": []
+  },
+  {
+    "id": "jinx-megavolley",
+    "champion": "Jinx",
+    "fullName": "Jinx Loose Cannon — Megavolley",
+    "domain": "Cunning",
+    "secondDomain": "Chaos",
+    "archetype": "Aggro",
+    "tier": "C",
+    "description": "Deck aggro avec Jinx et Super Megavolley. Cartes low-cost avec beaucoup de card draw pour garder la pression.",
+    "playstyle": "Jouez des unités aggressive early. Utilisez Jinx pour draw et Super Megavolley pour finish.",
+    "difficulty": "Débutant",
+    "winRate": 42,
+    "conversionRate": 6,
+    "metaShare": 1.2,
+    "tournament": "Fun Deck",
+    "placement": "Non compétitif",
+    "keyCards": [
+      "Jinx",
+      "Get Excited",
+      "Super Megavolley",
+      "Flame Chompers"
+    ],
+    "strengths": [
+      "Fun à jouer",
+      "Easy to learn",
+      "Aggro vs control"
+    ],
+    "weaknesses": [
+      "Pas assez consistent",
+      "Weak vs removal",
+      "Mauvais vs board control"
+    ],
+    "results": []
+  },
+  {
+    "id": "sett-boss",
+    "champion": "Sett",
+    "fullName": "Sett The Boss — Eyeball",
+    "domain": "Chaos",
+    "secondDomain": "Body",
+    "archetype": "Midrange",
+    "tier": "C",
+    "description": "Deck basé sur la mécanique The Boss de Sett. Accumulez des yeux pour unlock des effets puissants.",
+    "playstyle": "Build des yeux avec vos unités et sorts. Sett devient de plus en plus fort avec chaque œil collecté.",
+    "difficulty": "Intermédiaire",
+    "winRate": 39,
+    "conversionRate": 4,
+    "metaShare": 0.7,
+    "tournament": "Fun Deck",
+    "placement": "Non compétitif",
+    "keyCards": [
+      "Sett",
+      "Take the Lead",
+      "Facelift",
+      "Headliner"
+    ],
+    "strengths": [
+      "Unique mechanic",
+      "Scaling bien",
+      "Fun deck"
+    ],
+    "weaknesses": [
+      "Inconsistent",
+      "Trop de setup",
+      "Weak en meta"
+    ],
+    "results": []
+  },
+  {
+    "id": "fiora-duelist",
+    "champion": "Fiora",
+    "fullName": "Fiora Grand Duelist — Duel",
+    "domain": "Glory",
+    "secondDomain": "Order",
+    "archetype": "Combo",
+    "tier": "C",
+    "description": "Deck combo basé sur les duels de Fiora. Gagnez des buffs en tuant des unités adverses lors de duels.",
+    "playstyle": "Build Fiora avec des buffs et partez en duel. Chaque kill vous rend plus fort.",
+    "difficulty": "Expert",
+    "winRate": 37,
+    "conversionRate": 3,
+    "metaShare": 0.6,
+    "tournament": "Fun Deck",
+    "placement": "Non compétitif",
+    "keyCards": [
+      "Fiora",
+      "Riposte",
+      "Parry",
+      "Duel"
+    ],
+    "strengths": [
+      "Combo satisfaisant",
+      "High skill ceiling",
+      "Unique playstyle"
+    ],
+    "weaknesses": [
+      "Trop fragile",
+      "Setup long",
+      "Vulnerable aux counters"
+    ],
+    "results": []
+  },
+  {
+    "id": "reksai-tunnel",
+    "champion": "Rek'Sai",
+    "fullName": "Rek'Sai Terror of the Sands — Tunnel",
+    "domain": "Void",
+    "secondDomain": "Chaos",
+    "archetype": "Tempo",
+    "tier": "C",
+    "description": "Deck basé sur la mécanique Burrow/Unburrow. Cachez vos unités sous terre et ressortir pour des attaques surprise.",
+    "playstyle": "Burrow vos unités pour les protéger des attacks. Unburrow pour des attaques surprise et du damage.",
+    "difficulty": "Intermédiaire",
+    "winRate": 38,
+    "conversionRate": 4,
+    "metaShare": 0.8,
+    "tournament": "Fun Deck",
+    "placement": "Non compétitif",
+    "keyCards": [
+      "Rek'Sai",
+      "Burrow",
+      "Unburrow",
+      "Tunnel"
+    ],
+    "strengths": [
+      "Fun mechanic",
+      "Surprise factor",
+      "Unique gameplay"
+    ],
+    "weaknesses": [
+      "Trop complexe",
+      "Inconsistent",
+      "Pas assez de support"
+    ],
+    "results": []
+  },
+  {
+    "id": "ezreal-poke",
+    "champion": "Ezreal",
+    "fullName": "Ezreal Prodigal Explorer — Poke",
+    "domain": "Cunning",
+    "secondDomain": "Knowledge",
+    "archetype": "Control",
+    "tier": "B",
+    "description": "Version alternative d'Ezreal focusing sur le poke et les sorts. Utilize Ezreal pour poke et control.",
+    "playstyle": "Poke l'adversaire avec Ezreal et spells. Accumulez des Mana Bolts pour finish.",
+    "difficulty": "Intermédiaire",
+    "winRate": 45,
+    "conversionRate": 8,
+    "metaShare": 2,
+    "tournament": "Off-meta viable",
+    "placement": "Top 32",
+    "keyCards": [
+      "Ezreal",
+      "Mystic Shot",
+      "Arcane Shift",
+      "Mana Bolt"
+    ],
+    "strengths": [
+      "Fun control",
+      "Good poke",
+      "Versatile"
+    ],
+    "weaknesses": [
+      "Moins fort que meta",
+      "Slow start",
+      "Require skill"
+    ],
+    "results": []
+  }
+]

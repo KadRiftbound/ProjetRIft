@@ -1,0 +1,529 @@
+export interface LegendGuide {
+  legendId: string;
+  isMeta: boolean;
+  overview: string;
+  ability: string;
+  stats: {
+    might: number;
+    power: number;
+    energy: number;
+  };
+  mulligan?: string;
+  strategy?: {
+    early: string;
+    mid: string;
+    late: string;
+  };
+  techniques?: string[];
+  combos?: {
+    cards: string[];
+    effect: string;
+  }[];
+  decks: {
+    name: string;
+    description: string;
+    coreCards: string[];
+    strategy: string;
+  }[];
+  synergies: {
+    cardName: string;
+    synergy: string;
+    priority: 'high' | 'medium' | 'low';
+  }[];
+  matchups: {
+    against: string;
+    outcome: 'favorable' | 'neutral' | 'unfavorable';
+    tips: string;
+  }[];
+  tips: string[];
+  counters: string[];
+}
+
+export const LEGEND_GUIDES: Record<string, LegendGuide> = {
+  // --- TIER S (META) ---
+  
+  'SFD-185': { // Draven
+    legendId: 'SFD-185',
+    isMeta: true,
+    overview: 'Draven (Glorious Executioner) est actuellement le deck le plus dominant du format. Son style ultra-agressif basé sur la génération de haches lui permet de piocher tout en renforçant ses unités pour des tours de dégâts explosifs.',
+    ability: 'Glorious Executioner: Quand vous gagnez un combat, piochez 1. (Vous gagnez si seules vos unités restent après le combat.)',
+    stats: { might: 4, power: 4, energy: 5 },
+    mulligan: 'Gardez Spinning Axe et Noxus Hopeful. Si vous jouez contre un deck lent, cherchez Overzealous Fan pour mettre la pression tour 1.',
+    strategy: {
+      early: 'Développez un board large. Utilisez vos haches pour éliminer les bloqueurs gênants tout en cyclant votre main.',
+      mid: 'C\'est votre moment de victoire. Utilisez Draven pour gagner des combats et refaire votre main gratuitement.',
+      late: 'Finissez avec des unités Overwhelm. Si la partie dépasse le tour 8, vos chances diminuent drastiquement.'
+    },
+    decks: [{ name: 'Miracle Draven', description: 'Le standard compétitif.', coreCards: ['Spinning Axe', 'Kaisa Survivor'], strategy: 'Agression pure et pioche.' }],
+    synergies: [{ cardName: 'Spinning Axe', synergy: 'Moteur de pioche et buff.', priority: 'high' }],
+    matchups: [{ against: 'Irelia', outcome: 'favorable', tips: 'Tuez ses moteurs de combo vite.' }],
+    tips: ['Les haches sont des ressources, n\'ayez pas peur de les utiliser pour piocher même sans combat.'],
+    counters: ['Kai\'Sa Control', 'Frostbite']
+  },
+
+  'SFD-195': { // Irelia
+    legendId: 'SFD-195',
+    isMeta: true,
+    overview: 'Irelia (Blade Dancer) définit le style Combo. Elle utilise une multitude de sorts à bas coût pour redresser ses unités et attaquer à répétition, submergeant la défense adverse.',
+    ability: 'Blade Dancer: Quand vous choisissez une unité alliée, vous pouvez exhauster Irelia et payer 1 Rune Arc-en-ciel pour la redresser. Quand vous conquérez, redressez Irelia.',
+    stats: { might: 4, power: 3, energy: 4 },
+    mulligan: 'Blade Rush et Greenglade Caretaker sont essentiels. Contre Draven, gardez Homecoming.',
+    strategy: {
+      early: 'Préparez vos unités de soutien. Ne gaspillez pas vos sorts de redressement pour de petits dégâts.',
+      mid: 'Enchaînez les sorts pour attaquer 3 ou 4 fois avec vos meilleures unités dans le même tour.',
+      late: 'Utilisez Irelia pour achever l\'adversaire grâce à sa capacité de redressement infatigable.'
+    },
+    decks: [{ name: 'Blade Combo', description: 'Inondation de lames.', coreCards: ['Blade Rush', 'Homecoming'], strategy: 'Spam de sorts.' }],
+    synergies: [{ cardName: 'Homecoming', synergy: 'Protection et réactivation.', priority: 'high' }],
+    matchups: [{ against: 'Ezreal', outcome: 'favorable', tips: 'Vous avez trop de cibles pour lui.' }],
+    tips: ['L\'ordre de résolution de vos sorts est la clé de la victoire.'],
+    counters: ['Mass Removal', 'Defender decks']
+  },
+
+  'SFD-064': { // Ezreal (Assume ID based on metadata)
+    legendId: 'SFD-064',
+    isMeta: true,
+    overview: 'Ezreal est le roi du contrôle réactif. Il punit chaque tentative de développement adverse par des sorts de poke incessants avant de terminer la partie par un déluge de Mana Bolts.',
+    ability: 'Arcane Shift: Quand Ezreal attaque, crée un Mana Bolt qui inflige 1 dégât.',
+    stats: { might: 3, power: 3, energy: 3 },
+    mulligan: 'Mystic Shot et Ezreal sont vos priorités. Cherchez Deep Meditation pour ne jamais manquer de ressources.',
+    strategy: {
+      early: 'Ne jouez que pour la survie. Gardez vos sorts pour les unités clés adverses.',
+      mid: 'Piochez massivement. Ne posez Ezreal que si vous pouvez le protéger avec un sort en réaction.',
+      late: 'Le tour de burst. Lancez 5+ sorts pour générer des Mana Bolts et gagner sur un seul tour.'
+    },
+    decks: [{ name: 'Ezreal Control', description: 'Le mur réactif.', coreCards: ['Mystic Shot', 'Deep Meditation'], strategy: 'Survivez et piochez.' }],
+    synergies: [{ cardName: 'Deep Meditation', synergy: 'Maintient la pression de sorts.', priority: 'high' }],
+    matchups: [{ against: 'Draven', outcome: 'favorable', tips: 'Gérez Draven et gagnez la partie.' }],
+    tips: ['Calculez toujours vos runes pour garder un "Deny" ou un "Protection" ouvert.'],
+    counters: ['Wide Boards', 'Aggro Rush']
+  },
+
+  // --- TIER A (COMPÉTITIF) ---
+
+  'SFD-132': { // Kai'Sa
+    legendId: 'SFD-132',
+    isMeta: true,
+    overview: 'Kai\'Sa Control est le meilleur contre à la méta Draven. Basé sur le domaine Void, ce deck utilise des removals massifs et des unités à haute défense.',
+    ability: 'Void Seeker: Vos cartes Void coûtent 1 de moins. Quand Kai\'Sa tue une unité, piochez 1.',
+    stats: { might: 4, power: 3, energy: 4 },
+    mulligan: 'Removals de zone et unités à haute Power pour bloquer.',
+    strategy: {
+      early: 'Stabilisez. Laissez l\'adversaire s\'épuiser sur vos bloqueurs.',
+      mid: 'Nettoyez le board avec vos sorts Void à coût réduit.',
+      late: 'Utilisez Kai\'Sa pour refaire votre main et écraser l\'adversaire sous la valeur.'
+    },
+    decks: [{ name: 'Void Control', description: 'Anti-méta absolu.', coreCards: ['Consume', 'Void Seeker'], strategy: 'Destruction de board.' }],
+    synergies: [{ cardName: 'Consume', synergy: 'Removal vital.', priority: 'high' }],
+    matchups: [{ against: 'Draven', outcome: 'favorable', tips: 'Gardez vos sorts pour Draven.' }],
+    tips: ['Ne soyez pas trop agressif, Kai\'Sa gagne naturellement sur le long terme.'],
+    counters: ['Ezreal', 'Burn Decks']
+  },
+
+  'SFD-203': { // Sivir
+    legendId: 'SFD-203',
+    isMeta: true,
+    overview: 'Sivir Battle Mistress utilise les équipements Or pour créer une armée impossible à déloger au combat.',
+    ability: 'Battle Mistress: Quand vous recyclez une rune, jouez un jeton Or. Quand un ennemi meurt, redressez Sivir.',
+    stats: { might: 4, power: 3, energy: 4 },
+    mulligan: 'Cherchez Blade of the Exile et des unités avec Overwhelm.',
+    strategy: {
+      early: 'Posez des porteurs d\'équipements. Accumulez les jetons Or.',
+      mid: 'Équipez Sivir. Ses attaques Ricochet vont nettoyer le board adverse.',
+      late: 'Utilisez l\'Overwhelm boosté par vos équipements pour finir.'
+    },
+    decks: [{ name: 'Golden Midrange', description: 'Puissance brute.', coreCards: ['Sivir', 'Blade of the Exile'], strategy: 'Équipements massifs.' }],
+    synergies: [{ cardName: 'Trinity Force', synergy: 'Stat stick énorme.', priority: 'high' }],
+    matchups: [{ against: 'Azir', outcome: 'favorable', tips: 'Vos Ricochets tuent ses soldats.' }],
+    tips: ['Utilisez l\'Or pour payer vos sorts en réaction pendant le tour adverse.'],
+    counters: ['Weapon Destruction', 'Freeze']
+  },
+
+  // --- HORS-MÉTA (GUIDES TECHNIQUES) ---
+
+  'OGN-255': { // Ahri
+    legendId: 'OGN-255',
+    isMeta: false,
+    overview: 'Ahri Nine-Tailed Fox est une légende de contrôle tactique basée sur l\'affaiblissement des attaquants.',
+    ability: 'Nine-Tailed Fox: Les ennemis attaquant vos Battlefields gagnent -1 Might ce tour.',
+    stats: { might: 3, power: 3, energy: 4 },
+    techniques: [
+      'Ghost Blocking: Rappelez un bloqueur après déclaration pour annuler l\'attaque adverse.',
+      'Might Stacking: Utilisez des sorts de malus pour réduire la Might adverse à 0.',
+      'Domain Control: Forcez les combats sur vos Battlefields pour profiter du passif.'
+    ],
+    combos: [
+      { cards: ['Ahri', 'Charm', 'Mystic Shot'], effect: 'Force une unité faible à bloquer ou déplace une menace pour un kill facile.' }
+    ],
+    decks: [{ name: 'Cunning Control', description: 'Manipulation de board.', coreCards: ['Ahri', 'Retreat'], strategy: 'Rappels et malus.' }],
+    synergies: [{ cardName: 'Deny', synergy: 'Protection board.', priority: 'high' }],
+    matchups: [{ against: 'Draven', outcome: 'unfavorable', tips: 'Trop rapide pour vos setups.' }],
+    tips: ['Soyez patient, votre but est d\'épuiser les ressources adverses.'],
+    counters: ['Aggro Rush', 'Untargetable']
+  },
+
+  'OGN-259': { // Yasuo
+    legendId: 'OGN-259',
+    isMeta: false,
+    overview: 'Yasuo (Unforgiven) est le maître du mouvement fluide entre les zones.',
+    ability: 'Unforgiven: 2 Énergie + Exhaust : Déplacez une unité de ou vers votre base.',
+    stats: { might: 3, power: 3, energy: 4 },
+    techniques: [
+      'Reactive Defense: Amenez un bloqueur depuis la base pendant la phase d\'action adverse.',
+      'Hit & Run: Attaquez avec une unité, puis utilisez Yasuo pour la ramener en sécurité à la base.',
+      'Combat Reset: Redéployez vos unités blessées pour qu\'elles soignent en tournant.'
+    ],
+    combos: [
+      { cards: ['Yasuo', 'Steel Tempest'], effect: 'Stunnez un ennemi, frappez avec Yasuo, puis retirez-vous.' }
+    ],
+    decks: [{ name: 'Wind Walker', description: 'Mouvement perpétuel.', coreCards: ['Yasuo', 'Wind Wall'], strategy: 'Attaques surprises.' }],
+    synergies: [{ cardName: 'Steel Tempest', synergy: 'Défense parfaite.', priority: 'high' }],
+    matchups: [{ against: 'Sivir', outcome: 'neutral', tips: 'Bataille de positionnement.' }],
+    tips: ['Gardez toujours 2 Énergie en réserve pour votre capacité de Légende.'],
+    counters: ['Direct Damage', 'Removal']
+  },
+
+  'OGN-269': { // Sett / The Boss
+    legendId: 'OGN-269',
+    isMeta: false,
+    overview: 'Sett (The Boss) est basé sur la résilience de ses unités et les effets de redressement sur conquête.',
+    ability: 'The Boss: Payez 1 et exhaustez Sett pour rappeler une unité mourante à la base.',
+    stats: { might: 3, power: 3, energy: 4 },
+    techniques: [
+      'Death Denial: Sauvez vos unités clés avec la capacité de Sett pour les rejouer le tour suivant.',
+      'Conquer Chain: Utilisez le redressement de Sett pour utiliser sa capacité plusieurs fois par tour.',
+      'Showdown Baiting: Forcez des combats risqués sachant que vous pouvez sauver votre unité.'
+    ],
+    combos: [
+      { cards: ['Sett', 'Overzealous Fan'], effect: 'Sacrifiez le fan pour bloquer, puis sauvez-le avec Sett pour recommencer.' }
+    ],
+    decks: [{ name: 'The Arena Boss', description: 'Board persistant.', coreCards: ['Sett', 'Pit Rookie'], strategy: 'Unités immortelles.' }],
+    synergies: [{ cardName: 'Arena Bar', synergy: 'Buff constant.', priority: 'medium' }],
+    matchups: [{ against: 'Draven', outcome: 'unfavorable', tips: 'Il tue vos unités plus vite que vous ne les sauvez.' }],
+    tips: ['Sett brille dans les parties qui durent plus de 10 tours.'],
+    counters: ['Banishment', 'Transform effects']
+  },
+
+  // --- SPIRITFORGED LEGENDS ---
+
+  'SFD-197': { // Azir - Emperor of the Sands
+    legendId: 'SFD-197',
+    isMeta: true,
+    overview: 'Azir est un deck swarm basé sur les Sand Soldiers. Excellente synergie avec les équipements et strong late game.',
+    ability: 'Emperor of the Sands: Vos Sand Soldiers ont Weaponmaster. 1 Énergie + Exhauster: Jouer un jeton Sand Soldier 2 Might sur votre base.',
+    stats: { might: 3, power: 4, energy: 4 },
+    mulligan: 'Sand Soldier et Horazi Reawakening sont essentiels.',
+    strategy: {
+      early: 'Spawnpez des Sand Soldiers avec vos sorts et capacités.',
+      mid: 'Accumulez des soldats et utilisez Azir pour les buff.',
+      late: 'Overwhelm massif avec vos soldats buffés.'
+    },
+    decks: [{ name: 'Azir Swarm', description: 'Army of soldiers.', coreCards: ['Azir', 'Sand Soldier'], strategy: 'Spawn & buff.' }],
+    synergies: [{ cardName: 'Horazi Reawakening', synergy: 'Resurrection massive.', priority: 'high' }],
+    matchups: [{ against: 'Draven', outcome: 'neutral', tips: 'Vos soldats peuvent bloquer.' }],
+    tips: ['Azir gagne en puissance avec chaque soldat joué.'],
+    counters: ['Mass Removal', 'Frostbite']
+  },
+
+  'SFD-201': { // Viktor - Chem-Baroness
+    legendId: 'SFD-201',
+    isMeta: false,
+    overview: 'Chem-Baroness utilise des jetons Gold pour générer de la value et de l\'energy.',
+    ability: 'Chem-Baroness: Quand vous hold, exhaustez-moi pour jouer un jeton Gold. Vos jetons Gold ajoutent +1 Energy.',
+    stats: { might: 3, power: 3, energy: 4 },
+    techniques: [
+      'Gold Generation: Accumulez des jetons Gold pour générer de l\'energy.',
+      'Hold Power: Utilisez le hold pour trigger la capacité de Chem-Baroness.',
+      'Late Game Value: Les jetons Gold proporcionan value enorme late game.'
+    ],
+    combos: [
+      { cards: ['Chem-Baroness', 'Gold Card'], effect: 'Double Gold génération.' }
+    ],
+    decks: [{ name: 'Gold Midrange', description: 'Value deck.', coreCards: ['Chem-Baroness', 'Gold Card'], strategy: 'Gold spam.' }],
+    synergies: [{ cardName: 'Gold Card', synergy: 'Gold generation.', priority: 'high' }],
+    matchups: [{ against: 'Irelia', outcome: 'unfavorable', tips: 'Trop rapide pour votre génératon.' }],
+    tips: ['Gardez des jetons pour les tours adverses.'],
+    counters: ['Aggro', 'Fast decks']
+  },
+
+  'SFD-204': { // Lucian - Purifier
+    legendId: 'SFD-204',
+    isMeta: true,
+    overview: 'Lucian Purifier est un deck aggro basé sur la lumière et les attaques rapides.',
+    ability: 'Purifier: Quand une unité alliée meurt, Lucian est redressé. Quand vous jouez un sort Light, piochez 1.',
+    stats: { might: 3, power: 3, energy: 3 },
+    mulligan: 'Cherchez Lucian et vos sorts Lights early.',
+    strategy: {
+      early: 'Attaquez avec Lucian et vos unités Light.',
+      mid: 'Utilisez des sorts Light pour draw et damage.',
+      late: 'Finish avec Lucian attacks répétés.'
+    },
+    decks: [{ name: 'Lucian Aggro', description: 'Light aggro.', coreCards: ['Lucian', 'Piercing Light'], strategy: 'Attaques rapides.' }],
+    synergies: [{ cardName: 'Piercing Light', synergy: 'Damage + draw.', priority: 'high' }],
+    matchups: [{ against: 'Ezreal', outcome: 'favorable', tips: 'Plus rapide que lui.' }],
+    tips: ['Lucian est toujours prêt après une mort alliée.'],
+    counters: ['Control', 'Removal']
+  },
+
+  'SFD-205': { // Fiora - Grand Duelist
+    legendId: 'SFD-205',
+    isMeta: false,
+    overview: 'Fiora Grand Duelist gagne en puissance en tuant des unités adverses lors de duels.',
+    ability: 'Grand Duelist: Fiora gagne +1 Might et +1 Power chaque fois qu\'elle tue une unité.',
+    stats: { might: 2, power: 2, energy: 3 },
+    techniques: [
+      'Duel Setup: Positionnez Fiora pour des duels favorables.',
+      'Stack Power: Chaque kill rend Fiora plus forte.',
+      'Protection: Gardez des sorts pour protéger Fiora.'
+    ],
+    combos: [
+      { cards: ['Fiora', 'Riposte'], effect: 'Kill sécurisé en duel.' }
+    ],
+    decks: [{ name: 'Fiora Duelist', description: 'Sword master.', coreCards: ['Fiora', 'Riposte'], strategy: 'Duel & kill.' }],
+    synergies: [{ cardName: 'Duel', synergy: 'Force duels.', priority: 'high' }],
+    matchups: [{ against: 'Master Yi', outcome: 'neutral', tips: 'Équilibre.' }],
+    tips: ['Fiora scale indéfiniment.'],
+    counters: ['Mass Removal', 'Tank']
+  },
+
+  'SFD-206': { // Jax - Grandmaster at Arms
+    legendId: 'SFD-206',
+    isMeta: true,
+    overview: 'Jax Grandmaster est un deck counter qui excelle contre les decks aggressifs.',
+    ability: 'Grandmaster at Arms: Jax a Counter (Répond à chaque attack adverse).',
+    stats: { might: 4, power: 4, energy: 4 },
+    mulligan: 'Gardez Counter Strike et Grandmasters Plan.',
+    strategy: {
+      early: 'Survivez avec des counters.',
+      mid: 'Build Jax avec des équipements.',
+      late: 'Utilisez les counters pour contrôler le board.'
+    },
+    decks: [{ name: 'Jax Counter', description: 'Anti-aggro.', coreCards: ['Jax', 'Counter Strike'], strategy: 'Counters & survival.' }],
+    synergies: [{ cardName: 'Counter Strike', synergy: 'Blocage parfait.', priority: 'high' }],
+    matchups: [{ against: 'Draven', outcome: 'favorable', tips: 'Comptez ses attaques.' }],
+    tips: ['Jax peut répondre à tout.'],
+    counters: ['Control', 'Combo']
+  },
+
+  'SFD-207': { // Ornn - Fire Below the Mountain
+    legendId: 'SFD-207',
+    isMeta: false,
+    overview: 'Ornn utilise des sorts Fire et des Masterworks pour contrôler le board.',
+    ability: 'Fire Below the Mountain: Vos sorts Fire coûtent 1 de moins. Ornn peut créer des Masterworks.',
+    stats: { might: 3, power: 4, energy: 4 },
+    techniques: [
+      'Fire Control: Utilisez des sorts Fire pour control.',
+      'Masterwork Value: Ornn crée des équipements puissants.',
+      'Late Game Power: Les Masterworks gagnent la partie.'
+    ],
+    combos: [
+      { cards: ['Ornn', 'Into the Fire'], effect: 'Removal + discount.' }
+    ],
+    decks: [{ name: 'Ornn Control', description: 'Fire control.', coreCards: ['Ornn', 'Into the Fire'], strategy: 'Fire & value.' }],
+    synergies: [{ cardName: 'Wildfire', synergy: 'Board clear.', priority: 'high' }],
+    matchups: [{ against: 'Kai\'Sa', outcome: 'neutral', tips: 'Bon matchup.' }],
+    tips: ['Les Masterworks sont clés.'],
+    counters: ['Aggro', 'Fast']
+  },
+
+  'SFD-208': { // Ezreal - Prodigal Explorer (already have SFD-064)
+    legendId: 'SFD-208',
+    isMeta: true,
+    overview: 'Ezreal Prodigal Explorer est le roi du contrôle réactif avec poke et card draw.',
+    ability: 'Prodigal Explorer: Quand Ezreal attaque, créez un Mana Bolt (1 damage).',
+    stats: { might: 3, power: 3, energy: 3 },
+    mulligan: 'Mystic Shot et Ezreal sont vos priorités.',
+    strategy: {
+      early: 'Survie et poke.',
+      mid: 'Piochez大量 avec Deep Meditation.',
+      late: 'Burst damage avec Mana Bolts.'
+    },
+    decks: [{ name: 'Ezreal Control', description: 'Poke & draw.', coreCards: ['Ezreal', 'Mystic Shot'], strategy: 'Ragtag & draw.' }],
+    synergies: [{ cardName: 'Deep Meditation', synergy: 'Card advantage.', priority: 'high' }],
+    matchups: [{ against: 'Draven', outcome: 'favorable', tips: 'Poke & survive.' }],
+    tips: ['Calculez vos runes.'],
+    counters: ['Aggro', 'Wide Board']
+  },
+
+  'SFD-209': { // Annie - Dark Child (use starter version)
+    legendId: 'OGS-17',
+    isMeta: true,
+    overview: 'Annie (Dark Child) est une légende Pyro avec des sorts Fire et burn damage.',
+    ability: 'Dark Child: À la fin de votre tour, ready 2 runes.Vos sorts Fire inflict burn.',
+    stats: { might: 3, power: 3, energy: 4 },
+    mulligan: 'Cherchez Incinerate et Pyro.',
+    strategy: {
+      early: 'Buildez vers Tibbers.',
+      mid: 'Burn damage avec spells.',
+      late: 'Finish avec Annie + Tibbers.'
+    },
+    decks: [{ name: 'Annie Pyro', description: 'Burn deck.', coreCards: ['Annie', 'Incinerate'], strategy: 'Burn & win.' }],
+    synergies: [{ cardName: 'Tibbers', synergy: 'Big threat.', priority: 'high' }],
+    matchups: [{ against: 'Kai\'Sa', outcome: 'favorable', tips: 'Burn vs control.' }],
+    tips: ['Annie+Tibbers est votre win condition.'],
+    counters: ['Heal', 'Control']
+  },
+
+  'SFD-210': { // Rek'Sai - Void Burrower
+    legendId: 'SFD-210',
+    isMeta: false,
+    overview: 'Rek\'Sai utilise la mécanique Burrow/Unburrow pour des attaques surprises.',
+    ability: 'Void Burrower: Vos unités peuvent Burrow (se cacher) et Unburrow (ressortir) pour des attaques.',
+    stats: { might: 4, power: 3, energy: 4 },
+    techniques: [
+      'Burrow Defense: Cachez vos unités pour éviter les attaques.',
+      'Unburrow Attack: Ressortez pour surprise damage.',
+      'Buried Value: Les unités cachées sont safety.'
+    ],
+    combos: [
+      { cards: ['Rek\'Sai', 'Burrow'], effect: 'Hide & strike.' }
+    ],
+    decks: [{ name: 'Rek\'Sai Tunnel', description: 'Burrow mechanics.', coreCards: ['Rek\'Sai', 'Burrow'], strategy: 'Hide & strike.' }],
+    synergies: [{ cardName: 'Unburrow', synergy: 'Surprise attack.', priority: 'high' }],
+    matchups: [{ against: 'Draven', outcome: 'unfavorable', tips: 'Trop aggressif.' }],
+    tips: ['Burrow est votre défense.'],
+    counters: ['Reveal', 'Aggro']
+  },
+
+  // --- ADDITIONAL LEGENDS ---
+
+  'OGN-001': { // Ahri - Nine-Tailed
+    legendId: 'OGN-255',
+    isMeta: false,
+    overview: 'Ahri Nine-Tailed Fox est une légende de contrôle tactique basée sur l\'affaiblissement.',
+    ability: 'Nine-Tailed Fox: Les ennemis attaquant vos Battlefields gagnent -1 Might ce tour.',
+    stats: { might: 3, power: 3, energy: 4 },
+    techniques: [
+      'Ghost Blocking: Rappelez un bloqueur après déclaration pour annuler.',
+      'Might Stacking: Utilisez des sorts de malus.',
+      'Domain Control: Forcez les combats sur vos BFs.'
+    ],
+    combos: [
+      { cards: ['Ahri', 'Charm', 'Mystic Shot'], effect: 'Force weak blocker or kill threat.' }
+    ],
+    decks: [{ name: 'Cunning Control', description: 'Board manipulation.', coreCards: ['Ahri', 'Retreat'], strategy: 'Recall & debuff.' }],
+    synergies: [{ cardName: 'Deny', synergy: 'Board protection.', priority: 'high' }],
+    matchups: [{ against: 'Draven', outcome: 'unfavorable', tips: 'Trop rapide.' }],
+    tips: ['Soyez patient, épuisez les ressources adverses.'],
+    counters: ['Aggro Rush', 'Untargetable']
+  },
+
+  'OGN-257': { // Lee Sin - Blind Monk
+    legendId: 'OGN-257',
+    isMeta: false,
+    overview: 'Blind Monk (Lee Sin) est une légende de buff et de mouvement.',
+    ability: 'Blind Monk: 1 Énergie + Exhauster: Buff une unité alliée (+1 Might).',
+    stats: { might: 3, power: 3, energy: 4 },
+    techniques: [
+      'Buff Stacking: Accumulez des buffs sur une unité.',
+      'Defensive Buff: Buff vos bloqueurs.',
+      'Offensive Push: Buff pour finish.'
+    ],
+    combos: [
+      { cards: ['Blind Monk', 'Dragon\'s Rage'], effect: 'Buff & finish.' }
+    ],
+    decks: [{ name: 'Lee Sin Buff', description: 'Buff master.', coreCards: ['Blind Monk', 'Wuju Style'], strategy: 'Buff & attack.' }],
+    synergies: [{ cardName: 'Wuju Style', synergy: 'Massive buff.', priority: 'high' }],
+    matchups: [{ against: 'Sivir', outcome: 'neutral', tips: 'Équilibre.' }],
+    tips: ['Stackez les buffs sur une unité.'],
+    counters: ['Removal', 'Board Clear']
+  },
+
+  'OGN-261': { // Leona - Radiant Dawn
+    legendId: 'OGN-261',
+    isMeta: false,
+    overview: 'Radiant Dawn (Leona) buff vos unités quand les ennemis sont étourdis.',
+    ability: 'Radiant Dawn: Quand un ennemi est étourdi, buff une unité alliée (+1 Might).',
+    stats: { might: 3, power: 4, energy: 4 },
+    techniques: [
+      'Stun Lock: Utilisez des sorts qui stun pour trigger les buffs.',
+      'Defensive Setup: Stall jusqu\'au stun.',
+      'Stun Chain: Multiples stun = multiples buffs.'
+    ],
+    combos: [
+      { cards: ['Radiant Dawn', 'Zenith Blade'], effect: 'Stun + buff.' }
+    ],
+    decks: [{ name: 'Leona Stun', description: 'Stun & buff.', coreCards: ['Radiant Dawn', 'Frostbite'], strategy: 'Stun for buffs.' }],
+    synergies: [{ cardName: 'Frostbite', synergy: 'Stun trigger.', priority: 'high' }],
+    matchups: [{ against: 'Annie', outcome: 'neutral', tips: 'Bon matchup.' }],
+    tips: ['Cherchez des stun pour maximize les buffs.'],
+    counters: ['No Stun Decks', 'Aggro']
+  },
+
+  'OGN-263': { // Teemo - Swift Scout
+    legendId: 'OGN-263',
+    isMeta: false,
+    overview: 'Teemo Swift Scout utilise des mushrooms et des cartes Hidden.',
+    ability: 'Swift Scout: Vous pouvez payer 1 Énergie au lieu d\'une rune Arc-en-ciel pour cacher une carte. 1 Énergie + Exhauster: Mettez un Teemo de votre zone champion ou du board dans votre main.',
+    stats: { might: 2, power: 2, energy: 3 },
+    techniques: [
+      'Mushroom Control: Placez des mushrooms stratégiques.',
+      'Hidden Value: Cachez des cartes importantes.',
+      'Teemo Recall: Récupérez Teemo pour reuse.'
+    ],
+    combos: [
+      { cards: ['Swift Scout', 'Mushroom'], effect: 'Mushroom control.' }
+    ],
+    decks: [{ name: 'Teemo Mushroom', description: 'Hidden & mushrooms.', coreCards: ['Swift Scout', 'Mushroom'], strategy: 'Hidden mechanics.' }],
+    synergies: [{ cardName: 'Guerrilla', synergy: 'Mushroom reveal.', priority: 'high' }],
+    matchups: [{ against: 'Azir', outcome: 'neutral', tips: 'Équilibre.' }],
+    tips: ['Les mushrooms controllent le movement.'],
+    counters: ['Reveal', 'Board Clear']
+  },
+
+  'OGN-265': { // Viktor - Herald of the Arcane
+    legendId: 'OGN-265',
+    isMeta: false,
+    overview: 'Viktor Herald of the Arcane génère des jetons Recruit et de la value.',
+    ability: 'Herald of the Arcane: 1 Énergie + Exhauster: Jouez un jeton Recruit 1 Might.',
+    stats: { might: 3, power: 3, energy: 4 },
+    techniques: [
+      'Token Generation: Spammez des jetons Recruit.',
+      'Value Over Time: Accumulez de la value.',
+      'Board Flooding: Inondez le board de jetons.'
+    ],
+    combos: [
+      { cards: ['Herald of the Arcane', 'Flash of Insight'], effect: 'Token + draw.' }
+    ],
+    decks: [{ name: 'Viktor Tokens', description: 'Token swarm.', coreCards: ['Herald of the Arcane', 'Recruit'], strategy: 'Token spam.' }],
+    synergies: [{ cardName: 'Research', synergy: 'Card draw.', priority: 'high' }],
+    matchups: [{ against: 'Jax', outcome: 'unfavorable', tips: 'Counter vs tokens.' }],
+    tips: ['Les jetons provides value.'],
+    counters: ['Mass Removal', 'Board Wipe']
+  },
+
+  'OGN-267': { // Kayn - Bounty Hunter
+    legendId: 'OGN-267',
+    isMeta: false,
+    overview: 'Bounty Hunter (Kayn) donne Ganking à vos unités pour des attaques cross-board.',
+    ability: 'Bounty Hunter: Exhauster: Donnez Ganking à une unité ce tour (peut move entre BFs).',
+    stats: { might: 3, power: 3, energy: 4 },
+    techniques: [
+      'Cross-BF Attacks: Utilisez Ganking pour attack sur plusieurs BFs.',
+      'Positioning: Bougez vos unités entre zones.',
+      'Hit & Run: Attack puis retreat.'
+    ],
+    combos: [
+      { cards: ['Bounty Hunter', 'Steel Tempest'], effect: 'Ganking strike.' }
+    ],
+    decks: [{ name: 'Kayn Gank', description: 'Ganking deck.', coreCards: ['Bounty Hunter', 'Blade Rush'], strategy: 'Move & strike.' }],
+    synergies: [{ cardName: 'Shunpo', synergy: 'Movement.', priority: 'high' }],
+    matchups: [{ against: 'Sivir', outcome: 'neutral', tips: 'Positioning battle.' }],
+    tips: ['Ganking permet des attaques surprised.'],
+    counters: ['Position Lock', 'Tank']
+  }
+};
+
+export function getLegendGuide(legendId: string): LegendGuide | null {
+  const id = legendId.toUpperCase();
+  // Check exact ID or OGN equivalent if applicable
+  const found = LEGEND_GUIDES[id];
+  if (found) return found;
+  
+  // Fallback for different sets of same legend if necessary
+  return null;
+}
+
+export function getAllLegendGuides(): LegendGuide[] {
+  return Object.values(LEGEND_GUIDES);
+}

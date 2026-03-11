@@ -1,0 +1,4223 @@
+{
+  "generatedAt": "2026-03-10T16:24:21.985Z",
+  "source": "https://riftdecks.com",
+  "totalEvents": 190,
+  "cnMajorCount": 151,
+  "selectedCount": 158,
+  "events": [
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/super-saturday-standard-challenge-rq-bologna-tournament-decks-5084",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/super-saturday-standard-challenge-rq-bologna-tournament-decks-5084",
+        "date": "2026-02-21",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Super Saturday Standard Challenge - RQ Bologna",
+        "organizer": "UVS Games",
+        "players": 508,
+        "countryCode": "US"
+      },
+      "details": {
+        "eventName": "Super Saturday Standard Challenge - RQ Bologna",
+        "organizer": "UVS Games",
+        "players": 508,
+        "date": "2026-02-21",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "country": ""
+      },
+      "decks": [
+        {
+          "rank": "2nd",
+          "deckName": "Miracle Sivir",
+          "player": "itsShippаi",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miracle-sivir-93262",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "3rd",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "Blue",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-92814",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Miracle ez",
+          "player": "Arthur Trehet",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miracle-ez-93507",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "mаciekkаz",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-92816",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Miracle Draven",
+          "player": "Tаlierrа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miracle-draven-93414",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Sivir, Battle Mistress",
+          "player": "CorrectHeаdshаpe",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sivir-battle-mistress-93344",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Fiora",
+          "player": "OniiiChän",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-fiora-93248",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Sivir, Battle Mistress",
+          "player": "mаcieksik",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sivir-battle-mistress-94425",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Rek´Sai",
+          "player": "Kυroh",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-reksai-93264",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Frаtml",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-94426",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Kaisa Control",
+          "player": "SаrgonVito8",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kaisa-control-94373",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Eros999",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-94428",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Fiora, Grand Duelist",
+          "player": "FernаnDello",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-fiora-grand-duelist-94429",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top512 3-4-0",
+          "deckName": "Fiora, Grand Duelist",
+          "player": "Giuliа S",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-fiora-grand-duelist-94239",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top512 3-4-0",
+          "deckName": "Kaisa Bologna d0dy",
+          "player": "Sven D",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kaisa-bologna-d0dy-94253",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/riftbound-regional-qualifier-bologna-tournament-decks-5049",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/riftbound-regional-qualifier-bologna-tournament-decks-5049",
+        "date": "2026-02-21",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Riftbound Regional Qualifier - Bologna",
+        "organizer": "UVS Games",
+        "players": 1719,
+        "countryCode": "IT"
+      },
+      "details": {
+        "eventName": "Riftbound Regional Qualifier - Bologna",
+        "organizer": "UVS Games",
+        "players": 1719,
+        "date": "2/21/26",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "country": "Italy"
+      },
+      "decks": [
+        {
+          "rank": "1st",
+          "deckName": "Ezreal, Prodigal Explorer",
+          "player": "Alаnzq1",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ezreal-prodigal-explorer-92125",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "2nd",
+          "deckName": "Miss Fortune, Bounty Hunter",
+          "player": "Sebiqqqqqqqqqqqq",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miss-fortune-bounty-hunter-92124",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "3rd",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "krowz",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-92192",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top4",
+          "deckName": "Viktor, Herald of the Arcane",
+          "player": "Ghosterdriver",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-viktor-herald-of-the-arcane-92200",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Prismаticism",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-92430",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Rаndyyy",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-92242",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "M4rcus99",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-92202",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Ezreal, Prodigal Explorer",
+          "player": "TheMаnLаndRft",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ezreal-prodigal-explorer-92201",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "fisicа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-93247",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Sivir, Battle Mistress",
+          "player": "xTаcio",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sivir-battle-mistress-92120",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Sivir, Battle Mistress",
+          "player": "NoVeggies",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sivir-battle-mistress-92231",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Master Yi, Wuju Bladesman",
+          "player": "wojtek",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-master-yi-wuju-bladesman-92435",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Szychu",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-92457",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Lucian, Purifier",
+          "player": "Lorenzo Di Colа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-lucian-purifier-92198",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Kai'sa",
+          "player": "Zoklа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-92210",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Ezreal, Prodigal Explorer",
+          "player": "TXCSquirtle",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ezreal-prodigal-explorer-92554",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Jax, Grandmaster at Arms",
+          "player": "Lucа De Angelis",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-jax-grandmaster-at-arms-92237",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "JorgeMN",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-92238",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Annie, Dark Child",
+          "player": "COPE Anªrchy",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-annie-dark-child-92203",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Volibear, Relentless Storm",
+          "player": "Juаnfrа Mаteo",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-volibear-relentless-storm-92798",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Miracle Draven",
+          "player": "Riftbound Plus",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miracle-draven-95407",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Draven mid",
+          "player": "Mohаmmed аlsаbаh",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-mid-92563",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Jax, Grandmaster at Arms",
+          "player": "Bubo",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-jax-grandmaster-at-arms-93245",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Jinx, Loose Cannon",
+          "player": "Viktor Penelski",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-jinx-loose-cannon-92129",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "RobLucci",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-92524",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Viktor, Herald of the Arcane",
+          "player": "Mаnukokа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-viktor-herald-of-the-arcane-92786",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Jinx, Loose Cannon",
+          "player": "Dаniel Zidenberg",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-jinx-loose-cannon-92241",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "Ricemаster",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-92196",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Ahri, Nine-Tailed Fox",
+          "player": "Blunder",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ahri-nine-tailed-fox-93243",
+          "domains": [
+            "calm",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Collin kаiser",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-92240",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Best of Azir Bologna",
+          "player": "Rocklho",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-best-of-azir-bologna-92553",
+          "domains": [
+            "calm",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Ezreal, Prodigal Explorer",
+          "player": "Kubаkulp",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ezreal-prodigal-explorer-92209",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Fiora, Grand Duelist",
+          "player": "Vendorty",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-fiora-grand-duelist-92126",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "CC Prymor",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-92447",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "KingLouie",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-92516",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "mаciekkаz",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-92815",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "MeeL0rd",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94430",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Teemo, Swift Scout",
+          "player": "Specimen",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-teemo-swift-scout-92121",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Draven",
+          "player": "Soey",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-93232",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Akаlj",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-92436",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Teemo, Swift Scout",
+          "player": "qUаBаTcHiE",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-teemo-swift-scout-92508",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Agazapado Midracle",
+          "player": "Agаzаpаdo",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-agazapado-midracle-92549",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "dTitаn",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-92454",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Yasuo, Unforgiven",
+          "player": "Luigi Amаto",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-yasuo-unforgiven-92787",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Rumble, Mechanized Menace",
+          "player": "Nаcho Gonzаlez",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-rumble-mechanized-menace-92431",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Ahri, Nine-Tailed Fox",
+          "player": "Dаmkаlloh",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ahri-nine-tailed-fox-92762",
+          "domains": [
+            "calm",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Sett, The Boss",
+          "player": "NLV Tomino",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sett-the-boss-93242",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Mаtteo Listа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-92770",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Best of Rek'Sai",
+          "player": "Bulаt",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-best-of-rek-sai-92526",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Best of Lux",
+          "player": "Ochmаn",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-best-of-lux-92556",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Isu",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-92213",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Mаrco Del Pivo",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-92572",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Darius, Hand of Noxus",
+          "player": "Asefron29",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-darius-hand-of-noxus-93241",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Pаpelito",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-94432",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Jinx, Loose Cannon by Preyit",
+          "player": "Preyit**](https://riftdecks.com/riftbound-metagame/deck-jinx-loose-cannon-by-preyit-92507) by Preyit",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-jinx-loose-cannon-by-preyit-92507",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Tаlion",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-92243",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Sett",
+          "player": "Yooric",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sett-92461",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Kivvi",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-92527",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Second Best Darius",
+          "player": "Indy",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-second-best-darius-92573",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Sivir, Battle Mistress",
+          "player": "MаskOfMomentum",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sivir-battle-mistress-92346",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Fiora, Grand Duelist",
+          "player": "cekmаrа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-fiora-grand-duelist-92226",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top256 8-5-0",
+          "deckName": "New Deck 2026-01-04",
+          "player": "Mаtteo Longhin",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-new-deck-2026-01-04-94146",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Lee Sin, Blind Monk",
+          "player": "Boxingringxd",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-lee-sin-blind-monk-93240",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "Ricochet",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-92415",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/pre-regional-challenge-rq-bologna-tournament-decks-5068",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/pre-regional-challenge-rq-bologna-tournament-decks-5068",
+        "date": "2026-02-20",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Pre-Regional Challenge - RQ Bologna",
+        "organizer": "UVS Games",
+        "players": 858,
+        "countryCode": "IT"
+      },
+      "details": {
+        "eventName": "Pre-Regional Challenge - RQ Bologna",
+        "organizer": "UVS Games",
+        "players": 858,
+        "date": "2026-02-20",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "country": ""
+      },
+      "decks": [
+        {
+          "rank": "1st",
+          "deckName": "Ezreal, Prodigal Explorer",
+          "player": "TheMаnLаndRft",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ezreal-prodigal-explorer-92417",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Draven",
+          "player": "Kаki",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-92448",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Szychu",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-92458",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "mаciekkаz",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-92817",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Viktor, Herald of the Arcane",
+          "player": "tаmbo91",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-viktor-herald-of-the-arcane-94435",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top512 4-2-0",
+          "deckName": "New Deck 2026-02-19",
+          "player": "Gustаw K",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-new-deck-2026-02-19-94227",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top512 3-3-0",
+          "deckName": "MeeL0rd's Draven SFD v21",
+          "player": "Miłosz M",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-meel0rd-s-draven-sfd-v21-94217",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top512 3-3-0",
+          "deckName": "Door Dash Yi",
+          "player": "Michаł G",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-door-dash-yi-94221",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Other 1-5-0",
+          "deckName": "Ez rat b",
+          "player": "Dаrius G",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ez-rat-b-94238",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Other 2-3-0",
+          "deckName": "Immor'Sai",
+          "player": "Axel S",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-immor-sai-94223",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Other 0-3-0",
+          "deckName": "New Deck 2026-01-04",
+          "player": "Mаtteo L",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-new-deck-2026-01-04-94145",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/runes-league-winter-league-bologna-tournament-decks-2128",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/runes-league-winter-league-bologna-tournament-decks-2128",
+        "date": "2026-01-10",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Runes League - Winter League Bologna",
+        "organizer": "RunesLeague / ManaTrust",
+        "players": 339,
+        "countryCode": "IT"
+      },
+      "details": {
+        "eventName": "Runes League - Winter League Bologna",
+        "organizer": "RunesLeague / ManaTrust",
+        "players": 339,
+        "date": "1/10/26",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "country": "Italy"
+      },
+      "decks": [
+        {
+          "rank": "1st",
+          "deckName": "Miracle Draven",
+          "player": "Giаnlucа Di Clemente",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miracle-draven-52790",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "2nd",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "G. Zorzi",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-52841",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top4",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "E. Fаlco",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-52839",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top4",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "P. Gesuаldi",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-52840",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "S Negri",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-52833",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Master Yi, Wuju Bladesman",
+          "player": "A Dellа Guаrdiа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-master-yi-wuju-bladesman-52835",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "K. Gаwаsmeh",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-52837",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Viktor, Herald of the Arcane",
+          "player": "D. Ferrаno",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-viktor-herald-of-the-arcane-52838",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Draven Combo",
+          "player": "Gаetаno Pippа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-combo-52789",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Teemo, Swift Scout",
+          "player": "Mаrco Gregori",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-teemo-swift-scout-52793",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "L. Reboldi",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-52847",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Reksai, Void Burrower",
+          "player": "G. Moroselli",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-reksai-void-burrower-52846",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "M. Trescа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-52845",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "G. Brunoni",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-52844",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "F. Vuono",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-52843",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Reksai, Void Burrower",
+          "player": "M. Ficorilli",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-reksai-void-burrower-52842",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Darius, Hand of Noxus",
+          "player": "N. Zаne",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-darius-hand-of-noxus-56864",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top32",
+          "deckName": "Twice is Nice",
+          "player": "nimer",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-twice-is-nice-52792",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Bubo",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-52823",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Sivir, Battle Mistress",
+          "player": "M. Rustico",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sivir-battle-mistress-56865",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Master Yi, Wuju Bladesman",
+          "player": "robertobаlestri",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-master-yi-wuju-bladesman-52795",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Lucian, Purifier",
+          "player": "E. Merlin",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-lucian-purifier-56866",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Fiora SF",
+          "player": "tаsck",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-fiora-sf-52824",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Leona, Radiant Dawn",
+          "player": "thebiggek",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-leona-radiant-dawn-52794",
+          "domains": [
+            "calm",
+            "order"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/regional-rebound-rq-las-vegas-tournament-decks-5258",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/regional-rebound-rq-las-vegas-tournament-decks-5258",
+        "date": "2026-03-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Regional Rebound - RQ Las Vegas",
+        "organizer": "UVS Games",
+        "players": 420,
+        "countryCode": "US"
+      },
+      "details": {
+        "eventName": "Regional Rebound - RQ Las Vegas",
+        "organizer": "UVS Games",
+        "players": 420,
+        "date": "2026-03-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "country": ""
+      },
+      "decks": [
+        {
+          "rank": "Top32",
+          "deckName": "Vegas Rq",
+          "player": "ItsJustSquid",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-vegas-rq-94927",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top512 0-1-0",
+          "deckName": "Draven_MidrangeV1",
+          "player": "Vinh T",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-midrangev1-94263",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top512 1-0-0",
+          "deckName": "Azir",
+          "player": "Nicholаs K",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-azir-94278",
+          "domains": [
+            "calm",
+            "order"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/riftbound-regional-qualifier-las-vegas-final-standings-tournament-decks-5163",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/riftbound-regional-qualifier-las-vegas-final-standings-tournament-decks-5163",
+        "date": "2026-03-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Riftbound Regional Qualifier - Las Vegas - Final Standings",
+        "organizer": "UVS Games",
+        "players": 1670,
+        "countryCode": "US"
+      },
+      "details": {
+        "eventName": "Riftbound Regional Qualifier - Las Vegas - Final Standings",
+        "organizer": "UVS Games",
+        "players": 1670,
+        "date": "3/1/26",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "country": "United States"
+      },
+      "decks": [
+        {
+          "rank": "1st 15-1-1",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Sаmdshermаn",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94368",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "2nd 13-3-1",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "TTA",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94369",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "3rd 12-3-0",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Argаn",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94304",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top4 12-3-0",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Shizzle",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94297",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top8 11-2-1",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Prismаticismism",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94307",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top8 11-2-1",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "DeluxePhilCheeze",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-94391",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top8 11-2-1",
+          "deckName": "Jax, Grandmaster at Arms",
+          "player": "Theverybestgаmer",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-jax-grandmaster-at-arms-94367",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top8 11-3-0",
+          "deckName": "Ezreal, Prodigal Explorer",
+          "player": "Alаnzq1",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ezreal-prodigal-explorer-94094",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top16 11-2-0",
+          "deckName": "Sivir, Battle Mistress",
+          "player": "NoVeggies",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sivir-battle-mistress-95118",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top16 11-2-0",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Rаndyyy",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94366",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Kai'sa, Daughter of the Void",
+          "player": "аggresiа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-daughter-of-the-void-95160",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Miracle Draven",
+          "player": "Ryаn Ferries",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miracle-draven-94984",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top16 11-2-0",
+          "deckName": "Azir, Emperor of the Sands",
+          "player": "Rocklho",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-azir-emperor-of-the-sands-94418",
+          "domains": [
+            "calm",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top16",
+          "deckName": "Midrange Draven",
+          "player": "Hendy",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-midrange-draven-94445",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top16 11-2-0",
+          "deckName": "Best of Irelia",
+          "player": "Durаntulа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-best-of-irelia-94387",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top32 10-2-1",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Kааlor",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94100",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top32 10-2-1",
+          "deckName": "Viktor, Herald of the Arcane",
+          "player": "CustomDipped",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-viktor-herald-of-the-arcane-95117",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top32 10-2-1",
+          "deckName": "Viktor, Herald of the Arcane",
+          "player": "Dаnix",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-viktor-herald-of-the-arcane-94102",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top32 10-3-0",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "HD300",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-94107",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top32 10-3-0",
+          "deckName": "Master Yi, Wuju Bladesman",
+          "player": "Villionаire",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-master-yi-wuju-bladesman-94365",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top32 10-3-0",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Dаntаlius",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94308",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64 10-3-0",
+          "deckName": "Kai'Sa Last Hope",
+          "player": "CC Ricochet",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-kai-sa-last-hope-94370",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Jinx, Loose Cannon",
+          "player": "Eric",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-jinx-loose-cannon-95159",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Master Yi Wuju Bladesman",
+          "player": "Chicаs",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-master-yi-wuju-bladesman-94972",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top64 10-3-0",
+          "deckName": "Azir, Emperor of the Sands",
+          "player": "Strudei",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-azir-emperor-of-the-sands-94096",
+          "domains": [
+            "calm",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Reksai, Void Burrower",
+          "player": "Vouz",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-reksai-void-burrower-95158",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Miracle Draven",
+          "player": "RiftboundPlus",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miracle-draven-95409",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Ornn, Fire Below the Mountain",
+          "player": "lunаsky",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ornn-fire-below-the-mountain-95157",
+          "domains": [
+            "calm",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top64 10-3-0",
+          "deckName": "Best of Lucian",
+          "player": "DаemonXGG",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-best-of-lucian-95116",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64 9-2-2",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Awesumrosum",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94303",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Azir, Emperor of the Sands",
+          "player": "TritonTFT",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-azir-emperor-of-the-sands-97026",
+          "domains": [
+            "calm",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Teemo, Swift Scout",
+          "player": "FLY T1 LS",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-teemo-swift-scout-95156",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top128 9-3-1",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Willpulliаm",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94087",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Lux, Lady of Luminosity",
+          "player": "Vekx3r",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-lux-lady-of-luminosity-95155",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Annie, Dark Child",
+          "player": "Kenkou",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-annie-dark-child-95154",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Fiora, Grand Duelist",
+          "player": "his depression",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-fiora-grand-duelist-95153",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "Ahri, Nine-Tailed Fox",
+          "player": "Knightingаle",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ahri-nine-tailed-fox-94095",
+          "domains": [
+            "calm",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "Reksai, Void Burrower",
+          "player": "Rаqqoon",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-reksai-void-burrower-94296",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Lucian, Purifier",
+          "player": "Aаdesh",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-lucian-purifier-95165",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Volibear, Relentless Storm",
+          "player": "E3TCG",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-volibear-relentless-storm-95152",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "dragon volibear",
+          "player": "soLAGGYtodаy",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-dragon-volibear-94392",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "EZ Control",
+          "player": "Droptimаl",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ez-control-94325",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "Viktor, Herald of the Arcane",
+          "player": "Linsаnity",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-viktor-herald-of-the-arcane-94302",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Lucian, Purifier",
+          "player": "Shаdаwx",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-lucian-purifier-95412",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "Sivir",
+          "player": "ItsukiRB",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sivir-94283",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "Lux, Lady of Luminosity",
+          "player": "Grаpplr",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-lux-lady-of-luminosity-94300",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "Ezreal, Prodigal Explorer",
+          "player": "Aikаdo",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ezreal-prodigal-explorer-94093",
+          "domains": [
+            "chaos",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Darius, Hand of Noxus",
+          "player": "cаrryboy denni",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-darius-hand-of-noxus-95151",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "Azir, Emperor of the Sands",
+          "player": "DаnNoble",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-azir-emperor-of-the-sands-94388",
+          "domains": [
+            "calm",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Sett, The Boss (Battlefields Guessed)",
+          "player": "VictorLupin",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sett-the-boss-battlefields-guessed-94405",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128 9-4-0",
+          "deckName": "Ahri",
+          "player": "ShаdowWаsHere",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-ahri-94389",
+          "domains": [
+            "calm",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Sett",
+          "player": "ACAD Frodаn",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sett-94923",
+          "domains": [
+            "body",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top128 8-4-1",
+          "deckName": "Viktor, Herald of the Arcane",
+          "player": "Mаnten",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-viktor-herald-of-the-arcane-94109",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top256 8-4-1",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Mаth Doctor",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-94110",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Miss Fortune, Bounty Hunter",
+          "player": "Sly",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miss-fortune-bounty-hunter-95150",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top256 8-5-0",
+          "deckName": "Jax, Grandmaster at Arms",
+          "player": "Soup Fiestа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-jax-grandmaster-at-arms-94098",
+          "domains": [
+            "body",
+            "calm"
+          ]
+        },
+        {
+          "rank": "Top256 7-4-2",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "Aserenаtion",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-94104",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Phoenix Rek'sai",
+          "player": "Mykonos",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-phoenix-rek-sai-94900",
+          "domains": [
+            "fury",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Azir - Vegas RQ",
+          "player": "kooj",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-azir-vegas-rq-94996",
+          "domains": [
+            "calm",
+            "order"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Yasuo, Unforgiven",
+          "player": "GentleGiаnt",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-yasuo-unforgiven-95148",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top256 7-5-0",
+          "deckName": "Irelia, Blade Dancer",
+          "player": "TomDTCG",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-blade-dancer-94106",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top256 8-2-1",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "Armаndo",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94097",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Draven, Glorious Executioner",
+          "player": "CаptаinJаck",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-glorious-executioner-94398",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top256",
+          "deckName": "Lucian, Purifier",
+          "player": "MishNQ1",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-lucian-purifier-95585",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/pre-regional-challenge-rq-las-vegas-tournament-decks-5294",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/pre-regional-challenge-rq-las-vegas-tournament-decks-5294",
+        "date": "2026-02-27",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Pre-Regional Challenge - RQ Las Vegas",
+        "organizer": "UVS Games",
+        "players": 798,
+        "countryCode": "US"
+      },
+      "details": {
+        "eventName": "Pre-Regional Challenge - RQ Las Vegas",
+        "organizer": "UVS Games",
+        "players": 798,
+        "date": "2026-02-27",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "country": ""
+      },
+      "decks": [
+        {
+          "rank": "1st",
+          "deckName": "Poggers Kai'sa",
+          "player": "Dominick V",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-poggers-kai-sa-95685",
+          "domains": [
+            "fury",
+            "mind"
+          ]
+        },
+        {
+          "rank": "Top8",
+          "deckName": "Irelia",
+          "player": "Durаntulа",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-irelia-95473",
+          "domains": [
+            "calm",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top64",
+          "deckName": "Vegas Rq",
+          "player": "ItsJustSquid",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-vegas-rq-94924",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top128",
+          "deckName": "Lucian, Purifier",
+          "player": "Shаdаwx",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-lucian-purifier-95413",
+          "domains": [
+            "body",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top256 4-2-0",
+          "deckName": "Sivir",
+          "player": "Jeff C",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-sivir-94264",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Top512",
+          "deckName": "Draven Pre-RQ",
+          "player": "DаyVidWen",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-draven-pre-rq-95214",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Top512",
+          "deckName": "Annie, Dark Child",
+          "player": "Grаwlt",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-annie-dark-child-94859",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Other 2-3-0",
+          "deckName": "Viktor Gaming",
+          "player": "RJ S",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-viktor-gaming-94273",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        },
+        {
+          "rank": "Other 1-3-0",
+          "deckName": "Azir",
+          "player": "Nicholаs K",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-azir-94269",
+          "domains": [
+            "calm",
+            "order"
+          ]
+        },
+        {
+          "rank": "Other 1-3-0",
+          "deckName": "Miracle Jinx",
+          "player": "Wesley N",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-miracle-jinx-94270",
+          "domains": [
+            "chaos",
+            "fury"
+          ]
+        },
+        {
+          "rank": "Other 0-4-0",
+          "deckName": "Shorty",
+          "player": "Erick R",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-shorty-94266",
+          "domains": [
+            "body",
+            "chaos"
+          ]
+        },
+        {
+          "rank": "Other 0-3-0",
+          "deckName": "Renata Vegas",
+          "player": "Big B",
+          "deckUrl": "https://riftdecks.com/riftbound-metagame/deck-renata-vegas-94276",
+          "domains": [
+            "mind",
+            "order"
+          ]
+        }
+      ]
+    }
+  ],
+  "cnResults": [
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-5528",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-5528",
+        "date": "2026-03-08",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "黑喵卡游",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-dalian-city-challenge-tournament-decks-5526",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-dalian-city-challenge-tournament-decks-5526",
+        "date": "2026-03-08",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Dalian City Challenge",
+        "organizer": "等风来桌游部落",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-nanning-city-challenge-tournament-decks-5492",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-nanning-city-challenge-tournament-decks-5492",
+        "date": "2026-03-07",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Nanning City Challenge",
+        "organizer": "鹿见桌游",
+        "players": 106,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-shenyang-city-challenge-tournament-decks-5424",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-shenyang-city-challenge-tournament-decks-5424",
+        "date": "2026-03-07",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Shenyang City Challenge",
+        "organizer": "三个臭皮匠桌游吧",
+        "players": 67,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-foshan-city-challenge-tournament-decks-5420",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-foshan-city-challenge-tournament-decks-5420",
+        "date": "2026-03-07",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Foshan City Challenge",
+        "organizer": "五章潮玩",
+        "players": 96,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-suzhou-city-challenge-tournament-decks-5419",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-suzhou-city-challenge-tournament-decks-5419",
+        "date": "2026-03-07",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Suzhou City Challenge",
+        "organizer": "徐大王游戏屋",
+        "players": 115,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-wuhan-city-challenge-tournament-decks-5418",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-wuhan-city-challenge-tournament-decks-5418",
+        "date": "2026-03-07",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Wuhan City Challenge",
+        "organizer": "桌面工厂",
+        "players": 123,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-shanghai-city-challenge-tournament-decks-5407",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-shanghai-city-challenge-tournament-decks-5407",
+        "date": "2026-03-07",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Shanghai City Challenge",
+        "organizer": "CTC卡牌（百联店）",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-city-challenge-nanjing-bracket-a-tournament-decks-5088",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-city-challenge-nanjing-bracket-a-tournament-decks-5088",
+        "date": "2026-02-08",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 City Challenge Nanjing Bracket A",
+        "organizer": "阿卡丽的神秘商店",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-city-challenge-nanjing-bracket-b-tournament-decks-5087",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-city-challenge-nanjing-bracket-b-tournament-decks-5087",
+        "date": "2026-02-08",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 City Challenge Nanjing Bracket B",
+        "organizer": "阿卡丽的神秘商店",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-4861",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-4861",
+        "date": "2026-02-08",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Chengdu City Challenge",
+        "organizer": "赛高卡牌成都店",
+        "players": 90,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-4792",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-4792",
+        "date": "2026-02-07",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "ARBD艾瑞芭蒂（广州长隆店）",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-4730",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-4730",
+        "date": "2026-02-07",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "旋木时光昌平龙德广场店",
+        "players": 81,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-dalian-city-challenge-bracket-a-tournament-decks-4388",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-dalian-city-challenge-bracket-a-tournament-decks-4388",
+        "date": "2026-02-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Dalian City Challenge Bracket A",
+        "organizer": "阿卡丽的神秘商店",
+        "players": 122,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-dalian-city-challenge-bracket-b-tournament-decks-4387",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-dalian-city-challenge-bracket-b-tournament-decks-4387",
+        "date": "2026-02-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Dalian City Challenge Bracket B",
+        "organizer": "阿卡丽的神秘商店",
+        "players": 121,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-4301",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-4301",
+        "date": "2026-02-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "C+猫猫桌游",
+        "players": 102,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-4240",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-4240",
+        "date": "2026-01-31",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "卡次元动漫桌游",
+        "players": 123,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-4239",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-4239",
+        "date": "2026-01-31",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "叙叙亭",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-special-edition-bracket-a-tournament-decks-3425",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-special-edition-bracket-a-tournament-decks-3425",
+        "date": "2026-01-25",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Chengdu City Challenge Special Edition - Bracket A",
+        "organizer": "阿卡丽的神秘商店",
+        "players": 121,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-special-edition-bracket-b-tournament-decks-3424",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-special-edition-bracket-b-tournament-decks-3424",
+        "date": "2026-01-25",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Chengdu City Challenge Special Edition - Bracket B",
+        "organizer": "阿卡丽的神秘商店",
+        "players": 121,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-3866",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-3866",
+        "date": "2026-01-24",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "Sun潮卡牌潮玩桌游店",
+        "players": 105,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-3524",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-3524",
+        "date": "2026-01-24",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Hangzhou City Challenge",
+        "organizer": "华丽的蓝",
+        "players": 123,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-3522",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-3522",
+        "date": "2026-01-24",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "AuToWin爱淘玩",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-3521",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-3521",
+        "date": "2026-01-24",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "静电森林（方家胡同店）",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-bracket-a-tournament-decks-3283",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-bracket-a-tournament-decks-3283",
+        "date": "2026-01-18",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Fuzhou City Challenge - Bracket A",
+        "organizer": "阿卡丽的神秘商店",
+        "players": 104,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-bracket-b-tournament-decks-3282",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-bracket-b-tournament-decks-3282",
+        "date": "2026-01-18",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Fuzhou City Challenge - Bracket B",
+        "organizer": "阿卡丽的神秘商店",
+        "players": 123,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-3184",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-3184",
+        "date": "2026-01-18",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "CTC Club（宝山店）",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-3188",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-3188",
+        "date": "2026-01-17",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "新光界一番赏",
+        "players": 114,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/hefei-city-challenge-tournament-decks-2435",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/hefei-city-challenge-tournament-decks-2435",
+        "date": "2026-01-11",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Hefei City Challenge",
+        "organizer": "天轩卡牌桌游",
+        "players": 117,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-2434",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-2434",
+        "date": "2026-01-11",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "P9卡牌广州越秀店",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/wuxi-city-challenge-tournament-decks-2357",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/wuxi-city-challenge-tournament-decks-2357",
+        "date": "2026-01-10",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Wuxi City Challenge",
+        "organizer": "江阴澄宝卡牌",
+        "players": 110,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-2356",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-2356",
+        "date": "2026-01-10",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shenyang City Challenge",
+        "organizer": "口袋部落",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-2354",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-2354",
+        "date": "2026-01-10",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Tianjin City Challenge",
+        "organizer": "天津cardtime卡牌",
+        "players": 75,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/huizhou-city-challenge-tournament-decks-2353",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/huizhou-city-challenge-tournament-decks-2353",
+        "date": "2026-01-10",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Huizhou City Challenge",
+        "organizer": "异万世界（惠州店）",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/jinan-city-challenge-tournament-decks-2352",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/jinan-city-challenge-tournament-decks-2352",
+        "date": "2026-01-10",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Jinan City Challenge",
+        "organizer": "POPBEES碰头聚玩",
+        "players": 99,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/xi-an-city-challenge-tournament-decks-2351",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/xi-an-city-challenge-tournament-decks-2351",
+        "date": "2026-01-10",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Xi'an City Challenge",
+        "organizer": "果核TCG",
+        "players": 77,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-2349",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-2349",
+        "date": "2026-01-10",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Wuhan City Challenge",
+        "organizer": "ZSTAR卡牌",
+        "players": 115,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/harbin-city-challenge-tournament-decks-1650",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/harbin-city-challenge-tournament-decks-1650",
+        "date": "2026-01-03",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Harbin City Challenge",
+        "organizer": "达拉然桌游",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-1648",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-1648",
+        "date": "2026-01-03",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Nanjing City Challenge",
+        "organizer": "赛高卡牌（南京旗舰店）",
+        "players": 117,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/zhongshan-city-challenge-tournament-decks-1659",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/zhongshan-city-challenge-tournament-decks-1659",
+        "date": "2026-01-02",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Zhongshan City Challenge",
+        "organizer": "友间卡牌-电大店",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-1657",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-1657",
+        "date": "2026-01-02",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "小草卡牌社",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-tournament-decks-1606",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-tournament-decks-1606",
+        "date": "2026-01-02",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Fuzhou City Challenge",
+        "organizer": "晖宸卡牌",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/yantai-city-challenge-tournament-decks-1667",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/yantai-city-challenge-tournament-decks-1667",
+        "date": "2026-01-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Yantai City Challenge",
+        "organizer": "千风桌游·卡牌",
+        "players": 67,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-1535",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-1535",
+        "date": "2026-01-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "深圳P9卡牌",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-1534",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-1534",
+        "date": "2026-01-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "麻袋怪兽卡牌中心",
+        "players": 108,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-1382",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-1382",
+        "date": "2025-12-28",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "广州市越秀区狂狂卡牌桌游室",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-1380",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-1380",
+        "date": "2025-12-28",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Nanjing City Challenge",
+        "organizer": "百可梦卡牌俱乐部",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-1419",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-1419",
+        "date": "2025-12-27",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Wuhan City Challenge",
+        "organizer": "云符卡牌",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shangai-city-challenge-tournament-decks-1400",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shangai-city-challenge-tournament-decks-1400",
+        "date": "2025-12-27",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shangai City Challenge",
+        "organizer": "Jin伊卫动漫模玩",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-tournament-decks-1399",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-tournament-decks-1399",
+        "date": "2025-12-27",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Chongqing City Challenge",
+        "organizer": "重庆超牌TOPDECK",
+        "players": 84,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-tournament-decks-1397",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-tournament-decks-1397",
+        "date": "2025-12-27",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Fuzhou City Challenge",
+        "organizer": "StepTcg一步卡牌",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-1396",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-1396",
+        "date": "2025-12-27",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "闪电家卡牌潮玩",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-1302",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-1302",
+        "date": "2025-12-21",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "呆呆龙卡牌",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/jinan-city-challenge-tournament-decks-1284",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/jinan-city-challenge-tournament-decks-1284",
+        "date": "2025-12-21",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Jinan City Challenge",
+        "organizer": "济南纸糖喵次元馆",
+        "players": 84,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-1283",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-1283",
+        "date": "2025-12-21",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shenyang City Challenge",
+        "organizer": "泽塔潮玩",
+        "players": 112,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/suzhou-city-challenge-tournament-decks-1280",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/suzhou-city-challenge-tournament-decks-1280",
+        "date": "2025-12-21",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Suzhou City Challenge",
+        "organizer": "卓卡潮品(相城龙湖店)",
+        "players": 125,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-1279",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-1279",
+        "date": "2025-12-21",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "Gambit桌面社交空间",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-1291",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-1291",
+        "date": "2025-12-20",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "老潇卡牌",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-1290",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-1290",
+        "date": "2025-12-20",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Hangzhou City Challenge",
+        "organizer": "火星工厂卡牌俱乐部",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-1235",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-1235",
+        "date": "2025-12-20",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Tianjin City Challenge",
+        "organizer": "精锐牌谷",
+        "players": 106,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-1234",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-1234",
+        "date": "2025-12-20",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "启航卡牌",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-1233",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-1233",
+        "date": "2025-12-20",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "Chengdu City Challenge",
+        "organizer": "星游卡牌·西宸天街店",
+        "players": 123,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-550",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-550",
+        "date": "2025-11-30",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 82,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-549",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-549",
+        "date": "2025-11-30",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 83,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-528",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-528",
+        "date": "2025-11-29",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Nanjing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 81,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-437",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-437",
+        "date": "2025-11-23",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-446",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-446",
+        "date": "2025-11-22",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 96,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-377",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-377",
+        "date": "2025-11-16",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 114,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-376",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-376",
+        "date": "2025-11-16",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 78,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/changchun-city-challenge-tournament-decks-369",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/changchun-city-challenge-tournament-decks-369",
+        "date": "2025-11-16",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Changchun City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-361",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-361",
+        "date": "2025-11-15",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 78,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-360",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-360",
+        "date": "2025-11-15",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chengdu City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 67,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-359",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-359",
+        "date": "2025-11-15",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Wuhan City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 89,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-356",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-356",
+        "date": "2025-11-15",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-160",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-160",
+        "date": "2025-11-09",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 122,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/jinan-city-challenge-tournament-decks-159",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/jinan-city-challenge-tournament-decks-159",
+        "date": "2025-11-09",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Jinan City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 79,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-142",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-142",
+        "date": "2025-11-09",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Tianjin City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-141",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-141",
+        "date": "2025-11-09",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chengdu City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-172",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-172",
+        "date": "2025-11-08",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/nanny-city-challenge-tournament-decks-170",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/nanny-city-challenge-tournament-decks-170",
+        "date": "2025-11-08",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Nanny City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 86,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/xi-an-city-challenge-tournament-decks-167",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/xi-an-city-challenge-tournament-decks-167",
+        "date": "2025-11-08",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Xi’an City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/city-challenge-national-open-division-a-tournament-decks-189",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/city-challenge-national-open-division-a-tournament-decks-189",
+        "date": "2025-11-02",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "City Challenge: National Open Division A",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 119,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/city-challenge-national-open-division-b-tournament-decks-187",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/city-challenge-national-open-division-b-tournament-decks-187",
+        "date": "2025-11-02",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "City Challenge: National Open Division B",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 116,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/city-challenge-national-open-division-c-tournament-decks-186",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/city-challenge-national-open-division-c-tournament-decks-186",
+        "date": "2025-11-02",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "City Challenge: National Open Division C",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 121,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/city-challenge-national-open-division-d-tournament-decks-185",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/city-challenge-national-open-division-d-tournament-decks-185",
+        "date": "2025-11-02",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "City Challenge: National Open Division D",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 110,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-301",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-301",
+        "date": "2025-10-26",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shenyang City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 82,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/qingdao-city-challenge-tournament-decks-299",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/qingdao-city-challenge-tournament-decks-299",
+        "date": "2025-10-26",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Qingdao City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 101,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-297",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-297",
+        "date": "2025-10-26",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/suzhou-city-challenge-tournament-decks-296",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/suzhou-city-challenge-tournament-decks-296",
+        "date": "2025-10-26",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Suzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 72,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-295",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-295",
+        "date": "2025-10-26",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Nanjing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 65,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-tournament-decks-293",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-tournament-decks-293",
+        "date": "2025-10-26",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Fuzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 116,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-292",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-292",
+        "date": "2025-10-26",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chengdu City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 101,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-291",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-291",
+        "date": "2025-10-26",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 76,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-324",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-324",
+        "date": "2025-10-25",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shenyang City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 81,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/zhengzhou-city-challenge-tournament-decks-323",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/zhengzhou-city-challenge-tournament-decks-323",
+        "date": "2025-10-25",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Zhengzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-322",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-322",
+        "date": "2025-10-25",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Hangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 75,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-tournament-decks-321",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-tournament-decks-321",
+        "date": "2025-10-25",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chongqing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 64,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-319",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-319",
+        "date": "2025-10-25",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 108,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-318",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-318",
+        "date": "2025-10-25",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 116,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-316",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-316",
+        "date": "2025-10-25",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 106,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-314",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-314",
+        "date": "2025-10-25",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Wuhan City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 90,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/foshan-city-challenge-tournament-decks-555",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/foshan-city-challenge-tournament-decks-555",
+        "date": "2025-10-19",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Foshan City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 102,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/xiamen-city-challenge-tournament-decks-554",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/xiamen-city-challenge-tournament-decks-554",
+        "date": "2025-10-19",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Xiamen City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 100,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-560",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-560",
+        "date": "2025-10-18",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 126,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-558",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-558",
+        "date": "2025-10-18",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Hangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 100,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-557",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-557",
+        "date": "2025-10-18",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 114,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-556",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-556",
+        "date": "2025-10-18",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-569",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-569",
+        "date": "2025-10-12",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-568",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/nanjing-city-challenge-tournament-decks-568",
+        "date": "2025-10-12",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Nanjing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-567",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-567",
+        "date": "2025-10-12",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-566",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenyang-city-challenge-tournament-decks-566",
+        "date": "2025-10-12",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shenyang City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-565",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/wuhan-city-challenge-tournament-decks-565",
+        "date": "2025-10-12",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Wuhan City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-564",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-564",
+        "date": "2025-10-12",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-563",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-563",
+        "date": "2025-10-12",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Tianjin City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 108,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-562",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chengdu-city-challenge-tournament-decks-562",
+        "date": "2025-10-12",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chengdu City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-561",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-561",
+        "date": "2025-10-12",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-575",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-575",
+        "date": "2025-10-07",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-574",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-574",
+        "date": "2025-10-07",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-573",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-tournament-decks-573",
+        "date": "2025-10-07",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Hangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/changsha-city-challenge-tournament-decks-572",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/changsha-city-challenge-tournament-decks-572",
+        "date": "2025-10-07",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Changsha City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 85,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/suzhou-city-challenge-tournament-decks-570",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/suzhou-city-challenge-tournament-decks-570",
+        "date": "2025-10-07",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Suzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 112,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-578",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-578",
+        "date": "2025-10-06",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-tournament-decks-577",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-tournament-decks-577",
+        "date": "2025-10-06",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chongqing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 101,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-576",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-576",
+        "date": "2025-10-06",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-tournament-decks-584",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/fuzhou-city-challenge-tournament-decks-584",
+        "date": "2025-09-27",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Fuzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-583",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shenzhen-city-challenge-tournament-decks-583",
+        "date": "2025-09-27",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shenzhen City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-582",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/shanghai-city-challenge-tournament-decks-582",
+        "date": "2025-09-27",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Shanghai City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-581",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-tournament-decks-581",
+        "date": "2025-09-27",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-580",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/tianjin-city-challenge-tournament-decks-580",
+        "date": "2025-09-27",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Tianjin City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 104,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-579",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-city-challenge-tournament-decks-579",
+        "date": "2025-09-27",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Guangzhou City Challenge",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 128,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-limited-a-tournament-decks-586",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-limited-a-tournament-decks-586",
+        "date": "2025-09-14",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Hangzhou City Challenge Limited A",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 124,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-limited-b-tournament-decks-585",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/hangzhou-city-challenge-limited-b-tournament-decks-585",
+        "date": "2025-09-14",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Hangzhou City Challenge Limited B",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 122,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-limited-tournament-decks-588",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-limited-tournament-decks-588",
+        "date": "2025-09-07",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chongqing City Challenge Limited",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 115,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-limited-tournament-decks-587",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chongqing-city-challenge-limited-tournament-decks-587",
+        "date": "2025-09-07",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chongqing City Challenge Limited",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 124,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-a-tournament-decks-590",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-a-tournament-decks-590",
+        "date": "2025-08-31",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge A",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 125,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-b-tournament-decks-589",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-city-challenge-b-tournament-decks-589",
+        "date": "2025-08-31",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing City Challenge B",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 124,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/city-challenge-limited-a-tournament-decks-592",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/city-challenge-limited-a-tournament-decks-592",
+        "date": "2025-08-24",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "City Challenge Limited A",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 126,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/city-challenge-limited-b-tournament-decks-591",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/city-challenge-limited-b-tournament-decks-591",
+        "date": "2025-08-24",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "City Challenge Limited B",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 123,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-regional-open-nanjing-tournament-decks-4866",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-regional-open-nanjing-tournament-decks-4866",
+        "date": "2026-02-08",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Regional Open - Nanjing",
+        "organizer": "第二赛季区域公开赛",
+        "players": 508,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-regional-open-dalian-tournament-decks-4243",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-regional-open-dalian-tournament-decks-4243",
+        "date": "2026-02-01",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Regional Open - Dalian",
+        "organizer": "第二赛季区域公开赛",
+        "players": 510,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-regional-open-chengdu-tournament-decks-3523",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-regional-open-chengdu-tournament-decks-3523",
+        "date": "2026-01-25",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Regional Open Chengdu",
+        "organizer": "第二赛季区域公开赛",
+        "players": 512,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/s2-regional-open-fuzhou-tournament-decks-2859",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/s2-regional-open-fuzhou-tournament-decks-2859",
+        "date": "2026-01-18",
+        "meta": "Spiritforged",
+        "format": "Constructed",
+        "name": "S2 Regional Open - Fuzhou",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 511,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/hangzhou-regional-open-tournament-decks-81",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/hangzhou-regional-open-tournament-decks-81",
+        "date": "2025-09-14",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Hangzhou Regional Open",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 510,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chongqing-regional-open-tournament-decks-85",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chongqing-regional-open-tournament-decks-85",
+        "date": "2025-09-07",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chongqing Regional Open",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 507,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/chongqing-regional-open-tournament-decks-34",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/chongqing-regional-open-tournament-decks-34",
+        "date": "2025-09-07",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Chongqing Regional Open",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 512,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-regional-open-tournament-decks-89",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-regional-open-tournament-decks-89",
+        "date": "2025-08-31",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing Regional Open",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 509,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/season-1-regional-open-beijing-division-tournament-decks-330",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/season-1-regional-open-beijing-division-tournament-decks-330",
+        "date": "2025-08-30",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Season 1 - Regional Open - Beijing Division",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 509,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/beijing-regional-open-tournament-decks-7",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/beijing-regional-open-tournament-decks-7",
+        "date": "2025-08-30",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Beijing Regional Open",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 512,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-regional-open-tournament-decks-90",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-regional-open-tournament-decks-90",
+        "date": "2025-08-24",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Guangzhou Regional Open",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 506,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/season-1-regional-open-guangzhou-division-tournament-decks-331",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/season-1-regional-open-guangzhou-division-tournament-decks-331",
+        "date": "2025-08-23",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Season 1 - Regional Open - Guangzhou Division",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 506,
+        "countryCode": "CN"
+      },
+      "winner": null
+    },
+    {
+      "sourceUrl": "https://riftdecks.com/riftbound-tournaments/guangzhou-regional-open-tournament-decks-8",
+      "index": {
+        "url": "https://riftdecks.com/riftbound-tournaments/guangzhou-regional-open-tournament-decks-8",
+        "date": "2025-08-23",
+        "meta": "Origins",
+        "format": "Constructed",
+        "name": "Guangzhou Regional Open",
+        "organizer": "Riot Games / Shining Soul",
+        "players": 512,
+        "countryCode": "CN"
+      },
+      "winner": null
+    }
+  ]
+}
