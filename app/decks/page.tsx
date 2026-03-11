@@ -551,13 +551,13 @@ export default function DeckLibraryPage() {
               <select
                 value={filterTier}
                 onChange={(e) => setFilterTier(e.target.value)}
-                className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-xs font-bold text-white focus:outline-none uppercase tracking-wider appearance-none cursor-pointer min-w-[80px]"
+                className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white focus:outline-none uppercase tracking-wider appearance-none cursor-pointer min-w-[90px]"
               >
-                <option value="all" className="bg-rift-dark">Tier</option>
-                <option value="S" className="bg-rift-dark">S</option>
-                <option value="A" className="bg-rift-dark">A</option>
-                <option value="B" className="bg-rift-dark">B</option>
-                <option value="C" className="bg-rift-dark">C</option>
+                <option value="all" className="bg-rift-dark text-white">Tier</option>
+                <option value="S" className="bg-rift-dark text-white">S</option>
+                <option value="A" className="bg-rift-dark text-white">A</option>
+                <option value="B" className="bg-rift-dark text-white">B</option>
+                <option value="C" className="bg-rift-dark text-white">C</option>
               </select>
               <input
                 type="number"
@@ -610,13 +610,13 @@ export default function DeckLibraryPage() {
               <select
                 value={filterTier}
                 onChange={(e) => setFilterTier(e.target.value)}
-                className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-xs font-bold text-white focus:outline-none uppercase tracking-wider appearance-none cursor-pointer min-w-[80px]"
+                className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white focus:outline-none uppercase tracking-wider appearance-none cursor-pointer min-w-[90px]"
               >
-                <option value="all" className="bg-rift-dark">Tier</option>
-                <option value="S" className="bg-rift-dark">S</option>
-                <option value="A" className="bg-rift-dark">A</option>
-                <option value="B" className="bg-rift-dark">B</option>
-                <option value="C" className="bg-rift-dark">C</option>
+                <option value="all" className="bg-rift-dark text-white">Tier</option>
+                <option value="S" className="bg-rift-dark text-white">S</option>
+                <option value="A" className="bg-rift-dark text-white">A</option>
+                <option value="B" className="bg-rift-dark text-white">B</option>
+                <option value="C" className="bg-rift-dark text-white">C</option>
               </select>
               <input
                 type="number"

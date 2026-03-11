@@ -119,22 +119,8 @@ export default async function LegendDetailPage({ params }: Props) {
             </div>
 
             <h1 className="text-6xl md:text-8xl font-black mb-8 uppercase tracking-tighter leading-none italic">
-              {transformedCard.name}
+              {transformedCard.name.split(',')[0].trim()}
             </h1>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-3 gap-6 mb-16 max-w-lg">
-              {[
-                { label: 'Might', val: transformedCard.might || guide?.stats.might, color: 'text-red-500' },
-                { label: 'Power', val: transformedCard.power || guide?.stats.power, color: 'text-blue-500' },
-                { label: 'Energy', val: transformedCard.energy || guide?.stats.energy, color: 'text-rift-gold' }
-              ].map(s => (
-                <div key={s.label} className="p-8 rounded-[32px] bg-white/5 border border-white/5 text-center backdrop-blur-sm">
-                  <div className={`text-4xl font-black mb-1 ${s.color}`}>{s.val || 0}</div>
-                  <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest">{s.label}</div>
-                </div>
-              ))}
-            </div>
 
             {/* Ability Block */}
             <div className="bg-white/5 border border-white/10 rounded-[48px] p-12 mb-16 relative overflow-hidden group">
