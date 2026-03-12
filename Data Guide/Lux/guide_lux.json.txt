@@ -1,0 +1,1268 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Lux complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte decembre 2025 a mars 2026 pour suivre l'evolution des shells Lux",
+    "methodology": {
+      "approach": [
+        "Croisement du guide Lux recent et des tier lists post-Chinese Regionals, post-Bologna et post-Vegas",
+        "Croisement des decklists officielles Houston, Bologna et Vegas",
+        "Croisement de Mobalytics et de plusieurs discussions communautaires sur Lux control, Lux anti-meta, Lux contre Draven/Irelia/Kai'Sa/Viktor/Azir et les variantes combo",
+        "Accent mis sur le pilotage expert, la logique des shells et la structure des matchups plutot que sur la seule place du deck dans les tier lists"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + decklist officielle et/ou retour matchup explicite",
+        "medium": "Consensus raisonnable mais sensible au shell, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "lux_meta_position": {
+      "riftbound_gg_global_release_post_chinese_regionals": {
+        "tier": "Tier 3",
+        "notes": "Lux est rangee avec Master Yi parmi les legends qui jouent surtout une version amelioree de leur squelette Origins sans enorme deviation"
+      },
+      "riftbound_gg_post_bologna": {
+        "tier": "Tier 4",
+        "metrics": {
+          "total_picks": 34,
+          "day2_conversion_percent": 6,
+          "winrate_percent": 44.5,
+          "best_finish": "Top 128"
+        },
+        "notes": "Le site considere que Lux a rate la transition occidentale a Bologna"
+      },
+      "riftbound_gg_post_vegas": {
+        "tier": "Tier 4",
+        "metrics": {
+          "total_picks": 79,
+          "day2_conversion_percent": 6.3,
+          "winrate_percent": 44,
+          "best_finish": "Two Top 128"
+        },
+        "notes": "Le metagame miracle/wide est juge tres hostile a une legende control lourde comme Lux"
+      },
+      "mobalytics_march_2026": {
+        "tier": "B-Tier",
+        "notes": "Lux partage un shell tres proche de Viktor, mais en echange du recruit automatique de Viktor elle gagne un draw engine integre alimente par les gros sorts"
+      },
+      "major_recent_results": [
+        "Houston best-of Lux #167 overall, shell recruit-control plus origins",
+        "Bologna best-of Lux #104 overall, shell spell-control recruit avec Lux, Crownguard",
+        "Vegas best-of Lux #67 overall, shell quasi identique a Bologna avec Jayce +1 et Salvage -1"
+      ],
+      "overall_read": "Lux n'est pas un deck de volume dominant en mars 2026. En revanche, elle a un vrai shell control stabilise, une identite claire, et plusieurs branches jouables: le shell Spiritforged spell-control recruit, un shell starter/control plus ancienne generation, et une branche combo energie/time-warp plus niche. Sa vraie force depend surtout de la qualite du pilotage contre les decks qui mettent beaucoup d'unites en jeu tres vite."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et les structures de deck plutot qu'un simple jugement meta."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Lux, Lady of Luminosity",
+    "domains": [
+      "Mind",
+      "Order"
+    ],
+    "macro_identity": {
+      "archetype_family": "Tap-out control / spell-control recruit / energy-combo control",
+      "primary_gameplan": "Lancer des sorts chers pour controler la table, convertir ces sorts en cartes via la legende, puis transformer les fronts vides en points grace aux recruits ou a Vanguard Armory.",
+      "secondary_gameplan": "Selon le shell: soit jouer la version Spiritforged spell-control recruit autour de Bellows Breath, Imperial Decree, Drag Under, Singularity, Jayce et Vanguard Armory, soit jouer une version plus ancienne recruit-control avec davantage de petites unites et Final Spark, soit jouer une version combo/OTK qui abuse de Lux, Crownguard, Heimerdinger et Time Warp.",
+      "why_the_legend_is_strong": [
+        "Lux donne un vrai draw engine integre des qu'on joue des sorts chers",
+        "Le deck peut retirer des unites sans passer par le combat, ce qui attaque tres bien les decks fondes sur les tricks ou les equipments",
+        "Le package Mind/Order offre certains des meilleurs removals du format",
+        "Vanguard Armory et les recruits donnent a Lux une facon crediblement inevitabile de scorer apres avoir vide les battlefields"
+      ],
+      "why_the_legend_is_hard": [
+        "Le deck joue souvent derriere sur le scoreboard avant de reprendre la table",
+        "Il faut choisir tres finement quelles unites retirer et quand le faire",
+        "Le deck souffre fortement contre certaines largeurs de board si les mauvais sorts sont pioches dans le mauvais ordre",
+        "Perdre le tempo avec Lux est tres difficile a rattraper, meme si la main reste fournie"
+      ]
+    },
+    "rules_and_core_interactions": {
+      "legend_text_summary": "Quand tu joues un sort qui coute 5 energy ou plus, Lux pioche 1. Cela pousse toute la construction vers des removals et payoffs chers, mais capables de controler reellement les fronts.",
+      "lux_crownguard_summary": "Lux, Crownguard est devenue le chosen champion populaire en Spiritforged. La discussion communautaire de ruling la traite comme une source de 2 energy utilisable pour le prochain sort, et non comme une ressource retroactive pour un sort deja finalise.",
+      "vanguard_armory_summary": "Vanguard Armory est cite par Mobalytics comme piece cle, car Lux ne cree pas de recruits a la demande comme Viktor. Le deck a donc besoin de ce moteur ou d'equivalents pour convertir les battlefields nettoyes en points.",
+      "important_rules_notes": [
+        "Lux veut des sorts qui coutent assez cher pour piocher et assez efficaces pour que le tempo ne soit pas une catastrophe.",
+        "La reaction de Lux, Crownguard est forte surtout si elle permet d'enchainer un gros sort sans telegraphier toute sa rune economy."
+      ]
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Spiritforged Spell-Control Recruit Lux",
+        "status_march_2026": "Shell de reference competitif",
+        "evidence": [
+          "Best-of officiel a Bologna",
+          "Best-of officiel a Vegas",
+          "Mobalytics decrit Lux comme un shell proche de Viktor, centre sur spells et recruits",
+          "Plusieurs joueurs communautaires parlent explicitement de Lux spell-heavy comme meilleure forme du deck"
+        ],
+        "identity": "La vraie version de reference de mars 2026. C'est un control tap-out qui nettoie les unites au lieu de les combattre, puis marque avec recruits, Jayce, Watcher ou Time Warp. Le coeur du shell Bologna/Vegas est remarquablement stable.",
+        "reference_core": [
+          "Lux, Crownguard",
+          "Bellows Breath",
+          "Card Sharp",
+          "Cull the Weak",
+          "Drag Under",
+          "Falling Comet",
+          "Imperial Decree",
+          "Jayce, Man of Progress",
+          "Plundering Poro",
+          "Singularity",
+          "Stupefy",
+          "Thousand-Tailed Watcher",
+          "Time Warp",
+          "Vanguard Armory",
+          "Wages of Pain"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "Vilemaw's Lair",
+          "Sigil of the Storm or Void Gate depending event"
+        ],
+        "chosen_champion_default": "Lux, Crownguard",
+        "default_for_matchups_below": true
+      },
+      {
+        "name": "Origins-Derived Recruit-Control Lux",
+        "status_march_2026": "Shell reel, plus ancien, encore jouable",
+        "evidence": [
+          "Best-of officiel a Houston",
+          "Riftbound.gg explique que Lux et Master Yi jouent surtout une version amelioree de leur squelette Origins",
+          "Listes communautaires recentes gardant Recruit the Vanguard, Soaring Scout, Faithful Manufactor et Final Spark"
+        ],
+        "identity": "Version plus proche du starter/control ancien, avec davantage de petites unites utilitaires, Recruit the Vanguard, Final Spark, Unchecked Power et des fronts plus 'board-aware'. Elle controle encore la table par les sorts, mais ressemble moins a un vrai deck de removals purs.",
+        "reference_core": [
+          "Lux, Crownguard",
+          "Blast of Power",
+          "Cull the Weak",
+          "Daring Poro",
+          "Faithful Manufactor",
+          "Falling Comet",
+          "Final Spark",
+          "Hidden Blade",
+          "Noxian Drummer",
+          "Recruit the Vanguard",
+          "Singularity",
+          "Soaring Scout",
+          "Time Warp",
+          "Unchecked Power",
+          "Watchful Sentry"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "The Grand Plaza",
+          "Vilemaw's Lair"
+        ],
+        "chosen_champion_default": "Lux, Crownguard",
+        "important_note": "Ce shell est moins stable contre la meta wide moderne, mais reste plus naturel pour les joueurs qui veulent une Lux moins purement tap-out."
+      },
+      {
+        "name": "Energy Combo / Time Warp Lux",
+        "status_march_2026": "Shell niche mais reel",
+        "evidence": [
+          "Discussions communautaires sur Lux + Heimerdinger + Time Warp",
+          "Lux, Crownguard vue comme mana dork en champion zone dans plusieurs fils",
+          "Anciennes listes combo/OTK avec Ekko ou Dr. Mundo comme closers"
+        ],
+        "identity": "Version plus polarisante qui pousse la logique d'energy a l'extreme. Elle utilise Lux, Crownguard, parfois Heimerdinger, puis assemble des tours de Time Warp ou d'enormes chaines de sorts. Ce n'est pas la version la plus robuste, mais c'est une vraie branche de pilotage.",
+        "reference_core": [
+          "Lux, Crownguard",
+          "Heimerdinger, Inventor",
+          "Time Warp",
+          "Ekko, Recurrent in some versions",
+          "Dr. Mundo, Expert in some versions",
+          "cheap scoring units",
+          "high-cost spells that replace themselves with Lux"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "Obelisk of Power in some versions",
+          "control-friendly fronts"
+        ],
+        "chosen_champion_default": "Lux, Crownguard",
+        "important_note": "Ce shell ne doit pas etre pilote comme une Lux controle fair. Il joue plutot pour assembler une fenetre decoupee du tempo habituel de la partie."
+      }
+    ],
+    "advanced_pilot_principles": [
+      {
+        "name": "Lux is a control deck that scores with emptiness",
+        "detail": "Lux ne gagne pas parce qu'elle construit la plus belle table. Elle gagne parce qu'elle vide les battlefields assez proprement pour que des recruits, un Jayce ou un petit corps opportuniste puissent marquer sans vrai combat."
+      },
+      {
+        "name": "Your removals are your battlefield geometry",
+        "detail": "Chaque spell ne tue pas seulement une unite. Il change la forme du battlefield et la repartition des fronts. C'est la vraie ressource du deck."
+      },
+      {
+        "name": "Vanguard Armory is not optional in practice for the main shell",
+        "detail": "Mobalytics le souligne tres bien: Lux ne cree pas de recruits a la demande, donc il faut des cartes qui transforment l'espace vide en vraie pression de points."
+      },
+      {
+        "name": "Do not cast big spells just because they draw",
+        "detail": "Le draw de Lux est tres fort, mais un gros sort lance sur une cible mediocre reste un mauvais tour. La priorite reste toujours la structure de la partie."
+      },
+      {
+        "name": "Spell-heavy Lux should pick its units to clear, not try to clear everything",
+        "detail": "Le meilleur retour communautaire recent sur Lux contre Draven/Irelia/Kai'Sa insiste la-dessus: il faut choisir quelles unites retirer et a quel moment, sinon la main s'epuise en reponses inefficaces."
+      },
+      {
+        "name": "The shell determines whether Lux is tap-out control or proactive control",
+        "detail": "La version Bologna/Vegas joue plus tap-out control pur. La version Houston garde davantage de petites unites et de presence de board. La version combo cherche une fenetre decoupee de la game normale."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "lux_lady_of_luminosity_role": "La legende de base du deck: elle transforme les gros sorts en card advantage et pousse toute la construction vers des removals chers mais structurants.",
+      "lux_crownguard_role": "Chosen champion par defaut de Spiritforged. Elle donne 2 energy pour aider a lancer les sorts, et les discussions de rules la traitent comme une reaction pour le prochain sort, pas retroactivement pour un sort deja paye.",
+      "vanguard_armory_role": "Une des cartes les plus importantes du shell moderne. Elle convertit les battlefields vides en vraie pression de points.",
+      "imperial_decree_role": "Carte-cle parce qu'elle complete Bellows Breath et plusieurs autres removals sur les fronts larges. La communaute la cite souvent comme piece de wipe partiel virtuel.",
+      "bellows_breath_role": "Une des grandes additions Spiritforged. Sa combinaison avec Imperial Decree est l'un des meilleurs arguments pour jouer Lux en Spiritforged.",
+      "drag_under_role": "Removal propre, cite explicitement par la communaute comme correspondant parfaitement a la logique de draw de Lux.",
+      "falling_comet_role": "Removal premium qui garde Lux dans son role de gros sorts qui remplacent la carte et cassent le front.",
+      "singularity_role": "Carte de blowout recurrente dans les listes et les retours de joueurs. Peut tuer deux unites et basculer un front entier.",
+      "wages_of_pain_role": "Petit removal de base tres important pour ne pas mourir avant les gros turns.",
+      "cull_the_weak_role": "Fait partie du package de survie et de punition des unites midsize/large boards, souvent cite contre Irelia, Draven et Body decks.",
+      "jayce_man_of_progress_role": "Menace et payoff tres stables du shell Bologna/Vegas, participant a la facon dont Lux ferme les parties une fois la table nettoyee.",
+      "thousand_tailed_watcher_role": "Top-end de control et de fermeture, recurrent dans toutes les versions modernes.",
+      "time_warp_role": "Top-end de swing qui apparait deja dans Houston, Bologna et Vegas, et devient encore plus centrale dans les versions combo.",
+      "recruit_the_vanguard_role": "Plus marquee dans les shells Houston et certaines listes communautaires que dans le noyau strict Bologna/Vegas.",
+      "final_spark_role": "Carte signature historique de Lux, encore jouee surtout dans les versions plus anciennes ou plus starter-derived, mais beaucoup moins au centre du shell Spiritforged de reference."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Trying to kill everything",
+        "why_it_loses": "Lux perd quand elle pense que chaque unite adverse doit mourir. Il faut surtout tuer celles qui changent le scoreboard ou rendent le prochain front impossible."
+      },
+      {
+        "mistake": "Playing the control mirror game against wider decks",
+        "why_it_loses": "Le post-Vegas dit explicitement que le metagame miracle/wide est difficile pour Lux car elle a peu de moyens de controler beaucoup d'unites a la fois."
+      },
+      {
+        "mistake": "Ignoring your scoring infrastructure",
+        "why_it_loses": "Un deck Lux sans recruits, Armory ou vrai plan de points finit par juste controler joliment avant de perdre au score."
+      },
+      {
+        "mistake": "Overvaluing single-target premium removal into swarm matchups",
+        "why_it_loses": "Le retour communautaire sur Viktor le dit clairement: de gros removals monocibles deviennent mediocres si le board adverse est trop large."
+      },
+      {
+        "mistake": "Keeping hands full of expensive spells with no bridge",
+        "why_it_loses": "Lux peut piocher plus tard, mais si elle n'a pas de quoi atteindre ses gros sorts sans mourir, la partie est deja perdue."
+      },
+      {
+        "mistake": "Piloting the Spiritforged shell like the old Houston shell",
+        "why_it_loses": "La version Bologna/Vegas veut davantage jouer un vrai tap-out control recruit. Le vieux shell avait plus de petites unites et plus de texture de board."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Le vrai art avec Lux est de choisir quelle unite ne doit pas vivre jusqu'au prochain cycle de score, pas juste laquelle tu peux tuer maintenant.",
+      "Imperial Decree plus Bellows Breath vaut souvent plus qu'un pseudo-wipe cosmetique: garde cette combinaison pour le front qui compte vraiment.",
+      "Quand un matchup t'oblige a vider la table pour scorer, Vanguard Armory devient souvent plus important que ton prochain top-end.",
+      "Lux, Crownguard est meilleure quand ses 2 energy changent vraiment le sequencing du tour, pas quand elle sert juste a rendre un gros sort un peu moins cher.",
+      "Dans les versions combo, Time Warp n'est pas seulement une carte de fin de partie: c'est une carte qui transforme un moment de controle en verrou total si le scoreboard suit deja."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "slightly_favorable",
+        "estimated_lux_winrate_percent": "52-57",
+        "confidence": "medium"
+      },
+      "summary": "Le signal communautaire recent est plutot positif pour Lux contre Draven midrange. Des joueurs parlent de 60/40 ou au moins d'un bon pairing, avec l'argument central que Lux peut eviter le combat direct et retirer les pieces en base ou hors showdown.",
+      "why_matchup_plays_this_way": [
+        "Draven midrange veut tirer de la value de chaque combat et de chaque petit corps.",
+        "Lux controle par les sorts et empeche justement que ces combats aient lieu proprement."
+      ],
+      "opponent_plan": [
+        "prendre les premiers points",
+        "forcer des combats rentables",
+        "rentabiliser les petits corps et les buffs"
+      ],
+      "lux_plan": [
+        "choisir les bonnes unites a retirer plutot que tout tuer",
+        "profiter du fait que les removals en base et hors combat contournent une partie du plan rouge",
+        "mettre juste assez de recruits et de pression pour convertir les fronts vides"
+      ],
+      "mulligan_focus": [
+        "Wages of Pain",
+        "Cull the Weak",
+        "Bellows Breath ou Imperial Decree si la main suit",
+        "pas de hand full top-end"
+      ],
+      "sideboard_focus": [
+        "Pickpocket dans les shells Bologna/Vegas",
+        "Bellows Breath supplementaire selon version",
+        "Recruit the Vanguard si tu veux plus de points reels"
+      ],
+      "battlefield_notes": [
+        "Le matchup se gagne souvent sur un front que Lux nettoie completement puis transforme en score avec recruit/Armory."
+      ],
+      "main_lose_conditions_for_lux": [
+        "gaspiller les removals sur les mauvaises pieces",
+        "laisser Draven jouer deux fronts confortablement",
+        "main trop lourde"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Brynhir turns",
+        "2 energie ouverte",
+        "wide board tempo"
+      ],
+      "variation_notes": {
+        "origins_derived_recruit_control": "Peut aussi bien jouer ce pairing grace a plus de petites unites et Recruit the Vanguard.",
+        "energy_combo_time_warp": "Moins naturellement bon ici car trop lent si Draven curve bien."
+      },
+      "source_refs": [
+        "S8",
+        "S9",
+        "S11"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_lux_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Miracle Draven est plus difficile que Midrange Draven parce que Lux controle moins bien plusieurs menaces simultanees. C'est exactement le point de faiblesse souligne par le post-Vegas sur Lux.",
+      "why_matchup_plays_this_way": [
+        "Miracle Draven peut survivre aux premiers removals puis repasser sur plusieurs fronts d'un coup.",
+        "Lux a moins de facons de 'high roll' ou de punir un mauvais draw adverse selon le post-Vegas."
+      ],
+      "opponent_plan": [
+        "tenir jusqu'au premier gros turn miracle",
+        "multiplier les menaces simultanees"
+      ],
+      "lux_plan": [
+        "ne pas trop gaspiller les removals premium avant le vrai pivot",
+        "garder un scoring infrastructure active pendant que tu controles",
+        "respecter plus les turns ou plusieurs unites arrivent ensemble"
+      ],
+      "mulligan_focus": [
+        "mains stables",
+        "pas de keep purement reactive sans plan de points",
+        "Bellows Breath plus Decree plus early interaction"
+      ],
+      "sideboard_focus": [
+        "Pickpocket",
+        "Salvage",
+        "Time Warp si la partie s'etire",
+        "extra anti-wide if available"
+      ],
+      "battlefield_notes": [
+        "Lux a besoin qu'au moins un front reste proprement sous controle, sinon le deck miracle peut la submerger."
+      ],
+      "main_lose_conditions_for_lux": [
+        "partie trop reactive sans points",
+        "utilisation trop precoce des meilleures combinaisons",
+        "large board swings"
+      ],
+      "important_patterns_to_respect": [
+        "stacking turns",
+        "resource explosions",
+        "miracle width turns"
+      ],
+      "variation_notes": {
+        "origins_derived_recruit_control": "Un peu plus de board texture, mais aussi souvent moins propre en pur control.",
+        "energy_combo_time_warp": "Trop polarisant si tu n'assembles pas vite."
+      },
+      "source_refs": [
+        "S5",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "unfavorable",
+        "estimated_lux_winrate_percent": "42-48",
+        "confidence": "medium"
+      },
+      "summary": "Le retour recent le plus utile est clair: Irelia est plus difficile que Draven pour Lux. Le joueur Lux spell-heavy explique qu'il faut souvent compter sur Cull the Weak, Imperial Decree plus Bellows Breath, ou un recruit bien place pour gerer la table, mais qu'Irelia est plus rapide et Deflect complique tout.",
+      "why_matchup_plays_this_way": [
+        "Irelia met plus vite la pression sur les fronts et protège mieux ses pieces clefs.",
+        "Lux est plus a l'aise quand le deck adverse joue une table plus lisible et moins mobile."
+      ],
+      "opponent_plan": [
+        "tenir un front avec un porteur protege",
+        "forcer Lux a avoir les bonnes combinaisons au bon moment"
+      ],
+      "lux_plan": [
+        "ne pas attendre trop longtemps avant de casser le premier front important",
+        "Imperial Decree plus Bellows Breath pour les tours ou Irelia pense etre hors de portee",
+        "utiliser recruits et front geometry pour finir les unites qui survivent aux sorts"
+      ],
+      "mulligan_focus": [
+        "Cull the Weak",
+        "Imperial Decree",
+        "Bellows Breath",
+        "petite interaction de survie"
+      ],
+      "sideboard_focus": [
+        "Bellows Breath supplementaires",
+        "King's Edict selon build",
+        "Recruit the Vanguard si tu veux plus de vrais points"
+      ],
+      "battlefield_notes": [
+        "Le matchup se deteriore quand Irelia tient un battlefield sans depenser beaucoup de cartes."
+      ],
+      "main_lose_conditions_for_lux": [
+        "mauvaise combinaison de removals",
+        "Deflect et tricks qui cassent la sequence",
+        "retard de scoreboard trop rapide"
+      ],
+      "important_patterns_to_respect": [
+        "Deflect",
+        "GA and boots lines",
+        "fast point pressure"
+      ],
+      "variation_notes": {
+        "origins_derived_recruit_control": "Peut parfois mieux marquer des petits points, mais controle moins proprement le matchup.",
+        "energy_combo_time_warp": "Trop lent en moyenne."
+      },
+      "source_refs": [
+        "S8",
+        "S11"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_lux_winrate_percent": "46-51",
+        "confidence": "medium"
+      },
+      "summary": "Le pairing Kai'Sa est ambivalent. D'un cote, plusieurs joueurs Lux le citent parmi les plus gros defis structurels. De l'autre, on trouve des resultats locaux ou Lux gagne un skirmish en battant Kai'Sa en finale. La lecture la plus honnete est donc un matchup jouable mais exigeant.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa retire proprement les bonnes unites et ne deteste pas les control decks qui prennent du temps a fermer.",
+        "Lux peut toutefois gagner si elle retire juste ce qu'il faut puis transforme les fronts vides en points pendant que Kai'Sa depense ses removals sur les mauvaises pieces."
+      ],
+      "opponent_plan": [
+        "casser les bons fronts sans perdre trop de points",
+        "punir les units de score ou les recruits quand ils deviennent necessaires",
+        "fermer avec Time Warp ou ses gros turns"
+      ],
+      "lux_plan": [
+        "ne pas controler pour le style: chaque spell doit soit sauver un front, soit ouvrir un point",
+        "proteger l'infrastructure de score plus que la pure main",
+        "retarder le plus possible le moment ou Kai'Sa peut respirer"
+      ],
+      "mulligan_focus": [
+        "Wages of Pain",
+        "Drag Under",
+        "mains avec interaction early plus payoff tardif",
+        "pas de hand full 5+"
+      ],
+      "sideboard_focus": [
+        "Salvage",
+        "Time Warp",
+        "anti-big threat flex slots depending build",
+        "retirer les cartes mortes si Kai'Sa ne t'offre pas les bonnes cibles"
+      ],
+      "battlefield_notes": [
+        "Les petits recruits qui arrivent sur un front vide comptent enormement ici, car Lux ne gagnera pas toujours par pure table control."
+      ],
+      "main_lose_conditions_for_lux": [
+        "partie trop lente",
+        "mauvaise priorisation des removals",
+        "absence de vrai plan de points"
+      ],
+      "important_patterns_to_respect": [
+        "Hextech Ray",
+        "Falling Star",
+        "Time Warp",
+        "large spell turns"
+      ],
+      "variation_notes": {
+        "origins_derived_recruit_control": "Peut marquer plus vite mais est moins propre contre les removals premium.",
+        "energy_combo_time_warp": "Peut voler des games longues, mais souffre si Kai'Sa met la pression assez tot."
+      },
+      "source_refs": [
+        "S9",
+        "S12",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Spell heavy",
+      "meta_share_percent": 7,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_lux_winrate_percent": "50-55",
+        "confidence": "low"
+      },
+      "summary": "Quand Viktor est plus control et moins swarm, Lux peut mieux jouer son propre draw engine et sa removal suite. Un joueur Viktor recent cite explicitement Lux parmi les decks qui le font le plus souffrir.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks veulent gagner par les sorts, la value et les fronts nettoyes.",
+        "Lux peut avoir l'avantage si la partie tourne plus autour des pieces individuelles et moins autour de la largeur."
+      ],
+      "opponent_plan": [
+        "gagner a la resource quality",
+        "forcer Lux a depenser trop de mana sur les mauvaises cibles"
+      ],
+      "lux_plan": [
+        "profiter du fait que ses gros sorts piochent",
+        "ne pas telegraphier inutilement le Time Warp ou Watcher turn",
+        "transformer chaque trade de spell en legere avance de scoreboard"
+      ],
+      "mulligan_focus": [
+        "mains stables",
+        "removals precoces plus engine",
+        "pas de hand full anti-wide si Viktor ne joue pas large"
+      ],
+      "sideboard_focus": [
+        "Salvage",
+        "Time Warp",
+        "Pickpocket selon texture"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient meilleur pour Lux si elle n'a pas besoin de repondre a trop d'unites simultanees."
+      ],
+      "main_lose_conditions_for_lux": [
+        "perdre le rythme des cartes",
+        "gaspiller les removals chers",
+        "laisser Viktor prendre les seuls points de la partie"
+      ],
+      "important_patterns_to_respect": [
+        "card advantage loops",
+        "hard removal timing",
+        "mirror-style stall"
+      ],
+      "variation_notes": {
+        "origins_derived_recruit_control": "Plus de petites unites, moins bon dans le pur duel de sorts.",
+        "energy_combo_time_warp": "Peut etre dangereux si Viktor n'a pas assez de clock."
+      },
+      "source_refs": [
+        "S13",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Unit / Token based",
+      "meta_share_percent": 7,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_lux_winrate_percent": "45-49",
+        "confidence": "medium"
+      },
+      "summary": "C'est la version Viktor que plusieurs joueurs Lux decrivent comme la plus penible. Un thread communautaire dit explicitement que Viktor a un meilleur pace et que les gros removals monocibles de Lux sont moins efficaces contre sa swarm.",
+      "why_matchup_plays_this_way": [
+        "Lux prefere tuer les bonnes unites une par une ou par petits paquets propres.",
+        "Viktor token/unit-based lui demande de gerer trop de matiere avec trop peu de slots naturellement bons contre la largeur."
+      ],
+      "opponent_plan": [
+        "occuper les fronts en largeur",
+        "forcer Lux a surpayer ses removals",
+        "prendre les points pendant que Lux nettoie"
+      ],
+      "lux_plan": [
+        "Bellows Breath plus Imperial Decree aux bons seuils",
+        "ne pas claquer Singularity sur un front cosmetique",
+        "utiliser recruits pour finir les fronts deja nettoyes"
+      ],
+      "mulligan_focus": [
+        "Bellows Breath",
+        "Imperial Decree",
+        "Wages of Pain",
+        "pas de main full single-target only"
+      ],
+      "sideboard_focus": [
+        "Bellows Breath supplementaires",
+        "Recruit the Vanguard",
+        "Garbage Grabber or extra anti-board slots"
+      ],
+      "battlefield_notes": [
+        "Le matchup empire si Viktor peut te forcer a nettoyer un front tout en marquant sur l'autre."
+      ],
+      "main_lose_conditions_for_lux": [
+        "removals monocibles mal calibres",
+        "pas de points alors que la main se remplit",
+        "retard trop grand sur le scoreboard"
+      ],
+      "important_patterns_to_respect": [
+        "token stalls",
+        "recruit pressure",
+        "hybrid control plus board turns"
+      ],
+      "variation_notes": {
+        "origins_derived_recruit_control": "Peut un peu mieux exister sur la table, mais aussi se faire diluer plus vite.",
+        "energy_combo_time_warp": "Rarement la bonne version ici."
+      },
+      "source_refs": [
+        "S13",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "unfavorable",
+        "estimated_lux_winrate_percent": "42-48",
+        "confidence": "medium"
+      },
+      "summary": "Les retours communautaires recents pointent Azir parmi les plus gros soucis de Lux. Le joueur Lux spell-heavy le cite avec Kai'Sa et Viktor comme l'un des plus grands challenges, surtout parce qu'Azir joue bas au sol, n'a pas peur de perdre certains petits corps et finit souvent par outvalue Lux sur la table.",
+      "why_matchup_plays_this_way": [
+        "Azir ne deteste pas perdre des petites unites si ses vrais engines restent actives.",
+        "Lux n'a pas un nombre infini de reponses parfaites a une largeur aussi modulaire."
+      ],
+      "opponent_plan": [
+        "poser plusieurs petits corps et equips",
+        "rendre les removals Lux inefficients",
+        "forcer Lux a vivre en retard sur un front"
+      ],
+      "lux_plan": [
+        "identifier la piece qui transforme vraiment la largeur en points",
+        "ne pas depenser trop de cartes contre des corps remplaçables",
+        "marquer plus vite avec recruits quand l'ouverture existe"
+      ],
+      "mulligan_focus": [
+        "Bellows Breath",
+        "Imperial Decree",
+        "Drag Under",
+        "pas de hand trop lourde"
+      ],
+      "sideboard_focus": [
+        "Bellows Breath supplementaires",
+        "Recruit the Vanguard",
+        "Garbage Grabber depending build"
+      ],
+      "battlefield_notes": [
+        "Lux perd vite si elle tue juste assez de cartes pour survivre, mais jamais assez pour reprendre reellement un battlefield."
+      ],
+      "main_lose_conditions_for_lux": [
+        "removals mal cibles",
+        "Azir libre de developper sur deux fronts",
+        "absence de score pendant le control"
+      ],
+      "important_patterns_to_respect": [
+        "Azir Sovereign turns",
+        "Arise",
+        "equipment-fueled flood"
+      ],
+      "variation_notes": {
+        "origins_derived_recruit_control": "Encore plus fragile si elle n'a pas les bonnes combinaisons anti-wide.",
+        "energy_combo_time_warp": "Trop souvent lente ou trop peu concrete sur la table."
+      },
+      "source_refs": [
+        "S8",
+        "S11"
+      ]
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "close_even",
+        "estimated_lux_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Le signal public est leger mais positif: un report de skirmish raconte une Lux gagnant 2-1 contre un Master Yi undefeated en top 4. Cela ne suffit pas pour en faire un matchup facile, mais suggere que Lux peut le jouer proprement si elle retire les bonnes pieces.",
+      "why_matchup_plays_this_way": [
+        "Yi aime tenir un battlefield avec peu de pieces et beaucoup de protection.",
+        "Lux aime justement eviter le combat pur et retirer les bonnes unites hors showdown."
+      ],
+      "opponent_plan": [
+        "tenir un front avec une piece protegee",
+        "rendre les combats mauvais pour toi"
+      ],
+      "lux_plan": [
+        "cibler la piece qui tient vraiment le front",
+        "ne pas gaspiller les removals premium sur des cartes secondaires",
+        "utiliser recruits pour convertir les fronts nettoyes"
+      ],
+      "mulligan_focus": [
+        "interaction early",
+        "Drag Under",
+        "Falling Comet",
+        "main stable"
+      ],
+      "sideboard_focus": [
+        "King's Edict depending build",
+        "Salvage",
+        "plans qui gardent la clock"
+      ],
+      "battlefield_notes": [
+        "Lux gagne souvent si le front que Yi voulait tenir devient juste vide au bon moment."
+      ],
+      "main_lose_conditions_for_lux": [
+        "mauvaise cible de removal",
+        "trop de respect de tricks qui n'existent pas",
+        "pas assez de scoreboard"
+      ],
+      "important_patterns_to_respect": [
+        "Calm protection chains",
+        "single-carrier holds"
+      ],
+      "variation_notes": {
+        "origins_derived_recruit_control": "Peut etre un peu plus naturel ici grace a plus de petites unites de scoring."
+      },
+      "source_refs": [
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_lux_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Ezreal reste souvent la version la plus coherente du deck violet de cartes et de tempo. Lux peut le concurrencer sur le pur controle, mais elle doit justifier sa presence par le fait qu'elle tue mieux certaines unites et qu'elle score mieux avec recruits.",
+      "why_matchup_plays_this_way": [
+        "Ezreal a un plafond de purple value tres eleve.",
+        "Lux a un meilleur draw engine sur gros spells, mais un plan de points moins automatique si Armory ne reste pas active."
+      ],
+      "opponent_plan": [
+        "ralentir puis gagner a la carte",
+        "forcer Lux a depenser trop pour tenir le scoreboard"
+      ],
+      "lux_plan": [
+        "ne pas accepter la pure guerre de grind si tu peux deja marquer",
+        "garder le Time Warp pour un vrai swing et pas juste pour rester 'a egalite'",
+        "faire compter chaque recruit"
+      ],
+      "mulligan_focus": [
+        "mains stables",
+        "engine plus removals",
+        "pas de keep all-late"
+      ],
+      "sideboard_focus": [
+        "Salvage",
+        "Time Warp",
+        "Pickpocket according to texture"
+      ],
+      "battlefield_notes": [
+        "Le matchup se gagne plus souvent sur les points gratés sur fronts nettoyes que sur la pure beaute de la main."
+      ],
+      "main_lose_conditions_for_lux": [
+        "devenir un mauvais Ezreal",
+        "pas de vrai plan de score",
+        "mauvaise gestion du late-game"
+      ],
+      "important_patterns_to_respect": [
+        "Called Shot loops",
+        "Rhasa turns",
+        "late purple chains"
+      ],
+      "variation_notes": {
+        "energy_combo_time_warp": "Peut etre plus polarisant mais garde un vrai plafond si la partie ralentit assez."
+      },
+      "source_refs": [
+        "S5",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "default_shell": "Spiritforged Spell-Control Recruit Lux",
+      "lux_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_lux_winrate_percent": "45-49",
+        "confidence": "low"
+      },
+      "summary": "Annie met la pression sur le vrai point faible de Lux: le temps. Les control-style decks souffrent des rondes longues et du fait qu'ils doivent survivre au scoreboard avant de reprendre la table, ce que le report de skirmish Lux rappelait deja.",
+      "why_matchup_plays_this_way": [
+        "Annie veut marquer vite et forcer Lux a jouer ses sorts pour survivre plutot que pour prendre les fronts.",
+        "Lux prefere une partie ou elle choisit quelles pieces vivent ou meurent, pas une partie ou elle subit la race."
+      ],
+      "opponent_plan": [
+        "prendre les premiers points",
+        "rendre chaque removal defensif et inconfortable"
+      ],
+      "lux_plan": [
+        "mulliganer tres durement pour les premiers removals",
+        "ne pas garder de mains trop hautes",
+        "stabiliser assez tot pour que les recruits reviennent a la course"
+      ],
+      "mulligan_focus": [
+        "Wages of Pain",
+        "Cull the Weak",
+        "Bellows Breath if supported",
+        "pas de hand full 5+"
+      ],
+      "sideboard_focus": [
+        "Bellows Breath",
+        "extra early interaction",
+        "retirer les cartes les plus lentes"
+      ],
+      "battlefield_notes": [
+        "Les fronts de pure race sont les plus dangereux; Lux veut les transformer en fronts vides ou en pseudo-tempo trap."
+      ],
+      "main_lose_conditions_for_lux": [
+        "main lente",
+        "aucune bridge card",
+        "scoreboard trop grand avant le premier vrai swing"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Ride the Wind or miracle-annie closes",
+        "early tempo snowball"
+      ],
+      "variation_notes": {
+        "origins_derived_recruit_control": "Peut parfois etre un peu meilleure si elle a plus de petites unites et Recruit the Vanguard."
+      },
+      "source_refs": [
+        "S12",
+        "S4"
+      ]
+    }
+  ],
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "spiritforged_spell_control_recruit_keep": [
+        "Wages of Pain",
+        "Cull the Weak",
+        "Imperial Decree",
+        "Bellows Breath si la main sait l'exploiter",
+        "Vanguard Armory seulement si la survie du debut est deja couverte",
+        "Jayce ou gros payoff seulement si le reste de la main existe"
+      ],
+      "origins_derived_recruit_control_keep": [
+        "Soaring Scout",
+        "Faithful Manufactor",
+        "Recruit the Vanguard",
+        "Unchecked Power si la courbe suit",
+        "Falling Comet si la main a deja le pont"
+      ],
+      "energy_combo_time_warp_keep": [
+        "cheap scoring units",
+        "piece d'engine",
+        "main capable d'arriver a son first setup sans mourir",
+        "pas de keep juste parce qu'il y a Time Warp"
+      ],
+      "ship": [
+        "main full top-end",
+        "main sans interaction avant le tour 3",
+        "main sans plan de points",
+        "main qui suppose de piocher parfaitement Bellows + Decree quand le matchup le demande"
+      ],
+      "notes": [
+        "Lux mulligan tres fortement pour survivre au debut ET garder un plan de points.",
+        "Un gros sort qui pioche n'est jamais une excuse pour garder une main bancale."
+      ]
+    },
+    "draven_midrange": {
+      "keep": [
+        "Wages of Pain",
+        "Cull the Weak",
+        "Bellows Breath ou Imperial Decree",
+        "main avec au moins une vraie reponse de debut"
+      ],
+      "ship": [
+        "main all-late",
+        "main sans anti-board"
+      ]
+    },
+    "draven_miracle": {
+      "keep": [
+        "moteur stable",
+        "interaction early",
+        "pas de keep full anti-single-target only"
+      ],
+      "ship": [
+        "main sans points",
+        "main trop reactive sans infrastructure"
+      ]
+    },
+    "irelia": {
+      "keep": [
+        "Cull the Weak",
+        "Imperial Decree",
+        "Bellows Breath",
+        "main de survie"
+      ],
+      "ship": [
+        "main trop lente",
+        "main full 5+",
+        "main single-target only sans combo"
+      ]
+    },
+    "kaisa": {
+      "keep": [
+        "interaction early",
+        "engine plus points",
+        "pas de keep trop haute"
+      ],
+      "ship": [
+        "main pure greed",
+        "main sans bridge cards"
+      ]
+    },
+    "viktor_unit_based": {
+      "keep": [
+        "Bellows Breath",
+        "Imperial Decree",
+        "Wages of Pain",
+        "pas de keep full Comet/Singularity"
+      ],
+      "ship": [
+        "main trop monocible",
+        "main sans board management early"
+      ]
+    },
+    "ezreal": {
+      "keep": [
+        "main stable",
+        "engine",
+        "un minimum de pressure scoring"
+      ],
+      "ship": [
+        "main pure removal sans points",
+        "main full late"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "general_shell_rules": {
+      "spiritforged_spell_control_recruit": {
+        "identity": "Conserver l'equilibre entre gros removals, pont early et infrastructure de score. Le deck perd s'il devient full anti-creature sans gagner de points.",
+        "dont_do": [
+          "retirer trop de moyens de scorer",
+          "garder trop de cartes monocibles dans les matchs ou la largeur est la vraie question"
+        ]
+      },
+      "origins_derived_recruit_control": {
+        "identity": "Conserver la texture de board tout en renforcant les meilleurs removals du matchup.",
+        "dont_do": [
+          "devenir un mauvais shell Bologna/Vegas sans sa meme densite de sorts",
+          "retirer trop de petites unites"
+        ]
+      },
+      "energy_combo_time_warp": {
+        "identity": "Sider pour survivre jusqu'a la fenetre combo, pas pour gagner une longue guerre fair.",
+        "dont_do": [
+          "se sider comme un pur deck control miroir",
+          "retirer trop d'engine cards"
+        ]
+      }
+    },
+    "draven_midrange": {
+      "in": [
+        "Pickpocket",
+        "Bellows Breath supplementaire selon version",
+        "Recruit the Vanguard si tu veux mieux convertir les fronts vides"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "top-end superflu"
+      ],
+      "plan": [
+        "Preserver les removals qui cassent la largeur tout en gardant assez de points pour punir un front nettoye."
+      ]
+    },
+    "draven_miracle": {
+      "in": [
+        "Salvage",
+        "Pickpocket",
+        "Time Warp",
+        "anti-wide flex slots"
+      ],
+      "out": [
+        "cards too clunky",
+        "surplus de monocible si la liste adverse va vraiment large"
+      ],
+      "plan": [
+        "Il faut tenir la resource war sans oublier que le scoreboard compte encore."
+      ]
+    },
+    "irelia": {
+      "in": [
+        "Bellows Breath supplementaires",
+        "King's Edict selon liste",
+        "Recruit the Vanguard if needed"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "surplus de pur late-game"
+      ],
+      "plan": [
+        "Conserver les combinaisons de removal qui punissent le porteur et la vitesse du matchup."
+      ]
+    },
+    "kaisa": {
+      "in": [
+        "Salvage",
+        "Time Warp",
+        "big threat or anti-top-end flex slots depending build"
+      ],
+      "out": [
+        "petites cartes mortes",
+        "surplus de narrow anti-wide si Kai'Sa est plus control"
+      ],
+      "plan": [
+        "Garder assez de points et assez de densite de cartes pour ne pas mourir juste apres la stabilisation."
+      ]
+    },
+    "viktor_unit_based": {
+      "in": [
+        "Bellows Breath",
+        "Garbage Grabber",
+        "Recruit the Vanguard"
+      ],
+      "out": [
+        "surplus de removals trop chers et trop monocibles"
+      ],
+      "plan": [
+        "Tu veux mieux nettoyer plusieurs petits corps et continuer a marquer."
+      ]
+    },
+    "viktor_spell_heavy": {
+      "in": [
+        "Salvage",
+        "Time Warp",
+        "Pickpocket"
+      ],
+      "out": [
+        "anti-wide de trop"
+      ],
+      "plan": [
+        "La partie se joue plus sur l'endurance de cartes et la gestion du score que sur le nombre brut d'unites tuees."
+      ]
+    },
+    "azir": {
+      "in": [
+        "Bellows Breath supplementaires",
+        "Recruit the Vanguard",
+        "Garbage Grabber"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "monocible trop chere"
+      ],
+      "plan": [
+        "Il faut mieux gerer la largeur sans perdre le plan de points."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "spiritforged_spell_control_recruit_priority": [
+        "Aspirant's Climb",
+        "Vilemaw's Lair",
+        "Sigil of the Storm or Void Gate depending build"
+      ],
+      "origins_derived_recruit_control_priority": [
+        "Aspirant's Climb",
+        "The Grand Plaza",
+        "Vilemaw's Lair"
+      ],
+      "energy_combo_time_warp_priority": [
+        "Aspirant's Climb",
+        "Obelisk of Power",
+        "control-friendly fronts"
+      ],
+      "notes": [
+        "Les listes officielles Lux tournent autour d'Aspirant's Climb et de Vilemaw's Lair, avec un troisieme battlefield qui change legerement selon l'evenement.",
+        "Lux veut des battlefields ou un front nettoye se transforme vraiment en point, pas seulement en pause temporaire."
+      ]
+    },
+    "draven_midrange": {
+      "preferred": [
+        "Aspirant's Climb",
+        "Vilemaw's Lair"
+      ],
+      "plan": [
+        "Tu veux un front que Lux peut nettoyer puis tenir juste assez pour convertir ses recruits."
+      ]
+    },
+    "draven_miracle": {
+      "preferred": [
+        "Aspirant's Climb"
+      ],
+      "secondary": [
+        "Sigil of the Storm"
+      ],
+      "plan": [
+        "Les fronts qui rewardent un controle propre et un seul point bien converti valent plus que deux fronts incomplets."
+      ]
+    },
+    "irelia": {
+      "preferred": [
+        "Aspirant's Climb",
+        "Vilemaw's Lair"
+      ],
+      "plan": [
+        "Evite de laisser Irelia tenir gratuitement un front avec peu de pieces. Lux veut des fronts ou un bon removal change tout."
+      ]
+    },
+    "kaisa": {
+      "preferred": [
+        "Aspirant's Climb",
+        "Sigil of the Storm"
+      ],
+      "plan": [
+        "Le bon battlefield est celui qui transforme un front vide en point avant que Kai'Sa ne recolle."
+      ]
+    },
+    "viktor_unit_based": {
+      "preferred": [
+        "Vilemaw's Lair",
+        "Aspirant's Climb"
+      ],
+      "plan": [
+        "Tu veux des fronts ou une combinaison anti-wide change concretement le scoreboard."
+      ]
+    },
+    "ezreal": {
+      "preferred": [
+        "Aspirant's Climb",
+        "Sigil of the Storm"
+      ],
+      "plan": [
+        "Lux ne veut pas jouer uniquement pour la beaute du control; elle veut un front qui score reellement."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Riftbound.gg - Lux, Lady of Luminosity Starter Guide",
+      "date": "2026-02-14",
+      "notes": "Source principale sur l'identite de Lux comme tap-out control, sur le draw engine de la legende, sur le role de Vanguard Armory et sur la lecture globale du deck."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "Riftbound official - The Best Decks out of Bologna",
+      "date": "2026-02-25",
+      "notes": "Best-of Lux Bologna #104 overall, shell spell-control recruit avec Lux, Crownguard, battlefields et sideboard."
+    },
+    {
+      "id": "S3",
+      "type": "official tournament article",
+      "title": "Riftbound official - Vegas Top Decks",
+      "date": "2026-03-04",
+      "notes": "Best-of Lux Vegas #67 overall, shell quasi identique au Bologna build."
+    },
+    {
+      "id": "S4",
+      "type": "official tournament article",
+      "title": "Riftbound official - Houston RQ Top Decks",
+      "date": "2025-12-11",
+      "notes": "Best-of Lux Houston #167 overall, version recruit-control plus proche du squelette Origins."
+    },
+    {
+      "id": "S5",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Vegas",
+      "date": "2026-03-06",
+      "notes": "Lux Tier 4, 79 picks, 6.3% conversion Day 2, 44% win rate; metagame miracle juge hostile a Lux."
+    },
+    {
+      "id": "S6",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Bologna",
+      "date": "2026-03-01",
+      "notes": "Lux Tier 4, 34 picks, 6% conversion, 44.5% win rate, Top 128."
+    },
+    {
+      "id": "S7",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Global Release & Post Chinese Regionals",
+      "date": "2026-02-28",
+      "notes": "Lux Tier 3; presentee comme une version amelioree de son squelette Origins, sans enorme deviation par rapport aux regionaux chinois."
+    },
+    {
+      "id": "S8",
+      "type": "community thread",
+      "title": "Best Spiritforged decks & possible sleepers to combat the best decks?",
+      "date_consulted": "2026-03-11",
+      "notes": "Source cle sur Lux spell-heavy: Bellows Breath plus Imperial Decree, bonne perception contre Draven, plus mauvaise contre Kai'Sa/Viktor/Azir."
+    },
+    {
+      "id": "S9",
+      "type": "community thread",
+      "title": "What rogue decks do you think are going to give Draven/Irelia a hard time?",
+      "date_consulted": "2026-03-11",
+      "notes": "Retour recent d'un joueur Lux spell-heavy: Draven plutot bon, Irelia plus difficile, Kai'Sa/Viktor/Azir plus gros challenges."
+    },
+    {
+      "id": "S10",
+      "type": "community thread",
+      "title": "Top 4 with Lux in LGS' Tournament",
+      "date_consulted": "2026-03-11",
+      "notes": "Point de vue Lux indiquant surtout des difficultes contre Viktor swarm/token."
+    },
+    {
+      "id": "S11",
+      "type": "community thread",
+      "title": "Trying to improve my Viktor deck",
+      "date_consulted": "2026-03-11",
+      "notes": "Point de vue Viktor indiquant que Lux etait un matchup difficile."
+    },
+    {
+      "id": "S12",
+      "type": "community thread",
+      "title": "Lux Summoner Skirmish win!",
+      "date_consulted": "2026-03-11",
+      "notes": "Report local avec victoire 2-1 contre Master Yi en top 4 et 2-1 contre Kai'Sa en finale."
+    },
+    {
+      "id": "S13",
+      "type": "community thread",
+      "title": "Lux Crownguard Rulings",
+      "date_consulted": "2026-03-11",
+      "notes": "Clarification communautaire sur Lux, Crownguard: 2 energy pour le prochain sort, pas retroactivement."
+    },
+    {
+      "id": "S14",
+      "type": "community thread",
+      "title": "Combo/OTK decks",
+      "date_consulted": "2026-03-11",
+      "notes": "Support pour l'existence d'un vrai shell Lux combo/OTK avec Heimerdinger, Time Warp, Ekko ou Dr. Mundo."
+    },
+    {
+      "id": "S15",
+      "type": "community thread",
+      "title": "Getting started - Lux deck",
+      "date_consulted": "2026-03-11",
+      "notes": "Exemple recent de liste communautaire Lux control avec Recruit the Vanguard, Jayce et Vanguard Armory."
+    },
+    {
+      "id": "S16",
+      "type": "community thread",
+      "title": "ANTI META LUX DECK",
+      "date_consulted": "2026-03-11",
+      "notes": "Retour utile sur Singularity comme blowout et sur une Lux attrition/control tres orientee anti-meta."
+    },
+    {
+      "id": "S17",
+      "type": "Mobalytics tier list",
+      "title": "Mobalytics Riftbound Tier List",
+      "date_consulted": "2026-03-11",
+      "notes": "Lux B-Tier; shell proche de Viktor mais avec draw engine integre alimente par les gros sorts."
+    }
+  ]
+}

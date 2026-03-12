@@ -1,0 +1,923 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged metagame",
+    "timeframe": "Mars 2026 (sources principales du 1er au 11 mars 2026, avec contexte de janvier-février 2026 pour les matchups)",
+    "methodology": [
+      "Croisement entre sites de méta/deckbuilding (RiftDecks, Riftbound.gg, Mobalytics Riftbound)",
+      "Croisement avec discussions communautaires Reddit/r/riftboundtcg pour confirmer ou nuancer les matchups",
+      "Priorité aux informations récentes et aux signaux répétés sur plusieurs sources",
+      "Les matchups de tiers bas et de faible représentation ont une confiance plus faible"
+    ],
+    "reliability_scale": {
+      "high": "Consensus multi-source récent + présence régulière en tournois / meta share significative",
+      "medium": "Consensus cohérent mais moins de données directes ou matchup dépendant des builds/sideboards",
+      "low": "Peu de volume, deck fringe/rogue, ou informations surtout qualitatives"
+    }
+  },
+  "current_meta_context": {
+    "official_status_march_2026": {
+      "banlist": "Aucun changement spécifique de banlist Riftbound annoncé au moment de compilation.",
+      "official_watchlist_status": "L'équipe Riftbound discute d'éventuels bans pour des patterns de jeu trop dominants, mais aucune décision finale n'était annoncée au 10 mars 2026.",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "tier_consensus_summary": {
+      "riftbound_gg": [
+        "Draven",
+        "Irelia",
+        "Ezreal"
+      ],
+      "mobalytics_spiritforged_s_tier": [
+        "Draven",
+        "Ezreal",
+        "Irelia",
+        "Kai'Sa"
+      ]
+    },
+    "spiritforged_meta_share_riftdecks_percent": {
+      "Kai'Sa": 18,
+      "Draven": 16,
+      "Irelia": 10,
+      "Viktor": 7,
+      "Master Yi": 6,
+      "Azir": 4,
+      "Ezreal": 3,
+      "Fiora": 3,
+      "Annie": 3,
+      "Ornn": 3,
+      "Rek'Sai": 2,
+      "Sett": 2,
+      "Lucian": 2,
+      "Rumble": 2,
+      "Sivir": 1,
+      "Ahri": 1,
+      "Yasuo": 1,
+      "Teemo": 1,
+      "Lux": 1,
+      "Miss Fortune": 1,
+      "Renata Glasc": 1,
+      "Jax": 0,
+      "Jinx": 0,
+      "Darius": 0,
+      "Lee Sin": 0,
+      "Leona": 0,
+      "Volibear": 0,
+      "Garen": 0
+    }
+  },
+  "draven_guide": {
+    "legend": "Draven, Glorious Executioner",
+    "domains": [
+      "Chaos",
+      "Fury"
+    ],
+    "meta_role": "Pilier de la méta Spiritforged; deck midrange/tempo dominant avec excellente capacité à convertir les combats gagnés en avantage de cartes.",
+    "why_draven_is_top_tier": [
+      "Capacité de pioche liée aux combats gagnés, sans contrainte 'once per turn' dans les guides communautaires récents",
+      "Couleurs offrant à la fois stats, tempo, bounce et burst de combat",
+      "Excellente flexibilité entre posture proactive (prendre les battlefields) et réactive (punir l'attaque adverse)",
+      "Base de cartes très stable et plan de jeu plus simple à exécuter que certains autres decks violets très puissants"
+    ],
+    "main_archetypes": [
+      {
+        "name": "Midrange Draven",
+        "status": "Version de référence / la plus stable",
+        "gameplan": "Jouer une courbe de menaces efficaces, forcer des combats favorables, utiliser l'interaction à 2 d'énergie pour protéger ses unités ou casser le tempo adverse, puis snowball via l'avantage de cartes de Draven."
+      },
+      {
+        "name": "Miracle Draven",
+        "status": "Version plus explosive mais plus polarisée",
+        "gameplan": "Abuser des moteurs violets (notamment le package Ezreal/Called Shot/Rhasa/Battering Ram cité par les tier lists) pour des tours de burst massifs. Plus haute variance et plus technique."
+      }
+    ],
+    "core_principles": [
+      "Ne pas entrer dans un combat 'juste parce que possible' : l'objectif est de transformer chaque combat en point, carte ou énorme swing de tempo.",
+      "Laisser 2 d'énergie ouverte est souvent plus fort que développer à vide : l'adversaire doit respecter Spinning Axe, Fight or Flight, Rebuke et d'autres réponses.",
+      "Draven aime les boards larges et les échanges asymétriques; Irelia et les decks de protection préfèrent les combats contrôlés sur petit board.",
+      "Le deck gagne beaucoup quand l'adversaire doit attaquer dans tes réactions, ou défendre contre des menaces de bounce/boost."
+    ],
+    "core_cards_and_packages": [
+      "Draven, Vanquisher",
+      "Overzealous Fan",
+      "Treasure Hunter",
+      "Kai'Sa, Survivor",
+      "Spinning Axe",
+      "Long Sword",
+      "Fight or Flight",
+      "Rebuke",
+      "Falling Star",
+      "Brynhir Thundersong",
+      "Ferrous Forerunner"
+    ],
+    "battlefield_priorities": [
+      {
+        "battlefield": "Reaver's Row",
+        "priority": "Très bon choix blind / quand on veut protéger une unité clé ou recycler Treasure Hunter."
+      },
+      {
+        "battlefield": "Targon's Peak",
+        "priority": "Excellent quand on prévoit des tours réactifs lourds; sa valeur augmente si l'on peut convertir les runes immédiatement."
+      },
+      {
+        "battlefield": "Obelisk of Power",
+        "priority": "Solide dans les séquences de pression pure, mais moins universel comme premier angle que Reaver's Row/Targon's Peak selon les guides."
+      }
+    ],
+    "mulligan_heuristics": {
+      "keep_high_priority": [
+        "Curve 2-drop + interaction",
+        "Unités qui tiennent bien le board tôt",
+        "Treasure Hunter ou autres pièces qui facilitent l'économie/runes",
+        "Spinning Axe / interaction si la main a déjà une courbe"
+      ],
+      "situational_keeps": [
+        "Falling Star contre Irelia / grosses menaces clés",
+        "Réponses de bounce contre decks basés sur un gros porteur ou sur l'occupation d'un battlefield"
+      ],
+      "avoid": [
+        "Mains trop lourdes sans early unit",
+        "Mains uniquement réactives sans moyen de mettre une présence crédible"
+      ]
+    },
+    "strengths": [
+      "Très fort contre les decks qui doivent passer par le combat classique",
+      "Excellente punition des boards fragiles ou linéaires",
+      "Peut gagner les parties longues grâce au draw engine naturel",
+      "Sideboard flexible pour adapter la posture"
+    ],
+    "weaknesses": [
+      "Les decks qui retirent tes unités par sorts au lieu de combattre limitent ton moteur de cartes",
+      "Les matchups violets très techniques (Ezreal/miroirs miracle) peuvent surpasser Draven sur le plafond pur",
+      "Les decks capables de marquer 2 battlefields rapidement ou d'esquiver les combats traditionnels peuvent te forcer à courir derrière les points"
+    ],
+    "sideboard_principles": [
+      "Augmenter le removal ciblé contre Irelia/Azir et autres decks dépendants d'une ou deux pièces structurantes",
+      "Prévoir du hate contre les engines violets et les sorts de value dans les matchups Ezreal/Viktor",
+      "Ne pas surcharger en cartes trop lentes : Draven gagne beaucoup de matchs en restant le deck qui pose la première vraie question"
+    ],
+    "common_mistakes": [
+      "Brûler ses tricks trop tôt au lieu de forcer l'adversaire à s'engager davantage",
+      "Jouer trop 'tall' dans les matchups où Draven doit plutôt jouer large",
+      "Chercher un kill spectaculaire au lieu de sécuriser des points et des trades favorables",
+      "Attaquer Targon's Peak trop tôt sans pouvoir convertir les runes supplémentaires"
+    ]
+  },
+  "matchups": [
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "tier_consensus": "S/Tier 1",
+      "verdict_for_draven": "slightly_unfavorable_to_even",
+      "score_estimate_for_draven": "48-50",
+      "confidence": "medium",
+      "summary": "Kai'Sa est l'un des rares decks souvent cités comme pouvant jouer correctement dans Draven grâce à ses removals par sorts, sa génération de value et sa capacité à revenir sur board.",
+      "why": [
+        "Les removals spell-based réduisent le nombre de combats gagnés par Draven",
+        "Kai'Sa convertit très bien le tempo en avantage de cartes et en stabilité",
+        "Le matchup dépend fortement de la pression initiale de Draven et de la façon dont Kai'Sa gère les premiers tours"
+      ],
+      "draven_plan": [
+        "Prendre l'initiative tôt et taxer les removals",
+        "Forcer Kai'Sa à répondre sur plusieurs axes au lieu d'une seule menace",
+        "Conserver les boosts/réponses pour les tours où Kai'Sa veut stabiliser"
+      ],
+      "key_cards_to_respect": [
+        "Hextech Ray",
+        "Falling Star",
+        "Icathian Rain"
+      ],
+      "notes": "Consensus Reddit: Kai'Sa est 'solid into Draven', mais pas un hard counter."
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "tier_consensus": "S/Tier 1",
+      "verdict_for_draven": "close_even",
+      "score_estimate_for_draven": "50-52",
+      "confidence": "medium",
+      "summary": "Matchup très skill-testing. Irelia est présentée comme la plus grosse concurrence de Draven, mais les conseils communautaires pour Draven insistent sur le fait de jouer large pour étouffer ses combats contrôlés.",
+      "why": [
+        "Irelia a énormément de tricks de protection et excelle dans les combats préparés",
+        "Draven peut inverser cette logique en jouant large et en multipliant les menaces",
+        "La partie pivote souvent autour de la première fenêtre où Irelia, Fervent ou Guardian Angel/Swift Boots deviennent actifs"
+      ],
+      "draven_plan": [
+        "Jouer large, pas 'tall'",
+        "Punir Irelia dès qu'elle se commit et si possible quand l'adversaire est tapped out",
+        "Protéger ses unités qui tiennent bien la base et empêchent Irelia de prendre des combats gratuits"
+      ],
+      "key_cards_to_respect": [
+        "Irelia, Fervent",
+        "Defiant Dance",
+        "Discipline",
+        "Guardian Angel",
+        "Swift Boots"
+      ],
+      "notes": "Les discussions récentes donnent des plans précis des deux côtés, signe d'un matchup serré mais central."
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "tier_consensus": "A/Tier 2",
+      "verdict_for_draven": "unfavorable",
+      "score_estimate_for_draven": "42-47",
+      "confidence": "high",
+      "summary": "Viktor contrôle orienté removals est le matchup le plus souvent cité comme vraie réponse à Draven.",
+      "why": [
+        "Le build contrôle de Viktor a explicitement évolué pour éviter de nourrir Draven avec des tokens faciles",
+        "Les retraits par sorts et l'approche 'vider le battlefield puis scorer' coupent le moteur de Draven",
+        "Plusieurs fils Reddit disent que Viktor/bleu-jaune est l'un des meilleurs matchups contre Draven"
+      ],
+      "draven_plan": [
+        "Éviter les attaques molles qui offrent du temps au deck contrôle",
+        "Répartir les menaces pour taxer les removals",
+        "Conserver ses cartes de tempo pour forcer Viktor à jouer à vitesse défavorable"
+      ],
+      "key_cards_to_respect": [
+        "Imperial Decree",
+        "Hard Bargain",
+        "token control shell",
+        "OGN-117"
+      ],
+      "notes": "C'est le matchup anti-Draven le plus cohérent dans les sources communautaires."
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "tier_consensus": "B/Tier 2",
+      "verdict_for_draven": "slightly_favorable",
+      "score_estimate_for_draven": "53-56",
+      "confidence": "medium",
+      "summary": "Master Yi peut tenir des battlefields et punir les attaques mal préparées, mais il n'a plus le statut de top predator qu'il avait en Set 1.",
+      "why": [
+        "Yi défend bien les battlefields avec ses boosts et ses tricks Calm",
+        "Mais Draven est plus flexible, plus constant, et meilleur pour convertir les trades en cartes",
+        "Le consensus général de mars 2026 place Yi en dessous des grands piliers de Spiritforged"
+      ],
+      "draven_plan": [
+        "Ne pas rentrer dans les tours de protection évidents",
+        "Utiliser les bounces pour casser les holds au lieu de forcer les kills",
+        "Jouer autour des fenêtres En Garde / Discipline"
+      ],
+      "key_cards_to_respect": [
+        "En Garde",
+        "Discipline",
+        "Highlander"
+      ],
+      "notes": "Un rogue bien piloté peut rendre le matchup pénible, mais Draven reste favori en moyenne."
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "tier_consensus": "B/Tier 3",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "58-63",
+      "confidence": "high",
+      "summary": "Azir est régulièrement décrit comme un mauvais matchup face à Draven, surtout après side.",
+      "why": [
+        "Les discussions récentes décrivent Draven comme 'awful matchup' pour Azir",
+        "Thermobeam / removal et les swings de tempo violets cassent l'équipement et les développements d'Azir",
+        "Azir souffre quand il doit jouer dans une interaction plus efficace et une meilleure pioche"
+      ],
+      "draven_plan": [
+        "Mettre de la pression tôt puis renforcer après side avec removal dédié",
+        "Casser les pièces d'équipement / engines plutôt que chasser tous les petits corps",
+        "Forcer Azir à jouer dans le mauvais timing"
+      ],
+      "key_cards_to_respect": [
+        "Aurora packages",
+        "Windwall",
+        "token/equipment synergies"
+      ],
+      "notes": "L'un des meilleurs matchups métas de Draven."
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "tier_consensus": "S/Tier 3 by share only",
+      "verdict_for_draven": "even_to_slightly_unfavorable",
+      "score_estimate_for_draven": "47-50",
+      "confidence": "medium",
+      "summary": "Ezreal a un plafond plus haut que Draven selon plusieurs discussions, mais demande bien plus de maîtrise. En field moyen, Draven reste le meilleur choix 'facile'.",
+      "why": [
+        "Les deux decks abusent du moteur violet et du package de pioche",
+        "Ezreal peut surpasser Draven sur les longues séquences de resource looping",
+        "Draven garde l'avantage de la constance et de la simplicité d'exécution"
+      ],
+      "draven_plan": [
+        "Mettre une clock réelle et punir les tours où Ezreal ne défend pas le board",
+        "Ne pas lui laisser le temps d'assembler un tour miracle parfait",
+        "Sideboarder contre les engines et menaces de late swing"
+      ],
+      "key_cards_to_respect": [
+        "Called Shot",
+        "Stacked Deck",
+        "Ezreal, Prodigy",
+        "Rhasa the Sunderer"
+      ],
+      "notes": "Très dépendant du niveau des joueurs et du build exact."
+    },
+    {
+      "opponent": "Fiora, Grand Duelist",
+      "meta_share_percent": 3,
+      "tier_consensus": "A/B",
+      "verdict_for_draven": "slightly_favorable_to_even",
+      "score_estimate_for_draven": "50-55",
+      "confidence": "medium",
+      "summary": "Fiora existe souvent en version explicitement techée anti-Draven, mais ces builds sont plus étroits et moins stables sur le field général.",
+      "why": [
+        "Des guides/posts communautaires décrivent certains builds Baited Hook comme 'designed to win vs Draven'",
+        "Cependant ces versions ont des highs élevés et des lows bas",
+        "Draven standard reste meilleur en consistance et en polyvalence"
+      ],
+      "draven_plan": [
+        "Respecter les versions anti-purple après side",
+        "Ne pas sur-engager sur une seule grosse unité",
+        "Préférer les angles de tempo/bounce plutôt que les combats trop lisibles"
+      ],
+      "key_cards_to_respect": [
+        "Baited Hook",
+        "Ruin Runner",
+        "combat protection packages"
+      ],
+      "notes": "Plus le deck Fiora est spécifiquement ciblé anti-purple, plus le matchup se rapproche de l'égalité."
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "tier_consensus": "A/Tier 3 by share",
+      "verdict_for_draven": "slightly_favorable",
+      "score_estimate_for_draven": "53-57",
+      "confidence": "medium",
+      "summary": "Annie partage les couleurs de Draven mais joue plus agressif. Sur la durée, Draven tend à mieux convertir ses ressources grâce à son draw engine.",
+      "why": [
+        "Annie menace des sorties explosives et des points rapides",
+        "Draven a plus de tenue en midgame/longue partie",
+        "Le consensus autour de Draven le place comme la version la plus robuste de la paire Fury/Chaos"
+      ],
+      "draven_plan": [
+        "Éviter de tomber trop derrière aux points au début",
+        "Stabiliser avec des combats favorables puis reprendre le board",
+        "Prioriser les échanges qui coupent l'impulsion d'Annie"
+      ],
+      "key_cards_to_respect": [
+        "Sneaky Deckhand",
+        "Flash",
+        "Fight or Flight",
+        "Vi finish patterns"
+      ],
+      "notes": "Matchup plus dangereux en bo1 ou contre un pilotage très proactif d'Annie."
+    },
+    {
+      "opponent": "Ornn, Fire Below the Mountain",
+      "meta_share_percent": 3,
+      "tier_consensus": "C/Tier 3",
+      "verdict_for_draven": "slightly_favorable",
+      "score_estimate_for_draven": "54-58",
+      "confidence": "low",
+      "summary": "Ornn est parfois cité comme rogue capable de gêner Draven s'il aligne bien ses contres, mais reste un deck secondaire du field.",
+      "why": [
+        "Ornn peut produire des séquences de hold solides",
+        "Mais le manque de résultats et de volume réduit la confiance",
+        "Draven garde l'avantage de la pression et de la flexibilité"
+      ],
+      "draven_plan": [
+        "Éviter de jouer exactement dans les contres",
+        "Faire courir Ornn sur plusieurs menaces",
+        "Prendre les points avant que le board ne devienne trop épais"
+      ],
+      "key_cards_to_respect": [
+        "counter magic / hold tools",
+        "large body equipment plans"
+      ],
+      "notes": "Matchup plausible à problème localement, mais pas un problème de field global."
+    },
+    {
+      "opponent": "Rek'Sai, Void Burrower",
+      "meta_share_percent": 2,
+      "tier_consensus": "C/Tier 3",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "57-62",
+      "confidence": "low",
+      "summary": "Rek'Sai peut swarmer, mais Draven gère généralement mieux les combats et le tempo.",
+      "why": [
+        "Deck moins présent et moins validé par la méta",
+        "Draven profite bien des boards qui doivent se battre pour exister",
+        "Les outils de bounce et de trick défavorisent les lignes trop frontales"
+      ],
+      "draven_plan": [
+        "Nettoyer les combats-clés, ne pas se laisser déborder gratuitement",
+        "Valoriser Overzealous Fan / interaction de tempo",
+        "Prendre l'initiative avant que le swarm ne convertisse"
+      ],
+      "key_cards_to_respect": [
+        "swarm pressure",
+        "signature recursion/value"
+      ],
+      "notes": "Favori Draven sauf sortie très agressive."
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_share_percent": 2,
+      "tier_consensus": "A/C depending source and format lens",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "56-60",
+      "confidence": "low",
+      "summary": "Sett peut gagner des parties via grosse statline et pression, mais le deck paraît moins affûté que Draven dans le Spiritforged field.",
+      "why": [
+        "Les tier lists de mars 2026 le placent sous les grands decks violets/Draven/Irelia/Kai'Sa",
+        "Draven a plus de jeu réactif et de card flow",
+        "Sett reste dangereux s'il force un affrontement de stats pures"
+      ],
+      "draven_plan": [
+        "Refuser les trades qui valorisent seulement la taille",
+        "Garder bounce/removal pour les menaces qui portent le tour",
+        "Profiter de la meilleure souplesse tactique"
+      ],
+      "key_cards_to_respect": [
+        "large midrange threats",
+        "tempo swing cards"
+      ],
+      "notes": "Favori structurel Draven."
+    },
+    {
+      "opponent": "Lucian, Purifier",
+      "meta_share_percent": 2,
+      "tier_consensus": "B/Tier 3",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "57-61",
+      "confidence": "low",
+      "summary": "Lucian n'a pas le même poids de field ni la même résilience que Draven.",
+      "why": [
+        "Deck moins représenté et moins documenté",
+        "Draven punit bien les plans fair/combat",
+        "La qualité moyenne des cartes et du moteur favorise Draven"
+      ],
+      "draven_plan": [
+        "Prendre le board tôt et forcer Lucian à réagir",
+        "Garder l'interaction pour les tours charnières",
+        "Ne pas offrir de fenêtre de snowball gratuite"
+      ],
+      "key_cards_to_respect": [
+        "tempo combat tricks",
+        "aggressive point pushes"
+      ],
+      "notes": "Confiance faible faute de gros volume."
+    },
+    {
+      "opponent": "Rumble, Mechanized Menace",
+      "meta_share_percent": 2,
+      "tier_consensus": "C/Tier 3",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "58-62",
+      "confidence": "low",
+      "summary": "Le principal argument relevé dans les tier lists est que la combinaison Fury/Mind est déjà mieux exploitée par Kai'Sa que par Rumble.",
+      "why": [
+        "Rumble souffre de la comparaison directe avec Kai'Sa",
+        "Draven est plus stable et plus éprouvé",
+        "Le deck manque encore de validation compétitive de premier plan"
+      ],
+      "draven_plan": [
+        "Jouer le matchup comme un midrange inférieur de field",
+        "Punir les sorties lentes ou maladroites",
+        "Gérer les grosses menaces isolées avec le tempo"
+      ],
+      "key_cards_to_respect": [
+        "big payoff units",
+        "Mind/Fury removal suite"
+      ],
+      "notes": "Favori Draven."
+    },
+    {
+      "opponent": "Sivir, Battle Mistress",
+      "meta_share_percent": 1,
+      "tier_consensus": "A/Tier 3 by share",
+      "verdict_for_draven": "close_even",
+      "score_estimate_for_draven": "49-52",
+      "confidence": "low",
+      "summary": "Sivir miracle/discard apparaît comme deck techniquement dangereux, mais sa faible part de field limite la certitude.",
+      "why": [
+        "La communauté cite parfois 'miracle/discard Sivir' parmi les decks vraiment punitifs",
+        "Le deck peut produire des swings comparables aux autres shells violets combo",
+        "Le manque de volume empêche d'en faire un verdict dur"
+      ],
+      "draven_plan": [
+        "Clock rapide + disruption de tempo",
+        "Éviter de laisser Sivir transformer un tour libre en swing irrécupérable",
+        "Sideboarder comme contre un shell combo violet"
+      ],
+      "key_cards_to_respect": [
+        "miracle/discard package",
+        "high-swing turns"
+      ],
+      "notes": "Matchup probablement plus difficile qu'indiqué si la liste est pilotée par un expert."
+    },
+    {
+      "opponent": "Ahri, Nine-Tailed Fox",
+      "meta_share_percent": 1,
+      "tier_consensus": "C/Tier 3",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "57-61",
+      "confidence": "low",
+      "summary": "Ahri peut voler des games via mobilité/tempo, mais reste un deck minoritaire et moins robuste.",
+      "why": [
+        "Draven gère bien les plans de combat fair",
+        "Ahri n'a pas le même niveau de validation tournoi",
+        "Quelques discussions mentionnent des angles de hold, sans faire d'Ahri une vraie réponse de field à Draven"
+      ],
+      "draven_plan": [
+        "Préserver le tempo de base et empêcher les scores gratuits",
+        "Ne pas sur-commiter à un battlefield si Ahri menace de pivoter",
+        "Profiter de la meilleure consistance brute"
+      ],
+      "key_cards_to_respect": [
+        "mobility scoring",
+        "hold packages"
+      ],
+      "notes": "Favori Draven."
+    },
+    {
+      "opponent": "Yasuo, Unforgiven",
+      "meta_share_percent": 1,
+      "tier_consensus": "C/Tier 3",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "58-62",
+      "confidence": "low",
+      "summary": "Yasuo a des lignes explosives mais manque d'incitation compétitive face aux meilleurs decks.",
+      "why": [
+        "Les tier lists le placent bas",
+        "Le plan de mobilité surprise peut voler des parties sans forcément être stable sur un long tournoi",
+        "Draven demande moins de setup"
+      ],
+      "draven_plan": [
+        "Maintenir la pression et forcer les ressources défensives",
+        "Garder de quoi casser un score volé",
+        "Éviter les lines qui ouvrent un double-score gratuit"
+      ],
+      "key_cards_to_respect": [
+        "mobility tools",
+        "Yasuo, Windrider lines"
+      ],
+      "notes": "Favori Draven, mais attention aux tours de vol de partie."
+    },
+    {
+      "opponent": "Teemo, Swift Scout",
+      "meta_share_percent": 1,
+      "tier_consensus": "C/Tier 3",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "58-63",
+      "confidence": "low",
+      "summary": "Teemo n'apparaît pas comme un vrai prédateur de Draven dans Spiritforged.",
+      "why": [
+        "Peu de validation tournoi récente dans ce meta",
+        "Draven a suffisamment d'interaction pour ne pas se faire dépasser proprement",
+        "La puissance moyenne du deck paraît trop en dessous"
+      ],
+      "draven_plan": [
+        "Stabiliser vite et convertir les trades",
+        "Éviter les dommages collatéraux inutiles",
+        "Conserver l'initiative"
+      ],
+      "key_cards_to_respect": [
+        "chip pressure",
+        "trick-based tempo"
+      ],
+      "notes": "Favori Draven."
+    },
+    {
+      "opponent": "Lux, Lady of Luminosity",
+      "meta_share_percent": 1,
+      "tier_consensus": "B/C",
+      "verdict_for_draven": "slightly_favorable",
+      "score_estimate_for_draven": "54-58",
+      "confidence": "low",
+      "summary": "Lux partage des points communs avec Viktor sur les sorts, mais elle est globalement moins menaçante dans la méta actuelle.",
+      "why": [
+        "Les tier lists la placent sous Viktor",
+        "Son moteur est réel mais moins oppressant",
+        "Draven peut souvent la déborder avant que la valeur ne compense"
+      ],
+      "draven_plan": [
+        "Jouer comme contre un contrôle plus lent",
+        "Mettre des questions précoces sur le board",
+        "Ne pas offrir de tours gratuits"
+      ],
+      "key_cards_to_respect": [
+        "spell-heavy control",
+        "recruit/value plans"
+      ],
+      "notes": "Plus difficile que les purs decks fair, mais Draven reste devant."
+    },
+    {
+      "opponent": "Miss Fortune, Bounty Hunter",
+      "meta_share_percent": 1,
+      "tier_consensus": "A/C depending source context",
+      "verdict_for_draven": "slightly_favorable",
+      "score_estimate_for_draven": "53-57",
+      "confidence": "low",
+      "summary": "Miss Fortune peut produire des tours agressifs et punir certains setups, mais sa présence en Spiritforged reste limitée.",
+      "why": [
+        "Peu de volume Spiritforged récent",
+        "Draven a de meilleurs outils de conversion au long cours",
+        "Le matchup dépend beaucoup de l'ouverture et des angles de race"
+      ],
+      "draven_plan": [
+        "Éviter de donner des points gratuits",
+        "Préserver les réponses pour les tours où MF tente d'accélérer la course",
+        "Transformer la partie en échange de ressources plutôt qu'en pure race"
+      ],
+      "key_cards_to_respect": [
+        "aggressive tempo",
+        "Aurora / pressure packages selon build"
+      ],
+      "notes": "Pas le plus confortable, mais Draven favori léger."
+    },
+    {
+      "opponent": "Renata Glasc, Chem-Baroness",
+      "meta_share_percent": 1,
+      "tier_consensus": "C/Tier 3",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "57-62",
+      "confidence": "low",
+      "summary": "Deck rare et moins documenté; par défaut Draven garde l'avantage de puissance brute et de cohérence.",
+      "why": [
+        "Field share très faible",
+        "Peu de signaux forts indiquant un vrai edge contre Draven",
+        "Le deck n'apparaît pas comme un adaptateur anti-Draven reconnu"
+      ],
+      "draven_plan": [
+        "Jouer simple et propre",
+        "Prioriser les trades qui gardent la pression sur les points",
+        "Ne pas se faire surprendre par des angles atypiques"
+      ],
+      "key_cards_to_respect": [
+        "value/tempo packages spécifiques à la liste"
+      ],
+      "notes": "Faible confiance."
+    },
+    {
+      "opponent": "Jax, Grandmaster at Arms",
+      "meta_share_percent": 0,
+      "tier_consensus": "B/C",
+      "verdict_for_draven": "slightly_favorable",
+      "score_estimate_for_draven": "54-58",
+      "confidence": "low",
+      "summary": "Jax peut transformer l'équipement en tricks, mais la faible représentation l'empêche d'être une menace structurelle de méta.",
+      "why": [
+        "Deck techniquement intéressant mais peu joué",
+        "Draven gère bien les combats complexes quand il force la cadence",
+        "La puissance globale du shell paraît en dessous"
+      ],
+      "draven_plan": [
+        "Respecter la vitesse de Quick-Draw",
+        "Garder ses bounces pour les gros swings d'équipement",
+        "Ne pas se faire piéger dans un all-in lisible"
+      ],
+      "key_cards_to_respect": [
+        "Jax, Unmatched",
+        "equipment tricks",
+        "Calm protection"
+      ],
+      "notes": "Favori Draven."
+    },
+    {
+      "opponent": "Jinx, Loose Cannon",
+      "meta_share_percent": 0,
+      "tier_consensus": "C",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "58-63",
+      "confidence": "low",
+      "summary": "Jinx n'a pas d'arguments de field suffisants pour être considérée comme une réponse sérieuse à Draven en mars 2026.",
+      "why": [
+        "Très faible présence",
+        "Draven a une meilleure structure midrange/tempo",
+        "Peu d'indications de matchup problématique"
+      ],
+      "draven_plan": [
+        "Stabiliser les premiers tours puis imposer le board",
+        "Éviter les races inutiles",
+        "Capitaliser sur les échanges favorables"
+      ],
+      "key_cards_to_respect": [
+        "burn/aggressive lines selon build"
+      ],
+      "notes": "Favori Draven net."
+    },
+    {
+      "opponent": "Darius, Hand of Noxus",
+      "meta_share_percent": 0,
+      "tier_consensus": "C",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "58-62",
+      "confidence": "low",
+      "summary": "Darius est décrit comme puissant mais incohérent, avec moins d'avantage de cartes que Draven.",
+      "why": [
+        "Mobalytics souligne sa difficulté à maintenir le card advantage",
+        "Draven fait un travail similaire en mieux sur le plan compétitif",
+        "Faible représentation"
+      ],
+      "draven_plan": [
+        "Refuser le simple stat-check quand possible",
+        "Profiter du meilleur flux de cartes",
+        "Faire durer juste assez pour que la différence de ressource compte"
+      ],
+      "key_cards_to_respect": [
+        "big stat pressure",
+        "on-play synergies"
+      ],
+      "notes": "Draven est une version supérieure du rôle midrange agressif."
+    },
+    {
+      "opponent": "Lee Sin, Blind Monk",
+      "meta_share_percent": 0,
+      "tier_consensus": "C",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "58-63",
+      "confidence": "low",
+      "summary": "Lee Sin existe, mais même Mobalytics note qu'il y a peu d'incitations à le jouer plutôt que Jax ou Yi.",
+      "why": [
+        "Le deck semble surclassé à l'intérieur même de son couple de couleurs",
+        "Draven est plus efficient et plus éprouvé",
+        "Quasi absent du field"
+      ],
+      "draven_plan": [
+        "Jouer un plan standard de pression + interaction",
+        "Ne pas surévaluer le matchup",
+        "Punir les sorties moyennes"
+      ],
+      "key_cards_to_respect": [
+        "Dragon's Rage",
+        "Calm body tricks"
+      ],
+      "notes": "Très favorable à Draven."
+    },
+    {
+      "opponent": "Leona, Radiant Dawn",
+      "meta_share_percent": 0,
+      "tier_consensus": "C",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "58-63",
+      "confidence": "low",
+      "summary": "Leona peut parfois tenir, mais n'a pas de statut de menace de méta actuelle.",
+      "why": [
+        "Représentation minimale",
+        "Peu de preuves d'un edge structurel contre Draven",
+        "Draven a plus de fluidité et de punition"
+      ],
+      "draven_plan": [
+        "Rester proactif",
+        "Forcer Leona à dépenser ses réponses défensives tôt",
+        "Transformer les tours réactifs en avantage de cartes"
+      ],
+      "key_cards_to_respect": [
+        "defensive hold lines"
+      ],
+      "notes": "Favori Draven."
+    },
+    {
+      "opponent": "Volibear, Relentless Storm",
+      "meta_share_percent": 0,
+      "tier_consensus": "C",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "57-62",
+      "confidence": "low",
+      "summary": "Volibear n'a pas percé; sa paire Fury/Mind est généralement jugée inférieure à Kai'Sa.",
+      "why": [
+        "Field quasi inexistant",
+        "Comparaison défavorable à Kai'Sa",
+        "Draven gère bien les decks non optimisés du même niveau de puissance"
+      ],
+      "draven_plan": [
+        "Empêcher les gros payoffs de se stabiliser",
+        "Prendre les points avant que les gros bodies ne dominent",
+        "Jouer le tempo, pas la surenchère"
+      ],
+      "key_cards_to_respect": [
+        "Dazzling Aurora",
+        "big payoff units",
+        "Stormbringer"
+      ],
+      "notes": "Favori Draven."
+    },
+    {
+      "opponent": "Garen, Might of Demacia",
+      "meta_share_percent": 0,
+      "tier_consensus": "C",
+      "verdict_for_draven": "favorable",
+      "score_estimate_for_draven": "60-65",
+      "confidence": "low",
+      "summary": "Garen n'existe pratiquement pas dans le field Spiritforged compétitif de mars 2026.",
+      "why": [
+        "Meta share négligeable",
+        "Pas de signaux récents de performance de haut niveau",
+        "Draven l'emporte sur la qualité brute des interactions"
+      ],
+      "draven_plan": [
+        "Plan standard, sans sur-sideboard",
+        "Profiter de la supériorité de tempo",
+        "Maintenir la pression sur les points"
+      ],
+      "key_cards_to_respect": [
+        "midrange Demacia staples selon build"
+      ],
+      "notes": "Très favorable."
+    }
+  ],
+  "practical_recommendations": {
+    "best_pick_if_you_want_to_play_draven_now": "Midrange Draven",
+    "why": [
+      "Le meilleur compromis entre puissance, stabilité et facilité d'exécution",
+      "Performe bien dans un field ouvert sans exiger le niveau de maîtrise d'Ezreal/miracle",
+      "Dispose encore de plans crédibles même dans ses matchups plus compliqués"
+    ],
+    "when_to_avoid_draven": [
+      "Si ton local/événement est saturé de Viktor contrôle bien construit",
+      "Si tu as peu de reps et que le field attendu est rempli de mirrors violets ultra-techniques",
+      "Si tu préfères un deck plus polarisé à plafond plus haut (Ezreal/miracle) et que tu as déjà les reps"
+    ],
+    "best_meta_targets_for_draven": [
+      "Azir",
+      "Rumble",
+      "Rek'Sai",
+      "Darius",
+      "Jinx",
+      "de nombreux decks fair de tier bas"
+    ],
+    "most_annoying_matchups_for_draven": [
+      "Viktor",
+      "Ezreal (pilote expert)",
+      "Kai'Sa",
+      "Irelia"
+    ],
+    "event_read_summary": "En mars 2026, Draven reste un des meilleurs choix à l'aveugle. Le deck n'est pas intouchable, mais il combine un floor très élevé, un sideboard flexible et un plan de jeu qui punit immédiatement les erreurs adverses."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "meta stats",
+      "title": "RiftDecks Spiritforged Meta Breakdown",
+      "date": "consulté le 2026-03-11",
+      "details": "Meta share Spiritforged: Kai'Sa 18%, Draven 16%, Irelia 10%, Viktor 7%, etc."
+    },
+    {
+      "id": "S2",
+      "type": "guide",
+      "title": "Riftbound.gg - Draven, Glorious Executioner Guide",
+      "date": "2026-02-11",
+      "details": "Présentation générale de Draven comme meilleur pick compétitif Spiritforged; capacité de draw sur combat gagné."
+    },
+    {
+      "id": "S3",
+      "type": "guide",
+      "title": "Rift Mana - Draven Glorious Executioner Deck Guide",
+      "date": "2026-01-23",
+      "details": "Détail des versions midrange et miracle, packages clés, priorités de battlefields et interaction."
+    },
+    {
+      "id": "S4",
+      "type": "tier list",
+      "title": "Mobalytics Riftbound Tier List",
+      "date": "consulté le 2026-03-11",
+      "details": "Classe Draven, Ezreal, Irelia, Kai'Sa en S-tier Spiritforged; décrit les rôles et shells dominants."
+    },
+    {
+      "id": "S5",
+      "type": "guide",
+      "title": "Riftbound.gg - Irelia Guide",
+      "date": "2026-03-10",
+      "details": "Présente Irelia comme plus grosse concurrence de Draven."
+    },
+    {
+      "id": "S6",
+      "type": "guide",
+      "title": "Riftbound.gg - Viktor Guide",
+      "date": "2026-02-16",
+      "details": "Explique que Viktor contrôle s'est orienté pour mieux gérer un métagame avec Draven."
+    },
+    {
+      "id": "S7",
+      "type": "official update",
+      "title": "Potential Card Bans: Riftbound Game Director's Update",
+      "date": "2026-03-10",
+      "details": "Bans discutés mais aucune décision finale; attendre après Shenzhen Major Open; rules update le 2026-03-30."
+    },
+    {
+      "id": "S8",
+      "type": "official rules",
+      "title": "Riftbound Spiritforged FAQ",
+      "date": "2026-01-14",
+      "details": "Clarifications/errata, pas de changement pour raisons de power level uniquement."
+    },
+    {
+      "id": "S9",
+      "type": "community forum",
+      "title": "Reddit r/riftboundtcg - threads Draven matchups",
+      "date": "février-mars 2026",
+      "details": "Consensus récurrent: Viktor est l'une des meilleures réponses à Draven; Kai'Sa solide; Irelia compétitive; Azir mauvais matchup pour Azir; certaines versions Fiora sont techées anti-Draven."
+    }
+  ]
+}

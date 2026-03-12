@@ -1,0 +1,1034 @@
+{
+"generated_for": "Utilisateur ChatGPT",
+"generated_at_utc": "2026-03-11",
+"language": "fr",
+"format_version": "1.0",
+"title": "Guide Yasuo complet - Riftbound Spiritforged - Mars 2026",
+"scope": {
+"game": "Riftbound: League of Legends TCG",
+"format": "Constructed - Spiritforged",
+"timeframe": "Mars 2026, avec contexte novembre 2025 a mars 2026 pour suivre l'evolution des shells Yasuo",
+"methodology": {
+"approach": [
+"Croisement du guide Yasuo recent, des tier lists post-Chinese Regionals, post-Bologna et post-Vegas",
+"Croisement des best-of decklists officiels Houston, Bologna et Vegas",
+"Croisement des discussions communautaires sur Yasuo stable sans Nocturne, Yasuo casino/Nocturne, Yasuo controle avec Yi/Masks et Yasuo(6) carry",
+"Accent mis sur le pilotage expert, la logique des shells et les plans de matchup, meme si la legende reste faible dans la meta"
+],
+"confidence_scale": {
+"high": "Plusieurs sources recentes convergentes + decklist officielle et/ou retour matchup explicite",
+"medium": "Consensus raisonnable mais sensible au shell, au sideboard ou au niveau du pilote",
+"low": "Peu de data directe, lecture surtout structurelle ou locale"
+}
+}
+},
+"meta_context": {
+"official_state_march_2026": {
+"banlist_status": "Aucun changement de banlist annonce au moment de la compilation. ([riftbound.leagueoflegends.com][1])",
+"next_rules_update_announced_for": "2026-03-30. ([Riftbound.gg][2])"
+},
+"yasuo_meta_position": {
+"official_recent_results": {
+"houston": "Best-of Yasuo #50 overall, 1 / 25 joueurs Yasuo, champion Yasuo, Remorseful, shell plus controle/value avec Wielder, Mindsplitter, Rhasa, Scrapheap, Traveling Merchant. ([riftbound.leagueoflegends.com][3])",
+"bologna": "Best-of Yasuo #92 overall, 1 / 39 joueurs Yasuo, champion Yasuo, Windrider, shell tempo/mobility avec Boots, Discipline, En Garde, Guardian Angel, Irelia, Fervent, Stacked Deck, Stellacorn Herder. ([riftbound.leagueoflegends.com][4])",
+"vegas": "Best-of Yasuo #178 overall, 1 / 36 joueurs Yasuo, champion Yasuo, Remorseful, shell tempo/mobility plus stable avec Boots, Discipline, En Garde, Guardian Angel, Irelia, Fervent, Stacked Deck, Stellacorn Herder, Teemo, Scout. ([riftbound.leagueoflegends.com][1])"
+},
+"tier_tracking": {
+"global_release_post_chinese_regionals": "Tier 4 selon Riftbound.gg, avec l'idee que Yasuo a surtout une valeur de 'best-of card hunt' et un Top 256 en Nanjing, sans vraie aspiration competitive reguliere. ([Riftbound.gg][5])",
+"post_bologna": "Tier 4, 39 picks, 3% Day 2 conversion, 44.8% win rate, Top 128. ([Riftbound.gg][6])",
+"post_vegas": "Tier 4, 75 picks, 2.67% Day 2 conversion, 42.1% win rate, Top 128 & Top 256. ([Riftbound.gg][2])",
+"riftdecks_snapshot": "Environ 512 decks, 2% de metashare, Tier 3 sur l'agregat Spiritforged consulte. ([riftdecks.com][7])",
+"mobalytics_snapshot": "D-Tier, avec l'idee que Yasuo cree des lignes de mobilite puissantes mais reste structurellement en dessous des meilleurs decks du format. ([Mobalytics][8])"
+},
+"overall_read": "Yasuo n'est pas un deck de volume ni de resultats constants en mars 2026. Mais il a plusieurs vraies branches jouables: un shell tempo/mobility proche d'Irelia, un shell controle/value plus lent qui tient mieux certains fronts, et des versions plus all-in ou plus casino. La communaute la plus experimentee insiste sur un point: quand Yasuo gagne, c'est souvent parce qu'il a ete mieux pilote et mieux construit, pas parce que la legende est naturellement au niveau de Kai'Sa ou Draven. ([Riftbound.gg][9])"
+},
+"important_user_instruction_applied": {
+"statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et les structures de deck plutot qu'un simple jugement meta."
+}
+},
+"advanced_guide": {
+"legend": "Yasuo, Unforgiven",
+"domains": [
+"Calm",
+"Chaos"
+],
+"macro_identity": {
+"archetype_family": "Tempo mobility / roaming tempo-control / opportunistic point stealing",
+"primary_gameplan": "Utiliser la legende pour employer une unite comme si elle etait ready, soit pour la projeter sur le bon battlefield au bon moment, soit pour la remonter a la base et la proteger. Ensuite, convertir les mouvements, les buffs, les reactions Calm et les outils Chaos de tempo en fronts ingagnables ou en steals de points.",
+"secondary_gameplan": "Selon le shell: soit jouer un tempo/mobility proche d'Irelia mais plus opportuniste, soit jouer un shell controle/value avec davantage de cartes de tenue de battlefield, soit jouer une version all-in autour de Yasuo(6) et de sa survie, soit assumer un shell Nocturne/casino plus explosif mais beaucoup moins fiable.",
+"why_the_legend_is_strong": [
+"La legende ajoute une couche de mobilite unique qui permet soit de voler un conquer, soit de sauver une piece importante. ([Riftbound.gg][9])",
+"Calm et Chaos se combinent tres bien en support pur: buffs, mouvements, contretemps, accelerations et tricks. ([Riftbound.gg][9])",
+"Yasuo peut creer des lignes de score supplementaires dans un meme tour, surtout avec les bons champions et les bons spells. ([Mobalytics][8])",
+"Dans les bons pairings, il attaque la game sous un angle tres difficile a lire: le bon front, la bonne vitesse, et le bon timing de move."
+],
+"why_the_legend_is_hard": [
+"Les unites Calm/Chaos sont fragiles et demandent un soutien constant. ([Riftbound.gg][9])",
+"La legende consomme elle-meme une partie de la rune economy, ce qui rend les erreurs de sequencing tres punitives. ([Riftbound.gg][9])",
+"Le deck perd beaucoup contre les decks a forte densite de removal, surtout Kai'Sa. ([Reddit][10])",
+"Le deck a plusieurs branches tres differentes, et les mauvaises versions perdent autant contre elles-memes que contre l'adversaire. ([Reddit][11])"
+]
+},
+"rules_and_core_interactions": {
+"legend_text_summary": "Le guide Riftbound.gg resume la legende comme la capacite d'utiliser une unite comme si elle etait ready, soit pour conquerir, soit pour revenir a la base, a condition d'avoir une unite capable de vraiment rester sur le board. ([Riftbound.gg][9])",
+"yasuo_windrider_summary": "Yasuo, Windrider est le champion opportuniste mis en avant dans le guide comme une carte a jouer sur un adversaire tapped out, puis a bouger immediatement pour gagner un combat sans donner a l'unite adverse la chance de participer au showdown. Le best-of Bologna l'utilise comme champion. ([Riftbound.gg][9])",
+"yasuo_remorseful_summary": "Yasuo, Remorseful est presente par le guide comme le chosen champion par defaut de la plupart des decks, meme si le meilleur resultat Spiritforged officiel est venu avec Windrider. Le best-of Houston et le best-of Vegas l'utilisent. ([Riftbound.gg][9])",
+"signature_spell_summary": "Le guide dit explicitement que la signature spell est souvent coupee pour des cartes plus efficaces en cout, ce qui est un marqueur important: les builds competitifs n'essaient pas de jouer 'tout le package Yasuo', ils optimisent d'abord le tempo reel. ([Riftbound.gg][9])"
+},
+"distinct_archetypes": [
+{
+"name": "Reliable Tempo-Mobility Yasuo",
+"status_march_2026": "Shell de reference le plus credible",
+"evidence": [
+"Best-of officiel a Bologna. ([riftbound.leagueoflegends.com][4])",
+"Best-of officiel a Vegas. ([riftbound.leagueoflegends.com][1])",
+"La communaute 'which Yasuo list is better' prefere explicitement la version stable sans Nocturne/casino. ([Reddit][11])"
+],
+"identity": "Version la plus fiable de mars 2026. Elle ressemble parfois a un 'deck Irelia avec une moins bonne legende', ce que le guide dit presque explicitement, mais elle gagne en contrepartie des lignes de move et de protection tres fines. Elle joue Boots, Discipline, En Garde, Guardian Angel, Stacked Deck, Stellacorn Herder, des petits corps de tempo, Irelia, Fervent et souvent Yasuo, Remorseful ou Windrider selon la philosophie du build. ([Riftbound.gg][9])",
+"reference_core": [
+"Yasuo, Remorseful",
+"Yasuo, Windrider",
+"Irelia, Fervent",
+"Boots of Swiftness",
+"Discipline",
+"En Garde",
+"Guardian Angel",
+"Fight or Flight",
+"Not So Fast",
+"Ride the Wind",
+"Stacked Deck",
+"Stellacorn Herder",
+"Lonely Poro",
+"Defy",
+"Charm"
+],
+"reference_battlefields": [
+"Obelisk of Power",
+"The Dreaming Tree",
+"Sunken Temple or Back-Alley Bar depending list"
+],
+"chosen_champion_default": "Yasuo, Remorseful",
+"default_for_matchups_below": true
+},
+{
+"name": "Control / Battlefield-Hold Yasuo",
+"status_march_2026": "Shell reel et meta-call",
+"evidence": [
+"Best-of officiel Houston. ([riftbound.leagueoflegends.com][3])",
+"Les discussions 'Yasuo mains' et 'Yasuo for skirmish advice' defendent explicitement les versions plus lentes avec Wielder, Masks, Master Yi, Mindsplitter et cartes de tenue de front. ([Reddit][10])"
+],
+"identity": "Version plus lente, moins flashy, qui accepte que Yasuo ne soit pas seulement un deck de swing de points. Elle joue davantage pour tenir un battlefield, pour avoir une vraie qualite de midgame, et pour mieux gerer Ahri, Yi ou certains matchups de finesse.",
+"reference_core": [
+"Yasuo, Remorseful",
+"Master Yi",
+"Wielder of Water",
+"Mindsplitter",
+"Mask of Foresight",
+"Stacked Deck",
+"Traveling Merchant",
+"Rhasa the Sunderer",
+"Scrapheap",
+"Tasty Faefolk in some lists",
+"Find Your Center in some lists",
+"Last Stand in some lists",
+"Zhonya's Hourglass"
+],
+"reference_battlefields": [
+"Targon's Peak",
+"Windswept Hillock",
+"control-friendly or hold-friendly fronts"
+],
+"chosen_champion_default": "Yasuo, Remorseful",
+"important_note": "C'est la meilleure branche si ton objectif est moins de voler une partie tres vite et plus de jouer les matchups techniques de hold et de resource denial."
+},
+{
+"name": "All-in Yasuo(6) Carry",
+"status_march_2026": "Shell local reel mais polarisant",
+"evidence": [
+"Le thread 'Mostly undefeated with Yasuo' decrit un plan entierement centre sur Yasuo(6), sa protection et son retour a la base a chaque tour. ([Reddit][12])"
+],
+"identity": "Version tres all-in ou toute la partie consiste a poser Yasuo(6), le proteger avec Zhonya's, En Garde, Discipline, puis abuser de Ride the Wind, Last Breath et de la legende pour multiplier ses activations sans jamais le laisser exposé sur un battlefield.",
+"reference_core": [
+"Yasuo, Remorseful",
+"Zhonya's Hourglass",
+"Discipline",
+"En Garde",
+"Ride the Wind",
+"Last Breath",
+"Kayn, Unleashed in some lists",
+"Rhasa the Sunderer"
+],
+"reference_battlefields": [
+"battlefields where a single premium holder can dominate",
+"fronts with safe retreats",
+"tempo-positive score fronts"
+],
+"chosen_champion_default": "Yasuo, Remorseful",
+"important_note": "Le propre auteur du thread dit lui-meme que cela ne gagnera pas forcement les grands tournois, mais que pour des locaux c'est redoutable. ([Reddit][12])"
+},
+{
+"name": "Casino / Nocturne-Cheat Yasuo",
+"status_march_2026": "Shell reel mais deconsidere par les joueurs experts de Yasuo",
+"evidence": [
+"Le thread 'Which Yasuo list is better' oppose explicitement un 'casino yasuo' avec Nocturne et un Yasuo stable sans Nocturne. ([Reddit][11])"
+],
+"identity": "Version plus high-roll, souvent avec Nocturne, des lignes de cheat et parfois Kayn. Elle peut produire des tours spectaculaires, mais les joueurs qui ont beaucoup teste Yasuo la jugent moins fiable et moins formatrice que les listes plus stables.",
+"reference_core": [
+"Nocturne",
+"Kayn in some builds",
+"tempo-cheat package",
+"Yasuo mobility core"
+],
+"reference_battlefields": [
+"The Candlelit Sanctum in older discussions",
+"tempo swing fronts"
+],
+"chosen_champion_default": "Yasuo, Windrider or Remorseful depending exact build",
+"important_note": "Les joueurs qui ont compare longuement les deux disent ne pas voir de vraie raison de jouer Casino plutot que la version stable, sauf gout personnel pour les highs. ([Reddit][11])"
+}
+],
+"advanced_pilot_principles": [
+{
+"name": "Yasuo is a support deck disguised as a point-stealing deck",
+"detail": "Le guide le dit tres clairement: Calm et Chaos se melangent surtout tres bien comme domaines de support, mais leurs unites restent fragiles. Tes cartes doivent donc servir un plan de front ou de survie, pas seulement un joli move. ([Riftbound.gg][9])"
+},
+{
+"name": "Your best unit in base is often stronger than your best unit exposed",
+"detail": "Le thread Yasuo(6) insiste sur une regle fondamentale: ne jamais laisser Yasuo(6) sur un battlefield si tu peux le renvoyer a la base avec la legende. Meme hors shell all-in, cette logique de protection est centrale. ([Reddit][12])"
+},
+{
+"name": "Reliable Yasuo is better than flashy Yasuo",
+"detail": "Le meilleur thread comparatif actuel est sans ambiguite: les joueurs qui ont beaucoup teste le deck preferent la version stable/no-nocturne et disent qu'elle recompense beaucoup plus le skill que le high-roll. ([Reddit][11])"
+},
+{
+"name": "Holding battlefields is matchup-dependent, not optional",
+"detail": "Les discussions Yasuo disent explicitement qu'il faut tenir les battlefields contre Ahri ou Yi, alors que contre d'autres decks le plan est plus roaming et moins hold. C'est une cle de skill majeure du deck. ([Reddit][10])"
+},
+{
+"name": "Your real resource is sequencing, not raw card count",
+"detail": "Les meilleurs retours sur Yasuo parlent presque tous de deck 'rewarding pilot skill'. Quand tu perds, c'est souvent soit parce que l'adversaire avait exactement l'out, soit parce que ta structure de tour etait mauvaise. ([Reddit][11])"
+},
+{
+"name": "Against removal decks, stop trying to look clever",
+"detail": "Plusieurs joueurs experimentes disent que le vrai probleme de Yasuo est la densite de removal. Dans ces pairings, il faut d'abord survivre ou garder la bonne piece vivante, et seulement ensuite penser aux lignes brillantes. ([Reddit][10])"
+}
+],
+"signature_cards_and_packages": {
+"yasuo_unforgiven_role": "La legende est un moteur de movement/ready use, mais elle coute elle-meme des runes et demande donc un pilotage tres discipline. ([Riftbound.gg][9])",
+"yasuo_remorseful_role": "Chosen champion par defaut dans la plupart des decks selon le guide; c'est aussi le champion des best-of Houston et Vegas. ([Riftbound.gg][9])",
+"yasuo_windrider_role": "Champion opportuniste, meilleur quand l'adversaire est tapped out et que tu peux le bouger immediatement; champion du best-of Bologna. ([Riftbound.gg][9])",
+"stacked_deck_role": "Piliere commun des shells modernes officiels, aussi bien Houston que Bologna/Vegas. ([riftbound.leagueoflegends.com][3])",
+"discipline_role": "Un des meilleurs buffs/protections du deck et une carte marquee de tous les shells tempo Yasuo officiels. ([riftbound.leagueoflegends.com][4])",
+"en_garde_role": "Carte cle pour faire passer les seuils de damage/removal et pour soutenir les tours Yasuo(6) ou les fronts a tenir. ([riftbound.leagueoflegends.com][13])",
+"guardian_angel_role": "Marqueur fort des meilleures listes officielles Bologna/Vegas. Aide a rendre les porteurs plus penibles a gerer. ([riftbound.leagueoflegends.com][4])",
+"ride_the_wind_role": "Carte centrale des lignes de movement et du shell Yasuo(6). Elle transforme souvent une simple presence en multi-activation ou en point vole. ([riftbound.leagueoflegends.com][13])",
+"not_so_fast_role": "Outil de tempo recurrent dans les listes officielles, important pour casser certaines maths adverses. ([riftbound.leagueoflegends.com][4])",
+"zhonyas_hourglass_role": "Carte de protection citee comme 'very important' dans le shell Yasuo(6) carry et presente en 1 exemplaire dans plusieurs listes officielles. ([Reddit][12])",
+"mask_of_foresight_role": "Marqueur des versions plus lentes/plus controlees qui veulent mieux tenir certains matchups comme Ahri ou Yi. ([Reddit][10])",
+"master_yi_role": "Tech de matchup citee comme excellente dans certaines versions Yasuo pour mieux gerer Ahri, Yi, Sett et donner un vrai finisher de midgame. ([Reddit][14])",
+"mindsplitter_role": "Tech communautaire utile pour lire la main adverse, trouver Watcher et jouer une version plus controlee. ([Reddit][14])",
+"wielder_of_water_role": "Piliere du best-of Houston et marqueur des shells plus controle/value. ([riftbound.leagueoflegends.com][3])",
+"vex_role": "Carte citee comme outil potentiel contre la facon dont Draven joue ses combats. ([Reddit][15])",
+"teemo_scout_role": "Tech du best-of Vegas, probablement pour enrichir le package de tempo et de front utility. ([riftbound.leagueoflegends.com][1])"
+},
+"common_mistakes": [
+{
+"mistake": "Playing Casino Yasuo because the highs look cooler",
+"why_it_loses": "Les joueurs qui ont beaucoup teste Yasuo disent preferer de loin la version stable et ne pas voir de vraie raison competitive de jouer Casino. ([Reddit][11])"
+},
+{
+"mistake": "Leaving your premium Yasuo exposed on a battlefield",
+"why_it_loses": "Le meilleur conseil pratique du shell Yasuo(6) est de toujours ramener Yasuo a la base si possible. Cette logique vaut plus largement pour toutes les pieces premium du deck. ([Reddit][12])"
+},
+{
+"mistake": "Not adapting your plan between hold and roam matchups",
+"why_it_loses": "Les discussions Ahri/Yi montrent tres bien que certains matchups demandent absolument de tenir le battlefield, alors que d'autres demandent davantage de tempo et de points voles. ([Reddit][10])"
+},
+{
+"mistake": "Keeping hands that need perfect support chaining",
+"why_it_loses": "Yasuo souffre deja structurellement si l'adversaire a beaucoup de removal. Une main qui suppose plusieurs cartes de soutien dans le bon ordre aggrave encore ce probleme. ([Riftbound.gg][9])"
+},
+{
+"mistake": "Assuming the legend alone fixes a weak unit shell",
+"why_it_loses": "Le guide dit explicitement que les unites Calm/Chaos sont fragiles et que la legende ne sert vraiment que si tu trouves une unite capable de stick to the board. ([Riftbound.gg][9])"
+},
+{
+"mistake": "Trying to out-muscle Kai'Sa fair and square",
+"why_it_loses": "Le retour joueur le plus direct dit qu'une bonne Kai'Sa te laisse quasiment 0 chance si tu joues le pairing normalement. ([Reddit][10])"
+}
+],
+"micro_tips_hyper_advanced": [
+"Le bon move avec Yasuo n'est pas toujours celui qui gagne le combat maintenant; c'est souvent celui qui garde la bonne piece vivante pour le cycle suivant.",
+"Si ton matchup demande de 'hold the battlefield', tes petites decisions de placement valent plus que n'importe quel topdeck spectaculaire. ([Reddit][10])",
+"Contre Draven, le Yasuo vert/attaque devient bien meilleur si tu te rappelles que son trigger force souvent Draven a avoir du Hidden plutot que de simples actions speed depuis la main. ([Reddit][15])",
+"Dans le shell Yasuo(6), ta vraie carte de texte est la base, pas le battlefield.",
+"Quand une liste Yasuo te donne l'impression qu'elle n'a 'pas de lignes', c'est souvent bon signe: cela veut dire qu'elle te laisse beaucoup de decisions ouvertes, donc beaucoup d'edges de pilotage. ([Reddit][11])"
+]
+},
+"matchups_detailed": [
+{
+"opponent": "Kai'Sa, Daughter of the Void",
+"meta_share_percent": 18,
+"default_shell": "Reliable Tempo-Mobility Yasuo",
+"yasuo_outlook": {
+"label": "very_unfavorable",
+"estimated_yasuo_winrate_percent": "32-40",
+"confidence": "medium"
+},
+"summary": "C'est de loin le signal matchup le plus clair. Un joueur Yasuo tres experimenté dit explicitement que si le joueur Kai'Sa est bon, Yasuo a 'absolument 0 chance'. Un autre thread de skirmish nuance un peu avec des pistes de sideboard comme Wind Wall contre Icathian Rain ou Time Warp et En Garde pour Falling Star, mais le constat general reste que Kai'Sa te noie sous removal, draw et reduction de might. ([Reddit][10])",
+"why_matchup_plays_this_way": [
+"Kai'Sa tue les bonnes pieces, et Yasuo depend enormement de quelques unites soutenues. ([Reddit][10])",
+"Yasuo n'aime pas les decks a forte densite de removal, et Kai'Sa est citee comme le pire exemple. ([Reddit][10])"
+],
+"opponent_plan": [
+"retirer la bonne unite au bon moment",
+"laisser Yasuo depenser trop de supports pour simplement rester sur table",
+"gagner la partie une fois le premier plan Yasuo casse"
+],
+"yasuo_plan": [
+"ne pas tout miser sur une seule unite sans protection reelle",
+"si possible, jouer plus pour les points et les turns d'opportunite que pour un plan fair de table",
+"dans les versions controlees, Wind Wall, En Garde et les holds de battlefield peuvent au moins voler quelques games"
+],
+"mulligan_focus": [
+"main stable",
+"protection plus menace",
+"pas de hand full cute sans vraie pression"
+],
+"sideboard_focus": [
+"Wind Wall si disponible",
+"En Garde conservee avec plus de discipline de timing",
+"eventuellement plan plus hold/control si la liste le permet"
+],
+"battlefield_notes": [
+"Les fronts tenus par une seule grande unite sont souvent mauvais ici si Kai'Sa a encore ses reponses."
+],
+"main_lose_conditions_for_yasuo": [
+"piece cle tuee trop facilement",
+"trop de cartes de soutien pour trop peu de presence",
+"retard de scoreboard puis grind impossible"
+],
+"important_patterns_to_respect": [
+"Icathian Rain",
+"Falling Star",
+"Time Warp",
+"reduce-might plus draw loops"
+],
+"variation_notes": {
+"control_battlefield_hold": "Un peu meilleure que la version pure tempo si elle a Yi, Masks et plus de vrais corps.",
+"all_in_yasuo6_carry": "Peut parfois voler une game, mais si Yasuo(6) meurt, le pairing s'effondre souvent.",
+"casino_nocturne": "Generalement pire, car trop peu fiable contre autant de removal."
+},
+"source_refs": [
+"S8",
+"S9"
+]
+},
+{
+"opponent": "Draven, Glorious Executioner - Midrange",
+"meta_share_percent": 16,
+"default_shell": "Reliable Tempo-Mobility Yasuo",
+"yasuo_outlook": {
+"label": "close_even_to_slightly_favorable",
+"estimated_yasuo_winrate_percent": "49-55",
+"confidence": "low"
+},
+"summary": "Le meilleur signal direct est plutot positif. Un joueur explique que Yasuo peut faire des choses dans le matchup Draven qu'Irelia n'a pas toujours envie de faire: le Yasuo vert en attaque empeche Draven de simplement gagner le combat avec des actions purple depuis la main, sauf s'il a des Hidden cards; et Yasuo a acces a Charm et aux autres outils violets pour les bouger quand meme. ([Reddit][15])",
+"why_matchup_plays_this_way": [
+"Draven veut rentabiliser les combats et les actions speed depuis la main.",
+"Yasuo peut perturber ce script en changeant la legalite ou la rentabilite du combat par movement et timing. ([Reddit][15])"
+],
+"opponent_plan": [
+"prendre la table tot",
+"gagner les combats avec tricks et width",
+"forcer Yasuo a utiliser ses supports defensivement"
+],
+"yasuo_plan": [
+"tirer profit du trigger d'attaque du Yasuo vert dans les bonnes versions",
+"bouger les unites Hidden ou les pieces clefs hors du bon front",
+"ne pas jouer le matchup comme une simple comparaison de statlines"
+],
+"mulligan_focus": [
+"tempo bodies",
+"move tools",
+"protection pour le bon porteur"
+],
+"sideboard_focus": [
+"Vex dans certaines listes",
+"Rebuke selon build",
+"pas de cuts qui rendent le deck trop lent"
+],
+"battlefield_notes": [
+"Le matchup se gagne souvent sur un front que Draven pensait 'simple', puis qui devient impossible a jouer proprement."
+],
+"main_lose_conditions_for_yasuo": [
+"main trop lente",
+"sous-estimer la largeur rouge",
+"support cards depensees pour rien"
+],
+"important_patterns_to_respect": [
+"Long Sword / action-speed combat wins",
+"Hidden cards",
+"Fight or Flight",
+"Brynhir swings"
+],
+"variation_notes": {
+"control_battlefield_hold": "Peut aussi bien jouer le pairing mais gagne plus par la tenue du front que par la surprise du trigger.",
+"all_in_yasuo6_carry": "Plus polarisant; tres fort si Yasuo(6) survit, mediocre sinon."
+},
+"source_refs": [
+"S6"
+]
+},
+{
+"opponent": "Draven, Glorious Executioner - Miracle",
+"meta_share_percent": 16,
+"default_shell": "Reliable Tempo-Mobility Yasuo",
+"yasuo_outlook": {
+"label": "slightly_unfavorable",
+"estimated_yasuo_winrate_percent": "45-49",
+"confidence": "low"
+},
+"summary": "Le signal direct est plus faible que contre Draven midrange. La lecture la plus honnete est que Yasuo garde des angles de tempo et de movement interessants, mais que les turns miracle plus larges rendent le plan plus dur a tenir sur la duree.",
+"why_matchup_plays_this_way": [
+"Yasuo aime casser un front ou un combat precis.",
+"Miracle Draven revient plus facilement sur plusieurs axes a la fois."
+],
+"opponent_plan": [
+"survivre aux premiers swings de tempo",
+"revenir avec plusieurs pieces et plus de cartes",
+"faire perdre a Yasuo son avantage de finesse"
+],
+"yasuo_plan": [
+"garder la pression de scoreboard",
+"ne pas juste chercher le 'joli move' mais le move qui continue a marquer",
+"conserver les meilleurs interactions pour le vrai turn de bascule"
+],
+"mulligan_focus": [
+"main proactive",
+"pas de hand full support sans corps",
+"Stacked Deck souvent important"
+],
+"sideboard_focus": [
+"Rebuke",
+"Vex selon build",
+"cuts sur les cartes les plus mortes dans les turns larges"
+],
+"battlefield_notes": [
+"Yasuo veut eviter une partie ou il a controle un front joliment pendant que l'autre lui echappe."
+],
+"main_lose_conditions_for_yasuo": [
+"partie trop longue",
+"scoreboard insuffisant",
+"miracle width plus than one problem"
+],
+"important_patterns_to_respect": [
+"resource bursts",
+"miracle width turns",
+"red plus purple tempo mix"
+],
+"variation_notes": {
+"control_battlefield_hold": "Un peu mieux si elle a de vrais outils de grind, mais peut aussi manquer de clock.",
+"casino_nocturne": "Trop aleatoire pour etre recommandee ici."
+},
+"source_refs": [
+"S6",
+"S11"
+]
+},
+{
+"opponent": "Ahri, Nine-Tailed Fox",
+"meta_share_percent": 4,
+"default_shell": "Control / Battlefield-Hold Yasuo",
+"yasuo_outlook": {
+"label": "version_dependent_close_even",
+"estimated_yasuo_winrate_percent": "47-54",
+"confidence": "medium"
+},
+"summary": "C'est un matchup tres dependent de la version. Un joueur dit explicitement que Yi et Ahri ne sont pas des matchups difficiles si on a la bonne decklist et qu'on garde bien en tete qu'il FAUT tenir le battlefield. Mais un autre precise que, sauf dans les versions plus lentes avec Wielder, Masks et Master Yi, Ahri bleu peut rendre le matchup miserable pour les versions tempo agressives. ([Reddit][10])",
+"why_matchup_plays_this_way": [
+"Ahri punit les units agressives qui ne tiennent pas bien.",
+"Yasuo peut toutefois lui opposer une version plus solide de midgame et de hold si le deck est construit pour cela."
+],
+"opponent_plan": [
+"tenir ou reprendre le bon front par movement et tempo",
+"punir les petits corps qui n'aiment pas hold"
+],
+"yasuo_plan": [
+"si tu joues control/hold, accepte que la partie soit moins flashy et plus positionnelle",
+"Master Yi, Masks et Mindsplitter t'aident a jouer cette bataille autrement",
+"si tu joues version tempo pure, tu dois voler les points plus vite avant qu'Ahri ne verrouille"
+],
+"mulligan_focus": [
+"Wielder/Masks/Yi dans les versions controlees",
+"pas de hand trop greed",
+"vraie presence de front"
+],
+"sideboard_focus": [
+"Master Yi",
+"Mask of Foresight",
+"Mindsplitter",
+"cuts sur les cartes qui n'aident ni a tenir ni a scorer vite"
+],
+"battlefield_notes": [
+"C'est un matchup ou 'hold the battlefield' est une vraie instruction de pilotage, pas une generalite. ([Reddit][10])"
+],
+"main_lose_conditions_for_yasuo": [
+"jouer un shell aggressif qui ne sait pas tenir",
+"sous-estimer le besoin de vrai might sur table",
+"essayer de tout gagner par roaming seulement"
+],
+"important_patterns_to_respect": [
+"blue Ahri movement pressure",
+"tempo hold patterns",
+"mask plus high-might pivots"
+],
+"variation_notes": {
+"reliable_tempo_mobility": "Assez variable; peut devenir miserable si la liste est trop legere.",
+"control_battlefield_hold": "Clairement la meilleure version pour jouer Ahri proprement.",
+"all_in_yasuo6_carry": "Trop lineaire sauf si le local Ahri est mal prepare."
+},
+"source_refs": [
+"S8",
+"S9"
+]
+},
+{
+"opponent": "Master Yi, Wuju Bladesman",
+"meta_share_percent": 6,
+"default_shell": "Control / Battlefield-Hold Yasuo",
+"yasuo_outlook": {
+"label": "slightly_favorable_if_built_for_it",
+"estimated_yasuo_winrate_percent": "51-57",
+"confidence": "medium"
+},
+"summary": "Comme pour Ahri, le matchup dépend de la version. Les meilleurs retours recents disent que Yi n'est pas un matchup difficile si on a la bonne decklist et qu'on tient le battlefield; un autre joueur dit meme qu'il a construit sa liste Yasuo justement pour battre Yi, Sett et Ahri, avec Master Yi, Masks et Mindsplitter. ([Reddit][10])",
+"why_matchup_plays_this_way": [
+"Yi veut souvent gagner avec peu de pieces mais beaucoup de qualite.",
+"Yasuo controle/hold peut lui repondre par du move, du tempo, et des corps qui tiennent mieux que dans la version agressive."
+],
+"opponent_plan": [
+"tenir un front avec protection",
+"gagner les combats ou les holds de precision"
+],
+"yasuo_plan": [
+"ne pas refuser le plan de hold si le matchup l'exige",
+"Master Yi est cite comme excellent ici parce qu'il donne un vrai 8 Might pour 5 runes plus 1 power et profite bien de la legende. ([Reddit][14])",
+"Mindsplitter aide aussi a gerer les menaces de haut de courbe ou les mains qui pourraient retourner la partie"
+],
+"mulligan_focus": [
+"Masks",
+"Master Yi",
+"presence stable",
+"pas de hand full tricks sans corps"
+],
+"sideboard_focus": [
+"Master Yi",
+"Mindsplitter",
+"Last Stand dans certaines listes"
+],
+"battlefield_notes": [
+"Le matchup se joue plus a la tenue d'un front important qu'a la pure vitesse de score."
+],
+"main_lose_conditions_for_yasuo": [
+"jouer trop tempo/aggressif quand il faut tenir",
+"sous-estimer le midgame adverse",
+"main trop legere"
+],
+"important_patterns_to_respect": [
+"Calm protection chains",
+"single-front hold wars"
+],
+"variation_notes": {
+"reliable_tempo_mobility": "Peut jouer le pairing, mais moins proprement qu'une version Yi/Masks.",
+"control_battlefield_hold": "La meilleure branche pour ce matchup."
+},
+"source_refs": [
+"S8",
+"S9"
+]
+},
+{
+"opponent": "Sett, The Boss",
+"meta_share_percent": 2,
+"default_shell": "Control / Battlefield-Hold Yasuo",
+"yasuo_outlook": {
+"label": "close_even",
+"estimated_yasuo_winrate_percent": "47-52",
+"confidence": "low"
+},
+"summary": "Le signal direct est que 'Sett games are always very sweaty'. Un autre joueur dit aussi avoir construit sa liste Yasuo Yi/Masks pour battre Sett, Ahri et Yi, et rapporte avoir gagne ces matchups en Nexus Night. Cela suggere un pairing tres technique, jouable, mais rarement confortable. ([Reddit][10])",
+"why_matchup_plays_this_way": [
+"Sett veut transformer la partie en combat ou en seuils de might tres lineaires.",
+"Yasuo veut justement casser cette linearite par movement, tempo et choix du bon front."
+],
+"opponent_plan": [
+"poser des corps solides",
+"rendre les thresholds de combat penibles pour tes unites"
+],
+"yasuo_plan": [
+"eviter le pur stat-check",
+"faire bouger ou temporiser la bonne piece",
+"si ta version le permet, jouer plus hold/control avec Yi que pure aggro"
+],
+"mulligan_focus": [
+"mains stables",
+"corps qui tiennent",
+"pas de hand full support"
+],
+"sideboard_focus": [
+"Master Yi",
+"Mindsplitter",
+"Last Stand according to local tech"
+],
+"battlefield_notes": [
+"Le matchup recompense beaucoup les petits edges de placement et de sequencing."
+],
+"main_lose_conditions_for_yasuo": [
+"jouer le matchup trop honnêtement",
+"ne pas respecter les gros seuils de might",
+"support cards sans vrai corps"
+],
+"important_patterns_to_respect": [
+"Body buffs",
+"single large holder turns"
+],
+"variation_notes": {
+"control_battlefield_hold": "Clairement la plus adaptee.",
+"all_in_yasuo6_carry": "Peut voler une game mais devient trop lineaire si Sett a les bons removals ou race tools."
+},
+"source_refs": [
+"S8",
+"S9"
+]
+},
+{
+"opponent": "Viktor, Herald of the Arcane",
+"meta_share_percent": 7,
+"default_shell": "Reliable Tempo-Mobility Yasuo",
+"yasuo_outlook": {
+"label": "slightly_unfavorable",
+"estimated_yasuo_winrate_percent": "44-49",
+"confidence": "low"
+},
+"summary": "On n'a pas un signal direct aussi fort que pour Kai'Sa, mais la faiblesse structurelle mentionnee par les Yasuo mains est eloquente: Yasuo souffre contre les decks avec beaucoup de removal spells. Selon la texture exacte de Viktor, cela peut aller de penible a franchement mauvais.",
+"why_matchup_plays_this_way": [
+"Viktor peut rendre les petites unites ou les supports Yasuo inefficients.",
+"Yasuo n'aime pas les parties ou il doit juste reposer des bodies fragiles sous removal."
+],
+"opponent_plan": [
+"retirer les bonnes pieces",
+"gagner le tempo ou l'attrition"
+],
+"yasuo_plan": [
+"ne pas telegraphier trop tot la seule unite importante",
+"garder des lines de movement qui servent le score, pas seulement la survie",
+"si le Viktor est plus large, accepter que le pairing se degrade"
+],
+"mulligan_focus": [
+"main stable",
+"Stacked Deck",
+"protection plus vrai corps"
+],
+"sideboard_focus": [
+"Rebuke according to local meta",
+"Mindsplitter in slower versions",
+"cuts on dead support cards if needed"
+],
+"battlefield_notes": [
+"Plus le deck adverse transforme le matchup en removal density contest, plus Yasuo perd de sa personnalite."
+],
+"main_lose_conditions_for_yasuo": [
+"pieces trop fragiles",
+"partie trop longue",
+"pas assez de scoreboard pour justifier les moves"
+],
+"important_patterns_to_respect": [
+"hard removal timing",
+"token stalls depending Viktor branch"
+],
+"variation_notes": {
+"control_battlefield_hold": "Peut etre un peu meilleure si Viktor ne te tue pas trop vite tes vrais corps.",
+"casino_nocturne": "Rarement recommandee ici."
+},
+"source_refs": [
+"S8"
+]
+},
+{
+"opponent": "Ornn, Fire Below the Mountain",
+"meta_share_percent": 2,
+"default_shell": "Reliable Tempo-Mobility Yasuo",
+"yasuo_outlook": {
+"label": "version_dependent_close_even",
+"estimated_yasuo_winrate_percent": "46-52",
+"confidence": "low"
+},
+"summary": "Le seul signal direct recent vient d'un joueur qui dit que le build Yasuo pense pour Draven deviendrait probablement plus faible contre un 'giant Ornn', et qu'on pourrait alors side le Yasuo violet pour simplement danser autour du matchup. Cela suggere un pairing pas catastrophique, mais demandant de bien choisir la version et le champion.",
+"why_matchup_plays_this_way": [
+"Ornn aime les grosses pieces et les thresholds de statlines lourds.",
+"Yasuo prefere les fronts qu'il peut deformez par movement et tempo plus que par force brute."
+],
+"opponent_plan": [
+"poser une ou deux pieces qui comptent vraiment",
+"forcer Yasuo a avoir la bonne reponse precise"
+],
+"yasuo_plan": [
+"ne pas prendre le combat de face si le mouvement gagne mieux",
+"si le shell le permet, changer de champion ou de plan pour plus de danse et moins de pure aggro",
+"garder les bounce/move tools pour les vraies pieces"
+],
+"mulligan_focus": [
+"tempo plus move tools",
+"pas de hand purement cosmetique"
+],
+"sideboard_focus": [
+"purple Yasuo lines according to the community comment",
+"Rebuke",
+"anti-big-unit slots depending exact list"
+],
+"battlefield_notes": [
+"Le matchup se gagne rarement par simple comparaison de taille; il se gagne en rendant la grosse piece mal placee."
+],
+"main_lose_conditions_for_yasuo": [
+"essayer de jouer le combat fair",
+"gaspiller les moves sur des pieces secondaires"
+],
+"important_patterns_to_respect": [
+"giant single-holder fronts",
+"anti-tempo punishment"
+],
+"variation_notes": {
+"reliable_tempo_mobility": "Jouable si bien tunee.",
+"all_in_yasuo6_carry": "Peut manquer de flex si Ornn gere la piece centrale."
+},
+"source_refs": [
+"S6"
+]
+}
+],
+"mulligan_by_matchup": {
+"general_blind": {
+"reliable_tempo_mobility_keep": [
+"petit corps de tempo",
+"Discipline",
+"En Garde",
+"Stacked Deck",
+"main avec vraie pression plus protection"
+],
+"control_battlefield_hold_keep": [
+"Mask of Foresight",
+"Wielder of Water",
+"Master Yi si la courbe suit",
+"Stacked Deck",
+"main qui tient un front reel"
+],
+"all_in_yasuo6_carry_keep": [
+"supports de protection",
+"main qui arrive reellement a Yasuo(6)",
+"pas de keep qui gagne seulement si tout se passe parfaitement"
+],
+"casino_nocturne_keep": [
+"uniquement si la main a deja des vrais hits et un vrai front",
+"sinon ship agressivement"
+],
+"ship": [
+"main full support sans corps",
+"main full reactive sans scoreboard",
+"main lente contre field inconnu",
+"main qui suppose plusieurs cartes exactes dans le bon ordre"
+],
+"notes": [
+"Les joueurs Yasuo insistent beaucoup sur la fiabilite du build. Le mulligan doit donc aller dans le sens du shell choisi, pas dans le sens du fantasme du deck. ([Reddit][11])"
+]
+},
+"kaisa": {
+"keep": [
+"main stable",
+"protection plus menace",
+"pas de keep trop cute"
+],
+"ship": [
+"main lente",
+"main full tricks sans vraie presence"
+]
+},
+"draven_midrange": {
+"keep": [
+"tempo plus move tools",
+"version Yasuo vert si ta liste le favorise",
+"pas de hand trop lourde"
+],
+"ship": [
+"main lente",
+"main purement defensive"
+]
+},
+"ahri_or_yi": {
+"keep": [
+"Mask of Foresight",
+"Master Yi",
+"Wielder of Water",
+"main capable de tenir"
+],
+"ship": [
+"main trop roaming sans hold",
+"main fragile"
+]
+},
+"sett": {
+"keep": [
+"corps qui tiennent",
+"protection",
+"pas de hand purement cosmetique"
+],
+"ship": [
+"main trop legere",
+"main sans vrai midgame"
+]
+}
+},
+"sideboard_by_matchup": {
+"general_shell_rules": {
+"reliable_tempo_mobility": {
+"identity": "Preserver la fiabilite, le tempo et les lignes de movement qui changent vraiment les fronts.",
+"dont_do": [
+"transformer le deck en pile de cartes cute",
+"rentrer trop de haute variance"
+]
+},
+"control_battlefield_hold": {
+"identity": "Accepter une partie plus positionnelle et plus solide sur table.",
+"dont_do": [
+"retirer trop de vraies unites de hold",
+"revenir a un plan full roam par reflexe"
+]
+},
+"all_in_yasuo6_carry": {
+"identity": "Tout ce qui rentre doit soit proteger Yasuo(6), soit offrir un vrai plan B.",
+"dont_do": [
+"rentrer trop de cartes de pure value qui ralentissent le plan central"
+]
+}
+},
+"kaisa": {
+"in": [
+"Wind Wall si disponible",
+"protections supplementaires",
+"eventuellement version plus controlee"
+],
+"out": [
+"cartes trop lentes",
+"high-variance slots"
+],
+"plan": [
+"Tu ne joues pas pour grinder fair. Tu joues pour survivre assez longtemps pour voler une game ou forcer une mauvaise sequence."
+]
+},
+"draven_midrange": {
+"in": [
+"Vex selon build",
+"Rebuke",
+"conserver les move tools"
+],
+"out": [
+"slow cards",
+"surplus de greed"
+],
+"plan": [
+"Le matchup se gagne par front geometry et par mauvais combats imposes, pas par stat-check."
+]
+},
+"ahri_or_yi": {
+"in": [
+"Master Yi",
+"Mask of Foresight",
+"Mindsplitter"
+],
+"out": [
+"pieces trop agressives qui ne tiennent rien",
+"casino slots"
+],
+"plan": [
+"Il faut accepter de tenir le battlefield."
+]
+},
+"sett": {
+"in": [
+"Master Yi",
+"Mindsplitter",
+"Last Stand selon build"
+],
+"out": [
+"slots les moins consistants"
+],
+"plan": [
+"Mieux tenir les gros seuils de might et gagner sur le positionnement."
+]
+}
+},
+"battlefield_plan_by_matchup": {
+"general_default": {
+"reliable_tempo_mobility_priority": [
+"Obelisk of Power",
+"The Dreaming Tree",
+"Sunken Temple or Back-Alley Bar depending list"
+],
+"control_battlefield_hold_priority": [
+"Targon's Peak",
+"Windswept Hillock",
+"hold-friendly fronts"
+],
+"all_in_yasuo6_carry_priority": [
+"safe-holder fronts",
+"tempo-positive score fronts"
+],
+"notes": [
+"Les meilleurs shells officiels Bologna/Vegas convergent sur Obelisk of Power et The Dreaming Tree, avec un troisieme battlefield qui change legerement selon la version. ([riftbound.leagueoflegends.com][4])"
+]
+},
+"draven_midrange": {
+"preferred": [
+"Obelisk of Power",
+"The Dreaming Tree"
+],
+"plan": [
+"Tu veux un front ou le bon move rend le combat rouge mauvais, pas simplement un front ou tu as un peu plus de stats."
+]
+},
+"ahri_or_yi": {
+"preferred": [
+"hold-friendly fronts",
+"The Dreaming Tree with good support"
+],
+"plan": [
+"Le battlefield doit t'aider a tenir, pas seulement a courir."
+]
+},
+"kaisa": {
+"preferred": [
+"fronts qui permettent de marquer vite puis de repartir",
+"Obelisk of Power"
+],
+"plan": [
+"Les fronts tenus par une seule piece sans vrai plan de retraite sont les pires."
+]
+}
+},
+"sources": [
+{
+"id": "S1",
+"type": "guide",
+"title": "Riftbound.gg - Yasuo, Unforgiven Guide – Best Decks & Cards",
+"date": "2026-02-19",
+"notes": "Source cle pour l'identite Calm/Chaos, la fragilite des unites, le role de la legende, le fait que Yasuo(5) n'est pas devenu un staple, que la signature spell est souvent coupee, que Yasuo, Remorseful est le chosen champion par defaut, et que Yasuo, Windrider est un play opportuniste. ([Riftbound.gg][9])"
+},
+{
+"id": "S2",
+"type": "official tournament article",
+"title": "Riftbound official - From Garen to Annie, RQ Houston's Top Decks",
+"date": "2025-12-11",
+"notes": "Best-of Yasuo Houston #50 overall, 1 / 25 Yasuo players, champion Yasuo, Remorseful, shell plus controle/value. ([riftbound.leagueoflegends.com][3])"
+},
+{
+"id": "S3",
+"type": "official tournament article",
+"title": "Riftbound official - The Best Decks out of Bologna",
+"date": "2026-02-25",
+"notes": "Best-of Yasuo Bologna #92 overall, 1 / 39 Yasuo players, champion Yasuo, Windrider, liste tempo/mobility officielle. ([riftbound.leagueoflegends.com][4])"
+},
+{
+"id": "S4",
+"type": "official tournament article",
+"title": "Riftbound official - Vegas' Top Decks",
+"date": "2026-03-04",
+"notes": "Best-of Yasuo Vegas #178 overall, 1 / 36 Yasuo players, champion Yasuo, Remorseful, liste tempo/mobility stabilisee. ([riftbound.leagueoflegends.com][1])"
+},
+{
+"id": "S5",
+"type": "tier list",
+"title": "Riftbound.gg - Spiritforged Tier List – Global Release & Post Chinese Regionals",
+"date": "2026-02-28",
+"notes": "Yasuo en Tier 4, avec mention du Top 256 Nanjing et de l'absence d'aspirations competitives regulieres. ([Riftbound.gg][5])"
+},
+{
+"id": "S6",
+"type": "tier list",
+"title": "Riftbound.gg - Spiritforged Tier List – Post-Bologna",
+"date": "2026-03-01",
+"notes": "Yasuo Tier 4, 39 picks, 3% Day 2 conversion, 44.8% WR, Top 128. ([Riftbound.gg][6])"
+},
+{
+"id": "S7",
+"type": "tier list",
+"title": "Riftbound.gg - Spiritforged Tier List – Post-Vegas",
+"date": "2026-03-06",
+"notes": "Yasuo Tier 4, 75 picks, 2.67% Day 2 conversion, 42.1% WR, Top 128 & 256. ([Riftbound.gg][2])"
+},
+{
+"id": "S8",
+"type": "community thread",
+"title": "Yasuo Mains",
+"date_consulted": "2026-03-11",
+"notes": "Source directe sur les matchups: Kai'Sa comme pire pairing, Yi et Ahri jouables avec la bonne liste, Sett 'very sweaty', et distinction entre versions agressives et plus lentes avec Masks/Wielder/Yi. ([Reddit][10])"
+},
+{
+"id": "S9",
+"type": "community thread",
+"title": "Yasuo for skirmish advice",
+"date_consulted": "2026-03-11",
+"notes": "Source utile sur Master Yi tech, Mindsplitter, Last Stand, le fait qu'il faut tenir le battlefield contre Ahri/Yi, et les pistes de sideboard contre Kai'Sa. ([Reddit][14])"
+},
+{
+"id": "S10",
+"type": "community thread",
+"title": "Mostly undefeated with Yasuo",
+"date_consulted": "2026-03-11",
+"notes": "Source cle pour l'existence du shell Yasuo(6) carry et pour la regle pratique 'never leave Yasuo(6) at a battlefield; always return him to base'. ([Reddit][12])"
+},
+{
+"id": "S11",
+"type": "community thread",
+"title": "Which Yasuo list is better and why?",
+"date_consulted": "2026-03-11",
+"notes": "Source cle pour la distinction fiable entre Yasuo stable/no-nocturne et Yasuo casino/Nocturne, et pour l'idee que la version stable recompense beaucoup plus le skill. ([Reddit][11])"
+},
+{
+"id": "S12",
+"type": "community thread",
+"title": "Best Spiritforged decks & possible sleepers to combat the best decks?",
+"date_consulted": "2026-03-11",
+"notes": "Source utile sur Yasuo comme sleeper contre Draven, avec le detail du trigger du 'green Yasuo' contre les action-speed purple cards. ([Reddit][15])"
+},
+{
+"id": "S13",
+"type": "meta tracker",
+"title": "RiftDecks - Spiritforged Legends Meta Breakdown",
+"date_consulted": "2026-03-11",
+"notes": "Yasuo autour de 512 decks et 2% de metashare dans le snapshot consulte. ([riftdecks.com][7])"
+},
+{
+"id": "S14",
+"type": "Mobalytics tier list",
+"title": "Mobalytics Riftbound Tier List",
+"date_consulted": "2026-03-11",
+"notes": "Yasuo classe D-Tier avec mise en avant de ses lignes de mobilite et de score supplementaire par tour. ([Mobalytics][8])"
+}
+]
+}
+
+[1]: https://riftbound.leagueoflegends.com/en-us/news/organizedplay/vegas-top-decks/ "Vegas’ Top Decks"
+[2]: https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-post-vegas-metagame/ "Riftbound Meta Tier List – Best Decks for Spiritforged - Post-Vegas Metagame - Riftbound TCG"
+[3]: https://riftbound.leagueoflegends.com/en-us/news/announcements/from-garen-to-annie-rq-houstons-top-decks/?utm_source=chatgpt.com "From Garen to Annie, RQ Houston's Top Decks - Riftbound"
+[4]: https://riftbound.leagueoflegends.com/en-us/news/organizedplay/the-best-decks-out-of-bologna/?utm_source=chatgpt.com "The Best Decks out of Bologna"
+[5]: https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-global-release-post-chinese-regionals/ "Riftbound Meta Tier List – Best Decks for Spiritforged – Global Release & Post Chinese Regionals - Riftbound TCG"
+[6]: https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-post-bologna-metagame/ "Riftbound Meta Tier List – Best Decks for Spiritforged - Post-Bologna Metagame - Riftbound TCG"
+[7]: https://riftdecks.com/legends "Riftbound Meta Tier List January 2026 | riftDecks.com"
+[8]: https://mobalytics.gg/riftbound/tier-list?utm_source=chatgpt.com "Riftbound Tier List - Meta Decks and Legends"
+[9]: https://riftbound.gg/yasuo-unforgiven-guide/ "Yasuo, Unforgiven Guide - Best Decks & Cards - Riftbound TCG"
+[10]: https://www.reddit.com/r/riftboundtcg/comments/1p5ct01/yasuo_mains/ "Yasuo Mains : r/riftboundtcg"
+[11]: https://www.reddit.com/r/riftboundtcg/comments/1pn4zo2/which_yasuo_list_is_better_and_why/ "Which Yasuo list is \"better\" and why? : r/riftboundtcg"
+[12]: https://www.reddit.com/r/riftboundtcg/comments/1p78o7w/mostly_undefeated_with_yasuo/ "Mostly undefeated with Yasuo : r/riftboundtcg"
+[13]: https://riftbound.leagueoflegends.com/en-us/news/organizedplay/the-best-decks-out-of-bologna/ "The Best Decks out of Bologna"
+[14]: https://www.reddit.com/r/riftboundtcg/comments/1p7q6lr/yasuo_for_skirmish_advice/ "Yasuo for skirmish advice : r/riftboundtcg"
+[15]: https://www.reddit.com/r/riftboundtcg/comments/1q6hlnj/best_spiritforged_decks_possible_sleepers_to/ "Best Spiritforged decks & possible sleepers to combat the best decks? : r/riftboundtcg"

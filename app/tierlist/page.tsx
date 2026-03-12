@@ -8,6 +8,7 @@ import { ALL_CARDS } from '../lib/cards';
 import { getLegendRecordFromId } from '../lib/legend-index';
 import { PageHeader } from '../components/ui/PageHeader';
 import { CardPanel } from '../components/ui/CardPanel';
+import { Button } from '../components/ui/Button';
 import { EmptyState } from '../components/ui/EmptyState';
 
 function getLegendImage(legendId: string): string | null {
@@ -346,12 +347,13 @@ function DeckGuideCard({ deck }: { deck: typeof META_DECKS[0] }) {
           </div>
           
           <div className="pt-6 border-t border-white/5">
-            <Link 
+            <Button 
               href="/deckbuilder" 
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-bold text-sm rounded-xl hover:scale-105 transition-all"
+              variant="secondary"
+              size="lg"
             >
-              COPIER DANS LE BUILDER 📋
-            </Link>
+              COPIER DANS LE BUILDER
+            </Button>
           </div>
         </div>
 

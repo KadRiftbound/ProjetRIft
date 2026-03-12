@@ -1,0 +1,1032 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Darius complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte decembre 2025 a mars 2026 pour suivre l'evolution des shells Darius",
+    "methodology": {
+      "approach": [
+        "Croisement du guide Darius recent et des tier lists Spiritforged",
+        "Croisement des decklists officielles Houston et des snapshots publics plus recents",
+        "Croisement des retours communautaires sur Darius midrange, Darius Hook, Darius burn/Battering Ram et les versions plus anti-field",
+        "Accent mis sur la qualite de pilotage, la logique de shell et les plans de matchup plutot que sur la seule place dans le metagame"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + decklist officielle et/ou retour matchup explicite",
+        "medium": "Consensus raisonnable mais sensible au shell, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "darius_meta_position": {
+      "early_spiritforged_read": {
+        "riftbound_gg_guide": "Aggressive midrange Fury/Order qui doit jouer deux cartes par tour pour vraiment exploiter sa legende",
+        "notes": "Le guide considere que la meilleure base Darius Spiritforged tourne autour de Spectral Matron, special summons et mid-sized units"
+      },
+      "houston_snapshot": {
+        "players": 22,
+        "best_finish": "#57 overall",
+        "shell": "Baited Hook / Spectral Matron / Fury-Order midrange"
+      },
+      "riftbound_gg_post_vegas_read": {
+        "notes": "La meta se structure surtout autour de Draven, Kai'Sa, Irelia et miracle shells, ce qui pousse Darius hors du centre du metagame mais sans le rendre injouable"
+      },
+      "overall_read": "Darius n'est pas une legende de volume dominante en mars 2026. En revanche, il garde plusieurs vrais shells jouables: un midrange Fury/Order standard, une version Hook plus anguleuse, et des versions plus burn/Battering Ram ou anti-field. Son vrai probleme n'est pas l'absence de puissance brute, mais la difficulte a tenir la cadence en cartes si le plan agressif initial n'a pas deja mis le scoreboard sous pression."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et la logique des versions jouables plutot qu'un simple jugement meta."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Darius, Hand of Noxus",
+    "domains": [
+      "Fury",
+      "Order"
+    ],
+    "macro_identity": {
+      "archetype_family": "Aggressive midrange / two-spell tempo / summon-cheat pressure",
+      "primary_gameplan": "Jouer deux cartes par tour pour convertir la legende en energy supplementaire, occuper la table plus vite que l'adversaire, puis finir la partie avant que l'ecart de cartes ne devienne trop lourd contre toi.",
+      "secondary_gameplan": "Selon le shell: soit jouer une version midrange Fury/Order tres propre autour de Spectral Matron, Forerunner, Gloryseeker et les buffs efficaces, soit jouer une version Hook plus anguleuse qui cherche a mieux punir des fronts specifiques, soit descendre vers une version plus burn/Battering Ram qui convertit l'avance de table en lethal plus abrupt.",
+      "why_the_legend_is_strong": [
+        "La legende donne effectivement une energy supplementaire si tu as joue une carte avant, ce qui rend les premiers tours tres explosifs",
+        "Fury/Order offre un tres bon mix entre unites midsize, removals efficaces et pression de battlefield",
+        "Darius peut tres vite obliger l'adversaire a jouer reactif alors que son deck n'est pas concu pour cela",
+        "Les shells bien construits exploitent tres bien les cartes qui special summon ou qui transforment les seuils de might en pression gratuite"
+      ],
+      "why_the_legend_is_hard": [
+        "Le deck doit presque toujours jouer deux cartes par tour pour vraiment exister",
+        "Il s'epuise plus facilement que les shells purple ou miracle si le debut de partie n'a pas deja cree de scoreboard",
+        "Les mauvais keeps sont tres punis",
+        "Il faut savoir quand depenser l'energy bonus pour developper, et quand la garder pour que le deuxieme spell du tour reste reellement impactant"
+      ]
+    },
+    "rules_and_core_interactions": {
+      "legend_text_summary": "La legende donne une energy supplementaire si tu as deja joue une carte ce tour, ce qui signifie qu'elle exige structurellement de jouer deux cartes par tour pour etre vraiment rentable.",
+      "important_rules_notes": [
+        "L'energy bonus est proportionnellement plus fort dans les premiers tours, beaucoup moins impressionnant plus tard.",
+        "Le deck est donc naturellement pousse vers une logique de rush midrange et non de controle long."
+      ]
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Fury/Order Midrange Darius",
+        "status_march_2026": "Shell de reference theorique",
+        "evidence": [
+          "Guide Darius de fevrier 2026",
+          "Deck shells publics type Darius Midrange de debut mars",
+          "Structure la plus naturelle de la legende en Spiritforged"
+        ],
+        "identity": "La version la plus propre pour comprendre Darius. Elle joue des courbes solides, optimise Spectral Matron, Ferrous Forerunner, Trifarian Gloryseeker et les buffs de might, puis essaie de conclure avant que l'adversaire ne gagne la guerre de ressources.",
+        "reference_core": [
+          "Darius, Trifarian",
+          "Draven, Showboat in some lists",
+          "Spectral Matron",
+          "Ferrous Forerunner",
+          "Trifarian Gloryseeker",
+          "Vanguard Captain",
+          "Kai'Sa, Survivor",
+          "Noxus Hopeful",
+          "Seal of Unity",
+          "Hidden Blade",
+          "Falling Star",
+          "Cleave",
+          "Faithful Manufactor"
+        ],
+        "reference_battlefields": [
+          "The Arena's Greatest",
+          "tempo-conquer battlefields",
+          "resource-positive pressure fronts"
+        ],
+        "chosen_champion_default": "Darius, Trifarian",
+        "default_for_matchups_below": true
+      },
+      {
+        "name": "Baited Hook Darius",
+        "status_march_2026": "Shell reel et confirme par resultats",
+        "evidence": [
+          "Best-of Darius Houston",
+          "Guide Darius qui met OGN-242 au centre du deck",
+          "Retours communautaires recurrents sur Hook comme vrai coeur de Darius Spiritforged"
+        ],
+        "identity": "Version la plus marquee historiquement en Spiritforged. Hook plus Spectral Matron plus Forerunner forment le noyau du deck, avec un package d'unites de 2 a 6 might pour maximiser les summons et garder le pied sur l'accelerateur.",
+        "reference_core": [
+          "Baited Hook",
+          "Darius, Trifarian",
+          "Draven, Showboat",
+          "Spectral Matron",
+          "Ferrous Forerunner",
+          "Trifarian Gloryseeker",
+          "Vanguard Captain",
+          "Kai'Sa, Survivor",
+          "Pouty Poro",
+          "Seal of Unity",
+          "Faithful Manufactor",
+          "Falling Star",
+          "Hidden Blade"
+        ],
+        "reference_battlefields": [
+          "The Arena's Greatest",
+          "aggressive front-loading battlefields",
+          "fronts where cheating units swings tempo hard"
+        ],
+        "chosen_champion_default": "Darius, Trifarian",
+        "important_note": "C'est la version la plus explosive, mais aussi la plus facile a mal construire si la curve des might values n'est pas volontaire."
+      },
+      {
+        "name": "Battering Ram / Burn Darius",
+        "status_march_2026": "Shell niche mais reel",
+        "evidence": [
+          "Discussions recentes sur des versions burn ou Battering Ram proches des shells Annie/Draven aggressifs",
+          "Snapshots publics de listes Darius avec Battering Ram, Kai'Sa, Survivor, Treasure Hunter, Ride the Wind et burn pressure",
+          "Debats communautaires sur la meilleure facon de transformer la legende en closes plutot qu'en simple board presence"
+        ],
+        "identity": "Version plus directe, moins elegante, mais parfois meilleure pour punir les fields trop lents ou trop greed. Elle cherche moins a grinder avec le noyau Hook, et davantage a convertir l'avance de table en seuil de lethal abrupt.",
+        "reference_core": [
+          "Darius, Trifarian",
+          "Battering Ram",
+          "Kai'Sa, Survivor",
+          "Noxus Hopeful",
+          "Ferrous Forerunner",
+          "Falling Star",
+          "Ride the Wind in some lists",
+          "Treasure Hunter in some lists",
+          "Fight or Flight in some lists",
+          "Cleave",
+          "Stacked Deck or equivalent support"
+        ],
+        "reference_battlefields": [
+          "The Arena's Greatest",
+          "fast-scoring fronts",
+          "battlefields that punish stumbles"
+        ],
+        "chosen_champion_default": "Darius, Trifarian",
+        "important_note": "Le shell burn/Battering Ram est moins consensuel que Hook ou Midrange, mais il change reellement la maniere de mulliganer et de clocker."
+      }
+    ],
+    "advanced_pilot_principles": [
+      {
+        "name": "Darius is a two-card-per-turn deck before it is a beatdown deck",
+        "detail": "Si tu oublies que ta legende exige de jouer avant de te donner son extra energy, tu pilotes mal toute la courbe. Le deck ne gagne pas juste parce qu'il a de bonnes unites rouges; il gagne parce qu'il enchaine proprement deux actions utiles dans le meme tour."
+      },
+      {
+        "name": "Early tempo matters more than late efficiency",
+        "detail": "La legende de Darius est bien plus forte au debut qu'a la fin. Il faut donc accepter des lines qui maximisent l'impact des premiers tours plutot que des lines trop gourmandes en pure value."
+      },
+      {
+        "name": "Hook shells must be built around their hit rates",
+        "detail": "Le guide Darius le dit clairement: tout le deck est presque construit autour de la carte cle OGN-242. Si tes ranges de might sont mal reparties, tu transformes une carte signature en pile de highs et lows."
+      },
+      {
+        "name": "Do not spend your extra energy on mediocrity",
+        "detail": "Le plus grand piege de Darius est de se sentir oblige de jouer un deuxieme spell faible juste pour 'rentabiliser' la legende. Beaucoup de parties se perdent ainsi."
+      },
+      {
+        "name": "Your opponent's discomfort is your real resource",
+        "detail": "Darius gagne souvent quand il force un deck plus lent a jouer defensivement trop tot. Une fois cet axe perdu, il a beaucoup plus de mal a concurrencer les decks a plus haut plafond de cartes."
+      },
+      {
+        "name": "Every shell solves hand exhaustion differently",
+        "detail": "Midrange le gere par des bodies de qualite et des summons. Hook le gere par des swings de tempo plus forts. Burn/Battering Ram le contourne en ecourtant la partie. Il faut piloter chaque version selon cette logique."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "darius_hand_of_noxus_role": "La legende donne l'energy bonus conditionnelle qui pousse toute la construction vers les doubles tours.",
+      "darius_trifarian_role": "Le champion signature reste une excellente menace aggressive Fury, capable de grossir et de bouger plusieurs fois, ancrant le midgame et forçant l'adversaire a avoir une reponse rapide.",
+      "hook_engine_role": "Le guide Darius identifie OGN-242 comme la carte cle autour de laquelle la plupart des builds Spiritforged sont organises.",
+      "spectral_matron_role": "Piliere des versions midrange/Hook. Permet de special summon et de maintenir la pression sans payer plein tarif sur chaque corps.",
+      "ferrous_forerunner_role": "Autre pilier du plan special summon, aide a garder le pied sur l'accelerateur et augmente la densite de tours swingy.",
+      "seal_of_unity_role": "Une des pieces de buff et de setup les plus importantes des versions Fury/Order classiques et Hook.",
+      "hidden_blade_role": "Forte dans Darius pour ouvrir un front ou casser un trade, surtout quand la partie se joue a peu de grosses pieces qui comptent.",
+      "falling_star_role": "Removal cle de nombreuses versions, notamment parce qu'il reste raisonnablement efficient dans un deck qui ne veut pas immobiliser toute sa rune economy.",
+      "cleave_role": "Remplit bien le role de pressure plus removal light dans les versions agressives.",
+      "faithful_manufactor_role": "Starter tres important dans plusieurs listes, bon surtout quand il aide a assurer une ligne de tour 2 et a soutenir la double action du tour.",
+      "pouty_poro_role": "Petit body utile pour soutenir les versions plus basses de courbe ou Hook-centric.",
+      "battering_ram_role": "Marqueur du shell burn/direct. Donne une vraie facon d'ecourter la partie quand Darius ne veut pas grinder.",
+      "stacked_deck_role": "Moins automatique que dans purple, mais parfois une facon de lisser le vrai point faible du deck: l'epuisement de la main."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Forcing a second play every turn no matter what",
+        "why_it_loses": "L'energy bonus est reel, mais jouer une carte mediocre juste pour l'activer te fait perdre en qualite de tour."
+      },
+      {
+        "mistake": "Keeping slow hands because they have strong 4s and 5s",
+        "why_it_loses": "La legende est beaucoup trop dependante du debut de partie pour tolérer facilement les keeps lents."
+      },
+      {
+        "mistake": "Building Hook shells with the wrong might spread",
+        "why_it_loses": "Tu perds la raison d'etre du shell et tu rends tes meilleurs tours trop incoherents."
+      },
+      {
+        "mistake": "Trying to out-grind purple decks in long games",
+        "why_it_loses": "Ce n'est pas ton terrain naturel. Darius doit prendre du terrain avant que le plafond de cartes adverse devienne decisif."
+      },
+      {
+        "mistake": "Spending premium removal on low-value friction",
+        "why_it_loses": "Falling Star et Hidden Blade doivent souvent casser le front qui compte, pas juste nettoyer pour le style."
+      },
+      {
+        "mistake": "Not knowing which shell you are actually on",
+        "why_it_loses": "Midrange, Hook et Burn/Battering Ram demandent des mulligans et des clocks differents. Les melanger rend le deck moins bon partout."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Un tour ou tu joues une bonne carte puis une carte juste correcte est parfois pire qu'un tour ou tu acceptes de n'avoir qu'une vraie action structurante.",
+      "Dans Hook Darius, pense d'abord a ce que ton summon change sur le battlefield, pas a la beaute de la value brute.",
+      "Le meilleur Darius force l'adversaire a reagir avant qu'il n'ait envie de le faire.",
+      "Si ta main ne sait pas comment marquer 4 a 6 points rapidement, demande-toi si elle sait vraiment gagner avant l'epuisement.",
+      "Falling Star est souvent meilleur sur le holder qui t'empeche de continuer la chaine de conquetes que sur la plus grosse statline visible."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Fury/Order Midrange Darius",
+      "darius_outlook": {
+        "label": "unfavorable",
+        "estimated_darius_winrate_percent": "42-47",
+        "confidence": "medium"
+      },
+      "summary": "Kai'Sa fait partie des decks qui punissent le mieux le plan Darius quand le debut de partie n'a pas deja mis le scoreboard hors de portee. Elle tue proprement les bonnes pieces et supporte tres bien les decks qui s'essoufflent.",
+      "why_matchup_plays_this_way": [
+        "Darius veut prendre la table tot puis conserver le rythme.",
+        "Kai'Sa veut casser les pieces importantes, rester vivante et passer au-dessus avec ses meilleurs sorts et son top-end."
+      ],
+      "opponent_plan": [
+        "retirer les holders importants",
+        "survivre aux premiers swings",
+        "fermer quand Darius commence a manquer de cartes"
+      ],
+      "darius_plan": [
+        "mulligan pour une vraie pression early",
+        "ne pas trop investir sur une seule piece sans couverture",
+        "forcer Kai'Sa a depenser ses removals avant son meilleur timing",
+        "sur les versions burn, chercher la clock plus que la qualite brute des trades"
+      ],
+      "mulligan_focus": [
+        "starter de board",
+        "courbe 2 cartes par tour",
+        "pas de hand lourde"
+      ],
+      "sideboard_focus": [
+        "plans plus agressifs",
+        "retirer le top-end trop lent",
+        "garder de quoi convertir l'avance en lethal"
+      ],
+      "battlefield_notes": [
+        "Les fronts tenus par une seule unite deviennent dangereux si Kai'Sa garde encore ses grosses reponses."
+      ],
+      "main_lose_conditions_for_darius": [
+        "debut de partie trop lent",
+        "main qui s'epuise sans avoir pris le score",
+        "piece cle tuee sans compensation"
+      ],
+      "important_patterns_to_respect": [
+        "Falling Star",
+        "Hextech Ray",
+        "Time Warp",
+        "removal chaining"
+      ],
+      "variation_notes": {
+        "hook": "Peut ameliorer legerement la pression de tempo, mais ne change pas la nature du pairing.",
+        "burn_battering_ram": "Peut etre la meilleure maniere de voler le matchup si le field Kai'Sa est lent."
+      },
+      "source_refs": [
+        "S1",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "default_shell": "Fury/Order Midrange Darius",
+      "darius_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_darius_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "Viktor ne deteste pas voir Darius manquer de souffle, mais il n'aime pas toujours devoir defendre tot contre une suite de doubles tours. Le pairing depend beaucoup de la version Viktor et du niveau de pression initiale de Darius.",
+      "why_matchup_plays_this_way": [
+        "Darius veut etouffer avant l'attrition.",
+        "Viktor veut survivre aux premiers cycles puis jouer une partie plus longue et plus propre."
+      ],
+      "opponent_plan": [
+        "casser les bons holders",
+        "tenir le scoreboard juste assez longtemps",
+        "gagner a la ressource quality"
+      ],
+      "darius_plan": [
+        "forcer des turns reactifs trop tot",
+        "ne pas accepter la pure guerre d'attrition",
+        "garder les removals premium pour les holders ou les pivots qui comptent"
+      ],
+      "mulligan_focus": [
+        "curve proactive",
+        "2-drop plus 3-drop coherents",
+        "pas de keep lent"
+      ],
+      "sideboard_focus": [
+        "plans plus agressifs",
+        "anti-control flex slots",
+        "retirer les cartes les plus lentes"
+      ],
+      "battlefield_notes": [
+        "Darius gagne surtout si Viktor doit subir un front menaçant avant d'avoir le temps d'organiser les trades."
+      ],
+      "main_lose_conditions_for_darius": [
+        "laisser Viktor choisir tout le rythme",
+        "surexposition d'une seule piece",
+        "epuisement de la main sans points suffisants"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal timing",
+        "token stalls",
+        "attrition loops"
+      ],
+      "variation_notes": {
+        "hook": "Peut parfois mieux punir un Viktor mal curve.",
+        "burn_battering_ram": "Peut ecourter une game que Viktor aurait sinon absorbee."
+      },
+      "source_refs": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Baited Hook Darius",
+      "darius_outlook": {
+        "label": "close_even",
+        "estimated_darius_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Le pairing a une saveur de mirror asymetrique: Draven est souvent plus complet, mais Darius peut encore punir une sortie moyenne si sa courbe a deux cartes par tour est propre. Le shell Hook est la version la plus interessante pour garder ce matchup vivant.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks veulent imposer la table tot.",
+        "Draven a generalement un plafond plus propre, mais Darius peut produire des turns plus explosifs a tres court terme."
+      ],
+      "opponent_plan": [
+        "prendre le board progressivement",
+        "rendre chaque petit corps utile",
+        "convertir les combats en valeur"
+      ],
+      "darius_plan": [
+        "refuser les combats qui ne changent rien",
+        "gagner par acceleration de tempo et non par pure comparaison de qualite",
+        "Hook ou special summons pour ouvrir le bon front"
+      ],
+      "mulligan_focus": [
+        "starter",
+        "courbe rapide",
+        "main capable de double-spell tot"
+      ],
+      "sideboard_focus": [
+        "anti-board flex slots",
+        "removals efficients",
+        "retirer les cartes les plus lentes"
+      ],
+      "battlefield_notes": [
+        "Le matchup se gagne rarement en jouant partout. Il se gagne en rendant un front injouable pour Draven pendant que l'autre prend les points."
+      ],
+      "main_lose_conditions_for_darius": [
+        "main lente",
+        "showdowns trop fair",
+        "Draven qui remplit la main pendant que Darius vide la sienne"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Brynhir turns",
+        "2 energie ouverte"
+      ],
+      "variation_notes": {
+        "midrange_standard": "Jouable, mais plus expose au cote 'deck plus complet' de Draven.",
+        "burn_battering_ram": "Peut surprendre si Draven est trop orienté grind."
+      },
+      "source_refs": [
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Battering Ram / Burn Darius",
+      "darius_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_darius_winrate_percent": "45-49",
+        "confidence": "low"
+      },
+      "summary": "Miracle Draven repasse souvent au-dessus si Darius n'a pas deja cree une vraie clock. Les versions Burn/Battering Ram sont les plus naturelles pour ne pas jouer exactement la game que Miracle Draven veut voir.",
+      "why_matchup_plays_this_way": [
+        "Miracle Draven a plus de marge si la partie devient une question de ressources et de plusieurs menaces d'un coup.",
+        "Darius doit donc plus souvent ecourter la partie plutot que chercher a outvaluer."
+      ],
+      "opponent_plan": [
+        "tenir jusqu'au tour explosif",
+        "recoller en value loops puis finir"
+      ],
+      "darius_plan": [
+        "faire du scoreboard la vraie ressource",
+        "utiliser Ram et les closes directs pour rendre les turns de setup adverses trop chers",
+        "ne pas overtrade si la race est deja en ta faveur"
+      ],
+      "mulligan_focus": [
+        "main proactive",
+        "pas de keep lent",
+        "pressure plus conversion"
+      ],
+      "sideboard_focus": [
+        "anti-miracle flex slots",
+        "cartes qui gardent la clock haute",
+        "retirer les pieces de grind inferieures"
+      ],
+      "battlefield_notes": [
+        "Darius doit souvent gagner avant que Miracle Draven ne puisse stabiliser puis reouvrir plusieurs fronts."
+      ],
+      "main_lose_conditions_for_darius": [
+        "pas assez de scoreboard",
+        "double-spell turns de faible impact",
+        "partie trop longue"
+      ],
+      "important_patterns_to_respect": [
+        "stacking turns",
+        "wide miracle turns",
+        "resource explosion turns"
+      ],
+      "variation_notes": {
+        "hook": "Peut garder le matchup jouable si les swings de summon sont forts assez tot.",
+        "midrange_standard": "Plus souvent la moins bien placee si la partie dure."
+      },
+      "source_refs": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Fury/Order Midrange Darius",
+      "darius_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_darius_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "Irelia punit assez bien les decks qui veulent gagner des combats honnetes sans toujours pouvoir choisir exactement leur timing. Darius peut toutefois la punir si sa courbe de tempo la force a defendre plus qu'elle ne le souhaite.",
+      "why_matchup_plays_this_way": [
+        "Irelia aime garder un porteur et jouer avec la finesse des protections.",
+        "Darius aime mettre plusieurs pieces sur table et jouer plus vite que cette finesse ne le permet."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield avec protection",
+        "gagner les combats qui comptent vraiment"
+      ],
+      "darius_plan": [
+        "faire peser la pression sur plusieurs corps",
+        "ne pas offrir un seul point d'appui ideal au plan Irelia",
+        "utiliser removal et tempo pour casser le tour de stabilisation"
+      ],
+      "mulligan_focus": [
+        "early pressure",
+        "Falling Star ou interaction de tempo",
+        "pas de hand trop lourde"
+      ],
+      "sideboard_focus": [
+        "anti-porteur flex slots",
+        "cards that punish a single protected body"
+      ],
+      "battlefield_notes": [
+        "Plus Darius peut rendre un front brouillon et couteux pour Irelia, plus le matchup lui est jouable."
+      ],
+      "main_lose_conditions_for_darius": [
+        "combats trop fair",
+        "piece cle tempo invalidée par protection",
+        "scoreboard qui n'avance pas"
+      ],
+      "important_patterns_to_respect": [
+        "GA and boots lines",
+        "combat trick chains",
+        "tempo pivots"
+      ],
+      "variation_notes": {
+        "hook": "Souvent la meilleure version pour casser le front que Irelia veut garder propre.",
+        "burn_battering_ram": "Peut voler des games si Irelia stumble."
+      },
+      "source_refs": [
+        "S1"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "default_shell": "Baited Hook Darius",
+      "darius_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_darius_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "Azir peut rendre les combats trop larges pour le Darius standard s'il a le temps de s'installer. Darius doit donc gagner en tempo ce qu'il perd en modularite.",
+      "why_matchup_plays_this_way": [
+        "Azir va plus large et transforme bien les petits corps en pression reelle.",
+        "Darius doit l'empecher d'avoir des turns confortables de largeur plus equip."
+      ],
+      "opponent_plan": [
+        "mettre de la table et des equips",
+        "tenir puis deborder les fronts"
+      ],
+      "darius_plan": [
+        "garder la pression assez haute pour qu'Azir ne respire pas",
+        "utiliser Hook ou special summons pour ouvrir le bon front",
+        "ne pas gaspiller les removals sur les pieces secondaires"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "courbe tempo",
+        "pas de keep trop lente"
+      ],
+      "sideboard_focus": [
+        "anti-board flex slots",
+        "removals qui punissent largeur ou buffs"
+      ],
+      "battlefield_notes": [
+        "Le matchup se gagne surtout si Darius oblige Azir a defendre plutot qu'a simplement se developper."
+      ],
+      "main_lose_conditions_for_darius": [
+        "Azir libre pendant les premiers tours",
+        "removals mal cibles",
+        "manque de points avant le gros swing Azir"
+      ],
+      "important_patterns_to_respect": [
+        "Azir Sovereign turns",
+        "Arise",
+        "token plus equip transitions"
+      ],
+      "variation_notes": {
+        "hook": "Le meilleur shell pour garder des swings de tempo credibles.",
+        "burn_battering_ram": "Peut aussi fonctionner si Azir est trop lent a set up."
+      },
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "default_shell": "Fury/Order Midrange Darius",
+      "darius_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_darius_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "Annie punit les keeps lents et les decks qui veulent juste jouer la table sans suffisamment de reactivite. Darius peut gagner si son acceleration de debut force Annie a perdre le lead, mais le matchup n'est pas naturellement confortable.",
+      "why_matchup_plays_this_way": [
+        "Annie veut etre devant puis rentabiliser ses deux runes ready.",
+        "Darius veut etre le deck qui impose la table et pousse l'adversaire en defense."
+      ],
+      "opponent_plan": [
+        "prendre l'avance de score",
+        "faire payer chaque tentative de reequilibrage"
+      ],
+      "darius_plan": [
+        "mulligan agressivement pour la vitesse",
+        "ne pas trop se faire aspirer dans les petites reponses d'Annie",
+        "mettre assez de puissance sur table pour rendre ses tempos defensifs difficiles"
+      ],
+      "mulligan_focus": [
+        "curve rapide",
+        "deux plays de debut",
+        "pas de hand greed"
+      ],
+      "sideboard_focus": [
+        "stabilisation ou anti-tempo selon version",
+        "retirer les cartes trop lentes"
+      ],
+      "battlefield_notes": [
+        "Si Annie garde l'avance de score en etant encore reactive, le matchup se degrade vite."
+      ],
+      "main_lose_conditions_for_darius": [
+        "main lente",
+        "ne pas gagner la course au scoreboard",
+        "perdre trop de valeur dans des trades defensifs"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Ride the Wind",
+        "tempo plus reactif turns"
+      ],
+      "variation_notes": {
+        "burn_battering_ram": "Peut etre la meilleure version pour ne pas laisser Annie respirer."
+      },
+      "source_refs": [
+        "S1"
+      ]
+    },
+    {
+      "opponent": "Rek'Sai, Void Burrower",
+      "meta_share_percent": 2,
+      "default_shell": "Fury/Order Midrange Darius",
+      "darius_outlook": {
+        "label": "slightly_favorable",
+        "estimated_darius_winrate_percent": "51-55",
+        "confidence": "low"
+      },
+      "summary": "Rek'Sai aime conquerir repetitivement, mais n'aime pas toujours les decks qui occupent deja la table a grande vitesse. Darius peut la priver de la qualite de ses premiers conquetes s'il curve bien.",
+      "why_matchup_plays_this_way": [
+        "Rek'Sai a besoin d'un premier conquer de qualite pour rentabiliser la legende.",
+        "Darius peut rendre ce premier conquer plus couteux ou plus tardif que prevu."
+      ],
+      "opponent_plan": [
+        "prendre le front puis tirer de la value du deck top",
+        "enclencher un rythme de conquetes"
+      ],
+      "darius_plan": [
+        "mettre la pression sur plusieurs fronts vite",
+        "forcer Rek'Sai a jouer des reveals moins elegants",
+        "ne pas lui offrir des turns de conquer propres"
+      ],
+      "mulligan_focus": [
+        "starter",
+        "curve aggressive",
+        "pas de keep lent"
+      ],
+      "sideboard_focus": [
+        "anti-conquer tempo cards",
+        "preserver densite de board"
+      ],
+      "battlefield_notes": [
+        "Plus Darius controle la premiere vraie conquete de Rek'Sai, plus le matchup lui est favorable."
+      ],
+      "main_lose_conditions_for_darius": [
+        "laisser Rek'Sai prendre un front gratuit",
+        "main trop lente",
+        "reveal turns non contestes"
+      ],
+      "important_patterns_to_respect": [
+        "Void Rush",
+        "repeated conquer patterns"
+      ],
+      "variation_notes": {
+        "hook": "Tres bon pour punir les fronts encore ouverts.",
+        "burn_battering_ram": "Peut ecourter la game avant les gros swings reveal."
+      },
+      "source_refs": [
+        "S1"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Battering Ram / Burn Darius",
+      "darius_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_darius_winrate_percent": "49-54",
+        "confidence": "low"
+      },
+      "summary": "Ezreal punit les games lentes, mais il n'aime pas toujours subir un deck capable de lui imposer plusieurs menaces rapides avant son meilleur timing. Darius doit donc jouer pour la clock, pas pour la beaute des trades.",
+      "why_matchup_plays_this_way": [
+        "Ezreal a un plafond de grind plus haut.",
+        "Darius a un meilleur early tempo si sa main est propre."
+      ],
+      "opponent_plan": [
+        "ralentir et gagner a la carte",
+        "faire jouer a Darius ses meilleures cartes trop tot"
+      ],
+      "darius_plan": [
+        "imposer des fronts qui demandent une vraie reponse",
+        "ne pas accepter un draw-go deguisé",
+        "sur burn/Battering Ram, compter la clock avant de compter la value"
+      ],
+      "mulligan_focus": [
+        "main proactive",
+        "debut de partie solide",
+        "pas de keep value-only"
+      ],
+      "sideboard_focus": [
+        "anti-purple flex slots",
+        "maintien de la clock",
+        "retirer les cartes mortes si Ezreal combat peu"
+      ],
+      "battlefield_notes": [
+        "Un front vraiment menaçant vaut plus que deux fronts modestes contre Ezreal."
+      ],
+      "main_lose_conditions_for_darius": [
+        "donner trop de temps",
+        "main sans scoreboard",
+        "devenir un deck fair midrange"
+      ],
+      "important_patterns_to_respect": [
+        "Rhasa turns",
+        "Called Shot loops",
+        "late purple chains"
+      ],
+      "variation_notes": {
+        "hook": "Peut aussi bien fonctionner si les swings de tempo suffisent a garder Ezreal sur la defensive."
+      },
+      "source_refs": [
+        "S1",
+        "S4"
+      ]
+    }
+  ],
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "midrange_keep": [
+        "Faithful Manufactor",
+        "Noxus Hopeful",
+        "Trifarian Gloryseeker",
+        "Kai'Sa, Survivor si la courbe est deja bonne",
+        "Falling Star si le matchup le justifie",
+        "main capable de jouer deux cartes par tour des le debut"
+      ],
+      "hook_keep": [
+        "Baited Hook si la main est deja fonctionnelle",
+        "starter de board",
+        "courbe 2-drop plus 3-drop ou equivalent",
+        "piece de summon follow-up"
+      ],
+      "burn_battering_ram_keep": [
+        "starter agressif",
+        "Battering Ram si la courbe suit",
+        "pressure plus convertisseur de damage",
+        "pas de hand full top-end"
+      ],
+      "ship": [
+        "main sans debut de partie",
+        "main full top-end",
+        "main qui ne peut pas raisonnablement doubler ses tours",
+        "main qui espere seulement topdeck pour activer la legende"
+      ],
+      "notes": [
+        "Darius mulligan pour des tours doubles coherents, pas pour des cartes individuellement fortes.",
+        "Une main mediocre mais rapide vaut souvent mieux qu'une main puissante mais lente."
+      ]
+    },
+    "kaisa": {
+      "keep": [
+        "pressure early",
+        "deux plays rapides",
+        "pas de main all-in sur un seul holder"
+      ],
+      "ship": [
+        "main lente",
+        "main dependante d'une grosse piece unique"
+      ]
+    },
+    "draven_midrange": {
+      "keep": [
+        "starter",
+        "curve rapide",
+        "interaction efficiente"
+      ],
+      "ship": [
+        "main greed",
+        "main qui ne conteste pas tot"
+      ]
+    },
+    "draven_miracle": {
+      "keep": [
+        "pressure plus conversion",
+        "mains qui clockent",
+        "pas de keep pure value"
+      ],
+      "ship": [
+        "main lente",
+        "main reactive-only"
+      ]
+    },
+    "viktor": {
+      "keep": [
+        "curve proactive",
+        "starter de battlefield",
+        "pas de hand all-late"
+      ],
+      "ship": [
+        "main lente",
+        "main sans scoreboard"
+      ]
+    },
+    "ezreal": {
+      "keep": [
+        "main proactive",
+        "2-drop plus 3-drop",
+        "clock reelle"
+      ],
+      "ship": [
+        "main de pure value",
+        "main lente"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "general_shell_rules": {
+      "midrange": {
+        "identity": "Garder la capacite a jouer deux cartes fortes par tour sans se vider de tout impact.",
+        "dont_do": [
+          "retirer trop de bodies",
+          "devenir un deck reactif sans pression"
+        ]
+      },
+      "hook": {
+        "identity": "Preserver les swings de summon et la structure de la curve.",
+        "dont_do": [
+          "sider des cartes qui cassent la repartition de might values",
+          "garder Hook sans front coherent"
+        ]
+      },
+      "burn_battering_ram": {
+        "identity": "Clock avant tout. Les cartes de side doivent surtout aider a rendre les points inevitables.",
+        "dont_do": [
+          "allonger excessivement la partie",
+          "oublier que tu joues pour finir, pas pour grinder"
+        ]
+      }
+    },
+    "kaisa": {
+      "in": [
+        "plans plus agressifs",
+        "cartes qui convertissent rapidement le board en damage ou en points",
+        "retirer les cartes trop lentes"
+      ],
+      "out": [
+        "top-end trop lourd",
+        "pièces trop dependantes d'une seule unite"
+      ],
+      "plan": [
+        "Il faut garder la clock.",
+        "Ne pas aider Kai'Sa a transformer la partie en simple sequence de removal."
+      ]
+    },
+    "draven_midrange": {
+      "in": [
+        "anti-board flex slots",
+        "removals efficaces",
+        "cards that help punish wide comfortable boards"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "surplus de greed"
+      ],
+      "plan": [
+        "Preserver le tempo tout en rendant les showdowns de Draven moins naturels."
+      ]
+    },
+    "draven_miracle": {
+      "in": [
+        "anti-miracle flex slots",
+        "cards that preserve clock"
+      ],
+      "out": [
+        "grind pieces inferieures",
+        "slow cards"
+      ],
+      "plan": [
+        "Le scoreboard est la vraie ressource.",
+        "Ne pas sider comme un deck qui veut jouer longtemps."
+      ]
+    },
+    "viktor": {
+      "in": [
+        "plans plus agressifs",
+        "anti-control flex slots"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "surplus de petites cartes qui n'echangent pas assez"
+      ],
+      "plan": [
+        "Rester le deck qui demande une reponse, pas celui qui attend."
+      ]
+    },
+    "ezreal": {
+      "in": [
+        "anti-purple flex slots",
+        "closers directs",
+        "cards that maintain pressure"
+      ],
+      "out": [
+        "cartes mortes si Ezreal combat peu",
+        "slow value pieces"
+      ],
+      "plan": [
+        "Clock et discipline de ressources."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "midrange_priority": [
+        "The Arena's Greatest",
+        "tempo-conquer battlefields",
+        "resource-positive pressure fronts"
+      ],
+      "hook_priority": [
+        "The Arena's Greatest",
+        "battlefields where special summons swing immediately",
+        "fronts that punish stumble turns"
+      ],
+      "burn_battering_ram_priority": [
+        "fast-scoring fronts",
+        "The Arena's Greatest",
+        "battlefields that make damage races shorter"
+      ],
+      "notes": [
+        "Darius veut des battlefields ou son premier swing tempo vaut reellement un point ou un vrai front vivant.",
+        "Les fronts trop purement esthetiques sont moins bons que ceux qui forcent l'adversaire a reagir rapidement."
+      ]
+    },
+    "kaisa": {
+      "preferred": [
+        "fast-scoring fronts",
+        "The Arena's Greatest"
+      ],
+      "plan": [
+        "Il faut raccourcir la game plus que chercher le plus joli front."
+      ]
+    },
+    "draven_midrange": {
+      "preferred": [
+        "The Arena's Greatest",
+        "fronts where your summon swings matter immediately"
+      ],
+      "plan": [
+        "Tu veux un front ou Draven n'a pas le luxe de developer tranquillement plusieurs petits corps."
+      ]
+    },
+    "viktor": {
+      "preferred": [
+        "The Arena's Greatest",
+        "resource-positive pressure fronts"
+      ],
+      "plan": [
+        "Tout front qui force Viktor a repondre trop tot t'avantage."
+      ]
+    },
+    "ezreal": {
+      "preferred": [
+        "fast-scoring fronts",
+        "The Arena's Greatest"
+      ],
+      "plan": [
+        "Le matchup se gagne rarement sur deux fronts moyens."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Riftbound.gg - Darius, Hand of Noxus Guide",
+      "date": "2026-02-20",
+      "notes": "Source principale sur l'identite de Darius Spiritforged, l'obligation structurelle de jouer deux cartes par tour, et la centralite du coeur Hook/Spectral Matron/Forerunner."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "Riftbound official - From Garen to Annie, RQ Houston's Top Decks",
+      "date": "2025-12-11",
+      "notes": "Best-of Darius Houston #57 overall; shell Baited Hook / Spectral Matron / Fury-Order."
+    },
+    {
+      "id": "S3",
+      "type": "official tournament article",
+      "title": "Riftbound official - Vegas Top Decks",
+      "date": "2026-03-04",
+      "notes": "Contexte metagame general de Vegas; pas de best-of Darius mis en avant, signe utile sur sa place relative."
+    },
+    {
+      "id": "S4",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Vegas",
+      "date": "2026-03-06",
+      "notes": "Contexte du metagame domine par Draven midrange et miracle, avec Kai'Sa et autres top decks structurellement penibles pour les decks moins complets."
+    },
+    {
+      "id": "S5",
+      "type": "deck snapshot",
+      "title": "Riftbound.gg - Darius Midrange deck snapshot",
+      "date": "2026-03-02",
+      "notes": "Support pour une version Darius Midrange moderne avec summons, Forerunner et corps Fury/Order."
+    },
+    {
+      "id": "S6",
+      "type": "meta index",
+      "title": "Riftbound.gg homepage and guide index",
+      "date_consulted": "2026-03-11",
+      "notes": "Confirme l'existence du guide legendaire Darius et le contexte global du site."
+    }
+  ]
+}

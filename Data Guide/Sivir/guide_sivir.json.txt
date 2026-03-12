@@ -1,0 +1,1579 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Sivir complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte fin janvier-fevrier 2026 pour les regionaux chinois et occidentaux",
+    "methodology": {
+      "approach": [
+        "Croisement des tier lists recentes et des guides Sivir",
+        "Croisement des resultats Dalian, Nanjing, Bologna et Vegas",
+        "Croisement des listes competitives Miracle et Aurora",
+        "Priorite aux retours matchup explicites des pilotes Sivir recents",
+        "Confiance reduite quand un pairing repose surtout sur lecture structurelle"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + resultat competitif + retours matchup explicites",
+        "medium": "Consensus raisonnable mais matchup dependant du shell, du sideboard ou du niveau de pilotage",
+        "low": "Peu de data directe, lecture de field surtout theorique"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "sivir_meta_position": {
+      "riftbound_gg_post_vegas": "Tier 3, mais avec reconnaissance explicite de deux archetypes valides",
+      "mobalytics_march_2026": "A-tier",
+      "riftdecks_spiritforged_meta_share_snapshot": {
+        "sivir": 3,
+        "draven": 16,
+        "kai_sa": 18,
+        "irelia": 10,
+        "viktor": 7,
+        "master_yi": 6,
+        "azir": 4,
+        "ezreal": 3
+      },
+      "major_recent_results": [
+        "Top 4 Dalian avec Miracle Sivir",
+        "Top 16 Bologna",
+        "Best-of Sivir a Vegas avec une liste Miracle classee #9 overall"
+      ]
+    },
+    "high_level_summary": [
+      "Sivir est une legende a deux visages en Spiritforged: Miracle Sivir et Aurora Sivir.",
+      "Miracle Sivir est le shell au plafond le plus eleve actuellement, mais aussi le plus exigeant a piloter.",
+      "Aurora Sivir a un plan plus lisible, un floor plus confortable, et reste une vraie option competititve quand le meta local ne sur-sideboard pas contre les gears.",
+      "Le vrai statut de Sivir depend beaucoup plus du pilote que celui de nombreux decks de tier equivalent."
+    ],
+    "default_shell_for_matchups_below": "Miracle Sivir",
+    "secondary_shell_note": "Les notes de matchup incluent, quand c'est utile, une remarque specifique pour Aurora Sivir"
+  },
+  "sivir_advanced_guide": {
+    "legend": "Sivir, Battle Mistress",
+    "domains": [
+      "Body",
+      "Chaos"
+    ],
+    "macro_identity": {
+      "archetypes": [
+        {
+          "name": "Miracle Sivir",
+          "status": "Reference competitive haute maitrise",
+          "identity": "Deck miracle/control-combo base sur le package violet Ezreal, Prodigy + Called Shot + Seal of Discord + Stacked Deck + Rhasa the Sunderer, avec la capacite de recycler les runes plus proprement grace a la legende."
+        },
+        {
+          "name": "Aurora Sivir",
+          "status": "Alternative solide et plus lineaire",
+          "identity": "Deck Body/Chaos centré sur Dazzling Aurora et les gros payoffs de table, avec Mindsplitter, Deadbloom Predator et des lignes midrange plus stables. Plus simple que Miracle Sivir, mais plus vulnerable au gear hate si l'adversaire est prepare."
+        }
+      ],
+      "primary_gameplan": "Ralentir suffisamment la partie pour que la reduction du cout des power-costs et la superiorite des cartes Chaos/Body commencent a dominer, puis enchaîner des tours de swing ou la qualite de chaque action depasse ce que l'adversaire peut suivre.",
+      "secondary_gameplan": "Dans les versions Miracle, faire tourner la pioche et les recursions jusqu'a generer des tours de bascule massifs. Dans les versions Aurora, installer un ou deux gros menaces premium puis gagner par pression de battlefield et inefficacite des reponses adverses."
+    },
+    "why_sivir_is_good": [
+      "La legende amortit un des plus gros couts structurels du jeu: recycler des runes pour payer des cartes plus puissantes que la courbe normale.",
+      "Les deux grands shells competitifs exploitent cet avantage de facon differente, ce qui rend la preparation adverse plus difficile.",
+      "Miracle Sivir profite du meilleur moteur de cartes violet tout en gardant l'acces a des outils Body comme Punch First, Challenge et certaines grosses menaces.",
+      "Aurora Sivir semble plus consistante que Miss Fortune Aurora selon plusieurs discussions recentes."
+    ],
+    "why_sivir_is_hard": [
+      "Miracle Sivir est decrite par les joueurs comme l'une des variantes miracle les plus difficiles a piloter.",
+      "Il faut suivre ce qui part au bottom, ce que Sabotage revele, ce que le deck adverse peut encore avoir, et planifier un ou deux tours a l'avance.",
+      "La gestion des runes recycles contre l'usage de Gold/Gear tokens change la texture de quasiment chaque tour.",
+      "La deckbuilding phase et le sideboard comptent enormement, surtout si on alterne entre plans Miracle, Aurora et plans midrange hybrides."
+    ],
+    "competitive_consensus_march_2026": {
+      "summary": [
+        "Les evaluations publiques de Sivir divergent plus que pour Draven ou Kai'Sa.",
+        "Les ressources a base de performances brutes la classent plutot bas ou milieu bas du field.",
+        "Les ressources plus sensibles au plafond et a la flexibilite du deck la classent nettement plus haut.",
+        "Le point commun entre toutes les sources: Miracle Sivir est reelle, pas un simple gimmick, mais exige beaucoup de reps."
+      ],
+      "important_caveat": "Il faut separer la puissance du deck, la puissance du shell exact et la puissance du pilote. Sivir est un des decks dont la perception change le plus selon qui la joue."
+    },
+    "reference_shells_march_2026": {
+      "miracle_sivir_reference": {
+        "event_anchor": "Vegas Best-of Sivir / #9 overall",
+        "legend": "Sivir, Battle Mistress",
+        "champion": "Sivir, Mercenary",
+        "battlefields": [
+          "Obelisk of Power",
+          "The Candlelit Sanctum",
+          "Zaun Warrens"
+        ],
+        "rune_pool": {
+          "body": 4,
+          "chaos": 8
+        },
+        "core_cards": [
+          "Called Shot",
+          "Challenge",
+          "Ezreal, Prodigy",
+          "Fight or Flight",
+          "Fizz, Trickster",
+          "Nocturne, Horrifying",
+          "Punch First",
+          "Rhasa the Sunderer",
+          "Sabotage",
+          "Scrapheap",
+          "Seal of Discord",
+          "Stacked Deck",
+          "Traveling Merchant"
+        ],
+        "known_sideboard_cards": [
+          "Akshan, Mischievous",
+          "Cannon Barrage",
+          "Hard Bargain",
+          "Invert Timelines"
+        ]
+      },
+      "aurora_sivir_reference": {
+        "event_anchor": "Best-of Sivir discussions post-Vegas / Aurora hybrid",
+        "identity": "Sivir Aurora plus consistante que Miss Fortune Aurora selon plusieurs joueurs specialises",
+        "core_themes": [
+          "Dazzling Aurora",
+          "Mindsplitter",
+          "Deadbloom Predator",
+          "Treasure Trove",
+          "Punch First",
+          "Challenge",
+          "Sabotage",
+          "Yone side plans",
+          "Anivia side plans"
+        ],
+        "important_note": "Les meilleurs retours Aurora insistent sur le fait qu'Aurora n'est pas la win condition en soi, mais une ressource qu'on peut utiliser puis perdre si cela genere suffisamment d'avantage."
+      }
+    },
+    "signature_cards_and_packages": {
+      "sivir_battle_mistress_role": "Permet de lisser le cout des power-costs sur la duree, ce qui rend les cartes premium Body/Chaos beaucoup moins douloureuses qu'elles ne le seraient ailleurs.",
+      "sivir_mercenary_role": "Champion generalement prefere tres tot parce qu'il est plus facile a deployer et menace rapidement scaling + Ganking.",
+      "sabotage_role": "Carte la plus repetitivement citee comme clef de pilotage. Elle sert a la fois de disruption, d'information et de preparateur de tour pour Rhasa/Ezreal/Aurora payoffs.",
+      "punch_first_role": "Carte star contre Irelia et outil generique de combat ou de seuil de Might. Souvent citee comme une des meilleures cartes du deck en side ou meme en x3 selon certaines listes.",
+      "challenge_role": "Interaction premium dans les pairings de table, particulierement pour casser un porteur cle ou reprendre le tempo de battlefield.",
+      "cannon_barrage_role": "Sideboard important contre Draven decks et plus generalement contre les patterns miracle qui empilent ou stackent leur progression sur des corps clefs.",
+      "mindsplitter_role": "Carte pivot d'Aurora Sivir et d'autres shells plus board centriques; particulierement importante contre Midrange Draven selon certains pilotes Aurora.",
+      "rhasa_role": "Payoff miracle majeur; dans les builds bien règles, Sivir permet d'atteindre ses tours Rhasa de maniere plus fluide que beaucoup d'autres legends.",
+      "treasure_trove_role": "Tres valorise dans certaines listes Aurora ou hybrides car le Gold genere permet de poser Sivir et d'enchainer les actions sans s'auto-etrangler en runes."
+    },
+    "advanced_pilot_principles": [
+      {
+        "name": "Sabotage is your information engine, not just a discard spell",
+        "detail": "Sur Sivir, Sabotage sert autant a lire la partie qu'a enlever une carte. Savoir s'il y a Singularity, Watcher, un anti-gear ou une protection change completement ton tour suivant."
+      },
+      {
+        "name": "Remove what matters now before what matters later",
+        "detail": "Contre Midrange Draven par exemple, il vaut souvent mieux retirer tout de suite les cartes qui permettent de contourner Challenge ou de gagner le prochain combat que garder ton discard pour une carte qui sera plus effrayante plus tard."
+      },
+      {
+        "name": "Aurora is a resource, not a religion",
+        "detail": "Les meilleurs joueurs Aurora Sivir insistent sur ce point: si Aurora doit mourir mais genere un corps supplementaire ou un swing de tempo correct, cela peut etre completement acceptable."
+      },
+      {
+        "name": "Rune recycling is a tempo forecast",
+        "detail": "Recycler une rune n'est correct que si cela ne te coupe pas une ligne importante dans le ou les tours suivants. Tant que Sivir est untapped et que le cout futur reste soutenable, tu peux te permettre de lisser tes paiements."
+      },
+      {
+        "name": "Miracle Sivir often plays from behind before it takes over",
+        "detail": "Le deck accepte de perdre un peu de carte quality ou un peu de points dans l'early si cela lui permet d'atteindre le tour ou Sabotage + threat drop + interaction renverse la partie."
+      },
+      {
+        "name": "Do not overextend your scarce units",
+        "detail": "Miracle Sivir joue souvent moins d'unites que ce que la table adverse suggere. Il faut donc laisser vivre certaines ressources et punir l'overcommit adverse au lieu d'essayer de tout couvrir immediatement."
+      }
+    ],
+    "mulligan_advanced": {
+      "general_rules": [
+        "Une bonne main Sivir n'est pas juste une main puissante; c'est une main qui sait quoi faire contre le pairing concret.",
+        "Miracle Sivir ne doit pas garder une main purement value sans interaction early, mais ne doit pas non plus garder une main purement reactive sans chemin vers l'engine.",
+        "Aurora Sivir accepte un peu plus facilement les mains de table, mais supporte mal les mains depourvues de card flow ou de plan si Aurora n'apparait pas."
+      ],
+      "miracle_sivir_baseline_priority": [
+        "Une piece d'engine ou de progression comme Stacked Deck / Called Shot / setup equivalent",
+        "Au moins une vraie interaction early",
+        "Une menace ou un payoff pour le premier tour de bascule",
+        "Idealement Sabotage ou une carte donnant de l'information"
+      ],
+      "aurora_sivir_baseline_priority": [
+        "Main capable d'atteindre son premier payoff sans se faire depasser aux points",
+        "Cartes comme Treasure Trove si la courbe suit",
+        "Interaction de table type Challenge / Punch First / Sabotage"
+      ],
+      "situational_keeps": [
+        {
+          "condition": "contre Midrange Draven",
+          "keep": [
+            "Sabotage",
+            "Challenge",
+            "Mindsplitter dans les builds Aurora",
+            "mains qui ralentissent les premiers points sans overreact"
+          ]
+        },
+        {
+          "condition": "contre Irelia",
+          "keep": [
+            "Punch First",
+            "Challenge",
+            "cartes qui punissent un porteur unique",
+            "main avec vraie presence de combat"
+          ]
+        },
+        {
+          "condition": "contre spell control / spell Viktor / Lux / certains Ezreal",
+          "keep": [
+            "Sabotage",
+            "threats resilientes",
+            "mains qui ne reposent pas sur un seul porteur"
+          ]
+        },
+        {
+          "condition": "contre Azir ou autres decks de largeur",
+          "keep": [
+            "Challenge",
+            "Fight or Flight",
+            "mains qui ne font pas juste draw-go"
+          ]
+        }
+      ],
+      "hands_to_throw_back": [
+        "Main tres lente qui ne fait rien avant les premiers scores",
+        "Main purement reactive sans moteur de cartes",
+        "Main qui depend d'une seule piece gear ou d'une seule unit star",
+        "Main miracle tres jolie mais sans moyen concret de survivre aux deux premiers cycles de points"
+      ]
+    },
+    "battlefield_and_scoring_philosophy": {
+      "miracle_sivir": [
+        "Le deck prefere souvent concéder un peu de terrain pour mieux reprendre deux tours plus tard.",
+        "Il ne faut pas se battre pour chaque point si cela t'empeche de garder la bonne densite d'interaction pour ton premier vrai swing turn."
+      ],
+      "aurora_sivir": [
+        "Le shell peut jouer plus franchement le board, mais ne doit pas transformer Aurora en obsession.",
+        "Un battlefield bien tenu avec une grosse unite premium vaut plus qu'une course maladroite sur deux fronts."
+      ],
+      "generic_sivir_rules": [
+        "Sivir aime les parties ou l'adversaire s'expose sur une ou deux menaces vraiment importantes.",
+        "Les battlefields qui permettent de convertir une grosse unite ou une grosse action en tempo direct sont generalement meilleurs pour elle que ceux qui favorisent la pure chip race."
+      ]
+    },
+    "sideboard_philosophy": {
+      "general_rules": [
+        "Sivir est un des decks qui change le plus de texture selon le sideboard choisi.",
+        "Il faut separer ce qui rentre parce que c'est fort contre le matchup de ce qui rentre parce que cela preserve ton architecture de deck.",
+        "Miracle et Aurora ne sideboardent pas avec les memes priorites, meme si Sabotage, Punch First et certains outils de disruption restent des piliers transversaux."
+      ],
+      "known_sideboard_patterns": [
+        {
+          "pattern": "Punch First heavy plans",
+          "use_cases": [
+            "Irelia",
+            "certains combats de board",
+            "Watcher/Singularity thresholds"
+          ]
+        },
+        {
+          "pattern": "Cannon Barrage",
+          "use_cases": [
+            "Draven decks",
+            "certains miracle patterns qui stackent leur table ou leurs menaces"
+          ]
+        },
+        {
+          "pattern": "Orange Sivir / expensive bully threats",
+          "use_cases": [
+            "decks lourds en removal comme Ezreal ou Kai'Sa"
+          ],
+          "note": "plutot comme swap de side que comme base main deck"
+        },
+        {
+          "pattern": "Yone",
+          "use_cases": [
+            "decks qui veulent jouer ou empiler en base comme Lucian, Ezreal ou Irelia",
+            "plans midrange ou anti-Akshan dans certaines listes Aurora"
+          ]
+        },
+        {
+          "pattern": "Anivia",
+          "use_cases": [
+            "miracle decks",
+            "parties ou le rythme de score et la disruption de gros tours comptent davantage"
+          ]
+        },
+        {
+          "pattern": "Sabotage / Mindsplitter density",
+          "use_cases": [
+            "spell-heavy decks",
+            "matchups ou information + attrition de main decide la partie"
+          ]
+        }
+      ]
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Trying to protect Aurora at all costs",
+        "why_it_loses": "Tu perds des parties en traitant Aurora comme une condition de victoire obligatoire au lieu de la traiter comme une ressource de tempo ou de value."
+      },
+      {
+        "mistake": "Using Sabotage too mechanically",
+        "why_it_loses": "La carte vaut souvent plus pour l'information et le sequencing qu'elle ouvre que pour la seule carte retiree."
+      },
+      {
+        "mistake": "Recycling runes just because you can",
+        "why_it_loses": "La legende te permet de lisser tes couts, pas d'ignorer completement la rune economy. Un recyclage mal place peut te couper ton meilleur tour deux tours plus tard."
+      },
+      {
+        "mistake": "Overextending scarce units",
+        "why_it_loses": "Miracle Sivir ne joue pas comme un deck go-wide normal. Si tu mets toutes tes menaces trop tot, tu offres de tres bons echanges a l'adversaire."
+      },
+      {
+        "mistake": "Piloting Miracle Sivir as a pure combo deck",
+        "why_it_loses": "Le deck gagne souvent en stabilisant puis en prenant l'ascendant progressivement avant le gros tour, pas en attendant passivement une seule explosion."
+      },
+      {
+        "mistake": "Mulliganing for greed",
+        "why_it_loses": "Le deck parait plus fort qu'il ne l'est sur des mains lentes. Beaucoup de pertes viennent simplement d'un keep trop beau pour etre honnete."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Contre les decks de sorts lourds, Sabotage doit souvent etre pensee comme ta meilleure carte de tempo indirect.",
+      "Si tu sais que l'adversaire joue Singularity, ne lui laisse pas deux bonnes cibles tant que tu n'es pas vraiment devant.",
+      "Punch First sur une unite a 6 Might ou plus change beaucoup de maths, y compris contre Watcher.",
+      "Contre Draven midrange, il est souvent plus rentable d'enlever les cartes qui punissent Challenge maintenant que de viser la carte qui te battrait plus tard.",
+      "Sur Aurora Sivir, il est parfois correct de poser Aurora juste pour extraire une unite supplementaire et forcer une mauvaise reponse, meme si tu sais qu'elle meurt ensuite.",
+      "Si tu joues miracle, pratique tes sequences de main et tes chaines d'actions; le deck perd reelement des games au temps ou a l'ordre des actions."
+    ],
+    "practical_summary": {
+      "best_for": [
+        "Joueurs aimant les decks techniques et adaptatifs",
+        "Joueurs capables de sideboard finement",
+        "Joueurs prets a investir beaucoup de reps dans un shell miracle ou hybride"
+      ],
+      "worst_for": [
+        "Joueurs voulant un deck lineaire",
+        "Pilotes qui n'aiment pas jouer depuis derriere quelques tours",
+        "Joueurs qui ne veulent pas memoriser les bottoms, les reveals et les sequences"
+      ],
+      "blind_pick_rating": "Moyen a bon pour Aurora, bon a tres bon pour Miracle en mains expertes, mais moins universel qu'un blind pick type Draven"
+    }
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "tier_context": "Top deck de volume",
+      "sivir_outlook": {
+        "label": "favorable",
+        "estimated_sivir_winrate_percent": "55-60",
+        "confidence": "high"
+      },
+      "summary": "C'est le meilleur grand matchup explicitement documente pour Sivir. Le pilote Aurora post-Vegas le decrit comme un matchup facile si on le joue correctement, avec un plan clair autour de Mindsplitter, Sabotage et Challenge, et il signale avoir gagne la plupart de ses rondes Draven sans meme avoir besoin d'Aurora.",
+      "why_matchup_plays_this_way": [
+        "Draven midrange depend beaucoup du tempo de table et de certaines cartes de combat ou de buff qui ont une valeur immediate.",
+        "Sivir peut casser ce tempo via Sabotage, Challenge et gros corps premium.",
+        "Si Sivir cible les bonnes cartes au bon moment, Draven perd une partie de sa capacite a convertir les combats en avalanche."
+      ],
+      "opponent_plan": [
+        "prendre rapidement les points",
+        "forcer des combats profitables",
+        "punir une main lente ou trop reactive"
+      ],
+      "sivir_plan": [
+        "garder Mindsplitter dans les builds Aurora",
+        "chercher Sabotage et Challenge",
+        "retirer d'abord les cartes qui ont de la valeur tout de suite",
+        "ne pas gaspiller les ressources pour forcer Aurora"
+      ],
+      "mulligan_focus": [
+        "Sabotage",
+        "Challenge",
+        "Mindsplitter pour Aurora",
+        "mains qui ne meurent pas aux premiers scores"
+      ],
+      "sideboard_focus": [
+        "Cannon Barrage si disponible",
+        "plans midrange stables",
+        "pas besoin de tunnel sur Aurora"
+      ],
+      "battlefield_notes": [
+        "Tu n'as pas besoin de courir tous les battlefields.",
+        "Une ligne de hold solide et de discard bien place suffit souvent a retourner le tempo."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "retirer la mauvaise carte avec Sabotage",
+        "jouer trop passif et donner 4-5 points gratuits",
+        "surevaluer Aurora plutot que les cartes qui tiennent la table"
+      ],
+      "important_patterns_to_respect": [
+        "Spinning Axe lines",
+        "Fight or Flight pressure",
+        "Overzealous Fan tempo",
+        "2 energie ouverte"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir est particulierement bien documentee ici et semble legerement meilleure que Miracle Sivir dans le pairing pur contre midrange."
+      ],
+      "source_refs": [
+        "S4",
+        "S8",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "tier_context": "Top shell violet/chaos",
+      "sivir_outlook": {
+        "label": "unfavorable",
+        "estimated_sivir_winrate_percent": "42-47",
+        "confidence": "high"
+      },
+      "summary": "Miracle Draven est explicitement nomme comme une des faiblesses de Sivir dans les discussions les plus recentes. Les patterns de stacking et de largeur de table mettent sous pression les reponses plus etroites de Sivir, d'ou la valeur elevee de Cannon Barrage.",
+      "why_matchup_plays_this_way": [
+        "Miracle Draven peut deployer trop de corps ou trop de pression d'un coup pour que Sivir reponde proprement.",
+        "Le matchup punit les mains qui passent un tour de trop a setup.",
+        "Sivir doit souvent gagner en qualite de disruption ce qu'elle ne gagne pas en vitesse pure."
+      ],
+      "opponent_plan": [
+        "largeur de table rapide",
+        "stacking patterns",
+        "gros tour de tempo ou double battlefield"
+      ],
+      "sivir_plan": [
+        "chercher les cartes de swing comme Cannon Barrage",
+        "ne pas se faire pieger dans des 1 pour 1 permanents",
+        "Sabotage pour l'information autant que pour la disruption",
+        "conserver un vrai seuil de reponse pour le tour ou Draven s'etale"
+      ],
+      "mulligan_focus": [
+        "interaction early",
+        "anti-largeur",
+        "main qui peut survivre jusqu'au premier gros swing"
+      ],
+      "sideboard_focus": [
+        "Cannon Barrage",
+        "anti-miracle tools",
+        "eventuellement plans plus agressifs selon la liste"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient tres vite mauvais si Draven peut tenir deux battlefields en meme temps."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "main lente",
+        "reponses trop etroites",
+        "attendre le tour parfait qui n'arrive jamais"
+      ],
+      "important_patterns_to_respect": [
+        "stacking play patterns",
+        "wide miracle turns",
+        "explosive score windows"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir a tendance a avoir un peu plus de table, mais reste structurellement sous pression contre les meilleures sorties Miracle Draven."
+      ],
+      "source_refs": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "tier_context": "Tier 1",
+      "sivir_outlook": {
+        "label": "slightly_favorable_to_even",
+        "estimated_sivir_winrate_percent": "50-54",
+        "confidence": "medium"
+      },
+      "summary": "Le pairing Irelia est bien documente du cote Sivir: Punch First y est cite comme la meilleure carte, Yone est valorise contre les decks qui jouent beaucoup en base, et certains runs recents montrent des victoires repetées contre Irelia. Ce n'est pas free, mais Sivir a des outils reelement pertinents.",
+      "why_matchup_plays_this_way": [
+        "Irelia depend souvent d'un porteur cle et de fenetres de protection bien precises.",
+        "Punch First, Challenge et les grosses menaces Body/Chaos peuvent casser ces seuils de facon brutale.",
+        "Yone et certaines lignes Aurora empechent Irelia de jouer aussi confortablement autour de la base."
+      ],
+      "opponent_plan": [
+        "poser un porteur unique ou quasi-unique",
+        "proteger ce porteur",
+        "convertir un battlefield en suite de scores"
+      ],
+      "sivir_plan": [
+        "prioriser Punch First et Challenge",
+        "garder une vraie presence de combat",
+        "punir la premiere fenetre tapped out ou trop ambitieuse",
+        "ne pas laisser Irelia installer une base sans pression"
+      ],
+      "mulligan_focus": [
+        "Punch First",
+        "Challenge",
+        "mains capables de contester la table",
+        "Yone dans les plans side appropriés"
+      ],
+      "sideboard_focus": [
+        "Punch First heavy plans",
+        "Yone dans Aurora/hybride",
+        "anti-porteur tools"
+      ],
+      "battlefield_notes": [
+        "Il faut parfois accepter de perdre un petit edge pour garder la reponse au vrai tour Irelia."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "gaspiller Punch First sur une mauvaise cible",
+        "jouer trop reactif sans pression de board",
+        "laisser Irelia scorer gratuitement au debut"
+      ],
+      "important_patterns_to_respect": [
+        "Guardian Angel lines",
+        "boots lines",
+        "double-score pressure",
+        "Defiant Dance timing"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir semble un peu plus naturellement a l'aise ici grace a ses corps plus gros et ses side cards de table."
+      ],
+      "source_refs": [
+        "S8",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "tier_context": "Tier 1/S",
+      "sivir_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_sivir_winrate_percent": "49-53",
+        "confidence": "medium"
+      },
+      "summary": "Les sources ne donnent pas un verdict univoque, mais deux signaux vont dans le meme sens: le post-Vegas note que la montee des miracle decks rend la vie plus difficile a Kai'Sa, et des joueurs de Miracle Sivir utilisent justement Orange Sivir side contre les matchups lourds en removal comme Kai'Sa.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa aime tuer proprement et reconstruire.",
+        "Miracle Sivir aime les parties ou la simple logique du 1 pour 1 devient insuffisante.",
+        "Le matchup depend beaucoup du nombre de removals purs, de la vitesse de la liste Kai'Sa et du plan side post-board."
+      ],
+      "opponent_plan": [
+        "retirer les menaces par sorts",
+        "rester stable et propre en board",
+        "eviter de se faire depasser par un tour miracle"
+      ],
+      "sivir_plan": [
+        "ne pas donner une seule cible premium",
+        "forcer Kai'Sa a repondre sur plusieurs axes",
+        "considerer Orange Sivir post-side dans certaines versions",
+        "preserver l'information et les points cles via Sabotage"
+      ],
+      "mulligan_focus": [
+        "mains stables, pas greed",
+        "engine + interaction",
+        "threats qui ne meurent pas toutes pareil"
+      ],
+      "sideboard_focus": [
+        "Orange Sivir ou gros bully units selon build",
+        "cartes qui punissent les removals lineaires",
+        "eviter le sur-sideboard all-in"
+      ],
+      "battlefield_notes": [
+        "Les longs holds a une seule unite favorisent plutot Kai'Sa si elle a encore du removal."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "se faire nettoyer une menace a la fois sans progresser",
+        "ne pas capitaliser sur les tours faibles de Kai'Sa",
+        "main trop lineaire"
+      ],
+      "important_patterns_to_respect": [
+        "spell removal windows",
+        "stabilization turns",
+        "late rebuild turns"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut mieux contester le board tout de suite, mais souffre davantage si le removal gear est abondant."
+      ],
+      "source_refs": [
+        "S3",
+        "S8",
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "tier_context": "Top deck de plafond",
+      "sivir_outlook": {
+        "label": "close_even",
+        "estimated_sivir_winrate_percent": "48-52",
+        "confidence": "medium"
+      },
+      "summary": "Le matchup ressemble souvent a un duel de shell violet hautement technique. Orange Sivir est explicitement citee comme sideboard card contre les decks removal-heavy comme Ezreal, et Yone est egalement cite contre les decks qui veulent jouer en base comme Ezreal.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks peuvent generer des tours de valeur enormes.",
+        "Ezreal est souvent plus 'pur control', tandis que Sivir peut adopter des plans plus hybrides via Body cards.",
+        "Le niveau de maitrise decide enormement du pairing."
+      ],
+      "opponent_plan": [
+        "ralentir puis prendre le controle a la carte",
+        "forcer Sivir a jouer a vitesse reactionnelle",
+        "convertir les chains violettes en avantage impossible a remonter"
+      ],
+      "sivir_plan": [
+        "garder de la pression structurelle, pas seulement de la disruption",
+        "considerer Orange Sivir ou Yone selon la liste",
+        "Sabotage pour information et pour proteger les menaces qui doivent coller"
+      ],
+      "mulligan_focus": [
+        "engine + interaction",
+        "pas de keep mou",
+        "mains capables de ne pas perdre sur un simple removal plan"
+      ],
+      "sideboard_focus": [
+        "Orange Sivir dans certains shells",
+        "Yone en Aurora/hybride si base stacking matters",
+        "anti-control flex slots"
+      ],
+      "battlefield_notes": [
+        "Les parties trop lentes favorisent le joueur qui lit le mieux la guerre de ressources."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "manque de pression reelle",
+        "Sabotage mal sequencee",
+        "laisser Ezreal atteindre ses gros turns sans stress"
+      ],
+      "important_patterns_to_respect": [
+        "Singularity",
+        "Watcher",
+        "Called Shot loops",
+        "late purple chains"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut side Yone contre Ezreal si la base devient trop importante dans la texture de la partie."
+      ],
+      "source_refs": [
+        "S8",
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Spell Heavy",
+      "meta_share_percent": 7,
+      "tier_context": "Version controle/spells",
+      "sivir_outlook": {
+        "label": "favorable",
+        "estimated_sivir_winrate_percent": "54-59",
+        "confidence": "high"
+      },
+      "summary": "C'est un des signaux matchup les plus propres disponibles: le pilote Sivir recent dit explicitement que Spell Viktor est un bon matchup, et que Sabotage est la meilleure carte contre les decks heavy-spell.",
+      "why_matchup_plays_this_way": [
+        "Spell Viktor donne du temps, joue plus lineairement sur ses removals et depend davantage de l'information cachee.",
+        "Sivir exploite tres bien ce type de partie via Sabotage, menaces modulaires et capacite a lisser les power-costs."
+      ],
+      "opponent_plan": [
+        "tuer les menaces hors combat",
+        "vider la table progressivement",
+        "gagner par attrition et wipes"
+      ],
+      "sivir_plan": [
+        "considerer Sabotage comme carte reine",
+        "ne pas tout mettre sur une seule menace",
+        "forcer Viktor a utiliser ses removals a contretemps"
+      ],
+      "mulligan_focus": [
+        "Sabotage",
+        "mains avec vraies menaces resilientes",
+        "pas de keep full combat"
+      ],
+      "sideboard_focus": [
+        "anti-spell / anti-control",
+        "eventuellement Orange Sivir selon construction",
+        "preserver la densite de threats"
+      ],
+      "battlefield_notes": [
+        "Tu peux te permettre d'etre un peu plus patient sur les points si tu prends le controle informationnel."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "main trop pauvre en menaces",
+        "jouer comme si le matchup etait un board-fight normal",
+        "ne pas exploiter Sabotage"
+      ],
+      "important_patterns_to_respect": [
+        "Decree-style turns",
+        "hard removal turns",
+        "sweep windows"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut aussi bien performer ici si elle ne se rend pas trop vulnerable a l'anti-gear."
+      ],
+      "source_refs": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Unit Based",
+      "meta_share_percent": 7,
+      "tier_context": "Version board/token/value",
+      "sivir_outlook": {
+        "label": "very_unfavorable",
+        "estimated_sivir_winrate_percent": "35-42",
+        "confidence": "high"
+      },
+      "summary": "Autre signal direct et rare: les versions unit-based Viktor sont decrites comme quasiment unwinnable par le pilote Sivir recente. Cette distinction spell-Viktor / unit-Viktor est trop importante pour etre ignoree.",
+      "why_matchup_plays_this_way": [
+        "La version unit-based combine pression de table, valeur continue et cartes de removal suffisantes.",
+        "Elle empeche Sivir de transformer le matchup en simple guerre d'information et de sabotage.",
+        "Les petits avantages de Sivir sont plus facilement dilues par la largeur et la recursion de board."
+      ],
+      "opponent_plan": [
+        "mettre de la pression reelle en plus du removal",
+        "ne pas donner de temps gratuit",
+        "gagner les battlefields avec presence et non seulement avec spells"
+      ],
+      "sivir_plan": [
+        "chercher une sortie plus proactive qu'en controle pur",
+        "ne pas tout miser sur Sabotage",
+        "identifier si tu dois devenir plus midrange ou plus miracle selon ta main"
+      ],
+      "mulligan_focus": [
+        "mains qui font quelque chose tot",
+        "pas de keep trop lent",
+        "cartes capables de punir une vraie table"
+      ],
+      "sideboard_focus": [
+        "plus de table interaction",
+        "moins de pure anti-spell logic",
+        "gros plans de menace si disponibles"
+      ],
+      "battlefield_notes": [
+        "Si Viktor peut tenir les battlefields tout en gardant sa value, le matchup glisse tres vite."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "croire que le plan Sabotage seul suffira",
+        "reponses trop etroites",
+        "retard de tempo trop prononce"
+      ],
+      "important_patterns_to_respect": [
+        "tokens and units plus removal",
+        "recruit pressure",
+        "board plus hand control hybrid turns"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut mieux se battre sur la table que Miracle pure, mais reste structurellement sous pression si Viktor aligne bien board + removal."
+      ],
+      "source_refs": [
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "tier_context": "Aggro/tempo Chaos",
+      "sivir_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_sivir_winrate_percent": "47-51",
+        "confidence": "medium"
+      },
+      "summary": "Les analyses meta post-Vegas disent en substance que les miracle decks devraient etre trop lents contre Annie sur le papier, mais que si le gros tour arrive a temps, Annie a du mal a conclure les derniers points. Cela donne un matchup tres axe sur l'opening hand et le premier pivot.",
+      "why_matchup_plays_this_way": [
+        "Annie attaque le point faible naturel de Miracle Sivir: les tours de setup et les mains lentes.",
+        "Sivir, en revanche, a le plafond de cartes pour reprendre une partie qui ne lui a pas echappe au score."
+      ],
+      "opponent_plan": [
+        "prendre les points tres vite",
+        "forcer Sivir a repondre au lieu de progresser",
+        "fermer la partie avant le gros swing"
+      ],
+      "sivir_plan": [
+        "respecter la vitesse du pairing",
+        "accepter des trades de cartes moins beaux au debut",
+        "stabiliser avant de chercher la full value"
+      ],
+      "mulligan_focus": [
+        "interaction early obligatoire",
+        "pas de keep trop greedy",
+        "mains avec vrai tour 2-3"
+      ],
+      "sideboard_focus": [
+        "anti-race",
+        "plus de survie immediate",
+        "moins de cartes lentes ou trop contextuelles"
+      ],
+      "battlefield_notes": [
+        "Les battlefields ou Annie convertit immediatement le tempo sont dangereux; il faut jouer le score, pas seulement la carte quality."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "main trop lente",
+        "surinvestir dans l'engine",
+        "laisser Annie monter trop vite a 6+ points"
+      ],
+      "important_patterns_to_respect": [
+        "fast point starts",
+        "chaos burst",
+        "midgame finisher turns"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut parfois mieux survivre a la premiere vague grace a des corps plus concrets, mais elle souffre si elle n'atteint pas vite ses gros payoffs."
+      ],
+      "source_refs": [
+        "S3",
+        "S11"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "tier_context": "Token/equipment aggression",
+      "sivir_outlook": {
+        "label": "slightly_favorable",
+        "estimated_sivir_winrate_percent": "51-56",
+        "confidence": "medium"
+      },
+      "summary": "Le retour matchup le plus utile vient d'un fil de pilotage miracle: Azir est une question de threat management, Sabotage sur Arise est 'big game', et les grosses unites Sivir obligent souvent Azir a sur-commiter ou a deployer plusieurs soldats de facon inefficace.",
+      "why_matchup_plays_this_way": [
+        "Azir genere beaucoup de presence, mais pas toujours beaucoup de qualite par piece.",
+        "Sivir peut convertir ses grosses menaces et ses cartes d'information en echanges tres rentables.",
+        "Le pairing reste dangereux si Sivir conserve une main trop lente."
+      ],
+      "opponent_plan": [
+        "mettre beaucoup de menaces",
+        "forcer des reponses une par une",
+        "scorer avant la zone de confort de Miracle Sivir"
+      ],
+      "sivir_plan": [
+        "faire du threat management, pas du full clear imaginaire",
+        "Sabotage sur les cartes qui portent vraiment le plan Azir",
+        "abuser des gros seuils de Might avec Punch First ou equipements"
+      ],
+      "mulligan_focus": [
+        "interaction early",
+        "mains qui contestent la table",
+        "pas de keep full late"
+      ],
+      "sideboard_focus": [
+        "anti-largeur moderee",
+        "cartes de board fight propres",
+        "eventuellement plans un peu plus midrange"
+      ],
+      "battlefield_notes": [
+        "Azir gagne si tu reponds a tout uniformement. Il faut identifier les attaques qui meritent la vraie reponse."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "sous-estimer l'ouverture Azir",
+        "repondre a tous les petits corps de la meme maniere",
+        "ne pas trouver de point d'inflexion avant 5-6 points"
+      ],
+      "important_patterns_to_respect": [
+        "Arise",
+        "Soldier swarms",
+        "movement tricks",
+        "wide pressure into score"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut etre plus confortable si elle touche vite ses gros corps, mais plus vulnerable si Azir la force a courir apres la table."
+      ],
+      "source_refs": [
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "tier_context": "Combo-combat Calm",
+      "sivir_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_sivir_winrate_percent": "45-49",
+        "confidence": "medium"
+      },
+      "summary": "Le post-Vegas note explicitement que Master Yi est plutot bon dans ce meta combo et particulierement contre les miracle decks, car il score presque gratuitement au debut avant que plusieurs unites n'arrivent d'un coup. Cela cible directement la texture de Miracle Sivir.",
+      "why_matchup_plays_this_way": [
+        "Yi peut prendre les premiers points pendant que Miracle Sivir met l'engine en route.",
+        "Les protections Calm rendent certains swings de Sivir moins propres qu'ils ne le semblent.",
+        "La partie se complique si Sivir doit simultanement rattraper le score et gagner la bataille de ressources."
+      ],
+      "opponent_plan": [
+        "scorer tot avec peu d'investissement",
+        "tenir un battlefield avec protection",
+        "punir les combats trop lisibles"
+      ],
+      "sivir_plan": [
+        "ne pas laisser Yi scorer gratuitement plusieurs tours",
+        "conserver les meilleurs swings pour les vrais porteurs",
+        "ne pas croire qu'un seul gros tour reglera tout si le score a deja file"
+      ],
+      "mulligan_focus": [
+        "interaction de combat",
+        "presence early minimale",
+        "pas de keep ultra lent"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "combat math tools",
+        "moins de pure greed miracle"
+      ],
+      "battlefield_notes": [
+        "Plus tu perds le premier tempo de battlefield, plus Yi t'oblige a prendre de mauvais risques."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "retard au score trop rapide",
+        "mains full engine",
+        "surestimation de tes removals contre Calm"
+      ],
+      "important_patterns_to_respect": [
+        "early free scoring",
+        "Calm protection",
+        "single carrier holds"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut parfois mieux se battre sur table, mais reste sous pression sur les premiers cycles de score."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Fiora, Grand Duelist",
+      "meta_share_percent": 3,
+      "tier_context": "Body/Order equipment midrange",
+      "sivir_outlook": {
+        "label": "slightly_favorable_to_even",
+        "estimated_sivir_winrate_percent": "50-55",
+        "confidence": "low"
+      },
+      "summary": "Le pairing n'est pas tres documente, mais plusieurs indices vont dans un sens raisonnable: Yone est cite comme bon dans divers matchups de base/porteur, Sivir sait grossir ses menaces hors de certaines breakpoints, et Fiora n'a pas la meme explosion de cartes que Miracle Sivir.",
+      "why_matchup_plays_this_way": [
+        "Fiora mise souvent sur un nombre reduit de pieces qualitatives.",
+        "Sivir aime punir ces structures avec Challenge, Punch First et grosses unites."
+      ],
+      "opponent_plan": [
+        "equiper un porteur premium",
+        "gagner sur la qualite du combat",
+        "forcer des mauvaises reponses"
+      ],
+      "sivir_plan": [
+        "garder les meilleurs tricks pour le vrai porteur",
+        "ne pas gaspiller les removals etrops etroits sur les pieces secondaires",
+        "forcer Fiora a engager plus de ressources qu'elle ne le souhaite"
+      ],
+      "mulligan_focus": [
+        "interaction de table",
+        "mains stables",
+        "presence de gros seuils de Might"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "Yone selon construction",
+        "Punch First et Challenge densite"
+      ],
+      "battlefield_notes": [
+        "Battlefields encourageant le jeu large ou les swings de tempo aident Sivir a eviter un simple duel de star unit."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "laisser une piece equipee vivre trop longtemps",
+        "jouer trop fair les combats",
+        "gaspiller Sabotage sur la mauvaise fenetre"
+      ],
+      "important_patterns_to_respect": [
+        "equipment stack",
+        "counterspell/protection turns",
+        "big single carrier lines"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut parfois mieux passer le stat-check brut que Miracle pure."
+      ],
+      "source_refs": [
+        "S8",
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Lucian, Purifier",
+      "meta_share_percent": 2,
+      "tier_context": "Equipment aggression / base pressure",
+      "sivir_outlook": {
+        "label": "slightly_favorable",
+        "estimated_sivir_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Lucian est un matchup ou les side units comme Yone sont explicitement valorisees dans les discussions Aurora. Cela suggere au minimum que Sivir a un plan side credible et une bonne maniere de casser certaines sequences base-centric de Lucian.",
+      "why_matchup_plays_this_way": [
+        "Lucian veut souvent te battre sur le tempo local de base et sur des porteurs equipes.",
+        "Sivir a de bonnes cartes pour casser exactement ce type de structure."
+      ],
+      "opponent_plan": [
+        "pousser les points tot",
+        "utiliser l'equipement pour garder la pression",
+        "forcer Sivir a repondre trop vite"
+      ],
+      "sivir_plan": [
+        "Yone si pertinent",
+        "Challenge sur le vrai porteur",
+        "ne pas laisser Lucian prendre un rythme de base trop confortable"
+      ],
+      "mulligan_focus": [
+        "interaction early",
+        "cartes de table",
+        "pas de keep trop lent"
+      ],
+      "sideboard_focus": [
+        "Yone dans Aurora/hybride",
+        "anti-porteur",
+        "cartes de stabilisation"
+      ],
+      "battlefield_notes": [
+        "Les lignes de base comptent plus que d'habitude ici."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "retard immediat aux points",
+        "mains trop molles",
+        "laisser un porteur equipe tenir librement"
+      ],
+      "important_patterns_to_respect": [
+        "base stacking",
+        "equipment tempo",
+        "fast point pushes"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir semble particulierement bien equipee post-side quand Yone est disponible."
+      ],
+      "source_refs": [
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Jax, Grandmaster at Arms",
+      "meta_share_percent": 0,
+      "tier_context": "Rogue competitif / equipment protection",
+      "sivir_outlook": {
+        "label": "close_even",
+        "estimated_sivir_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Le matchup semble tres technique et peu documente. Les deux decks aiment manipuler les combats, mais depuis des angles differents: Jax via modularite d'equipement et protection, Sivir via disruption, thresholds de Might et value miracle.",
+      "why_matchup_plays_this_way": [
+        "Jax peut punir les interactions trop etroites si Sivir ne cible pas le bon porteur.",
+        "Sivir peut punir les lignes trop porteur-centriques de Jax avec Challenge, discard et gros swings."
+      ],
+      "opponent_plan": [
+        "construire une table modulaire protegee",
+        "gagner le combat math",
+        "conserver les runes ouvertes"
+      ],
+      "sivir_plan": [
+        "identifier la vraie piece a punir",
+        "ne pas sur-reagir a chaque equipement",
+        "forcer Jax a exposer une piece plus qu'il ne le voudrait"
+      ],
+      "mulligan_focus": [
+        "interaction de table",
+        "main qui n'est pas full late",
+        "Sabotage pour l'information"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "gros seuils de Might",
+        "moins de cartes mortes si le matchup devient tres board centric"
+      ],
+      "battlefield_notes": [
+        "Le matchup recompense la patience et la lecture du prochain tour bien plus que la force brute."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "viser les mauvaises menaces",
+        "laisser Jax dicter la math des combats",
+        "mains sans presence early"
+      ],
+      "important_patterns_to_respect": [
+        "Quick-Draw combat turns",
+        "protection stack",
+        "modular equipment shifts"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir pourrait legerement mieux tenir le board que Miracle pure, mais les donnees sont trop faibles pour trancher."
+      ],
+      "source_refs": [
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Rumble, Mechanized Menace",
+      "meta_share_percent": 2,
+      "tier_context": "Rogue go-wide / Fury Mind",
+      "sivir_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_sivir_winrate_percent": "45-49",
+        "confidence": "low"
+      },
+      "summary": "Le pairing n'est pas tres documente, mais il coche plusieurs cases structurellement inconfortables pour Miracle Sivir: plus de largeur, moins de dependance a un seul spell cle, et capacite a depasser un plan trop reactif.",
+      "why_matchup_plays_this_way": [
+        "Miracle Sivir aime souvent les adversaires qui se structurent autour de peu de pieces importantes.",
+        "Rumble a plutot tendance a pousser largeur + payoffs successifs."
+      ],
+      "opponent_plan": [
+        "aligner plusieurs menaces",
+        "forcer des reponses une par une",
+        "profiter des tours ou Sivir setup trop"
+      ],
+      "sivir_plan": [
+        "respecter la largeur de board",
+        "ne pas garder une main trop greed",
+        "chercher les swings de table plutot que les 1 pour 1 repetitifs"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "interaction de table",
+        "pas de keep full engine"
+      ],
+      "sideboard_focus": [
+        "anti-go-wide",
+        "mains plus proactives si possible",
+        "moins de cartes trop lentes"
+      ],
+      "battlefield_notes": [
+        "Si Rumble tient deux battlefields avant ton premier vrai swing, la partie devient tres difficile."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "reponses trop etroites",
+        "retard de points trop rapide",
+        "penser le matchup comme un duel de porteurs"
+      ],
+      "important_patterns_to_respect": [
+        "wide boards",
+        "successive large payoffs"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut parfois un peu mieux lutter sur la table, mais reste punie par les sorties tres larges."
+      ],
+      "source_refs": [
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Rek'Sai, Void Burrower",
+      "meta_share_percent": 2,
+      "tier_context": "Rogue swarm/recursion",
+      "sivir_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_sivir_winrate_percent": "45-50",
+        "confidence": "low"
+      },
+      "summary": "Comme d'autres matchups de largeur, Rek'Sai peut mettre Miracle Sivir en mauvaise posture si elle repond trop proprement a des menaces qui reviennent ou se remplacent.",
+      "why_matchup_plays_this_way": [
+        "Le deck multiplie les points de pression et les petites obligations de reponse.",
+        "Sivir prefere, en general, des matchups ou l'information et la qualite de ciblage sont plus decisives."
+      ],
+      "opponent_plan": [
+        "mettre beaucoup de pieces",
+        "forçer du 1 pour 1",
+        "profiter de la recursion"
+      ],
+      "sivir_plan": [
+        "chercher les vrais pivots de la partie, pas tout tuer uniformement",
+        "proteger ses tours de stabilisation",
+        "ne pas perdre le score trop tot"
+      ],
+      "mulligan_focus": [
+        "anti-largeur",
+        "main qui fait quelque chose vite"
+      ],
+      "sideboard_focus": [
+        "plus de table interaction",
+        "moins de cartes mortes contre largeur"
+      ],
+      "battlefield_notes": [
+        "Les battlefields vite satures deviennent problematiques si tu n'as pas deja pris l'ascendant informationnel."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "mains lentes",
+        "reponses trop etroites",
+        "pas de vrai pivot de stabilisation"
+      ],
+      "important_patterns_to_respect": [
+        "swarm pressure",
+        "void recursion"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut mieux tenir certains combats, mais reste sous pression si Rek'Sai s'etale trop vite."
+      ],
+      "source_refs": [
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Lux, Lady of Luminosity",
+      "meta_share_percent": 1,
+      "tier_context": "Spell control moins etabli",
+      "sivir_outlook": {
+        "label": "slightly_favorable",
+        "estimated_sivir_winrate_percent": "52-57",
+        "confidence": "low"
+      },
+      "summary": "Par analogie avec les retours sur les decks spell-heavy et avec la distinction spell Viktor / unit Viktor, Lux semble plutot un matchup ou Sabotage et la modularite de Sivir gardent une vraie valeur.",
+      "why_matchup_plays_this_way": [
+        "Lux est moins opprimante que Viktor board/value dans ce role.",
+        "Les decks tres spell-heavy offrent a Sivir des fenetres de disruption et de lecture de main plus claires."
+      ],
+      "opponent_plan": [
+        "tuer hors combat",
+        "ralentir la table",
+        "gagner a la qualite de spell"
+      ],
+      "sivir_plan": [
+        "prioriser Sabotage",
+        "ne pas tout mettre sur une seule menace",
+        "forcer Lux a repondre a des cartes imparfaites"
+      ],
+      "mulligan_focus": [
+        "Sabotage",
+        "threats resilientes",
+        "pas de main uniquement combat"
+      ],
+      "sideboard_focus": [
+        "anti-control flex",
+        "gros bully units selon build"
+      ],
+      "battlefield_notes": [
+        "La patience paie tant que le score ne t'echappe pas."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "main trop pauvre en menaces",
+        "line unique qui se fait punir par un removal"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal timing",
+        "long attrition games"
+      ],
+      "aurora_variation_notes": [
+        "Aurora doit respecter davantage le gear hate et les kill spells directs."
+      ],
+      "source_refs": [
+        "S8",
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Ahri, Nine-Tailed Fox",
+      "meta_share_percent": 1,
+      "tier_context": "Mobilite / score opportuniste",
+      "sivir_outlook": {
+        "label": "close_even",
+        "estimated_sivir_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Ahri n'est pas assez documentee pour une lecture forte, mais les decks de mobilite exposent naturellement Miracle Sivir aux pertes de points opportunistes avant son premier vrai swing.",
+      "why_matchup_plays_this_way": [
+        "Ahri peut voler du tempo sans s'exposer exactement comme un deck fair normal.",
+        "Sivir finit souvent par avoir plus de puissance brute, mais pas toujours assez tot."
+      ],
+      "opponent_plan": [
+        "voler des points",
+        "punir une mauvaise repartition des menaces",
+        "faire courir Sivir"
+      ],
+      "sivir_plan": [
+        "ne pas sur-commit sur un seul battlefield",
+        "garder de quoi reprendre un score vole",
+        "stabiliser puis faire parler la superiorite de cartes"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "presence early minimale"
+      ],
+      "sideboard_focus": [
+        "tempo flexible",
+        "pas de sur-sideboard"
+      ],
+      "battlefield_notes": [
+        "Le placement et la repartition importent plus que d'habitude."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "donner des points gratuits",
+        "mauvaise lecture d'un pivot de mouvement"
+      ],
+      "important_patterns_to_respect": [
+        "mobility score turns"
+      ],
+      "aurora_variation_notes": [
+        "Aurora peut parfois mieux contester un board visible, mais souffre pareil si la repartition des pieces est mauvaise."
+      ],
+      "source_refs": [
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Yasuo, Unforgiven",
+      "meta_share_percent": 1,
+      "tier_context": "Mobilite / burst tempo",
+      "sivir_outlook": {
+        "label": "slightly_favorable",
+        "estimated_sivir_winrate_percent": "51-55",
+        "confidence": "low"
+      },
+      "summary": "Yasuo peut voler des parties, mais parait moins constant qu'un shell miracle bien pilote sur un tournoi long.",
+      "why_matchup_plays_this_way": [
+        "Yasuo depend beaucoup de ses bonnes fenetres.",
+        "Sivir, elle, convertit mieux les longues parties et les erreurs d'ordre."
+      ],
+      "opponent_plan": [
+        "mobility explosif",
+        "double-score opportuniste"
+      ],
+      "sivir_plan": [
+        "respecter la fenetre de vol de partie",
+        "ne pas jouer trop passivement le score",
+        "mettre a profit la meilleure resource loop"
+      ],
+      "mulligan_focus": [
+        "presence minimale",
+        "interaction early"
+      ],
+      "sideboard_focus": [
+        "tempo answers",
+        "pas trop de greed"
+      ],
+      "battlefield_notes": [
+        "Si tu oublies simplement le score pendant deux cycles, Yasuo peut voler une game qu'il n'aurait jamais du gagner."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "oublier de jouer autour de la mobilite",
+        "main trop lente"
+      ],
+      "important_patterns_to_respect": [
+        "unexpected mobility lethal"
+      ],
+      "aurora_variation_notes": [
+        "Aurora peut avoir plus de table, mais ne doit pas sous-estimer la mobilite."
+      ],
+      "source_refs": [
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Teemo, Swift Scout",
+      "meta_share_percent": 1,
+      "tier_context": "Chip pressure / nuisance tempo",
+      "sivir_outlook": {
+        "label": "favorable",
+        "estimated_sivir_winrate_percent": "55-60",
+        "confidence": "low"
+      },
+      "summary": "Teemo ne ressort pas comme un vrai predateur de Sivir dans Spiritforged. Le pairing semble surtout sanctionner les mains trop lentes.",
+      "why_matchup_plays_this_way": [
+        "Une fois la premiere pression contenue, Sivir passe generalement au-dessus en taille et en card quality."
+      ],
+      "opponent_plan": [
+        "chip pressure",
+        "tricks de tempo",
+        "profiter d'un keep trop greed"
+      ],
+      "sivir_plan": [
+        "respecter les premiers points",
+        "stabiliser proprement",
+        "eviter de perdre pour avoir garde une main trop belle"
+      ],
+      "mulligan_focus": [
+        "pas de keep greed",
+        "interaction early"
+      ],
+      "sideboard_focus": [
+        "peu de changements necessaires"
+      ],
+      "battlefield_notes": [
+        "Les battlefields lents et les games qui s'etirent te favorisent beaucoup."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "main trop lente"
+      ],
+      "important_patterns_to_respect": [
+        "nuisance tempo"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir semble aussi plutot confortable ici."
+      ],
+      "source_refs": [
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Miss Fortune, Bounty Hunter",
+      "meta_share_percent": 1,
+      "tier_context": "Aurora/ramp heritage",
+      "sivir_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_sivir_winrate_percent": "50-55",
+        "confidence": "low"
+      },
+      "summary": "Les discussions recentes sur Aurora ont plutot tendance a considerer Sivir comme une meilleure porteuse du plan que Miss Fortune quand le deck doit rester competitif dans un meta plus hostile au gear.",
+      "why_matchup_plays_this_way": [
+        "MF est plus highroll et plus dependante d'Aurora.",
+        "Sivir a tendance a rester plus fonctionnelle sans trouver son enchantement cle."
+      ],
+      "opponent_plan": [
+        "ramp / Aurora",
+        "gros payoffs",
+        "prise de tempo rapide si le setup passe"
+      ],
+      "sivir_plan": [
+        "ne pas se laisser intimider par Aurora",
+        "punir les tours de setup",
+        "faire parler la meilleure autonomie de tes bonnes cartes"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "interaction contre setup"
+      ],
+      "sideboard_focus": [
+        "selon shell, garder les cartes qui cassent le plan Aurora"
+      ],
+      "battlefield_notes": [
+        "La partie se gagne souvent avant le plus gros payoff si tu empeches le bon enchainement."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "laisser MF highroll gratuitement",
+        "repondre trop tard a Aurora"
+      ],
+      "important_patterns_to_respect": [
+        "Aurora timing",
+        "ramp spikes"
+      ],
+      "aurora_variation_notes": [
+        "En Aurora mirror-like, la version Sivir est souvent consideree comme plus consistante."
+      ],
+      "source_refs": [
+        "S8",
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_share_percent": 2,
+      "tier_context": "Body combat midrange",
+      "sivir_outlook": {
+        "label": "close_even",
+        "estimated_sivir_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Peu de donnees directes, mais le matchup ressemble a beaucoup de duels body-centric: la partie peut tourner tres fort autour des thresholds de Might, de Punch First et du premier vrai pivot de combat.",
+      "why_matchup_plays_this_way": [
+        "Sett te force a te battre sur table.",
+        "Sivir peut tres bien jouer ce jeu si elle trouve le bon melange entre Body cards et value engine."
+      ],
+      "opponent_plan": [
+        "poser de grosses unites",
+        "t'imposer des combats frontaux"
+      ],
+      "sivir_plan": [
+        "refuser les combats bruts quand ils sont mauvais",
+        "utiliser la superiorite de information et de sequencing",
+        "garder Punch First pour les maths deciseves"
+      ],
+      "mulligan_focus": [
+        "interaction de table",
+        "presence early correcte"
+      ],
+      "sideboard_focus": [
+        "gros seuils de Might",
+        "peu de cartes mortes si la partie devient board-centric"
+      ],
+      "battlefield_notes": [
+        "Le score peut compter plus vite qu'on ne croit ici, parce que les deux decks savent bien tenir un battlefield."
+      ],
+      "main_lose_conditions_for_sivir": [
+        "jouer trop reactif sans board",
+        "sous-estimer un seuil de Might adverse"
+      ],
+      "important_patterns_to_respect": [
+        "buff combat spikes"
+      ],
+      "aurora_variation_notes": [
+        "Aurora Sivir peut mieux soutenir un long board fight."
+      ],
+      "source_refs": [
+        "S12"
+      ]
+    }
+  ],
+  "sources": {
+    "S1": {
+      "type": "guide",
+      "title": "Riftbound.gg - Sivir, Battle Mistress Guide",
+      "date": "2026-02-20",
+      "notes": "Base sur l'identite Body/Chaos, les power-costs, les deux signatures et l'existence des deux grands shells Sivir"
+    },
+    "S2": {
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post Chinese Regionals",
+      "date": "2026-02-28",
+      "notes": "Situe Sivir en Tier 3 tout en reconnaissant le vrai potentiel du shell Miracle et la meilleure place de Sivir comme porteuse de Dazzling Aurora"
+    },
+    "S3": {
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post Vegas",
+      "date": "2026-03-06",
+      "notes": "Explique que Sivir a deux archetypes valides; signale que la montee des miracle decks complique le travail de Kai'Sa; note aussi que les decks combo/miracle sont theoriquement mis sous pression par Annie et Yi"
+    },
+    "S4": {
+      "type": "official tournament decklist",
+      "title": "Riftbound official - Vegas Top Decks - Best-of Sivir NoVeggies",
+      "date": "2026-03-04",
+      "notes": "Reference concrete pour Miracle Sivir: #9 overall, liste, battlefields, runes et sideboard connus"
+    },
+    "S5": {
+      "type": "event stats",
+      "title": "Riftbound.gg - Bologna Regional Qualifier Results",
+      "date": "2026-03-05 consulted",
+      "notes": "Sivir 4% du field, Top 16, 49.4% de winrate hors miroirs sur 360 matchs"
+    },
+    "S6": {
+      "type": "event stats",
+      "title": "Riftbound.gg - Dalian Regional Open Results",
+      "date": "2026-02-03",
+      "notes": "Sivir Top 4 a Dalian, confirmation du plafond du shell Miracle"
+    },
+    "S7": {
+      "type": "tier list",
+      "title": "Mobalytics - Riftbound Tier List",
+      "date_consulted": "2026-03-11",
+      "notes": "Place Sivir en A-tier et resume tres clairement l'existence des deux versions: Dazzling Aurora et Ezreal/Called Shot Miracle"
+    },
+    "S8": {
+      "type": "community AMA",
+      "title": "Best of Sivir AMA",
+      "date_consulted": "2026-03-11",
+      "notes": "Source communautaire la plus utile pour les side plans Aurora, les matchups Draven/Viktor/Irelia, les slots Yone/Anivia et la vision 'Aurora is a resource'"
+    },
+    "S9": {
+      "type": "community thread",
+      "title": "How to play Sivir",
+      "date_consulted": "2026-03-11",
+      "notes": "Tres utile pour Miracle Sivir: deck tres difficile, Sabotage comme carte centrale, lignes contre Singularity/Watcher/Azir"
+    },
+    "S10": {
+      "type": "community thread",
+      "title": "How to play Sivir - Azir / Watcher / Singularity sublines",
+      "date_consulted": "2026-03-11",
+      "notes": "Threat management contre Azir; importance de Sabotage; gestion des thresholds de Might"
+    },
+    "S11": {
+      "type": "community AMA excerpt",
+      "title": "Best of Sivir AMA - Punch First / Cannon Barrage excerpt",
+      "date_consulted": "2026-03-11",
+      "notes": "Punch First comme meilleure carte contre Irelia; Cannon Barrage contre Draven decks et stacking miracle patterns"
+    },
+    "S12": {
+      "type": "community synthesis",
+      "title": "Cross-reading of recent Sivir sideboard and matchup discussions",
+      "date_consulted": "2026-03-11",
+      "notes": "Utilise pour les pairings secondaires quand la data directe manque, avec prudence explicite"
+    },
+    "S13": {
+      "type": "official / developer update",
+      "title": "Potential Card Bans update",
+      "date": "2026-03-10",
+      "notes": "Pas de bans annonces; rules update distincte prevue le 30 mars 2026"
+    }
+  }
+}

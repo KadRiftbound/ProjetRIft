@@ -1,0 +1,1071 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.1",
+  "title": "Guide Miss Fortune complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte decembre 2025 a mars 2026",
+    "methodology": {
+      "approach": [
+        "Croisement des guides Miss Fortune recents",
+        "Croisement des decklists officielles Houston, Bologna et Vegas",
+        "Croisement des decklists Mobalytics Orlando/Houston",
+        "Croisement des discussions communautaires sur Aurora MF, non-Aurora MF et les matchups",
+        "Accent mis sur le pilotage expert et la structure des shells, meme quand la legende n'est pas top meta"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + decklist officielle et/ou retour matchup explicite",
+        "medium": "Consensus raisonnable mais sensible au shell exact, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "miss_fortune_meta_position": {
+      "riftdecks_spiritforged": {
+        "meta_share_percent": 1,
+        "tier": "Tier 3",
+        "decks_indexed": 64
+      },
+      "riftbound_gg_post_bologna": {
+        "tier": "Tier 3",
+        "notes": "Finale de tournoi malgre des metrics globales faibles"
+      },
+      "riftbound_gg_post_vegas": {
+        "tier": "Tier 4",
+        "notes": "Faible winrate global mais capacite a faire des deep runs si le shell est bien positionne"
+      },
+      "major_recent_results": [
+        "Houston: 59 joueurs Day 1, 7 joueurs Day 2, part du field qui double quasiment en Day 2",
+        "Bologna: 35 picks, 9% conversion Day 2, 39.9% winrate, finale et best-of #2 overall",
+        "Vegas: 75 picks, 6.7% conversion Day 2, 38.9% winrate, best-of #134 overall",
+        "Orlando Saturday 10K: 1st place avec une version Aurora ramp/control documentee hors officiel"
+      ],
+      "overall_read": "Miss Fortune n'est pas une legende de volume ni de metrics propres en mars 2026. En revanche, elle a plusieurs shells reels, une vraie profondeur de pilotage et un plafond suffisamment eleve pour produire des resultats serieux."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et les structures de deck plutot que la seule reussite statistique de la legende."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Miss Fortune, Bounty Hunter",
+    "domains": [
+      "Body",
+      "Chaos"
+    ],
+    "macro_identity": {
+      "archetype_family": "Body/Chaos Ganking - allant de Aurora control/tempo a non-Aurora midrange/tempo",
+      "primary_gameplan": "Utiliser la legende pour donner Ganking a la bonne unite au bon moment, convertir des mouvements ou des readies en prise de battlefield, et gagner la partie en rendant les deux fronts menacants simultanement.",
+      "secondary_gameplan": "Selon le shell: soit assembler Aurora plus disruption plus gros corps pour depasser la table adverse, soit jouer un plan plus low-to-the-ground de midrange/ganking avec Captain ou Buccaneer, Lucian, First Mate, Fight or Flight et des swings de tempo.",
+      "why_the_legend_is_strong": [
+        "La legende donne Ganking a n'importe quelle unite, y compris a des grosses menaces",
+        "Le dernier point de victoire demandant de conquerir les deux battlefields dans le meme tour, Miss Fortune a naturellement une excellente capacite de close",
+        "Ses shells Aurora ajoutent de la disruption de main, des outils de mouvement et des tours d'inevitability",
+        "Ses shells non-Aurora peuvent voler des points et manipuler la table d'une facon difficile a simuler contre d'autres legends Body/Chaos"
+      ],
+      "why_the_legend_is_hard": [
+        "Le deck demande une lecture tres fine des battlefields",
+        "Il faut distinguer quand on gagne par Aurora, quand on gagne par Ganking, et quand on gagne juste en refusant les points adverses",
+        "Miss Fortune est un deck ou un mauvais mouvement vaut souvent plus qu'une mauvaise carte",
+        "Le shell exact change enormement la texture des matchups"
+      ]
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Aurora Control/Tempo Miss Fortune",
+        "status_march_2026": "Shell de reference expert en Spiritforged",
+        "evidence": [
+          "Finaliste de Bologna",
+          "Best-of Miss Fortune a Vegas",
+          "Meme base officielle sur les deux evenements"
+        ],
+        "identity": "Aurora Body/Chaos avec disruption et carte advantage. Le shell ne joue pas comme un simple ramp deck; il joue comme un deck de tempo-control qui utilise Aurora, Mindsplitter, Sabotage et les gros corps pour priver l'adversaire de ses meilleurs tours.",
+        "reference_core": [
+          "Dazzling Aurora",
+          "Mindsplitter",
+          "Sabotage",
+          "Stacked Deck",
+          "Catalyst of Aeons",
+          "Challenge",
+          "Fight or Flight",
+          "Last Rites",
+          "Called Shot",
+          "Hard Bargain",
+          "Volibear, Imposing"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "Obelisk of Power",
+          "Sigil of the Storm"
+        ],
+        "chosen_champion": "Miss Fortune, Captain",
+        "default_for_matchups_below": true
+      },
+      {
+        "name": "Aurora Ramp Miss Fortune",
+        "status_march_2026": "Shell toujours reel mais plus ancien et plus dependant des payoffs",
+        "evidence": [
+          "Houston Best-Of",
+          "Orlando Saturday 10K 1st"
+        ],
+        "identity": "Version plus lineaire, plus proche d'un vrai deck Aurora ramp, avec Deadbloom Predator, Treasure Trove ou Pack of Wonders ou Primal Strength selon la variante, plus de gros corps purs, et un plan plus centre sur l'inevitability d'Aurora.",
+        "reference_core": [
+          "Dazzling Aurora",
+          "Mindsplitter",
+          "Deadbloom Predator",
+          "Catalyst of Aeons",
+          "Gust",
+          "Mobilize",
+          "Fight or Flight",
+          "Treasure Trove ou Ride the Wind package",
+          "Volibear, Imposing",
+          "Soulgorger ou Mountain Drake selon build"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "Obelisk of Power",
+          "Vilemaw's Lair ou Sigil of the Storm"
+        ],
+        "chosen_champion": "Miss Fortune, Captain"
+      },
+      {
+        "name": "Non-Aurora Midrange / Ganking Miss Fortune",
+        "status_march_2026": "Shell niche mais reel pour experts",
+        "evidence": [
+          "Threads communautaires Midrange MF",
+          "Retours de tests positifs contre Viktor, Fiora, Ezreal, Lucian",
+          "Discussions repetées sur Miss Fortune sans Aurora"
+        ],
+        "identity": "Plan beaucoup plus board-centric et plus technique, centre sur la manipulation de la base et des battlefields via Miss Fortune, Buccaneer ou Captain, Lucian, First Mate, Ruin Runner, Boneshiver, Spirit Wheel, Punch First, Fight or Flight et Rebuke.",
+        "reference_core": [
+          "Miss Fortune, Buccaneer",
+          "Lucian, Merciless",
+          "First Mate",
+          "Ruin Runner",
+          "Boneshiver",
+          "Spirit Wheel",
+          "Fight or Flight",
+          "Punch First",
+          "Rebuke",
+          "Stacked Deck",
+          "Called Shot",
+          "Hard Bargain"
+        ],
+        "reference_battlefields": [
+          "Back-Alley Bar",
+          "Ornn's Forge",
+          "The Papertree"
+        ],
+        "chosen_champion": "Miss Fortune, Buccaneer",
+        "important_note": "Ce shell a moins de validation tournoi recente que la version Aurora control/tempo, mais il existe vraiment et change fortement la facon de jouer certains matchups."
+      }
+    ],
+    "rules_and_technical_interactions": {
+      "miss_fortune_captain_cannot_ready_herself": true,
+      "explanation": "Le texte 'something else' exclut Miss Fortune, Captain elle-meme.",
+      "advanced_use_cases": [
+        "Miss Fortune, Captain peut ready une rune pour produire de l'energy une deuxieme fois dans le meme tour",
+        "Miss Fortune, Captain peut ready une autre unite, un gear, une rune, la legende ou une carte dans la base selon la situation",
+        "Miss Fortune, Buccaneer peut permettre des sequences de recapture d'un battlefield vide ou nettoye dans les shells agressifs"
+      ]
+    },
+    "advanced_pilot_principles": [
+      {
+        "name": "Miss Fortune wins by battlefield geometry",
+        "detail": "Le coeur du deck n'est pas juste Aurora ou les gros corps. Le coeur du deck, c'est la facon dont tu rends la carte et les battlefields eux-memes mauvais pour l'adversaire. Si tu penses seulement en combat ou en removal, tu perds une grande partie de la force de la legende."
+      },
+      {
+        "name": "Ganking is a closer, not a random keyword",
+        "detail": "La legende est surtout incroyable pour le dernier tiers de la partie. Les meilleurs tours Miss Fortune sont ceux ou une seule grosse menace devient soudain une menace sur les deux battlefields."
+      },
+      {
+        "name": "Aurora is not your only plan, even in Aurora shells",
+        "detail": "Les meilleurs shells Aurora MF modernes gagnent souvent parce qu'ils ont juste assez de disruption et juste assez de board pour survivre jusqu'a Aurora, pas parce qu'ils ont joue comme un deck 'tout pour Aurora'."
+      },
+      {
+        "name": "Mindsplitter and Sabotage are tempo cards disguised as hand disruption",
+        "detail": "Le but n'est pas seulement de prendre une carte. Le but est de retirer le tour ou la fenetre qui aurait empeche ta prise de battlefield ou ton close en Ganking."
+      },
+      {
+        "name": "Movement must create points, not just style",
+        "detail": "Beaucoup de joueurs de MF deplacent pour le spectacle. En pratique, un move MF doit soit ready quelque chose de critique, soit ouvrir un point, soit proteger ta menace cle, soit enlever a l'adversaire la bonne ligne de reponse."
+      },
+      {
+        "name": "Non-Aurora MF is a tempo deck first",
+        "detail": "Le shell midrange/ganking perd quand il se prend pour un deck de simple bonne-courbe. Il gagne en mettant une pression de point et de readying qui fait jouer l'adversaire en retard."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "miss_fortune_bounty_hunter_role": "Donne Ganking a n'importe quelle unite. C'est particulierement fort pour transformer de grosses unites en closers capables de menacer les deux battlefields.",
+      "bullet_time_role": "Signature spell de Miss Fortune, capable de nettoyer un battlefield pour un cout en runes tres efficace. Excellent panic button contre tokens et contre les tables trop concentrees.",
+      "miss_fortune_captain_role": "Champion de reference des shells Aurora. Son readying en mouvement permet des tours de double utilisation de rune, de double activation de grosse unite ou de preparation de Ganking closes.",
+      "miss_fortune_buccaneer_role": "Champion des shells plus agressifs et ganking-oriented. Concue pour contrebalancer le risque du Ganking en te laissant re-jouer sur des battlefields vides ou en accelerant des sequences de score.",
+      "dazzling_aurora_role": "Centrale dans les deux grands shells Aurora. Dans les versions modernes, elle n'est pas l'unique wincon, mais elle reste le plafond structurel du deck.",
+      "mindsplitter_role": "Une des meilleures cartes du shell Aurora MF. Elle accentue le plan de disruption et permet de transformer des petites avances de table en lock tempo.",
+      "sabotage_role": "Carte cle dans quasiment toutes les versions competitives de MF Aurora. Tres forte contre Kai'Sa, Viktor, Time Warp decks, gear hate et les decks qui n'ont qu'une ou deux vraies cartes pour casser ton tour.",
+      "catalyst_of_aeons_role": "Piece de vitesse et de lissage dans les versions Aurora modernes.",
+      "stacked_deck_role": "Source de consistence et de pression de cartes, souvent citee comme un des grands avantages de Miss Fortune par rapport a d'autres decks Aurora.",
+      "mobilize_role": "Colle parfaitement a l'identite de battlefield pressure, surtout dans les shells Aurora control/tempo.",
+      "gust_role": "Outil de tempo important dans les versions Aurora modernes et ramp.",
+      "challenge_role": "Tres bonne carte d'alignement de combat dans Aurora control/tempo, utile pour retirer le corps precis qui empeche le point ou la menace suivante.",
+      "deadbloom_predator_role": "Pilier des premiers shells Aurora ramp, encore pertinent dans les metas plus lents.",
+      "volibear_imposing_role": "Finisher ou semi-finisher recurrent des listes officielles Miss Fortune Aurora.",
+      "ride_the_wind_role": "Beaucoup plus present dans les versions Aurora ramp et non-Aurora, moins automatique dans le shell Bologna/Vegas.",
+      "boneshiver_role": "Carte marquee dans les shells non-Aurora pour menacer des swings de timing et des gains de ressource."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Treating Aurora as the whole deck",
+        "why_it_loses": "Les meilleures versions modernes gagnent souvent parce qu'elles jouent aussi la disruption et le tempo, pas parce qu'elles goldfish Aurora."
+      },
+      {
+        "mistake": "Moving Miss Fortune, Captain just because you can",
+        "why_it_loses": "Son mouvement doit ready quelque chose qui change reellement le tour. Sinon tu perds de la structure."
+      },
+      {
+        "mistake": "Trying to make every Ganking turn spectacular",
+        "why_it_loses": "La plupart des bons Ganking turns sont propres, calcules, et ferment juste la bonne fenetre de reponse."
+      },
+      {
+        "mistake": "Over-mulliganing for Aurora",
+        "why_it_loses": "Tu gardes trop de mains mortes si tu oublies que le deck doit d'abord survivre et positionner le score."
+      },
+      {
+        "mistake": "Piloting non-Aurora MF like a normal Body midrange",
+        "why_it_loses": "Le shell existe pour exploiter movement, readying et battlefield geometry, pas simplement pour jouer des bonnes cartes orange/rouges."
+      },
+      {
+        "mistake": "Playing Sabotage as a random discard",
+        "why_it_loses": "C'est une carte de timing et de lecture de main, pas juste une carte de plus-1."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Dans Aurora control/tempo, Mindsplitter et Sabotage servent souvent a acheter le tour d'Aurora plus qu'a vider completement la main adverse.",
+      "Miss Fortune, Captain est souvent meilleure quand elle ready une rune ou un gros corps qui compte deja, pas quand elle essaye juste de faire plus.",
+      "Si ton plan de victoire est Ganking close, commence a penser au score au moins un tour avant.",
+      "Sur non-Aurora MF, un move qui ne donne pas de point ou ne preserve pas une unite cle est souvent juste un move perdant a long terme.",
+      "Bullet Time est meilleure quand elle nettoie un battlefield qui devait justement tenir le score, pas quand elle fait joli contre des corps remplaçables."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "slightly_favorable",
+        "estimated_mf_winrate_percent": "53-58",
+        "confidence": "medium"
+      },
+      "summary": "Bon matchup de reference pour le shell Aurora control/tempo.",
+      "opponent_plan": [
+        "prendre les premiers points",
+        "forcer des combats rentables",
+        "punir une main trop lente"
+      ],
+      "miss_fortune_plan": [
+        "ne pas nourrir Draven en combats faciles",
+        "Sabotage sur les vraies cartes de conversion",
+        "installer un battlefield fort puis menacer le deuxieme avec Ganking ou Aurora",
+        "Bullet Time sur le bon front"
+      ],
+      "main_lose_conditions_for_mf": [
+        "offrir trop de combats favorables",
+        "Aurora trop lente sans interaction",
+        "laisser Draven tenir deux battlefields sans pression reelle"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Brynhir turns",
+        "2 energie ouverte"
+      ],
+      "variation_notes": {
+        "aurora_ramp": "Toujours jouable, mais moins precise que le shell control/tempo.",
+        "non_aurora_midrange": "Peut bien jouer ce pairing si la sortie est forte, mais demande un pilotage plus agressif."
+      }
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_mf_winrate_percent": "47-51",
+        "confidence": "medium"
+      },
+      "summary": "Plus difficile que Midrange Draven a cause des tours explosifs et de la largeur soudaine.",
+      "opponent_plan": [
+        "cycler et assembler un tour large",
+        "forcer MF a repondre trop finement"
+      ],
+      "miss_fortune_plan": [
+        "identifier le premier tour vraiment dangereux",
+        "acheter du temps avec disruption",
+        "eviter une table suffisamment large pour mourir a un seul reset adverse en retour",
+        "passer en mode close des que l'ouverture existe"
+      ],
+      "main_lose_conditions_for_mf": [
+        "main trop lente",
+        "surreaction a des pieces secondaires",
+        "laisser passer un gros turn sans clock retour"
+      ],
+      "important_patterns_to_respect": [
+        "stacking turns",
+        "large miracle boards",
+        "purple recursion"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "favorable",
+        "estimated_mf_winrate_percent": "54-59",
+        "confidence": "medium"
+      },
+      "summary": "Un des meilleurs signaux matchup pour MF Aurora moderne.",
+      "opponent_plan": [
+        "tuer les bonnes unites",
+        "tenir les points assez longtemps pour Time Warp"
+      ],
+      "miss_fortune_plan": [
+        "Sabotage sur les vraies cartes qui cassent Aurora",
+        "Mindsplitter pour deranger la rune economy de Kai'Sa",
+        "ne pas mettre toute la pression sur une seule piece",
+        "forcer Kai'Sa a choisir entre removal et score"
+      ],
+      "main_lose_conditions_for_mf": [
+        "mains full top-end",
+        "manque de disruption au bon timing",
+        "jouer le matchup comme un simple ramp mirror"
+      ],
+      "important_patterns_to_respect": [
+        "Falling Star",
+        "Hextech Ray",
+        "Time Warp"
+      ],
+      "variation_notes": {
+        "aurora_ramp": "Jouable, mais plus vulnerable si la liste Kai'Sa est tres propre en removals.",
+        "non_aurora_midrange": "Plus tricky contre Kai'Sa."
+      }
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_mf_winrate_percent": "45-50",
+        "confidence": "low"
+      },
+      "summary": "Pairing sensible aux mains lentes et aux turns de setup Aurora.",
+      "opponent_plan": [
+        "tenir un battlefield avec un porteur protege",
+        "forcer MF a depenser ses outils au mauvais moment"
+      ],
+      "miss_fortune_plan": [
+        "ne pas keep une main trop lente",
+        "viser la piece qui porte vraiment le score",
+        "respecter GA et boots",
+        "basculer plus vite vers un plan de points que dans d'autres pairings"
+      ],
+      "main_lose_conditions_for_mf": [
+        "setup Aurora sans contester le score",
+        "gaspiller Punch First ou Challenge",
+        "laisser un porteur protege tenir trop longtemps"
+      ],
+      "important_patterns_to_respect": [
+        "Guardian Angel",
+        "boots lines",
+        "double-score turns"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Spell heavy",
+      "meta_share_percent": 7,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_mf_winrate_percent": "50-55",
+        "confidence": "medium"
+      },
+      "summary": "Jouable grace a disruption et inevitability Aurora.",
+      "opponent_plan": [
+        "nettoyer proprement et jouer long",
+        "forcer MF a trop investir dans peu de menaces"
+      ],
+      "miss_fortune_plan": [
+        "garder la pression de cartes sans surcommit",
+        "Sabotage sur les cartes qui cassent Aurora ou la menace cle",
+        "forcer Viktor a repondre a des corps imparfaits avant le vrai payoff"
+      ],
+      "main_lose_conditions_for_mf": [
+        "surinvestir sur une seule piece",
+        "laisser Viktor choisir seul le tempo",
+        "ne pas convertir l'information de Sabotage en bon timing"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal turns",
+        "attrition loops"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Unit/Token based",
+      "meta_share_percent": 7,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_mf_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Plus penible que le spell-control pur car Viktor ajoute une vraie pression de table.",
+      "opponent_plan": [
+        "mettre de la presence en plus des removals",
+        "forcer MF a repondre sur le board"
+      ],
+      "miss_fortune_plan": [
+        "ne pas trop ralentir la clock",
+        "Bullet Time sur le bon battlefield",
+        "garder assez de corps pour que Mindsplitter et Aurora aient encore de la texture"
+      ],
+      "main_lose_conditions_for_mf": [
+        "reponses trop etroites",
+        "surcroyance dans le seul plan Sabotage"
+      ],
+      "important_patterns_to_respect": [
+        "token stalls",
+        "board plus removal hybrid turns"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "close_even",
+        "estimated_mf_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Duel de sequencing et de tours pivots.",
+      "opponent_plan": [
+        "gagner a la resource quality",
+        "faire depenser a MF ses pieces de disruption trop tot"
+      ],
+      "miss_fortune_plan": [
+        "Sabotage sur les vrais pivots de turn",
+        "maintenir une pression de battlefield suffisante",
+        "Aurora seulement quand elle change vraiment la math"
+      ],
+      "main_lose_conditions_for_mf": [
+        "pas assez de pression",
+        "Sabotage mal sequencee",
+        "trop attendre Aurora"
+      ],
+      "important_patterns_to_respect": [
+        "Rhasa turns",
+        "Called Shot loops",
+        "late purple chains"
+      ]
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_mf_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Le matchup sanctionne surtout les keeps trop lents.",
+      "opponent_plan": [
+        "pressure early",
+        "finir avant Aurora ou gros Volibear turns"
+      ],
+      "miss_fortune_plan": [
+        "mulligan sans pitie les mains lentes",
+        "prendre des trades de ressources imparfaits si cela sauve les points",
+        "basculer des que la partie se stabilise"
+      ],
+      "main_lose_conditions_for_mf": [
+        "main trop lente",
+        "trop de cartes d'engine sans tempo",
+        "laisser Annie prendre 5-6 points avant stabilisation"
+      ],
+      "important_patterns_to_respect": [
+        "fast point starts",
+        "Chaos burst"
+      ]
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "close_even",
+        "estimated_mf_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Yi expose les decks qui ne mettent pas assez de pression de score au bon moment.",
+      "opponent_plan": [
+        "tenir un battlefield avec protection Calm",
+        "punir les moves trop ambitieux"
+      ],
+      "miss_fortune_plan": [
+        "ne pas donner le score gratuitement",
+        "garder la disruption pour la piece qui tient vraiment",
+        "utiliser Ganking close plutot qu'une guerre de grind trop longue"
+      ],
+      "main_lose_conditions_for_mf": [
+        "laisser Yi scorer gratuitement",
+        "reponse sur la mauvaise piece"
+      ],
+      "important_patterns_to_respect": [
+        "Calm protection chains",
+        "single carrier holds"
+      ]
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_share_percent": 2,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_mf_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "Sett rend le matchup plus fair que MF ne le souhaite.",
+      "opponent_plan": [
+        "poser de grosses menaces",
+        "forcer MF a repondre sur table avant Aurora"
+      ],
+      "miss_fortune_plan": [
+        "eviter les combats honnêtes inutiles",
+        "prendre le plus de valeur possible de Bullet Time et disruption",
+        "basculer avant que le stat-check ne devienne total"
+      ],
+      "main_lose_conditions_for_mf": [
+        "se laisser enfermer dans le combat pur",
+        "retard de scoreboard plus retard de taille"
+      ],
+      "important_patterns_to_respect": [
+        "big Body combat spikes"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "default_shell": "Aurora Control/Tempo Miss Fortune",
+      "miss_fortune_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_mf_winrate_percent": "50-55",
+        "confidence": "low"
+      },
+      "summary": "Pairing de largeur contre disruption et timing.",
+      "opponent_plan": [
+        "mettre des tokens et des equips",
+        "tenir puis deborder les battlefields"
+      ],
+      "miss_fortune_plan": [
+        "ne pas repondre a tout uniformement",
+        "viser la piece qui transforme les tokens en vraie clock",
+        "forcer Azir a depenser ses tricks defensifs hors de ses meilleurs tours"
+      ],
+      "main_lose_conditions_for_mf": [
+        "laisser vivre l'equipement qui compte",
+        "retard de battlefield trop important"
+      ],
+      "important_patterns_to_respect": [
+        "Arise",
+        "Azir Sovereign turns",
+        "equipment-fueled flood"
+      ]
+    }
+  },
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "aurora_control_tempo_keep": [
+        "Catalyst of Aeons",
+        "Stacked Deck",
+        "une interaction peu couteuse",
+        "une main qui ne perd pas avant Aurora"
+      ],
+      "aurora_ramp_keep": [
+        "Catalyst of Aeons",
+        "Dazzling Aurora",
+        "Gust",
+        "au moins une vraie ligne de stabilisation"
+      ],
+      "non_aurora_midrange_keep": [
+        "First Mate",
+        "Lucian, Merciless",
+        "Fight or Flight",
+        "Stacked Deck",
+        "main a pression reelle"
+      ],
+      "ship": [
+        "main full top-end",
+        "main sans plan de debut de partie",
+        "main full disruption mais sans clock"
+      ]
+    },
+    "draven_midrange": {
+      "keep": [
+        "Catalyst of Aeons",
+        "Stacked Deck",
+        "interaction de table",
+        "Bullet Time si le reste de la main suit"
+      ],
+      "ship": [
+        "main purement setup",
+        "main full late sans tempo"
+      ]
+    },
+    "draven_miracle": {
+      "keep": [
+        "interaction early",
+        "Sabotage",
+        "main stable",
+        "pas de keep full Aurora"
+      ],
+      "ship": [
+        "main qui perd a un seul gros turn",
+        "main lente sans disruption"
+      ]
+    },
+    "kaisa": {
+      "keep": [
+        "Sabotage",
+        "Stacked Deck",
+        "Catalyst",
+        "une menace ou un pivot de score"
+      ],
+      "ship": [
+        "main trop lineaire sur une seule grosse unite",
+        "main qui ne fait rien avant le tour 4"
+      ]
+    },
+    "irelia": {
+      "keep": [
+        "Challenge",
+        "Punch First",
+        "interaction de table",
+        "main capable de contester un battlefield tot"
+      ],
+      "ship": [
+        "main setup-only",
+        "main full top-end"
+      ]
+    },
+    "viktor_spellheavy": {
+      "keep": [
+        "Sabotage",
+        "Stacked Deck",
+        "Catalyst",
+        "main non dependante d'une seule piece"
+      ],
+      "ship": [
+        "main all-in sur un gros corps",
+        "main sans progression de cartes"
+      ]
+    },
+    "ezreal": {
+      "keep": [
+        "Stacked Deck",
+        "Catalyst",
+        "Sabotage",
+        "main avec vrai chemin de close"
+      ],
+      "ship": [
+        "main trop reactive sans menace",
+        "main full top-end"
+      ]
+    },
+    "annie": {
+      "keep": [
+        "interaction peu chere",
+        "curve fonctionnelle",
+        "aucune main jolie mais lente"
+      ],
+      "ship": [
+        "main lente",
+        "main sans interaction avant le tour 3"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "draven_midrange": {
+      "in": [
+        "Unyielding Spirit selon build",
+        "Factory Recall ou tempo slots",
+        "cards that preserve disruption density"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "pieces trop greed"
+      ],
+      "plan": [
+        "Ne pas nourrir Draven en combats gratuits.",
+        "Garder disruption plus close, pas juste ramper."
+      ]
+    },
+    "draven_miracle": {
+      "in": [
+        "Factory Recall",
+        "Fading Memories",
+        "tempo and anti-wide flex slots"
+      ],
+      "out": [
+        "pieces trop fair",
+        "cartes qui n'existent que pour des combats propres"
+      ],
+      "plan": [
+        "Respecter les gros turns et garder un reset ou une disruption de vraie qualite."
+      ]
+    },
+    "kaisa": {
+      "in": [
+        "Possession selon build",
+        "anti-big threat flex slots",
+        "angles secondaires comme Buccaneer selon liste"
+      ],
+      "out": [
+        "cartes trop lineaires",
+        "slots morts contre removal lourd"
+      ],
+      "plan": [
+        "Disruption de main plus pression de scoreboard.",
+        "Ne pas transformer le matchup en simple concours d'Aurora."
+      ]
+    },
+    "irelia": {
+      "in": [
+        "Unyielding Spirit",
+        "extra Gust or tempo tools",
+        "Buccaneer selon certaines listes"
+      ],
+      "out": [
+        "top-end trop lent",
+        "cartes de pure greed"
+      ],
+      "plan": [
+        "Contester le score plus tot.",
+        "Ne pas trop sider pour le late pur."
+      ]
+    },
+    "viktor_spellheavy": {
+      "in": [
+        "Fading Memories",
+        "Possession selon gros threats",
+        "preserve disruption package"
+      ],
+      "out": [
+        "cartes de board-fight les moins alignees"
+      ],
+      "plan": [
+        "Gardez redondance et information.",
+        "Ne pas s'exposer sur une seule menace."
+      ]
+    },
+    "viktor_unitbased": {
+      "in": [
+        "Factory Recall",
+        "Unyielding Spirit",
+        "anti-board flex slots"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "surplus de pure discard si elle n'affecte plus le board"
+      ],
+      "plan": [
+        "Il faut rester capable de jouer la table, pas seulement la main."
+      ]
+    },
+    "ezreal": {
+      "in": [
+        "Fading Memories",
+        "Possession ou anti-big threat",
+        "kept disruption"
+      ],
+      "out": [
+        "cards too clunky",
+        "slots de board-fight inutiles"
+      ],
+      "plan": [
+        "Conserver clock plus disruption.",
+        "Ne pas sider en pur control mirror."
+      ]
+    },
+    "annie": {
+      "in": [
+        "plus de stabilisation",
+        "tempo peu cher"
+      ],
+      "out": [
+        "top-end lent",
+        "slots trop gourmands"
+      ],
+      "plan": [
+        "Passer les premiers cycles sans tomber trop bas au score."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "aurora_control_tempo_priority": [
+        "Obelisk of Power",
+        "Aspirant's Climb",
+        "Sigil of the Storm"
+      ],
+      "aurora_ramp_priority": [
+        "Obelisk of Power",
+        "Aspirant's Climb",
+        "Vilemaw's Lair"
+      ],
+      "non_aurora_midrange_priority": [
+        "Back-Alley Bar",
+        "Ornn's Forge",
+        "The Papertree"
+      ],
+      "notes": [
+        "Obelisk reste le meilleur battlefield generique de MF moderne.",
+        "Les shells Aurora veulent accelerer le seuil de close.",
+        "Les shells non-Aurora veulent maximiser la pression locale et les moves utiles."
+      ]
+    },
+    "draven_midrange": {
+      "preferred": [
+        "Obelisk of Power",
+        "Aspirant's Climb"
+      ],
+      "plan": [
+        "Tiens un battlefield proprement puis menace le second.",
+        "Evite les races confuses sur deux fronts si Draven peut convertir les combats."
+      ]
+    },
+    "draven_miracle": {
+      "preferred": [
+        "Obelisk of Power"
+      ],
+      "secondary": [
+        "Sigil of the Storm"
+      ],
+      "plan": [
+        "Ne t'etale pas sur les deux fronts sans couverture.",
+        "Tu veux un front fort, pas deux fronts fragiles."
+      ]
+    },
+    "kaisa": {
+      "preferred": [
+        "Obelisk of Power",
+        "Aspirant's Climb"
+      ],
+      "plan": [
+        "Un battlefield bien tenu avec disruption vaut plus qu'une spread mediocre.",
+        "Force Kai'Sa a choisir entre removal et score."
+      ]
+    },
+    "irelia": {
+      "preferred": [
+        "Obelisk of Power"
+      ],
+      "secondary": [
+        "Aspirant's Climb"
+      ],
+      "plan": [
+        "N'abandonne pas le score en attendant Aurora.",
+        "Respecte les battlefields ou un seul porteur Irelia devient trop rentable."
+      ]
+    },
+    "viktor_spellheavy": {
+      "preferred": [
+        "Obelisk of Power",
+        "Sigil of the Storm"
+      ],
+      "plan": [
+        "Un battlefield contestable suffit tant que Viktor n'a pas tout son temps.",
+        "La clock implicite d'Obelisk est tres importante."
+      ]
+    },
+    "viktor_unitbased": {
+      "preferred": [
+        "Aspirant's Climb",
+        "Obelisk of Power"
+      ],
+      "plan": [
+        "Il faut un battlefield ou ton board et ton tempo comptent reellement, pas juste ta main."
+      ]
+    },
+    "ezreal": {
+      "preferred": [
+        "Obelisk of Power",
+        "Aspirant's Climb"
+      ],
+      "plan": [
+        "Le pairing se gagne rarement en jouant trop lentement.",
+        "Un front menacant est plus important que la jolie repartition."
+      ]
+    },
+    "annie": {
+      "preferred": [
+        "Obelisk of Power"
+      ],
+      "secondary": [
+        "Aspirant's Climb"
+      ],
+      "plan": [
+        "Les battlefields de tempo brut comptent plus que le value plan."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Riftbound.gg - Miss Fortune, Bounty Hunter Guide",
+      "date": "2026-02-11",
+      "notes": "Base sur l'identite Ganking, les champions Captain et Buccaneer, la signature Bullet Time et les shells generaux."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "Riftbound official - The Best Decks out of Bologna",
+      "date": "2026-02-25",
+      "notes": "Best-of Miss Fortune de Bologna, finaliste, shell Aurora control/tempo."
+    },
+    {
+      "id": "S3",
+      "type": "official tournament article",
+      "title": "Riftbound official - Vegas Top Decks",
+      "date": "2026-03-04",
+      "notes": "Best-of Miss Fortune de Vegas, tres proche de la liste Bologna."
+    },
+    {
+      "id": "S4",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Bologna",
+      "date": "2026-02-28",
+      "notes": "Place Miss Fortune Tier 3, mention explicite de la finale Bologna."
+    },
+    {
+      "id": "S5",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Vegas",
+      "date": "2026-03-06",
+      "notes": "Place Miss Fortune Tier 4 tout en reconnaissant la competitivite residuelle des Aurora builds."
+    },
+    {
+      "id": "S6",
+      "type": "meta stats",
+      "title": "RiftDecks - Spiritforged Legends Meta Breakdown",
+      "date_consulted": "2026-03-11",
+      "notes": "Miss Fortune autour de 1% de metashare en Spiritforged."
+    },
+    {
+      "id": "S7",
+      "type": "event stats",
+      "title": "Riftbound.gg - Houston Regional Qualifier Results",
+      "date": "2026-01-10",
+      "notes": "Miss Fortune surperforme en conversion Day 2."
+    },
+    {
+      "id": "S8",
+      "type": "decklist",
+      "title": "Mobalytics - 1st Place Miss Fortune Aurora Ramp",
+      "date_consulted": "2026-03-11",
+      "notes": "Reference Orlando Saturday 10K pour shell Aurora ramp."
+    },
+    {
+      "id": "S9",
+      "type": "decklist",
+      "title": "Mobalytics - Top 8 Miss Fortune Aurora Ramp",
+      "date_consulted": "2026-03-11",
+      "notes": "Reference Houston pour shell Aurora ramp plus ancien."
+    },
+    {
+      "id": "S10",
+      "type": "community thread",
+      "title": "Body/Chaos youtubers? Miss Fortune questions",
+      "date_consulted": "2026-03-11",
+      "notes": "Discussions sur le role de Captain, la legende et les builds non-Aurora."
+    },
+    {
+      "id": "S11",
+      "type": "community thread",
+      "title": "MF prebuilt - is it worth upgrading?",
+      "date_consulted": "2026-03-11",
+      "notes": "Retours de pilotage local et victoire de petit event sur Annie, Fiora, Viktor, Leona."
+    },
+    {
+      "id": "S12",
+      "type": "community thread",
+      "title": "This deck is so underrated",
+      "date_consulted": "2026-03-11",
+      "notes": "Retours de joueurs sur Aurora MF, sideboard et perception de plusieurs matchups."
+    },
+    {
+      "id": "S13",
+      "type": "tournament report",
+      "title": "Riftbound.gg - Bologna RQ Results",
+      "date": "2026-03-05",
+      "notes": "Contextualise la run Bologna et les wins contre Draven/Viktor."
+    },
+    {
+      "id": "S14",
+      "type": "community thread",
+      "title": "Playing Kai'Sa in Set 2",
+      "date_consulted": "2026-03-11",
+      "notes": "Point de vue Kai'Sa sur MF Aurora comme pairing penible."
+    },
+    {
+      "id": "S15",
+      "type": "community thread",
+      "title": "MF without Aurora?",
+      "date_consulted": "2026-03-11",
+      "notes": "Base pour le shell non-Aurora Midrange/Ganking."
+    },
+    {
+      "id": "S16",
+      "type": "community thread",
+      "title": "Thoughts on this Miss Fortune build",
+      "date_consulted": "2026-03-11",
+      "notes": "Retours de tuning et matchups shell non-Aurora."
+    },
+    {
+      "id": "S17",
+      "type": "community thread",
+      "title": "Cool Meta",
+      "date_consulted": "2026-03-11",
+      "notes": "Perception locale des matchups de plusieurs legends dont Kai'Sa/Yi."
+    },
+    {
+      "id": "S18",
+      "type": "community synthesis",
+      "title": "Cross-reading Irelia and MF timing discussions",
+      "date_consulted": "2026-03-11",
+      "notes": "Support prudent pour le pairing Irelia."
+    },
+    {
+      "id": "S19",
+      "type": "community thread",
+      "title": "Best of Viktor Las Vegas Regional",
+      "date_consulted": "2026-03-11",
+      "notes": "Support prudent pour Viktor unit-based vs MF."
+    },
+    {
+      "id": "S20",
+      "type": "community local reports",
+      "title": "Local matchup read aggregation for MF non-Aurora",
+      "date_consulted": "2026-03-11",
+      "notes": "Utilise avec prudence pour Jax, Fiora, Lucian, Sett et variantes non-Aurora."
+    }
+  ]
+}

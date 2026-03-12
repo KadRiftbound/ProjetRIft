@@ -1,0 +1,1145 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Garen complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte decembre 2025 a mars 2026 pour suivre l'evolution des shells Garen",
+    "methodology": {
+      "approach": [
+        "Croisement du guide Garen recent et des tier lists post-Bologna et post-Vegas",
+        "Croisement des decklists officielles Houston, Bologna et Vegas",
+        "Croisement de trackers publics et de discussions communautaires sur Garen Aurora, Garen recruits/go-wide et Garen Vanguard Armory",
+        "Accent mis sur le pilotage expert, les plans de matchup et la logique des shells plutot que sur la seule place du deck dans les tier lists"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + decklist officielle et/ou retour matchup explicite",
+        "medium": "Consensus raisonnable mais sensible au shell, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "garen_meta_position": {
+      "houston_snapshot": {
+        "players_day1": 13,
+        "players_day2": 0,
+        "day1_share_percent": 1.2,
+        "day2_share_percent": 0,
+        "best_finish": "#156 overall",
+        "notes": "Best-of Houston sur un shell Aurora/body-order encore assez different des listes Bologna/Vegas"
+      },
+      "bologna_snapshot": {
+        "players_day1": 15,
+        "players_day2": 0,
+        "conversion_rate_percent": 0,
+        "winrate_percent": 40.5,
+        "best_finish": "#403 overall",
+        "tier": "Tier 4",
+        "notes": "Le best-of Bologna pose presque deja la base definitive des listes occidentales de Garen"
+      },
+      "vegas_snapshot": {
+        "players_day1": 8,
+        "players_day2": 0,
+        "winrate_percent": 51.9,
+        "best_finish": "#362 overall",
+        "tier": "Tier 4",
+        "notes": "La liste Vegas est quasiment la meme que Bologna, avec quelques slots ajustes et Sigil a la place de Papertree"
+      },
+      "tracker_snapshot": {
+        "riftdecks_spiritforged": {
+          "meta_share_percent": 1,
+          "tier": "Tier 3",
+          "total_decks": 70,
+          "top8s": 2
+        },
+        "riftbound_gg_post_vegas": {
+          "tier": "Tier 4",
+          "notes": "23 picks, 0% day 2 conversion, 46.9% WR, two Top 512"
+        }
+      },
+      "overall_read": "Garen reste une legende faible en metagame brut, mais son deck n'est plus seulement un starter qui tourne mal. En mars 2026, il existe au moins trois vraies branches jouables: un shell Aurora-Armory recruit-control tres proche entre Bologna et Vegas, un shell go-wide/recruits plus fidele a la legende, et une branche hybride ramp-Armory qui traite Aurora comme un module plutot que comme une religion."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et les structures de deck plutot qu'un simple jugement meta."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Garen, Might of Demacia",
+    "domains": [
+      "Body",
+      "Order"
+    ],
+    "macro_identity": {
+      "archetype_family": "Go-wide conquest / recruits midrange / Aurora-Armory control-midrange",
+      "primary_gameplan": "Conquerir avec une large presence de table pour activer la legende, transformer cette legere avance de cartes en avance de battlefield, puis convertir les fronts nettoyes ou stabilises en points grace a Vanguard Armory, recruits ou de grosses unites body/order.",
+      "secondary_gameplan": "Selon le shell: soit jouer un vrai pseudo-Aurora midrange avec Dazzling Aurora, Catalyst, Deadbloom Predator, Harnessed Dragon et Vanguard Armory, soit jouer une version go-wide/recruits qui essaie de faire vivre la legende de maniere plus naturelle, soit jouer une version hybride ou Aurora sert uniquement dans les pairings lents pendant que le plan principal reste celui d'un deck a table large.",
+      "why_the_legend_is_strong": [
+        "Quand elle s'active, la legende corrige partiellement un vrai point faible de Body/Order: l'essoufflement en cartes",
+        "Body/Order peut remplir le battlefield assez vite avec recruits, units generant de la table et buffs efficaces",
+        "Vanguard Armory et les cartes de rally/recruit donnent un vrai plan de points apres un nettoyage partiel de front",
+        "Le deck peut produire une pression de battlefield inhabituelle pour un shell body/order des qu'il enchaine correctement ses tours de table large"
+      ],
+      "why_the_legend_is_hard": [
+        "La condition de legende est restrictive et demande de vrais fronts larges",
+        "Le deck souffre structurellement plus que les top legends si l'adversaire tue juste assez de tes unites",
+        "Il faut choisir quand tu joues pour le draw de legende et quand tu joues simplement pour les points",
+        "Les shells Garen competents pilotent souvent davantage OGN-160, Aurora et Vanguard Armory que les cartes signatures originelles du starter"
+      ]
+    },
+    "rules_and_core_interactions": {
+      "legend_text_summary": "La communaute resume la legende de Garen comme un plan 'conquer with 4+ units to draw cards'. Cela pousse fortement vers les decks capables de generer plusieurs corps sur un meme cycle et de garder assez de presence pour convertir un front.",
+      "garen_commander_summary": "Garen, Commander est le chosen champion des listes competitives Bologna/Vegas. Les listes officielles montrent que meme un Garen competitif passe souvent par ce champion sans s'appuyer lourdement sur les autres signatures starter.",
+      "garen_rugged_summary": "Garen, Rugged apparait dans le best-of Houston, dans une version plus ancienne et plus Aurora-heavy.",
+      "important_rules_notes": [
+        "Le point essentiel est que Garen ne veut pas juste jouer beaucoup d'unites; il veut qu'elles survivent assez pour conquerir reellement.",
+        "Le deck perd beaucoup si l'adversaire parvient a couper la table juste avant le conquer."
+      ]
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Aurora-Armory Recruit Garen",
+        "status_march_2026": "Shell de reference competitif",
+        "evidence": [
+          "Best-of officiel a Bologna",
+          "Best-of officiel a Vegas",
+          "Le guide Garen explique que les joueurs serieux utilisent surtout OGN-160 et les grosses cartes Order/Body"
+        ],
+        "identity": "C'est le vrai shell de reference de mars 2026. Il ne ressemble pas a un starter go-wide pur. Il joue Catalyst, Dazzling Aurora, Deadbloom Predator, Harnessed Dragon, Mobilize, Rally the Troops et surtout Vanguard Armory comme infrastructure de score. Il gagne moins par la beaute du go-wide que par des fronts stabilises puis convertis.",
+        "reference_core": [
+          "Garen, Commander",
+          "Catalyst of Aeons",
+          "Confront",
+          "Cull the Weak",
+          "Dazzling Aurora",
+          "Deadbloom Predator",
+          "Drag Under",
+          "Forge of the Future",
+          "Harnessed Dragon",
+          "Imperial Decree",
+          "Mobilize",
+          "Punch First",
+          "Rally the Troops",
+          "Sabotage",
+          "Vanguard Armory"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "Obelisk of Power",
+          "The Papertree or Sigil of the Storm depending event"
+        ],
+        "chosen_champion_default": "Garen, Commander",
+        "default_for_matchups_below": true
+      },
+      {
+        "name": "Go-Wide Recruits / Legend-Native Garen",
+        "status_march_2026": "Shell communautaire reel",
+        "evidence": [
+          "Le guide Garen dit explicitement que la legende pousse vers tokens / amassing a large number of units",
+          "Thread 'Help with Garen' defend une version recruit/go-wide avec Eye of the Herald, Confront, Rally the Troops, Azir, Xin Zhao et Corina",
+          "Plusieurs discussions communautaires continuent de distinguer Garen legend-native des listes 'Aurora or Hook deck'"
+        ],
+        "identity": "Version la plus fidele a ce que la legende raconte: beaucoup de corps, plusieurs recruits, de la valeur de conquer avec 4+ unites, puis des closers ou generators de table comme Corina, Vanguard Captain, Xin Zhao ou Azir selon build. Moins prouvee que le shell Aurora-Armory, mais clairement reelle.",
+        "reference_core": [
+          "Garen, Commander or a starter Garen champion depending build",
+          "Confront",
+          "Rally the Troops",
+          "Vanguard Captain",
+          "Recruit-style generators",
+          "Azir in some versions",
+          "Xin Zhao in some versions",
+          "Corina as top-end in some versions",
+          "Eye of the Herald package in some community shells"
+        ],
+        "reference_battlefields": [
+          "The Grand Plaza",
+          "Aspirant's Climb",
+          "The Papertree"
+        ],
+        "chosen_champion_default": "Garen, Commander",
+        "important_note": "Ce shell est le plus 'vrai Garen' au sens de la legende, mais aussi celui qui souffre le plus des removals jaunes et des decks qui n'ont aucun mal a casser juste une ou deux pieces avant le conquer."
+      },
+      {
+        "name": "Transformational Ramp-Armory Garen",
+        "status_march_2026": "Shell hybride reel",
+        "evidence": [
+          "Le thread 'Help with Garen' parle explicitement de transitionner vers un package de rampe similaire aux listes Aurora avec Vanguard Armory top-end",
+          "Les listes Houston/Bologna/Vegas montrent deja une evolution progressive vers une base commune ramp + Armory"
+        ],
+        "identity": "Version qui traite Aurora et les grosses pieces body/order comme un module. Elle garde un plan de battlefield assez large pour ne pas trahir entierement la legende, mais accepte qu'en pratique les meilleures cartes du deck sont souvent Catalyst, Aurora, Deadbloom, Mobilize et Vanguard Armory.",
+        "reference_core": [
+          "Garen, Commander",
+          "Catalyst of Aeons",
+          "Dazzling Aurora",
+          "Deadbloom Predator",
+          "Mobilize",
+          "Forge of the Future",
+          "Vanguard Armory",
+          "Rally the Troops",
+          "Confront",
+          "Cull the Weak"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "Obelisk of Power",
+          "Sigil of the Storm"
+        ],
+        "chosen_champion_default": "Garen, Commander",
+        "important_note": "C'est probablement la meilleure facon de builder Garen pour un field ouvert, car elle permet de rester body/order ramp sans s'enfermer dans un plan de simple token flood."
+      }
+    ],
+    "advanced_pilot_principles": [
+      {
+        "name": "Garen is a battlefield-width deck first, not a pretty curve deck",
+        "detail": "La legende demande de conquerir avec une table large. Si tes tours n'augmentent pas reellement la densite de corps ou la capacite a convertir un front, tu ne joues pas vraiment Garen."
+      },
+      {
+        "name": "Your real resource is not cards in hand, it is live bodies at conquer timing",
+        "detail": "Garen ne pioche que si assez d'unites survivent jusqu'au bon moment. Le deck doit donc penser aux corps vivants au timing du point, pas juste a la courbe de mana."
+      },
+      {
+        "name": "Competitive Garen is often less 'starter Garen' than people want",
+        "detail": "Le guide officiel Garen et les best-of Bologna/Vegas convergent ici: les versions competitives utilisent surtout OGN-160 et les meilleurs outils Body/Order plutot que les signatures les plus intuitives du precon."
+      },
+      {
+        "name": "Armory is your scoring bridge, not just a value card",
+        "detail": "Dans les versions competitives, Vanguard Armory n'est pas juste un joli payoff. C'est la carte qui transforme un front controle ou vide en vrai point, ce qui compense le fait que la legende ne s'active pas toujours facilement."
+      },
+      {
+        "name": "Aurora is a support plan in Garen, not always the main religion",
+        "detail": "Les listes officielles utilisent Aurora, mais la deckbuilding community autour de Garen montre bien qu'il y a tension entre la vraie legende go-wide et le shell ramp. Le meilleur pilotage sait quand Aurora sert vraiment ton scoreboard."
+      },
+      {
+        "name": "Do not overcommit just to turn on the legend once",
+        "detail": "Un seul trigger de legende obtenu au prix de perdre tout le board le tour suivant est souvent insuffisant. Garen gagne quand son premier trigger maintient une pression reelle derriere."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "garen_might_of_demacia_role": "La legende pousse a conquerir avec 4+ unites et recompense la largeur de board par du draw. C'est une legende plus exigeante qu'il n'y parait.",
+      "garen_commander_role": "Champion de reference des listes Bologna/Vegas. Son simple fait d'etre le choisi des versions competitives montre deja que Garen top-tier n'est pas un simple deck starter.",
+      "garen_rugged_role": "Champion du best-of Houston, dans une version plus ancienne et plus heavy-ramp.",
+      "dazzling_aurora_role": "La plus grosse deviation de Garen par rapport a son identite de starter. C'est une des cartes qui permettent au deck d'avoir un vrai plafond de puissance.",
+      "catalyst_of_aeons_role": "Lisseur de courbe central dans toutes les versions officielles post-Origins reelles.",
+      "deadbloom_predator_role": "Un des meilleurs gros corps de transition des versions Aurora-Garen.",
+      "vanguard_armory_role": "Le vrai pivot du shell moderne. C'est la carte qui donne au deck un plan de points plus fiable une fois le premier front stabilise.",
+      "mobilize_role": "Carte cle parce qu'elle aide a remplir les fronts et a mieux rentabiliser les turns de largeur.",
+      "rally_the_troops_role": "Une des vraies cartes 'Garen legend-native', en particulier dans les versions recruits et dans les listes officielles Bologna/Vegas.",
+      "confront_role": "Tres importante pour convertir un board large en vrai point ou pour punir des fronts peu contestes.",
+      "cull_the_weak_role": "Utile parce qu'il aide Garen a ne pas seulement poser des corps, mais aussi a casser le front qui empeche le draw ou le score.",
+      "imperial_decree_role": "Dans les shells Bologna/Vegas, c'est un outil de structure plus qu'une simple carte jaune forte.",
+      "harnessed_dragon_role": "Marqueur important des shells modernes, ajoutant une vraie presence de front a un deck qui ne peut pas se contenter de tokens fragiles.",
+      "forge_of_the_future_role": "Aide a rendre la rampe et les top-ends plus credibles sans transformer completement Garen en simple copy d'un autre shell body/order.",
+      "salvage_role": "Le sideboard officiel Bologna/Vegas en joue 3, preuve que le deck a besoin de grind tools supplementaires dans les bons pairings.",
+      "corina_role": "Payoff communautaire des versions plus legend-native go-wide, surtout dans les builds qui veulent un top-end plus flood-oriented."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Trying to play pure starter Garen in a field built for Spiritforged power cards",
+        "why_it_loses": "Le guide Garen le dit assez franchement: les signatures starter ne suffisent pas a porter un vrai deck tournament-level."
+      },
+      {
+        "mistake": "Overcommitting to trigger the legend once",
+        "why_it_loses": "La legende n'est bonne que si les corps qui l'activent restent un vrai probleme ensuite."
+      },
+      {
+        "mistake": "Treating Aurora as automatic",
+        "why_it_loses": "Le meilleur Garen actuel ne gagne pas juste parce qu'il a Dazzling Aurora; il gagne parce qu'il relie Aurora a Armory, recruits et au score."
+      },
+      {
+        "mistake": "Keeping slow hands with no way to establish width",
+        "why_it_loses": "Garen ne pioche pas comme Lux ou Ezreal. Si ta main n'a pas de vraie densite de board ou de vrai plan de front, elle s'effondre vite."
+      },
+      {
+        "mistake": "Ignoring how easy it is for the opponent to deny exactly one body",
+        "why_it_loses": "C'est l'une des grandes faiblesses structurelles de Garen: beaucoup de decks n'ont pas besoin de tout tuer pour lui casser son tour."
+      },
+      {
+        "mistake": "Playing Armory as value instead of as a point-conversion card",
+        "why_it_loses": "Armory doit servir le scoreboard. Sinon tu joues lentement une carte de plus dans un deck deja trop lent."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Un front que tu peux conquerir avec 4 corps moyens vaut souvent plus qu'un front avec une seule grosse carte 'impressionnante'.",
+      "Garen gagne plus souvent quand ses petits corps restent penibles que quand il essaie de faire un seul gros swing heroique.",
+      "Dans les versions Aurora-Armory, demande-toi toujours si Aurora t'aide a marquer ou t'aide seulement a avoir plus de stats.",
+      "Confront est meilleur quand il transforme ta largeur en point reel, pas quand il embellit juste un board deja winning.",
+      "Le meilleur trigger de legende est souvent celui qui arrive alors que l'adversaire ne peut pas immediatement vider le front en retour."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Aurora-Armory Recruit Garen",
+      "garen_outlook": {
+        "label": "unfavorable",
+        "estimated_garen_winrate_percent": "41-46",
+        "confidence": "low"
+      },
+      "summary": "Le signal public direct sur Garen contre Draven est faible, mais la logique structurelle est assez rude: Draven punit tres bien les decks qui ont besoin de garder plusieurs corps en vie pour convertir leur avantage. Comme la legende Garen demande justement cela, le pairing est naturellement tendu.",
+      "why_matchup_plays_this_way": [
+        "Draven aime les fronts ou chaque petit combat lui rapporte quelque chose.",
+        "Garen a besoin que plusieurs corps survivent jusqu'au conquer ou au moins jusqu'au moment ou Armory peut convertir le front."
+      ],
+      "opponent_plan": [
+        "prendre le scoreboard tot",
+        "couper juste assez de petits corps pour casser le draw de legende",
+        "transformer les combats en value plus vite que Garen ne transforme la largeur en point"
+      ],
+      "garen_plan": [
+        "ne pas te battre partout a la fois",
+        "conserver un front ou la largeur compte reellement",
+        "utiliser Cull the Weak, Confront et Armory pour rendre un seul front tres penible a reprendre",
+        "ne pas all-in sur un trigger de legende qui te laisse vide ensuite"
+      ],
+      "mulligan_focus": [
+        "starter de board",
+        "Confront",
+        "Rally the Troops",
+        "Catalyst seulement si le reste de la main existe deja"
+      ],
+      "sideboard_focus": [
+        "Salvage",
+        "removals structurants",
+        "retirer les pieces trop lentes"
+      ],
+      "battlefield_notes": [
+        "Le matchup se gagne rarement sur deux fronts moyens. Il faut un front ou Garen garde assez de corps vivants pour compter encore au tour suivant."
+      ],
+      "main_lose_conditions_for_garen": [
+        "perdre exactement un corps de trop avant le conquer",
+        "main trop lente",
+        "jouer le matchup comme un simple token flood"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Brynhir turns",
+        "2 energie ouverte",
+        "red board pressure"
+      ],
+      "variation_notes": {
+        "go_wide_recruits_legend_native": "Probablement la plus fragile ici si elle n'a pas assez d'angles de recuperation.",
+        "transformational_ramp_armory": "Un peu meilleure si elle se side pour devenir plus grosse et moins dependante du trigger parfait."
+      },
+      "source_refs": [
+        "S1",
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Transformational Ramp-Armory Garen",
+      "garen_outlook": {
+        "label": "unfavorable",
+        "estimated_garen_winrate_percent": "39-45",
+        "confidence": "low"
+      },
+      "summary": "Miracle Draven accentue encore plus ce que Garen n'aime pas: plusieurs menaces, turns de resource explosion, et parties ou le front que tu viens enfin de stabiliser cesse d'etre le seul qui compte.",
+      "why_matchup_plays_this_way": [
+        "Garen a besoin de fronts suffisamment lents pour convertir largeur puis points.",
+        "Miracle Draven peut faire sauter cette temporalite et repasser sur plusieurs axes."
+      ],
+      "opponent_plan": [
+        "tenir juste assez longtemps",
+        "forcer Garen a vider sa main pour survivre",
+        "retourner la game quand la largeur ou la value boucle enfin"
+      ],
+      "garen_plan": [
+        "jouer plus pour les points que pour le draw de legende si la fenetre existe",
+        "ne pas gaspiller Armory sur un front qui ne vivra pas",
+        "raccourcir la partie quand le shell le permet"
+      ],
+      "mulligan_focus": [
+        "mains proactives",
+        "pas de keep full top-end",
+        "pas de main qui n'existe que si Aurora passe"
+      ],
+      "sideboard_focus": [
+        "Salvage",
+        "interaction structurelle",
+        "cuts sur les cartes trop fair"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient mauvais si Garen doit jouer une partie purement reactive et en retard au score."
+      ],
+      "main_lose_conditions_for_garen": [
+        "partie trop longue",
+        "front stabilise qui ne marque jamais",
+        "absence de vrai clock"
+      ],
+      "important_patterns_to_respect": [
+        "miracle width turns",
+        "resource bursts",
+        "front resets"
+      ],
+      "variation_notes": {
+        "aurora_armory_recruit": "Souvent trop lente si elle ne prend pas vite des points.",
+        "go_wide_recruits_legend_native": "Peut surprendre localement mais souffre encore plus si le tour miracle arrive a temps."
+      },
+      "source_refs": [
+        "S4",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Transformational Ramp-Armory Garen",
+      "garen_outlook": {
+        "label": "unfavorable",
+        "estimated_garen_winrate_percent": "40-46",
+        "confidence": "medium"
+      },
+      "summary": "Le meilleur signal public direct vient du thread 'Help with Garen', ou le joueur dit clairement que Garen n'arrive pas actuellement a suivre des decks comme Draven, Ezreal et Kai'Sa. Structurellement, cela colle: Kai'Sa tue bien les bonnes unites, et Garen deteste qu'on lui retire juste ce qu'il faut pour casser son draw ou son point.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa excelle a enlever la piece precise qui convertit ton tour.",
+        "Garen a besoin d'une masse critique de corps et de temps de front, deux choses que Kai'Sa attaque bien."
+      ],
+      "opponent_plan": [
+        "survivre en retirant les bonnes cartes",
+        "laisser Garen investir sur un front qui ne convertit pas",
+        "reprendre la partie une fois le late atteint"
+      ],
+      "garen_plan": [
+        "jouer plus vite pour le score et moins pour la perfection du trigger",
+        "forcer Kai'Sa a depenser ses removals sur les pieces qui ne sont pas toutes irremplaçables",
+        "utiliser Armory comme pont de points plutot que comme luxe"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "mains stables",
+        "pas de hand full 5+ ou full Aurora"
+      ],
+      "sideboard_focus": [
+        "Salvage",
+        "threat density",
+        "retirer les cartes les plus lentes ou les plus punishables"
+      ],
+      "battlefield_notes": [
+        "Les fronts tenus par une seule grosse unite ou un seul enchantement important sont mauvais ici. Garen veut plusieurs pieces qui comptent un peu."
+      ],
+      "main_lose_conditions_for_garen": [
+        "se faire couper exactement un corps de trop",
+        "main trop lente",
+        "Aurora sans pression reelle"
+      ],
+      "important_patterns_to_respect": [
+        "Falling Star",
+        "Hextech Ray",
+        "Time Warp"
+      ],
+      "variation_notes": {
+        "aurora_armory_recruit": "Peut gagner si la courbe est parfaite, mais elle donne aussi de belles cibles a la disruption.",
+        "go_wide_recruits_legend_native": "Mieux pour forcer beaucoup de petites questions, moins bien si Kai'Sa a le bon anti-board sequencing."
+      },
+      "source_refs": [
+        "S5",
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Aurora-Armory Recruit Garen",
+      "garen_outlook": {
+        "label": "unfavorable",
+        "estimated_garen_winrate_percent": "41-47",
+        "confidence": "low"
+      },
+      "summary": "Le signal structurel est assez defavorable. Irelia punit justement les decks qui doivent gagner par largeur mais dont les corps individuels ne sont pas toujours assez dominants pour forcer les combats. En plus, elle sait tres bien tenir un front propre pendant que Garen essaie d'en mettre trop partout.",
+      "why_matchup_plays_this_way": [
+        "Irelia aime proteger un porteur et faire payer chaque mauvais engage.",
+        "Garen aime mettre plusieurs corps et convertir ensuite, mais il deteste les fronts ou un seul porteur bloque tout."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield avec protection",
+        "gagner les petits temps de jeu et les mauvais trades de Garen"
+      ],
+      "garen_plan": [
+        "eviter de juste flood sans angle de conquer propre",
+        "Confront et Rally the Troops pour menacer les fronts ou Irelia se croit stable",
+        "ne pas laisser Irelia garder un front gratuit trop longtemps"
+      ],
+      "mulligan_focus": [
+        "curve de board",
+        "Confront",
+        "interaction peu chere",
+        "pas de main trop haute"
+      ],
+      "sideboard_focus": [
+        "removals structurants",
+        "Salvage si la game s'etire",
+        "sortir les cartes les plus lentes"
+      ],
+      "battlefield_notes": [
+        "Le matchup est meilleur si Garen transforme un front en vrai amas de corps trop couteux a gerer, pas s'il essaie juste d'attaquer partout."
+      ],
+      "main_lose_conditions_for_garen": [
+        "flooder un front sans reel payoff",
+        "laisser Irelia tenir le bon battlefield gratuitement",
+        "perdre le score avant que l'Armory plan commence"
+      ],
+      "important_patterns_to_respect": [
+        "boots and protection lines",
+        "tempo combat pivots",
+        "double-score pressure"
+      ],
+      "variation_notes": {
+        "go_wide_recruits_legend_native": "Peut mieux faire vivre la legende, mais souffre encore plus si Irelia te coupe juste la piece qui manque.",
+        "transformational_ramp_armory": "Souvent la meilleure facon de jouer ce pairing, car elle accepte d'etre moins fidele et plus brutale."
+      },
+      "source_refs": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Spell heavy",
+      "meta_share_percent": 7,
+      "default_shell": "Aurora-Armory Recruit Garen",
+      "garen_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_garen_winrate_percent": "45-50",
+        "confidence": "low"
+      },
+      "summary": "Le pairing Viktor spell-heavy est plus jouable que les decks qui vont vraiment large, parce que Garen peut au moins essayer de convertir ses tours de recruits et d'Armory avant que Viktor ne vide tout proprement. Mais Garen reste fragilise par tous les removals qui denient juste le bon nombre de corps.",
+      "why_matchup_plays_this_way": [
+        "Viktor spell-heavy veut choisir quelles pieces meurent et quand.",
+        "Garen veut qu'assez de petites pieces restent presentes pour que la largeur soit encore une ressource."
+      ],
+      "opponent_plan": [
+        "tuer exactement ce qu'il faut",
+        "ne pas laisser Garen transformer le front vide en point trop facilement"
+      ],
+      "garen_plan": [
+        "etaler les menaces plutot que tout mettre au meme endroit",
+        "faire vivre l'Armory plan assez tot",
+        "ne pas offrir des removals premium sur des positions cosmetiques"
+      ],
+      "mulligan_focus": [
+        "mains stables",
+        "presence early",
+        "pas de hand all-late"
+      ],
+      "sideboard_focus": [
+        "Salvage",
+        "threat density",
+        "cuts sur les cartes qui ne changent pas le scoreboard"
+      ],
+      "battlefield_notes": [
+        "Un front nettoye puis immédiatement converti vaut enormement ici. Garen ne veut pas controler joliment; il veut que le front vide rapporte."
+      ],
+      "main_lose_conditions_for_garen": [
+        "removals trop efficaces sur les bonnes pieces",
+        "partie trop longue",
+        "absence d'infrastructure de points"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal timing",
+        "value loops",
+        "spell-control transitions"
+      ],
+      "variation_notes": {
+        "go_wide_recruits_legend_native": "Plus vulnerable si Viktor joue assez de removals propres.",
+        "transformational_ramp_armory": "Un peu meilleure si elle gagne en qualite de topdeck et en vraies pieces qui comptent."
+      },
+      "source_refs": [
+        "S2",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Unit / Token based",
+      "meta_share_percent": 7,
+      "default_shell": "Transformational Ramp-Armory Garen",
+      "garen_outlook": {
+        "label": "unfavorable",
+        "estimated_garen_winrate_percent": "41-47",
+        "confidence": "low"
+      },
+      "summary": "Quand Viktor joue plus large, le pairing se deteriore. Garen n'aime pas les matchups ou l'adversaire fait a la fois des bodies et du removal, parce que sa propre largeur perd alors de son unicite.",
+      "why_matchup_plays_this_way": [
+        "Garen veut que son nombre de corps cree la contrainte.",
+        "Viktor unit/token-based peut lui aussi remplir la table, tout en gardant plus de valeur de cartes."
+      ],
+      "opponent_plan": [
+        "occuper les fronts assez longtemps",
+        "couper les bonnes pieces de Garen",
+        "prendre les points pendant que Garen rebâtit"
+      ],
+      "garen_plan": [
+        "jouer davantage pour un front cle que pour les deux",
+        "ne pas tout miser sur le pur flood",
+        "forcer un front ou Armory ou la grosse piece transforme vraiment le trade"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "interaction structurante",
+        "pas de hand trop haute"
+      ],
+      "sideboard_focus": [
+        "more board quality",
+        "Salvage",
+        "moins de cartes mortes contre largeur"
+      ],
+      "battlefield_notes": [
+        "Le matchup est mauvais si Viktor te fait nettoyer ou perdre un front pendant qu'il t'encombre l'autre."
+      ],
+      "main_lose_conditions_for_garen": [
+        "flood symetrique que Viktor gagne a la carte",
+        "mauvaise conversion de front vide",
+        "retard de score"
+      ],
+      "important_patterns_to_respect": [
+        "token stalls",
+        "hybrid control plus board turns"
+      ],
+      "variation_notes": {
+        "aurora_armory_recruit": "Plus stable que le pur go-wide si elle touche ses grosses cartes a temps.",
+        "go_wide_recruits_legend_native": "Souvent la plus penible ici."
+      },
+      "source_refs": [
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Transformational Ramp-Armory Garen",
+      "garen_outlook": {
+        "label": "unfavorable",
+        "estimated_garen_winrate_percent": "40-46",
+        "confidence": "medium"
+      },
+      "summary": "Le thread 'Help with Garen' cite explicitement Ezreal parmi les decks que Garen n'arrive pas a suivre. C'est aussi coherent structurellement: Ezreal aime les decks qui ont besoin de temps et qui ne peuvent pas transformer chaque stabilisation en point immediat.",
+      "why_matchup_plays_this_way": [
+        "Ezreal a un meilleur plafond de cartes et de transitions violettes.",
+        "Garen doit gagner avant que cette qualite de cartes ne rende chaque front recyclable."
+      ],
+      "opponent_plan": [
+        "ralentir les fronts sans trop perdre de points",
+        "forcer Garen a rejouer son board plusieurs fois"
+      ],
+      "garen_plan": [
+        "prendre plus de points tot que d'habitude",
+        "jouer pour la conversion immediate des fronts nettoyes",
+        "ne pas accepter une partie purement lente ou de valeur"
+      ],
+      "mulligan_focus": [
+        "main proactive",
+        "presence early",
+        "pas de main full top-end"
+      ],
+      "sideboard_focus": [
+        "Salvage",
+        "threat density",
+        "retirer les cartes trop lentes"
+      ],
+      "battlefield_notes": [
+        "Le meilleur front est celui qui marque maintenant, pas celui qui sera peut-etre beau deux tours plus tard."
+      ],
+      "main_lose_conditions_for_garen": [
+        "partie trop longue",
+        "pas assez de points avant les chains violettes",
+        "dependance excessive a Aurora"
+      ],
+      "important_patterns_to_respect": [
+        "Called Shot loops",
+        "late purple chains",
+        "Rhasa turns"
+      ],
+      "variation_notes": {
+        "aurora_armory_recruit": "La plus logique des trois si tu veux au moins garder une vraie qualite de topdeck.",
+        "go_wide_recruits_legend_native": "Peut prendre un lead localement, mais souffre beaucoup si Ezreal survit."
+      },
+      "source_refs": [
+        "S5",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "default_shell": "Transformational Ramp-Armory Garen",
+      "garen_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_garen_winrate_percent": "45-49",
+        "confidence": "low"
+      },
+      "summary": "Le pairing oppose deux facons tres differentes de jouer la largeur. Azir a plus de modularite et de constance de largeur. Garen a une meilleure conversion en draw si le conquer arrive, mais il a besoin que cette largeur reste vivante plus longtemps.",
+      "why_matchup_plays_this_way": [
+        "Azir n'a pas besoin que tous ses petits corps survivent de la meme facon que Garen.",
+        "Garen, lui, veut vraiment un conquer de masse ou un front vide transforme par Armory."
+      ],
+      "opponent_plan": [
+        "mettre beaucoup de petits corps et equips",
+        "tenir les fronts juste assez pour gagner la race de points"
+      ],
+      "garen_plan": [
+        "ne pas combattre la largeur d'Azir purement a l'horizontal",
+        "viser le front ou Armory ou une grosse piece change le score",
+        "faire payer a Azir les tours ou il se developpe trop greed"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "Confront",
+        "mains stables",
+        "pas de hand trop lente"
+      ],
+      "sideboard_focus": [
+        "interaction plus large",
+        "Salvage",
+        "cut sur les cartes trop lentes si la version est trop Aurora-heavy"
+      ],
+      "battlefield_notes": [
+        "Le matchup est souvent une course entre largeur plus modulaire d'Azir et largeur plus 'qualifiante' de Garen."
+      ],
+      "main_lose_conditions_for_garen": [
+        "perdre le score trop tot",
+        "trying to flood symmetrically into a better flood deck",
+        "pas de conversion immediate des fronts nettoyes"
+      ],
+      "important_patterns_to_respect": [
+        "Azir Sovereign turns",
+        "Arise",
+        "equipment-fueled flood"
+      ],
+      "variation_notes": {
+        "go_wide_recruits_legend_native": "Intuitivement naturelle mais souvent trop fair face a Azir.",
+        "transformational_ramp_armory": "Souvent la meilleure version car elle donne a Garen un angle moins symetrique."
+      },
+      "source_refs": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "opponent": "Lux, Lady of Luminosity",
+      "meta_share_percent": 1,
+      "default_shell": "Transformational Ramp-Armory Garen",
+      "garen_outlook": {
+        "label": "unfavorable",
+        "estimated_garen_winrate_percent": "40-46",
+        "confidence": "low"
+      },
+      "summary": "Yellow control est naturellement penible pour Garen, parce que son deck n'a pas besoin de tuer toute ta table pour te faire perdre. Lux, en particulier, punit assez bien les decks qui doivent garder plusieurs corps jusqu'au conquer.",
+      "why_matchup_plays_this_way": [
+        "Garen deteste qu'on lui retire juste un ou deux bons corps au bon timing.",
+        "Lux aime exactement ce type d'echanges structurels."
+      ],
+      "opponent_plan": [
+        "casser le moment du conquer",
+        "vider le front important puis marquer avec recruits ou Armory"
+      ],
+      "garen_plan": [
+        "ne pas telegraphier un seul front comme unique plan",
+        "etaler un minimum les menaces qui comptent",
+        "marquer avant que le control jaune ne soit trop propre"
+      ],
+      "mulligan_focus": [
+        "mains stables",
+        "pression early",
+        "pas de keep all-in sur Aurora"
+      ],
+      "sideboard_focus": [
+        "Salvage",
+        "threat density",
+        "cuts sur les cartes trop lentes"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient encore pire si Lux nettoie le seul front ou Garen avait assez de corps pour activer la legende."
+      ],
+      "main_lose_conditions_for_garen": [
+        "dependance a un seul front",
+        "timing de conquer casse",
+        "partie trop lente"
+      ],
+      "important_patterns_to_respect": [
+        "Bellows Breath",
+        "Imperial Decree",
+        "front denial"
+      ],
+      "variation_notes": {
+        "aurora_armory_recruit": "Jouable si la sortie est forte, mais exposee aux bons removals.",
+        "go_wide_recruits_legend_native": "La plus vulnerable ici."
+      },
+      "source_refs": [
+        "S1",
+        "S4"
+      ]
+    }
+  ],
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "aurora_armory_recruit_keep": [
+        "Catalyst of Aeons",
+        "Confront",
+        "Rally the Troops",
+        "Mobilize",
+        "Vanguard Armory seulement si la main a deja le debut de partie",
+        "Dazzling Aurora seulement si la main sait survivre jusque-la"
+      ],
+      "go_wide_recruits_legend_native_keep": [
+        "Confront",
+        "Rally the Troops",
+        "Vanguard Captain",
+        "deux vraies sources de corps tot",
+        "top-end uniquement si le reste est deja fonctionnel"
+      ],
+      "transformational_ramp_armory_keep": [
+        "Catalyst of Aeons",
+        "Confront",
+        "une piece de largeur",
+        "une piece de conversion type Armory ou bon 5-drop si la courbe suit"
+      ],
+      "ship": [
+        "main full top-end",
+        "main qui n'a aucun vrai tour de board",
+        "main qui repose uniquement sur Aurora",
+        "main qui ne sait pas comment activer la legende ou marquer sans topdeck"
+      ],
+      "notes": [
+        "Garen mulligan pour des corps vivants et des tours de front credibles, pas pour la beaute du late-game.",
+        "Une main moyenne avec largeur plus conversion vaut presque toujours mieux qu'une main plus puissante mais trop lente."
+      ]
+    },
+    "draven_midrange": {
+      "keep": [
+        "Confront",
+        "Rally the Troops",
+        "starter de board",
+        "Cull the Weak si la version l'utilise"
+      ],
+      "ship": [
+        "main lente",
+        "main full 5+"
+      ]
+    },
+    "draven_miracle": {
+      "keep": [
+        "main proactive",
+        "pas de keep all-in sur un seul payoff",
+        "pression plus vrai front"
+      ],
+      "ship": [
+        "main pure value",
+        "main trop lente"
+      ]
+    },
+    "kaisa": {
+      "keep": [
+        "presence early",
+        "menaces diversifiees",
+        "pas de keep dependante d'un seul corps"
+      ],
+      "ship": [
+        "main all-in sur une seule grosse piece",
+        "main full late"
+      ]
+    },
+    "irelia": {
+      "keep": [
+        "Confront",
+        "largeur early",
+        "mains stables"
+      ],
+      "ship": [
+        "main trop haute",
+        "main sans board presence"
+      ]
+    },
+    "ezreal": {
+      "keep": [
+        "main proactive",
+        "front pressure",
+        "Armory seulement si le debut est deja la"
+      ],
+      "ship": [
+        "main lente",
+        "main sans clock"
+      ]
+    },
+    "lux": {
+      "keep": [
+        "threat density",
+        "presence early",
+        "pas de keep ultra-lent"
+      ],
+      "ship": [
+        "main all-in sur un seul axe",
+        "main qui ne marque pas avant les gros turns jaunes"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "general_shell_rules": {
+      "aurora_armory_recruit": {
+        "identity": "Conserver le pont entre largeur, Aurora et Armory. Le deck perd s'il devient juste un pseudo-ramp sans vraie conversion en points.",
+        "dont_do": [
+          "retirer trop de generators de front",
+          "se sider comme un pur Aurora deck"
+        ]
+      },
+      "go_wide_recruits_legend_native": {
+        "identity": "Preserver la densite de corps et la facon naturelle d'activer la legende.",
+        "dont_do": [
+          "sider trop de top-end",
+          "enlever les cartes qui generent les 4e corps du conquer"
+        ]
+      },
+      "transformational_ramp_armory": {
+        "identity": "Assumer qu'Aurora n'est pas toujours le meilleur plan et garder la version la plus stable du squelette Garen.",
+        "dont_do": [
+          "garder Aurora contre tout le monde par habitude",
+          "retirer trop de score infrastructure"
+        ]
+      }
+    },
+    "draven_midrange": {
+      "in": [
+        "Salvage",
+        "interaction structurelle supplementaire",
+        "moins de greed"
+      ],
+      "out": [
+        "Aurora de trop",
+        "top-end trop lent"
+      ],
+      "plan": [
+        "Mieux tenir les premiers fronts et preserver le board assez longtemps pour que la largeur compte vraiment."
+      ]
+    },
+    "draven_miracle": {
+      "in": [
+        "Salvage",
+        "cartes qui gardent la clock",
+        "interaction contre les turns pivots"
+      ],
+      "out": [
+        "cards too clunky",
+        "surplus de cartes lentes"
+      ],
+      "plan": [
+        "Il faut scorer plus vite et accepter de moins jouer pour le draw de legende."
+      ]
+    },
+    "kaisa": {
+      "in": [
+        "threat density",
+        "grind tools si la version en a",
+        "moins de pieces punissables"
+      ],
+      "out": [
+        "surplus d'Aurora",
+        "cartes trop lentes ou trop lineaires"
+      ],
+      "plan": [
+        "Ne pas offrir une seule cible structurante. Multiplier les pieces qui comptent un peu."
+      ]
+    },
+    "irelia": {
+      "in": [
+        "interaction peu chere",
+        "cartes qui aident a garder la largeur reelle"
+      ],
+      "out": [
+        "top-end trop lent",
+        "value only cards"
+      ],
+      "plan": [
+        "Conserver assez de pression de front pour que Irelia ne joue pas uniquement a la protection."
+      ]
+    },
+    "ezreal": {
+      "in": [
+        "Salvage",
+        "menaces immediates",
+        "conserver Armory"
+      ],
+      "out": [
+        "slow cards",
+        "surplus de pieces purement setup"
+      ],
+      "plan": [
+        "Le scoreboard compte plus que la beaute du late-game."
+      ]
+    },
+    "lux_or_yellow_control": {
+      "in": [
+        "threat density",
+        "grind tools",
+        "moins de cartes qui perdent a une seule bonne reponse"
+      ],
+      "out": [
+        "cards too telegraphed",
+        "surplus d'Aurora si trop lente"
+      ],
+      "plan": [
+        "Diversifier les menaces et ne pas faire d'un seul front l'unique plan."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "aurora_armory_recruit_priority": [
+        "Aspirant's Climb",
+        "Obelisk of Power",
+        "Sigil of the Storm or The Papertree depending build"
+      ],
+      "go_wide_recruits_priority": [
+        "The Grand Plaza",
+        "Aspirant's Climb",
+        "The Papertree"
+      ],
+      "transformational_ramp_armory_priority": [
+        "Aspirant's Climb",
+        "Obelisk of Power",
+        "Sigil of the Storm"
+      ],
+      "notes": [
+        "Les listes officielles Bologna/Vegas convergent tres fort sur Aspirant's Climb plus Obelisk of Power.",
+        "Le troisieme battlefield bouge legerement selon qu'on veut plus de front large naturel ou plus de pression de setup."
+      ]
+    },
+    "draven_midrange": {
+      "preferred": [
+        "Aspirant's Climb",
+        "Obelisk of Power"
+      ],
+      "plan": [
+        "Tu veux un front ou ta largeur reste penible a couper, pas deux fronts ou Draven peut juste tuer une piece cle a chaque fois."
+      ]
+    },
+    "kaisa": {
+      "preferred": [
+        "Obelisk of Power",
+        "Aspirant's Climb"
+      ],
+      "plan": [
+        "Le bon front est celui qui marque apres un seul bon cycle, pas celui qui demande d'etre parfait pendant trois tours."
+      ]
+    },
+    "irelia": {
+      "preferred": [
+        "Aspirant's Climb",
+        "The Papertree with caution"
+      ],
+      "plan": [
+        "Ne laisse pas Irelia garder le seul front qui compte sous protection. Garen veut que la largeur y reste une vraie contrainte."
+      ]
+    },
+    "ezreal": {
+      "preferred": [
+        "Obelisk of Power",
+        "Aspirant's Climb"
+      ],
+      "plan": [
+        "Les fronts qui convertissent immediatement un moment de vide en point sont meilleurs que ceux qui promettent de la value plus tard."
+      ]
+    },
+    "lux_or_yellow_control": {
+      "preferred": [
+        "Aspirant's Climb",
+        "Obelisk of Power"
+      ],
+      "plan": [
+        "Le meilleur battlefield est celui ou Lux ne peut pas juste te casser le seul corps qui compte et ignorer le reste."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Riftbound.gg - Garen, Might of Demacia Starter Guide – Best Decks & Cards",
+      "date": "2026-02-14",
+      "url": "https://riftbound.gg/garen-might-of-demacia-guide/",
+      "notes": "Source principale sur l'identite de Garen, l'orientation tokens/largeur de la legende, et le fait que les versions competitives s'appuient surtout sur OGN-160 et les meilleures cartes Body/Order."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "Riftbound official - The Best Decks out of Bologna",
+      "date": "2026-02-25",
+      "url": "https://riftbound.leagueoflegends.com/en-us/news/organizedplay/the-best-decks-out-of-bologna/",
+      "notes": "Best-of Garen Bologna #403 overall, shell Garen, Commander avec Catalyst, Aurora, Deadbloom, Harnessed Dragon, Vanguard Armory, battlefields et sideboard."
+    },
+    {
+      "id": "S3",
+      "type": "official tournament article",
+      "title": "Riftbound official - Vegas' Top Decks",
+      "date": "2026-03-04",
+      "url": "https://riftbound.leagueoflegends.com/en-us/news/organizedplay/vegas-top-decks/",
+      "notes": "Best-of Garen Vegas #362 overall, 8 joueurs Garen, 0 Day 2, liste quasi identique a Bologna avec quelques ajustements de slots et de battlefield."
+    },
+    {
+      "id": "S4",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Vegas",
+      "date": "2026-03-06",
+      "url": "https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-post-vegas-metagame/",
+      "notes": "Garen Tier 4, 23 picks, 0% Day 2 conversion, 46.9% WR, two Top 512."
+    },
+    {
+      "id": "S5",
+      "type": "community thread",
+      "title": "Help with Garen",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rfi9nm/help_with_garen/",
+      "notes": "Source cle pour l'existence du shell go-wide/recruits, de la tension entre Garen 'legend-native' et les versions Aurora/Hook, et du constat que Garen ne suit pas encore bien Draven/Ezreal/Kai'Sa."
+    },
+    {
+      "id": "S6",
+      "type": "tracker / meta stats",
+      "title": "RiftDecks - Spiritforged Legends Meta Breakdown",
+      "date_consulted": "2026-03-11",
+      "url": "https://riftdecks.com/legends?metagame_id=2",
+      "notes": "Snapshot public donnant Garen autour de 1% de metashare et Tier 3 sur l'agrégat de decks Spiritforged."
+    },
+    {
+      "id": "S7",
+      "type": "community / general meta discussion",
+      "title": "Garen's revival! (winrate for RQ Vegas)",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rin8jm/garens_revival_winrate_for_rq_vegas/",
+      "notes": "Support prudent sur la perception communautaire recente de Garen apres Vegas."
+    },
+    {
+      "id": "S8",
+      "type": "community thread",
+      "title": "Poor Garen... (Winrate in Vegas)",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rgzaf4/poor_garen_winrate_in_vegas/",
+      "notes": "Retour direct d'un joueur Garen Vegas; mention de Sabotage et Akshan comme vrais problemes contre Dazzling Aurora."
+    },
+    {
+      "id": "S9",
+      "type": "community rules / legend discussion",
+      "title": "Timing question for Garen's conquer ability",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1ozja5t/timing_question_for_garens_conquer_ability/",
+      "notes": "Support prudent sur la perception de la legende comme plan de conquer avec largeur effective."
+    },
+    {
+      "id": "S10",
+      "type": "community discussion",
+      "title": "I hope they never design a legend like Jinx again",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rp4kb2/i_hope_they_never_design_a_legend_like_jinx_again/",
+      "notes": "Rappel communautaire recent de la formulation usuelle 'conquer with 4+ units to draw cards' a propos de Garen."
+    }
+  ]
+}

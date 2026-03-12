@@ -1,0 +1,1172 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Lucian complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte janvier-mars 2026 pour l'evolution des shells Lucian",
+    "methodology": {
+      "approach": [
+        "Croisement des guides Lucian recents",
+        "Croisement des tier lists post-Chengdu, post-Bologna et post-Vegas",
+        "Croisement des decklists officielles Vegas et decklists publiques competitives/recentes",
+        "Croisement des discussions communautaires sur les builds Lucian, leurs matchups et leurs limites structurelles",
+        "Accent mis sur la qualite de pilotage et sur la distinction entre shells jouables, meme si la legende n'est pas top 3 du meta"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + shell documente + retours explicites de matchup",
+        "medium": "Consensus raisonnable mais sensible au build, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "lucian_meta_position": {
+      "riftdecks_spiritforged": {
+        "meta_share_percent": 2,
+        "tier": "Tier 3",
+        "decks_indexed": 600
+      },
+      "riftbound_gg_post_chinese_regionals": {
+        "tier": "Tier 2",
+        "notes": "54 picks, 5 Top 64, 9.26% conversion rate, Top 16 et plusieurs Top 32/64"
+      },
+      "riftbound_gg_post_vegas": {
+        "tier": "Tier 2",
+        "notes": "92 picks, 14.1% conversion Day 2, 47.3% win rate, Top 32 et Top 64"
+      },
+      "vegas_best_of": {
+        "overall_finish": "#56 overall",
+        "legend_rank": "1 / 51 Lucian players"
+      },
+      "historical_read": "Lucian n'est pas un deck de volume dominant, mais ce n'est pas non plus une simple legende fun. Les sources convergent vers l'idee d'un deck reel, structurellement exigeant, penalise surtout par sa constance et par un manque de draw par rapport aux shells violets."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et les structures de deck plutot que la seule reussite statistique de la legende."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Lucian, Purifier",
+    "domains": [
+      "Body",
+      "Fury"
+    ],
+    "macro_identity": {
+      "archetype_family": "Equipment conqueror midrange / tall tempo / combo-finish",
+      "primary_gameplan": "Conquerir presque chaque tour avec une unite equipee, puis la garder en vie assez longtemps pour continuer a scorer ou a menacer deux fronts de suite.",
+      "secondary_gameplan": "Selon le shell: soit jouer une version equipment midrange tres propre autour de Trinity Force, Kai'Sa, Lucian, Merciless et Relentless Pursuit, soit basculer vers une version combo/OTK qui maximise les closes absurdes, soit descendre la curve vers une version plus agressive.",
+      "why_the_legend_is_strong": [
+        "Le texte de Lucian convertit chaque equipement offensif en menace de conquer beaucoup plus vite qu'une legende generic Body/Fury",
+        "Lucian, Merciless est un champion premium et un des vrais piliers de la legende",
+        "Les meilleures listes exploitent tres bien les battlefields de tempo comme Obelisk of Power et Sunken Temple",
+        "Le deck punit les adversaires qui ne peuvent pas facilement tuer une grosse unite equipee hors combat"
+      ],
+      "why_the_legend_is_hard": [
+        "La legende est tres restrictive: sans equipements et sans plan conqueror, tu n'as quasiment pas de vraie legende",
+        "Le deck souffre d'un vrai probleme de constance et de pioche par rapport aux decks violets",
+        "Les mauvais keeps sont tres punis",
+        "Le shell demande une lecture tres fine du score et du moment exact ou il faut tenir plutot que pousser"
+      ]
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Body/Fury Equipment Conqueror Midrange",
+        "status_march_2026": "Shell de reference competitif",
+        "evidence": [
+          "Guide Riftbound.gg de reference",
+          "Best-of Lucian officiel a Vegas",
+          "Plusieurs listings de tournoi / skirmishes mars 2026"
+        ],
+        "identity": "Version la plus propre et la plus stabilisee. Elle joue des unites de bonne qualite, beaucoup d'equipements, et gagne par tempo de battlefield, survie des porteurs et closes via Relentless Pursuit ou Trinity Force.",
+        "reference_core": [
+          "Lucian, Merciless",
+          "Kai'Sa, Survivor",
+          "First Mate",
+          "Ruin Runner",
+          "Trinity Force",
+          "Doran's Blade",
+          "Challenge",
+          "Punch First",
+          "Piercing Light",
+          "Relentless Pursuit",
+          "Brynhir Thundersong",
+          "Boneshiver"
+        ],
+        "reference_battlefields": [
+          "Forge of the Fluft",
+          "Obelisk of Power",
+          "Sunken Temple"
+        ],
+        "chosen_champion": "Lucian, Merciless",
+        "default_for_matchups_below": true
+      },
+      {
+        "name": "Lucian Combo / OTK",
+        "status_march_2026": "Shell reel, plus niche, mais clairement joue",
+        "evidence": [
+          "Post communautaire sur 'Lucian OTK is real' en Chine",
+          "Discussions recentes sur les lignes Trynd plus Skyfall plus Trinity plus Relentless Pursuit",
+          "Versions publiques Body/Fury tres explosives avec Gem Jammer, Blood Rush, Darius, Dunebreaker"
+        ],
+        "identity": "Version qui cherche a convertir une seule grosse unite ou une fenetre de mouvement/assaut en tour de score massif, parfois jusqu'a 4 a 6 points selon la configuration. Plus haute variance, plus polarisante, mais reelle.",
+        "reference_core": [
+          "Trinity Force",
+          "Relentless Pursuit",
+          "Skyfall of Areion",
+          "Blood Rush",
+          "Gem Jammer",
+          "Brynhir Thundersong",
+          "Darius, Trifarian",
+          "Dunebreaker"
+        ],
+        "reference_battlefields": [
+          "Sunken Temple",
+          "Grove of the God-Willow",
+          "Targon's Peak"
+        ],
+        "chosen_champion": "Lucian, Merciless",
+        "important_note": "Ce shell ne doit pas etre pilote comme un simple midrange. Il gagne sur des pointes de vitesse, pas sur la constance."
+      },
+      {
+        "name": "Aggro / Low-Curve Lucian",
+        "status_march_2026": "Shell communautaire credible, moins documente competitivement",
+        "evidence": [
+          "Discussions recentes disant que l'aggro Lucian est meilleure que le midrange Lucian mal construit",
+          "Lists locales axees plus bas de courbe et plus directes"
+        ],
+        "identity": "Version plus basse en courbe qui cherche a profiter de l'excellente pression conqueror de Lucian sans trop s'encombrer des cartes combo les plus maladroites dans un plan fair. Meilleure pour punir certaines sorties lentes, moins bonne si la partie s'etire.",
+        "reference_core": [
+          "First Mate",
+          "Doran's Blade",
+          "Long Sword",
+          "Punch First",
+          "Piercing Light",
+          "Challenge",
+          "Relentless Pursuit",
+          "Lucian, Merciless"
+        ],
+        "reference_battlefields": [
+          "Obelisk of Power",
+          "Sunken Temple",
+          "forge/tempo battlefields"
+        ],
+        "chosen_champion": "Lucian, Merciless",
+        "important_note": "Le shell existe surtout comme reponse au sentiment que certaines versions 'midrange-combo' sont trop incoherentes. Il demande un pilotage plus agressif et plus simple dans la prise de points."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "lucian_purifier_role": "Le texte de la legende pousse tres clairement vers un deck equipment conqueror. Si le deck cesse de conquerir ou de jouer des equips, la legende cesse presque d'exister.",
+      "lucian_merciless_role": "Champion premium du deck. Le guide Lucian le presente comme une des meilleures signatures de la legende et sa capacite a retourner a la base apres un conquer oblige souvent l'adversaire a le tuer par sorts.",
+      "signature_spell_role": "Le sort signature de Lucian est decrit comme un staple de tous les decks Lucian actuels; il colle parfaitement a la logique conqueror du deck, aidant a dominer comme attaquant et a proteger comme defenseur.",
+      "trinity_force_role": "L'equipement le plus iconique du shell Vegas. C'est a la fois un payoff de might, un accelerateur de close et une piece centrale des shells OTK.",
+      "relentless_pursuit_role": "Carte centrale de tempo et de close. Elle permet de convertir une grosse unite equipee en prise de points beaucoup plus rapide que l'adversaire n'anticipe.",
+      "kai_sa_survivor_role": "Une des vraies solutions du deck a son probleme de pioche. Son inclusion dans les meilleurs lists est repetee par la communaute et la liste officielle Vegas.",
+      "first_mate_role": "Un des meilleurs early plays de la legende. Il aide a etablir la presence de board et a amorcer le plan equipment-conqueror.",
+      "punch_first_role": "Carte de skill expression majeure de Lucian. Elle permet de casser les thresholds de combat ou de removal et aide a faire passer les gros tours Trinity/Relentless.",
+      "piercing_light_role": "Interaction propre qui soutient le tempo du deck sans l'obliger a trop se compromettre en combat.",
+      "boneshiver_role": "Carte de ressource et de swing qui apporte de la texture a un deck par ailleurs peu genereux en pioche.",
+      "brynhir_thundersong_role": "Top-end de boardfight qui renforce les tours de prise de battlefield et donne un vrai poids aux versions plus midrange.",
+      "gem_jammer_role": "Piece marquee des versions plus combo/OTK, moins automatique dans le shell midrange reference.",
+      "akshan_mischievous_role": "Tech de Vegas, utile comme angle de valeur ou de flexibilite, mais pas coeur d'identite du deck."
+    },
+    "advanced_pilot_principles": [
+      {
+        "name": "Lucian is a conqueror deck before it is an equipment deck",
+        "detail": "Les equips servent surtout a rendre tes conquers repétables et suffisamment menaçants. Si tes tours n'aboutissent pas a des conquetes bien protegee, le deck se deforme."
+      },
+      {
+        "name": "Protecting the right unit is more important than maximizing immediate might",
+        "detail": "Le deck gagne en gardant une unite cle en vie plusieurs tours, meme si cela signifie laisser un point passer. Les joueurs Lucian le rappellent: survivre pour reconquerir le tour suivant compte enormement."
+      },
+      {
+        "name": "Do not force combo cards into a fair midrange plan",
+        "detail": "Une critique recurrente sur Lucian est que les cartes combo deviennent tres mauvaises si le deck essaie en meme temps d'etre un midrange normal. Il faut choisir clairement quelle version on pilote."
+      },
+      {
+        "name": "Stay off battlefields when that protects your scoring engine",
+        "detail": "Certains joueurs Lucian recents decrivent le deck comme bon contre Draven justement parce qu'il peut rester hors des battlefields, preparer un grand conquer, puis ressortir devant."
+      },
+      {
+        "name": "Card draw is your structural weakness, so mulligans matter more than with purple decks",
+        "detail": "Lucian a beaucoup moins de latitude que les decks violets pour corriger une mauvaise main. Un mauvais keep est souvent une game entiere perdue."
+      },
+      {
+        "name": "You are often one turn away from lethal or from running out of gas",
+        "detail": "Lucian joue sur un fil. Beaucoup de parties basculent parce que tu as reconnu un tour de close avant l'adversaire, ou au contraire parce que tu as surjoue un tour et perdu ton dernier vrai porteur."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "mistake": "Mixing too much combo with too much fair midrange",
+        "why_it_loses": "C'est une critique recente importante du deck: les cartes combo sont mauvaises dans un plan midrange banal, et le deck n'a pas assez de draw pour etre combo pur sans clarte."
+      },
+      {
+        "mistake": "Keeping hands that need perfect topdecks",
+        "why_it_loses": "Lucian ne corrige pas aussi bien ses mains que les decks violets."
+      },
+      {
+        "mistake": "Tapping out every turn",
+        "why_it_loses": "Le deck perd beaucoup de sa force quand il ne represente plus Punch First, son spell signature, Challenge ou autres lignes de protection."
+      },
+      {
+        "mistake": "Treating Lucian, Merciless as a generic 3-drop",
+        "why_it_loses": "C'est une de tes meilleures cartes de structure; si tu le poses sans fenetre de conquer propre ou sans plan de survie, tu perds une ressource cle."
+      },
+      {
+        "mistake": "Using Relentless Pursuit for style rather than score",
+        "why_it_loses": "La carte doit servir un vrai point swing ou un close, pas juste un joli combat."
+      },
+      {
+        "mistake": "Overvaluing raw might against removal-heavy matchups",
+        "why_it_loses": "Dans plusieurs pairings, la resilience et la bonne cible de protection comptent plus que quelques points de might supplementaires."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Dans les matchups de board, pense a quel conquer te donne encore une unite vivante le tour suivant, pas juste au conquer du tour en cours.",
+      "Lucian, Merciless vaut souvent plus quand il peut revenir a la base apres son travail que quand tu le laisses exposé pour un point de plus.",
+      "Les decks controle veulent que tu annonces tres tot quelle unite est importante; Lucian gagne souvent en gardant la modularite entre plusieurs porteurs moyens.",
+      "Si ta main ne sait pas comment gagner avant d'etre a court de ressources, c'est souvent un mulligan meme si les cartes ont l'air fortes individuellement.",
+      "Dans les shells OTK, compte toujours tes points a l'avance: beaucoup de kills Lucian viennent de lignes de score peu intuitives plus que de gros combats."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "close_even",
+        "estimated_lucian_winrate_percent": "48-52",
+        "confidence": "medium"
+      },
+      "summary": "Le pairing Draven midrange est souvent presente comme au moins jouable pour Lucian. Des joueurs Lucian recents parlent meme d'un bon matchup si Lucian reste hors des battlefields assez longtemps puis choisit ses conquers. En meme temps, des retours recents plus prudents disent encore 'Draven est 50/50'.",
+      "why_matchup_plays_this_way": [
+        "Draven veut convertir une table large en points et en card advantage.",
+        "Lucian peut contourner une partie de cela en jouant plus 'tall' et plus timing que 'wide'.",
+        "Le matchup se joue beaucoup sur la facon dont Lucian protege son vrai porteur."
+      ],
+      "opponent_plan": [
+        "prendre les premiers points",
+        "forcer des combats favorables",
+        "punir les mains lentes ou les porteurs trop exposes"
+      ],
+      "lucian_plan": [
+        "rester hors des battlefields quand il le faut pour proteger la piece cle",
+        "ne pas offrir de combats gratuits",
+        "utiliser la sequence equipment plus conquer plus protection plutot qu'une race confuse",
+        "fermer avec Relentless Pursuit ou Trinity Force une fois la bonne fenetre identifiee"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment",
+        "First Mate ou autre vrai T2/T3",
+        "Lucian, Merciless si la main le supporte",
+        "pas de keep full top-end"
+      ],
+      "sideboard_focus": [
+        "Unyielding Spirit dans certaines versions locales",
+        "Sabotage supplementaire si besoin",
+        "Ferrous Forerunner selon texture du board"
+      ],
+      "battlefield_notes": [
+        "Sunken Temple et Obelisk of Power sont tres bons ici.",
+        "Lucian gagne souvent en tenant un battlefield proprement tout en preparant le second plutot qu'en luttant partout a la fois."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "donner des combats gratuits a Draven",
+        "main sans pression avant le midgame",
+        "surexposer un porteur unique sans protection"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Brynhir swings",
+        "2 energie ouverte",
+        "tempo snowball sur board large"
+      ],
+      "variation_notes": {
+        "combo_otk": "Peut voler le pairing plus brutalement si Draven est lent, mais est plus polarisant.",
+        "aggro_low_curve": "Peut etre un peu meilleur si l'objectif est de punir un Draven trop greed, mais perd plus vite quand le board se stabilise contre toi."
+      }
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_lucian_winrate_percent": "45-49",
+        "confidence": "low"
+      },
+      "summary": "Miracle Draven profite davantage du principal defaut structurel de Lucian: le manque de draw et donc de redondance. Si Lucian ne convertit pas ses premiers tours de pression en vrai score, le shell miracle peut repasser au-dessus.",
+      "why_matchup_plays_this_way": [
+        "Miracle Draven a un plafond de resource loop plus eleve.",
+        "Lucian doit jouer plus proprement ses fenetres de conquer et de close pour ne pas se faire depasser."
+      ],
+      "opponent_plan": [
+        "grinder jusqu'au tour de swing",
+        "punir les boards compacts ou les porteurs identifies"
+      ],
+      "lucian_plan": [
+        "mettre une vraie clock",
+        "ne pas gaspiller ses meilleurs tours de protection",
+        "forcer Miracle Draven a repondre avant son timing ideal"
+      ],
+      "mulligan_focus": [
+        "main proactive",
+        "pas de keep sans plan de score",
+        "Sabotage si la liste en joue"
+      ],
+      "sideboard_focus": [
+        "anti-miracle flex slots",
+        "Sabotage",
+        "Against the Odds selon version combo"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient dur si Miracle Draven a le temps de prendre un battlefield puis de tout recycler."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "pas assez de pression",
+        "mains lentes",
+        "courbe qui ne fait rien sans topdeck"
+      ],
+      "important_patterns_to_respect": [
+        "stacking turns",
+        "large miracle boards",
+        "cheap recursion threats"
+      ],
+      "variation_notes": {
+        "combo_otk": "Peut parfois contourner le grind en gagnant avant, mais perd encore plus vite si la premiere fenetre est ratee.",
+        "aggro_low_curve": "Plus direct mais moins robuste si Draven stabilise."
+      }
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "unfavorable",
+        "estimated_lucian_winrate_percent": "42-47",
+        "confidence": "medium"
+      },
+      "summary": "Plusieurs retours recents pointent Kai'Sa comme un des mauvais pairings de Lucian. La logique est assez nette: Kai'Sa aime tuer proprement les pieces qui portent toute la structure du deck Lucian.",
+      "why_matchup_plays_this_way": [
+        "Lucian investit sur peu de vrais porteurs et sur des equips.",
+        "Kai'Sa est l'un des meilleurs decks du format pour casser une telle structure a la carte et hors combat."
+      ],
+      "opponent_plan": [
+        "tuer les bonnes unites",
+        "eviter les combats fair",
+        "tenir jusqu'au close Time Warp ou gros top-end"
+      ],
+      "lucian_plan": [
+        "ne pas telegraphier trop tot la vraie unite importante",
+        "forcer Kai'Sa a repondre a plusieurs menaces imparfaites",
+        "prendre les points avant qu'elle ne soit totalement installee"
+      ],
+      "mulligan_focus": [
+        "courbe agressive et fonctionnelle",
+        "pas de hand full greed",
+        "main qui ne s'effondre pas sur un seul removal"
+      ],
+      "sideboard_focus": [
+        "Sabotage",
+        "Against the Odds ou plans plus agressifs selon shell",
+        "retirer les cartes trop lentes"
+      ],
+      "battlefield_notes": [
+        "Obelisk aide, mais seulement si ton acceleration se traduit en pression reelle.",
+        "Les longs holds d'un seul porteur sont tres dangereux ici."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "jouer trop tall trop tot",
+        "main dependante d'une seule piece",
+        "retard de score plus perte du premier porteur"
+      ],
+      "important_patterns_to_respect": [
+        "Falling Star",
+        "Hextech Ray",
+        "Piercing Light",
+        "Time Warp"
+      ],
+      "variation_notes": {
+        "combo_otk": "Peut voler une partie si Kai'Sa stumble, mais est globalement encore plus polarisant.",
+        "aggro_low_curve": "Peut etre la meilleure maniere de voler ce pairing, justement parce qu'elle oblige Kai'Sa a repondre plus vite."
+      }
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "close_even",
+        "estimated_lucian_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Un retour local recent d'un joueur Lucian undefeated signale un 2-1 contre Irelia et decrit le pairing comme un duel de plans tres proches 'dans des couleurs differentes'. Cela suggere un matchup plus technique que structurellement mauvais.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks jouent des porteurs et des combats tendus.",
+        "Irelia a plus de finesse de protection, Lucian a plus de poids brut sur ses equips et ses closes."
+      ],
+      "opponent_plan": [
+        "installer un porteur cle",
+        "scorer via mobilite et protection"
+      ],
+      "lucian_plan": [
+        "respecter Defiant Dance et les swings de tempo",
+        "ne pas envoyer un porteur a 5 might dans une fenetre de punition obvious",
+        "forcer Irelia a depenser ses protections sur le mauvais front"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment",
+        "Punch First",
+        "Challenge",
+        "main qui conteste tres tot"
+      ],
+      "sideboard_focus": [
+        "Brynhir Thundersong",
+        "Angle Shot selon build",
+        "Ferrous Forerunner si la texture de board le permet"
+      ],
+      "battlefield_notes": [
+        "Le matchup se joue beaucoup sur le mauvais move un tour trop tot.",
+        "Ne laisse pas Irelia garder un battlefield gratuit sous protection."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "sous-estimer Defiant Dance",
+        "jouer trop fair les combats",
+        "perdre la premiere grosse unite pour rien"
+      ],
+      "important_patterns_to_respect": [
+        "Defiant Dance",
+        "GA and boots lines",
+        "double-score pressure"
+      ],
+      "variation_notes": {
+        "combo_otk": "Moins stable ici, car Irelia punit tres bien les turns telegraphed.",
+        "aggro_low_curve": "Peut mieux punir un mauvais depart adverse, mais s'essouffle vite si Irelia commence a controler la math."
+      }
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "unfavorable",
+        "estimated_lucian_winrate_percent": "42-47",
+        "confidence": "medium"
+      },
+      "summary": "Les retours communautaires recents citent Viktor parmi les matchups difficiles de Lucian. Cela colle bien a la faiblesse structurelle du deck: peu de draw, grande dependance a quelques unites ou equips de qualite, et sensibilité aux removals propres.",
+      "why_matchup_plays_this_way": [
+        "Viktor aime casser exactement le type de progression que Lucian essaie d'assembler.",
+        "Lucian doit souvent prendre des risques de tempo ou de protection pour ne pas se faire enfermer."
+      ],
+      "opponent_plan": [
+        "tuer ou neutraliser les bons porteurs",
+        "gagner a l'attrition",
+        "forcer Lucian a manquer de gaz"
+      ],
+      "lucian_plan": [
+        "mettre une vraie clock et ne pas accepter le draw-go",
+        "protections sur les pieces qui comptent vraiment",
+        "eviter d'investir trop d'equipement sur une seule cible sans couverture"
+      ],
+      "mulligan_focus": [
+        "curve proactive",
+        "pas de hand full top-end",
+        "Sabotage si disponible"
+      ],
+      "sideboard_focus": [
+        "Sabotage supplementaire",
+        "plans plus agressifs que plus lourds",
+        "retirer les cartes les plus lentes"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient mauvais si Viktor choisit tous les timings et tous les fronts."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "pas assez de pression",
+        "surexposition d'un porteur cle",
+        "epuisement de la main"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal turns",
+        "token stalls",
+        "attrition loops"
+      ],
+      "variation_notes": {
+        "combo_otk": "Peut voler un BO1, mais est rarement la meilleure facon d'aborder Viktor.",
+        "aggro_low_curve": "Peut etre meilleur si Viktor est trop lent localement, mais structurellement le pairing reste penible."
+      }
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "favorable",
+        "estimated_lucian_winrate_percent": "54-60",
+        "confidence": "medium"
+      },
+      "summary": "C'est le seul matchup ou un retour recent est tres direct: un joueur Lucian parle d'une 'easy win' contre Ezreal, tandis qu'un autre fil recent estime que Lucian peut etre assez bon contre le meta tout en gardant Ezreal dans ses bons pairings.",
+      "why_matchup_plays_this_way": [
+        "Ezreal peut avoir du mal a absorber une pression conqueror bien structuree si Lucian curve proprement.",
+        "Lucian force Ezreal a avoir les bonnes reponses au bon timing, sans lui laisser toujours le temps de grinder."
+      ],
+      "opponent_plan": [
+        "ralentir puis gagner a la carte",
+        "forcer Lucian a jouer trop vite ses protections"
+      ],
+      "lucian_plan": [
+        "mettre un vrai clock",
+        "ne pas surjouer autour de toutes les reponses imaginables",
+        "fermer avant le gros tour violet"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment",
+        "First Mate ou equivalent",
+        "Lucian, Merciless",
+        "main proactive"
+      ],
+      "sideboard_focus": [
+        "Sabotage",
+        "Against the Odds selon version",
+        "pas de surcharge de top-end"
+      ],
+      "battlefield_notes": [
+        "Le matchup se gagne rarement a l'usure. Il se gagne en maintenant Ezreal en mode survie."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "donner trop de temps",
+        "sous-clock",
+        "surproteger une piece au lieu de marquer les points"
+      ],
+      "important_patterns_to_respect": [
+        "late purple chains",
+        "Rhasa turns",
+        "Called Shot loops"
+      ],
+      "variation_notes": {
+        "combo_otk": "Peut etre tres dangereux pour Ezreal si le clock est reel.",
+        "aggro_low_curve": "Probablement aussi bon voire meilleur en BO1."
+      }
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_lucian_winrate_percent": "50-54",
+        "confidence": "low"
+      },
+      "summary": "Annie punit les mains lentes, mais Lucian a de bons moyens de depasser ses breakpoints si la courbe d'equipement sort proprement.",
+      "why_matchup_plays_this_way": [
+        "Annie veut prendre le score avant que Lucian ne trouve sa vraie unite equipee.",
+        "Lucian gagne si ses porteurs deviennent hors de portee des petits bursts trop vite."
+      ],
+      "opponent_plan": [
+        "pression early",
+        "punir les keeps mous",
+        "finir avant que Lucian s'installe"
+      ],
+      "lucian_plan": [
+        "mulligan agressivement les mains lentes",
+        "prendre des combats propres tot",
+        "stabiliser puis renverser sur la qualite du porteur"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment",
+        "curve",
+        "interaction peu chere"
+      ],
+      "sideboard_focus": [
+        "Unyielding Spirit",
+        "cards de stabilisation",
+        "retirer le top-end trop lent"
+      ],
+      "battlefield_notes": [
+        "Les battlefields de pure race sont moins bons que ceux qui permettent a Lucian de tenir proprement puis de reconquerir."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "main lente",
+        "retard trop rapide au score"
+      ],
+      "important_patterns_to_respect": [
+        "fast point starts",
+        "Chaos burst"
+      ],
+      "variation_notes": {
+        "aggro_low_curve": "Peut jouer la meme course de points plus naturellement que le shell midrange."
+      }
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "close_even",
+        "estimated_lucian_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Duel de porteurs et de protections. Lucian a plus de poids brut, Yi plus de finesse reactive.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks aiment tenir un battlefield avec peu de pieces.",
+        "La partie tourne beaucoup autour du bon tour Punch First ou du bon tour de retrait."
+      ],
+      "opponent_plan": [
+        "tenir un front avec protection Calm",
+        "punir les engages trop lisibles"
+      ],
+      "lucian_plan": [
+        "forcer Yi a depenser ses protections avant le vrai push",
+        "eviter de se jeter dans un combat ideal pour lui"
+      ],
+      "mulligan_focus": [
+        "curve stable",
+        "interaction de combat",
+        "pas de hand lourde"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "garder la densite de protections"
+      ],
+      "battlefield_notes": [
+        "Le matchup recompense les holds et les petits edges repetes."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "s'empaler dans un trick Calm",
+        "perdre le premier vrai porteur"
+      ],
+      "important_patterns_to_respect": [
+        "Calm protection chains"
+      ]
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_share_percent": 2,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "close_even",
+        "estimated_lucian_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Sett veut souvent une partie de gros stat-check. Lucian peut jouer cette partie, mais doit conserver l'avantage de tempo plutot que se contenter d'une comparaison de taille brute.",
+      "why_matchup_plays_this_way": [
+        "Sett peut dominer si tout devient simplement une question de stats.",
+        "Lucian doit transformer ses equips et Relentless Pursuit en vrai avantage de score, pas juste en might."
+      ],
+      "opponent_plan": [
+        "poser de gros corps",
+        "forcer des combats frontaux"
+      ],
+      "lucian_plan": [
+        "refuser le pur stat-check si possible",
+        "garder les swings de tempo pour le bon battlefield",
+        "exploiter la mobilite de score plus que la taille pure"
+      ],
+      "mulligan_focus": [
+        "equipment de depart",
+        "porteur fonctionnel",
+        "pas de hand lente"
+      ],
+      "sideboard_focus": [
+        "anti-big threat",
+        "anti-combat spikes"
+      ],
+      "battlefield_notes": [
+        "Sunken Temple aide souvent plus que des fronts trop lineaires."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "jouer trop honnêtement le combat",
+        "laisser Sett dicter les seuils"
+      ],
+      "important_patterns_to_respect": [
+        "buff combat spikes"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_lucian_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Azir peut remplir la table plus naturellement que Lucian et forcer de mauvaises sequences si Lucian ne trouve pas vite un porteur qui compte. Le matchup n'est pas impossible, mais demande une priorite tres claire sur les bonnes cibles.",
+      "why_matchup_plays_this_way": [
+        "Azir aime la largeur et la modularite.",
+        "Lucian prefere un petit nombre de pieces de tres bonne qualite."
+      ],
+      "opponent_plan": [
+        "mettre plusieurs corps et equips",
+        "tenir puis deborder les battlefields"
+      ],
+      "lucian_plan": [
+        "identifier le vrai porteur ou l'equipement qui transforme la table",
+        "ne pas gaspiller ses removals ou ses combats sur chaque token"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment",
+        "interaction de table",
+        "main qui marque tot"
+      ],
+      "sideboard_focus": [
+        "Angle Shot",
+        "Forerunner selon build"
+      ],
+      "battlefield_notes": [
+        "Le matchup se degrade si Azir tient deja un battlefield avant ton premier vrai conquer."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "reponses trop etroites",
+        "retard au score"
+      ],
+      "important_patterns_to_respect": [
+        "Azir Sovereign turns",
+        "equipment-fueled flood"
+      ]
+    },
+    {
+      "opponent": "Fiora, Grand Duelist",
+      "meta_share_percent": 3,
+      "default_shell": "Body/Fury Equipment Conqueror Midrange",
+      "lucian_outlook": {
+        "label": "close_even",
+        "estimated_lucian_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Duel de porteurs equips, ou le joueur qui depense le mieux ses protections et ses thresholds de might prend souvent toute la partie.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks veulent qu'une ou deux pieces comptent beaucoup.",
+        "Lucian a un peu plus de vitesse de close, Fiora souvent un peu plus de qualite dans le duel pur."
+      ],
+      "opponent_plan": [
+        "installer un porteur premium",
+        "forcer Lucian a repondre inefficacement"
+      ],
+      "lucian_plan": [
+        "ne pas gaspiller Punch First",
+        "faire compter Relentless Pursuit quand Fiora pense encore tenir"
+      ],
+      "mulligan_focus": [
+        "curve stable",
+        "interaction sur porteur"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "retirer les cartes mortes contre largeur absente"
+      ],
+      "battlefield_notes": [
+        "Le matchup recompense les turns de false security puis de close brutal."
+      ],
+      "main_lose_conditions_for_lucian": [
+        "laisser vivre la mauvaise piece trop longtemps",
+        "jouer trop lineaire"
+      ],
+      "important_patterns_to_respect": [
+        "voltron turns",
+        "combat protection chains"
+      ]
+    }
+  ],
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "keep": [
+        "1-cost equipment",
+        "First Mate ou autre vrai body de debut",
+        "Lucian, Merciless si la curve suit",
+        "une interaction ou un trick"
+      ],
+      "ship": [
+        "no equipment opener",
+        "main full top-end",
+        "main all-combo sans clock",
+        "main qui demande topdeck parfait"
+      ],
+      "notes": [
+        "Lucian mulligan beaucoup plus fort que les decks violets.",
+        "Une main simplement solide vaut souvent mieux qu'une main plus puissante mais incoherente."
+      ]
+    },
+    "draven_midrange": {
+      "keep": [
+        "1-cost equipment",
+        "First Mate",
+        "Punch First",
+        "Lucian, Merciless"
+      ],
+      "ship": [
+        "main lente",
+        "main full top-end",
+        "main qui ne sait ni scorer ni tenir"
+      ]
+    },
+    "draven_miracle": {
+      "keep": [
+        "main proactive",
+        "Sabotage si disponible",
+        "equipment plus porteur plus pression"
+      ],
+      "ship": [
+        "main sans clock",
+        "main full combo sans protection"
+      ]
+    },
+    "kaisa": {
+      "keep": [
+        "curve agressive",
+        "plusieurs menaces imparfaites",
+        "pas de main all-in sur un seul porteur"
+      ],
+      "ship": [
+        "main trop tall trop tot",
+        "main lente",
+        "main sans pression"
+      ]
+    },
+    "irelia": {
+      "keep": [
+        "1-cost equipment",
+        "Challenge",
+        "Punch First",
+        "main de board"
+      ],
+      "ship": [
+        "main greed",
+        "main combo-only"
+      ]
+    },
+    "viktor": {
+      "keep": [
+        "curve proactive",
+        "Sabotage si joue",
+        "porteurs diversifies"
+      ],
+      "ship": [
+        "main trop dependante d'une seule piece",
+        "main sans plan de score"
+      ]
+    },
+    "ezreal": {
+      "keep": [
+        "1-cost equipment",
+        "porteur precoce",
+        "main avec vraie clock"
+      ],
+      "ship": [
+        "main lente",
+        "main de pure value"
+      ]
+    },
+    "annie": {
+      "keep": [
+        "1-cost equipment",
+        "curve",
+        "interaction peu chere"
+      ],
+      "ship": [
+        "main lente",
+        "main full top-end"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "draven_midrange": {
+      "in": [
+        "Sabotage supplementaire selon liste",
+        "Ferrous Forerunner selon texture du board",
+        "Unyielding Spirit selon builds locaux"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "slots trop combo s'ils ne contribuent pas au score"
+      ],
+      "plan": [
+        "Ne pas offrir de combats gratuits.",
+        "Rester capable de reconquerir le tour suivant."
+      ]
+    },
+    "draven_miracle": {
+      "in": [
+        "Sabotage",
+        "Against the Odds selon shell combo",
+        "anti-miracle flex slots"
+      ],
+      "out": [
+        "cartes fair les plus lentes",
+        "surplus de top-end"
+      ],
+      "plan": [
+        "Garder la pression tout en respectant le gros swing turn."
+      ]
+    },
+    "kaisa": {
+      "in": [
+        "Sabotage supplementaire",
+        "plans plus agressifs",
+        "anti-removal tech selon liste"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "pièces qui deviennent juste de mauvaises cibles de removal"
+      ],
+      "plan": [
+        "Ne pas tout miser sur un seul porteur.",
+        "Forcer Kai'Sa a repondre a plus d'un probleme."
+      ]
+    },
+    "irelia": {
+      "in": [
+        "Brynhir Thundersong",
+        "Angle Shot",
+        "Ferrous Forerunner selon texture"
+      ],
+      "out": [
+        "top-end trop lent",
+        "cartes combo non essentielles"
+      ],
+      "plan": [
+        "Plus de combat quality, moins de greed."
+      ]
+    },
+    "viktor": {
+      "in": [
+        "Sabotage",
+        "plans plus agressifs",
+        "anti-removal flex slots"
+      ],
+      "out": [
+        "cartes qui n'ont de sens que si tu as deja le board"
+      ],
+      "plan": [
+        "Garder une vraie clock.",
+        "Ne pas jouer le matchup en draw-go."
+      ]
+    },
+    "ezreal": {
+      "in": [
+        "Sabotage",
+        "plans de close rapides",
+        "anti-purple flex slots"
+      ],
+      "out": [
+        "cards too clunky",
+        "surplus de board-fight pur"
+      ],
+      "plan": [
+        "Clock plus pression de ressources."
+      ]
+    },
+    "annie": {
+      "in": [
+        "stabilisation",
+        "protections peu couteuses"
+      ],
+      "out": [
+        "top-end lent",
+        "combo pieces trop gourmandes"
+      ],
+      "plan": [
+        "Passer les premiers tours sans trop saigner."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "equipment_midrange_priority": [
+        "Obelisk of Power",
+        "Sunken Temple",
+        "Forge of the Fluft"
+      ],
+      "combo_otk_priority": [
+        "Sunken Temple",
+        "Grove of the God-Willow",
+        "Targon's Peak"
+      ],
+      "aggro_low_curve_priority": [
+        "Obelisk of Power",
+        "Sunken Temple",
+        "tempo battlefields"
+      ],
+      "notes": [
+        "Obelisk reste le meilleur battlefield generique pour Lucian, car il accelere la fenetre de close.",
+        "Sunken Temple aide beaucoup les plans conqueror en chaine et les turns de repartition de pression."
+      ]
+    },
+    "draven_midrange": {
+      "preferred": [
+        "Obelisk of Power",
+        "Sunken Temple"
+      ],
+      "plan": [
+        "Tiens un battlefield proprement et menace le second.",
+        "Ne pas courir les deux fronts sans protection."
+      ]
+    },
+    "draven_miracle": {
+      "preferred": [
+        "Obelisk of Power"
+      ],
+      "secondary": [
+        "Sunken Temple"
+      ],
+      "plan": [
+        "Tu veux un front fort, pas deux fronts fragiles."
+      ]
+    },
+    "kaisa": {
+      "preferred": [
+        "Obelisk of Power"
+      ],
+      "secondary": [
+        "Sunken Temple"
+      ],
+      "plan": [
+        "Les longs holds d'un seul porteur sont dangereux; garde une pression plus modulaire."
+      ]
+    },
+    "irelia": {
+      "preferred": [
+        "Sunken Temple",
+        "Obelisk of Power"
+      ],
+      "plan": [
+        "Le matchup se gagne souvent sur le bon battlefield conteste, pas sur une race globale."
+      ]
+    },
+    "viktor": {
+      "preferred": [
+        "Obelisk of Power"
+      ],
+      "secondary": [
+        "Forge of the Fluft"
+      ],
+      "plan": [
+        "Tu veux un battlefield qui transforme vite la moindre ouverture en vrai score."
+      ]
+    },
+    "ezreal": {
+      "preferred": [
+        "Obelisk of Power",
+        "Sunken Temple"
+      ],
+      "plan": [
+        "Ne lui donne pas le luxe d'une partie purement lente."
+      ]
+    },
+    "annie": {
+      "preferred": [
+        "Obelisk of Power"
+      ],
+      "plan": [
+        "La vitesse du scoreboard compte plus que la value pure."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Riftbound.gg - Lucian, Purifier Guide",
+      "date": "2026-02-14",
+      "url": "https://riftbound.gg/lucian-purifier-guide/",
+      "notes": "Base sur l'identite conqueror equipment, les restrictions de construction, le role de Lucian, Merciless et la logique de protection des unites."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "Riftbound official - Vegas Top Decks",
+      "date": "2026-03-04",
+      "url": "https://riftbound.leagueoflegends.com/en-us/news/organizedplay/vegas-top-decks/",
+      "notes": "Best-of Lucian officiel: DaemonXGG, #56 overall, shell Body/Fury equipment midrange."
+    },
+    {
+      "id": "S3",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Vegas",
+      "date": "2026-03-06",
+      "url": "https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-post-vegas-metagame/",
+      "notes": "Lucian Tier 2, 92 picks, 14.1% conversion Day 2, 47.3% win rate."
+    },
+    {
+      "id": "S4",
+      "type": "tier list",
+      "title": "Riftbound.gg - Global Release & Post Chinese Regionals Tier List",
+      "date": "2026-02-28",
+      "url": "https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-global-release-post-chinese-regionals/",
+      "notes": "Lucian Tier 2 apres les premiers regionaux chinois."
+    },
+    {
+      "id": "S5",
+      "type": "meta stats",
+      "title": "RiftDecks - Spiritforged Legends Meta Breakdown",
+      "date_consulted": "2026-03-11",
+      "url": "https://riftdecks.com/legends",
+      "notes": "Lucian autour de 2% de metashare et Tier 3 sur le snapshot consulte."
+    },
+    {
+      "id": "S6",
+      "type": "community thread",
+      "title": "Undefeated Lucian at Nexus Night",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rdklg9/undefeated_lucian_at_nexus_night/",
+      "notes": "Source utile sur le plan anti-Draven, les ajustements locaux, et une lecture de certains matchups dont Irelia."
+    },
+    {
+      "id": "S7",
+      "type": "community thread",
+      "title": "Thinking about switching off Lucian",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1roja5f/thinking_about_switching_off_lucian/",
+      "notes": "Source utile sur la critique 'combo cards suck in a fair midrange plan' et sur l'existence d'un aggro Lucian juge meilleur par certains."
+    },
+    {
+      "id": "S8",
+      "type": "community thread",
+      "title": "Near flawless skirmish using Lucian against the meta",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rp46jq/near_flawless_skirmish_using_lucian_against_the/",
+      "notes": "Retour matchup recent: Draven 50/50, Viktor et Kai'Sa difficiles, Ezreal favorable."
+    },
+    {
+      "id": "S9",
+      "type": "community thread",
+      "title": "Lucian has one of the best played-to-top ratios in China. Lucian OTK is real!",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1q0c3f4/lucian_has_one_of_the_best_playedtotop_ratios_in/",
+      "notes": "Support pour l'existence d'un vrai shell Lucian OTK/combo."
+    },
+    {
+      "id": "S10",
+      "type": "deck database",
+      "title": "RiftMana - Fury Body Lucian, Purifier deck",
+      "date_consulted": "2026-03-11",
+      "url": "https://riftmana.com/decks/surprise-lucian-l1u3uh/",
+      "notes": "Support concret pour un shell Body/Fury plus explosif, avec Blood Rush, Gem Jammer, Darius, Dunebreaker et sideboard adapte."
+    },
+    {
+      "id": "S11",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List First Month",
+      "date": "2026-01-16",
+      "url": "https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-first-month/",
+      "notes": "Contexte de depart ou Lucian etait plutot percu Tier 3 bas."
+    },
+    {
+      "id": "S12",
+      "type": "community thread",
+      "title": "Trying to figure out the Meta",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rm6hx9/trying_to_figure_out_the_meta/",
+      "notes": "Perception communautaire recente de Lucian comme deck reeel mais peu constant."
+    }
+  ]
+}

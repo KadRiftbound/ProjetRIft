@@ -5,30 +5,11 @@ import Link from "next/link";
 import { ALL_CARDS } from "../lib/cards";
 import { LEGENDS } from "../lib/legend-index";
 import { CardRail } from "../components/ui/CardRail";
+import { CARD_RAIL_IMAGES, DOMAIN_COLORS_SOLID } from "../lib/ui-constants";
 
-const BEAUTIFUL_CARDS = [
-  { id: "OGN-66", name: "Ahri, Alluring", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fabbcc2f83f397cf07299236a702db05a151053b-744x1039.png" },
-  { id: "OGN-41", name: "Volibear, Furious", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c9165d49b8caae9a856433cd5151e8b368eb80b5-744x1039.png" },
-  { id: "OGN-39", name: "Kai'Sa, Survivor", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ad69bde670ce218adee1d2a618a7295d2fb7bd4c-744x1039.png" },
-  { id: "OGN-55", name: "Yasuo, Tempest", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8f2cf4d6c0bcf65e93f7f4cf2cc5b6d6a7bd8c1a-744x1039.png" },
-  { id: "OGN-45", name: "Thresh, Eternal", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9a8c5d4e3b7cf76e84f6e5dd2bb4c5e7b8cd9a2b-744x1039.png" },
-  { id: "OGN-37", name: "Leona, Radiant", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7b6d5e4c3a8bf97f65e4f5cc2aa5b6d7c8be8a3b-744x1039.png" },
-  { id: "SFD-185", name: "Draven, Vanquisher", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8fa3f1fe63392c4744152d98ff781497a4d17b74-744x1039.png" },
-  { id: "SFD-195", name: "Irelia, Blade Dancer", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7e8d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1e0d9-744x1039.png" },
-  { id: "SFD-132", name: "Kai'Sa, Void Seeker", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/6d5c4b3a2e1f0d9c8b7a6f5e4d3c2b1a0f9e8d7-744x1039.png" },
-  { id: "OGN-299", name: "Aurelion Sol, Star Forger", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5c4b3a2d1e0f9c8b7a6f5e4d3c2b1a0f9e8d7c-744x1039.png" },
-];
+const BEAUTIFUL_CARDS = CARD_RAIL_IMAGES;
 
 const DOMAINS = ['Fury', 'Calm', 'Mind', 'Body', 'Chaos', 'Order'];
-
-const DOMAIN_COLORS: Record<string, string> = {
-  Fury: 'bg-red-500/80 text-white',
-  Calm: 'bg-blue-500/80 text-white',
-  Mind: 'bg-purple-500/80 text-white',
-  Body: 'bg-yellow-500/80 text-black',
-  Chaos: 'bg-emerald-500/80 text-white',
-  Order: 'bg-orange-500/80 text-white',
-};
 
 export default function LegendsPage() {
   const [selectedDomain, setSelectedDomain] = useState<string>("all");
@@ -66,13 +47,15 @@ export default function LegendsPage() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10 px-4">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-3">
-            Légendes <span className="text-rift-blue italic">Riftbound</span>
+          <h1 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+            Légendes
           </h1>
-          <p className="text-base text-gray-400">Cliquez sur une carte pour accéder au guide</p>
+          <p className="text-lg font-semibold text-rift-blue bg-rift-blue/10 px-6 py-3 rounded-2xl inline-block border border-rift-blue/30 shadow-[0_0_20px_rgba(10,200,255,0.2)]">
+            Cliquez sur une carte pour accéder au guide
+          </p>
         </div>
 
         {/* Domain Filter Tabs */}
@@ -103,7 +86,7 @@ export default function LegendsPage() {
         </div>
 
         {/* Legends Grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-6 gap-4">
           {filteredLegends.map((legend) => {
             const cardData = getCardData(legend.legend.id);
             return (
@@ -127,11 +110,11 @@ export default function LegendsPage() {
                   
                   {/* Domain badges */}
                   <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1">
-                    <span className={`text-[9px] font-bold px-2 py-0.5 rounded ${DOMAIN_COLORS[legend.domain]}`}>
+                    <span className={`text-[9px] font-bold px-2 py-0.5 rounded ${DOMAIN_COLORS_SOLID[legend.domain]?.bg} ${DOMAIN_COLORS_SOLID[legend.domain]?.text}`}>
                       {legend.domain.slice(0, 4).toUpperCase()}
                     </span>
                     {legend.secondaryDomain && (
-                      <span className={`text-[9px] font-bold px-2 py-0.5 rounded ${DOMAIN_COLORS[legend.secondaryDomain]}`}>
+                      <span className={`text-[9px] font-bold px-2 py-0.5 rounded ${DOMAIN_COLORS_SOLID[legend.secondaryDomain]?.bg} ${DOMAIN_COLORS_SOLID[legend.secondaryDomain]?.text}`}>
                         {legend.secondaryDomain.slice(0, 4).toUpperCase()}
                       </span>
                     )}

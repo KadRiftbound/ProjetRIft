@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { Button } from './ui/Button';
 
 interface DeckOfTheDay {
   deck: {
@@ -132,12 +133,14 @@ export function DeckOfTheDay() {
               </div>
             </div>
 
-            <Link
+            <Button
               href={`/deckbuilder?deck=${encodeURIComponent(deck.champion)}`}
-              className="flex items-center justify-center gap-2 w-full py-4 bg-white text-black font-black rounded-xl text-sm tracking-widest hover:scale-[1.02] transition-all"
+              variant="secondary"
+              size="lg"
+              className="w-full"
             >
               🎯 Construire ce deck
-            </Link>
+            </Button>
           </div>
 
           {/* Right - Key Cards */}

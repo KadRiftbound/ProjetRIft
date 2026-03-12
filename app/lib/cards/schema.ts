@@ -48,11 +48,11 @@ export const DOMAINS: DomainType[] = ['Fury', 'Calm', 'Mind', 'Body', 'Chaos', '
 export const DOMAIN_COLORS: Record<string, string> = {
   // Domaines actuels
   Fury:      'text-red-400 border-red-500/30 bg-red-500/10',
-  Calm:      'text-blue-400 border-blue-500/30 bg-blue-500/10',
-  Mind:      'text-purple-400 border-purple-500/30 bg-purple-500/10',
-  Body:      'text-yellow-400 border-yellow-500/30 bg-yellow-500/10',
-  Chaos:     'text-emerald-400 border-emerald-500/30 bg-emerald-500/10',
-  Order:     'text-orange-400 border-orange-500/30 bg-orange-500/10',
+  Calm:      'text-green-400 border-green-500/30 bg-green-500/10',
+  Mind:      'text-blue-400 border-blue-500/30 bg-blue-500/10',
+  Body:      'text-orange-400 border-orange-500/30 bg-orange-500/10',
+  Chaos:     'text-purple-400 border-purple-500/30 bg-purple-500/10',
+  Order:     'text-yellow-400 border-yellow-500/30 bg-yellow-500/10',
   Colorless: 'text-gray-400 border-gray-500/30 bg-gray-500/10',
   // Domaines hérités (tierlist/meta)
   Cunning:   'text-blue-400 border-blue-500/30 bg-blue-500/10',

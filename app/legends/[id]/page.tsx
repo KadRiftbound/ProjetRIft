@@ -2,9 +2,34 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCardById, searchCards, transformCardToView } from "../../lib/riftcodex";
 import { getLegendGuide } from "../../lib/legend-guides";
+import { Button } from "../../components/ui/Button";
+import { generatePageSEO } from "../../lib/seo-config";
+import { generateBreadcrumbJSON_LD } from "../../lib/json-ld";
+import type { Metadata } from "next";
+
+const SITE_URL = 'https://riftbound.fr';
 
 interface Props {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const card = await getCardById(id);
+  
+  if (!card) {
+    return generatePageSEO({
+      title: "Légende",
+      description: "Guide de stratégie pour une légende Riftbound",
+      path: `/legends/${id}`,
+    });
+  }
+  
+  return generatePageSEO({
+    title: card.name,
+    description: `Guide complet pour jouer ${card.name} dans Riftbound TGC. Strategie, combos et conseils méta.`,
+    path: `/legends/${id}`,
+  });
 }
 
 export async function generateStaticParams() {
@@ -185,6 +210,31 @@ export default async function LegendDetailPage({ params }: Props) {
               </div>
             )}
 
+            {/* Non-Meta with Strategy (no techniques) */}
+            {!guide.isMeta && !guide.techniques && guide.strategy && (
+              <div className="bg-white/5 rounded-[56px] border border-white/10 p-16 backdrop-blur-2xl">
+                <div className="flex items-center gap-6 mb-12">
+                  <div className="w-16 h-16 rounded-3xl bg-white/5 flex items-center justify-center text-3xl border border-white/10 shadow-inner">🎯</div>
+                  <h3 className="text-4xl font-black uppercase tracking-tighter">Guide Simplifié</h3>
+                </div>
+                <div className="space-y-10">
+                  {[
+                    { l: 'Early', t: guide.strategy?.early, c: 'text-rift-blue', bg: 'bg-rift-blue/10' },
+                    { l: 'Mid', t: guide.strategy?.mid, c: 'text-rift-purple', bg: 'bg-rift-purple/10' },
+                    { l: 'Late', t: guide.strategy?.late, c: 'text-rift-gold', bg: 'bg-rift-gold/10' }
+                  ].map(s => (
+                    <div key={s.l} className="flex gap-8">
+                      <div className={`shrink-0 w-12 h-12 rounded-2xl ${s.bg} flex items-center justify-center font-black ${s.c} border border-current opacity-40`}>{s.l[0]}</div>
+                      <div>
+                        <h4 className={`font-black text-xs uppercase tracking-widest mb-2 ${s.c}`}>{s.l} Game</h4>
+                        <p className="text-gray-400 text-sm leading-relaxed font-medium">{s.t}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Non-Meta / Techniques Specific Content */}
             {!guide.isMeta && guide.techniques && (
               <div className="grid lg:grid-cols-2 gap-12">
@@ -222,6 +272,25 @@ export default async function LegendDetailPage({ params }: Props) {
                       </div>
                     ))}
                   </div>
+                </div>
+              </div>
+            )}
+
+            {/* Tips Section */}
+            {guide.tips && guide.tips.length > 0 && (
+              <div className="bg-rift-dark-secondary rounded-[56px] border border-white/5 p-16 shadow-2xl">
+                <div className="flex items-center gap-6 mb-12">
+                  <div className="w-16 h-16 rounded-3xl bg-white/5 flex items-center justify-center text-3xl border border-white/10 shadow-inner">💡</div>
+                  <h3 className="text-4xl font-black uppercase tracking-tighter">Conseils Clés</h3>
+                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {guide.tips.map((tip, i) => (
+                    <div key={i} className="p-8 rounded-[32px] bg-black/40 border border-white/5 group hover:border-rift-gold/30 transition-all duration-500">
+                      <p className="text-gray-300 font-medium leading-relaxed">
+                        <span className="text-rift-gold font-black mr-4">•</span> {tip}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </div>
             )}
@@ -297,21 +366,44 @@ export default async function LegendDetailPage({ params }: Props) {
             PRÊT À FORGER VOTRE <br /><span className="text-rift-gold">PROPRE DECK ?</span>
           </h2>
           <div className="flex flex-wrap gap-6 justify-center">
-            <Link 
+            {guide && (
+              <Button 
+                href={`/legends/${transformedCard.id}/guide`}
+                variant="purple"
+                size="xl"
+              >
+                Guide Complet
+              </Button>
+            )}
+            <Button 
               href={`/deckbuilder?legend=${transformedCard.id}`}
-              className="px-12 py-6 bg-white text-black font-black rounded-[24px] hover:scale-105 transition-all shadow-2xl active:scale-95 uppercase tracking-widest"
+              variant="secondary"
+              size="xl"
             >
-              Lancer le Builder 📋
-            </Link>
-            <Link 
+              Lancer le Builder
+            </Button>
+            <Button 
               href={`/cards?domain=${transformedCard.domain}`}
-              className="px-12 py-6 bg-white/5 border-2 border-white/10 text-white font-black rounded-[24px] hover:bg-white/10 transition-all active:scale-95 uppercase tracking-widest"
+              variant="outline"
+              size="xl"
             >
-              Cartes {transformedCard.domain} →
-            </Link>
+              Cartes {transformedCard.domain}
+            </Button>
           </div>
         </div>
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateBreadcrumbJSON_LD([
+              { name: 'Accueil', url: SITE_URL },
+              { name: 'Légendes', url: `${SITE_URL}/legends` },
+              { name: transformedCard?.name || 'Légende', url: `${SITE_URL}/legends/${id}` },
+            ])
+          )
+        }}
+      />
     </div>
   );
 }

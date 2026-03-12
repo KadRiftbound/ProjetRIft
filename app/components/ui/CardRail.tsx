@@ -19,18 +19,24 @@ export function CardRail({
   className = "",
   imageClassName = "",
   cardClassName = "",
+  speed = "fast",
 }: {
-  cards: CardRailCard[];
+  cards: readonly CardRailCard[] | CardRailCard[];
   reverse?: boolean;
   className?: string;
   imageClassName?: string;
   cardClassName?: string;
+  speed?: "fast" | "slow" | "champions";
 }) {
-  const tripled = [...cards, ...cards, ...cards];
+  const tripled = [...cards, ...cards, ...cards] as CardRailCard[];
+
+  const speedClass = speed === "champions" 
+    ? (reverse ? "animate-scroll-champions-reverse" : "animate-scroll-champions")
+    : (reverse ? "animate-scroll-slow-reverse" : "animate-scroll-fast");
 
   return (
     <div
-      className={`flex gap-6 ${reverse ? "animate-scroll-slow-reverse" : "animate-scroll-fast"} ${className}`}
+      className={`flex gap-6 ${speedClass} ${className}`}
     >
       {tripled.map((card, i) => {
         const isId = typeof card.id === 'string' && card.id.includes('-');

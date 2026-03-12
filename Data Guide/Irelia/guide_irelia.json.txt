@@ -1,0 +1,765 @@
+{
+  "guide_name": "Irelia_meta_Riftbound",
+  "format": "constructed_spiritforged",
+  "patch_window": "mars_2026",
+  "language": "fr",
+  "methodology": {
+    "objective": "guide compétitif complet orienté ladder/tournois pour Irelia dans la méta Riftbound de mars 2026",
+    "data_policy": {
+      "winrate_displayed": false,
+      "pickrate_displayed": false,
+      "raw_rate_storage": false,
+      "rates_may_inform_analysis": true
+    },
+    "confidence_model": {
+      "high": "confirmé par guide/meta report + plusieurs retours communautaires cohérents",
+      "medium": "confirmé par au moins une source structurée + quelques retours joueurs",
+      "low": "inférence prudente, peu de convergences"
+    }
+  },
+  "meta_positioning": {
+    "tier_estimate": "tier_1",
+    "meta_role": "deck de tempo-protection-swing capable de marquer 2 points par tour en sautant entre les battlefields",
+    "identity": [
+      "pression par mobilité",
+      "score explosif plutôt que grind pur",
+      "gagne via fenêtres précises plus que via force brute",
+      "punition forte des decks qui interagissent mal avec Deflect et les tricks bon marché"
+    ],
+    "why_play_irelia": [
+      "excellent plafond de skill",
+      "capacité à retourner des courses aux points",
+      "gros levier de pilotage sur les séquences de combat",
+      "bonne punition des lignes trop linéaires ou trop 'fair'"
+    ],
+    "why_not_play_irelia": [
+      "mauvais deck pour autopilot",
+      "beaucoup de défaites viennent d'un mauvais timing de commit",
+      "fortement dépendant de la lecture adverse",
+      "certains matchups demandent un sideboard précis et une discipline stricte sur les ressources"
+    ]
+  },
+  "core_shell": {
+    "reference_competitive_shell": "Bologna_top4_Krowz_shell",
+    "main_plan": {
+      "primary_win_condition": "Irelia_Fervent protégée puis déplacée/ré-engagée pour prendre les deux battlefields sur des tours clés",
+      "secondary_win_condition": "Draven_Audacious comme plan B pour accélérer les points et alléger la contrainte de double prise",
+      "tempo_engine": [
+        "Boots_of_Swiftness",
+        "Guardian_Angel",
+        "tricks de combat peu chers",
+        "effets de protection/réponse"
+      ]
+    },
+    "typical_core_cards": [
+      "Irelia_Blade_Dancer",
+      "Irelia_Fervent",
+      "Boots_of_Swiftness",
+      "Charm",
+      "Defiant_Dance",
+      "Defy",
+      "Discipline",
+      "En_Garde",
+      "Fight_or_Flight",
+      "Guardian_Angel",
+      "Not_So_Fast",
+      "Sneaky_Deckhand",
+      "Stellacorn_Herder",
+      "Zhonya's_Hourglass",
+      "Draven_Audacious"
+    ],
+    "common_sideboard_tools": [
+      "Adaptatron",
+      "Rebuke",
+      "Hard_Bargain",
+      "extra_Defy",
+      "extra_Zhonya's",
+      "Flash"
+    ],
+    "important_build_splits": [
+      {
+        "name": "Bologna_China_style",
+        "profile": "plus stable, plus orienté Fervent + Boots + protection, présence d'unités utilitaires comme Sneaky Deckhand / Stellacorn Herder",
+        "pros": [
+          "plan principal très clair",
+          "meilleure densité de cartes qui servent le cœur du deck",
+          "très bon pour apprendre les patterns fondamentaux"
+        ],
+        "cons": [
+          "moins de flexibilité brute dans certains mirrors ou métas très hostiles",
+          "peut sembler dépendant d'Irelia si mal séquencé"
+        ]
+      },
+      {
+        "name": "Vegas_controlly_style",
+        "profile": "plus de Vex, parfois moins de petits body utilitaires, plan plus contrôlant et plus 'anti-combat'",
+        "pros": [
+          "meilleur contre certains champs de créatures et mirrors",
+          "plus de redondance dans les matchups de friction"
+        ],
+        "cons": [
+          "moins intuitif",
+          "peut perdre en explosivité et en pression pure"
+        ]
+      }
+    ]
+  },
+  "deck_philosophy": {
+    "golden_rule": "ne pas transformer chaque main en course aux points immédiate",
+    "true_axis": [
+      "préserver l'unité qui convertit vraiment les points",
+      "forcer l'adversaire à interagir sur tes timings",
+      "ne commit les tricks qu'aux combats qui changent l'état de la partie"
+    ],
+    "what_new_players_get_wrong": [
+      "équiper trop tôt",
+      "jouer Irelia/Fervent sans couverture",
+      "brûler des tricks pour sauver des unités sans vraie valeur de score",
+      "vouloir contester tous les premiers points",
+      "confondre 'avoir un combat' avec 'avoir un combat rentable'"
+    ],
+    "what_good_players_do": [
+      "identifient le tour pivot où la prise de deux battlefields devient réaliste",
+      "gardent des lignes de protection ouvertes selon le removal adverse",
+      "acceptent de perdre du tempo visible pour gagner le tour de bascule",
+      "calculent la consommation de runes avant d'équiper et avant d'utiliser la legend ability"
+    ]
+  },
+  "global_tips": {
+    "macro": [
+      "Irelia gagne souvent en donnant l'impression d'être derrière puis en renversant la course sur 1 à 2 tours de swing.",
+      "Si ta main ne permet pas de protéger le vrai porteur de victoire, joue pour ralentir, recycler et préparer un meilleur tour plutôt que pour forcer.",
+      "Le deck récompense davantage la qualité du tour décisif que la quantité de petits échanges gagnés.",
+      "Contre les decks de removal jaune ou les listes avec beaucoup de dégâts de base, il faut privilégier l'accès aux contres/protections sur les buffs 'win more'.",
+      "Boots_of_Swiftness n'est pas juste un équipement de mobilité ; c'est un multiplicateur de points et une menace de double score."
+    ],
+    "resource_management": [
+      "Ne dépense pas tes runes simplement parce que tu peux. Dépenser 1 à 2 runes de trop un tour avant le pivot te fait souvent perdre la fenêtre entière.",
+      "Card draw > simple confort de puissance dans la plupart des builds Irelia; les discussions récentes convergent sur le fait qu'une mauvaise gestion des runes se corrige plus par le pilotage que par l'ajout de cartes médiocres de génération.",
+      "Les tricks de protection doivent être hiérarchisés : sauver la menace principale > sauver un body utilitaire > gratter un point de might."
+    ],
+    "battlefield_logic": [
+      "Pense toujours en paire de battlefields et non en battlefield isolé.",
+      "Le bon tour Irelia est souvent celui où l'adversaire ne peut pas couvrir simultanément la reprise du premier terrain et la contestation du second.",
+      "Quand un matchup te punit peu sur le hold, verrouiller un battlefield peut valoir plus qu'essayer de reprendre les deux."
+    ]
+  },
+  "advanced_techniques": {
+    "techniques": [
+      {
+        "name": "double_score_windowing",
+        "description": "Construire plusieurs tours à l'avance la séquence où Irelia/Fervent équipée peut menacer deux prises dans le même cycle.",
+        "execution": [
+          "préserver l'équipement clé",
+          "garder au moins une protection active",
+          "forcer l'adversaire à utiliser une réponse sur une cible secondaire avant le tour pivot"
+        ]
+      },
+      {
+        "name": "protection_layering",
+        "description": "Ne révèle pas ta meilleure protection en premier si une couche inférieure suffit.",
+        "execution": [
+          "utiliser la réponse minimale qui conserve l'initiative",
+          "garder les cartes les plus universelles pour le deuxième échange",
+          "forcer l'adversaire à 'tester' tes lignes avant de commit son removal premium"
+        ]
+      },
+      {
+        "name": "combat_selection",
+        "description": "Tous les combats n'ont pas à être gagnés; seuls ceux qui empêchent un swing adverse ou ouvrent ton double score sont obligatoires.",
+        "execution": [
+          "laisser passer les combats à faible impact de points",
+          "sur-protéger seulement les unités qui convertissent l'avantage en score",
+          "éviter les trades qui ne font qu'échanger une carte contre une carte sans changer la pression sur les terrains"
+        ]
+      },
+      {
+        "name": "delayed_commit",
+        "description": "Contre removal lourd, retarder de 1 tour le vrai commit est souvent meilleur que jouer 'curve'.",
+        "execution": [
+          "poser support/équipement avant la menace centrale",
+          "forcer une première interaction sur une unité modeste",
+          "présenter Irelia/Fervent quand tu as déjà la mana et la carte pour la protéger"
+        ]
+      },
+      {
+        "name": "boots_as_threat_not_value",
+        "description": "Les Boots ne servent pas seulement à optimiser une ligne existante; elles créent en elles-mêmes une contrainte de positionnement adverse.",
+        "execution": [
+          "équiper quand le déplacement devient immédiatement crédible",
+          "éviter l'équipement 'gratuit' si l'adversaire peut le punir avant que la mobilité ne convertisse",
+          "faire compter psychologiquement la menace du deuxième terrain"
+        ]
+      },
+      {
+        "name": "legend_activation_discipline",
+        "description": "L'activation de legend est une ressource de score, pas un réflexe.",
+        "execution": [
+          "l'utiliser pour convertir un vrai break-point",
+          "éviter les activations qui te laissent trop bas en runes avant le tour de défense",
+          "prioriser les activations qui menacent à la fois score et protection"
+        ]
+      }
+    ],
+    "micro_patterns": [
+      "Contre Draven, préparer un gros Herder sur le tour 4 est une ligne citée par des joueurs pour reprendre l'initiative sur la course.",
+      "Contre decks removal jaune, muller plus agressivement vers contre/protection que vers buffs purs.",
+      "Contre trésor/gear adverses, Sneaky_Deckhand est particulièrement important dans certains games plans de déni."
+    ]
+  },
+  "advanced_mulligan": {
+    "philosophy": "le mulligan Irelia dépend d'abord du matchup, ensuite du pair de battlefields, puis de l'ordre du tour",
+    "generic_keep_priority": [
+      "Irelia_Fervent si la main a déjà un minimum de protection ou de setup cohérent",
+      "Boots_of_Swiftness quand la map et le tempo rendent le plan de double score crédible",
+      "Guardian_Angel ou autre protection clé dans les matchups removal",
+      "au moins une pièce proactive utile (petit body, setup, équipement, carte de pression)"
+    ],
+    "generic_throw_priority": [
+      "mains pleines de tricks sans porteur ni plan de pression",
+      "mains trop lourdes avec Draven_Audacious sans angle clair",
+      "combinaisons de buffs qui ne protègent pas contre l'interaction attendue",
+      "cartes de niche de sideboard gardées sans cible claire"
+    ],
+    "heuristics": [
+      {
+        "rule": "contre jaune/control-removal",
+        "priority": "chercher protection/counter avant buffs",
+        "confidence": "high"
+      },
+      {
+        "rule": "si going_first avec battlefield très favorable à Boots/Obelisk",
+        "priority": "Boots devient un keep nettement plus acceptable",
+        "confidence": "medium"
+      },
+      {
+        "rule": "contre decks où le premier point compte peu",
+        "priority": "ne pas surmull pour contester immédiatement; garder une main qui prépare le pivot",
+        "confidence": "high"
+      },
+      {
+        "rule": "contre decks qui punissent les petites unités",
+        "priority": "éviter les mains trop dépendantes d'une chaîne de petits bodies fragiles",
+        "confidence": "medium"
+      }
+    ],
+    "sample_keep_buckets": {
+      "great_hand": [
+        "Fervent + protection + setup/mobilité",
+        "Boots + support + interaction adaptée au matchup",
+        "pression crédible + deuxième couche de protection"
+      ],
+      "acceptable_hand": [
+        "setup + pioche/filtrage + une vraie pièce de pression",
+        "main sans Fervent mais avec plan de stabilisation + draw"
+      ],
+      "bad_hand": [
+        "double ou triple carte réactive sans cible",
+        "Draven_Audacious seul comme plan principal",
+        "main qui ne fait rien avant trop tard sans garantie de survie"
+      ]
+    }
+  },
+  "matchups": [
+    {
+      "legend": "Draven",
+      "meta_priority": 1,
+      "matchup_estimate": "slightly_favorable_to_even",
+      "confidence": "medium",
+      "why": [
+        "Irelia peut marquer sans rester exposée en combat standard et punit les plans trop centrés sur gagner les combats normaux.",
+        "Mais Draven reste le deck de référence du format, très cohérent, et peut mettre une pression de points ou de removal qui force Irelia à jouer très propre."
+      ],
+      "enemy_plan_you_must_respect": [
+        "pression de points précoce",
+        "value de combat répétée",
+        "removal sur Irelia/Fervent avant que le moteur de score soit en ligne",
+        "fin de partie surprise via Draven_Audacious ou burst de tempo"
+      ],
+      "key_enemy_cards_or_patterns": [
+        "Treasure_Hoarder / engines de value de combat",
+        "Falling_Star et réponses sur la cible équipée",
+        "gros tours Darius + Spinning_Axes sur certaines versions"
+      ],
+      "your_best_axes": [
+        "refuser les combats qui nourrissent Draven sans raison",
+        "Sneaky_Deckhand pour gêner certains plans de trésor",
+        "gros turn avec Stellacorn_Herder",
+        "Boots + protection pour scorer 2 par tour"
+      ],
+      "mulligan_focus": [
+        "setup cohérent",
+        "protection suffisante pour Fervent",
+        "pièces qui permettent de reprendre le tempo tour 3-4"
+      ],
+      "sideboard_focus": [
+        "retirer les cartes trop situationnelles qui nourrissent la value adverse",
+        "garder/ajouter de quoi protéger la cible principale",
+        "adapter selon version miracle vs midrange"
+      ],
+      "play_pattern": [
+        "Accepte d'être derrière temporairement aux points si cela t'évite de jouer dans leurs meilleurs combats.",
+        "Le tour où Irelia commence à scorer deux fois est souvent le vrai début de la partie.",
+        "Évite de laisser Draven convertir gratuitement tes tentatives de contest en ressources."
+      ],
+      "common_lose_condition": [
+        "jouer Irelia trop tôt sans couverture",
+        "prendre des combats 'honest' que Draven veut exactement jouer",
+        "tomber trop bas en runes avant le tour de protection"
+      ],
+      "notes": [
+        "Des retours récents considèrent le matchup jouable voire favorable pour Irelia bien pilotée, mais le consensus n'est pas absolu."
+      ]
+    },
+    {
+      "legend": "Ezreal",
+      "meta_priority": 2,
+      "matchup_estimate": "unfavorable",
+      "confidence": "high",
+      "why": [
+        "Les builds Ezreal récents avec triple Vex mettent une pression directe sur les plans Irelia et rendent les phases de combat beaucoup moins confortables.",
+        "Le Top 4 de Bologne a explicitement montré qu'Ezreal à triple Vex compliquait fortement la série pour Irelia."
+      ],
+      "enemy_plan_you_must_respect": [
+        "neutraliser ton porteur principal plutôt que te battre au score brut",
+        "te faire jouer depuis derrière pendant qu'il convertit valeur et removal",
+        "punir les unités uniques sur lesquelles tu concentres trop de ressources"
+      ],
+      "key_enemy_cards_or_patterns": [
+        "Vex",
+        "petit removal/tempo spell chain",
+        "Fizz/Factory_Recall-like tempo patterns selon versions",
+        "plan de grind supérieur si la partie s'étire"
+      ],
+      "your_best_axes": [
+        "présenter plusieurs menaces successives au lieu d'une seule ultra-investie si la main le permet",
+        "maximiser les fenêtres où tu prends des points sans devoir surcharger le combat",
+        "préserver les protections premium pour Vex/removal clé"
+      ],
+      "mulligan_focus": [
+        "priorité aux protections et aux mains qui ne s'écroulent pas sur une seule réponse",
+        "mains capables de reconstruire après un premier échange perdu"
+      ],
+      "sideboard_focus": [
+        "la série est souvent la plus délicate au side",
+        "rentrer seulement les cartes qui changent vraiment l'interaction",
+        "éviter le sur-sideboard qui réduit la cohérence du plan principal"
+      ],
+      "play_pattern": [
+        "Ne te précipite pas dans la première fenêtre de score si elle t'oblige à exposer toute ta main.",
+        "Cherche la ligne où tu obliges Ezreal à répondre avec un outil coûteux ou spécifique plutôt qu'avec son interaction de routine.",
+        "Joue en supposant que la première grande cible sera contestée."
+      ],
+      "common_lose_condition": [
+        "main trop dépendante d'une seule Fervent",
+        "commit total dans un combat que Vex retourne",
+        "laisser Ezreal arriver en mode contrôle total de la partie"
+      ]
+    },
+    {
+      "legend": "Irelia_mirror",
+      "meta_priority": 3,
+      "matchup_estimate": "skill_mirror_even",
+      "confidence": "medium",
+      "why": [
+        "Le mirror récompense surtout la discipline sur les ressources, l'identification du vrai tour pivot et la bonne lecture des protections adverses.",
+        "Les listes avec Vex sont souvent mentionnées comme très fortes dans le mirror."
+      ],
+      "enemy_plan_you_must_respect": [
+        "double score plus rapide",
+        "protection mieux étagée que la tienne",
+        "Vex dans les builds contrôle"
+      ],
+      "key_enemy_cards_or_patterns": [
+        "Boots_of_Swiftness",
+        "Guardian_Angel",
+        "Zhonya's_Hourglass",
+        "Vex sur certaines listes"
+      ],
+      "your_best_axes": [
+        "ne pas perdre la guerre des ressources sur un combat secondaire",
+        "garder la meilleure protection pour le vrai swing",
+        "sanctionner les equips trop tôt"
+      ],
+      "mulligan_focus": [
+        "main proactive avec vrai porteur",
+        "une pièce de protection",
+        "éviter les mains uniquement réactives"
+      ],
+      "sideboard_focus": [
+        "Vex si ta version l'utilise",
+        "cartes qui protègent ou cassent la mobilité adverse",
+        "peu de place pour les cartes trop narrow"
+      ],
+      "play_pattern": [
+        "Le mirror se gagne souvent sur le premier joueur qui force l'autre à surpayer sa protection.",
+        "Si tu peux menacer sans commit total, fais-le."
+      ],
+      "common_lose_condition": [
+        "sur-équiper trop tôt",
+        "dépenser trop de runes dans un échange mineur",
+        "oublier que l'adversaire joue les mêmes fenêtres que toi"
+      ]
+    },
+    {
+      "legend": "Kai'Sa",
+      "meta_priority": 4,
+      "matchup_estimate": "favorable",
+      "confidence": "high",
+      "why": [
+        "Le report de Bologne souligne explicitement qu'Irelia est déjà connue comme un bon choix contre Kai'Sa grâce à ses counters et au mot-clé Deflect."
+      ],
+      "enemy_plan_you_must_respect": [
+        "gros body vertical",
+        "quelques sorts de swing type Time_Warp/Get_Excited selon versions",
+        "plans plus spell-heavy spécifiquement pour améliorer certains matchups"
+      ],
+      "key_enemy_cards_or_patterns": [
+        "Time_Warp-like swing turns",
+        "removal et tricks rouges/chaos selon build",
+        "side tech anti-Irelia qui peut coûter ailleurs dans la méta"
+      ],
+      "your_best_axes": [
+        "Deflect et tes contres protègent bien le plan de combat",
+        "tes tricks rendent leurs gros bodies moins fiables qu'ils n'en ont l'air",
+        "la mobilité te permet de marquer hors du modèle de combat qu'ils préfèrent"
+      ],
+      "mulligan_focus": [
+        "main standard cohérente",
+        "garder accès à au moins une interaction défensive forte",
+        "ne pas overmull pour des silver bullets"
+      ],
+      "sideboard_focus": [
+        "cartes qui protègent et répondent à leurs gros swings",
+        "ne pas casser ta densité de menaces"
+      ],
+      "play_pattern": [
+        "Joue le matchup comme une démonstration de timing : ne leur donne pas la fenêtre idéale pour transformer un gros corps en tour décisif.",
+        "Punir le fait qu'ils doivent souvent investir plus visiblement que toi."
+      ],
+      "common_lose_condition": [
+        "laisser passer un tour de swing non respecté",
+        "se croire trop favori et jouer relâché"
+      ]
+    },
+    {
+      "legend": "Viktor",
+      "meta_priority": 5,
+      "matchup_estimate": "slightly_unfavorable",
+      "confidence": "medium",
+      "why": [
+        "Des retours joueurs récents décrivent Viktor comme surprenamment bon contre Irelia grâce à des removals 'purs' non indexés sur la simple taille du body.",
+        "Le sideboard Irelia contre Viktor semble orienté davantage survie/counters que tricks de combat."
+      ],
+      "enemy_plan_you_must_respect": [
+        "removal qui ignore partiellement ton plan de gonfler les stats",
+        "token/value engine",
+        "capacité à casser ton tempo sans forcément te combattre honnêtement"
+      ],
+      "key_enemy_cards_or_patterns": [
+        "kill spells jaunes",
+        "engines de tokens",
+        "Jayce_package selon certaines versions"
+      ],
+      "your_best_axes": [
+        "survie et contre plutôt que buffs de combat",
+        "Adaptatron selon le package adverse",
+        "éviter les échanges qui te laissent sans vraie menace"
+      ],
+      "mulligan_focus": [
+        "protection/counter",
+        "mains qui gardent de la redondance",
+        "moins de priorité aux tricks purement offensifs"
+      ],
+      "sideboard_focus": [
+        "renforcer survie",
+        "renforcer les réponses aux removals",
+        "réduire les cartes purement combat-centric"
+      ],
+      "play_pattern": [
+        "Ne cherche pas à gagner une guerre de petites ressources si Viktor a déjà installé son moteur.",
+        "Ton but est de faire passer une vraie menace, pas de gagner tous les micro-échanges."
+      ],
+      "common_lose_condition": [
+        "garder des mains trop orientées combat",
+        "surinvestir dans une cible qui meurt à un removal 'clean'"
+      ]
+    },
+    {
+      "legend": "Lucian",
+      "meta_priority": 6,
+      "matchup_estimate": "even_to_slightly_unfavorable",
+      "confidence": "medium",
+      "why": [
+        "Les retours Lucian décrivent explicitement Piercing_Light et les dégâts de base comme de bons outils contre Irelia/Ezreal.",
+        "Le matchup ressemble souvent à une course de mobilité et d'équipement où les erreurs de combat sont immédiatement punies."
+      ],
+      "enemy_plan_you_must_respect": [
+        "équipement explosif",
+        "pression de points très rapide",
+        "dégâts de base avant combat/développement pour casser tes séquences"
+      ],
+      "key_enemy_cards_or_patterns": [
+        "Piercing_Light",
+        "base_damage_spells",
+        "boneshiver/équipement burst selon versions"
+      ],
+      "your_best_axes": [
+        "protéger avant qu'ils n'ouvrent leur fenêtre de damage-based disruption",
+        "faire payer leurs all-ins d'équipement",
+        "garder Defiant_Dance et protections sur les tours critiques"
+      ],
+      "mulligan_focus": [
+        "protection adaptée",
+        "mains qui jouent tôt sans dépendre d'un seul petit body",
+        "attention aux mains trop lentes"
+      ],
+      "sideboard_focus": [
+        "plus de protection ciblée",
+        "garder de quoi casser leur tempo d'équipement"
+      ],
+      "play_pattern": [
+        "Respecte leurs sorts avant attaque et avant développement.",
+        "Évite de te mettre à portée de breakpoints évidents de dégâts de base."
+      ],
+      "common_lose_condition": [
+        "équiper/commit dans une fenêtre ouverte",
+        "oublier qu'ils punissent très bien les séquences trop télégraphiées"
+      ]
+    },
+    {
+      "legend": "Azir",
+      "meta_priority": 7,
+      "matchup_estimate": "slightly_favorable",
+      "confidence": "medium",
+      "why": [
+        "Des discussions récentes côté Azir parlent du matchup comme difficile face aux tricks d'Irelia et encore pire après sideboard avec Adaptatron."
+      ],
+      "enemy_plan_you_must_respect": [
+        "pression large",
+        "snowball de board",
+        "capacité à faire payer les mains lentes"
+      ],
+      "key_enemy_cards_or_patterns": [
+        "board flooding",
+        "outil de grind ou de reposition selon version"
+      ],
+      "your_best_axes": [
+        "tricks de combat qui cassent leurs maths",
+        "Adaptatron après side si leur plan équipement/token le justifie",
+        "capacité à scorer sans devoir nettoyer complètement le board"
+      ],
+      "mulligan_focus": [
+        "main proactive",
+        "pièces qui tiennent le board tôt sans te vider"
+      ],
+      "sideboard_focus": [
+        "Adaptatron si pertinent",
+        "retirer les cartes trop lentes ou trop étroites"
+      ],
+      "play_pattern": [
+        "Ne cherche pas à tout contrôler. Cherche à rendre leur large board incapable d'empêcher ton score clé."
+      ],
+      "common_lose_condition": [
+        "laisser Azir dérouler sans présence initiale",
+        "garder une main qui ne fait rien avant le swing adverse"
+      ]
+    },
+    {
+      "legend": "Annie",
+      "meta_priority": 8,
+      "matchup_estimate": "even",
+      "confidence": "low",
+      "why": [
+        "Peu de convergence spécifique récente sur Annie vs Irelia, mais Annie reste un deck capable de punir les séquences maladroites par pression et interaction directe."
+      ],
+      "enemy_plan_you_must_respect": [
+        "pression rapide",
+        "reach",
+        "tempo rouge agressif"
+      ],
+      "your_best_axes": [
+        "stabiliser sans surpayer",
+        "faire que leur reach ne transforme pas un léger avantage en lethal virtuel",
+        "utiliser ton meilleur porteur pour sortir du simple échange de tempo"
+      ],
+      "mulligan_focus": [
+        "stabilité early",
+        "protection si la main a Fervent",
+        "éviter les mains trop greed"
+      ],
+      "sideboard_focus": [
+        "interaction efficace bon marché",
+        "ne pas surcharger le deck en cartes mortes"
+      ]
+    },
+    {
+      "legend": "Master_Yi",
+      "meta_priority": 9,
+      "matchup_estimate": "close_even",
+      "confidence": "low",
+      "why": [
+        "Meta deck solide mais peu de données communautaires récentes recoupées spécifiquement sur Irelia vs Yi dans les sources consultées."
+      ],
+      "enemy_plan_you_must_respect": [
+        "snowball de porteur",
+        "pression technique orientée combat"
+      ],
+      "your_best_axes": [
+        "faire jouer Yi dans des combats inconfortables",
+        "forcer les réponses sur le mauvais terrain",
+        "punir les turns trop centrés sur une seule ligne verticale"
+      ]
+    },
+    {
+      "legend": "Sivir",
+      "meta_priority": 10,
+      "matchup_estimate": "close_even",
+      "confidence": "low",
+      "why": [
+        "Présence méta réelle, mais peu d'éléments récents et convergents dans le corpus consulté pour établir plus finement le matchup."
+      ],
+      "enemy_plan_you_must_respect": [
+        "gros tours de combo/tempo",
+        "explosivité parfois supérieure si tu leur laisses le temps"
+      ],
+      "your_best_axes": [
+        "pression de points avant leur grand tour",
+        "forcer l'utilisation défensive de leurs ressources"
+      ]
+    },
+    {
+      "legend": "Jax",
+      "meta_priority": 11,
+      "matchup_estimate": "slightly_favorable",
+      "confidence": "low",
+      "why": [
+        "Peu de données directes, mais Jax reste plus dépendant d'un axe de combat/équipement que Irelia sait souvent compliquer par mobilité et tricks."
+      ],
+      "enemy_plan_you_must_respect": [
+        "équipement vertical",
+        "snowball de porteur"
+      ],
+      "your_best_axes": [
+        "casser les maths de combat",
+        "faire perdre un tour entier d'équipement/commit",
+        "scorer ailleurs pendant qu'ils investissent"
+      ]
+    },
+    {
+      "legend": "Rek'Sai",
+      "meta_priority": 12,
+      "matchup_estimate": "very_unfavorable",
+      "confidence": "high",
+      "why": [
+        "Les retours récents convergent fortement : Rek'Sai est souvent cité comme un des pires matchups d'Irelia.",
+        "Le problème est structurel : Irelia ne tient pas toujours les deux battlefields en même temps, ce qui laisse Rek'Sai activer son plan très régulièrement."
+      ],
+      "enemy_plan_you_must_respect": [
+        "conquête répétée",
+        "legend value chaque tour si tu ne bloques pas le cycle",
+        "removal ciblé sur tes petits supports et sur la menace principale"
+      ],
+      "key_enemy_cards_or_patterns": [
+        "Falling_Star",
+        "Piercing_Light",
+        "Cull_the_Weak",
+        "Hidden_Blade",
+        "Brynhir",
+        "Salvage post-side"
+      ],
+      "your_best_axes": [
+        "tenir au moins un battlefield de façon durable",
+        "augmenter la densité d'unités qui existent tôt",
+        "sider plus de protections de type Zhonya's / Not_So_Fast / Defy"
+      ],
+      "mulligan_focus": [
+        "présence early",
+        "mains capables de ralentir leur première vraie conquête",
+        "protection et bodies plutôt que hand full tricks"
+      ],
+      "sideboard_focus": [
+        "plus de Zhonya's si possible",
+        "maximiser les outils qui font coller tes unités au board",
+        "envisager une construction légèrement plus dense en petites unités si ton environnement local contient beaucoup de Rek'Sai"
+      ],
+      "play_pattern": [
+        "Le plan n'est pas de les outracer à vide ; le plan est de les empêcher d'enchaîner librement leurs conquêtes.",
+        "Si tu peux verrouiller un terrain durablement, leur legend perd beaucoup de son rythme."
+      ],
+      "common_lose_condition": [
+        "main sans présence initiale",
+        "petits supports balayés puis plus aucune capacité à tenir le board",
+        "essayer de jouer trop 'normalement' au lieu d'adapter le plan en mode hold"
+      ]
+    }
+  ],
+  "sideboard_framework": {
+    "principles": [
+      "Ne sideboard pas au point de dénaturer le deck ; Irelia gagne surtout quand son cœur reste cohérent.",
+      "Remplace les cartes qui interagissent mal avec le type d'interaction adverse, pas seulement celles qui paraissent 'faibles'.",
+      "Quand l'adversaire combat peu ou tue via sorts, coupe prioritairement les tricks de combat les moins polyvalents."
+    ],
+    "common_patterns": [
+      {
+        "against": "Viktor_or_spell_removal_shells",
+        "in": ["survival_tools", "counterspells", "Adaptatron_if_relevant"],
+        "out": ["combat_tricks_least_effective"],
+        "confidence": "medium"
+      },
+      {
+        "against": "Draven",
+        "in": ["protection_that_preserves_primary_plan"],
+        "out": ["cards_that_feed_enemy_value_or_are_low_impact"],
+        "confidence": "low_to_medium"
+      },
+      {
+        "against": "Ezreal",
+        "in": ["only_cards_that_change_core_interaction"],
+        "out": ["narrow_or_overly_slow_cards"],
+        "confidence": "medium"
+      },
+      {
+        "against": "Azir",
+        "in": ["Adaptatron_if_their_build_justifies_it"],
+        "out": ["slowest_nonessential_cards"],
+        "confidence": "medium"
+      },
+      {
+        "against": "Rek'Sai",
+        "in": ["extra_Zhonya's", "extra_Defy", "extra_Not_So_Fast_style_effects"],
+        "out": ["overly_cute_cards", "slow_nonboard_cards"],
+        "confidence": "high"
+      }
+    ]
+  },
+  "mistakes_to_avoid": [
+    "Équiper Boots sans menace immédiate ni protection.",
+    "Penser qu'il faut toujours contester le premier point.",
+    "Dépenser trop de runes pour une ligne flashy mais non létale en score.",
+    "Sauver par réflexe un body secondaire au lieu de garder la protection pour Fervent.",
+    "Confondre avantage de board et avantage de points futurs.",
+    "Jouer Draven_Audacious comme plan A alors que la partie exige simplement de mieux convertir Irelia."
+  ],
+  "practical_matchup_priority_for_testing": [
+    "Draven",
+    "Ezreal",
+    "Irelia_mirror",
+    "Kai'Sa",
+    "Viktor",
+    "Lucian",
+    "Azir",
+    "Rek'Sai"
+  ],
+  "training_checklist": [
+    "Sais-tu identifier le tour où tu peux raisonnablement marquer 2 points ?",
+    "Sais-tu quelles protections tu gardes contre quel type de removal ?",
+    "Sais-tu quand accepter de perdre un combat pour conserver le vrai swing turn ?",
+    "Sais-tu muller différemment entre jaune removal, rouge tempo et matchup board-centric ?",
+    "Sais-tu quand Draven_Audacious devient réellement meilleur qu'une ligne Irelia classique ?"
+  ],
+  "executive_summary": {
+    "one_sentence": "Irelia en mars 2026 est un Tier 1 de très haut niveau de pilotage, excellent pour convertir une fenêtre étroite en swing massif de points, fort contre Kai'Sa, compétitif contre Draven si très bien piloté, mais nettement mis sous pression par Ezreal à Vex et structurellement mal à l'aise contre Rek'Sai.",
+    "recommended_player_profile": "joueur qui aime le tempo technique, la planification sur plusieurs tours, et les séquences de protection précises"
+  }
+}

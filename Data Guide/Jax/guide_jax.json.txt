@@ -1,0 +1,1465 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Jax complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte fin février-début mars 2026 pour les rapports de tournoi et les discussions matchup",
+    "methodology": {
+      "approach": [
+        "Croisement des tier lists récentes",
+        "Croisement des decklists officielles Vegas et des rapports de tournoi",
+        "Croisement des guides Jax et des discussions communautaires récentes",
+        "Priorité donnée aux retours du pilote Top 8 Vegas quand ils existent",
+        "Confiance réduite explicitement sur les matchups peu documentés"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources récentes convergentes + ancrage compétitif clair",
+        "medium": "Consensus raisonnable mais matchup sensible au build, au sideboard ou au niveau de pilotage",
+        "low": "Peu de données directes, lecture surtout théorique ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annoncé au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutés, mais rien n'était annoncé au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "jax_meta_position": {
+      "riftbound_gg_tier_list_march_6": "Tier 3",
+      "mobalytics_tier_list_march_2026": "B-tier",
+      "vegas_rq_result": "Top 8 officiel, #7 overall, #1 sur 44 joueurs Jax",
+      "overall_read": "Rogue compétitif réel, pas un deck de volume, mais désormais impossible à classer comme simple meme deck"
+    },
+    "high_level_summary": [
+      "Jax a commencé Spiritforged dans une position fragile, surtout à cause du hate anti-équipement et de la sensibilité du deck aux removals et aux bounce effects.",
+      "Son image a changé après les résultats chinois puis surtout après Las Vegas, où un build Calm/Body a validé un plan plus discipliné et moins flashy.",
+      "Ce n'est pas un deck de pure agression. C'est un deck de board centré sur l'équipement, la protection, la gestion du tempo et la conversion d'angles de battlefield en avantage durable.",
+      "Sa vraie force n'est pas de tout dominer, mais d'être très modulable matchup par matchup."
+    ]
+  },
+  "jax_advanced_guide": {
+    "legend": "Jax, Grandmaster at Arms",
+    "domains": [
+      "Calm",
+      "Body"
+    ],
+    "macro_identity": {
+      "archetype": "Midrange équipement / protection / tempo",
+      "primary_gameplan": "Développer des unités solides, leur attacher un équipement à forte valeur, puis redistribuer cet équipement entre les corps les plus utiles tout en gardant l'énergie ouverte pour protéger la table.",
+      "secondary_gameplan": "Transformer chaque pièce d'équipement en trick de combat ou de tempo grâce à Jax, Unmatched, jusqu'à ce que l'adversaire ne puisse plus combattre ou retirer efficacement les menaces.",
+      "why_the_deck_is_strong": [
+        "Excellent usage des équipements réutilisables",
+        "Très bon mélange entre pression de table et protection",
+        "Peut jouer à la fois la partie de hold et la partie de push",
+        "Punition réelle contre certains decks contrôle/removal ou certains decks violets mal préparés"
+      ],
+      "why_the_deck_is_hard": [
+        "Ouvertures de main parfois maladroites",
+        "Très forte dépendance à la bonne répartition entre unités, équipements et protection",
+        "Chaque matchup demande une lecture de wincon différente",
+        "La gestion des runes est plus punitive qu'elle n'en a l'air"
+      ]
+    },
+    "competitive_consensus_march_2026": {
+      "consensus_summary": [
+        "Jax n'est pas un deck du top volume de la méta",
+        "Mais il n'est plus un simple rogue sans fondement",
+        "Le Top 8 Vegas a légitimé un vrai shell Calm/Body compétitif",
+        "Le deck paraît plus fort entre de bonnes mains qu'en lecture de tier list brute"
+      ],
+      "important_caveat": "Les données Jax sont moins abondantes que celles de Draven, Irelia ou Ezreal. Il faut donc distinguer ce qui est vraiment documenté du ressenti de joueurs spécialisés."
+    },
+    "reference_shell_march_2026": {
+      "name": "Calm Body Jax - Vegas Top 8",
+      "champion": "Jax, Unmatched",
+      "battlefields": [
+        "Monastery of Hirana",
+        "Sunken Temple",
+        "The Dreaming Tree"
+      ],
+      "rune_pool": {
+        "calm": 7,
+        "body": 5
+      },
+      "core_cards": [
+        "Brutalizer",
+        "Guardian Angel",
+        "Warmog's Armor",
+        "Counter Strike",
+        "Defy",
+        "Not So Fast",
+        "Stellacorn Herder",
+        "Clockwork Keeper",
+        "Lucian, Merciless",
+        "Aphelios, Exalted",
+        "Charm",
+        "Challenge",
+        "Boneshiver",
+        "Ruin Runner"
+      ],
+      "sideboard_reference": [
+        "Adaptatron",
+        "Cannon Barrage",
+        "Defy",
+        "Not So Fast",
+        "Punch First",
+        "Wind Wall",
+        "Zhonya's Hourglass"
+      ]
+    },
+    "signature_cards_and_engines": {
+      "jax_unmatched_role": "Pièce centrale du shell compétitif actuel. Donne Quick-Draw aux équipements et change complètement la manière dont on peut défendre, bluffer et redistribuer la puissance de table.",
+      "counter_strike_role": "Sort signature et vraie carte de skill expression du deck; clef pour convertir un hold ou un combat défensif en énorme swing.",
+      "warmogs_role": "Équipement de stabilisation et d'exploitation des synergies Buff; particulièrement fort avec Monastery of Hirana et les plans de draw sur battlefield.",
+      "brutalizer_role": "Boost de Might très efficace et particulièrement fort quand il est utilisé de façon réactive ou réalloué au bon moment.",
+      "guardian_angel_role": "Carte cruciale pour rendre les menaces équipées pénibles à nettoyer proprement.",
+      "stellacorn_herder_role": "Moteur de cartes le plus souvent cité par les joueurs Jax; aide à maintenir la main pleine dans les parties qui s'étirent.",
+      "aphelios_role": "Pièce flexible: parfois rampe/tempo pour poser Jax + interaction, parfois pseudo 2-drop tardif selon la texture de la partie.",
+      "lucian_role": "Pas seulement une menace; sert aussi de moteur de draw selon le battlefield, notamment avec Sunken Temple ou certains plans Warmog/Monastery.",
+      "boneshiver_role": "Tech particulièrement valorisée contre miracle et les parties où la rune economy devient le vrai nerf de guerre."
+    },
+    "advanced_pilot_principles": [
+      {
+        "name": "Equipment first, but not equipment greed",
+        "detail": "Jax est un deck d'équipement, mais il ne gagne pas en empilant aveuglément tout sur une seule unité. Il gagne quand chaque équipement reste utile même si le premier porteur tombe."
+      },
+      {
+        "name": "Know your wincon in each matchup",
+        "detail": "Le meilleur conseil répété par le pilote Top 8 Vegas est de connaître ton wincon spécifique dans chaque pairing. Jax ne joue pas la même partie contre miracle, contre Irelia ou contre Kai'Sa."
+      },
+      {
+        "name": "Holding a battlefield is often worth more than racing",
+        "detail": "Le deck aime tenir proprement un battlefield pendant plusieurs cycles plutôt que s'exposer sur les deux trop tôt. Counter Strike est particulièrement bon dans ces lignes."
+      },
+      {
+        "name": "Rune management is a hidden skill test",
+        "detail": "Une erreur fréquente consiste à dépenser trop tôt sa réserve pour de la value immédiate. Jax aime atteindre 7-9 runes pour développer tout en laissant encore l'énergie ouverte pour protéger ou répondre."
+      },
+      {
+        "name": "Your threats are modular, not singular",
+        "detail": "L'idée n'est pas de protéger éternellement une seule star. L'idée est de faire en sorte que chaque corps puisse devenir menaçant via l'équipement et que l'adversaire ne sache jamais quelle pièce sera réellement la plus importante au prochain tour."
+      },
+      {
+        "name": "The deck wins by making combat math miserable",
+        "detail": "Une grande partie de la force de Jax vient du fait que l'adversaire ne peut pas facilement calculer les blocs, les holds et les swings quand Quick-Draw, protection et redistribution d'équipement sont tous possibles."
+      }
+    ],
+    "mulligan_advanced": {
+      "general_rules": [
+        "Chercher un équilibre entre unités, équipement et protection. Une main avec beaucoup de matériel mais aucun bon porteur est souvent mauvaise.",
+        "Une bonne main Jax a souvent au moins 1-2 unités entre 2 et 4 coût, un équipement, puis idéalement une protection.",
+        "Le deck supporte mal les mains trop lentes ou trop gadgets."
+      ],
+      "baseline_priority": [
+        "1 ou 2 unités jouables tôt",
+        "1 équipement fonctionnel",
+        "1 protection ou trick pertinent",
+        "optionnellement une pièce de moteur comme Stellacorn ou une bonne ligne battlefield"
+      ],
+      "special_keeps": [
+        {
+          "condition": "game 1 blind avec plan Monastery",
+          "keep": [
+            "Lucian, Merciless",
+            "Warmog's Armor",
+            "mains qui démarrent le moteur Monastery assez tôt"
+          ]
+        },
+        {
+          "condition": "contre Irelia",
+          "keep": [
+            "Challenge",
+            "Charm",
+            "Defy",
+            "Punch First",
+            "lignes qui permettent de tuer Irelia si elle se commit ou si les runes sont tap out"
+          ]
+        },
+        {
+          "condition": "contre decks kill-spell type Viktor/Lux",
+          "keep": [
+            "Guardian Angel",
+            "protection",
+            "mains pas trop dépendantes de Brutalizer"
+          ]
+        },
+        {
+          "condition": "contre miracle / purple value",
+          "keep": [
+            "mains disciplinées avec vraie progression de runes",
+            "pièces aidant à la rune economy",
+            "ne pas garder une main all-in uniquement de board"
+          ]
+        }
+      ],
+      "hands_to_throw_back": [
+        "Main avec 2 équipements et aucun vrai corps",
+        "Main avec seulement des sorts de protection sans menace utile",
+        "Main trop lourde qui oblige à se tap out tôt",
+        "Main value-only qui n'a ni battlefield plan ni interaction"
+      ]
+    },
+    "early_game_patterns": {
+      "baseline_openings": [
+        "Tour 1 équipement puis tour 2 unité est une ligne naturelle quand la main le permet.",
+        "Tour 1 équipement puis tour 2 Aphelios peut permettre d'équiper puis d'utiliser l'ability de Jax pour ready des runes et garder l'énergie ouverte.",
+        "Les premières séquences ne visent pas toujours à prendre immédiatement le point lead; il est normal de jouer depuis derrière pendant quelques tours contre certains decks agressifs."
+      ],
+      "important_note": "Le deck récompense la patience. Les joueurs Jax les plus convaincants n'utilisent pas tout leur Power dans les 3-4 premiers tours si cela les empêche ensuite de développer tout en protégeant."
+    },
+    "battlefield_philosophy": {
+      "monastery_of_hirana": {
+        "role": "Battlefield moteur du plan game 1 quand on ne connaît pas encore le pairing",
+        "best_with": [
+          "Warmog's Armor",
+          "Lucian, Merciless",
+          "plans de draw progressifs"
+        ],
+        "notes": [
+          "Le pilote Vegas side parfois 1 ou 2 Warmog's en games 2/3, mais insiste sur le fait que le deck a absolument besoin de draw."
+        ]
+      },
+      "sunken_temple": {
+        "role": "Battlefield de tempo/value",
+        "best_with": [
+          "Lucian, Merciless",
+          "unités qui peuvent venir, gagner un effet, puis repartir",
+          "lignes de pioche peu coûteuses"
+        ]
+      },
+      "the_dreaming_tree": {
+        "role": "Battlefield plus technique, important pour les calculs de score et les turns où le deck prend l'ascendant avec une table mieux équipée",
+        "notes": [
+          "Souvent moins spectaculaire, mais très utile aux joueurs qui maîtrisent bien la mathématique des tours de board."
+        ]
+      }
+    },
+    "sideboard_philosophy": {
+      "general_rules": [
+        "Le sideboard Jax est extrêmement matchup-dependent.",
+        "Il faut sideboarder selon la texture réelle de la partie, pas seulement selon le nom du deck adverse.",
+        "L'objectif est souvent soit de mieux protéger le plan équipement, soit de gagner une guerre de rune economy, soit d'ajouter une carte de swing spécifique."
+      ],
+      "known_plans_from_vegas_top8_pilot": [
+        {
+          "matchup": "Irelia",
+          "key_side_cards": [
+            "Defy",
+            "Punch First"
+          ]
+        },
+        {
+          "matchup": "Draven miracle",
+          "key_side_cards": [
+            "Defy",
+            "Adaptatron",
+            "Cannon Barrage"
+          ]
+        },
+        {
+          "matchup": "Draven midrange",
+          "key_side_cards": [
+            "Cannon Barrage"
+          ]
+        },
+        {
+          "matchup": "miracle shells broadly",
+          "key_side_cards": [
+            "Boneshiver",
+            "Adaptatron"
+          ],
+          "why": "gagner l'avantage de rune economy et forcer l'adversaire à s'étrangler sur ses propres seals ou son tempo"
+        }
+      ],
+      "inferred_axes": [
+        {
+          "axis": "anti-kill spell / anti-control",
+          "purpose": "Viktor, Lux, certains Ezreal"
+        },
+        {
+          "axis": "anti-miracle / anti-purple resource",
+          "purpose": "Draven miracle, Ezreal, Sivir miracle"
+        },
+        {
+          "axis": "anti-porteur unique",
+          "purpose": "Irelia, Fiora, parfois Lucian/Jax mirror-ish"
+        },
+        {
+          "axis": "anti-go-wide",
+          "purpose": "Rumble tokens, Rek'Sai, Azir, certaines sorties MF/Annie"
+        }
+      ]
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Overextending equipment",
+        "why_it_loses": "Empiler trop de valeur sur une seule unité te fait perdre sur un seul bon removal, bounce ou bad combat."
+      },
+      {
+        "mistake": "Tapping out too often",
+        "why_it_loses": "Le deck devient beaucoup moins impressionnant dès qu'il ne peut plus représenter Defy, Not So Fast ou Counter Strike."
+      },
+      {
+        "mistake": "Playing for immediate value instead of rune flexibility",
+        "why_it_loses": "Les petits draws ou petits gains du début de partie peuvent coûter la flexibilité décisive des tours 4-6."
+      },
+      {
+        "mistake": "Using the same win pattern in every matchup",
+        "why_it_loses": "Jax doit parfois tenir, parfois pousser, parfois grinder, parfois juste survivre assez longtemps pour que l'équipement prenne le dessus."
+      },
+      {
+        "mistake": "Ignoring battlefield engines",
+        "why_it_loses": "Monastery, Sunken Temple et Dreaming Tree ne sont pas décoratifs; ils changent profondément la manière dont la partie doit être pilotée."
+      },
+      {
+        "mistake": "Undervaluing card flow",
+        "why_it_loses": "Le deck a besoin d'une vraie économie de cartes. Warmog, Stellacorn, Lucian et les battlefields jouent tous un rôle pour éviter le burn-out."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Contre les decks miracle, pense d'abord à ta rune economy avant de penser à ton damage output.",
+      "Contre les decks kill-spell, Guardian Angel est souvent plus important qu'un simple gain de Might.",
+      "Quand un porteur a déjà fait son travail, réallouer l'équipement vers une autre unité fraîche est souvent bien plus fort que le protéger coûte que coûte.",
+      "Counter Strike est meilleur quand l'adversaire pense encore avoir un combat acceptable, pas quand la ligne est déjà obviously mauvaise.",
+      "Stellacorn n'est pas seulement une value card; c'est souvent la pièce qui te permet de tenir les parties longues sans manquer de gaz.",
+      "Brutalizer paraît trivial, mais sa vraie force est dans les tours réactifs, pas dans les tours où tu annonces ton plan trop tôt.",
+      "Quand tu joues depuis derrière, le deck ne cherche pas toujours à rattraper immédiatement le score; il cherche souvent à rendre le prochain cycle de score très mauvais pour l'adversaire."
+    ],
+    "practical_summary": {
+      "best_for": [
+        "Joueurs aimant les lignes de combat techniques",
+        "Joueurs capables de sideboarder précisément",
+        "Joueurs appréciant les decks midrange modulaires"
+      ],
+      "worst_for": [
+        "Joueurs qui détestent les mains awkward",
+        "Joueurs qui veulent un deck linéaire et auto-pilotable",
+        "Joueurs qui sous-estiment l'importance de la gestion de runes"
+      ],
+      "blind_pick_rating": "Correct à bon dans un field ouvert, mais beaucoup moins universel qu'un top blind pick de type Draven"
+    }
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner",
+      "meta_context": "Top deck de volume, variants midrange et miracle",
+      "jax_outlook": {
+        "label": "close_even",
+        "estimated_jax_winrate_percent": "49-52",
+        "confidence": "medium"
+      },
+      "summary": "Le matchup Draven n'est pas libre, mais il n'est pas non plus catastrophique pour Jax. La communauté cite régulièrement Jax parmi les decks capables de poser de vrais problèmes à Draven, et le pilote Top 8 Vegas avait déjà des plans side spécifiques contre midrange et miracle. En revanche, le guide Jax rappelle que la méta Chaos-heavy punit fortement les stratégies unit-centriques et les plans d'équipement trop téléphonés.",
+      "why_matchup_plays_this_way": [
+        "Draven est meilleur que Jax pour convertir un board large et une courbe propre en pression immédiate.",
+        "Jax peut cependant rendre les combats très mauvais pour Draven si le timing de protection et d'équipement est bon.",
+        "La texture change beaucoup entre Draven midrange et Draven miracle."
+      ],
+      "opponent_plan": [
+        "Prendre l'initiative tôt",
+        "Transformer la largeur de board en points ou trades favorables",
+        "Exploiter les cartes Chaos pour casser la structure unit+equipment"
+      ],
+      "jax_plan": [
+        "Ne pas sur-investir sur une seule unité",
+        "Utiliser Cannon Barrage comme vrai swing tool contre midrange",
+        "Contre miracle, jouer davantage pour rune economy et punition de seals via Adaptatron/Boneshiver side",
+        "Chercher des holds où Counter Strike change tout le combat"
+      ],
+      "mulligan_focus": [
+        "Unités early + équipement + protection",
+        "Pas de main lente",
+        "Contre miracle, valoriser les mains disciplinées plus que les mains flashy"
+      ],
+      "sideboard_focus": [
+        "midrange Draven -> Cannon Barrage",
+        "miracle Draven -> Defy, Adaptatron, Cannon Barrage",
+        "plus généralement -> outils qui punissent le go-wide ou la dépendance aux seals"
+      ],
+      "battlefield_notes": [
+        "Tu n'es pas obligé de courir les deux battlefields.",
+        "Un bon hold protégé peut valoir plus qu'une race maladroite."
+      ],
+      "main_lose_conditions_for_jax": [
+        "S'étaler trop tôt et perdre sur bounce/removal",
+        "Se faire dépasser aux points avant d'installer la protection",
+        "Laisser Draven convertir une table large sans réponse de masse ou combat swing"
+      ],
+      "important_patterns_to_respect": [
+        "Brynhir turns",
+        "Fight or Flight pressure",
+        "Miracle resource loops",
+        "2 énergie ouverte en face"
+      ],
+      "variation_notes": [
+        "Le matchup contre midrange paraît légèrement plus lisible; celui contre miracle est plus technique mais offre davantage de place à la rune economy."
+      ],
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_context": "Tier 1 / très jouée",
+      "jax_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_jax_winrate_percent": "50-53",
+        "confidence": "medium"
+      },
+      "summary": "Irelia est l'un des matchups les plus sérieux pour mesurer la qualité d'un pilote Jax. Les retours Jax les plus utiles insistent sur la pression précoce, les cartes comme Challenge/Charm, et sur la nécessité de tuer Irelia ou de casser le porteur dès que la fenêtre s'ouvre. Le pilote Top 8 Vegas recommande explicitement Defy et Punch First dans ce pairing.",
+      "why_matchup_plays_this_way": [
+        "Irelia veut des combats propres autour d'un porteur central protégé.",
+        "Jax possède justement un très bon outillage pour rendre ces combats sales et pour punir une fenêtre tapped out.",
+        "Le matchup tourne beaucoup autour de la première vraie menace équipée et de la première protection qui ne passe pas."
+      ],
+      "opponent_plan": [
+        "Poser un porteur clé",
+        "Protéger le porteur avec Calm/Chaos interaction",
+        "Profiter des fenêtres de double-score ou de prise de battlefield efficace"
+      ],
+      "jax_plan": [
+        "Appliquer une vraie pression tôt",
+        "Garder Challenge/Charm et les protections clés pour le vrai tour Irelia",
+        "Utiliser Defy/Punch First pour casser les lignes qu'Irelia pensait sûres",
+        "Éviter de lui laisser un battlefield tenu par une seule pièce intouchable"
+      ],
+      "mulligan_focus": [
+        "Challenge",
+        "Charm",
+        "Defy",
+        "Punch First",
+        "main avec vraie présence de board"
+      ],
+      "sideboard_focus": [
+        "Defy",
+        "Punch First",
+        "plus de cartes qui cassent le plan porteur/protection"
+      ],
+      "battlefield_notes": [
+        "Quand tu peux tuer ou neutraliser la première vraie Irelia line, la partie change radicalement.",
+        "Ne laisse pas Irelia scorer gratuitement parce que ta main est trop respectueuse."
+      ],
+      "main_lose_conditions_for_jax": [
+        "Jouer trop passif et la laisser s'installer",
+        "Dépenser la mauvaise protection au mauvais moment",
+        "Trop se concentrer sur l'équipement et pas assez sur le tempo du matchup"
+      ],
+      "important_patterns_to_respect": [
+        "Guardian Angel turns",
+        "Boots lines",
+        "Defiant Dance windows",
+        "double-score pressure"
+      ],
+      "variation_notes": [
+        "Plus Irelia est axée porteur unique, plus Jax peut la punir.",
+        "Plus la liste Irelia est pleine d'interaction fine, plus le matchup devient un duel de précision."
+      ],
+      "source_refs": [
+        "S4",
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_context": "Top deck de plafond / pilote exigeant",
+      "jax_outlook": {
+        "label": "favorable",
+        "estimated_jax_winrate_percent": "55-60",
+        "confidence": "medium"
+      },
+      "summary": "C'est l'un des rares matchups sur lesquels le signal communautaire est étonnamment direct pour Jax. Le pilote Top 8 Vegas cite Ezreal parmi ses meilleurs matchups, et un fil de discussion autour d'Ezreal Dashing avance aussi que Jax l'outscale. L'edge n'est pas automatique, mais il existe clairement plus que sur beaucoup d'autres pairings.",
+      "why_matchup_plays_this_way": [
+        "Ezreal n'aime pas toujours les menaces modulaires protégées qui ne dépendent pas d'un seul corps.",
+        "Jax peut garder de l'énergie ouverte et punir les tours où Ezreal pense encore être en contrôle.",
+        "Le deck Ezreal adore les adversaires linéaires; Jax l'est beaucoup moins qu'il n'y paraît."
+      ],
+      "opponent_plan": [
+        "Ralentir la table",
+        "Échanger sur la durée",
+        "Convertir la pioche et les gros tours violets en avantage impossible à rattraper"
+      ],
+      "jax_plan": [
+        "Mettre une présence qui ne perd pas sur un seul removal",
+        "Garder la pression battlefield sans s'exposer sur une pièce unique",
+        "Faire payer les fenêtres où Ezreal doit se tap pour progresser",
+        "Conserver les protections pour les vraies cartes premium"
+      ],
+      "mulligan_focus": [
+        "Unités early de qualité",
+        "Équipement utile",
+        "Protection réelle",
+        "pas de main all-in sur un seul corps"
+      ],
+      "sideboard_focus": [
+        "Maintenir la pression",
+        "ne pas trop over-sideboard en pur anti-control",
+        "préserver les cartes qui forcent Ezreal à répondre hors rythme"
+      ],
+      "battlefield_notes": [
+        "Sunken Temple et les lines de draw/modularité sont très bonnes quand Ezreal ne peut pas tout gérer",
+        "Un hold propre vaut souvent plus qu'un push trop gourmand"
+      ],
+      "main_lose_conditions_for_jax": [
+        "Trop respecter et ne plus mettre de vraie question",
+        "S'exposer à un swing de valeur massif sans pression de points",
+        "Mulligan trop lent"
+      ],
+      "important_patterns_to_respect": [
+        "big miracle turns",
+        "repeated spell targeting",
+        "late purple value chains"
+      ],
+      "variation_notes": [
+        "Le matchup peut être plus serré contre un spécialiste absolu d'Ezreal, mais le signal disponible penche quand même côté Jax."
+      ],
+      "source_refs": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_context": "Top deck de volume / Tier 1-2 selon les sources",
+      "jax_outlook": {
+        "label": "slightly_favorable",
+        "estimated_jax_winrate_percent": "54-58",
+        "confidence": "medium"
+      },
+      "summary": "Comme pour Ezreal, le pilote Top 8 Vegas cite Kai'Sa parmi les meilleurs matchups de Jax dans sa pratique. Cela ne veut pas dire que le pairing est facile, mais plutôt que Jax a des outils crédibles contre les plans removal/rebuild de Kai'Sa, surtout s'il évite de se faire enfermer dans un simple 1 pour 1.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa excelle à tuer proprement et à se reconstruire.",
+        "Jax excelle à faire survivre et réutiliser la valeur de ses équipements.",
+        "La partie se joue souvent sur la capacité de Jax à ne pas transformer chaque removal adverse en vrai gain de tempo."
+      ],
+      "opponent_plan": [
+        "User spell removal",
+        "maintenir une table fonctionnelle",
+        "faire échouer le plan porteur/protection"
+      ],
+      "jax_plan": [
+        "Diversifier les porteurs",
+        "faire perdre du tempo aux removals",
+        "convertir Quick-Draw et protection en trades très inefficaces pour Kai'Sa"
+      ],
+      "mulligan_focus": [
+        "Unités tôt",
+        "Guardian Angel",
+        "mains stables plutôt que mains très gourmandes"
+      ],
+      "sideboard_focus": [
+        "protection",
+        "cartes qui punissent un removal linéaire",
+        "préserver la pioche et la résilience"
+      ],
+      "battlefield_notes": [
+        "Les battlefields de grind te plaisent si tu gardes la modularité de ton équipement",
+        "Évite les lignes où Kai'Sa tue ton unique vraie menace"
+      ],
+      "main_lose_conditions_for_jax": [
+        "Jouer trop tall",
+        "s'épuiser en cartes face aux removals propres",
+        "ne pas avoir de deuxième porteur fonctionnel"
+      ],
+      "important_patterns_to_respect": [
+        "spell removal windows",
+        "stabilization turns",
+        "late reset and rebuild"
+      ],
+      "variation_notes": [
+        "Plus la Kai'Sa est techée pour les équipements et la protection, plus le matchup se resserre."
+      ],
+      "source_refs": [
+        "S4"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_context": "A-tier/B-tier selon la lecture, plusieurs builds",
+      "jax_outlook": {
+        "label": "slightly_favorable",
+        "estimated_jax_winrate_percent": "53-58",
+        "confidence": "medium"
+      },
+      "summary": "Le matchup Viktor dépend beaucoup de la version. Le signal le plus fort qu'on ait est qu'un joueur Viktor explique que spell-only Viktor perd très dur contre Jax, à cause des contres, de Deflect et de la résilience de ses menaces. Cela ne veut pas dire que toutes les versions de Viktor sont mauvaises contre Jax, mais au minimum le pairing n'est clairement pas free pour Viktor.",
+      "why_matchup_plays_this_way": [
+        "Les versions trop spell-only peuvent se heurter à trop de protection et trop peu de pression concrète.",
+        "Jax peut maintenir une menace équipée tout en gardant les runes ouvertes, ce qui rend le plan removal-rinse-repeat moins propre qu'il ne le semble.",
+        "Les versions Viktor plus mixtes ou plus board-oriented peuvent mieux se battre."
+      ],
+      "opponent_plan": [
+        "Tuer hors combat",
+        "réduire la qualité des porteurs",
+        "faire perdre au deck Jax son rythme de développement"
+      ],
+      "jax_plan": [
+        "Prioriser Guardian Angel et les protections",
+        "ne pas survaloriser Brutalizer si le matchup se joue plus sur la survie que sur la taille",
+        "forcer Viktor à répondre sans toujours avoir la bonne fenêtre"
+      ],
+      "mulligan_focus": [
+        "Guardian Angel",
+        "unités de qualité",
+        "protection",
+        "moins de priorité aux mains basées surtout sur Brutalizer"
+      ],
+      "sideboard_focus": [
+        "anti-removal",
+        "protection supplémentaire",
+        "ne pas trop s'étaler dans les slots anti-go-wide"
+      ],
+      "battlefield_notes": [
+        "Monastery et les moteurs de pioche sont précieux si la partie devient longue",
+        "Le vrai risque est de se faire maintenir juste assez bas pour ne jamais stabiliser proprement"
+      ],
+      "main_lose_conditions_for_jax": [
+        "S'exposer trop tôt à du hard removal",
+        "garder une main trop dépendante de la taille brute",
+        "ne pas générer assez de flow de cartes"
+      ],
+      "important_patterns_to_respect": [
+        "kill spells outside combat",
+        "token/recruit stalls",
+        "attrition loops"
+      ],
+      "variation_notes": [
+        "Spell-only Viktor paraît favorable pour Jax.",
+        "Les builds Viktor mieux adaptés à un field vert/équipement peuvent ramener le matchup vers l'équilibre."
+      ],
+      "source_refs": [
+        "S8",
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Rumble, Mechanized Menace",
+      "meta_context": "Rogue mais explicitement mentionné comme pénible pour Jax",
+      "jax_outlook": {
+        "label": "unfavorable",
+        "estimated_jax_winrate_percent": "42-47",
+        "confidence": "medium"
+      },
+      "summary": "C'est le matchup négatif le plus explicitement mentionné dans les discussions Jax récentes. Un joueur parlant de Jax contre Draven dit que Jax perd contre Rumble parce que Rumble joue sa propre partie, met beaucoup d'unités, peu de cibles pertinentes à counter, et peut simplement aligner trop de Might.",
+      "why_matchup_plays_this_way": [
+        "Jax aime les combats techniques et les combats où la protection compte.",
+        "Rumble peut parfois ignorer cette logique en submergeant la table avec trop de largeur ou trop de volume de puissance.",
+        "Les contres perdent en qualité si l'adversaire ne dépend pas de quelques sorts centraux."
+      ],
+      "opponent_plan": [
+        "Mettre plusieurs unités",
+        "déborder les holds",
+        "forcer Jax à répondre trop étroitement à une partie trop large"
+      ],
+      "jax_plan": [
+        "Ne pas prendre les combats trop tôt",
+        "valoriser davantage les cartes anti-largeur ou de swing de table",
+        "garder la protection pour les tours qui inversent vraiment le rythme"
+      ],
+      "mulligan_focus": [
+        "présence early",
+        "mains qui ne perdent pas sur largeur de board",
+        "pas de main trop lente"
+      ],
+      "sideboard_focus": [
+        "anti-go-wide",
+        "cartes de swing plus larges",
+        "moins de pure anti-spell protection"
+      ],
+      "battlefield_notes": [
+        "Les battlefields où une seule grosse unité peut tenir sont moins accessibles ici",
+        "Rumble aime les tables où il peut additionner la pression"
+      ],
+      "main_lose_conditions_for_jax": [
+        "Croire que Counter Strike ou Defy vont régler seuls le matchup",
+        "ne pas assez respecter la largeur de board",
+        "trop jouer la partie comme contre un deck porteur unique"
+      ],
+      "important_patterns_to_respect": [
+        "wide board turns",
+        "huge Might thresholds",
+        "low dependency on single counterable spell"
+      ],
+      "variation_notes": [
+        "C'est l'un des rares matchups où le signal qualitatif contre Jax est assez net."
+      ],
+      "source_refs": [
+        "S5"
+      ]
+    },
+    {
+      "opponent": "Fiora, Grand Duelist",
+      "meta_context": "Midrange équipement/protection, plus marginale",
+      "jax_outlook": {
+        "label": "close_even",
+        "estimated_jax_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Matchup d'équipement/protection très technique, probablement déterminé par la qualité de la lecture des combats et des timings. Les données sont faibles, donc il faut rester prudent.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks savent jouer une menace équipée et protéger leurs pièces.",
+        "Le joueur qui dépense le mieux ses protections premium et identifie la vraie menace prend souvent l'ascendant."
+      ],
+      "opponent_plan": [
+        "Créer un porteur très rentable",
+        "t'obliger à répondre de manière inefficace",
+        "gagner via combat quality"
+      ],
+      "jax_plan": [
+        "Ne pas gaspiller les meilleures protections",
+        "forcer Fiora à engager davantage qu'elle ne veut",
+        "utiliser la modularité de l'équipement plutôt qu'un simple duel de star unit"
+      ],
+      "mulligan_focus": [
+        "main équilibrée",
+        "pas de main trop orientée anti-wide",
+        "vraie densité de porteurs"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "combat blowout prevention",
+        "protection de qualité"
+      ],
+      "battlefield_notes": [
+        "Battlefields rewardant le jeu large peuvent aider Jax à sortir du duel frontal"
+      ],
+      "main_lose_conditions_for_jax": [
+        "tout concentrer sur une seule unité",
+        "perdre le tempo du premier gros combat"
+      ],
+      "important_patterns_to_respect": [
+        "voltron turns",
+        "combat protection chains"
+      ],
+      "variation_notes": [
+        "Faible confiance faute de matière récente ciblée."
+      ],
+      "source_refs": [
+        "S11"
+      ]
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_context": "Deck de vitesse / Fury-aggro",
+      "jax_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_jax_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Annie met en avant un des vrais points faibles structurels de Jax: les mains qui mettent trop de temps à se stabiliser ou à aligner équipement + corps + protection.",
+      "why_matchup_plays_this_way": [
+        "Annie peut prendre les premiers points pendant que Jax installe sa structure.",
+        "Si Jax passe ce cap sans trop de retard, l'avantage de qualité des combats revient souvent."
+      ],
+      "opponent_plan": [
+        "mettre la pression tôt",
+        "forcer Jax à se défendre avant d'être prêt",
+        "finir avant que la table équipée ne prenne l'ascendant"
+      ],
+      "jax_plan": [
+        "survivre proprement au début",
+        "ne pas garder de main greedy",
+        "transformer la partie en échanges de ressources plus qu'en pure race"
+      ],
+      "mulligan_focus": [
+        "unités early",
+        "protection peu chère",
+        "zéro keep lent"
+      ],
+      "sideboard_focus": [
+        "anti-race",
+        "cartes aidant à survivre aux premiers cycles de score"
+      ],
+      "battlefield_notes": [
+        "Les battlefields lents ou value t'aident plus que ceux où Annie convertit immédiatement le tempo"
+      ],
+      "main_lose_conditions_for_jax": [
+        "retard trop important aux points",
+        "main trop value",
+        "taper out au mauvais moment"
+      ],
+      "important_patterns_to_respect": [
+        "fast point starts",
+        "chaos burst turns",
+        "midgame finisher pressure"
+      ],
+      "variation_notes": [
+        "Le matchup peut remonter vers l'équilibre si Annie est moins pure aggro et plus grindy."
+      ],
+      "source_refs": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_context": "Plan rapide equipment/token/aurora",
+      "jax_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_jax_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "Azir demande à Jax de répondre plus vite que le deck ne l'aime parfois. Le pairing ressemble à une version plus board-heavy du problème posé par Annie ou certains swarms.",
+      "why_matchup_plays_this_way": [
+        "Azir peut aller vite sous le plan midrange protégé de Jax.",
+        "Jax préfère les parties où il peut rendre chaque combat absurde; Azir peut parfois juste mettre trop de présence."
+      ],
+      "opponent_plan": [
+        "ouvrir vite",
+        "forcer des réponses une par une",
+        "scorer avant que l'équipement Jax ait pleinement pris"
+      ],
+      "jax_plan": [
+        "cibler les vraies pièces de payoff",
+        "ne pas perdre de temps sur les petits corps si cela laisse vivre l'engine",
+        "trouver un vrai tour de stabilisation"
+      ],
+      "mulligan_focus": [
+        "présence early",
+        "interaction immédiate",
+        "main qui ne démarre pas tour 3"
+      ],
+      "sideboard_focus": [
+        "anti-go-wide",
+        "tempo swings",
+        "outils empêchant le snowball"
+      ],
+      "battlefield_notes": [
+        "Tu n'as pas toujours le luxe d'attendre ton meilleur tour"
+      ],
+      "main_lose_conditions_for_jax": [
+        "main lente",
+        "réponses trop étroites",
+        "laisser l'engine Azir s'installer"
+      ],
+      "important_patterns_to_respect": [
+        "token/equipment pressure",
+        "early point starts"
+      ],
+      "variation_notes": [
+        "Matchup plausible à améliorer par sideboard, mais faible confiance faute de données directes."
+      ],
+      "source_refs": [
+        "S2",
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Lucian, Purifier",
+      "meta_context": "Autre deck équipement/body plus agressif",
+      "jax_outlook": {
+        "label": "slightly_favorable",
+        "estimated_jax_winrate_percent": "51-55",
+        "confidence": "low"
+      },
+      "summary": "Lucian peut jouer des parties très explosives, mais Jax semble avoir un plafond tactique supérieur quand la partie se joue vraiment sur le combat et la protection.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks aiment l'équipement, mais Jax exploite mieux la modularité et la défense.",
+        "Lucian peut punir un départ lent, mais il paraît moins profond tactiquement dans les longues parties."
+      ],
+      "opponent_plan": [
+        "jouer plus agressif",
+        "profiter de l'équipement pour pousser les points tôt"
+      ],
+      "jax_plan": [
+        "refuser la pure race si elle est mauvaise",
+        "tenir puis retourner le tempo",
+        "faire parler Counter Strike et Quick-Draw"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "pas de keep full value"
+      ],
+      "sideboard_focus": [
+        "combat tricks premium",
+        "anti-porteur"
+      ],
+      "battlefield_notes": [
+        "Sunken Temple peut aider à extraire de la value des échanges répétés"
+      ],
+      "main_lose_conditions_for_jax": [
+        "retard trop tôt",
+        "sous-estimer la pression de mobilité/équipement"
+      ],
+      "important_patterns_to_respect": [
+        "voltron pushes",
+        "tempo point turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3",
+        "S11"
+      ]
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_context": "Midrange stat-check / combat",
+      "jax_outlook": {
+        "label": "slightly_favorable",
+        "estimated_jax_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Sett veut souvent te forcer à jouer une partie de taille brute. Jax a justement de bons outils pour refuser cette lecture trop simple du combat.",
+      "why_matchup_plays_this_way": [
+        "Sett gagne quand les maths sont frontales.",
+        "Jax gagne quand les maths deviennent non triviales grâce aux équipements, aux réactions et aux protections."
+      ],
+      "opponent_plan": [
+        "poser de grosses stats",
+        "te forcer au combat pur"
+      ],
+      "jax_plan": [
+        "refuser le stat-check brut",
+        "punir les fenêtres où Sett surexpose une grosse pièce",
+        "garder l'énergie pour les bons tours"
+      ],
+      "mulligan_focus": [
+        "présence early",
+        "interaction flexible"
+      ],
+      "sideboard_focus": [
+        "anti-big threat",
+        "protection plus fine que brute"
+      ],
+      "battlefield_notes": [
+        "Les battlefields tenus par une seule grosse pièce sont plus délicats"
+      ],
+      "main_lose_conditions_for_jax": [
+        "jouer trop honnêtement les combats",
+        "laisser Sett dicter le tempo"
+      ],
+      "important_patterns_to_respect": [
+        "Punch First style turns",
+        "buff combat spikes"
+      ],
+      "variation_notes": [
+        "Peu de matière directe."
+      ],
+      "source_refs": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Rek'Sai, Void Burrower",
+      "meta_context": "Rogue/swarm récursif",
+      "jax_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_jax_winrate_percent": "45-49",
+        "confidence": "low"
+      },
+      "summary": "Le pairing semble pénible à bas bruit: un joueur Jax mentionne perdre dur contre un Rek'Sai local, et la logique générale du matchup va dans ce sens car la largeur récurrente met en défaut une partie des outils étroits de Jax.",
+      "why_matchup_plays_this_way": [
+        "Jax préfère souvent les menaces centrales et les combats à haute qualité.",
+        "Rek'Sai peut créer plus de largeur et plus de recursion que ce que Jax aime gérer."
+      ],
+      "opponent_plan": [
+        "largeur de board",
+        "recursion/value",
+        "score pressure par accumulation"
+      ],
+      "jax_plan": [
+        "trouver un swing plus large que d'habitude",
+        "éviter les 1 pour 1 permanents",
+        "protéger les vrais turns de stabilisation"
+      ],
+      "mulligan_focus": [
+        "anti-go-wide",
+        "présence early"
+      ],
+      "sideboard_focus": [
+        "cartes plus larges",
+        "moins de pur anti-spell"
+      ],
+      "battlefield_notes": [
+        "Les battlefields vite saturés par plusieurs unités sont dangereux"
+      ],
+      "main_lose_conditions_for_jax": [
+        "répondre trop étroitement",
+        "main slow setup",
+        "ne pas trouver d'inflexion"
+      ],
+      "important_patterns_to_respect": [
+        "wide recurring boards",
+        "void pressure"
+      ],
+      "variation_notes": [
+        "Très faible confiance, mais le pairing n'a pas l'air plaisant pour Jax."
+      ],
+      "source_refs": [
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "opponent": "Sivir, Battle Mistress",
+      "meta_context": "Miracle/discard shell à faible volume mais vrai plafond",
+      "jax_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_jax_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Comme d'autres shells miracles, Sivir menace de dépasser Jax si la partie devient une question de resource explosion pure.",
+      "why_matchup_plays_this_way": [
+        "Jax aime les parties où ses protections gardent de la valeur.",
+        "Les decks miracle aiment les parties où un gros tour invalide plusieurs petits avantages accumulés."
+      ],
+      "opponent_plan": [
+        "préparer le swing turn",
+        "punir les mains Jax qui ne mettent pas assez de vitesse"
+      ],
+      "jax_plan": [
+        "préserver la pression",
+        "jouer pour rune economy",
+        "ne pas lui laisser un tour gratuit de set-up"
+      ],
+      "mulligan_focus": [
+        "mains disciplinées",
+        "pas de slow keep"
+      ],
+      "sideboard_focus": [
+        "plans anti-miracle",
+        "Boneshiver/économie de runes si applicable"
+      ],
+      "battlefield_notes": [
+        "Mieux vaut souvent tenir un battlefield proprement que courir après deux"
+      ],
+      "main_lose_conditions_for_jax": [
+        "trop de respect sans clock",
+        "se faire dépasser par un seul gros tour"
+      ],
+      "important_patterns_to_respect": [
+        "miracle/discard spike turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S2",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Miss Fortune, Bounty Hunter",
+      "meta_context": "Tempo/race à faible volume de field",
+      "jax_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_jax_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "MF met en relief le danger des decks qui convertissent le tempo très vite avant que Jax ne structure sa table.",
+      "why_matchup_plays_this_way": [
+        "Jax n'aime pas les pairings où il doit immédiatement être défensif puis offensif sans phase d'installation.",
+        "MF peut parfois imposer exactement ce rythme."
+      ],
+      "opponent_plan": [
+        "race tempo",
+        "prendre les points tôt"
+      ],
+      "jax_plan": [
+        "ne pas garder de mains lentes",
+        "tenir la première phase puis retourner la course"
+      ],
+      "mulligan_focus": [
+        "early interaction",
+        "corps jouables vite"
+      ],
+      "sideboard_focus": [
+        "anti-race",
+        "cartes de stabilisation"
+      ],
+      "battlefield_notes": [
+        "Battlefields trop ouverts au chip tempo sont mauvais pour toi"
+      ],
+      "main_lose_conditions_for_jax": [
+        "retard immédiat aux points",
+        "main value-only"
+      ],
+      "important_patterns_to_respect": [
+        "fast tempo accelerations"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S2"
+      ]
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_context": "Combat/protection Calm",
+      "jax_outlook": {
+        "label": "close_even",
+        "estimated_jax_winrate_percent": "49-52",
+        "confidence": "low"
+      },
+      "summary": "Matchup de précision entre deux decks capables de rendre les combats très inconfortables.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks valorisent énormément le timing de protection et les holds.",
+        "Jax joue plus avec les équipements, Yi plus avec les boosts/protections directes."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield avec peu de ressources",
+        "punir les moves imprécis"
+      ],
+      "jax_plan": [
+        "faire dépenser à Yi plus de cartes qu'il ne veut",
+        "éviter les combats trop lisibles",
+        "garder les angles Quick-Draw comme surprise réelle"
+      ],
+      "mulligan_focus": [
+        "main équilibrée",
+        "pas trop gourmande"
+      ],
+      "sideboard_focus": [
+        "anti-protection",
+        "combat swing tools"
+      ],
+      "battlefield_notes": [
+        "Les holds importent plus que les races ici"
+      ],
+      "main_lose_conditions_for_jax": [
+        "s'empaler dans un combat optimal pour Yi"
+      ],
+      "important_patterns_to_respect": [
+        "Calm protection chains"
+      ],
+      "variation_notes": [
+        "Très peu de données directes."
+      ],
+      "source_refs": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Lux, Lady of Luminosity",
+      "meta_context": "Contrôle/removal moins validé que Viktor",
+      "jax_outlook": {
+        "label": "close_even",
+        "estimated_jax_winrate_percent": "49-53",
+        "confidence": "low"
+      },
+      "summary": "Lux pose un problème analogue à Viktor mais souvent de manière un peu moins oppressante. Les joueurs Jax récents soulignent surtout que Brutalizer perd de la valeur ici, alors que Guardian Angel en gagne.",
+      "why_matchup_plays_this_way": [
+        "Les kills hors combat restent pénibles pour Jax.",
+        "Mais Lux paraît globalement moins punissante que les Viktor les mieux construits."
+      ],
+      "opponent_plan": [
+        "tenir la partie sur les sorts",
+        "nettoyer les porteurs au bon moment"
+      ],
+      "jax_plan": [
+        "prioriser GA et la modularité",
+        "ne pas surestimer la seule taille brute"
+      ],
+      "mulligan_focus": [
+        "Guardian Angel",
+        "unités fiables",
+        "moins de dépendance à Brutalizer"
+      ],
+      "sideboard_focus": [
+        "anti-removal",
+        "draw flow"
+      ],
+      "battlefield_notes": [
+        "Monastery/value plans sont utiles si tu ne te fais pas casser trop vite"
+      ],
+      "main_lose_conditions_for_jax": [
+        "mettre tout sur une unité",
+        "main trop lente"
+      ],
+      "important_patterns_to_respect": [
+        "kill spell timing"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S15"
+      ]
+    },
+    {
+      "opponent": "Ornn, Fire Below the Mountain",
+      "meta_context": "Rogue gros corps/équipement",
+      "jax_outlook": {
+        "label": "close_even",
+        "estimated_jax_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Ornn peut créer une partie lourde où l'équipement compte autant que chez Jax, mais les données sont trop faibles pour un verdict fort.",
+      "why_matchup_plays_this_way": [
+        "Beaucoup d'outils se ressemblent en termes de rôle",
+        "la partie peut devenir une bataille de densité et de porteurs"
+      ],
+      "opponent_plan": [
+        "grands porteurs",
+        "équipement lourd",
+        "stat-check tardif"
+      ],
+      "jax_plan": [
+        "ne pas gaspiller les meilleures protections",
+        "faire compter la modularité et la réactivité"
+      ],
+      "mulligan_focus": [
+        "main stable"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "anti-équipement"
+      ],
+      "battlefield_notes": [
+        "attention aux battlefields verrouillés par une seule grosse unité"
+      ],
+      "main_lose_conditions_for_jax": [
+        "laisser un payoff trop longtemps"
+      ],
+      "important_patterns_to_respect": [
+        "single big carrier turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S2"
+      ]
+    },
+    {
+      "opponent": "Ahri, Nine-Tailed Fox",
+      "meta_context": "Mobilité / tempo",
+      "jax_outlook": {
+        "label": "slightly_favorable",
+        "estimated_jax_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Ahri peut voler des points, mais elle semble moins robuste que les vrais tops du format face à un deck qui peut défendre de manière aussi flexible.",
+      "why_matchup_plays_this_way": [
+        "Jax punit souvent bien les moves tactiques trop agressifs",
+        "Ahri manque du même niveau de validation compétitive"
+      ],
+      "opponent_plan": [
+        "angles de mobilité",
+        "score opportuniste"
+      ],
+      "jax_plan": [
+        "ne pas sur-commit un battlefield",
+        "garder de quoi punir le move clé"
+      ],
+      "mulligan_focus": [
+        "main stable"
+      ],
+      "sideboard_focus": [
+        "tempo flexible"
+      ],
+      "battlefield_notes": [
+        "la répartition compte plus que d'habitude"
+      ],
+      "main_lose_conditions_for_jax": [
+        "mauvaise lecture d'un pivot de mobilité"
+      ],
+      "important_patterns_to_respect": [
+        "mobility score turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S2"
+      ]
+    },
+    {
+      "opponent": "Yasuo, Unforgiven",
+      "meta_context": "Mobilité / tempo explosif",
+      "jax_outlook": {
+        "label": "slightly_favorable",
+        "estimated_jax_winrate_percent": "52-57",
+        "confidence": "low"
+      },
+      "summary": "Comme Ahri, Yasuo peut voler une partie, mais paraît moins constant sur un tournoi long qu'un Jax bien piloté.",
+      "why_matchup_plays_this_way": [
+        "Jax n'aime pas les surprises de mobilité, mais il aime punir les combats imprécis.",
+        "Yasuo reste plus dépendant de ses bonnes fenêtres."
+      ],
+      "opponent_plan": [
+        "double-score opportuniste",
+        "explosions de tempo"
+      ],
+      "jax_plan": [
+        "respecter les fenêtres de mouvement",
+        "tenir assez de ressources ouvertes"
+      ],
+      "mulligan_focus": [
+        "présence + interaction minimale"
+      ],
+      "sideboard_focus": [
+        "tempo answers"
+      ],
+      "battlefield_notes": [
+        "ne pas s'endormir sur la position du score"
+      ],
+      "main_lose_conditions_for_jax": [
+        "oublier de jouer autour d'un vol de partie"
+      ],
+      "important_patterns_to_respect": [
+        "mobility blowout turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S2"
+      ]
+    },
+    {
+      "opponent": "Teemo, Swift Scout",
+      "meta_context": "Chip pressure / tricks",
+      "jax_outlook": {
+        "label": "favorable",
+        "estimated_jax_winrate_percent": "55-60",
+        "confidence": "low"
+      },
+      "summary": "Teemo n'apparaît pas comme un vrai problème structurel pour Jax dans la méta actuelle.",
+      "why_matchup_plays_this_way": [
+        "Jax a assez de corps et de protection pour passer la première vague",
+        "puis le deck prend souvent l'ascendant via équipement"
+      ],
+      "opponent_plan": [
+        "chip damage",
+        "tricks de tempo"
+      ],
+      "jax_plan": [
+        "stabiliser proprement",
+        "ne pas perdre sur un départ trop lent"
+      ],
+      "mulligan_focus": [
+        "zéro keep greed"
+      ],
+      "sideboard_focus": [
+        "peu de changements nécessaires"
+      ],
+      "battlefield_notes": [
+        "les battlefields lents te favorisent"
+      ],
+      "main_lose_conditions_for_jax": [
+        "main trop lente"
+      ],
+      "important_patterns_to_respect": [
+        "nuisance tempo"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S2"
+      ]
+    }
+  ],
+  "sources": {
+    "S1": {
+      "type": "tier list",
+      "title": "Riftbound.gg - Meta Legend Tier List",
+      "date": "2026-03-06",
+      "notes": "Place Jax en Tier 3 dans la lecture Spiritforged actuelle"
+    },
+    "S2": {
+      "type": "guide",
+      "title": "Riftbound.gg - Jax, Grandmaster at Arms Guide",
+      "date": "2026-02-11",
+      "notes": "Explique les difficultés initiales de Jax, sa dépendance à l'équipement, l'impact du hate gear et le rôle de Jax comme deck Body/Calm de combats équipés"
+    },
+    "S3": {
+      "type": "tier list",
+      "title": "Mobalytics - Riftbound Tier List",
+      "date_consulted": "2026-03-11",
+      "notes": "Place Jax en B-tier et résume le noyau Warmog/Monastery/Brutalizer/Guardian Angel avec protection Not So Fast/Defy/Counter Strike"
+    },
+    "S4": {
+      "type": "official tournament decklist",
+      "title": "Riftbound official - Vegas Top Decks - Theverybestgamer Jax",
+      "date": "2026-03-04",
+      "notes": "Decklist officielle du Top 8 Vegas, avec battlefields, runes, main deck et sideboard"
+    },
+    "S5": {
+      "type": "community thread",
+      "title": "How to deal with Draven?",
+      "date_consulted": "2026-03-11",
+      "notes": "Discussion sur Jax comme option crédible contre Draven; mention explicite que Rumble est pénible pour Jax"
+    },
+    "S6": {
+      "type": "community thread",
+      "title": "How to counter Irelia?",
+      "date_consulted": "2026-03-11",
+      "notes": "Conseils Jax: start hand avec Challenge ou Charm; tuer Irelia dès qu'une fenêtre s'ouvre"
+    },
+    "S7": {
+      "type": "community thread",
+      "title": "Ezreal - Dashing",
+      "date_consulted": "2026-03-11",
+      "notes": "Retour de joueur disant que Jax outscale Ezreal"
+    },
+    "S8": {
+      "type": "community thread",
+      "title": "Spells only Viktor still viable?",
+      "date_consulted": "2026-03-11",
+      "notes": "Spell-only Viktor décrit Jax comme un hell matchup à cause des contres, de Deflect et de la résilience"
+    },
+    "S9": {
+      "type": "community AMA",
+      "title": "Top 8 Jax - Ask me questions",
+      "date_consulted": "2026-03-11",
+      "notes": "Source la plus utile pour les matchups, la gestion du deck, la rune economy, le sideboard et les conseils débutants"
+    },
+    "S10": {
+      "type": "tournament report",
+      "title": "Rift Mana - Las Vegas Regional Qualifier Tournament Meta Report",
+      "date": "2026-03-02",
+      "notes": "Souligne que Jax a été l'une des surprises majeures de l'événement en atteignant le top 8"
+    },
+    "S11": {
+      "type": "community thread",
+      "title": "Thoughts on this Jax deck",
+      "date_consulted": "2026-03-11",
+      "notes": "Retours de terrain plus locaux sur certains pairings comme Fiora, Kai'Sa, Sett"
+    },
+    "S12": {
+      "type": "community synthesis",
+      "title": "Lectures de matchup rapides contre plans agressifs type Azir/Annie",
+      "date_consulted": "2026-03-11",
+      "notes": "Utilisé avec prudence pour les pairings à faible volume"
+    },
+    "S13": {
+      "type": "community thread",
+      "title": "Jax Makes Top 8 in Vegas",
+      "date_consulted": "2026-03-11",
+      "notes": "Mention d'un joueur perdant souvent contre Rek'Sai; signal faible mais utile pour les pairings de largeur"
+    },
+    "S14": {
+      "type": "community learning thread",
+      "title": "How to Play Bubo's Jax",
+      "date_consulted": "2026-03-11",
+      "notes": "Mulligan pratique, importance du ratio unités/équipements/protection et de la gestion de runes"
+    },
+    "S15": {
+      "type": "community learning thread",
+      "title": "How do I win with Jax?",
+      "date_consulted": "2026-03-11",
+      "notes": "Discussion sur la qualité de Brutalizer dans certains matchups et sur l'importance des counters contre purple"
+    },
+    "S16": {
+      "type": "official / developer update",
+      "title": "Potential Card Bans: Riftbound Game Director's Update",
+      "date": "2026-03-10",
+      "notes": "Pas de bans annoncés, rules update prévue le 30 mars 2026"
+    }
+  }
+}

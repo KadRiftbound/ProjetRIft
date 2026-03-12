@@ -778,11 +778,6 @@ export default function DeckBuilderClient({
                     alt={legend.name}
                     className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                    <p className="text-xs font-black text-white truncate uppercase tracking-tight">{legend.name}</p>
-                    <p className="text-[8px] font-black text-gray-500 uppercase tracking-widest mt-1">{legend.domain}</p>
-                  </div>
                 </div>
               </button>
             ))}
@@ -848,94 +843,94 @@ export default function DeckBuilderClient({
 
   if (step === 'battlefield') {
     return (
-      <div className="min-h-screen bg-background py-20 px-6">
+      <div className="min-h-screen bg-background py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <button
-            onClick={() => setStep('build')}
-            className="mb-8 text-rift-blue hover:underline text-sm font-bold"
-          >
-            ← Retour au deck
-          </button>
-          
-          <PageHeader
-            eyebrow="Étape 4/4"
-            title="Choisis tes"
-            titleAccent="Battlefields"
-            description="Sélectionne exactement 3 battlefields pour ton deck. Les battlefields sont des terrains qui s'activent pendant la partie."
-            className="mb-12"
-          />
-          
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+
+          {/* Header compact */}
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <div className="text-[9px] font-black text-gray-600 uppercase tracking-[0.3em] mb-1">Étape 4/4</div>
+              <h1 className="text-2xl font-black text-white uppercase tracking-tight">
+                Choisis tes <span className="text-rift-gold">Battlefields</span>
+              </h1>
+              <p className="text-xs text-gray-500 mt-1">Sélectionne exactement 3 battlefields — terrains activés pendant la partie.</p>
+            </div>
+            <div className="flex items-center gap-4">
+              {/* Sélectionnés en mini */}
+              <div className="flex items-center gap-2">
+                {[0, 1, 2].map(i => {
+                  const bf = selectedBattlefields[i];
+                  return bf ? (
+                    <div key={bf.id} className="relative group">
+                      <div className="w-16 h-10 rounded-lg overflow-hidden border border-rift-gold/50">
+                        <img src={bf.imageUrl || '/placeholder.png'} alt={bf.name} className="w-full h-full object-cover" />
+                      </div>
+                      <button
+                        onClick={() => removeBattlefield(bf.id)}
+                        className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-black border border-white/20 text-[8px] text-gray-400 hover:text-rift-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                      >✕</button>
+                    </div>
+                  ) : (
+                    <div key={i} className="w-16 h-10 rounded-lg border border-dashed border-white/10 bg-white/2 flex items-center justify-center">
+                      <span className="text-[8px] text-gray-700 font-black">{i + 1}</span>
+                    </div>
+                  );
+                })}
+              </div>
+              <span className={`text-xs font-black tabular-nums ${selectedBattlefields.length === 3 ? 'text-green-400' : 'text-gray-500'}`}>
+                {selectedBattlefields.length}/3
+              </span>
+              <button
+                onClick={() => setStep('build')}
+                disabled={selectedBattlefields.length !== 3}
+                className="px-6 py-2.5 bg-rift-gold text-black text-xs font-black rounded-xl uppercase tracking-widest hover:scale-105 transition-all disabled:opacity-30 disabled:hover:scale-100"
+              >
+                Continuer →
+              </button>
+            </div>
+          </div>
+
+          {/* Grille de battlefields — cartes horizontales */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {availableBattlefields.map((bf: any) => {
               const inDeck = selectedBattlefields.find(b => b.id === bf.id)?.count || 0;
+              const isSelected = inDeck > 0;
               return (
                 <button
                   key={bf.id}
                   onClick={() => addBattlefield(bf)}
-                  className="group relative transition-transform duration-300 hover:scale-105 active:scale-95"
+                  className={`group relative p-3 rounded-xl border transition-all duration-200 text-left
+                    ${isSelected
+                      ? 'bg-rift-gold/10 border-rift-gold/60 shadow-[0_0_12px_rgba(var(--color-rift-gold),0.15)]'
+                      : 'bg-white/3 border-white/8 hover:border-rift-gold/40 hover:bg-white/6'
+                    }`}
                 >
-                  <div className="aspect-[3/4.2] rounded-2xl overflow-hidden bg-rift-dark-secondary border-2 border-white/10 group-hover:border-rift-gold transition-all duration-500 shadow-xl">
+                  {/* Image en format paysage */}
+                  <div className="w-full aspect-[3/2] rounded-lg overflow-hidden bg-black/40">
                     <img
                       src={bf.images?.[0]?.medium || '/placeholder.png'}
                       alt={bf.name}
-                      className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700"
+                      className={`w-full h-full object-cover transition-all duration-500 ${isSelected ? 'grayscale-0' : 'grayscale-[0.4] group-hover:grayscale-0'}`}
                     />
-                    {inDeck > 0 && (
-                      <div className="absolute top-3 left-3 w-8 h-8 rounded-full bg-rift-gold text-black flex items-center justify-center font-black text-xs shadow-2xl">
-                        {inDeck}
-                      </div>
-                    )}
                   </div>
-                  <div className="mt-2 text-center">
-                    <p className="text-[10px] font-black text-gray-400 uppercase truncate">{bf.name}</p>
-                  </div>
+                  {/* Badge sélectionné */}
+                  {isSelected && (
+                    <div className="absolute top-4 right-4 w-6 h-6 rounded-full bg-rift-gold text-black flex items-center justify-center font-black text-xs">
+                      ✓
+                    </div>
+                  )}
                 </button>
               );
             })}
           </div>
 
-          {selectedBattlefields.length > 0 && (
-            <div className="mt-12">
-              <CardPanel className="p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-black text-gray-300 uppercase tracking-[0.3em]">Battlefields sélectionnés</span>
-                  <span className={`text-xs font-black ${selectedBattlefields.length === 3 ? 'text-green-400' : 'text-rift-red'}`}>
-                    {selectedBattlefields.length}/3
-                  </span>
-                </div>
-                <div className="grid grid-cols-3 gap-3">
-                  {selectedBattlefields.map(bf => (
-                    <div key={bf.id} className="flex items-center gap-2 p-2 bg-black/40 rounded-xl border border-white/10">
-                      {bf.imageUrl && (
-                        <div className="w-8 h-10 rounded overflow-hidden">
-                          <img src={bf.imageUrl} alt={bf.name} className="w-full h-full object-cover" />
-                        </div>
-                      )}
-                      <div className="flex-1 min-w-0">
-                        <p className="text-[9px] font-black text-white truncate uppercase">{bf.name}</p>
-                      </div>
-                      <button
-                        onClick={() => removeBattlefield(bf.id)}
-                        className="w-6 h-6 rounded-lg bg-red-500/10 text-red-500 flex items-center justify-center text-xs hover:bg-red-500/20"
-                      >
-                        ✕
-                      </button>
-                    </div>
-                  ))}
-                </div>
-              </CardPanel>
-            </div>
-          )}
-
-          <div className="mt-8 flex justify-center">
-            <button
-              onClick={() => setStep('build')}
-              disabled={selectedBattlefields.length !== 3}
-              className="px-8 py-4 bg-rift-gold text-black font-black rounded-xl uppercase tracking-widest hover:scale-105 transition-all disabled:opacity-30 disabled:hover:scale-100"
-            >
-              Continuer vers le deck
+          {/* Retour */}
+          <div className="mt-6">
+            <button onClick={() => setStep('build')} className="text-xs text-gray-600 hover:text-white transition-colors uppercase tracking-widest font-black">
+              ← Retour au deck
             </button>
           </div>
+
         </div>
       </div>
     );
@@ -981,117 +976,313 @@ export default function DeckBuilderClient({
             ))}
           </div>
         )}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-          <PageHeader
-            eyebrow="Étape 3/4"
-            title="Deck"
-            titleAccent="Builder"
-            align="left"
-            className="mb-0"
-          />
-          <div className="flex items-center gap-4">
-            {selectedLegend && (
-              <div className="flex items-center gap-2 px-4 py-2 bg-rift-gold/10 border border-rift-gold/30 rounded-xl">
-                <span className="text-[8px] font-black text-rift-gold uppercase">Légende</span>
-                <span className="text-xs font-bold text-white">{selectedLegend.name}</span>
-              </div>
-            )}
-            {chosenChampion && (
-              <div className="flex items-center gap-2 px-4 py-2 bg-rift-purple/10 border border-rift-purple/30 rounded-xl">
-                <span className="text-[8px] font-black text-rift-purple uppercase">Champion</span>
-                <span className="text-xs font-bold text-white">{chosenChampion.name}</span>
-              </div>
-            )}
-            {selectedBattlefields.length > 0 && (
-              <div className="flex items-center gap-2 px-4 py-2 bg-rift-blue/10 border border-rift-blue/30 rounded-xl">
-                <span className="text-[8px] font-black text-rift-blue uppercase">Battlefields</span>
-                <span className="text-xs font-bold text-white">{selectedBattlefields.length}/3</span>
-              </div>
-            )}
-            <button
-              onClick={newDeck}
-              className="px-4 py-2 text-xs font-black text-gray-400 uppercase tracking-widest hover:text-white transition-all"
+        {/* ── ACTIONS BAR (au-dessus) ── */}
+        <div className="mb-2 flex items-center justify-between gap-3">
+          {/* Gauche : charger un deck */}
+          <div className="flex items-center gap-2">
+            <select
+              value={selectedSavedDeck}
+              onChange={(e) => setSelectedSavedDeck(e.target.value)}
+              className="px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-[9px] font-black text-gray-400 uppercase tracking-widest appearance-none max-w-[130px]"
             >
-              Changer
+              <option value="" className="bg-rift-dark">Charger un deck…</option>
+              {localDecks.map(d => (
+                <option key={d.id} value={d.id} className="bg-rift-dark">{d.name}</option>
+              ))}
+            </select>
+            {selectedSavedDeck && (
+              <button onClick={() => loadSavedDeck(selectedSavedDeck)} className="px-3 py-2 bg-white/10 text-white text-[9px] font-black uppercase tracking-widest rounded-lg hover:bg-white/20 transition-all">
+                OK
+              </button>
+            )}
+          </div>
+          {/* Droite : actions principales */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setShowImport(!showImport)}
+              className={`px-4 py-2 rounded-lg text-[9px] font-black uppercase tracking-widest transition-all ${showImport ? 'bg-rift-blue text-black' : 'bg-white/5 border border-white/10 text-gray-400 hover:bg-white/10 hover:text-white'}`}
+            >
+              Importer
+            </button>
+            <button
+              onClick={exportDeck}
+              disabled={stats.totalCards === 0}
+              className="px-4 py-2 rounded-lg bg-white/10 text-white text-[9px] font-black uppercase tracking-widest hover:bg-white/20 transition-all disabled:opacity-30"
+            >
+              Exporter
+            </button>
+            <button
+              onClick={shareDeck}
+              disabled={!deckIsValid}
+              className="px-4 py-2 rounded-lg bg-rift-purple/80 text-white text-[9px] font-black uppercase tracking-widest hover:bg-rift-purple transition-all disabled:opacity-30"
+            >
+              Partager
+            </button>
+            <button
+              onClick={saveDeck}
+              disabled={!deckIsValid}
+              className="px-4 py-2 rounded-lg bg-rift-gold text-black text-[9px] font-black uppercase tracking-widest hover:scale-105 transition-all disabled:opacity-30 shadow-lg"
+            >
+              Sauvegarder
             </button>
           </div>
         </div>
 
+        {/* ── INFO BAR ── */}
+        <div className="mb-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-xl flex items-stretch gap-0 w-full overflow-hidden">
+
+          {/* Images Légende + Champion — w-28 chacune, toute la hauteur */}
+          <div className="flex shrink-0">
+            {selectedLegend && (
+              <div className="w-28 overflow-hidden border-r border-white/10">
+                <img
+                  src={selectedLegend.images?.[0]?.medium || '/placeholder.png'}
+                  alt={selectedLegend.name}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            )}
+            <div
+              onDragOver={(e) => e.preventDefault()}
+              onDrop={(e) => {
+                const id = e.dataTransfer.getData('text/plain');
+                const card = allCards.find(c => c.id === id);
+                if (card && card.type === 'Champion' && canChooseChampion(card)) addToDeck(card);
+              }}
+              className="w-28 border-r border-white/10 relative group"
+            >
+              {chosenChampionCard?.imageUrl ? (
+                <>
+                  <img src={chosenChampionCard.imageUrl} alt={chosenChampionCard.name} className="w-full h-full object-cover object-top" />
+                  {chosenChampion && (
+                    <button
+                      onClick={() => setChosenChampion(null)}
+                      className="absolute top-1 right-1 w-4 h-4 rounded bg-black/70 text-[8px] text-gray-300 hover:text-rift-red flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                    >✕</button>
+                  )}
+                </>
+              ) : (
+                <div className="w-full h-full bg-rift-purple/5 flex items-center justify-center border-l border-dashed border-rift-purple/20">
+                  <span className="text-[8px] text-gray-700 uppercase font-black leading-none text-center">drop</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Contenu principal — occupe tout l'espace restant */}
+          <div className="flex items-center gap-5 flex-1 px-5 py-6 min-w-0">
+
+            {/* Nom + progression + compteurs L/C */}
+            <div className="flex flex-col gap-1 w-72 shrink-0">
+              <input
+                type="text"
+                value={deckName}
+                onChange={(e) => setDeckName(e.target.value)}
+                className="px-0 py-0 bg-transparent border-none text-sm font-black text-white focus:ring-0 placeholder-gray-700 uppercase tracking-tighter w-full"
+                placeholder="NOM DU DECK"
+              />
+              <div className="w-full bg-white/5 h-[2px] rounded-full overflow-hidden">
+                <div
+                  className={`h-full transition-all duration-700 rounded-full ${mainCount >= requiredMain ? 'bg-green-500' : 'bg-rift-gold'}`}
+                  style={{ width: `${Math.min(100, (mainCount / requiredMain) * 100)}%` }}
+                />
+              </div>
+              <div className="flex items-center gap-3 text-[9px] font-black uppercase tracking-widest">
+                <span className={legendCount === 1 ? 'text-green-400' : 'text-rift-red'}>Légende {legendCount}/1</span>
+                <span className="text-gray-700">·</span>
+                <span className={championCount === 1 ? 'text-green-400' : 'text-rift-red'}>Champion {championCount}/1</span>
+              </div>
+            </div>
+
+            <div className="w-px h-10 bg-white/10 shrink-0" />
+
+            {/* Stats — réparties sur tout l'espace disponible */}
+            <div className="flex items-center justify-around flex-1 min-w-0">
+              {[
+                { label: 'Énergie moy.', value: stats.averageEnergy },
+                { label: 'Unités', value: stats.units },
+                { label: 'Sorts', value: stats.spells },
+                { label: 'Équip.', value: stats.gear },
+              ].map(({ label, value }) => (
+                <div key={label} className="flex flex-col items-center gap-0.5">
+                  <span className="text-sm font-black text-white tabular-nums leading-none">{value}</span>
+                  <span className="text-[8px] font-black text-gray-600 uppercase tracking-widest">{label}</span>
+                </div>
+              ))}
+
+              <div className="w-px h-10 bg-white/10 shrink-0" />
+
+              {/* Battlefields */}
+              <div className="flex flex-col gap-0.5 items-center">
+                <span className="text-[9px] font-black text-gray-600 uppercase tracking-widest">Battlefields</span>
+                <span className={`text-lg font-black tabular-nums leading-none ${battlefieldCount === 3 ? 'text-green-400' : 'text-gray-400'}`}>
+                  {battlefieldCount}<span className="text-gray-700 text-xs">/3</span>
+                </span>
+                <button
+                  onClick={() => setStep('battlefield')}
+                  className="text-[8px] font-black text-rift-blue hover:text-white uppercase tracking-widest transition-colors"
+                >
+                  Modifier →
+                </button>
+              </div>
+
+              <div className="w-px h-10 bg-white/10 shrink-0" />
+
+              {/* Statut */}
+              <div className="flex flex-col gap-0.5 items-center">
+                <span className="text-[9px] font-black text-gray-600 uppercase tracking-widest">Statut</span>
+                <span className={`text-xs font-black uppercase ${deckIsValid ? 'text-green-400' : 'text-rift-red'}`}>
+                  {deckIsValid ? '✓ Légal' : '✗ Incomplet'}
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Import panel */}
+        {showImport && (
+          <div className="mb-6 p-5 bg-black/40 border border-white/10 rounded-2xl space-y-3 backdrop-blur-xl">
+            <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Importer une decklist</div>
+            <textarea
+              value={importText}
+              onChange={(e) => setImportText(e.target.value)}
+              placeholder="Collez une decklist exportée ici (ex: 2x Nom de Carte)..."
+              className="w-full h-24 p-3 bg-black/40 border border-white/10 rounded-2xl text-xs text-gray-300 resize-none focus:border-rift-blue focus:outline-none"
+            />
+            {importError && <div className="text-xs text-rift-red font-bold">{importError}</div>}
+            <div className="flex gap-3">
+              <button onClick={importDeck} className="px-6 py-2.5 rounded-xl bg-white text-black text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-all">
+                Importer la liste
+              </button>
+              <button onClick={() => { setShowImport(false); setImportText(''); setImportError(''); }} className="px-6 py-2.5 rounded-xl bg-white/5 border border-white/10 text-[10px] font-black text-gray-400 uppercase tracking-widest hover:bg-white/10 transition-all">
+                Annuler
+              </button>
+            </div>
+          </div>
+        )}
+
+        {shareUrl && (
+          <div className="mb-6 p-4 bg-rift-purple/10 border border-rift-purple/30 rounded-2xl flex items-center justify-between gap-4">
+            <div className="text-[10px] text-gray-300 break-all flex-1">{shareUrl}</div>
+            <button onClick={() => navigator.clipboard.writeText(shareUrl)} className="shrink-0 px-4 py-2 rounded-xl bg-rift-purple text-white text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-all">
+              Copier
+            </button>
+          </div>
+        )}
+
         <div className="grid lg:grid-cols-12 gap-10">
           {/* Main Interface */}
           <div className="lg:col-span-8 space-y-8">
-            {/* Control Bar */}
-            <CardPanel className="p-6 bg-white/5 border-white/10 backdrop-blur-xl flex flex-wrap gap-4 items-center">
-              <input
-                type="text"
-                placeholder="Rechercher une carte..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="flex-1 min-w-[200px] px-6 py-3 bg-black/40 border border-white/10 rounded-2xl text-sm font-bold text-white placeholder-gray-600 focus:border-rift-blue focus:outline-none"
-              />
-              <select
-                value={selectedDomain}
-                onChange={(e) => setSelectedDomain(e.target.value)}
-                className="px-5 py-3 bg-black/40 border border-white/10 rounded-2xl text-[10px] font-black text-gray-400 focus:ring-0 uppercase tracking-widest appearance-none cursor-pointer"
-              >
-                {domains.map(d => (
-                  <option key={d} value={d} className="bg-rift-dark">{d === 'All' ? 'DOMAINES' : d.toUpperCase()}</option>
-                ))}
-              </select>
-              <select
-                value={selectedType}
-                onChange={(e) => setSelectedType(e.target.value)}
-                className="px-5 py-3 bg-black/40 border border-white/10 rounded-2xl text-[10px] font-black text-gray-400 focus:ring-0 uppercase tracking-widest appearance-none cursor-pointer"
-              >
-                {types.map(t => (
-                  <option key={t} value={t} className="bg-rift-dark">{t === 'All' ? 'TYPES' : t.toUpperCase()}</option>
-                ))}
-              </select>
-              <select
-                value={selectedRarity}
-                onChange={(e) => setSelectedRarity(e.target.value)}
-                className="px-5 py-3 bg-black/40 border border-white/10 rounded-2xl text-[10px] font-black text-gray-400 focus:ring-0 uppercase tracking-widest appearance-none cursor-pointer"
-              >
-                {rarities.map(r => (
-                  <option key={r} value={r} className="bg-rift-dark">{r === 'All' ? 'RARETES' : r.toUpperCase()}</option>
-                ))}
-              </select>
-              <div className="flex items-center gap-2">
-                <input
-                  type="number"
-                  placeholder="E min"
-                  value={minEnergy}
-                  onChange={(e) => setMinEnergy(e.target.value)}
-                  className="w-20 px-3 py-3 bg-black/40 border border-white/10 rounded-2xl text-[10px] font-black text-gray-400 focus:ring-0 uppercase tracking-widest"
-                />
-                <input
-                  type="number"
-                  placeholder="E max"
-                  value={maxEnergy}
-                  onChange={(e) => setMaxEnergy(e.target.value)}
-                  className="w-20 px-3 py-3 bg-black/40 border border-white/10 rounded-2xl text-[10px] font-black text-gray-400 focus:ring-0 uppercase tracking-widest"
-                />
+            {/* Control Bar — pleine largeur */}
+            <CardPanel className="px-4 py-3 bg-white/5 border-white/10 backdrop-blur-xl">
+              <div className="flex items-end gap-3 w-full">
+
+                {/* Recherche — flex-1 prend tout l'espace disponible */}
+                <div className="flex-1 min-w-0">
+                  <div className="text-[8px] font-black text-gray-600 uppercase tracking-widest mb-1">Rechercher</div>
+                  <input
+                    type="text"
+                    placeholder="Nom de la carte..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full px-3 py-1.5 bg-black/40 border border-white/10 rounded-lg text-xs font-bold text-white placeholder-gray-600 focus:border-rift-blue focus:outline-none"
+                  />
+                  {/* Reset + Filtres sous le champ */}
+                  <div className="flex gap-2 mt-1.5">
+                    <button
+                      onClick={clearFilters}
+                      className="flex-1 px-2 py-1 bg-white/5 border border-white/10 rounded-md text-[8px] font-black text-gray-500 uppercase tracking-widest hover:text-white hover:bg-white/10 transition-all"
+                    >
+                      Reset
+                    </button>
+                    <button
+                      onClick={() => setShowAdvanced(!showAdvanced)}
+                      className={`flex-1 px-2 py-1 rounded-md text-[8px] font-black uppercase tracking-widest transition-all ${showAdvanced ? 'bg-rift-blue text-black' : 'bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10'}`}
+                    >
+                      + Filtres
+                    </button>
+                  </div>
+                </div>
+
+                {/* Domaine */}
+                <div className="shrink-0">
+                  <div className="text-[8px] font-black text-gray-600 uppercase tracking-widest mb-1">Domaine</div>
+                  <select
+                    value={selectedDomain}
+                    onChange={(e) => setSelectedDomain(e.target.value)}
+                    className="px-3 py-1.5 bg-black/40 border border-white/10 rounded-lg text-[9px] font-black text-gray-300 focus:ring-0 uppercase tracking-widest appearance-none cursor-pointer"
+                  >
+                    {domains.map(d => (
+                      <option key={d} value={d} className="bg-rift-dark">{d === 'All' ? 'Tous' : d}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Type */}
+                <div className="shrink-0">
+                  <div className="text-[8px] font-black text-gray-600 uppercase tracking-widest mb-1">Type</div>
+                  <select
+                    value={selectedType}
+                    onChange={(e) => setSelectedType(e.target.value)}
+                    className="px-3 py-1.5 bg-black/40 border border-white/10 rounded-lg text-[9px] font-black text-gray-300 focus:ring-0 uppercase tracking-widest appearance-none cursor-pointer"
+                  >
+                    {types.map(t => (
+                      <option key={t} value={t} className="bg-rift-dark">{t === 'All' ? 'Tous' : t}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Rareté */}
+                <div className="shrink-0">
+                  <div className="text-[8px] font-black text-gray-600 uppercase tracking-widest mb-1">Rareté</div>
+                  <select
+                    value={selectedRarity}
+                    onChange={(e) => setSelectedRarity(e.target.value)}
+                    className="px-3 py-1.5 bg-black/40 border border-white/10 rounded-lg text-[9px] font-black text-gray-300 focus:ring-0 uppercase tracking-widest appearance-none cursor-pointer"
+                  >
+                    {rarities.map(r => (
+                      <option key={r} value={r} className="bg-rift-dark">{r === 'All' ? 'Toutes' : r}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Énergie */}
+                <div className="shrink-0">
+                  <div className="text-[8px] font-black text-gray-600 uppercase tracking-widest mb-1">Énergie</div>
+                  <div className="flex items-center gap-1.5">
+                    <input
+                      type="number"
+                      placeholder="Min"
+                      value={minEnergy}
+                      onChange={(e) => setMinEnergy(e.target.value)}
+                      className="w-12 px-2 py-1.5 bg-black/40 border border-white/10 rounded-lg text-[9px] font-black text-gray-300 focus:ring-0"
+                    />
+                    <span className="text-gray-600 text-[9px]">–</span>
+                    <input
+                      type="number"
+                      placeholder="Max"
+                      value={maxEnergy}
+                      onChange={(e) => setMaxEnergy(e.target.value)}
+                      className="w-12 px-2 py-1.5 bg-black/40 border border-white/10 rounded-lg text-[9px] font-black text-gray-300 focus:ring-0"
+                    />
+                  </div>
+                </div>
+
+                {/* Tri */}
+                <div className="shrink-0">
+                  <div className="text-[8px] font-black text-gray-600 uppercase tracking-widest mb-1">Tri</div>
+                  <select
+                    value={sortBy}
+                    onChange={(e) => setSortBy(e.target.value)}
+                    className="px-3 py-1.5 bg-black/40 border border-white/10 rounded-lg text-[9px] font-black text-gray-300 focus:ring-0 uppercase tracking-widest appearance-none cursor-pointer"
+                  >
+                    <option value="name" className="bg-rift-dark">Nom</option>
+                    <option value="energy" className="bg-rift-dark">Énergie</option>
+                  </select>
+                </div>
+
               </div>
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
-                className="px-5 py-3 bg-black/40 border border-white/10 rounded-2xl text-[10px] font-black text-gray-400 focus:ring-0 uppercase tracking-widest appearance-none cursor-pointer"
-              >
-                <option value="name" className="bg-rift-dark">TRI: NOM</option>
-                <option value="energy" className="bg-rift-dark">TRI: ENERGIE</option>
-              </select>
-              <button
-                onClick={clearFilters}
-                className="px-5 py-3 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-black text-gray-500 uppercase tracking-widest hover:text-white hover:bg-white/10 transition-all"
-              >
-                RESET
-              </button>
-              <button
-                onClick={() => setShowAdvanced(!showAdvanced)}
-                className={`px-5 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest transition-all ${showAdvanced ? 'bg-rift-blue text-black' : 'bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10'}`}
-              >
-                FILTRES AVANCES
-              </button>
             </CardPanel>
 
             {showAdvanced && (
@@ -1335,280 +1526,98 @@ export default function DeckBuilderClient({
             )}
           </div>
 
-          {/* Sidebar - Current Deck */}
+          {/* Sidebar — TheoryCraft + liste uniquement */}
           <div className="lg:col-span-4 space-y-6">
-            {/* Deck Settings */}
-            <CardPanel className="p-8" glow>
-              <input
-                type="text"
-                value={deckName}
-                onChange={(e) => setDeckName(e.target.value)}
-                className="w-full px-0 py-2 bg-transparent border-none text-2xl font-black text-white focus:ring-0 mb-6 placeholder-gray-700 uppercase tracking-tighter"
-                placeholder="NOM DU DECK"
-              />
-              
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.2em]">Progression</span>
-                <span className={`text-[10px] font-black uppercase tracking-widest ${stats.totalCards >= requiredTotal ? 'text-green-400' : 'text-rift-red'}`}>
-                  {stats.totalCards}/{requiredTotal}
-                </span>
-              </div>
-              
-              <div className="w-full bg-white/5 h-1.5 rounded-full overflow-hidden">
-                <div 
-                  className={`h-full transition-all duration-1000 ${stats.totalCards >= requiredTotal ? 'bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]' : 'bg-rift-red'}`}
-                  style={{ width: `${Math.min(100, (stats.totalCards / requiredTotal) * 100)}%` }}
-                />
-              </div>
-            </CardPanel>
 
-            {/* Chosen Champion */}
-            <CardPanel
-              className="p-6 bg-white/5 border-white/10 backdrop-blur-xl"
-              onDragOver={(e) => e.preventDefault()}
-              onDrop={(e) => {
-                const id = e.dataTransfer.getData('text/plain');
-                const card = allCards.find(c => c.id === id);
-                if (card && card.type === 'Champion' && canChooseChampion(card)) {
-                  addToDeck(card);
-                }
-              }}
-            >
-              <div className="flex items-center justify-between mb-4">
-                <div className="text-xs font-black text-gray-300 uppercase tracking-[0.3em]">Champion choisi</div>
-                {chosenChampion && (
-                  <button
-                    onClick={() => setChosenChampion(null)}
-                    className="text-[10px] font-black text-gray-400 hover:text-rift-red uppercase tracking-widest"
-                  >
-                    Retirer
-                  </button>
-                )}
+            {/* Theorycraft Panel — redesigned */}
+            <CardPanel className="overflow-hidden bg-black/40 border-white/10">
+              {/* Header with global score */}
+              <div className="p-5 border-b border-white/5 flex items-center justify-between">
+                <div>
+                  <h3 className="text-xs font-black text-white uppercase tracking-[0.3em]">TheoryCraft</h3>
+                  {/* Compteur 1/40 : légende + champion choisi + cartes principales */}
+                  <p className="text-[9px] text-gray-500 uppercase tracking-widest mt-0.5">
+                    <span className={`font-black ${stats.totalCards + (chosenChampionCard && !deckCards.find(c => c.id === chosenChampionCard.id) ? 1 : 0) >= 40 ? 'text-green-400' : 'text-gray-400'}`}>
+                      {stats.totalCards + (chosenChampionCard && !deckCards.find(c => c.id === chosenChampionCard.id) ? 1 : 0)}
+                    </span>
+                    <span className="text-gray-700">/40</span>
+                    <span className="ml-1 text-gray-600">cartes</span>
+                  </p>
+                </div>
+                <div className="text-right">
+                  <div className={`text-4xl font-black leading-none ${scoreColor(theorycraft.score)}`}>{theorycraft.score}</div>
+                  <div className="text-[8px] font-black text-gray-500 uppercase tracking-widest mt-1">/100</div>
+                </div>
               </div>
-              {chosenChampionCard ? (
-                <div className="flex items-center gap-3 p-3 bg-black/40 rounded-2xl border border-white/10">
-                  {chosenChampionCard.imageUrl ? (
-                    <div className="w-10 h-14 rounded-lg overflow-hidden bg-black/40">
-                      <img src={chosenChampionCard.imageUrl} alt={chosenChampionCard.name} className="w-full h-full object-cover" />
+
+              {/* Sub-scores as progress bars */}
+              <div className="p-5 space-y-3 border-b border-white/5">
+                {[
+                  { label: 'Courbe', value: theorycraft.scores.curve },
+                  { label: 'Consistance', value: theorycraft.scores.consistency },
+                  { label: 'Interaction', value: theorycraft.scores.interaction },
+                  { label: 'Synergie', value: theorycraft.scores.synergy },
+                  { label: 'Wincon', value: theorycraft.scores.wincon },
+                ].map(({ label, value }) => (
+                  <div key={label}>
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-[9px] font-black text-gray-400 uppercase tracking-widest">{label}</span>
+                      <span className={`text-[10px] font-black tabular-nums ${scoreColor(value)}`}>{value}</span>
                     </div>
-                  ) : (
-                    <div className="w-10 h-14 rounded-lg bg-black/40 flex items-center justify-center">
-                      <span className="text-xs opacity-40">🃏</span>
+                    <div className="w-full bg-white/5 h-1 rounded-full overflow-hidden">
+                      <div
+                        className={`h-full rounded-full transition-all duration-700 ${value >= 80 ? 'bg-green-500' : value >= 60 ? 'bg-yellow-500' : 'bg-rift-red'}`}
+                        style={{ width: `${value}%` }}
+                      />
                     </div>
-                  )}
-                  <div>
-                    <div className="text-[9px] text-gray-400 uppercase tracking-widest">CHAMPION</div>
-                    <div className="text-sm font-black text-white uppercase tracking-tight">{chosenChampionCard.name}</div>
                   </div>
-                </div>
-              ) : (
-                <div className="p-4 rounded-2xl border border-dashed border-white/10 text-[10px] text-gray-400 uppercase tracking-widest">
-                  Drag un Champion ici ou clic droit sur une carte Champion
-                </div>
-              )}
-              {expectedChampionName && chosenChampionCard && !championNameMatches && (
-                <div className="mt-3 text-[10px] text-rift-red font-bold">
-                  Champion attendu: {expectedChampionName}
-                </div>
-              )}
-              {!expectedChampionName && legendCard && (
-                <div className="mt-3 text-[10px] text-yellow-400 font-bold">
-                  Mapping manquant pour {legendCard.name}. Ajoutez-le dans legend-champion-map.
-                </div>
-              )}
-            </CardPanel>
-
-            {/* Deck Structure Rules */}
-            <CardPanel className="p-6 bg-black/30 border-white/10 space-y-4">
-              <div className="text-xs font-black text-gray-300 uppercase tracking-[0.3em]">Structure officielle</div>
-              <div className="flex items-center justify-between text-[11px] font-black uppercase tracking-widest">
-                <span className="text-gray-300">1 Légende</span>
-                <span className={legendCount === requiredLegend ? 'text-green-400' : 'text-rift-red'}>{legendCount}/1</span>
-              </div>
-              <div className="flex items-center justify-between text-[11px] font-black uppercase tracking-widest">
-                <span className="text-gray-300">1 Champion choisi</span>
-                <span className={championCount === requiredChampion ? 'text-green-400' : 'text-rift-red'}>{championCount}/{requiredChampion}</span>
-              </div>
-              <div className="flex items-center justify-between text-[11px] font-black uppercase tracking-widest">
-                <span className="text-gray-300">39 cartes (Unit/Spell/Gear)</span>
-                <span className={mainCount === requiredMain ? 'text-green-400' : 'text-rift-red'}>{mainCount}/{requiredMain}</span>
-              </div>
-              <div className="flex items-center justify-between text-[11px] font-black uppercase tracking-widest">
-                <span className="text-gray-300">3 Battlefields</span>
-                <span className={battlefieldCount === requiredBattlefields ? 'text-green-400' : 'text-rift-red'}>{battlefieldCount}/{requiredBattlefields}</span>
-              </div>
-              <div className={`pt-2 text-[11px] font-black uppercase tracking-widest ${deckIsValid ? 'text-green-400' : 'text-rift-red'}`}>
-                {deckIsValid ? 'Deck légal' : 'Deck incomplet'}
-              </div>
-            </CardPanel>
-
-            {/* Deck Management */}
-            <CardPanel className="p-6 bg-white/5 border-white/10 backdrop-blur-xl space-y-4">
-              <div className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em]">Gestion</div>
-
-              <div className="flex gap-2">
-                <select
-                  value={selectedSavedDeck}
-                  onChange={(e) => setSelectedSavedDeck(e.target.value)}
-                  className="flex-1 px-4 py-3 bg-black/40 border border-white/10 rounded-2xl text-[10px] font-black text-gray-400 uppercase tracking-widest appearance-none"
-                >
-                  <option value="" className="bg-rift-dark">CHARGER UN DECK</option>
-                  {localDecks.map(d => (
-                    <option key={d.id} value={d.id} className="bg-rift-dark">{d.name}</option>
-                  ))}
-                </select>
-                <button
-                  onClick={() => selectedSavedDeck && loadSavedDeck(selectedSavedDeck)}
-                  className="px-4 py-3 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-2xl"
-                >
-                  OK
-                </button>
+                ))}
               </div>
 
-              <div className="grid grid-cols-2 gap-3">
-                <button
-                  onClick={() => setShowImport(!showImport)}
-                  className="py-3 rounded-2xl bg-white/5 border border-white/10 text-[10px] font-black text-gray-400 uppercase tracking-widest hover:bg-white/10"
-                >
-                  IMPORTER
-                </button>
-                <button
-                  onClick={shareDeck}
-                  disabled={!deckIsValid}
-                  className="py-3 rounded-2xl bg-rift-purple text-white text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-all disabled:opacity-30"
-                >
-                  PARTAGER
-                </button>
-              </div>
-
-              {showImport && (
-                <div className="space-y-3">
-                  <textarea
-                    value={importText}
-                    onChange={(e) => setImportText(e.target.value)}
-                    placeholder="Collez une decklist exportee ici..."
-                    className="w-full h-28 p-3 bg-black/40 border border-white/10 rounded-2xl text-xs text-gray-300"
-                  />
-                  {importError && <div className="text-xs text-rift-red font-bold">{importError}</div>}
-                  <button
-                    onClick={importDeck}
-                    className="w-full py-3 rounded-2xl bg-white text-black text-[10px] font-black uppercase tracking-widest"
-                  >
-                    IMPORTER LA LISTE
-                  </button>
-                </div>
-              )}
-
-              {shareUrl && (
-                <div className="p-3 rounded-2xl bg-black/40 border border-white/10 text-[10px] text-gray-300 break-all">
-                  {shareUrl}
-                </div>
-              )}
-            </CardPanel>
-
-            {/* Stats Panel */}
-            <CardPanel className="p-8 bg-white/5 border-white/10 backdrop-blur-xl">
-              <h3 className="text-xs font-black text-gray-300 uppercase tracking-[0.3em] mb-6">Statistiques du Deck</h3>
-              
-              <div className="grid grid-cols-2 gap-6">
-                <div className="space-y-1">
-                  <div className="text-2xl font-black text-white">{stats.totalCards}</div>
-                  <div className="text-[9px] font-black text-gray-400 uppercase tracking-widest">Total Cartes</div>
-                </div>
-                <div className="space-y-1 text-right">
-                  <div className="text-2xl font-black text-rift-blue">{stats.averageEnergy}</div>
-                  <div className="text-[9px] font-black text-gray-400 uppercase tracking-widest">Énergie Moy.</div>
-                </div>
-              </div>
-
-              <div className="mt-8 pt-8 border-t border-white/5 space-y-4">
-                <div className="flex justify-between items-center text-[11px] font-black tracking-widest uppercase">
-                  <span className="text-gray-300">Légende</span>
-                  <span className="text-rift-gold">{stats.legend}</span>
-                </div>
-                <div className="flex justify-between items-center text-[11px] font-black tracking-widest uppercase">
-                  <span className="text-gray-300">Champions</span>
-                  <span className="text-rift-purple">{stats.champions}</span>
-                </div>
-                <div className="flex justify-between items-center text-[11px] font-black tracking-widest uppercase">
-                  <span className="text-gray-300">Unités</span>
-                  <span className="text-white">{stats.units}</span>
-                </div>
-                <div className="flex justify-between items-center text-[11px] font-black tracking-widest uppercase">
-                  <span className="text-gray-300">Équipements</span>
-                  <span className="text-white">{stats.gear}</span>
-                </div>
-                <div className="flex justify-between items-center text-[11px] font-black tracking-widest uppercase">
-                  <span className="text-gray-300">Sorts</span>
-                  <span className="text-white">{stats.spells}</span>
-                </div>
-                <div className="flex justify-between items-center text-[11px] font-black tracking-widest uppercase">
-                  <span className="text-gray-300">Battlefields</span>
-                  <span className="text-rift-blue">{stats.battlefields}</span>
-                </div>
-              </div>
-            </CardPanel>
-
-            {/* Theorycraft Panel */}
-            <CardPanel className="p-8 bg-black/30 border-white/10 space-y-6">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs font-black text-gray-300 uppercase tracking-[0.3em]">Theorycraft</h3>
-                <span className={`text-3xl font-black ${scoreColor(theorycraft.score)}`}>{theorycraft.score}</span>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4 text-[10px] font-black uppercase tracking-widest">
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-500">Courbe</span>
-                  <span className={scoreColor(theorycraft.scores.curve)}>{theorycraft.scores.curve}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-500">Consistance</span>
-                  <span className={scoreColor(theorycraft.scores.consistency)}>{theorycraft.scores.consistency}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-500">Interaction</span>
-                  <span className={scoreColor(theorycraft.scores.interaction)}>{theorycraft.scores.interaction}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-500">Synergie</span>
-                  <span className={scoreColor(theorycraft.scores.synergy)}>{theorycraft.scores.synergy}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-500">Wincon</span>
-                  <span className={scoreColor(theorycraft.scores.wincon)}>{theorycraft.scores.wincon}</span>
-                </div>
-              </div>
-
+              {/* Warnings */}
               {theorycraft.warnings.length > 0 && (
-                <div className="space-y-2">
+                <div className="px-5 py-4 border-b border-white/5 space-y-2">
+                  <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-2">Alertes</div>
                   {theorycraft.warnings.slice(0, 3).map((warning, index) => (
-                    <div key={`${warning}-${index}`} className="text-[10px] text-rift-red font-bold">⚠ {warning}</div>
+                    <div key={`${warning}-${index}`} className="flex items-start gap-2 text-[10px] text-rift-red font-bold">
+                      <span className="shrink-0 mt-0.5">⚠</span>
+                      <span>{warning}</span>
+                    </div>
                   ))}
                 </div>
               )}
 
+              {/* Suggestions */}
               {theorycraft.suggestions.length > 0 && (
-                <div className="space-y-2">
-                  {theorycraft.suggestions.slice(0, 4).map((suggestion, index) => (
-                    <div key={`${suggestion.text}-${index}`} className="text-[10px] text-gray-400">• {suggestion.text}</div>
+                <div className="px-5 py-4 border-b border-white/5 space-y-2">
+                  <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-2">Suggestions</div>
+                  {theorycraft.suggestions.slice(0, 5).map((suggestion, index) => (
+                    <div key={`${suggestion.text}-${index}`} className="flex items-start gap-2 text-[10px] text-gray-300">
+                      <span className="shrink-0 text-gray-500">•</span>
+                      <span>{suggestion.text}</span>
+                    </div>
                   ))}
                 </div>
               )}
 
+              {/* Key Cards */}
               {theorycraft.keyCards.length > 0 && (
-                <div className="pt-4 border-t border-white/5">
-                  <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-3">Cartes cles</div>
-                  <div className="flex flex-wrap gap-2">
-                    {theorycraft.keyCards.slice(0, 8).map(card => (
-                      <Badge
+                <div className="px-5 py-4">
+                  <div className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-3">Cartes clés</div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {theorycraft.keyCards.slice(0, 10).map(card => (
+                      <span
                         key={card.name}
-                        className={`${card.present
-                          ? 'bg-white/10 text-white border-white/20'
-                          : 'bg-rift-red/10 text-rift-red border-rift-red/30'} text-[9px]`}
                         title={card.priority}
+                        className={`inline-flex items-center px-2.5 py-1 rounded-lg text-[9px] font-black uppercase tracking-wide border ${
+                          card.present
+                            ? 'bg-white/10 text-white border-white/20'
+                            : 'bg-rift-red/10 text-rift-red border-rift-red/30'
+                        }`}
                       >
+                        {!card.present && <span className="mr-1 opacity-60">✗</span>}
                         {card.name}
-                      </Badge>
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -1679,29 +1688,6 @@ export default function DeckBuilderClient({
               </div>
             </CardPanel>
 
-            {/* Final Actions */}
-            <div className="grid grid-cols-2 gap-4">
-              <button
-                onClick={newDeck}
-                className="py-4 rounded-2xl bg-white/5 border border-white/10 text-[10px] font-black text-gray-400 uppercase tracking-widest hover:bg-white/10 transition-all"
-              >
-                Nouveau
-              </button>
-              <button
-                onClick={saveDeck}
-                disabled={!deckIsValid}
-                className="py-4 rounded-2xl bg-rift-gold text-black text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl disabled:opacity-30 disabled:hover:scale-100"
-              >
-                SAUVEGARDER
-              </button>
-              <button
-                onClick={exportDeck}
-                disabled={stats.totalCards === 0}
-                className="col-span-2 py-4 rounded-2xl bg-white text-black text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl disabled:opacity-30"
-              >
-                EXPORTER LA LISTE 📋
-              </button>
-            </div>
           </div>
         </div>
       </div>

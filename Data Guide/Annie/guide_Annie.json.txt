@@ -1,0 +1,1136 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Annie complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte decembre 2025 a mars 2026 pour suivre l'evolution des shells Annie",
+    "methodology": {
+      "approach": [
+        "Croisement du guide Annie recent, des tier lists post-Chinese Regionals, post-Bologna et post-Vegas",
+        "Croisement des decklists officielles Houston, Bologna et Vegas",
+        "Croisement des discussions communautaires sur le vieux shell Vi plus Ride the Wind, le shell Bologna pressure/value et le shell Seal plus Called Shot miracle",
+        "Accent mis sur la qualite de pilotage, la logique des shells et les plans de matchup, pas sur un simple verdict de tier list"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes plus decklists officielles ou matchups explicitement discutes",
+        "medium": "Consensus raisonnable mais sensible au shell, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "annie_meta_position": {
+      "houston_snapshot": {
+        "players_day1": 122,
+        "players_day2": 11,
+        "day1_share_percent": 10.9,
+        "day2_share_percent": 17.2,
+        "result_read": "Annie a gagne Houston et a fortement surconverti"
+      },
+      "riftbound_gg_post_chinese_regionals": {
+        "tier": "Tier 2",
+        "notes": "Le site souligne qu'Annie pourrait remonter tres haut si la popularite occidentale suit sa confiance historique"
+      },
+      "riftbound_gg_post_bologna": {
+        "tier": "Tier 3",
+        "notes": "Bologna confirme qu'Annie reste performante, mais le site commence a pointer un probleme d'identite face a l'emergence des shells miracle"
+      },
+      "riftbound_gg_post_vegas": {
+        "tier": "Tier 3",
+        "notes": "Le site dit qu'Annie struggle a avoir des performances steady face aux decks combo miracle qui explosent a temps"
+      },
+      "mobalytics_march_2026": {
+        "tier": "A-tier",
+        "notes": "Mobalytics continue a valoriser tres haut la constance de Dark Child et la menace permanente de reactif"
+      },
+      "riftdecks_spiritforged": {
+        "meta_share_percent": 3,
+        "tier": "Tier 3",
+        "deck_count_snapshot": 193
+      },
+      "major_recent_results": [
+        "Houston winner Annie, Dark Child",
+        "Bologna best-of Annie #27 overall",
+        "Vegas best-of Annie #69 overall",
+        "Top 8 Fuzhou annie observe sur deck databases publiques"
+      ],
+      "overall_read": "Annie n'est plus seulement la legende 'rush to 6 then Vi plus Ride the Wind'. En mars 2026, elle existe sous plusieurs formes reelles: un shell classique tempo-combo, un shell Spiritforged pressure/value et un shell Seal plus Called Shot miracle plus moderne. Son vrai niveau depend beaucoup du shell choisi."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et la logique des versions jouables plutot que la seule reussite statistique."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Annie, Dark Child",
+    "domains": [
+      "Fury",
+      "Chaos"
+    ],
+    "macro_identity": {
+      "archetype_family": "Fast scoring tempo-control / conquer-combo / chaos value",
+      "primary_gameplan": "Utiliser la legende pour depenser agressivement ses runes a son tour tout en recuperant deux runes ready pour le tour adverse, afin de scorer tres vite puis conserver le tempo grace a des reactions et des tricks.",
+      "secondary_gameplan": "Selon le shell: soit monter a 6 points puis fermer brutalement avec Vi plus Ride the Wind, soit jouer un shell Spiritforged pressure/value autour de grosses unites Chaos-Fury et de Stacked Deck, soit jouer une version Seal plus Called Shot miracle proche des autres shells purple modernes mais avec le squelette Annie.",
+      "why_the_legend_is_strong": [
+        "Dark Child permet de jouer proactivement et de rester reactive, ce qui reste une des meilleures capacites de resource conversion du jeu",
+        "Annie peut prendre le score tres vite sans etre completement a poil au tour adverse",
+        "Ses spells de tempo et de repositionnement sont parmi les plus oppressants quand elle joue deja devant",
+        "La legende supporte a la fois un shell classique de finish combo et un shell purple/Chaos plus moderne"
+      ],
+      "why_the_legend_is_hard": [
+        "Le deck semble straightforward, mais il perd beaucoup sur les mauvais timings de spells",
+        "Il faut savoir quand on joue pour 6 puis close, et quand on joue pour etouffer la table sans overcommit",
+        "Les differents shells Annie demandent des mulligans et des sideboards tres differents",
+        "Le meta de mars 2026 punit les versions trop anciennes ou trop one-note"
+      ]
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Classic Tempo-Combo Annie",
+        "status_march_2026": "Shell toujours reel, toujours dangereux, mais plus targetable",
+        "evidence": [
+          "Houston winner",
+          "Guide Annie de reference centre sur Vi plus Ride the Wind",
+          "Discussions communautaires repetant encore 'cheese to 6 then Vi plus RTW'"
+        ],
+        "identity": "Le shell le plus iconique: Annie score vite avec des petites unites et des spells de tempo, puis passe de 6 a 8 en une grosse manoeuvre avec Vi, Destructive ou une autre grosse menace, typiquement accompagnee de Ride the Wind.",
+        "reference_core": [
+          "Annie, Stubborn",
+          "Vi, Destructive",
+          "Ride the Wind",
+          "Fight or Flight",
+          "Flash",
+          "Gust",
+          "Rebuke",
+          "Stacked Deck",
+          "Scrapheap",
+          "Kai'Sa, Survivor",
+          "Traveling Merchant",
+          "Pouty Poro",
+          "Sneaky Deckhand",
+          "Cleave"
+        ],
+        "reference_battlefields": [
+          "Zaun Warrens",
+          "The Arena's Greatest",
+          "score-pushing staple battlefields from the classic shell"
+        ],
+        "chosen_champion": "Annie, Stubborn"
+      },
+      {
+        "name": "Spiritforged Board-Pressure Annie",
+        "status_march_2026": "Shell officiel valide et distinct",
+        "evidence": [
+          "Best-of officiel a Bologna",
+          "Tier list discussions autour d'une Annie aggressive moderne non-miracle"
+        ],
+        "identity": "Version plus board-pressure/value que le shell Houston. Elle garde le coeur tempo-reactif d'Annie, mais remplace une partie du focus combo pur par des corps comme Darius, Kai'Sa, Scrapheap et Stacked Deck pour mieux jouer la table sur la duree.",
+        "reference_core": [
+          "Annie, Stubborn",
+          "Cleave",
+          "Darius, Trifarian",
+          "Fight or Flight",
+          "Fizz, Trickster",
+          "Flash",
+          "Kai'Sa, Survivor",
+          "Pouty Poro",
+          "Rebuke",
+          "Rengar, Pouncing",
+          "Ride the Wind",
+          "Scrapheap",
+          "Sneaky Deckhand",
+          "Stacked Deck",
+          "Tideturner",
+          "Traveling Merchant"
+        ],
+        "reference_battlefields": [
+          "The Arena's Greatest",
+          "The other official Bologna battlefields",
+          "aggressive tempo fronts"
+        ],
+        "chosen_champion": "Annie, Stubborn"
+      },
+      {
+        "name": "Seal / Called Shot Miracle Annie",
+        "status_march_2026": "Shell moderne a plus haut plafond de cartes",
+        "evidence": [
+          "Best-of officiel a Vegas",
+          "Commentaires communautaires disant que le build Seal plus Called Shot est le plus consistent en Spiritforged",
+          "Debats recents autour de Called Shot comme moteur des decks purple"
+        ],
+        "identity": "Version la plus 'moderne' d'Annie en mars 2026. Elle profite toujours de la legende Annie pour depenser agressivement puis rester reactive, mais elle branche cette structure sur le package purple miracle: Called Shot, Ezreal, Seal of Discord, Rhasa, Scrapheap, Stacked Deck, Treasure Hunter, parfois Nocturne.",
+        "reference_core": [
+          "Annie, Stubborn",
+          "Battering Ram",
+          "Called Shot",
+          "Ezreal, Prodigy",
+          "Fight or Flight",
+          "Hard Bargain",
+          "Last Rites",
+          "Nocturne, Horrifying",
+          "Noxus Hopeful",
+          "Rebuke",
+          "Rhasa the Sunderer",
+          "Ride the Wind",
+          "Scrapheap",
+          "Seal of Discord",
+          "Stacked Deck",
+          "Traveling Merchant",
+          "Treasure Hunter"
+        ],
+        "reference_battlefields": [
+          "The Arena's Greatest",
+          "typical purple/tempo battlefields depending list",
+          "resource-positive fronts"
+        ],
+        "chosen_champion": "Annie, Stubborn",
+        "default_for_matchups_below": true
+      }
+    ],
+    "advanced_pilot_principles": [
+      {
+        "name": "Annie is a scoring deck first, not a removal deck first",
+        "detail": "Peu importe la version, Annie gagne d'abord parce qu'elle prend vite l'avantage de score. Les spells sont meilleurs quand ils conservent cet avantage, pas quand ils essaient juste de tout tuer."
+      },
+      {
+        "name": "Spend proactively because your legend refunds reactivity",
+        "detail": "La force la plus constante d'Annie reste la meme: tu peux depenser tes runes de facon tres agressive sur ton tour, puis encore representer des reactions apres le ready de deux runes."
+      },
+      {
+        "name": "Old Annie and new Annie are not the same deck",
+        "detail": "Le shell Houston veut souvent monter a 6 puis fermer avec Vi plus Ride the Wind. Le shell Vegas veut plutot jouer une version plus constante et plus purple du meme squelette resource-tempo. Les deux se mulliganent et se sideboardent differemment."
+      },
+      {
+        "name": "Playing from ahead is your native territory",
+        "detail": "Le guide Annie le dit tres clairement: beaucoup de matchups se gagnent en scorant vite pour forcer l'adversaire a attaquer, puis en le punissant avec des actions et reactions pendant son tour."
+      },
+      {
+        "name": "Vi plus Ride the Wind is a finisher, not a life philosophy",
+        "detail": "Le vieux shell perd quand il joue chaque game comme si le combo etait la seule vraie sortie. Parfois, la bonne ligne est juste de tenir l'avance et de gagner sur des fronts normaux."
+      },
+      {
+        "name": "Purple Annie should not cosplay Houston Annie if the cards say otherwise",
+        "detail": "La version Seal plus Called Shot doit utiliser sa superiorite de cartes et de consistance. Si tu la pilotes comme un pur deck rush-combo sans respecter le package miracle, tu perds beaucoup de plafond."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "annie_dark_child_role": "La legende donne a Annie une des meilleures conversions proactif-vers-reactif du jeu. Deux runes ready a la fin du tour changent toute la maniere de sequencer les spells.",
+      "annie_stubborn_role": "Champion de reference constant. Permet de convertir les premiers tours de pression en vraie presence ou en pression supplementaire sur les fronts.",
+      "vi_destructive_role": "Finisher signature du shell classique. Les discussions communautaires la citent encore comme la piece cle des victoires '6 to 8'.",
+      "ride_the_wind_role": "Carte de close structurelle dans Annie depuis Origins. Elle reste cle dans le shell classique, plus optionnelle mais toujours dangereuse dans certains shells Spiritforged.",
+      "fight_or_flight_role": "Carte incontournable dans presque toutes les versions. Elle permet aussi bien de forcer les points que de conserver un front ou de transformer une grosse unite en pseudo-lethal.",
+      "gust_role": "Le guide Annie insiste sur son role de tempo tool flexible. C'est une des cartes qui permettent a Annie de gagner tres tot l'avantage de scoreboard.",
+      "flash_role": "Autre piece de tempo/reactive play tres marquee dans les shells classiques et board-pressure.",
+      "rebuke_role": "Cle pour gagner ou proteger les combats et pour punir certains plans adverses, notamment contre des grosses pieces ou des tours de Vi/Mundo de l'autre cote.",
+      "stacked_deck_role": "Pivot commun a presque toutes les versions modernes. Il aide Annie a combler une partie de sa faiblesse historique en flux de cartes.",
+      "scrapheap_role": "Importante pour les versions plus modernes qui veulent garder de la densite de menaces et de ressources.",
+      "kai_sa_survivor_role": "Un des meilleurs on-curve aggressifs du shell moderne, souvent cite quand on cherche a remplacer ou renforcer les anciens corps d'Annie.",
+      "called_shot_role": "Carte phare du shell Vegas. C'est le meilleur marqueur de la transition d'Annie vers une version miracle/consistency plus purple.",
+      "seal_of_discord_role": "Autre signature du shell modernise. Renforce la logique purple resource-ball et les tours ou Annie ne veut pas juste scorer honnêtement.",
+      "rhasa_the_sunderer_role": "Top-end du shell Vegas, qui change completement la texture de certaines parties ou Annie n'est plus seulement un deck de 6-to-8."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Treating every Annie shell as the Houston shell",
+        "why_it_loses": "La version Seal plus Called Shot a besoin d'exploiter sa superiorite de cartes. La jouer comme un pur 6-to-8 deck te fait perdre son principal avantage."
+      },
+      {
+        "mistake": "Keeping reactive hands without scoreboard pressure",
+        "why_it_loses": "Annie veut jouer devant. Si ta main ne sait pas comment arriver devant, tes reactions valent moins."
+      },
+      {
+        "mistake": "Burning your best tempo spell on the wrong target",
+        "why_it_loses": "Le guide Annie montre bien que ses spells sont d'abord la pour refuser les meilleurs tours adverses, pas pour echanger a l'aveugle."
+      },
+      {
+        "mistake": "Assuming Vi plus Ride the Wind will always be available on 6",
+        "why_it_loses": "Les discussions recentes le rappellent: parfois le combo n'arrive pas, et il faut gagner la partie autrement."
+      },
+      {
+        "mistake": "Trying to remove everything against Kai'Sa",
+        "why_it_loses": "Le guide dit explicitement que si Annie se laisse enfermer dans la guerre de removal contre Kai'Sa, elle aide justement Kai'Sa a atteindre son meilleur late-game."
+      },
+      {
+        "mistake": "Sideboarding out too much pressure",
+        "why_it_loses": "Annie perd tres vite sa raison d'etre si elle enlève trop de vitesse ou de scoreboard pressure."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Quand tu joues Annie classique, demande-toi toujours si tu gagnes vraiment parce que Vi plus Ride the Wind va arriver, ou parce que ton adversaire est deja force a de mauvaises attaques.",
+      "Contre les decks plus lents, le plus important est souvent de garder l'avance de score assez longtemps pour que chaque reaction devienne un Time Walk local.",
+      "Dans le shell Vegas, Called Shot ne sert pas juste a piocher; il sert a rendre tes tours d'Annie beaucoup plus constants que ce que les vieux shells permettaient.",
+      "Si ton adversaire doit attaquer dans tes deux runes ready, il joue deja une mauvaise partie. Annie gagne souvent avant meme que la grosse carte ne soit lancee.",
+      "Les fronts ouverts ne sont pas tous egaux. Annie veut surtout que le bon front soit couteux a conquerir pour l'adversaire."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Seal / Called Shot Miracle Annie",
+      "annie_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_annie_winrate_percent": "47-51",
+        "confidence": "medium"
+      },
+      "summary": "C'est le matchup Annie le plus discute publiquement. Le guide Annie explique que le matchup se gagne si Annie prend l'avance de score tot et force Kai'Sa a se developper sous pression, mais plusieurs fils communautaires rappellent aussi que Kai'Sa repond mieux qu'avant au vieux plan Vi plus Ride the Wind.",
+      "why_matchup_plays_this_way": [
+        "Annie profite du debut de partie pour forcer Kai'Sa a jouer reactif.",
+        "Kai'Sa profite du milieu et de la fin de partie si Annie se laisse enfermer dans une pure guerre de removal."
+      ],
+      "opponent_plan": [
+        "ralentir sans perdre trop de points",
+        "forcer Annie a depenser ses cartes pour tuer plutot que pour scorer",
+        "fermer avec ses grosses cartes une fois stabilisee"
+      ],
+      "annie_plan": [
+        "prendre l'avance de score vite",
+        "denier l'utilisation efficiente des petites support spells de Kai'Sa",
+        "dans le vieux shell, garder Vi plus Ride the Wind comme vraie menace de fermeture",
+        "dans le shell miracle, ne pas transformer la partie en simple duel de grind violet"
+      ],
+      "mulligan_focus": [
+        "unite early qui score ou conteste",
+        "tempo spells efficaces",
+        "pas de main full late"
+      ],
+      "sideboard_focus": [
+        "plus de removals propres contre grosses menaces",
+        "cards that preserve pressure",
+        "eviter de devenir full reactive"
+      ],
+      "battlefield_notes": [
+        "Le guide Annie insiste sur l'importance de scorer d'abord et de garder des petites unites sur table pour que les 5-costs deviennent oppressantes."
+      ],
+      "main_lose_conditions_for_annie": [
+        "se faire aspirer dans la guerre de removal",
+        "laisser Kai'Sa atteindre son meilleur late sans stress",
+        "main trop lente"
+      ],
+      "important_patterns_to_respect": [
+        "Falling Star",
+        "cheap removal into bigger threat turns",
+        "Time Warp",
+        "Kai'Sa's larger unit windows"
+      ],
+      "variation_notes": {
+        "classic_tempo_combo": "Historiquement plus polarisant. Peut voler des games de 6 a 8, mais est aussi plus targetable.",
+        "board_pressure_spiritforged": "Souvent un peu plus stable sur table que le shell pure combo.",
+        "seal_called_shot_miracle": "Le meilleur compromis actuel entre vitesse et consistance."
+      }
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Spiritforged Board-Pressure Annie",
+      "annie_outlook": {
+        "label": "favorable",
+        "estimated_annie_winrate_percent": "54-59",
+        "confidence": "medium"
+      },
+      "summary": "Le signal communautaire recent va plutot dans le sens d'un bon matchup pour Annie contre Midrange Draven, avec plusieurs joueurs expliquant que le pairing est fort et consistant pour Annie. Annie gagne ici sur son aptitude a scorer avant que Draven ne transforme completement la table en machine a value.",
+      "why_matchup_plays_this_way": [
+        "Draven veut convertir la table et les combats en avalanche.",
+        "Annie veut prendre l'avance de score puis rendre chaque conquete adverse couteuse grace a ses spells reactifs."
+      ],
+      "opponent_plan": [
+        "prendre le board progressivement",
+        "forcer des combats rentables",
+        "snowball sur plusieurs fronts"
+      ],
+      "annie_plan": [
+        "cheese to 6 quand la main le permet",
+        "garder ses bounce et ses tempo spells pour les vrais turns de score",
+        "ne pas nourrir inutilement Draven en combats jolis mais inutiles"
+      ],
+      "mulligan_focus": [
+        "curve agressive",
+        "tempo spells",
+        "pas de hand full greed"
+      ],
+      "sideboard_focus": [
+        "anti-board tools",
+        "plus de tempo removal selon version",
+        "ne pas retirer la clock"
+      ],
+      "battlefield_notes": [
+        "Annie aime les parties ou Draven doit venir l'attaquer sur un front deja score."
+      ],
+      "main_lose_conditions_for_annie": [
+        "main lente",
+        "ne pas convertir son avance en vrai stress de scoreboard",
+        "laisser Draven tenir deux battlefields sans lui faire payer"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Brynhir turns",
+        "2 energie ouverte"
+      ],
+      "variation_notes": {
+        "classic_tempo_combo": "Souvent excellent si le pilotage de score est propre.",
+        "seal_called_shot_miracle": "Toujours bon, mais la victoire vient un peu plus par consistence et moins par pure course a 6."
+      }
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Seal / Called Shot Miracle Annie",
+      "annie_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_annie_winrate_percent": "46-50",
+        "confidence": "medium"
+      },
+      "summary": "Le post-Vegas de Riftbound.gg formule assez bien le probleme: sur le papier, les combo decks devraient etre trop lents contre Annie, mais quand leur tour explosif arrive a temps, Annie a du mal a scorer les derniers points, surtout si ses removals perdent en utilite contre plusieurs unites.",
+      "why_matchup_plays_this_way": [
+        "Annie veut punir les decks qui prennent trop de temps.",
+        "Miracle Draven est precisement le genre de deck qui peut parfois survivre assez longtemps puis retourner la partie en un seul gros tour."
+      ],
+      "opponent_plan": [
+        "tenir jusqu'au turn explosif",
+        "multiplier les menaces ou la value simultanement"
+      ],
+      "annie_plan": [
+        "prendre le score tres vite",
+        "forcer Draven miracle a devier de son meilleur timing",
+        "garder les meilleures reactions pour le vrai swing, pas chaque developpement mineur"
+      ],
+      "mulligan_focus": [
+        "pression early",
+        "moteur coherent si version miracle",
+        "pas de hand full top-end"
+      ],
+      "sideboard_focus": [
+        "anti-miracle flex slots",
+        "tempo cards qui preservent les points",
+        "eviter de trop se ralentir"
+      ],
+      "battlefield_notes": [
+        "Si Annie n'a pas deja 5-6 points avant le grand turn adverse, le matchup se complique brutalement."
+      ],
+      "main_lose_conditions_for_annie": [
+        "manque de scoreboard",
+        "spells depenses trop tot",
+        "grosse table adverse sur plusieurs fronts"
+      ],
+      "important_patterns_to_respect": [
+        "Called Shot",
+        "wide miracle transitions",
+        "resource explosion turns"
+      ],
+      "variation_notes": {
+        "classic_tempo_combo": "Plus polarisant encore. Soit le 6-to-8 est disponible, soit la partie lui echappe souvent.",
+        "seal_called_shot_miracle": "C'est la meilleure facon actuelle de garder le pairing proche de l'equilibre."
+      }
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "default_shell": "Classic Tempo-Combo Annie",
+      "annie_outlook": {
+        "label": "favorable",
+        "estimated_annie_winrate_percent": "55-61",
+        "confidence": "medium"
+      },
+      "summary": "Le signal communautaire est clair: Annie est souvent citee comme un deck qui 'crushes' Viktor, surtout quand Viktor doit echanger ses tokens ou ses removals de facon inefficace contre les fronts rapides d'Annie.",
+      "why_matchup_plays_this_way": [
+        "Viktor aime ralentir puis choisir ses cibles.",
+        "Annie l'oblige souvent a reagir trop tot et sur des cartes qui ne valent pas assez."
+      ],
+      "opponent_plan": [
+        "tenir en enlevant les bonnes unites",
+        "epuiser Annie en ressources"
+      ],
+      "annie_plan": [
+        "prendre le score avant que l'attrition Viktor soit vraiment installee",
+        "utiliser Ride the Wind, Flash et les bounce effects pour casser ses meilleurs turns",
+        "ne pas laisser Viktor jouer seul son rythme"
+      ],
+      "mulligan_focus": [
+        "curve agressive",
+        "tempo spells",
+        "pas de hand lente"
+      ],
+      "sideboard_focus": [
+        "menaces qui punissent l'attrition",
+        "pieces supplementaires de pression",
+        "retirer les cartes les moins utiles si Viktor joue trop peu d'unites"
+      ],
+      "battlefield_notes": [
+        "Annie gagne beaucoup quand Viktor doit trader ses petits corps de facon inefficace."
+      ],
+      "main_lose_conditions_for_annie": [
+        "partie trop lente",
+        "surreaction a chaque token",
+        "laisser Viktor atteindre son meilleur late-game"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal timing",
+        "token stalls",
+        "yellow or purple attrition loops depending build"
+      ],
+      "variation_notes": {
+        "classic_tempo_combo": "Probablement la version la plus naturellement forte ici.",
+        "seal_called_shot_miracle": "Toujours bon, mais un peu moins brutal sur le scoreboard pur."
+      }
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_share_percent": 2,
+      "default_shell": "Classic Tempo-Combo Annie",
+      "annie_outlook": {
+        "label": "slightly_favorable",
+        "estimated_annie_winrate_percent": "52-56",
+        "confidence": "medium"
+      },
+      "summary": "Le guide Annie consacre une partie explicite au matchup Sett et dit en substance que le meilleur plan est souvent de gagner avant que Sett n'obtienne une position confortable. Il decrit aussi FoF, Rebuke, bounce effects et disruption comme cles du pairing.",
+      "why_matchup_plays_this_way": [
+        "Sett veut empiler plusieurs unites moyennes a un meme battlefield et forcer Annie a jouer des combats qu'elle n'aime pas.",
+        "Annie gagne en cassant le rythme du developpement early et en refusant les showdowns honorables."
+      ],
+      "opponent_plan": [
+        "poser plusieurs unites midsize",
+        "tenir un front par somme de bodies et de buffs"
+      ],
+      "annie_plan": [
+        "prendre des risques calcules tot pour construire l'avance",
+        "utiliser les bounce effects pour nier les meilleurs buffs ou les meilleurs showdowns",
+        "gagner avant que Sett ne soit completement stable"
+      ],
+      "mulligan_focus": [
+        "tempo spells",
+        "unites qui scorent vite",
+        "pas de hand greed"
+      ],
+      "sideboard_focus": [
+        "plus de tempo removal",
+        "cards that punish stacked battlefields",
+        "retirer les slots trop lents"
+      ],
+      "battlefield_notes": [
+        "Les fronts ou Sett cumule plusieurs midsized units sont les plus dangereux pour Annie."
+      ],
+      "main_lose_conditions_for_annie": [
+        "laisser Sett s'installer confortablement",
+        "jouer des combats un contre un trop honnetes",
+        "perdre l'avance de score"
+      ],
+      "important_patterns_to_respect": [
+        "Body buffs",
+        "Deflect units",
+        "stacked battlefield math"
+      ],
+      "variation_notes": {
+        "board_pressure_spiritforged": "Souvent tres bon ici aussi, car il garde plus de vrais corps sur la table.",
+        "seal_called_shot_miracle": "Peut perdre un peu de pure vitesse si la version se purple-ifie trop."
+      }
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Seal / Called Shot Miracle Annie",
+      "annie_outlook": {
+        "label": "close_even",
+        "estimated_annie_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Le signal indirect le plus utile vient d'un deck tech Watcher Ezreal qui dit explicitement que le matchup Annie est 'quite balanced'. Cela correspond bien a un duel ou Annie veut prendre l'avance tres vite, tandis qu'Ezreal veut etouffer ce momentum par la qualite de ses cartes.",
+      "why_matchup_plays_this_way": [
+        "Annie a plus de scoreboard pressure pure.",
+        "Ezreal a plus de plafond de cartes et de grind."
+      ],
+      "opponent_plan": [
+        "ralentir les premiers turns sans tomber trop bas",
+        "recoller a la game par la value purple"
+      ],
+      "annie_plan": [
+        "forcer Ezreal a reagir tot",
+        "ne pas lui laisser une partie completement lente",
+        "dans le shell miracle Annie, utiliser ta propre consistence purple sans devenir une mauvaise copie d'Ezreal"
+      ],
+      "mulligan_focus": [
+        "pression early",
+        "moteur coherent",
+        "pas de hand purement reactive"
+      ],
+      "sideboard_focus": [
+        "anti-purple flex slots",
+        "maintien de la clock",
+        "retirer les cartes mortes si Ezreal combat peu"
+      ],
+      "battlefield_notes": [
+        "Un battlefield vraiment menace vaut plus que deux fronts cosmetiques."
+      ],
+      "main_lose_conditions_for_annie": [
+        "donner trop de temps",
+        "pas assez de scoreboard",
+        "gaspiller ses meilleurs swings avant le vrai pivot"
+      ],
+      "important_patterns_to_respect": [
+        "Rhasa turns",
+        "Called Shot loops",
+        "late purple chains"
+      ],
+      "variation_notes": {
+        "classic_tempo_combo": "Peut voler des games plus vite, mais aussi se faire mieux repondre qu'en Origins.",
+        "seal_called_shot_miracle": "C'est la meilleure version pour jouer ce pairing de facon moderne."
+      }
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Spiritforged Board-Pressure Annie",
+      "annie_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_annie_winrate_percent": "50-54",
+        "confidence": "low"
+      },
+      "summary": "Le guide Annie de reference n'explicite pas Irelia en toutes lettres sur les lignes visibles, mais il decrit un matchup contre un legendaire Calm qui dodge les removals damage-based et doit etre force a utiliser ses support spells pendant son propre tour. Ce cadre colle bien a Irelia et a sa maniere de jouer la protection.",
+      "why_matchup_plays_this_way": [
+        "Irelia veut proteger un front ou un porteur en profitant des tricks Calm.",
+        "Annie veut au contraire saisir les battlefields tot, forcer l'adversaire a agir pendant son tour, puis jouer contre peu de runes disponibles le tour suivant."
+      ],
+      "opponent_plan": [
+        "tenir un front avec un porteur protege",
+        "gagner les combats a la finesse"
+      ],
+      "annie_plan": [
+        "scorer tot pour forcer Irelia a attaquer",
+        "faire en sorte que ses tricks soient utilises defensivement et sur son propre tour",
+        "accepter une game ou les deux joueurs marquent rapidement plutot qu'une game lente"
+      ],
+      "mulligan_focus": [
+        "unites qui marquent vite",
+        "tempo spells",
+        "pas de hand full late"
+      ],
+      "sideboard_focus": [
+        "interaction contre plus grosses menaces",
+        "tempo tools supplementaires",
+        "retirer les cartes qui ratent leurs cibles si Irelia joue peu de gros corps"
+      ],
+      "battlefield_notes": [
+        "Annie est plutot contente quand le scoreboard bouge vite; Irelia prefere parfois des positions plus verrouillees."
+      ],
+      "main_lose_conditions_for_annie": [
+        "laisser Irelia rester reactive trop longtemps",
+        "attaquer dans des fronts deja complets sous protection",
+        "perdre le tempo early"
+      ],
+      "important_patterns_to_respect": [
+        "Calm protection chains",
+        "double-score pressure",
+        "GA and boots lines"
+      ],
+      "variation_notes": {
+        "classic_tempo_combo": "Peut fermer plus brutalement si Irelia n'a pas le bon tour de protection.",
+        "seal_called_shot_miracle": "Un peu moins lineaire, mais plus robuste si la partie dure."
+      }
+    },
+    {
+      "opponent": "Aurora decks",
+      "meta_share_percent": 0,
+      "default_shell": "Classic Tempo-Combo Annie",
+      "annie_outlook": {
+        "label": "favorable",
+        "estimated_annie_winrate_percent": "55-60",
+        "confidence": "medium"
+      },
+      "summary": "Le post-Vegas de Riftbound.gg le souligne par contraste: sur le papier, les decks combo devraient etre trop lents contre Annie. Quand ils explosent a temps, Annie peut souffrir; mais s'ils n'y arrivent pas exactement au bon tour, elle leur marche dessus sur le scoreboard.",
+      "why_matchup_plays_this_way": [
+        "Aurora prend souvent un peu de temps avant son premier gros tour.",
+        "Annie est une des meilleures legends du format pour transformer ce temps en 4 a 6 points quasi gratuits."
+      ],
+      "opponent_plan": [
+        "survivre jusqu'au premier vrai payoff",
+        "stabiliser puis retourner les fronts"
+      ],
+      "annie_plan": [
+        "punir les premiers tours sans interactifs",
+        "ne pas trop gaspiller les spells si le scoreboard suffit deja",
+        "garder un angle de close avant la stabilisation Aurora"
+      ],
+      "mulligan_focus": [
+        "curve agressive",
+        "pas de hand reactive-only"
+      ],
+      "sideboard_focus": [
+        "cards that preserve speed",
+        "retirer le superflu",
+        "quelques reponses a gros payoff seulement si elles ne ralentissent pas trop"
+      ],
+      "battlefield_notes": [
+        "Annie gagne souvent la partie avant le plus gros turn Aurora, ou juste apres si l'adversaire est deja a trop faible marge de vie."
+      ],
+      "main_lose_conditions_for_annie": [
+        "ne pas assez punir l'avant-Aurora",
+        "jouer trop prudemment le score"
+      ],
+      "important_patterns_to_respect": [
+        "Dazzling Aurora",
+        "big stabilizer turns",
+        "Mindsplitter if present"
+      ],
+      "variation_notes": {
+        "seal_called_shot_miracle": "Toujours bon, mais moins brutal que le shell classique si tu ralentis trop ton propre scoreboard."
+      }
+    },
+    {
+      "opponent": "Teemo, Swift Scout",
+      "meta_share_percent": 1,
+      "default_shell": "Spiritforged Board-Pressure Annie",
+      "annie_outlook": {
+        "label": "slightly_favorable",
+        "estimated_annie_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Le seul signal indirect clair vient d'un guide Teemo disant que Rebuke aide beaucoup le matchup Annie, notamment contre Vi ou Mundo apres recycle. Cela suggere que Teemo a des outils, mais qu'Annie reste celle qui impose le rythme naturel de la partie.",
+      "why_matchup_plays_this_way": [
+        "Teemo veut rendre les battlefields ambigus.",
+        "Annie veut que le scoreboard soit deja en train de courir avant que ces ambiguities deviennent decisives."
+      ],
+      "opponent_plan": [
+        "ralentir le scoring avec hidden tricks et bounce",
+        "stabiliser puis jouer les faux fronts"
+      ],
+      "annie_plan": [
+        "marquer assez tot pour limiter le luxe des hidden",
+        "forcer Teemo a reveler ou a perdre de la value",
+        "ne pas attaquer dans les mauvais faux fronts"
+      ],
+      "mulligan_focus": [
+        "curve rapide",
+        "spells de tempo",
+        "pas de hand trop lente"
+      ],
+      "sideboard_focus": [
+        "anti-hidden flex slots si disponibles",
+        "garder la clock",
+        "retirer les cartes les plus lourdes"
+      ],
+      "battlefield_notes": [
+        "Plus Annie est devant au score, moins les hidden de Teemo deviennent des menaces existentiales."
+      ],
+      "main_lose_conditions_for_annie": [
+        "jouer trop vite dans les pieges",
+        "perdre le lead de scoreboard"
+      ],
+      "important_patterns_to_respect": [
+        "Consult the Past",
+        "Rebuke",
+        "Fight or Flight"
+      ],
+      "variation_notes": {
+        "classic_tempo_combo": "Attention a ne pas tout miser sur Vi si Teemo represente trop bien Rebuke."
+      }
+    }
+  ],
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "classic_tempo_combo_keep": [
+        "unite early qui marque",
+        "tempo spell utile",
+        "Stacked Deck si la main a deja le debut",
+        "Vi ou Ride the Wind seulement si le reste de la main est deja fonctionnel"
+      ],
+      "board_pressure_spiritforged_keep": [
+        "Pouty Poro",
+        "Sneaky Deckhand",
+        "Traveling Merchant",
+        "Kai'Sa, Survivor",
+        "Stacked Deck",
+        "Fight or Flight"
+      ],
+      "seal_called_shot_miracle_keep": [
+        "Stacked Deck",
+        "Called Shot si la curve suit",
+        "Noxus Hopeful",
+        "Treasure Hunter",
+        "main qui a scoreboard plus moteur"
+      ],
+      "ship": [
+        "main full top-end",
+        "main purement reactive sans pressure",
+        "main qui n'a aucun vrai play avant le tour 3",
+        "dans le shell classique, main qui mise tout sur Vi plus Ride the Wind"
+      ],
+      "notes": [
+        "Annie mulligan pour le tempo du scoreboard d'abord.",
+        "La meilleure main est souvent celle qui commence a marquer tout en laissant deja planer une reaction."
+      ]
+    },
+    "kaisa": {
+      "keep": [
+        "unite early qui score",
+        "tempo spell",
+        "grande menace a jouer devant si la curve est bonne"
+      ],
+      "ship": [
+        "main all-removal",
+        "main trop lente",
+        "main full late"
+      ],
+      "notes": [
+        "Le guide Annie insiste sur l'importance de passer devant tot dans ce matchup."
+      ]
+    },
+    "draven_midrange": {
+      "keep": [
+        "curve agressive",
+        "tempo spells",
+        "main qui force Draven a defendre"
+      ],
+      "ship": [
+        "main lente",
+        "main sans pression de battlefield"
+      ]
+    },
+    "draven_miracle": {
+      "keep": [
+        "scoreboard pressure",
+        "moteur coherent",
+        "pas de hand pure greed"
+      ],
+      "ship": [
+        "main sans vitesse",
+        "main qui suppose une partie tres longue"
+      ]
+    },
+    "viktor": {
+      "keep": [
+        "unites early",
+        "tempo spells",
+        "main qui ne se vide pas sans pression"
+      ],
+      "ship": [
+        "main reactive-only",
+        "main dependante d'un seul finisher"
+      ]
+    },
+    "sett": {
+      "keep": [
+        "tempo spells",
+        "unites qui marquent vite",
+        "curve correcte"
+      ],
+      "ship": [
+        "main qui ne fait rien avant que Sett commence a stacker"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "general_shell_rules": {
+      "classic_tempo_combo": {
+        "identity": "Preserver la vitesse de score tout en renforcant la capacite a fermer ou a casser la meilleure grosse piece adverse.",
+        "dont_do": [
+          "retirer trop de vitesse",
+          "trop allonger la partie"
+        ]
+      },
+      "board_pressure_spiritforged": {
+        "identity": "Garder la table et la densite de menaces, puis adapter les spells selon la texture du matchup.",
+        "dont_do": [
+          "devenir purement reactive",
+          "retirer trop d'unites"
+        ]
+      },
+      "seal_called_shot_miracle": {
+        "identity": "Conserver la clock tout en exploitant la consistance purple.",
+        "dont_do": [
+          "se sider comme un pur deck combo",
+          "oublier que le scoreboard reste la premiere arme d'Annie"
+        ]
+      }
+    },
+    "kaisa": {
+      "in": [
+        "removals propres pour grosses menaces",
+        "cards that preserve pressure",
+        "value tools si elles ne ralentissent pas trop"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "cartes qui ne font que gagner un petit combat sans scoreboard"
+      ],
+      "plan": [
+        "Ne pas devenir full reactive.",
+        "Prendre l'avantage de score puis forcer Kai'Sa a depenser ses spells sous contrainte."
+      ]
+    },
+    "draven_midrange": {
+      "in": [
+        "anti-board tempo",
+        "cards that keep fronts awkward",
+        "removals modulables selon build"
+      ],
+      "out": [
+        "top-end lent",
+        "surplus de cartes de pure grind"
+      ],
+      "plan": [
+        "Preserver la vitesse et la capacite a punir un front ouvert."
+      ]
+    },
+    "draven_miracle": {
+      "in": [
+        "anti-miracle flex slots",
+        "tempo cards qui sauvent les points"
+      ],
+      "out": [
+        "surplus de cartes trop fair",
+        "cartes qui ne font rien contre plusieurs menaces"
+      ],
+      "plan": [
+        "Tu veux surtout gagner avant ou juste apres leur premier vrai tour miracle."
+      ]
+    },
+    "viktor": {
+      "in": [
+        "plus de pression ou de resilence selon sa version",
+        "cartes qui punissent l'attrition"
+      ],
+      "out": [
+        "cartes les plus lentes",
+        "spells trop faibles si Viktor combat peu"
+      ],
+      "plan": [
+        "Ne jamais lui laisser choisir seul le rythme."
+      ]
+    },
+    "sett": {
+      "in": [
+        "tempo removal",
+        "punish stacked battlefield cards"
+      ],
+      "out": [
+        "greed cards",
+        "top-end superflu"
+      ],
+      "plan": [
+        "Gagner avant la position confortable de Sett."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "classic_tempo_combo_priority": [
+        "Zaun Warrens",
+        "The Arena's Greatest",
+        "score-pushing battlefields"
+      ],
+      "board_pressure_spiritforged_priority": [
+        "The Arena's Greatest",
+        "tempo and value battlefields that reward early pressure",
+        "resource-positive fronts"
+      ],
+      "seal_called_shot_miracle_priority": [
+        "The Arena's Greatest",
+        "purple-friendly battlefields",
+        "resource-positive fronts"
+      ],
+      "notes": [
+        "Annie veut des battlefields qui transforment l'avance de score en vrai stress, pas seulement des fronts jolis a tenir.",
+        "Le bon battlefield pour Annie est souvent celui qui oblige l'adversaire a attaquer dans tes deux runes ready."
+      ]
+    },
+    "kaisa": {
+      "preferred": [
+        "The Arena's Greatest"
+      ],
+      "secondary": [
+        "battlefields qui accelerent les points avant le late-game"
+      ],
+      "plan": [
+        "Tu veux un front qui transforme ton avance en obligation de reponse pour Kai'Sa."
+      ]
+    },
+    "draven_midrange": {
+      "preferred": [
+        "The Arena's Greatest",
+        "Zaun Warrens"
+      ],
+      "plan": [
+        "Le bon front est celui ou Draven doit venir conquerir dans ton tempo, pas l'inverse."
+      ]
+    },
+    "draven_miracle": {
+      "preferred": [
+        "score-positive battlefields"
+      ],
+      "plan": [
+        "Le matchup se gagne rarement en voulant tenir proprement tout le monde partout."
+      ]
+    },
+    "viktor": {
+      "preferred": [
+        "The Arena's Greatest",
+        "battlefields qui recompensent le score rapide"
+      ],
+      "plan": [
+        "Plus le scoreboard bouge vite, plus Viktor est gene."
+      ]
+    },
+    "sett": {
+      "preferred": [
+        "fronts ou un empilement de midsized units n'est pas confortable",
+        "The Arena's Greatest"
+      ],
+      "plan": [
+        "Tu veux empecher Sett de transformer un battlefield en mur de stats."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Annie Indepth Deck Guide - Can The Dark Child Win Houston Regional?",
+      "date": "2026-02-10",
+      "url": "https://riftbound.gg/annie-guide/",
+      "notes": "Source cle pour l'identite classique d'Annie, le plan Vi plus Ride the Wind, les principes de pilotage et les tips de matchup contre Kai'Sa et Sett."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "From Garen to Annie, RQ Houston's Top Decks",
+      "date": "2025-12-11",
+      "url": "https://riftbound.leagueoflegends.com/en-us/news/announcements/from-garen-to-annie-rq-houstons-top-decks/",
+      "notes": "Stats Houston: 122 Annie Day 1, 11 Day 2, 17.2% de field Day 2."
+    },
+    {
+      "id": "S3",
+      "type": "official tournament article",
+      "title": "The Best Decks out of Bologna",
+      "date": "2026-02-25",
+      "url": "https://riftbound.leagueoflegends.com/en-us/news/organizedplay/the-best-decks-out-of-bologna/",
+      "notes": "Best-of Annie Bologna #27 overall, shell board-pressure/value."
+    },
+    {
+      "id": "S4",
+      "type": "official tournament article",
+      "title": "Vegas' Top Decks",
+      "date": "2026-03-04",
+      "url": "https://riftbound.leagueoflegends.com/en-us/news/organizedplay/vegas-top-decks/",
+      "notes": "Best-of Annie Vegas #69 overall, shell Seal plus Called Shot miracle."
+    },
+    {
+      "id": "S5",
+      "type": "tier list",
+      "title": "Riftbound Meta Tier List - Spiritforged Post-Bologna",
+      "date": "2026-03-01",
+      "url": "https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-post-bologna-metagame/",
+      "notes": "Annie Tier 3 post-Bologna."
+    },
+    {
+      "id": "S6",
+      "type": "tier list",
+      "title": "Riftbound Meta Tier List - Spiritforged Post-Vegas",
+      "date": "2026-03-06",
+      "url": "https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-post-vegas-metagame/",
+      "notes": "Le site dit qu'Annie struggle a avoir des performances steady face aux combo miracle."
+    },
+    {
+      "id": "S7",
+      "type": "tier list",
+      "title": "Riftbound Meta Tier List - Global Release & Post Chinese Regionals",
+      "date": "2026-02-28",
+      "url": "https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-global-release-post-chinese-regionals/",
+      "notes": "Annie vue comme une possible grande gagnante si sa popularite augmente en Occident."
+    },
+    {
+      "id": "S8",
+      "type": "tier list",
+      "title": "Mobalytics Riftbound Tier List",
+      "date_consulted": "2026-03-11",
+      "url": "https://mobalytics.gg/riftbound/tier-list",
+      "notes": "Annie A-tier, insistance sur la consistance de Dark Child."
+    },
+    {
+      "id": "S9",
+      "type": "meta stats",
+      "title": "RiftDecks Spiritforged Legends Meta Breakdown",
+      "date_consulted": "2026-03-11",
+      "url": "https://riftdecks.com/legends?metagame_id=2",
+      "notes": "Annie environ 3% de metashare, Tier 3 sur le snapshot consulte."
+    },
+    {
+      "id": "S10",
+      "type": "deck database",
+      "title": "Mobalytics Annie, Dark Child: Houston Regional Qualifier 1st (Dhawally)",
+      "date": "2026-01-30",
+      "url": "https://mobalytics.gg/riftbound/decks/annie-dark-child-1st-houston-regional-qualifier-dhawally",
+      "notes": "Reference publique du shell Houston winner."
+    },
+    {
+      "id": "S11",
+      "type": "deck database",
+      "title": "Mobalytics Annie, Dark Child: CCS Weekend Top 4",
+      "date": "2025-12-22",
+      "url": "https://mobalytics.gg/riftbound/decks/annie-dark-child-ccs-10k-weekend-top4-dizzee",
+      "notes": "Reference supplementaire pour le vieux shell Spiritforged/late Origins."
+    },
+    {
+      "id": "S12",
+      "type": "community thread",
+      "title": "Hot Take - It's a good thing Midrange Draven is at the top of the meta",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1riv07j/hot_take_its_a_good_thing_midrange_draven_is_at/",
+      "notes": "Retour recent: Annie ressentie forte et consistante contre Midrange Draven."
+    },
+    {
+      "id": "S13",
+      "type": "community thread",
+      "title": "Sideboard discussion for Annie",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1phag25/sideboard_discussion_for_annie/",
+      "notes": "Point de vue Kai'Sa sur le matchup Annie, en particulier contre l'ancien plan Vi plus Ride the Wind."
+    },
+    {
+      "id": "S14",
+      "type": "community thread",
+      "title": "Spiritforged Tier List",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1qddrei/spiritforged_tier_list/",
+      "notes": "Commentaire cle disant que le build Seal plus Called Shot est le plus consistent."
+    },
+    {
+      "id": "S15",
+      "type": "community thread",
+      "title": "Decks that do well against Viktor?",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1pjtxya/decks_that_do_well_against_viktor/",
+      "notes": "Retour direct: Annie crushes Viktor."
+    },
+    {
+      "id": "S16",
+      "type": "community thread",
+      "title": "Annie > Draven",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1pyvmct/annie_draven/",
+      "notes": "Resume communautaire simple du vieux plan cheese to 6 plus Vi plus RTW."
+    },
+    {
+      "id": "S17",
+      "type": "community thread",
+      "title": "Need help vs Annie - I'm 0-3 and losing tempo hard",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1pbfs27/need_help_vs_annie_im_03_and_losing_tempo_hard/",
+      "notes": "Point de vue Viktor subissant surtout le tempo Annie."
+    },
+    {
+      "id": "S18",
+      "type": "news update",
+      "title": "Potential Card Bans: Riftbound Game Director's Update",
+      "date": "2026-03-10",
+      "url": "https://riftbound.gg/card-bans-riftbound-game-directors-update/",
+      "notes": "Pas de bans annonces, rules update prevue le 30 mars 2026."
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import { ALL_CARDS } from '../../lib/cards';
 import { decodeDeckFromShare } from '../../lib/deck-share';
 import { getLocalDeckById } from '../../lib/local-storage';
 import type { DeckCard, Deck } from '../../deckbuilder/types';
+import { Button } from '../../components/ui/Button';
 
 export default function DeckViewClient() {
   const params = useSearchParams();
@@ -118,12 +119,12 @@ export default function DeckViewClient() {
             <p className="text-sm text-gray-500 mt-2 uppercase tracking-widest">{deckDomain}</p>
           </div>
           <div className="flex gap-3">
-            <Link href="/deckbuilder" className="px-6 py-3 bg-white text-black font-black rounded-xl text-xs tracking-widest">
+            <Button href="/deckbuilder" variant="secondary" size="sm">
               EDITER
-            </Link>
-            <Link href="/decks" className="px-6 py-3 bg-white/5 border border-white/10 text-white font-black rounded-xl text-xs tracking-widest">
+            </Button>
+            <Button href="/decks" variant="outline" size="sm">
               RETOUR
-            </Link>
+            </Button>
           </div>
         </div>
 

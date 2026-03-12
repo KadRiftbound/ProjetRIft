@@ -1231,5 +1231,221 @@
       "Position Lock",
       "Tank"
     ]
+  },
+  "OGN-247": {
+    "legendId": "OGN-247",
+    "isMeta": false,
+    "overview": "Daughter of the Void est une légende de contrôle Fury. Sa capacité permet de générer des ressources en réaction pour optimiser vos sorts.",
+    "ability": "Exhaust: [Reaction] — Ajoutez 1 Rune Arc-en-ciel. Utilisable uniquement pour jouer des sorts.",
+    "stats": {
+      "might": 0,
+      "power": 0,
+      "energy": 0
+    },
+    "strategy": {
+      "early": "Générez des runes rainbow ASAP. Gardez vos sorts pour les moments clés.",
+      "mid": "Contrôlez le board avec vos sorts. Utilisez les ressources pour finishes.",
+      "late": "Votre adv doit être à cours de cartes. Finish avec des sorts coûteux."
+    },
+    "tips": [
+      "La rune rainbow est votre meilleur ami - elle paie énergie ET puissance.",
+      "Ne brûlez pas vos réactions trop tôt."
+    ],
+    "counters": [
+      "Aggro",
+      "Wide Boards"
+    ],
+    "synergies": [],
+    "matchups": [],
+    "decks": []
+  },
+  "OGN-249": {
+    "legendId": "OGN-249",
+    "isMeta": false,
+    "overview": "Relentless Storm est une légende de support Fury. Elle boost vos unités Mighty en générant des runes épuisées.",
+    "ability": "Exhaust: Quand vous jouez une unité Mighty (5+ Might), vous pouvez m'exhauster pour channeler 1 rune épuisée.",
+    "stats": {
+      "might": 0,
+      "power": 0,
+      "energy": 0
+    },
+    "strategy": {
+      "early": "Posez des unités à 5+ Might. Elles deviennent vos moteurs de runes.",
+      "mid": "Accumulez les runes épuisées pour payer de gros sorts ou maintenir la pression.",
+      "late": "Vos unités Mighty sont vos wincon. Protégez-les."
+    },
+    "tips": [
+      "Les unités à 5+ Might génèrent des runes. Cherchez des cards comme Ravenous Butcher.",
+      "L'abus de runes épuisées vous donne beaucoup d'options."
+    ],
+    "counters": [
+      "Removal",
+      "Kiting"
+    ],
+    "synergies": [],
+    "matchups": [],
+    "decks": []
+  },
+  "OGN-251": {
+    "legendId": "OGN-251",
+    "isMeta": false,
+    "overview": "Loose Cannon est une légende de tempo Fury. Elle pioche quand vous avez peu de cartes, récompensant la gestion de main.",
+    "ability": "Au début de votre phase de Début, piochez 1 si vous avez 1 carte ou moins en main.",
+    "stats": {
+      "might": 0,
+      "power": 0,
+      "energy": 0
+    },
+    "strategy": {
+      "early": "Jouez vos cartes intelligemment. Gardez 1-2 cartes pour触发 la capacité.",
+      "mid": "Maintenez la pression tout en gardant une petite main pour piocher.",
+      "late": "Vous avez un avantage de pioche. Gardez 1 carte pour maximiser."
+    },
+    "tips": [
+      "Jouez vosremovals tôt pour garder une petite main.",
+      "Attention au card draw adverse."
+    ],
+    "counters": [
+      "Control",
+      "Hand Size Matters"
+    ],
+    "synergies": [],
+    "matchups": [],
+    "decks": []
+  },
+  "OGN-253": {
+    "legendId": "OGN-253",
+    "isMeta": false,
+    "overview": "Hand of Noxus est une légende aggro Fury. Sa capacité génère de l'énergie à chaque carte jouée.",
+    "ability": "Exhaust: [Reaction], [Legion] — Ajoutez 1 Énergie. (Se déclenche si vous avez joué une carte ce tour.)",
+    "stats": {
+      "might": 0,
+      "power": 0,
+      "energy": 0
+    },
+    "strategy": {
+      "early": "Jouez des cartes chaque tour pour générer de l'énergie gratuite.",
+      "mid": "Accumulez l'avantage d'énergie pour overload vos plays.",
+      "late": "Finish avec des grosses cartes que vous n'auriez pas pu jouer autrement."
+    },
+    "tips": [
+      "Jouez au moins une carte par tour pour garder la capacité active.",
+      "L'énergie gratuite s'accumule vite."
+    ],
+    "counters": [
+      "Fatigue",
+      "No Plays"
+    ],
+    "synergies": [],
+    "matchups": [],
+    "decks": []
+  },
+  "OGS-17": {
+    "legendId": "OGS-17",
+    "isMeta": false,
+    "overview": "Dark Child est une légende Fury agressive. Sa capacité ready 2 runes par tour, vous donnant un avantage de ressources massif.",
+    "ability": "À la fin de votre tour, ready 2 runes.",
+    "stats": {
+      "might": 0,
+      "power": 0,
+      "energy": 0
+    },
+    "strategy": {
+      "early": "Ready vos runes permet de jouer plus tôt. Exploitez cet avantage.",
+      "mid": "Vous avez 2x plus de ressources que l'adv. Utilisez-les.",
+      "late": "L'avantage de runes compense votre qualité de cartes potentiellement inférieure."
+    },
+    "tips": [
+      "Vous pouvez jouer 2 sorts par tour facilement.",
+      "L'avantage de ressources est votre wincon."
+    ],
+    "counters": [
+      "Control",
+      "Card Advantage"
+    ],
+    "synergies": [],
+    "matchups": [],
+    "decks": []
+  },
+  "OGS-19": {
+    "legendId": "OGS-19",
+    "isMeta": false,
+    "overview": "Wuju Bladesman est une légende Calm pour decks defensaurs. Elle booste les défenseurs solos.",
+    "ability": "Tant qu'une unité alliée défend seule, elle gagne +2 Might.",
+    "stats": {
+      "might": 0,
+      "power": 0,
+      "energy": 0
+    },
+    "strategy": {
+      "early": "Protégez une unité clé. Elle devient un blocker monstrueux.",
+      "mid": "Stackez les buffs sur votre defender. Il peut gagner des combats seul.",
+      "late": "Votre defender boosté peut win des combats impossibles."
+    },
+    "tips": [
+      "Mettez une seule unité sur le battlefield pour trigger la capacité.",
+      "Combinez avec des unités à haute base Power."
+    ],
+    "counters": [
+      "Wide Boards",
+      "Overwhelm"
+    ],
+    "synergies": [],
+    "matchups": [],
+    "decks": []
+  },
+  "OGS-21": {
+    "legendId": "OGS-21",
+    "isMeta": false,
+    "overview": "Lady of Luminosity est une légende Mind pour decks contrôle. Elle pioche quand vous jouez des sorts coûteux.",
+    "ability": "Quand vous jouez un sort coûtant 5+ Énergie, piochez 1.",
+    "stats": {
+      "might": 0,
+      "power": 0,
+      "energy": 0
+    },
+    "strategy": {
+      "early": "Ne jouez pas vos sorts coûteux trop tôt. Gardez-les pour trigger.",
+      "mid": "Vos sorts coûteux piochent. Maintenez la main pour la late game.",
+      "late": "Vous avez un avantage de cartes massif. Outcard l'adv."
+    },
+    "tips": [
+      "Les sorts à 5+ coût sont votre moteur de pioche.",
+      "Vous pouvez jouer un sort coûteux et piocher immédiatement."
+    ],
+    "counters": [
+      "Aggro",
+      "Fast Game"
+    ],
+    "synergies": [],
+    "matchups": [],
+    "decks": []
+  },
+  "OGS-23": {
+    "legendId": "OGS-23",
+    "isMeta": false,
+    "overview": "Might of Demacia est une légende Body pour decks wide. Elle pioche quand vous conquérez avec 4+ unités.",
+    "ability": "Quand vous conquérez, si vous avez 4+ unités sur ce battlefield, piochez 2.",
+    "stats": {
+      "might": 0,
+      "power": 0,
+      "energy": 0
+    },
+    "strategy": {
+      "early": "Développez un board large. 4 unités est votre objectif.",
+      "mid": "Préparez votre board pour le finish. 4+ unités = 2 cartes gratuites.",
+      "late": "La pioche gratuite vous maintient dans la partie."
+    },
+    "tips": [
+      "Attaquez avec 4+ unités pour触发 le draw.",
+      "Combinez avec des cartes qui génèrent des tokens."
+    ],
+    "counters": [
+      "Single Target",
+      "Trickery"
+    ],
+    "synergies": [],
+    "matchups": [],
+    "decks": []
   }
 }

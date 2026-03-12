@@ -1,0 +1,1103 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Volibear complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte decembre 2025 a mars 2026 pour suivre l'evolution des shells Volibear",
+    "methodology": {
+      "approach": [
+        "Croisement du guide Volibear recent et des tier lists post-Bologna et post-Vegas",
+        "Croisement des decklists officielles Houston, Bologna et Vegas",
+        "Croisement des retours communautaires recents sur Volibear Dragons, Volibear Aurora et les plans anti-purple",
+        "Accent mis sur le pilotage expert, les plans de matchup et la logique des shells plutot que sur la seule place du deck dans les tier lists"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + decklist officielle et/ou retour matchup explicite",
+        "medium": "Consensus raisonnable mais sensible au shell, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "volibear_meta_position": {
+      "houston_snapshot": {
+        "players_day1": 20,
+        "players_day2": 1,
+        "day1_share_percent": 1.8,
+        "day2_share_percent": 1.6,
+        "best_finish": "#47 overall",
+        "notes": "Best-of Houston sur un shell Aurora ramp body/fury"
+      },
+      "bologna_snapshot": {
+        "players_day1": 27,
+        "players_day2": 3,
+        "conversion_rate_percent": 11,
+        "winrate_percent": 44.1,
+        "best_finish": "Top 32",
+        "tier": "Tier 3",
+        "notes": "Riftbound.gg estime qu'une 'meilleure liste' a probablement ete trouvee a ce moment-la"
+      },
+      "vegas_snapshot": {
+        "players_day1": 15,
+        "players_day2": 2,
+        "conversion_rate_percent": 13.3,
+        "tier": "Tier 3",
+        "notes": "Riftbound.gg souligne que les listes OGN-160 restent la route de construction la plus credible pour Volibear; le best-of Vegas a popularise une version plus midrange/dragons"
+      },
+      "tracker_context": {
+        "riftbound_gg_post_vegas": "Tier 3",
+        "mobalytics_march_2026": "D-Tier",
+        "notes": "Les trackers sont d'accord sur le fait que Volibear est sous-represente, mais pas mort competitivement. L'ecart principal vient de la valeur accordee aux tops isoles et aux bons matchups anti-purple."
+      },
+      "overall_read": "Volibear n'est pas un pilier de volume du metagame Spiritforged, mais il dispose d'un vrai noyau competitif. La meilleure lecture de mars 2026 est celle d'un deck sous-joue, capable de vrais parcours si le shell est bien choisi et si le pilote sait quand il joue la rampe, quand il joue le stat-check, et quand il joue simplement la transformation sideboard."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et les structures de deck plutot qu'un simple jugement meta."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Volibear, Relentless Storm",
+    "domains": [
+      "Body",
+      "Fury"
+    ],
+    "macro_identity": {
+      "archetype_family": "Ramp / big-midrange / dragons-midrange / transformational anti-purple",
+      "primary_gameplan": "Mettre en jeu une unite de 5 Might ou plus tres tot pour accelerer l'economie de runes, puis transformer cet avantage de tempo en grosses menaces qui prennent les battlefields par taille brute, pression immediate ou inevitability.",
+      "secondary_gameplan": "Selon le shell: soit jouer une vraie rampe Aurora avec Deadbloom Predator, Kadregrin et gros payoff, soit jouer une version midrange/dragons avec Minotaur Reckoner, Yone et Stormbringer pour mieux tenir purple, soit jouer une version hybride capable de sortir Aurora contre les decks lents et de la retirer contre les fields trop rapides ou trop interactifs.",
+      "why_the_legend_is_strong": [
+        "Volibear convertit tres vite les unites a 5+ Might en acceleration reelle",
+        "Body/Fury donne acces a des grosses unites qui imposent naturellement les showdowns",
+        "Le deck peut prendre des tours de rampe tres puissants des le tour 2 ou 3",
+        "Certaines versions post-sideboard punissent tres bien purple et les matchups lents"
+      ],
+      "why_the_legend_is_hard": [
+        "Le deck demande un bon sequencing de runes et de timings de developpement",
+        "Les mauvaises mains se font punir tres vite par les bounce spells ou les decks de tempo",
+        "Le deck perd si ses grosses menaces arrivent alors que le scoreboard est deja trop haut",
+        "Les shells ne se pilotent pas pareil: Aurora, Dragons et Hybride ont des clocks et des mulligans differents"
+      ]
+    },
+    "rules_and_core_interactions": {
+      "legend_text_summary": "Volibear gagne des ressources plus vite quand il fait entrer ou controle des unites de 5 Might ou plus, ce qui pousse la construction vers de gros corps et des lignes de rampe tres precoces.",
+      "volibear_furious_summary": "Le champion de reference des listes competitives modernes. Il est prefere a la version plus chere parce qu'il agit plus vite et demande moins de temps pour vraiment compter.",
+      "important_rules_notes": [
+        "Le gros piege du deck est que la rampe n'a de valeur que si l'adversaire ne score pas trop facilement entre-temps.",
+        "Une unite bounced to base peut te faire perdre beaucoup plus qu'un simple tempo; elle peut te faire perdre le front, le score et la valeur de ta legende en meme temps."
+      ],
+      "advanced_rules_interaction": {
+        "name": "Volibear, Furious and movement/bounce timing",
+        "summary": "La discussion communautaire sur Gust/Fight or Flight indique qu'un trigger d'attaque de Volibear peut exister sur la chaine, mais si Volibear est deplace avant resolution, le 'here' peut devenir la base et ne plus toucher les unites ennemies du battlefield cible.",
+        "practical_takeaway": "Quand tu attaques avec Volibear, Furious contre des decks a move/bounce, il faut toujours te demander si ton trigger reste reellement lethale une fois la pile resolue."
+      }
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Aurora Ramp / Big Monsters Volibear",
+        "status_march_2026": "Shell historique et toujours reel",
+        "evidence": [
+          "Best-of officiel Houston",
+          "Best-of officiel Bologna",
+          "Guide Volibear de reference qui decrit Volibear comme le ramp deck ultime"
+        ],
+        "identity": "Version la plus intuitive de Volibear. Elle joue Catalyst of Aeons, Dazzling Aurora, Deadbloom Predator, Kadregrin the Infernal et de gros top-ends pour profiter au maximum de l'acceleration des runes.",
+        "reference_core": [
+          "Volibear, Furious",
+          "Catalyst of Aeons",
+          "Dazzling Aurora",
+          "Deadbloom Predator",
+          "Mobilize",
+          "Sabotage",
+          "Sky Splitter",
+          "Anivia, Primal",
+          "Kadregrin the Infernal",
+          "Magma Wurm",
+          "Falling Star",
+          "Challenge",
+          "Confront"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "Obelisk of Power",
+          "Vilemaw's Lair or Sigil of the Storm"
+        ],
+        "chosen_champion_default": "Volibear, Furious"
+      },
+      {
+        "name": "Midrange Dragons / Anti-Purple Volibear",
+        "status_march_2026": "Shell le plus interessant du moment",
+        "evidence": [
+          "Best-of officiel Vegas",
+          "Thread Vegas 'Tied for Best of Volibear with dragons'",
+          "Post-Vegas tier list notant la synergie SFD-116 avec OGN-250"
+        ],
+        "identity": "Version plus midrange que full ramp. Elle garde Catalyst, Aurora et Deadbloom, mais remplace une partie du top-end pur par des cartes de stat-check, des dragons et des pieces anti-purple comme Minotaur Reckoner, Stormbringer, Yone, Blademaster et un sideboard tres affine contre les decks violets.",
+        "reference_core": [
+          "Volibear, Furious",
+          "Catalyst of Aeons",
+          "Dazzling Aurora",
+          "Deadbloom Predator",
+          "Ferrous Forerunner",
+          "Minotaur Reckoner",
+          "Stormbringer",
+          "Yone, Blademaster",
+          "Kadregrin the Infernal",
+          "Magma Wurm",
+          "Confront",
+          "Challenge",
+          "Mobilize",
+          "Doran's Blade",
+          "Vi, Destructive"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "Obelisk of Power",
+          "Vilemaw's Lair"
+        ],
+        "chosen_champion_default": "Volibear, Furious",
+        "default_for_matchups_below": true
+      },
+      {
+        "name": "Transformational Aurora-Midrange Volibear",
+        "status_march_2026": "Shell hybride reel",
+        "evidence": [
+          "Retours communautaires expliquant que 'midrange Voli is the way to go' mais qu'Aurora peut etre sortie ou rentree selon le matchup",
+          "Meme package de base que Vegas avec adaptation sideboard selon le field"
+        ],
+        "identity": "Version qui traite Aurora non pas comme une religion mais comme un module. Elle garde une base midrange solide, puis choisit si Aurora est vraiment le meilleur plan dans le pairing. C'est probablement la meilleure facon de construire Volibear pour un tournoi long avec metagame heterogene.",
+        "reference_core": [
+          "Volibear, Furious",
+          "Catalyst of Aeons",
+          "Dazzling Aurora",
+          "Deadbloom Predator",
+          "Minotaur Reckoner",
+          "Ferrous Forerunner",
+          "Ruin Runner",
+          "Kadregrin the Infernal",
+          "Mobilize",
+          "Sabotage",
+          "Doran's Blade"
+        ],
+        "reference_battlefields": [
+          "Aspirant's Climb",
+          "Obelisk of Power",
+          "Vilemaw's Lair or Sigil of the Storm"
+        ],
+        "chosen_champion_default": "Volibear, Furious",
+        "important_note": "Ce shell est probablement le plus skill-intensive. Il gagne beaucoup de points quand le pilote sait quand il faut redevenir un deck midrange pur."
+      }
+    ],
+    "advanced_pilot_principles": [
+      {
+        "name": "Volibear is a scoreboard-sensitive ramp deck",
+        "detail": "Le guide Volibear dit clairement que le deck veut sortir sa premiere vraie unite a 5 Might tres tot, idealement tour 2, mais insiste aussi sur le fait qu'il faut maintenir l'adversaire a un score relativement bas. C'est la cle de tout le personnage."
+      },
+      {
+        "name": "Ramp is only good if the battlefield remains meaningful",
+        "detail": "Une grosse unite bounced ou simplement ignoree pendant que l'adversaire score ailleurs signifie souvent que ta rampe a travaille pour une game que tu n'es plus en train de jouer."
+      },
+      {
+        "name": "Midrange Voli is not 'failed ramp Voli'",
+        "detail": "Le shell Vegas montre l'inverse: la meilleure facon de gagner certains fields n'est pas d'etre plus gourmand, mais d'etre plus present sur table, plus modulable et plus credible contre purple."
+      },
+      {
+        "name": "Against purple, spread your Might more often",
+        "detail": "Le pilote Vegas explique explicitement que Doran's Blade se met souvent sur les Heralds pour les rendre Mighty et plus robustes, et que contre purple il faut plutot etaler la might que tout concentrer."
+      },
+      {
+        "name": "Aurora is a matchup tool, not always the main plan",
+        "detail": "Le meilleur retour communautaire recent sur Volibear dit qu'Aurora peut etre trop lente et trop facile a contrer, mais qu'elle reste excellente contre les matchups plus lents. Cette phrase resume toute la logique du shell hybride."
+      },
+      {
+        "name": "Your late bombs matter only if they are still timely",
+        "detail": "Le guide Volibear dit aussi que ses champions les plus chers sont souvent trop lents. Cela veut dire qu'il faut evaluer tes bombs non pas par leur taille, mais par la vitesse reelle a laquelle elles changent un battlefield."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "volibear_relentless_storm_role": "La legende transforme les unites a 5+ Might en acceleration reelle. Elle dicte le deckbuilding plus encore que les champions.",
+      "volibear_furious_role": "Champion par defaut des listes compettitives modernes. Moins lent, plus reactif sur table que la version plus chere.",
+      "dazzling_aurora_role": "Le pivot du shell ramp historique. Toujours jouable, mais plusieurs joueurs disent qu'il peut etre trop lent ou trop counterable selon le matchup.",
+      "catalyst_of_aeons_role": "Lisseur de courbe et accelerateur cle. Presque impossible d'imaginer les shells competitifs sans lui.",
+      "deadbloom_predator_role": "Un des meilleurs gros corps de transition. Rend la rampe concrete au lieu de juste jolie.",
+      "kadregrin_the_infernal_role": "Top-end tres recurrent des versions Aurora et Dragons. Sert souvent a reprendre totalement la taille du battlefield.",
+      "minotaur_reckoner_role": "Le 'red minotaur' mis en avant dans les discussions anti-purple. C'est une des raisons de jouer la version Vegas si on veut mieux respecter les decks violets.",
+      "stormbringer_role": "Carte marquee de la version Vegas, participant au plan plus midrange et plus immediat.",
+      "yone_blademaster_role": "Autre marqueur du shell Vegas, plus body-tempo que pure rampe.",
+      "ferrous_forerunner_role": "Tres importante dans les versions Vegas et sideboards anti-purple. Aide a tenir le milieu de partie avant que les plus gros dragons ne prennent le relais.",
+      "ruin_runner_role": "Piece de sideboard ou de midgame forte contre purple selon les retours recents.",
+      "doran_blade_role": "Le thread Vegas explique qu'on le met souvent sur les Heralds pour les rendre Mighty, plus beefy, et parfois hors de certaines portees de removal comme Falling Star.",
+      "sabotage_role": "Toujours utile dans les versions Aurora et hybrides pour proteger tes vrais turns de bascule.",
+      "mobilize_role": "Encore un pilier des versions plus ramp et des shells hybrides. Permet d'accentuer le tempo avant les bombs.",
+      "anivia_primal_role": "Marqueur des versions plus anciennes Houston, plus ramp/control que la version Vegas.",
+      "sky_splitter_role": "Toujours tres present dans les listes officielles Houston/Bologna/Vegas."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Treating every Volibear list like pure ramp",
+        "why_it_loses": "Le shell Vegas montre clairement que le deck gagne aussi en etant plus midrange, plus corpulent et moins all-in sur Aurora."
+      },
+      {
+        "mistake": "Investing all your Might in one place against bounce/removal decks",
+        "why_it_loses": "Les cheap utility spells cites par le guide punissent exactement ca."
+      },
+      {
+        "mistake": "Keeping slow hands because the top-end is strong",
+        "why_it_loses": "Volibear a besoin que le scoreboard reste bas. Une main trop lente donne juste plus de temps aux decks adverses pour scorer autour de tes gros corps."
+      },
+      {
+        "mistake": "Playing Aurora by default",
+        "why_it_loses": "Le meilleur retour communautaire recent dit explicitement que midrange Voli est souvent meilleur, et qu'Aurora doit parfois sortir du deck."
+      },
+      {
+        "mistake": "Using your best swing on the wrong battlefield",
+        "why_it_loses": "Volibear gagne souvent en rendant un front totalement absurde, pas en jouant 'assez gros' sur les deux."
+      },
+      {
+        "mistake": "Ignoring how Volibear, Furious interacts with move/bounce timing",
+        "why_it_loses": "Si ton trigger semble lethal mais que Voli bouge avant resolution, le 'here' peut changer et tu peux perdre un tour entier."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Si ton adversaire peut scorer sans se battre, ta rampe est probablement deja moins bonne que tu ne le crois.",
+      "Contre purple, etaler la might compte souvent plus que faire un seul monstre parfait.",
+      "Le meilleur Doran's Blade n'est pas toujours sur la plus grosse carte; il est souvent sur le corps qui doit juste franchir le seuil Mighty et survivre.",
+      "Aurora ne doit entrer dans ta partie que si elle change vraiment la texture du matchup.",
+      "La meilleure question a se poser avec Volibear n'est pas 'quand puis-je jouer mon plus gros sort ?', mais 'quand mon plus gros sort compte-t-il encore ?'."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "default_shell": "Midrange Dragons / Anti-Purple Volibear",
+      "volibear_outlook": {
+        "label": "favorable",
+        "estimated_volibear_winrate_percent": "55-61",
+        "confidence": "medium"
+      },
+      "summary": "C'est le meilleur signal matchup explicite disponible. Le pilote Vegas dit que ses meilleurs matchups sont les midrange lents qui le laissent developper en base et prendre les points lentement, et cite explicitement Master Yi comme exemple. Il ajoute aussi que ces decks se font 'stat checked by Might'.",
+      "why_matchup_plays_this_way": [
+        "Yi aime les fronts propres, peu de pieces et des protections fines.",
+        "Volibear aime poser des seuils de taille que Yi n'aime pas gerer s'il n'est pas deja tres en avance."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield avec peu de pieces",
+        "gagner a la finesse de protection et de movement"
+      ],
+      "volibear_plan": [
+        "mettre vite une vraie unite a 5+ Might en jeu",
+        "forcer Yi a defendre plus tot qu'il ne le souhaite",
+        "transformer les battlefields en simple probleme de masse plutot qu'en puzzle de tricks"
+      ],
+      "mulligan_focus": [
+        "Catalyst of Aeons",
+        "courbe de rampe propre",
+        "Doran's Blade si la main a deja le bon body",
+        "pas de keep full top-end"
+      ],
+      "sideboard_focus": [
+        "garder le noyau midrange",
+        "ne pas rentrer trop d'Aurora si la version de base est deja suffisante",
+        "plus de vrais bodies si le shell les joue"
+      ],
+      "battlefield_notes": [
+        "Aspirant's Climb et Obelisk de récompensent bien le tempo de grande unite ici."
+      ],
+      "main_lose_conditions_for_volibear": [
+        "laisser Yi jouer tranquillement le premier front",
+        "main trop lente",
+        "surrespect de tricks qui n'existent pas"
+      ],
+      "important_patterns_to_respect": [
+        "Calm protection chains",
+        "single-holder fronts"
+      ],
+      "variation_notes": {
+        "aurora_ramp_big_monsters": "Toujours bon si la courbe suit, mais un peu plus lent que le shell Vegas.",
+        "transformational_aurora_midrange": "Version ideale si tu veux pouvoir devenir encore plus gros dans les games longues."
+      },
+      "source_refs": [
+        "S7"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Midrange Dragons / Anti-Purple Volibear",
+      "volibear_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_volibear_winrate_percent": "50-55",
+        "confidence": "low"
+      },
+      "summary": "Le meilleur angle de lecture vient du thread Vegas et du thread ban discussion: la version Vegas est explicitement presentee comme excellente contre purple, avec Minotaur Reckoner, Ferrous Forerunner, Ruin Runner et Kadregrin comme noyau de sideboard/midgame tres solide. Cela ne garantit pas un matchup facile contre tout Ezreal, mais justifie au moins une lecture jouable voire legerement positive avec le bon shell.",
+      "why_matchup_plays_this_way": [
+        "Ezreal veut gagner sur la qualite de cartes et les turns longs.",
+        "Volibear anti-purple veut rendre ces turns trop couteux en posant des seuils de taille et des cartes que purple interagit moins bien avec."
+      ],
+      "opponent_plan": [
+        "ralentir juste assez pour atteindre le turn violet qui compte",
+        "faire perdre de la value aux grosses cartes body/fury"
+      ],
+      "volibear_plan": [
+        "etaler la might quand le deck violet a beaucoup de bounce/removal",
+        "utiliser le noyau Minotaur / Forerunner / Ruin Runner si disponible",
+        "ne pas laisser Ezreal jouer une partie purement lente"
+      ],
+      "mulligan_focus": [
+        "starter de rampe ou de midrange",
+        "Doran's Blade si la ligne Mighty est deja la",
+        "pas de keep full Aurora sans pression"
+      ],
+      "sideboard_focus": [
+        "Minotaur Reckoner",
+        "Ferrous Forerunner",
+        "Ruin Runner",
+        "Kadregrin the Infernal"
+      ],
+      "battlefield_notes": [
+        "Volibear veut un front ou une grosse unite compte reellement et un autre ou Ezreal ne peut pas juste gratter des points gratuits."
+      ],
+      "main_lose_conditions_for_volibear": [
+        "partie trop lente",
+        "investment trop concentre",
+        "pas assez de points pendant que purple assemble"
+      ],
+      "important_patterns_to_respect": [
+        "Called Shot loops",
+        "late purple chains",
+        "bounce windows"
+      ],
+      "variation_notes": {
+        "aurora_ramp_big_monsters": "Plus polarisant: meilleur si Aurora passe, pire si Ezreal te fait perdre trop de temps.",
+        "transformational_aurora_midrange": "Probablement la meilleure approche si tu sais deja que le field est violet."
+      },
+      "source_refs": [
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "default_shell": "Midrange Dragons / Anti-Purple Volibear",
+      "volibear_outlook": {
+        "label": "close_even",
+        "estimated_volibear_winrate_percent": "48-53",
+        "confidence": "low"
+      },
+      "summary": "Le matchup Viktor depend beaucoup de la texture exacte de Viktor. Le signal le plus utile reste indirect: la version Vegas de Volibear est pensee pour bien jouer contre purple, mais le pilote identifie quand meme les decks jaunes et les aggro rapides comme plus dangereux que les slow midrange. Contre un Viktor plus spell-heavy et moins large, Volibear peut souvent imposer un vrai stat-check; contre Viktor plus token, la partie devient plus dure.",
+      "why_matchup_plays_this_way": [
+        "Volibear aime quand ses grosses unites demandent une vraie reponse.",
+        "Viktor aime quand il peut soit les detourner, soit marquer pendant que Volibear prepare son gros tour."
+      ],
+      "opponent_plan": [
+        "retirer la bonne grosse piece ou la retarder",
+        "tenir un front juste assez longtemps pour passer au-dessus"
+      ],
+      "volibear_plan": [
+        "ne pas surjouer autour de chaque removal possible",
+        "garder le front ou la grosse unite change vraiment le score",
+        "contre les versions plus violettes, rentrer le paquet anti-purple"
+      ],
+      "mulligan_focus": [
+        "courbe propre",
+        "une vraie ligne Mighty",
+        "pas de main trop lourde"
+      ],
+      "sideboard_focus": [
+        "Minotaur Reckoner",
+        "Ferrous Forerunner",
+        "Ruin Runner"
+      ],
+      "battlefield_notes": [
+        "Si Viktor peut marquer sur le front que Volibear abandonne trop longtemps, la partie se tend vite."
+      ],
+      "main_lose_conditions_for_volibear": [
+        "bounce ou control qui retardent trop le premier vrai seuil",
+        "pas assez de points pris avant le late-game"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal timing",
+        "token stalls",
+        "purple value turns"
+      ],
+      "variation_notes": {
+        "aurora_ramp_big_monsters": "Bien si le deck adverse est lent, moins bien s'il multiplie les petites unites.",
+        "transformational_aurora_midrange": "Utile justement pour ajuster selon que Viktor est plus purple ou plus swarm."
+      },
+      "source_refs": [
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Midrange Dragons / Anti-Purple Volibear",
+      "volibear_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_volibear_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "On manque de gros retours directs sur Midrange Draven, mais la logique structurelle et les retours Volibear recentes suggèrent un pairing tendu plutôt qu'horrible. Le danger vient surtout du fait que Draven peut garder la pression tout en te forçant à investir tes grosses pieces sur des fronts qui ne vivent pas assez longtemps.",
+      "why_matchup_plays_this_way": [
+        "Draven midrange a une meilleure largeur et un meilleur tempo naturel de milieu de partie.",
+        "Volibear peut pourtant le punir si ses gros corps arrivent assez tot pour rendre les combats rouges mauvais."
+      ],
+      "opponent_plan": [
+        "prendre le score tot",
+        "forcer Volibear a subir des combats ou des bounces inconfortables"
+      ],
+      "volibear_plan": [
+        "jouer la taille plus que le grind",
+        "ne pas mettre toutes les ressources sur une seule piece sans raison",
+        "trouver un front ou la might pure suffit a casser la math rouge"
+      ],
+      "mulligan_focus": [
+        "Catalyst ou bonne courbe midrange",
+        "starter solide",
+        "pas de main full bombes"
+      ],
+      "sideboard_focus": [
+        "versions plus midrange plutot que plus Aurora",
+        "Bodies immediats",
+        "removals ou tempo tools de soutien"
+      ],
+      "battlefield_notes": [
+        "Le matchup est meilleur quand Volibear tient un front avec une vraie menace vivante, pas juste une grosse statline qui va repartir en base."
+      ],
+      "main_lose_conditions_for_volibear": [
+        "partie jouee trop lentement",
+        "tempo negatif sur la premiere grosse menace",
+        "Draven qui marque pendant que Voli rampe"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Brynhir turns",
+        "red tempo pressure"
+      ],
+      "variation_notes": {
+        "aurora_ramp_big_monsters": "Plus polarisant et souvent moins bon si Draven te rentre dedans vite.",
+        "transformational_aurora_midrange": "Souvent meilleur car permet de retirer Aurora quand elle est trop lente."
+      },
+      "source_refs": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Midrange Dragons / Anti-Purple Volibear",
+      "volibear_outlook": {
+        "label": "unfavorable",
+        "estimated_volibear_winrate_percent": "42-47",
+        "confidence": "medium"
+      },
+      "summary": "C'est un des pires signaux publics pour Volibear. Le pilote Vegas cite explicitement les 'miracle matchups like Draven' parmi ses pires pairings, en expliquant que ces decks peuvent out-might Volibear et lui faire perdre trop de temps dans la ronde.",
+      "why_matchup_plays_this_way": [
+        "Volibear aime les fronts que sa taille peut verrouiller.",
+        "Miracle Draven peut contourner cette logique, remettre plusieurs pieces en jeu et ne pas toujours te laisser convertir assez vite."
+      ],
+      "opponent_plan": [
+        "tenir jusqu'au turn explosif",
+        "faire perdre du temps et du tempo a Volibear",
+        "revenir sur plusieurs fronts ou sur un front qu'il croyait verrouille"
+      ],
+      "volibear_plan": [
+        "prendre plus de points tot que d'habitude",
+        "ne pas supposer que la seule taille suffira",
+        "garder le shell le moins lent possible"
+      ],
+      "mulligan_focus": [
+        "main proactive",
+        "pas de keep trop late",
+        "courbe qui met une clock"
+      ],
+      "sideboard_focus": [
+        "retirer une partie des elements les plus lents",
+        "garder les cartes anti-purple qui comptent vraiment",
+        "rentrer des menaces immediates"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient tres mauvais si Volibear a besoin de plusieurs cycles calmes pour gagner."
+      ],
+      "main_lose_conditions_for_volibear": [
+        "partie trop longue",
+        "grosse piece qui ne convertit pas en points",
+        "perte de temps en ronde ou de momentum"
+      ],
+      "important_patterns_to_respect": [
+        "miracle width turns",
+        "purple resource bursts",
+        "tempo reset sequences"
+      ],
+      "variation_notes": {
+        "aurora_ramp_big_monsters": "La pire version ici en moyenne.",
+        "burn_or_more_direct_midrange": "Meilleure si ton build sait vraiment clocker."
+      },
+      "source_refs": [
+        "S7"
+      ]
+    },
+    {
+      "opponent": "Rek'Sai, Void Burrower",
+      "meta_share_percent": 2,
+      "default_shell": "Midrange Dragons / Anti-Purple Volibear",
+      "volibear_outlook": {
+        "label": "unfavorable",
+        "estimated_volibear_winrate_percent": "43-48",
+        "confidence": "medium"
+      },
+      "summary": "C'est l'autre pire signal explicite du thread Vegas. Le pilote classe les aggro decks qui rushent, comme Rek'Sai, parmi ses pires matchups.",
+      "why_matchup_plays_this_way": [
+        "Rek'Sai punit les mains lentes et les turns de setup.",
+        "Volibear ne profite pas pleinement de sa rampe si le score est deja trop haut quand les gros corps arrivent."
+      ],
+      "opponent_plan": [
+        "prendre les premiers points tres vite",
+        "forcer Volibear a ramper sous pression",
+        "transformer les petits retards en game entiere"
+      ],
+      "volibear_plan": [
+        "mulligan plus agressivement qu'en blind",
+        "respecter davantage la stabilisation de table que la beaute de la rampe",
+        "si possible, garder de quoi contester tres tot un front"
+      ],
+      "mulligan_focus": [
+        "starter defensif ou de tempo",
+        "Catalyst seulement avec vraie suite",
+        "pas de keep full top-end"
+      ],
+      "sideboard_focus": [
+        "bodies immediats",
+        "cartes qui stabilisent le milieu de partie",
+        "retirer les slow cards les plus gourmandes"
+      ],
+      "battlefield_notes": [
+        "Plus Rek'Sai marque avant le premier gros swing Volibear, plus la game devient dure."
+      ],
+      "main_lose_conditions_for_volibear": [
+        "main lente",
+        "front abandonné trop tot",
+        "grosse carte qui arrive alors qu'il faut deja defendre deux tours d'avance"
+      ],
+      "important_patterns_to_respect": [
+        "Void Rush snowball",
+        "tempo conquer pressure"
+      ],
+      "variation_notes": {
+        "aurora_ramp_big_monsters": "Souvent trop lente.",
+        "transformational_aurora_midrange": "Clairement preferable si tu attends beaucoup de Rek'Sai."
+      },
+      "source_refs": [
+        "S7"
+      ]
+    },
+    {
+      "opponent": "Lux, Lady of Luminosity",
+      "meta_share_percent": 3.2,
+      "default_shell": "Midrange Dragons / Anti-Purple Volibear",
+      "volibear_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_volibear_winrate_percent": "45-49",
+        "confidence": "low"
+      },
+      "summary": "Le meilleur signal disponible est plus general que specifique: le pilote Vegas classe les 'yellow decks due to Cull the Weak' parmi les pires pairings. Lux n'est pas le seul deck jaune possible, mais elle est un bon representant de ce probleme car elle combine Order et removals de structure.",
+      "why_matchup_plays_this_way": [
+        "Volibear n'aime pas les decks qui peuvent convertir tes grosses menaces en mauvais tempo trades.",
+        "Les decks jaunes peuvent souvent rendre une grosse unite moins decisive qu'elle n'en a l'air."
+      ],
+      "opponent_plan": [
+        "tenir les premiers fronts sans vrai combat",
+        "retarder ou casser la premiere grosse unite de Volibear",
+        "reprendre le scoreboard pendant que Voli rejoue gros"
+      ],
+      "volibear_plan": [
+        "ne pas faire confiance a la seule taille brute",
+        "savoir quand tu dois juste prendre des points plutot que preparer une plus grosse piece encore",
+        "garder des menaces diversifiees"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "pas de keep ultra lente",
+        "corps qui comptent vite"
+      ],
+      "sideboard_focus": [
+        "shell plus midrange",
+        "threat density",
+        "retirer les cartes les plus punissables"
+      ],
+      "battlefield_notes": [
+        "Les fronts ou Lux peut te faire perdre la grosse piece sans te laisser scorer sont les pires pour Volibear."
+      ],
+      "main_lose_conditions_for_volibear": [
+        "rampe trop ambitieuse",
+        "une seule menace vraiment importante",
+        "scoreboard trop peu avance"
+      ],
+      "important_patterns_to_respect": [
+        "Cull the Weak",
+        "order tempo-control patterns",
+        "front-denial turns"
+      ],
+      "variation_notes": {
+        "midrange_dragons": "La meilleure version pour ne pas trop souffrir de ce type de deck.",
+        "aurora_ramp_big_monsters": "Plus vulnerable si Lux ou un autre jaune a le temps de preparer les bons removals."
+      },
+      "source_refs": [
+        "S7"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Transformational Aurora-Midrange Volibear",
+      "volibear_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_volibear_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "On a peu de signal direct public specifique a Volibear contre Kai'Sa, mais structurellement elle partage plusieurs axes des matchups penibles pour Volibear: bonnes reponses single-target, capacite a scorer pendant que tu prépares les gros turns, et punition des mains trop lourdes.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa tue proprement ce qui compte vraiment.",
+        "Volibear gagne si sa grosse piece arrive avant que le score ne soit hors de portee et si elle convertit immediatement."
+      ],
+      "opponent_plan": [
+        "survivre aux premiers gros corps",
+        "retirer la bonne menace plutot que les petites",
+        "revenir au score avec ses meilleurs spells"
+      ],
+      "volibear_plan": [
+        "ne pas all-in sur une seule piece sans raison",
+        "jouer plus midrange que pure rampe si la version le permet",
+        "faire compter chaque grande unite en points, pas juste en spectacle"
+      ],
+      "mulligan_focus": [
+        "courbe stable",
+        "pression early ou de milieu de partie",
+        "pas de hand lente"
+      ],
+      "sideboard_focus": [
+        "shell hybride pour couper Aurora si elle est trop lente",
+        "bodies immediats",
+        "pas trop de greed"
+      ],
+      "battlefield_notes": [
+        "Les fronts tenus uniquement par une tres grosse carte sans couverture sont plus dangereux ici."
+      ],
+      "main_lose_conditions_for_volibear": [
+        "main trop lourde",
+        "piece cle tempo-denied",
+        "absence de points avant le late"
+      ],
+      "important_patterns_to_respect": [
+        "Hextech Ray",
+        "Falling Star",
+        "Time Warp"
+      ],
+      "variation_notes": {
+        "aurora_ramp_big_monsters": "Peut etre tres polarisant et souvent trop lent.",
+        "midrange_dragons": "Souvent plus stable car elle multiplie les menaces vraiment presentes sur table."
+      },
+      "source_refs": [
+        "S1",
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Transformational Aurora-Midrange Volibear",
+      "volibear_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_volibear_winrate_percent": "45-49",
+        "confidence": "low"
+      },
+      "summary": "Le signal direct public manque, mais le pairing est structurellement tendu: Irelia punit les tours trop setup et joue mieux les fronts proteges que Volibear n'aime voir exister.",
+      "why_matchup_plays_this_way": [
+        "Volibear veut gagner par taille et vitesse d'acces aux gros corps.",
+        "Irelia veut gagner par protection, tempo et scoreboard suffisamment rapide."
+      ],
+      "opponent_plan": [
+        "tenir un front avec un porteur",
+        "forcer Volibear a investir sur le mauvais battlefield"
+      ],
+      "volibear_plan": [
+        "ne pas laisser un front devenir gratuit pour Irelia",
+        "faire compter la premiere grosse unite comme vraie prise de tempo",
+        "privilegier la version plus midrange si ton 75 le permet"
+      ],
+      "mulligan_focus": [
+        "main rapide",
+        "pas de hand trop lourde",
+        "corps qui peuvent contester tot"
+      ],
+      "sideboard_focus": [
+        "sortir une partie des cartes trop lentes",
+        "garder le noyau de pression de table"
+      ],
+      "battlefield_notes": [
+        "Le matchup se degrade quand Irelia peut garder un battlefield propre sous protection pendant que Voli prepare un tour 'encore plus gros'."
+      ],
+      "main_lose_conditions_for_volibear": [
+        "setup trop lent",
+        "front cede gratuitement",
+        "grande piece qui n'ouvre aucun vrai point"
+      ],
+      "important_patterns_to_respect": [
+        "boots and protection lines",
+        "tempo combat pivots",
+        "front snowball"
+      ],
+      "variation_notes": {
+        "aurora_ramp_big_monsters": "La plus vulnerable ici.",
+        "midrange_dragons": "Clairement la meilleure branche pour rendre la partie plus honnete et moins punitive."
+      },
+      "source_refs": [
+        "S1",
+        "S7"
+      ]
+    }
+  ],
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "aurora_ramp_big_monsters_keep": [
+        "Catalyst of Aeons",
+        "Dazzling Aurora si la main sait survivre",
+        "Deadbloom Predator",
+        "une vraie ligne vers un 5+ Might tot"
+      ],
+      "midrange_dragons_keep": [
+        "Catalyst of Aeons",
+        "Doran's Blade si un bon body suit",
+        "Minotaur Reckoner ou autre vrai midgame body selon version",
+        "main qui pose une vraie presence avant les bombs"
+      ],
+      "transformational_hybrid_keep": [
+        "main stable sans dependre d'Aurora",
+        "starter plus body midgame",
+        "pas de keep juste parce qu'il y a des grosses cartes"
+      ],
+      "ship": [
+        "main full top-end",
+        "main qui ne fait rien avant les gros tours",
+        "main qui suppose que la seule rampe va suffire",
+        "main sans front reel a contester"
+      ],
+      "notes": [
+        "Volibear mulligan tres dur contre les fields rapides.",
+        "Une main moins spectaculaire mais plus stable vaut souvent mieux qu'une main plus explosive mais trop lente."
+      ]
+    },
+    "master_yi": {
+      "keep": [
+        "Catalyst of Aeons",
+        "bonne courbe de rampe",
+        "grosse piece qui arrive a temps"
+      ],
+      "ship": [
+        "main ultra lourde sans acceleration",
+        "main sans vrai front"
+      ]
+    },
+    "ezreal_or_purple_control": {
+      "keep": [
+        "corps qui comptent vite",
+        "Doran's Blade avec bonne cible",
+        "sideboard anti-purple si post-board"
+      ],
+      "ship": [
+        "main tout sur une seule grosse piece",
+        "main full Aurora sans plan de score"
+      ]
+    },
+    "draven_miracle": {
+      "keep": [
+        "main proactive",
+        "courbe qui clocke",
+        "pas de keep full late"
+      ],
+      "ship": [
+        "main lente",
+        "main trop dependante d'un seul gros turn"
+      ]
+    },
+    "reksai": {
+      "keep": [
+        "starter de stabilisation",
+        "courbe plus basse",
+        "pas de keep purement gourmand"
+      ],
+      "ship": [
+        "main full bombes",
+        "main sans presence tot"
+      ]
+    },
+    "yellow_control": {
+      "keep": [
+        "menaces diversifiees",
+        "main stable",
+        "pas de keep all-in sur une unite"
+      ],
+      "ship": [
+        "main trop lineaire",
+        "main trop lente"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "general_shell_rules": {
+      "aurora_ramp_big_monsters": {
+        "identity": "Preserver les gros turns sans oublier que le scoreboard existe deja.",
+        "dont_do": [
+          "rentrer trop de cartes lentes",
+          "laisser Aurora devenir un automatisme"
+        ]
+      },
+      "midrange_dragons": {
+        "identity": "Rester un vrai deck de presence de table et de stat-check, pas un pseudo-ramp mal fini.",
+        "dont_do": [
+          "sortir trop de bodies",
+          "concentrer toute la might contre purple"
+        ]
+      },
+      "transformational_hybrid": {
+        "identity": "Adapter si Aurora est vraiment la meilleure chose a faire dans le pairing.",
+        "dont_do": [
+          "hésiter a sortir Aurora contre les decks qui la punissent trop fort",
+          "transformer le deck au point de perdre tout son squelette de base"
+        ]
+      }
+    },
+    "ezreal_or_purple_control": {
+      "in": [
+        "Minotaur Reckoner",
+        "Ferrous Forerunner",
+        "Ruin Runner",
+        "Kadregrin the Infernal"
+      ],
+      "out": [
+        "une partie du package Aurora si trop lent",
+        "cards too clunky"
+      ],
+      "plan": [
+        "Etaler la might, garder plusieurs menaces, et rendre les tours violets moins confortables."
+      ]
+    },
+    "draven_miracle": {
+      "in": [
+        "menaces immediates",
+        "noyau midrange le plus direct",
+        "retirer les slow cards"
+      ],
+      "out": [
+        "Aurora de trop",
+        "top-end trop lent"
+      ],
+      "plan": [
+        "Le scoreboard est la vraie ressource.",
+        "Il faut raccourcir la game."
+      ]
+    },
+    "reksai": {
+      "in": [
+        "corps plus immediats",
+        "cartes qui tiennent mieux le milieu de partie"
+      ],
+      "out": [
+        "Aurora la plus lente",
+        "bombes tardives de trop"
+      ],
+      "plan": [
+        "Il faut survivre au rush puis prendre le relai, pas juste ramper joliment."
+      ]
+    },
+    "master_yi": {
+      "in": [
+        "plus de grosses menaces si tu es deja confortable",
+        "garder le squelette de base"
+      ],
+      "out": [
+        "pieces trop situationnelles"
+      ],
+      "plan": [
+        "Le matchup est souvent deja bon; ne casse pas ton deck pour trop le sider."
+      ]
+    },
+    "yellow_control": {
+      "in": [
+        "threat density",
+        "cartes moins punissables que les gros all-in"
+      ],
+      "out": [
+        "slow cards",
+        "elements trop faciles a contrer par tempo"
+      ],
+      "plan": [
+        "Diversifier les menaces et eviter de tout investir dans un seul front."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "aurora_ramp_priority": [
+        "Aspirant's Climb",
+        "Obelisk of Power",
+        "Vilemaw's Lair"
+      ],
+      "midrange_dragons_priority": [
+        "Aspirant's Climb",
+        "Obelisk of Power",
+        "Vilemaw's Lair"
+      ],
+      "transformational_hybrid_priority": [
+        "Aspirant's Climb",
+        "Obelisk of Power",
+        "Vilemaw's Lair or Sigil of the Storm"
+      ],
+      "notes": [
+        "Les trois shells gardent une base de battlefields tres proche dans les listes officielles.",
+        "Obelisk of Power est excellent pour convertir la premiere vraie unite 5+ Might en chaine de pression.",
+        "Aspirant's Climb reste le front le plus naturellement favorable a un deck qui veut prendre l'avance par taille."
+      ]
+    },
+    "master_yi": {
+      "preferred": [
+        "Aspirant's Climb",
+        "Obelisk of Power"
+      ],
+      "plan": [
+        "Volibear veut un front ou la taille brute compte plus que la finesse de protection."
+      ]
+    },
+    "ezreal_or_purple_control": {
+      "preferred": [
+        "Obelisk of Power",
+        "Vilemaw's Lair"
+      ],
+      "plan": [
+        "Le meilleur front est celui ou une vraie grosse unite convertit en point avant que purple ne recolle."
+      ]
+    },
+    "draven_miracle": {
+      "preferred": [
+        "Aspirant's Climb"
+      ],
+      "secondary": [
+        "Obelisk of Power"
+      ],
+      "plan": [
+        "Tu veux un front fort, pas deux fronts fragiles."
+      ]
+    },
+    "reksai": {
+      "preferred": [
+        "Aspirant's Climb",
+        "Vilemaw's Lair"
+      ],
+      "plan": [
+        "Les fronts qui te permettent de stabiliser reellement une grande unite sont meilleurs que ceux de pure course decorative."
+      ]
+    },
+    "yellow_control": {
+      "preferred": [
+        "Obelisk of Power",
+        "Aspirant's Climb"
+      ],
+      "plan": [
+        "Le bon front est celui ou ta grosse menace compte encore meme si une reponse jaune arrive."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Riftbound.gg - Volibear, Relentless Storm Guide",
+      "date": "2026-02-20",
+      "notes": "Guide principal sur l'identite ramp de Volibear, l'importance des unites a 5+ Might, le probleme des bounce spells et le role des grosses menaces."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "Riftbound official - Houston RQ Top Decks",
+      "date": "2025-12-11",
+      "notes": "Houston: 20 joueurs Volibear Day 1, 1 Day 2. Best-of officiel Volibear #47 overall avec shell Aurora ramp body/fury."
+    },
+    {
+      "id": "S3",
+      "type": "official tournament article",
+      "title": "Riftbound official - The Best Decks out of Bologna",
+      "date": "2026-02-25",
+      "notes": "Bologna: 27 joueurs Volibear, 3 Day 2. Best-of Volibear #30 overall avec shell Aurora ramp affine."
+    },
+    {
+      "id": "S4",
+      "type": "official tournament article",
+      "title": "Riftbound official - Vegas' Top Decks",
+      "date": "2026-03-04",
+      "notes": "Vegas: 15 joueurs Volibear, 2 Day 2. Best-of Volibear #87 overall avec shell plus midrange/dragons."
+    },
+    {
+      "id": "S5",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Bologna",
+      "date": "2026-03-01",
+      "notes": "Volibear Tier 3, 28 picks, 11% conversion, 44.1% WR, Top 32. Le site pense qu'une meilleure liste a peut-etre ete trouvee."
+    },
+    {
+      "id": "S6",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Vegas",
+      "date": "2026-03-06",
+      "notes": "Volibear reste Tier 3. Le site note que les decks OGN-160 sont la seule vraie route de build et qu'en Vegas la liste a gagne une synergie supplementaire."
+    },
+    {
+      "id": "S7",
+      "type": "community thread",
+      "title": "Tied for best of Volibear with dragons at Vegas - Deck Showcase",
+      "date_consulted": "2026-03-11",
+      "notes": "Source cle pour le shell midrange/dragons, le sideboard anti-purple, le plan Doran's Blade sur les Heralds, et les meilleurs/pires matchups selon le pilote."
+    },
+    {
+      "id": "S8",
+      "type": "community thread",
+      "title": "About the potential upcoming bans",
+      "date_consulted": "2026-03-11",
+      "notes": "Mention explicite que le best-of Volibear Vegas 'dumpsters the purple cards' et que le red Minotaur invalide une partie du plan violet."
+    },
+    {
+      "id": "S9",
+      "type": "community rules thread",
+      "title": "Rules Question: Gust, Volibear, Fight or Flight",
+      "date_consulted": "2026-03-11",
+      "notes": "Support pour l'interaction avancee de Volibear, Furious avec les effets de move/bounce pendant la chaine d'attaque."
+    },
+    {
+      "id": "S10",
+      "type": "tier list",
+      "title": "Mobalytics Riftbound Tier List",
+      "date_consulted": "2026-03-11",
+      "notes": "Mobalytics classe Volibear D-Tier tout en reconnaissant que la legende est naturellement faite pour les grosses unites et les remboursements de power."
+    },
+    {
+      "id": "S11",
+      "type": "Riftbound.gg deck database snippet",
+      "title": "Volibear Top 128 Nanjing Regional / deck database references",
+      "date_consulted": "2026-03-11",
+      "notes": "Support indirect pour la continuite entre la liste Bologna et le meilleur Volibear du Nanjing Regional."
+    }
+  ]
+}

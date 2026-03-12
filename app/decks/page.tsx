@@ -8,19 +8,10 @@ import { META_DECKS, MAJOR_TOURNAMENTS, OFFMETA_DECKS, type MetaDeck } from './d
 import { domainBadgeClasses, domainTextColor, ALL_CARDS } from '../lib/cards';
 import { CHAMPION_TO_PRIMARY_LEGEND_ID } from '../lib/legend-index';
 import { CardRail } from '../components/ui/CardRail';
+import { Button } from '../components/ui/Button';
+import { CARD_RAIL_IMAGES, TIER_COLORS_WITH_SHADOW, DIFFICULTY_COLORS } from '../lib/ui-constants';
 
-const BEAUTIFUL_CARDS = [
-  { id: "OGN-66", name: "Ahri, Alluring", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fabbcc2f83f397cf07299236a702db05a151053b-744x1039.png" },
-  { id: "OGN-41", name: "Volibear, Furious", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c9165d49b8caae9a856433cd5151e8b368eb80b5-744x1039.png" },
-  { id: "OGN-39", name: "Kai'Sa, Survivor", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ad69bde670ce218adee1d2a618a7295d2fb7bd4c-744x1039.png" },
-  { id: "OGN-55", name: "Yasuo, Tempest", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8f2cf4d6c0bcf65e93f7f4cf2cc5b6d6a7bd8c1a-744x1039.png" },
-  { id: "OGN-45", name: "Thresh, Eternal", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9a8c5d4e3b7cf76e84f6e5dd2bb4c5e7b8cd9a2b-744x1039.png" },
-  { id: "OGN-37", name: "Leona, Radiant", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7b6d5e4c3a8bf97f65e4f5cc2aa5b6d7c8be8a3b-744x1039.png" },
-  { id: "SFD-185", name: "Draven, Vanquisher", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8fa3f1fe63392c4744152d98ff781497a4d17b74-744x1039.png" },
-  { id: "SFD-195", name: "Irelia, Blade Dancer", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7e8d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1e0d9-744x1039.png" },
-  { id: "SFD-132", name: "Kai'Sa, Void Seeker", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/6d5c4b3a2e1f0d9c8b7a6f5e4d3c2b1a0f9e8d7-744x1039.png" },
-  { id: "OGN-299", name: "Aurelion Sol, Star Forger", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5c4b3a2d1e0f9c8b7a6f5e4d3c2b1a0f9e8d7c-744x1039.png" },
-];
+const BEAUTIFUL_CARDS = CARD_RAIL_IMAGES;
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -78,20 +69,7 @@ function getLegendImage(champion: string): string | null {
   return card?.variants?.[0]?.imageUrl ?? null;
 }
 
-const TIER_COLORS: Record<string, string> = {
-  S: 'bg-red-600 text-white shadow-[0_0_16px_rgba(220,38,38,0.5)]',
-  A: 'bg-orange-500 text-white shadow-[0_0_16px_rgba(249,115,22,0.5)]',
-  B: 'bg-yellow-500 text-black shadow-[0_0_16px_rgba(234,179,8,0.5)]',
-  C: 'bg-blue-500 text-white shadow-[0_0_16px_rgba(59,130,246,0.5)]',
-};
-
-const DIFFICULTY_COLORS: Record<string, string> = {
-  'Débutant': 'bg-green-500/20 text-green-400 border-green-500/30',
-  'Intermédiaire': 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
-  'Expert': 'bg-red-500/20 text-red-400 border-red-500/30',
-};
-
-type Tab = 'meta' | 'offmeta' | 'all' | 'tournaments' | 'saved';
+type Tab = 'meta' | 'offmeta' | 'all' | 'community' | 'saved';
 
 // ─── Deck Card Component ──────────────────────────────────────────────────────
 
@@ -137,7 +115,7 @@ function DeckCard({
           {/* Gradient fade */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[var(--surface-3)] pointer-events-none" />
           {/* Tier badge */}
-          <div className={`absolute top-2 left-2 w-7 h-7 rounded-lg flex items-center justify-center text-[10px] font-black ${TIER_COLORS[deck.tier]}`}>
+          <div className={`absolute top-2 left-2 w-7 h-7 rounded-lg flex items-center justify-center text-[10px] font-black ${TIER_COLORS_WITH_SHADOW[deck.tier]}`}>
             {deck.tier}
           </div>
         </div>
@@ -308,15 +286,13 @@ function DeckCard({
                 </div>
               </div>
               
-              <Link
+              <Button
                 href={`/deckbuilder?deck=${encodeURIComponent(deck.champion)}`}
-                className="flex items-center justify-center gap-2 w-full py-3 bg-white text-black font-black text-xs rounded-xl hover:scale-[1.02] transition-all tracking-widest"
+                variant="secondary"
+                size="sm"
               >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
-                </svg>
                 COPIER CE DECK
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -353,7 +329,7 @@ function DeckGridCard({ deck, onExpand }: { deck: MetaDeck; onExpand: () => void
 
         {/* Tier badge */}
         {deck.tier && (
-          <div className={`absolute top-3 right-3 w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black ${TIER_COLORS[deck.tier]}`}>
+          <div className={`absolute top-3 right-3 w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black ${TIER_COLORS_WITH_SHADOW[deck.tier]}`}>
             {deck.tier}
           </div>
         )}
@@ -400,10 +376,6 @@ function DeckGridCard({ deck, onExpand }: { deck: MetaDeck; onExpand: () => void
 export default function DeckLibraryPage() {
   const [tab, setTab] = useState<Tab>('meta');
   const [search, setSearch] = useState('');
-  const [filterTier, setFilterTier] = useState<string>('all');
-  const [filterCost, setFilterCost] = useState<string>('');
-  const [filterRecycle, setFilterRecycle] = useState<string>('');
-  const [filterPower, setFilterPower] = useState<string>('');
   const [expandedDeck, setExpandedDeck] = useState<string | null>(null);
   const [localDecks, setLocalDecks] = useState<SavedDeck[]>([]);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
@@ -420,11 +392,7 @@ export default function DeckLibraryPage() {
       d.archetype.toLowerCase().includes(search.toLowerCase()) ||
       d.domain.toLowerCase().includes(search.toLowerCase()) ||
       d.secondDomain.toLowerCase().includes(search.toLowerCase());
-    const matchTier = filterTier === 'all' || d.tier === filterTier;
-    const matchCost = !filterCost || deckHasStatValue(d.decklist, 'cost', parseInt(filterCost));
-    const matchRecycle = !filterRecycle || deckHasStatValue(d.decklist, 'recycle', parseInt(filterRecycle));
-    const matchPower = !filterPower || deckHasStatValue(d.decklist, 'power', parseInt(filterPower));
-    return matchSearch && matchTier && matchCost && matchRecycle && matchPower;
+    return matchSearch;
   });
 
   const allDecks = [...META_DECKS, ...OFFMETA_DECKS];
@@ -436,11 +404,7 @@ export default function DeckLibraryPage() {
       d.archetype.toLowerCase().includes(search.toLowerCase()) ||
       d.domain.toLowerCase().includes(search.toLowerCase()) ||
       d.secondDomain.toLowerCase().includes(search.toLowerCase());
-    const matchTier = filterTier === 'all' || d.tier === filterTier;
-    const matchCost = !filterCost || deckHasStatValue(d.decklist, 'cost', parseInt(filterCost));
-    const matchRecycle = !filterRecycle || deckHasStatValue(d.decklist, 'recycle', parseInt(filterRecycle));
-    const matchPower = !filterPower || deckHasStatValue(d.decklist, 'power', parseInt(filterPower));
-    return matchSearch && matchTier && matchCost && matchRecycle && matchPower;
+    return matchSearch;
   });
 
   const filteredOffmeta = OFFMETA_DECKS.filter(d => {
@@ -450,11 +414,7 @@ export default function DeckLibraryPage() {
       d.archetype.toLowerCase().includes(search.toLowerCase()) ||
       d.domain.toLowerCase().includes(search.toLowerCase()) ||
       d.secondDomain.toLowerCase().includes(search.toLowerCase());
-    const matchTier = filterTier === 'all' || d.tier === filterTier;
-    const matchCost = !filterCost || deckHasStatValue(d.decklist, 'cost', parseInt(filterCost));
-    const matchRecycle = !filterRecycle || deckHasStatValue(d.decklist, 'recycle', parseInt(filterRecycle));
-    const matchPower = !filterPower || deckHasStatValue(d.decklist, 'power', parseInt(filterPower));
-    return matchSearch && matchTier && matchCost && matchRecycle && matchPower;
+    return matchSearch;
   });
 
   return (
@@ -488,49 +448,50 @@ export default function DeckLibraryPage() {
       <div className="max-w-7xl mx-auto relative z-10">
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-12 h-1 bg-rift-purple rounded-full" />
-              <span className="text-xs font-black tracking-[0.3em] text-rift-purple uppercase">Archives tactiques</span>
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4">
+          <div className="max-w-xl">
+            <div className="flex items-center gap-2 mb-2">
+              <div className="w-8 h-0.5 bg-rift-purple rounded-full" />
+              <span className="text-[9px] font-black tracking-[0.2em] text-rift-purple uppercase">Archives tactiques</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-4">
+            <h1 className="text-3xl md:text-4xl font-black uppercase tracking-tighter leading-none mb-2">
               DECK <span className="text-rift-purple italic">BIBLIOTHÈQUE</span>
             </h1>
-            <p className="text-lg text-[var(--text-secondary)] font-medium leading-relaxed">
-              Explorez les meilleurs decks de tournois et les stratégies alternatives. Chaque deck affiche l&apos;image de sa légende.
+            <p className="text-sm text-[var(--text-secondary)] font-medium leading-relaxed hidden md:block">
+              Decks méta, hors-méta et communautaire
             </p>
           </div>
-          <Link
+          <Button
             href="/deckbuilder"
-            className="px-8 py-4 bg-white text-black font-black rounded-2xl text-xs tracking-widest hover:scale-105 transition-all shadow-[var(--shadow-xl)] uppercase shrink-0"
+            variant="secondary"
+            size="sm"
           >
-            + NOUVEAU DECK
-          </Link>
+            + NOUVEAU
+          </Button>
         </div>
 
-        {/* Tabs */}
-        <div className="mb-10 flex flex-col lg:flex-row items-start lg:items-center gap-4">
-          <div className="flex p-1.5 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-2xl overflow-x-auto gap-1">
+        {/* Tabs + Search */}
+        <div className="mb-6 flex flex-col md:flex-row items-start md:items-center gap-3">
+          <div className="flex p-1 bg-[var(--border-subtle)] border border-[var(--border-default)] rounded-xl overflow-x-auto gap-0.5">
             {([
-              ['meta', 'MÉTA', `${META_DECKS.length}`],
               ['all', 'TOUS', `${allDecks.length}`],
+              ['meta', 'MÉTA', `${META_DECKS.length}`],
               ['offmeta', 'HORS-MÉTA', `${OFFMETA_DECKS.length}`],
-              ['tournaments', 'TOURNOIS', ''],
+              ['community', 'COMMUNAUTÉ', ''],
               ['saved', `MES DECKS`, `${localDecks.length}`],
             ] as [Tab, string, string][]).map(([id, label, count]) => (
               <button
                 key={id}
-                onClick={() => { setTab(id); setExpandedDeck(null); setGridExpanded(null); setSearch(''); setFilterTier('all'); setFilterCost(''); setFilterRecycle(''); setFilterPower(''); }}
-                className={`flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold tracking-wider transition-all whitespace-nowrap border-2 ${
+                onClick={() => { setTab(id); setExpandedDeck(null); setGridExpanded(null); setSearch(''); }}
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-[10px] font-bold tracking-wider transition-all whitespace-nowrap ${
                   tab === id 
-                    ? 'bg-rift-blue text-black border-rift-blue shadow-[0_0_20px_rgba(10,200,255,0.3)]' 
-                    : 'bg-white/5 text-gray-300 border-transparent hover:bg-white/10 hover:text-white hover:border-white/20'
+                    ? 'bg-rift-blue text-black' 
+                    : 'bg-transparent text-gray-400 hover:text-white hover:bg-white/5'
                 }`}
               >
                 {label}
                 {count && (
-                  <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold ${tab === id ? 'bg-black/20' : 'bg-white/10'}`}>
+                  <span className={`text-[9px] px-1.5 py-0.5 rounded-full font-bold ${tab === id ? 'bg-black/20' : 'bg-white/5'}`}>
                     {count}
                   </span>
                 )}
@@ -538,123 +499,17 @@ export default function DeckLibraryPage() {
             ))}
           </div>
 
-          {/* Search/filter for meta */}
-          {tab === 'meta' && (
-            <div className="flex flex-wrap items-center gap-3 w-full">
-              <input
-                type="text"
-                placeholder="Rechercher decks..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="flex-1 min-w-[180px] px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-medium text-white placeholder-gray-500 focus:border-rift-blue focus:outline-none"
-              />
-              <select
-                value={filterTier}
-                onChange={(e) => setFilterTier(e.target.value)}
-                className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white focus:outline-none uppercase tracking-wider appearance-none cursor-pointer min-w-[90px]"
-              >
-                <option value="all" className="bg-rift-dark text-white">Tier</option>
-                <option value="S" className="bg-rift-dark text-white">S</option>
-                <option value="A" className="bg-rift-dark text-white">A</option>
-                <option value="B" className="bg-rift-dark text-white">B</option>
-                <option value="C" className="bg-rift-dark text-white">C</option>
-              </select>
-              <input
-                type="number"
-                placeholder="Coût"
-                value={filterCost}
-                onChange={(e) => setFilterCost(e.target.value)}
-                min="0"
-                max="10"
-                className="w-20 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
-              />
-              <input
-                type="number"
-                placeholder="Recycle"
-                value={filterRecycle}
-                onChange={(e) => setFilterRecycle(e.target.value)}
-                min="0"
-                max="10"
-                className="w-20 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
-              />
-              <input
-                type="number"
-                placeholder="Puissance"
-                value={filterPower}
-                onChange={(e) => setFilterPower(e.target.value)}
-                min="0"
-                max="20"
-                className="w-24 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
-              />
-              {(filterCost || filterRecycle || filterPower) && (
-                <button
-                  onClick={() => { setFilterCost(''); setFilterRecycle(''); setFilterPower(''); }}
-                  className="px-4 py-3 text-sm font-bold text-red-400 hover:text-red-300"
-                >
-                  ✕
-                </button>
-              )}
-            </div>
+          {/* Search only */}
+          {(tab === 'meta' || tab === 'all' || tab === 'offmeta' || tab === 'community') && (
+            <input
+              type="text"
+              placeholder="Rechercher..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="flex-1 md:w-[100px] px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl text-xs font-medium text-white placeholder-gray-500 focus:border-rift-blue focus:outline-none"
+            />
           )}
 
-          {/* Search/filter for all and offmeta */}
-          {(tab === 'all' || tab === 'offmeta') && (
-            <div className="flex flex-wrap items-center gap-3 w-full">
-              <input
-                type="text"
-                placeholder="Rechercher decks..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="flex-1 min-w-[180px] px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-medium text-white placeholder-gray-500 focus:border-rift-blue focus:outline-none"
-              />
-              <select
-                value={filterTier}
-                onChange={(e) => setFilterTier(e.target.value)}
-                className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white focus:outline-none uppercase tracking-wider appearance-none cursor-pointer min-w-[90px]"
-              >
-                <option value="all" className="bg-rift-dark text-white">Tier</option>
-                <option value="S" className="bg-rift-dark text-white">S</option>
-                <option value="A" className="bg-rift-dark text-white">A</option>
-                <option value="B" className="bg-rift-dark text-white">B</option>
-                <option value="C" className="bg-rift-dark text-white">C</option>
-              </select>
-              <input
-                type="number"
-                placeholder="Coût"
-                value={filterCost}
-                onChange={(e) => setFilterCost(e.target.value)}
-                min="0"
-                max="10"
-                className="w-20 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
-              />
-              <input
-                type="number"
-                placeholder="Recycle"
-                value={filterRecycle}
-                onChange={(e) => setFilterRecycle(e.target.value)}
-                min="0"
-                max="10"
-                className="w-20 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
-              />
-              <input
-                type="number"
-                placeholder="Puissance"
-                value={filterPower}
-                onChange={(e) => setFilterPower(e.target.value)}
-                min="0"
-                max="20"
-                className="w-24 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-sm font-bold text-white text-center placeholder-gray-500 focus:border-rift-blue focus:outline-none"
-              />
-              {(filterCost || filterRecycle || filterPower) && (
-                <button
-                  onClick={() => { setFilterCost(''); setFilterRecycle(''); setFilterPower(''); }}
-                  className="px-4 py-3 text-sm font-bold text-red-400 hover:text-red-300"
-                >
-                  ✕
-                </button>
-              )}
-            </div>
-          )}
         </div>
 
         {/* ── CONTENT ── */}
@@ -662,20 +517,40 @@ export default function DeckLibraryPage() {
 
           {/* MÉTA */}
           {tab === 'meta' && (
-            <div className="space-y-4">
+            <div className="space-y-8">
               {filteredMeta.length === 0 && (
                 <div className="text-center py-24 bg-[var(--border-subtle)] rounded-[var(--radius-xl)] border border-[var(--border-subtle)]">
                   <p className="text-[var(--text-tertiary)] text-lg font-medium">Aucun deck ne correspond.</p>
                 </div>
               )}
-              {filteredMeta.map(deck => (
-                <DeckCard
-                  key={deck.id}
-                  deck={deck}
-                  expanded={expandedDeck === deck.id}
-                  onToggle={() => setExpandedDeck(expandedDeck === deck.id ? null : deck.id)}
-                />
-              ))}
+              {gridExpanded ? (
+                <div className="space-y-4">
+                  <button
+                    onClick={() => setGridExpanded(null)}
+                    className="flex items-center gap-2 text-xs font-black text-[var(--text-tertiary)] uppercase tracking-widest hover:text-[var(--text-primary)] transition-colors"
+                  >
+                    ← RETOUR À LA GRILLE
+                  </button>
+                  {filteredMeta.filter(d => d.id === gridExpanded).map(deck => (
+                    <DeckCard
+                      key={deck.id}
+                      deck={deck}
+                      expanded={true}
+                      onToggle={() => setGridExpanded(null)}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                  {filteredMeta.map((deck, i) => (
+                    <DeckGridCard
+                      key={`meta-${i}`}
+                      deck={deck}
+                      onExpand={() => setGridExpanded(deck.id)}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
           )}
 
@@ -761,46 +636,16 @@ export default function DeckLibraryPage() {
             </div>
           )}
 
-          {/* TOURNOIS */}
-          {tab === 'tournaments' && (
-            <div className="space-y-4">
-              {MAJOR_TOURNAMENTS.map(t => (
-                <div key={t.id} className="bg-[var(--surface-3)] rounded-[var(--radius-xl)] border border-[var(--border-subtle)] p-7 hover:border-[var(--border-default)] transition-all">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                    <div className="flex items-center gap-5">
-                      <div className="text-3xl">🏆</div>
-                      <div>
-                        <h3 className="text-xl font-black text-[var(--text-primary)] uppercase tracking-tight mb-1">{t.name}</h3>
-                        <p className="text-xs font-bold text-[var(--text-disabled)] uppercase tracking-widest">
-                          {t.location} · {t.date} · {t.players.toLocaleString()} joueurs
-                          {t.prizePool && ` · ${t.prizePool}`}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-8">
-                      <div>
-                        <div className="text-[8px] font-black text-[var(--text-disabled)] uppercase tracking-widest mb-1">Vainqueur</div>
-                        <div className={`text-lg font-black uppercase ${domainTextColor(t.winnerDomain)}`}>{t.winner}</div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Top 8 */}
-                  {t.top8 && t.top8.length > 0 && (
-                    <div className="mt-6 pt-5 border-t border-[var(--border-subtle)]">
-                      <h4 className="text-[8px] font-black text-[var(--text-disabled)] uppercase tracking-widest mb-3">Top 8</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {t.top8.map((entry, i) => (
-                          <div key={i} className="flex items-center gap-2 px-3 py-1.5 bg-[var(--border-subtle)] rounded-xl border border-[var(--border-subtle)] text-xs">
-                            <span className="text-rift-gold font-black text-[10px]">{entry.placement}</span>
-                            <span className="text-[var(--text-secondary)] font-bold">{entry.legend}</span>
-                            {entry.player && <span className="text-[var(--text-disabled)] text-[10px]">({entry.player})</span>}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
+          {/* COMMUNAUTÉ */}
+          {tab === 'community' && (
+            <div className="space-y-8">
+              <div className="text-center py-6">
+                <h2 className="text-2xl font-black text-[var(--text-primary)] uppercase tracking-tighter mb-2">Decks de la Communauté</h2>
+                <p className="text-[var(--text-tertiary)] font-medium text-sm">Partagez vos decks avec la communauté Riftbound.</p>
+              </div>
+              <div className="text-center py-24 bg-[var(--border-subtle)] rounded-[var(--radius-xl)] border border-[var(--border-subtle)]">
+                <p className="text-[var(--text-tertiary)] text-lg font-medium">Fonctionnalité à venir...</p>
+              </div>
             </div>
           )}
 

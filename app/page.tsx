@@ -1,105 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { DeckOfTheDay } from "./components/DeckOfTheDay";
 import { CardRail } from "./components/ui/CardRail";
+import { Button } from "./components/ui/Button";
+import { CHAMPION_CARDS, CARD_RAIL_IMAGES } from "./lib/ui-constants";
+import { generatePageSEO } from "./lib/seo-config";
 
-// Cartes visuellement marquantes pour les backgrounds et marquises
-const BEAUTIFUL_CARDS = [
-  {
-    id: "OGN-66",
-    name: "Ahri, Alluring",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fabbcc2f83f397cf07299236a702db05a151053b-744x1039.png",
-  },
-  {
-    id: "OGN-41",
-    name: "Volibear, Furious",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c9165d49b8caae9a856433cd5151e8b368eb80b5-744x1039.png",
-  },
-  {
-    id: "OGN-39",
-    name: "Kai'Sa, Survivor",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ad69bde670ce218adee1d2a618a7295d2fb7bd4c-744x1039.png",
-  },
-  {
-    id: "OGN-30",
-    name: "Jinx, Demolitionist",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d6cac988aa7798945e550eba6841d3993868c4a4-744x1039.png",
-  },
-  {
-    id: "OGN-27",
-    name: "Darius, Trifarian",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bf7a4900fd2296972c1305a4707c23860bb0522e-744x1039.png",
-  },
-  {
-    id: "OGN-73",
-    name: "Sona, Harmonious",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8582f6430821fb912fcb3619c5ce9405f254cb2f-744x1039.png",
-  },
-  {
-    id: "OGN-1",
-    name: "Blazing Scorcher",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/15ed971e4029a92b362a81ccadf309fb81e40b81-744x1039.png",
-  },
-  {
-    id: "OGN-13",
-    name: "Pouty Poro",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d541bf3bcb5aa3ad0d48d87f5753569b72ac426f-744x1039.png",
-  },
-  {
-    id: "IRE-1",
-    name: "Irelia",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/656ef2d1724b818e9e737ec5dcce923de067a316-744x1039.png",
-  },
-  {
-    id: "SIV-1",
-    name: "Sivir",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fd060882c32a8deac04aea4241c6ab7b97236a05-744x1039.png",
-  },
-  {
-    id: "SFD-1",
-    name: "Spiritforged 1",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bc254398dfb5db217327b56862011a2fd6020789-744x1039.png",
-  },
-  {
-    id: "SFD-2",
-    name: "Spiritforged 2",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/26ab126258a15afd380c313e973f7469808ce55f-744x1039.png",
-  },
+export const metadata: Metadata = generatePageSEO({
+  title: "Riftbound Guide",
+  description: "La référence Riftbound en France. Deck builder, base de données cartes, tier list, guides de légendes et analyses méta.",
+  path: "/",
+});
 
-  // Duplicats assumés pour densifier le défilement avec les plus belles cartes
-  {
-    id: "AHRI-ALT",
-    name: "Ahri, Alluring",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fabbcc2f83f397cf07299236a702db05a151053b-744x1039.png",
-  },
-  {
-    id: "KAISA-ALT",
-    name: "Kai'Sa, Survivor",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ad69bde670ce218adee1d2a618a7295d2fb7bd4c-744x1039.png",
-  },
-  {
-    id: "DARIUS-ALT",
-    name: "Darius, Trifarian",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bf7a4900fd2296972c1305a4707c23860bb0522e-744x1039.png",
-  },
-  {
-    id: "IRELIA-ALT",
-    name: "Blade Dancer",
-    url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/656ef2d1724b818e9e737ec5dcce923de067a316-744x1039.png",
-  },
-  // Ajouts (alternatives & showcases)
-  { id: "SFD-20", name: "Draven, Vanquisher", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8fa3f1fe63392c4744152d98ff781497a4d17b74-744x1039.png" },
-  { id: "SFD-20a", name: "Draven, Vanquisher (Showcase)", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9019c449004f246de6607bf1829f4f3cabcda200-744x1039.png" },
-  { id: "OGN-299", name: "Daughter of the Void (Showcase)", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ae8e68af43400f61f7391c0a6ee339fd718a7540-1488x2078.png" },
-  { id: "OGN-300", name: "Relentless Storm (Showcase)", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/34aa11c88735be28266dbc61486a557454fd6b4c-1488x2078.png" },
-  { id: "OGN-301", name: "Loose Cannon (Showcase)", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/30bed82f66ce9e4eae260d029d92c9d8cb1588ab-1488x2078.png" },
-  { id: "OGN-306", name: "Radiant Dawn (Showcase)", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/496d173b74d036a9e28ca1b4383551be0148f13d-1488x2078.png" },
-  { id: "OGN-76", name: "Yasuo, Remorseful", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3f2cff3ff3b146c8bfe11594e37e9d8109884273-744x1039.png" },
-  { id: "OGN-117", name: "Viktor, Innovator", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/12dfa6b38edc9b23f216c0a1828474f7506d49c0-744x1039.png" },
-  { id: "OGN-121", name: "Teemo, Strategist", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0709ab02b75d9acc8f3c4037ec3a4140323150d8-744x1039.png" },
-  { id: "OGN-110", name: "Ekko, Recurrent", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/65da19325b6def53d33c07bc1aa8f91fd2f1e723-744x1039.png" },
-  { id: "OGN-111", name: "Heimerdinger, Inventor", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5b14a5f9d567c90329c151a8cc72d870b47b1434-744x1039.png" },
-  { id: "OGN-74", name: "Taric, Protector", url: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7d08e3f64401cb87b8a0564a1cbe6fc94aee03a7-744x1039.png" },
-];
+const BEAUTIFUL_CARDS = CARD_RAIL_IMAGES;
 
 const META_CHAMPS = [
   {
@@ -150,9 +64,9 @@ const FEATURES = [
 ];
 
 export default function Home() {
-  const topCards = BEAUTIFUL_CARDS.slice(0, 10);
-  const middleCards = BEAUTIFUL_CARDS.slice(4);
-  const bottomCards = BEAUTIFUL_CARDS.slice().reverse();
+  const topCards = CHAMPION_CARDS.slice(0, 8);
+  const middleCards = CHAMPION_CARDS.slice(4, 12);
+  const bottomCards = CHAMPION_CARDS.slice(8, 16);
 
   return (
     <div className="min-h-screen bg-background text-white selection:bg-rift-gold selection:text-black font-sans">
@@ -165,11 +79,13 @@ export default function Home() {
           <div className="flex flex-col gap-8 md:gap-10 opacity-70 scale-110">
             <CardRail
               cards={topCards}
+              speed="champions"
               cardClassName="w-52 md:w-[300px] lg:w-[420px] rounded-[38px] shadow-[var(--shadow-2xl)]"
               imageClassName="brightness-110 contrast-110"
             />
             <CardRail
               cards={middleCards}
+              speed="champions"
               reverse
               cardClassName="w-44 md:w-[240px] lg:w-[340px] rounded-[30px] shadow-[var(--shadow-xl)]"
               imageClassName="brightness-105 contrast-105"
@@ -177,6 +93,7 @@ export default function Home() {
             />
             <CardRail
               cards={bottomCards}
+              speed="champions"
               cardClassName="w-52 md:w-[300px] lg:w-[420px] rounded-[38px] shadow-[var(--shadow-2xl)]"
               imageClassName="brightness-110 contrast-110"
             />
@@ -188,21 +105,23 @@ export default function Home() {
           <div className="hidden md:block absolute right-6 top-24 z-10">
             <div className="relative w-[220px] h-[360px]">
               <Link href="/legends/SFD-185?utm_source=home&utm_medium=hero-float&utm_campaign=push-guides" title="Guide Draven">
-                <img
+                <Image
                   src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8fa3f1fe63392c4744152d98ff781497a4d17b74-744x1039.png"
                   alt="Draven, Vanquisher"
-                  className="absolute -rotate-6 right-0 top-0 w-[200px] rounded-[28px] shadow-[var(--shadow-2xl)] border border-[var(--border-default)] hover:rotate-0 transition-transform duration-700"
+                  width={200}
+                  height={280}
+                  className="absolute -rotate-6 right-0 top-0 rounded-[28px] shadow-[var(--shadow-2xl)] border border-[var(--border-default)] hover:rotate-0 transition-transform duration-700"
                   loading="lazy"
-                  decoding="async"
                 />
               </Link>
               <Link href="/legends/SFD-195?utm_source=home&utm_medium=hero-float&utm_campaign=push-guides" title="Guide Irelia">
-                <img
+                <Image
                   src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/656ef2d1724b818e9e737ec5dcce923de067a316-744x1039.png"
                   alt="Blade Dancer"
-                  className="absolute rotate-6 right-20 top-20 w-[180px] rounded-[24px] shadow-[var(--shadow-2xl)] border border-[var(--border-default)] hover:rotate-0 transition-transform duration-700"
+                  width={180}
+                  height={252}
+                  className="absolute rotate-6 right-20 top-20 rounded-[24px] shadow-[var(--shadow-2xl)] border border-[var(--border-default)] hover:rotate-0 transition-transform duration-700"
                   loading="lazy"
-                  decoding="async"
                 />
               </Link>
             </div>
@@ -228,19 +147,21 @@ export default function Home() {
           </p>
 
           <div className="flex flex-wrap gap-5 md:gap-8 justify-center animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
-            <Link
+            <Button
               href="/deckbuilder?utm_source=home&utm_medium=hero-cta&utm_campaign=builder"
-              className="group px-8 md:px-14 py-5 md:py-8 bg-[var(--border-subtle)] border-2 border-[var(--border-default)] text-white font-black rounded-[28px] md:rounded-[32px] backdrop-blur-3xl hover:bg-[var(--border-default)] hover:border-rift-gold/50 transition-all hover:scale-105 active:scale-95 shadow-[var(--shadow-2xl)] uppercase text-sm md:text-lg tracking-[0.1em]"
+              variant="outline"
+              size="xl"
             >
-              <span className="group-hover:text-rift-gold transition-colors">Deck Builder</span>
-            </Link>
+              Deck Builder
+            </Button>
 
-            <Link
+            <Button
               href="/legends?utm_source=home&utm_medium=hero-cta&utm_campaign=guides"
-              className="group px-8 md:px-14 py-5 md:py-8 bg-gradient-to-br from-rift-purple/20 to-rift-blue/20 border-2 border-[var(--border-subtle)] text-white font-black rounded-[28px] md:rounded-[32px] backdrop-blur-3xl hover:border-[var(--border-default)] transition-all hover:scale-105 active:scale-95 shadow-[var(--shadow-2xl)] uppercase text-sm md:text-lg tracking-[0.1em]"
+              variant="gradient"
+              size="xl"
             >
-              <span className="flex items-center gap-4">Guides 📖</span>
-            </Link>
+              Guides
+            </Button>
           </div>
         </div>
       </section>
@@ -288,12 +209,13 @@ export default function Home() {
               </p>
             </div>
 
-            <Link
+            <Button
               href="/decks"
-              className="px-8 md:px-12 py-4 md:py-6 rounded-[20px] md:rounded-[24px] bg-rift-red text-white font-black text-xs md:text-sm uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-[0_25px_50px_rgba(244,63,94,0.4)]"
+              variant="danger"
+              size="lg"
             >
               Voir la bibliothèque
-            </Link>
+            </Button>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -304,12 +226,12 @@ export default function Home() {
                 className="group relative rounded-[36px] md:rounded-[64px] overflow-hidden bg-black aspect-[3/4.5] border border-[var(--border-subtle)] shadow-[var(--shadow-2xl)]"
                 title={`${champ.name} — ${champ.tier}`}
               >
-                <img
+                <Image
                   src={champ.img}
                   alt={champ.name}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
 
@@ -339,7 +261,8 @@ export default function Home() {
       {/* ── CARD WALL SCROLL ── */}
       <div className="py-20 md:py-32 overflow-hidden bg-background">
         <CardRail
-          cards={BEAUTIFUL_CARDS}
+          cards={CHAMPION_CARDS}
+          speed="champions"
           cardClassName="w-56 md:w-80 rounded-3xl border-[var(--border-subtle)]"
           className="opacity-40"
         />
@@ -369,31 +292,34 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap gap-6 md:gap-10">
-              <Link
+              <Button
                 href="/cards?set=SFD"
-                className="px-8 md:px-14 py-5 md:py-7 bg-rift-purple text-white font-black rounded-[24px] md:rounded-[32px] shadow-[0_30px_60px_rgba(168,85,247,0.4)] hover:scale-105 transition-all uppercase text-xs md:text-sm tracking-widest"
+                variant="purple"
+                size="lg"
               >
-                Explorer l&apos;Extension
-              </Link>
+                Explorer l'Extension
+              </Button>
             </div>
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center md:scale-125">
             <div className="relative group">
               <div className="absolute inset-0 bg-rift-purple/30 blur-[120px] rounded-full scale-150" />
-              <img
+              <Image
                 src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bc254398dfb5db217327b56862011a2fd6020789-744x1039.png"
-                className="relative z-10 w-[280px] md:w-[450px] rounded-[34px] md:rounded-[56px] shadow-[var(--shadow-2xl)] border border-[var(--border-default)] transform -rotate-6 group-hover:rotate-0 transition-transform duration-1000"
                 alt="Spiritforged Card"
-                loading="lazy"
-                decoding="async"
+                width={450}
+                height={630}
+                className="relative z-10 rounded-[34px] md:rounded-[56px] shadow-[var(--shadow-2xl)] border border-[var(--border-default)] transform -rotate-6 group-hover:rotate-0 transition-transform duration-1000"
+                priority={false}
               />
-              <img
+              <Image
                 src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/26ab126258a15afd380c313e973f7469808ce55f-744x1039.png"
-                className="absolute -bottom-10 md:-bottom-24 -right-8 md:-right-24 z-20 w-[220px] md:w-[350px] rounded-[28px] md:rounded-[48px] shadow-[var(--shadow-2xl)] border border-[var(--border-default)] transform rotate-12 group-hover:rotate-0 transition-transform duration-1000 delay-150"
                 alt="Spiritforged Card 2"
-                loading="lazy"
-                decoding="async"
+                width={350}
+                height={490}
+                className="absolute -bottom-10 md:-bottom-24 -right-8 md:-right-24 z-20 rounded-[28px] md:rounded-[48px] shadow-[var(--shadow-2xl)] border border-[var(--border-default)] transform rotate-12 group-hover:rotate-0 transition-transform duration-1000 delay-150"
+                priority={false}
               />
             </div>
           </div>
@@ -471,6 +397,7 @@ export default function Home() {
 
             <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-24">
               <div>
+                <nav aria-label="Navigation">
                 <h4 className="text-xs font-black text-white uppercase tracking-[0.4em] md:tracking-[0.6em] mb-8 md:mb-12 opacity-40">
                   Navigation
                 </h4>
@@ -480,6 +407,7 @@ export default function Home() {
                   <li><Link href="/legends" className="hover:text-rift-gold transition-all hover:translate-x-3 inline-block">Légendes</Link></li>
                   <li><Link href="/decks" className="hover:text-rift-gold transition-all hover:translate-x-3 inline-block">Bibliothèque</Link></li>
                 </ul>
+                </nav>
               </div>
 
               <div>

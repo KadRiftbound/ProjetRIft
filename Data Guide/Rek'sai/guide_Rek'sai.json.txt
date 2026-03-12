@@ -1,0 +1,1199 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Rek'Sai complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte decembre 2025 a mars 2026 pour suivre l'evolution des shells Rek'Sai",
+    "methodology": {
+      "approach": [
+        "Croisement du guide Rek'Sai recent et des tier lists post-Bologna et post-Vegas",
+        "Croisement des best-of decklists officiels de Bologna et Vegas",
+        "Croisement des discussions communautaires sur Phoenix Rek'Sai, Baited Hook et les versions aggro-midrange plus simples a piloter",
+        "Croisement des fils de discussion ciblant les matchups Rek'Sai contre Irelia, Draven, Kai'Sa et Viktor",
+        "Accent mis sur le pilotage expert, la logique de deckbuilding et la distinction entre shells vraiment jouables"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + decklist officielle et/ou retours matchup explicites",
+        "medium": "Consensus raisonnable mais sensible au shell, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "reksai_meta_position": {
+      "riftdecks_spiritforged": {
+        "meta_share_percent": 2,
+        "tier": "Tier 3",
+        "decks_indexed": 547
+      },
+      "riftbound_gg_post_bologna": {
+        "tier": "Tier 3",
+        "metrics": "51 picks, 6% Day 2 conversion, 48.9% win rate, Top 128",
+        "notes": "Resultats modestes mais deck toujours en discussion"
+      },
+      "riftbound_gg_post_vegas": {
+        "tier": "Tier 3",
+        "metrics": "96 picks, 15.8% Day 2 conversion, 50.1% win rate, Top 128 et Top 64",
+        "notes": "Les metrics montent nettement a Vegas, signe que le deck est probablement meilleur que sa reputation de debut de set"
+      },
+      "major_recent_results": [
+        "Bologna: best-of Rek'Sai #98 overall, shell Fury/Order Phoenix-control",
+        "Vegas: best-of Rek'Sai #49 overall, shell Order-only swarm/tempo",
+        "Plusieurs retours communautaires mars 2026 soutiennent aussi un shell Baited Hook plus agressif et plus constant dans certains fields"
+      ],
+      "overall_read": "Rek'Sai n'est pas une legende dominante de volume, mais ce n'est pas non plus une simple curiosite. La legende a plusieurs shells reels, de meilleures metrics qu'au lancement de Spiritforged, et un plafond important entre de bonnes mains."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et la logique des versions jouables plutot qu'un simple jugement meta."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Rek'Sai, Void Burrower",
+    "domains": [
+      "Fury",
+      "Order"
+    ],
+    "macro_identity": {
+      "archetype_family": "Conquer from deck / Fury-Order pressure / tempo-control or swarm depending shell",
+      "primary_gameplan": "Conquerir de maniere repetee pour activer la legende, reveler les deux cartes du dessus du deck, puis convertir cet avantage de selection et de tempo en presence de board, removal ou acceleration du close.",
+      "secondary_gameplan": "Selon le shell: soit jouer une version control/tempo basee sur removals et pieces resilientes comme Immortal Phoenix, soit jouer une version swarm/tempo pure centree sur Void Rush et les petites unites Order, soit jouer une version Hook/midrange cherchant a maximiser la consistence des reveals et a ouvrir les battlefields sans trop s'exposer.",
+      "why_the_legend_is_strong": [
+        "La legende donne un flux de selection et de tempo unique si tu conqueris regulierement",
+        "Void Rush est une des meilleures signatures du set pour convertir le top deck en vraie action",
+        "Rek'Sai peut jouer plusieurs cartes par tour de facon tres explosive quand ses reveals alignent bien les couts",
+        "Elle peut attaquer la meta sur plusieurs axes differents: heavy removal, low-to-the-ground swarm, ou Hook consistency"
+      ],
+      "why_the_legend_is_hard": [
+        "Tu dois gagner les conquetes pour que la legende fasse quelque chose",
+        "La legende ne joue pas les cartes gratuitement: il faut encore avoir l'Energy et le Power, donc la gestion des runes est tres exigeante",
+        "Les mauvais reveals sont punissants si ton deck est mal curve ou mal construit",
+        "Le deck perd beaucoup de valeur si tes unites ne survivent pas assez longtemps pour reconquerir"
+      ]
+    },
+    "rules_and_core_interactions": {
+      "legend_text_summary": "Quand tu conqueris, tu peux epuiser Rek'Sai pour reveler les 2 cartes du dessus de ton deck principal. Tu peux en jouer une, puis recycler le reste.",
+      "void_rush_summary": "Reveal the top 2 cards of your Main Deck. You may play one of them, reducing its cost by 2 Energy. Draw any you did not play this way.",
+      "reksai_breacher_summary": "Champion Fury a 3 energie avec Accelerate et Assault; les unites amicales jouees depuis un endroit autre que la main ont Accelerate.",
+      "reksai_swarm_queen_summary": "Champion Order dont l'attaque revele les 2 cartes du dessus et permet d'en jouer une; si la carte jouee est une unite, elle peut etre jouee sur le battlefield attaque.",
+      "important_rules_notes": [
+        "La legende et Void Rush ne suppriment pas les couts de Power sauf si une autre carte le fait; il faut donc penser la curve de couts et les reveals.",
+        "Breacher rend les unites jouees depuis le deck ou ailleurs plus menaçantes en leur donnant Accelerate, ce qui change fortement le timing des tours explosifs."
+      ]
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Fury/Order Phoenix-Control Rek'Sai",
+        "status_march_2026": "Shell expert de reference",
+        "evidence": [
+          "Best-of officiel a Bologna",
+          "Guide Rek'Sai de reference",
+          "Nombreux retours communautaires parlant encore du 'Phoenix build' comme version standard a battre ou a quitter"
+        ],
+        "identity": "Version plus controle/tempo, orientee removals, pieces resilientes et turns de value a partir du dessus du deck. C'est probablement le shell le plus 'expert' de Rek'Sai, celui qui demande le plus de lecture de choke points et de gestion de runes.",
+        "reference_core": [
+          "Rek'Sai, Breacher",
+          "Void Rush",
+          "Immortal Phoenix",
+          "Cull the Weak",
+          "Falling Star",
+          "Piercing Light",
+          "Hidden Blade",
+          "Seal of Rage",
+          "Undertitan",
+          "Honest Broker",
+          "Noxus Hopeful",
+          "Daring Poro",
+          "Faithful Manufactor",
+          "Sun Disc"
+        ],
+        "reference_battlefields": [
+          "The Arena's Greatest",
+          "Veiled Temple",
+          "Zaun Warrens"
+        ],
+        "chosen_champion": "Rek'Sai, Breacher",
+        "default_for_matchups_below": true
+      },
+      {
+        "name": "Order Swarm / Tempo Rek'Sai",
+        "status_march_2026": "Shell officiel valide et distinct",
+        "evidence": [
+          "Best-of officiel a Vegas",
+          "Excellent day-2 conversion Rek'Sai a Vegas",
+          "Shell tres different du Bologna Phoenix build"
+        ],
+        "identity": "Version beaucoup plus lineaire et proactive, tout en Order. Elle joue plus d'unites, moins de removals, et cherche a enchainer Void Rush plus legende plus Accelerate pour developper la table sans s'essouffler. Plus simple a prendre en main, mais moins modulable que Phoenix-control.",
+        "reference_core": [
+          "Rek'Sai, Swarm Queen",
+          "Void Rush",
+          "Battering Ram",
+          "Faithful Manufactor",
+          "Trifarian Gloryseeker",
+          "Vanguard Captain",
+          "Void Drone",
+          "Daring Poro",
+          "Noxus Hopeful",
+          "Hidden Blade",
+          "Seal of Unity",
+          "Rally the Troops",
+          "Undertitan",
+          "Xin Zhao, Vigilant"
+        ],
+        "reference_battlefields": [
+          "Power Nexus",
+          "The Arena's Greatest",
+          "Trifarian War Camp"
+        ],
+        "chosen_champion": "Rek'Sai, Swarm Queen"
+      },
+      {
+        "name": "Baited Hook / Aggro-Midrange Rek'Sai",
+        "status_march_2026": "Shell communautaire reel et defendu",
+        "evidence": [
+          "Thread recent 'Baited Hook Rek'Sai'",
+          "Plusieurs joueurs affirment que Hook est mieux dans Rek'Sai que dans d'autres legends grace a la consistance de la legende et de Void Rush",
+          "Retours communautaires mars 2026 sur des versions plus forgiveuses, plus proches de Darius aggro/midrange"
+        ],
+        "identity": "Version qui cherche moins a controler a la carte que Phoenix, et moins a swarmer pur que la version Order-only. Elle abuse de la capacite de Rek'Sai a creuser rapidement le deck pour trouver Hook, des seals, Undertitan ou les bonnes pieces de tempo, tout en gardant un plan de victoire concret et repete.",
+        "reference_core": [
+          "Baited Hook",
+          "Void Rush",
+          "Undertitan",
+          "Trusty Ramhound",
+          "Honest Broker",
+          "Faithful Manufactor",
+          "Noxus Hopeful",
+          "Seal of Unity or Seal of Rage",
+          "Vanguard Captain",
+          "Xin Zhao, Vigilant",
+          "Vi, Destructive in some lists"
+        ],
+        "reference_battlefields": [
+          "The Arena's Greatest",
+          "The Candlelit Sanctum",
+          "Rockfall Path or Zaun Warrens depending build"
+        ],
+        "chosen_champion": "Rek'Sai, Breacher",
+        "important_note": "C'est probablement le shell le plus 'meta call' de Rek'Sai: pas toujours le plus puissant sur le papier, mais parfois le plus adapte au field local, notamment contre des Draven mal prepares."
+      }
+    ],
+    "advanced_pilot_principles": [
+      {
+        "name": "Rek'Sai is a conquer deck before it is a reveal deck",
+        "detail": "La legende ne sert a rien si tu ne conqueris pas. Beaucoup de mauvais decks Rek'Sai sont construits comme des decks 'play from top' sans assez de moyens de prendre le battlefield."
+      },
+      {
+        "name": "Never feel obligated to play every revealed card",
+        "detail": "Un des meilleurs conseils communautaires recents est explicite: surtout sur les listes tempo, curver proprement est souvent meilleur que forcer une carte moyenne juste parce que la legende l'a montree."
+      },
+      {
+        "name": "Your shell determines whether Rek'Sai is a control deck or a tempo deck",
+        "detail": "Phoenix-control doit identifier les choke points adverses. Order swarm doit jouer la table et le scoreboard. Hook/aggro-midrange doit chercher la repetabilite de ses swings. Les trois versions ne se pilotent pas de la meme facon."
+      },
+      {
+        "name": "Living through the first conquer is often worth more than maximizing the first conquer",
+        "detail": "Le guide Rek'Sai insiste sur un point structurel: la legende a besoin que les unites restent en vie pour recommencer le cycle. Une conquete trop aggressive qui meurt immediatement peut perdre la partie."
+      },
+      {
+        "name": "Rune economy is the hidden skill test",
+        "detail": "Rek'Sai peut paraitre explosive, mais elle est aussi tres facile a vider en runes trop vite. Le vrai niveau du deck se voit dans les tours ou tu conquers encore tout en gardant assez de ressources pour jouer ce que tu reveles."
+      },
+      {
+        "name": "Choose your reveal profile on purpose",
+        "detail": "Si ton deck ne peut pas bien utiliser des 2-drops tard ou des removals tot, ce n'est pas un probleme de chance, c'est souvent un probleme de construction. Les meilleurs builds Rek'Sai choisissent sciemment ce qu'ils veulent voir dans les premiers reveals."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "reksai_void_burrower_role": "La legende elle-meme est le vrai moteur du deck. Elle donne un avantage de selection et parfois de tempo, mais seulement si le deck gagne ses conquetes.",
+      "void_rush_role": "Le vrai joyau signature. Plusieurs sources disent explicitement que c'est la carte qui porte la legende en Spiritforged, bien plus que ses champions dans beaucoup de listes.",
+      "reksai_breacher_role": "Champion cle des shells Fury/Order et Hook. Son Accelerate pour les unites jouees hors main change la nature des tours de reveal et des tours Void Rush.",
+      "reksai_swarm_queen_role": "Champion du shell Vegas Order-only. Son attaque augmente encore la densite de cartes jouees depuis le dessus du deck et donne une vraie inertie de battlefield.",
+      "immortal_phoenix_role": "Piliere des builds Phoenix-control. Fournit resilience et qualité de grind dans un shell qui veut survivre a plusieurs cycles.",
+      "cull_the_weak_role": "Une des meilleures cartes de field pour Rek'Sai. Elle revient constamment dans les discussions comme cle contre Irelia, Draven, Ornn et les boards compacts.",
+      "falling_star_role": "Removal premium du shell Phoenix-control, qui compense une partie de la faiblesse structurelle de Rek'Sai face aux grosses menaces.",
+      "undertitan_role": "Piece de close ou de value lourde tres recurrente, presente dans les shells Bologna, Vegas et Hook. Les joueurs aiment aussi le reveler pour les gains d'energy ou pour les swings de fin.",
+      "seal_of_rage_role": "Marque des builds plus Fury/Order de tempo-control, aide a augmenter la qualite des combats et des conquetes.",
+      "seal_of_unity_role": "Marque du shell Order-only et de certaines variantes Hook plus orientees tempo de table.",
+      "baited_hook_role": "Carte communautaire phare du troisieme shell. Les joueurs qui la defendent disent qu'elle rend le deck plus consistant et qu'elle rend le matchup Draven reellement meilleur.",
+      "faithful_manufactor_role": "Un des meilleurs starters des shells tempo Rek'Sai, particulierement en going second selon certains retours communautaires.",
+      "noxus_hopeful_role": "Un des plus gros points de pression early dans plusieurs listes. Revient aussi dans les conseils de mulligan."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Building Rek'Sai like a casino pile",
+        "why_it_loses": "Quand tes reveals ne sont pas structurés, tu as l'impression de highroll ou lowroll. En pratique, les meilleurs decks Rek'Sai reduisent volontairement cet effet."
+      },
+      {
+        "mistake": "Playing every card you reveal",
+        "why_it_loses": "Tu vides tes runes, tu tords ta curve et tu perds le vrai tempo du tour suivant."
+      },
+      {
+        "mistake": "Forgetting that the deck still needs units to live",
+        "why_it_loses": "Le guide officiel le dit clairement: Rek'Sai manque d'outils de protection naturelle, donc les conquetes mal temporisees coutent tres cher."
+      },
+      {
+        "mistake": "Trying to play Phoenix-control like a forgiving midrange pile",
+        "why_it_loses": "Les joueurs communautaires recents rappellent que le shell removal/control est le moins forgiving. Il faut connaitre les choke points adverses."
+      },
+      {
+        "mistake": "Keeping hands that only work if Void Rush fixes everything",
+        "why_it_loses": "Void Rush est forte, mais ce n'est pas une permission de garder des mains incoherentes."
+      },
+      {
+        "mistake": "Not choosing between Phoenix, Swarm and Hook",
+        "why_it_loses": "Melanger les trois philosophies produit un deck ni assez stable, ni assez explosif, ni assez interactif."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Si ton shell est tempo-oriented, curver proprement vaut souvent plus qu'un reveal de pure value mal sequence.",
+      "Going second peut etre un vrai choix de construction ou de comfort sur certaines listes Rek'Sai, car conquer avec une unite deja presente augmente enormement la qualite du tour.",
+      "Dans les builds Phoenix-control, pense d'abord a quels removals tu veux voir au milieu de partie plutot qu'a la beaute de ton early curve sur le papier.",
+      "Dans les builds Hook, la question n'est pas seulement 'ai-je Hook ?', mais 'si je la trouve, mon battlefield reste-t-il ouvert et utile ?'.",
+      "Undertitan est souvent meilleur comme piece de bascule que comme simple top-end statline."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Fury/Order Phoenix-Control Rek'Sai",
+      "reksai_outlook": {
+        "label": "favorable",
+        "estimated_reksai_winrate_percent": "55-61",
+        "confidence": "medium"
+      },
+      "summary": "C'est le meilleur signal matchup explicite disponible pour Rek'Sai en mars 2026. Un fil communautaire d'aujourd'hui dit meme que Rek'Sai est 'for sure' le pire matchup d'Irelia, en soulignant que si une legende peut bien retirer Irelia, c'est Rek'Sai.",
+      "why_matchup_plays_this_way": [
+        "Rek'Sai dispose d'un des meilleurs ensembles de removals et de breakpoints de combat pour punir un porteur Irelia.",
+        "Cull the Weak, Falling Star, Piercing Light et les grosses pieces Fury/Order alignent bien contre les fronts compacts qu'Irelia aime tenir.",
+        "Irelia souffre quand le deck adverse peut a la fois tuer son porteur et continuer a prendre le battlefield."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield avec une unite premium protegee",
+        "forçer Rek'Sai a depenser trop de ressources pour chaque conquer"
+      ],
+      "reksai_plan": [
+        "viser le vrai porteur, pas chaque petite piece de support",
+        "garder Cull the Weak comme swing majeur quand le board Irelia se compacte",
+        "profiter du fait que la legende recompense des conquetes repetees une fois Irelia ralentie"
+      ],
+      "mulligan_focus": [
+        "Cull the Weak",
+        "Noxus Hopeful",
+        "Faithful Manufactor ou autre play de debut",
+        "main avec vraies lignes de removal"
+      ],
+      "sideboard_focus": [
+        "Salvage sur les versions plus grindy",
+        "removals supplementaires selon build",
+        "ne pas retirer trop de pression de board"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient encore meilleur si Rek'Sai tient un battlefield tout en gardant l'autre contestable.",
+        "Irelia a du mal quand elle ne peut pas garder un seul front sous protection permanente."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "gaspiller le removal sur les mauvaises cibles",
+        "laisser Irelia conserver gratuitement un front",
+        "mains lentes sans premier conquer credible"
+      ],
+      "important_patterns_to_respect": [
+        "GA and boots lines",
+        "Defiant Dance tempo",
+        "double-score pressure"
+      ],
+      "variation_notes": {
+        "order_swarm_tempo": "Toujours bon si la sortie est rapide, mais un peu moins 'propre' que Phoenix-control pour tuer les bonnes pieces.",
+        "baited_hook_aggro_midrange": "Souvent bon aussi, a condition de garder assez de removals et de ne pas devenir trop gimmick."
+      }
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Fury/Order Phoenix-Control Rek'Sai",
+      "reksai_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_reksai_winrate_percent": "45-49",
+        "confidence": "medium"
+      },
+      "summary": "Les signaux communautaires convergent vers l'idee que Draven fait partie des meilleurs decks contre Rek'Sai, surtout parce qu'il punit les fronts moyens et la dependance a quelques bonnes conquetes. En meme temps, plusieurs joueurs Rek'Sai disent encore battre Draven en local, et le shell Hook defend explicitement qu'il rend le matchup 'winnable'.",
+      "why_matchup_plays_this_way": [
+        "Draven met plus naturellement de pression de battlefield que Rek'Sai quand les premiers tours sont juste corrects.",
+        "Rek'Sai doit gagner en qualite de cibles et en timing ce qu'elle ne gagne pas en largeur brute."
+      ],
+      "opponent_plan": [
+        "prendre les premiers points",
+        "punir les boards compacts",
+        "convertir les petits corps en tempo et en draw"
+      ],
+      "reksai_plan": [
+        "ne pas se tap out pour des reveals moyens",
+        "faire en sorte que chaque conquer compte vraiment",
+        "Cull the Weak sur les turns ou Draven a trop concentre la value"
+      ],
+      "mulligan_focus": [
+        "starter fort",
+        "Cull the Weak",
+        "pas de main lourde",
+        "sur tempo lists, ligne T2/T3 agressive"
+      ],
+      "sideboard_focus": [
+        "Brynhir dans les listes qui le jouent",
+        "Piercing Light ou autres removals propres contre board large",
+        "sur Hook, garder Baited Hook et les cartes qui ferment le backline"
+      ],
+      "battlefield_notes": [
+        "Tu n'as pas besoin de tenir les deux fronts, mais tu ne peux pas en abandonner un trop longtemps sans plan de retour."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "mains lentes",
+        "front qui s'effondre avant le premier vrai reveal utile",
+        "Draven qui garde la main pleine pendant que Rek'Sai vide ses runes"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Brynhir turns",
+        "2 energie ouverte"
+      ],
+      "variation_notes": {
+        "order_swarm_tempo": "Peut mieux lutter sur le tempo early, mais souffre si Draven survit au premier push.",
+        "baited_hook_aggro_midrange": "C'est probablement la meilleure version Rek'Sai pour ce pairing selon les threads recents, justement parce que Hook deny les draws faciles sur low might et refill le backline."
+      }
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Fury/Order Phoenix-Control Rek'Sai",
+      "reksai_outlook": {
+        "label": "unfavorable",
+        "estimated_reksai_winrate_percent": "42-47",
+        "confidence": "low"
+      },
+      "summary": "Miracle Draven aggrave les memes problemes que Midrange Draven: plus de grind, plus de tours ou Rek'Sai se fait depasser si elle n'a pas deja converti son avance.",
+      "why_matchup_plays_this_way": [
+        "Le shell miracle laisse moins de marge a Rek'Sai pour gagner seulement sur des combats bien choisis.",
+        "Si Rek'Sai n'a pas deja pris 5 a 6 points ou un vrai avantage de table, le deck purple repasse souvent au-dessus."
+      ],
+      "opponent_plan": [
+        "cycler et passer au-dessus en resource loops",
+        "punir les boards moyens ou les conquetes telegraphees"
+      ],
+      "reksai_plan": [
+        "mettre une vraie clock",
+        "ne pas jouer le matchup comme une pure guerre d'attrition si ton shell n'est pas construit pour cela",
+        "forcer Draven a depenser avant son timing ideal"
+      ],
+      "mulligan_focus": [
+        "main proactive",
+        "pas de keep full late",
+        "pression plus removal"
+      ],
+      "sideboard_focus": [
+        "anti-miracle flex slots",
+        "Salvage si tu peux soutenir une partie plus longue",
+        "ne pas sur-sideboard en retirant trop de pression"
+      ],
+      "battlefield_notes": [
+        "Rek'Sai doit souvent gagner le matchup avant que Draven miracle ne s'installe completement."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "pas assez de scoreboard",
+        "mains lentes",
+        "faire confiance a un seul topdeck pour revenir"
+      ],
+      "important_patterns_to_respect": [
+        "stacking turns",
+        "cheap recursion",
+        "large tempo resets"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Fury/Order Phoenix-Control Rek'Sai",
+      "reksai_outlook": {
+        "label": "unfavorable",
+        "estimated_reksai_winrate_percent": "41-46",
+        "confidence": "high"
+      },
+      "summary": "C'est le plus clair des mauvais matchups Rek'Sai. Les discussions les plus recentes sur 'Irelia against Rek'Sai' disent explicitement que Kai'Sa est forte contre Rek'Sai pour une raison simple: elle tue les unites en base ou pendant le showdown, empechant Rek'Sai de tirer de la valeur de sa legende.",
+      "why_matchup_plays_this_way": [
+        "Rek'Sai a besoin que ses unites conquierent puis survivent.",
+        "Kai'Sa est l'un des meilleurs decks du format pour casser exactement ce plan a la carte."
+      ],
+      "opponent_plan": [
+        "retirer les bons porteurs ou holders",
+        "garder les battlefields contestables jusqu'au close"
+      ],
+      "reksai_plan": [
+        "ne pas all-in sur une seule unite ou un seul battlefield",
+        "chercher a prendre les points avant que Kai'Sa ne soit totalement en controle",
+        "dans Phoenix-control, conserver les removals pour les vrais seuils, pas pour tout nettoyer"
+      ],
+      "mulligan_focus": [
+        "mains proactives",
+        "plusieurs menaces imparfaites",
+        "pas de hand trop lourde"
+      ],
+      "sideboard_focus": [
+        "cartes resilientes",
+        "big finishers si le shell peut les supporter",
+        "retirer les pieces qui deviennent juste de mauvaises cibles de removal"
+      ],
+      "battlefield_notes": [
+        "Les holds a une seule unite sont tres mauvais ici si Kai'Sa a encore des runes et du removal."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "jouer trop tall trop tot",
+        "perdre la premiere grosse conquete pour rien",
+        "se faire priver de toute activation de legende significative"
+      ],
+      "important_patterns_to_respect": [
+        "Falling Star",
+        "Hextech Ray",
+        "Piercing Light",
+        "Time Warp"
+      ],
+      "variation_notes": {
+        "order_swarm_tempo": "Peut parfois mieux punir un mauvais keep Kai'Sa, mais reste structurellement sous pression.",
+        "baited_hook_aggro_midrange": "Peut rendre le pairing moins miserable si la sortie est explosive, mais ne change pas la nature du matchup."
+      }
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "default_shell": "Fury/Order Phoenix-Control Rek'Sai",
+      "reksai_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_reksai_winrate_percent": "45-49",
+        "confidence": "medium"
+      },
+      "summary": "Le signal public le plus direct met Viktor parmi les bons decks contre Rek'Sai, pour les memes raisons que Kai'Sa: beaucoup de removal et capacite a casser les unites qui doivent conquerir. Il existe toutefois un contre-signal important: certains Viktors non prepares perdent mal contre les decks low-to-the-ground comme Rek'Sai, et un joueur Viktor recent raconte s'etre fait dominer par une Rek'Sai montee a 40 might sur un front.",
+      "why_matchup_plays_this_way": [
+        "Viktor bien tune peut casser le plan conquer and survive de Rek'Sai.",
+        "Mais Rek'Sai peut punir une version Viktor trop lente ou trop purement reactive si elle ouvre fort."
+      ],
+      "opponent_plan": [
+        "tuer les bonnes unites",
+        "gagner a l'attrition",
+        "transformer les reveals Rek'Sai en cartes simplement 'correctes'"
+      ],
+      "reksai_plan": [
+        "ne pas accepter la pure guerre d'attrition si ta liste n'est pas faite pour cela",
+        "forcer Viktor a utiliser ses removals plus tot qu'il ne le voudrait",
+        "sur Phoenix-control, identifier les vrais choke points et non chaque petite piece"
+      ],
+      "mulligan_focus": [
+        "curve proactive",
+        "pas de main sans plan de score",
+        "sur low-to-the-ground builds, densite d'unites plus que top-end"
+      ],
+      "sideboard_focus": [
+        "resilience",
+        "plus d'unites ou finishers selon version",
+        "retirer les cartes trop conditionnelles"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient bien meilleur pour Rek'Sai si Viktor doit deja defendre le score au lieu de choisir tranquillement ses cibles."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "jouer trop lentement",
+        "tout miser sur un seul porteur",
+        "laisser Viktor epuiser ta main sans pression retour"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal timing",
+        "attrition loops",
+        "token stalls"
+      ],
+      "variation_notes": {
+        "order_swarm_tempo": "Peut etre meilleur contre les Viktors trop orientes late-game pur.",
+        "baited_hook_aggro_midrange": "Peut surprendre un Viktor local mal prepare, mais demande un pilotage agressif et discipliné."
+      }
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Fury/Order Phoenix-Control Rek'Sai",
+      "reksai_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_reksai_winrate_percent": "49-54",
+        "confidence": "low"
+      },
+      "summary": "On a peu de retours directs, mais la logique structurelle est plus favorable que contre Kai'Sa ou Viktor: Ezreal a un plafond violet plus eleve, mais il laisse plus souvent des fenetres a un deck capable de prendre 5-6 points rapidement puis de menacer un gros turn de conquer.",
+      "why_matchup_plays_this_way": [
+        "Ezreal n'aime pas toujours les decks qui imposent un scoreboard concret avant son gros turn.",
+        "Rek'Sai peut parfois faire exactement cela si sa curve fonctionne."
+      ],
+      "opponent_plan": [
+        "ralentir et gagner a la resource quality",
+        "forcer Rek'Sai a overextend"
+      ],
+      "reksai_plan": [
+        "marquer vite les premiers points",
+        "ne pas donner a Ezreal le luxe d'une partie purement lente",
+        "conserver assez de pression pour que chaque reveal utile compte vraiment"
+      ],
+      "mulligan_focus": [
+        "early plays",
+        "Void Rush",
+        "mains avec pression et pas seulement value"
+      ],
+      "sideboard_focus": [
+        "plans un peu plus agressifs",
+        "retirer les cartes les plus lentes si tu crains le grind violet"
+      ],
+      "battlefield_notes": [
+        "Un front clairement menaçant vaut plus que deux fronts faibles contre Ezreal."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "laisser Ezreal tout cycler",
+        "prendre une ligne trop fair",
+        "sous-utiliser les tours explosifs"
+      ],
+      "important_patterns_to_respect": [
+        "Rhasa turns",
+        "late purple chains",
+        "Called Shot loops"
+      ],
+      "variation_notes": {
+        "order_swarm_tempo": "Souvent la meilleure maniere de voler vite le score.",
+        "baited_hook_aggro_midrange": "Peut aussi tres bien fonctionner si Hook ouvre assez de tempo."
+      }
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 5,
+      "default_shell": "Order Swarm / Tempo Rek'Sai",
+      "reksai_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_reksai_winrate_percent": "50-55",
+        "confidence": "low"
+      },
+      "summary": "Annie punit les mains lentes, mais Rek'Sai a souvent de meilleurs corps de table et de meilleurs swings de conquer que ce qu'Annie aime voir si la partie ne finit pas tout de suite.",
+      "why_matchup_plays_this_way": [
+        "Annie veut que Rek'Sai garde une main greed ou trop lourde.",
+        "Rek'Sai gagne si elle curve vite et transforme la table en mauvais combats."
+      ],
+      "opponent_plan": [
+        "prendre les points avant les gros pivots Rek'Sai",
+        "punir les keeps mous"
+      ],
+      "reksai_plan": [
+        "mulligan agressivement les mains lentes",
+        "prioriser l'occupation des battlefields avant la pure value des reveals",
+        "passer au-dessus en taille apres les premiers tours"
+      ],
+      "mulligan_focus": [
+        "2-drops",
+        "Noxus Hopeful",
+        "Faithful Manufactor",
+        "pas de hand lente"
+      ],
+      "sideboard_focus": [
+        "stabilisation",
+        "retirer le top-end inutile",
+        "garder assez de presence"
+      ],
+      "battlefield_notes": [
+        "Le matchup se joue souvent sur les deux premiers cycles de score."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "main lente",
+        "vide de board initial"
+      ],
+      "important_patterns_to_respect": [
+        "fast point starts",
+        "Chaos burst"
+      ],
+      "variation_notes": {
+        "phoenix_control": "Peut etre plus lent mais plus stable si la main est bonne.",
+        "baited_hook_aggro_midrange": "Souvent excellent pour ne pas laisser Annie respirer."
+      }
+    },
+    {
+      "opponent": "Ahri, Nine-Tailed Fox",
+      "meta_share_percent": 4,
+      "default_shell": "Fury/Order Phoenix-Control Rek'Sai",
+      "reksai_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_reksai_winrate_percent": "46-49",
+        "confidence": "low"
+      },
+      "summary": "Dans les rares retours ciblant Rek'Sai, Ahri est soupconnee bonne contre elle parce que sa legende aide a tenir et a manipuler les fronts contre les decks conqueror.",
+      "why_matchup_plays_this_way": [
+        "Rek'Sai aime les frontlines lisibles et les conquetes qui restent.",
+        "Ahri peut rendre le scoreboard et la repartition des pieces plus instables."
+      ],
+      "opponent_plan": [
+        "voler des points",
+        "tenir sans s'exposer totalement"
+      ],
+      "reksai_plan": [
+        "ne pas trop s'etaler",
+        "forcer Ahri a se battre pour un front reel au lieu de juste chiper"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "mains stables"
+      ],
+      "sideboard_focus": [
+        "tempo cards",
+        "retirer les pieces les plus lentes"
+      ],
+      "battlefield_notes": [
+        "Si Ahri peut t'obliger a courir d'un front a l'autre, ta legende perd beaucoup de valeur."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "mauvaise lecture des points",
+        "perte de tempo sur la mauvaise course"
+      ],
+      "important_patterns_to_respect": [
+        "mobility score turns"
+      ]
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "default_shell": "Fury/Order Phoenix-Control Rek'Sai",
+      "reksai_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_reksai_winrate_percent": "46-49",
+        "confidence": "low"
+      },
+      "summary": "Le meme fil qui donne Draven/Kai'Sa/Viktor comme bons contre Rek'Sai suggere aussi Yi comme probable bon matchup, a cause de sa capacite a tenir. Cela reste une lecture moins documentee que Kai'Sa ou Viktor, mais plausible.",
+      "why_matchup_plays_this_way": [
+        "Yi peut tenir un front avec peu de pieces et beaucoup de protection.",
+        "Rek'Sai prefere prendre des conquetes sur des fronts plus 'honnêtes'."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield a bas cout reel",
+        "punir les engages trop lisibles"
+      ],
+      "reksai_plan": [
+        "forcer Yi a depenser plus de protections qu'il ne veut",
+        "ne pas jouer la partie comme un simple duel de porteur"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "interaction de combat",
+        "pas de hand trop lourde"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "maintenir la densite de board"
+      ],
+      "battlefield_notes": [
+        "Rek'Sai doit souvent menacer deux fronts au lieu d'essayer de simplement deborder le front tenu."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "s'empaler sur les protections Calm",
+        "laisser Yi scorer gratuitement"
+      ],
+      "important_patterns_to_respect": [
+        "Calm protection chains",
+        "single carrier holds"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "default_shell": "Order Swarm / Tempo Rek'Sai",
+      "reksai_outlook": {
+        "label": "close_even",
+        "estimated_reksai_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Le matchup oppose deux decks de battlefield pressure, mais avec des logiques differentes: Azir gagne par largeur modulable et equipments, Rek'Sai par pression de conquer et turns reveles.",
+      "why_matchup_plays_this_way": [
+        "Azir peut plus facilement soutenir plusieurs petits corps sur la duree.",
+        "Rek'Sai peut generer plus de tempo immediat si ses reveals et ses conquetes s'enchainent bien."
+      ],
+      "opponent_plan": [
+        "largeur et equips",
+        "tenir puis deborder les fronts"
+      ],
+      "reksai_plan": [
+        "ne pas gaspiller le removal sur chaque token",
+        "viser la piece qui transforme vraiment la table Azir",
+        "prendre le score avant le grand tour Azir Sovereign"
+      ],
+      "mulligan_focus": [
+        "starter agressif",
+        "Cull the Weak",
+        "pas de hand lente"
+      ],
+      "sideboard_focus": [
+        "red removal supplementaire contre tokens",
+        "garder assez de pressure de board"
+      ],
+      "battlefield_notes": [
+        "Le matchup est souvent une course a qui transforme sa 'largeur utile' en score plus vite."
+      ],
+      "main_lose_conditions_for_reksai": [
+        "reponses trop etroites",
+        "perdre les premiers points gratuitement"
+      ],
+      "important_patterns_to_respect": [
+        "Azir Sovereign turns",
+        "Arise",
+        "equipment-fueled flood"
+      ]
+    }
+  ],
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "phoenix_control_keep": [
+        "Noxus Hopeful",
+        "Faithful Manufactor",
+        "Cull the Weak",
+        "Void Rush",
+        "main avec un vrai premier conquer"
+      ],
+      "order_swarm_tempo_keep": [
+        "Daring Poro",
+        "Faithful Manufactor",
+        "Trifarian Gloryseeker",
+        "Void Rush",
+        "main qui curve proprement sur les deux premiers tours"
+      ],
+      "baited_hook_aggro_midrange_keep": [
+        "Baited Hook si la main est deja fonctionnelle",
+        "Noxus Hopeful",
+        "Honest Broker",
+        "Faithful Manufactor",
+        "un payoff ou un bon seal"
+      ],
+      "ship": [
+        "main sans premier conquer credible",
+        "main full top-end",
+        "main full removal sans pression",
+        "main qui suppose que la legende corrigera tout"
+      ],
+      "notes": [
+        "Rek'Sai mulligan beaucoup plus dur qu'un deck violet value.",
+        "Une main juste 'forte' mais sans ligne de conquer tot vaut souvent moins qu'une main correcte mais propre."
+      ]
+    },
+    "tempo_budget_rule_recent": {
+      "otp_perfect_start": [
+        "Soaring Scout",
+        "Noxus Hopeful",
+        "Cull the Weak",
+        "puis n'importe quel autre 2-drop coherent"
+      ],
+      "otd_perfect_start": [
+        "Faithful Manufactor",
+        "Noxus Hopeful",
+        "Cull the Weak",
+        "ou champion si la curve suit"
+      ],
+      "important_note": "Si tu ne peux pas jouer Cull the Weak tour 2 dans la version tempo/community, tu veux tres souvent simplement deployer deux unites."
+    },
+    "irelia": {
+      "keep": [
+        "Cull the Weak",
+        "Noxus Hopeful",
+        "removal propre",
+        "main pas trop lente"
+      ],
+      "ship": [
+        "main lente",
+        "main full top-end",
+        "main sans maniere de tuer un porteur"
+      ]
+    },
+    "draven_midrange": {
+      "keep": [
+        "starter de board",
+        "Cull the Weak",
+        "Void Rush",
+        "main stable"
+      ],
+      "ship": [
+        "main trop lourde",
+        "main all-value sans scoreboard"
+      ]
+    },
+    "kaisa": {
+      "keep": [
+        "pression early",
+        "plusieurs menaces imparfaites",
+        "pas de main all-in sur une unite"
+      ],
+      "ship": [
+        "main trop tall",
+        "main greed",
+        "main sans tempo"
+      ]
+    },
+    "viktor": {
+      "keep": [
+        "curve proactive",
+        "main avec plan de score",
+        "piece resiliente si la courbe suit"
+      ],
+      "ship": [
+        "main lente",
+        "main sans angle de pression"
+      ]
+    },
+    "ezreal": {
+      "keep": [
+        "Void Rush",
+        "starter agressif",
+        "main avec vrai scoreboard"
+      ],
+      "ship": [
+        "main lente",
+        "main full reactive"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "general_shell_rules": {
+      "phoenix_control": {
+        "identity": "Identifier les choke points adverses puis garder assez de runes pour que la legende et Void Rush restent des gains reels.",
+        "dont_do": [
+          "se sider en pur midrange sans removal quality",
+          "rentrer trop de top-end"
+        ]
+      },
+      "order_swarm_tempo": {
+        "identity": "Conserver la densite d'unites et le scoreboard, sans se transformer en deck reactif mou.",
+        "dont_do": [
+          "retirer trop de starters",
+          "garder des cartes de value qui ralentissent le plan"
+        ]
+      },
+      "baited_hook_aggro_midrange": {
+        "identity": "Hook doit rester une extension d'un plan de battlefield, pas le plan tout seul.",
+        "dont_do": [
+          "sur-sider en cartes cute",
+          "rendre la liste trop dependante d'un seul reveal"
+        ]
+      }
+    },
+    "draven_midrange": {
+      "phoenix_control_in": [
+        "Brynhir Thundersong si pas deja max",
+        "Piercing Light supplementaire ou removal equivalent",
+        "Salvage selon texture"
+      ],
+      "phoenix_control_out": [
+        "pieces les plus lentes",
+        "top-end de trop"
+      ],
+      "order_swarm_in": [
+        "Cull the Weak",
+        "Forge of the Future selon liste"
+      ],
+      "order_swarm_out": [
+        "les pieces les moins bonnes quand il faut combattre la largeur"
+      ],
+      "hook_in": [
+        "garder Baited Hook",
+        "tempo cards qui punissent les low might units"
+      ],
+      "hook_out": [
+        "cartes mortes dans les combats de masse"
+      ],
+      "plan": [
+        "Garder la capacite a marquer des points tout en coupant les tours Draven trop faciles."
+      ]
+    },
+    "kaisa": {
+      "phoenix_control_in": [
+        "cartes resilientes",
+        "top-end qui gagne meme si une unite meurt",
+        "Salvage si partie longue"
+      ],
+      "phoenix_control_out": [
+        "pieces trop dependantes d'un seul holder",
+        "tricks les moins fiables"
+      ],
+      "order_swarm_in": [
+        "plans plus agressifs",
+        "cartes qui obligent Kai'Sa a choisir ses removals"
+      ],
+      "order_swarm_out": [
+        "cards too clunky"
+      ],
+      "plan": [
+        "Ne pas all-in sur une seule unite et ne pas garder des cartes qui deviennent juste de mauvaises cibles de removal."
+      ]
+    },
+    "irelia": {
+      "phoenix_control_in": [
+        "Salvage",
+        "removal supplementaire",
+        "cartes qui punissent un porteur unique"
+      ],
+      "phoenix_control_out": [
+        "top-end superflu",
+        "cartes lentes"
+      ],
+      "order_swarm_in": [
+        "Cull the Weak max",
+        "interaction de combat"
+      ],
+      "order_swarm_out": [
+        "pieces trop passives"
+      ],
+      "plan": [
+        "Conserver assez de board pour conquerir encore apres avoir tue la bonne piece."
+      ]
+    },
+    "viktor": {
+      "phoenix_control_in": [
+        "resilience",
+        "cartes qui ne perdent pas toutes a la meme reponse"
+      ],
+      "phoenix_control_out": [
+        "surplus de petits tricks sans impact"
+      ],
+      "order_swarm_in": [
+        "plans plus aggressifs ou plus larges selon la version Viktor"
+      ],
+      "order_swarm_out": [
+        "pieces les plus faibles en attrition"
+      ],
+      "plan": [
+        "Il faut une vraie clock. Ne pas devenir un deck trop fair et trop lent."
+      ]
+    },
+    "aurora_or_slow_big_mana_decks": {
+      "in": [
+        "pression early",
+        "cartes qui renforcent les turns 2-4",
+        "Mind the scoreboard cards"
+      ],
+      "out": [
+        "reponses trop lentes",
+        "pieces de pure greed"
+      ],
+      "plan": [
+        "Beaucoup de versions Rek'Sai gagnent ces pairings en arrivant vite a 5-6 points puis en finissant sur un grand swing."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "phoenix_control_priority": [
+        "The Arena's Greatest",
+        "Zaun Warrens",
+        "Veiled Temple"
+      ],
+      "order_swarm_tempo_priority": [
+        "Power Nexus",
+        "The Arena's Greatest",
+        "Trifarian War Camp"
+      ],
+      "baited_hook_aggro_midrange_priority": [
+        "The Arena's Greatest",
+        "The Candlelit Sanctum",
+        "Zaun Warrens or Rockfall Path"
+      ],
+      "notes": [
+        "Rek'Sai a besoin de battlefields ou le premier conquer vaut vraiment quelque chose.",
+        "Les fronts qui permettent de reconquerir ou de convertir un front ouvert en gros swing sont meilleurs que les fronts purement cosmetiques."
+      ]
+    },
+    "draven_midrange": {
+      "preferred": [
+        "The Arena's Greatest",
+        "Zaun Warrens"
+      ],
+      "plan": [
+        "Tu veux un front qui te permet de gagner un conquer proprement, puis de garder assez de ressources pour ne pas perdre tout le tempo ensuite."
+      ]
+    },
+    "kaisa": {
+      "preferred": [
+        "The Arena's Greatest",
+        "Power Nexus or Zaun Warrens depending shell"
+      ],
+      "plan": [
+        "Evite de construire des fronts tenus par une seule unite irremplacable."
+      ]
+    },
+    "irelia": {
+      "preferred": [
+        "The Arena's Greatest",
+        "Veiled Temple"
+      ],
+      "plan": [
+        "Les fronts ou Irelia ne peut pas conserver gratuitement un seul porteur sont ceux que Rek'Sai aime le plus."
+      ]
+    },
+    "viktor": {
+      "preferred": [
+        "Zaun Warrens",
+        "The Arena's Greatest"
+      ],
+      "plan": [
+        "Il faut des fronts qui rendent chaque conquer réel, pas des fronts que Viktor peut neutraliser a petit feu."
+      ]
+    },
+    "aurora_decks": {
+      "preferred": [
+        "Power Nexus",
+        "The Arena's Greatest"
+      ],
+      "plan": [
+        "Tu veux convertir les premiers tours en 4 a 6 points le plus vite possible, puis finir sur le swing."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Riftbound.gg - Rek'Sai, Void Burrower Guide",
+      "date": "2026-02-14",
+      "notes": "Guide principal sur l'identite Spiritforged Rek'Sai, son besoin de garder ses unites en vie, et le role central de Void Rush."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "Riftbound official - The Best Decks out of Bologna",
+      "date": "2026-02-25",
+      "notes": "Best-of Rek'Sai Bologna #98 overall. Shell Fury/Order Phoenix-control avec Rek'Sai, Breacher."
+    },
+    {
+      "id": "S3",
+      "type": "official tournament article",
+      "title": "Riftbound official - Vegas Top Decks",
+      "date": "2026-03-04",
+      "notes": "Best-of Rek'Sai Vegas #49 overall. Shell Order-only swarm/tempo avec Rek'Sai, Swarm Queen."
+    },
+    {
+      "id": "S4",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Bologna",
+      "date": "2026-03-01",
+      "notes": "Rek'Sai Tier 3, 51 picks, 6% Day 2 conversion, 48.9% win rate."
+    },
+    {
+      "id": "S5",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Vegas",
+      "date": "2026-03-06",
+      "notes": "Rek'Sai Tier 3, 96 picks, 15.8% Day 2 conversion, 50.1% win rate."
+    },
+    {
+      "id": "S6",
+      "type": "meta stats",
+      "title": "RiftDecks - Spiritforged Legends Meta Breakdown",
+      "date_consulted": "2026-03-11",
+      "notes": "Rek'Sai autour de 2% de metashare et Tier 3 sur le snapshot consulte."
+    },
+    {
+      "id": "S7",
+      "type": "card reference",
+      "title": "Riftbound.gg - SFD-187 Rek'Sai, Void Burrower",
+      "date_consulted": "2026-03-11",
+      "notes": "Resume du texte de la legende."
+    },
+    {
+      "id": "S8",
+      "type": "card reference",
+      "title": "Riftbound.gg - SFD-188 Void Rush",
+      "date_consulted": "2026-03-11",
+      "notes": "Texte de la signature spell et role central dans tous les shells."
+    },
+    {
+      "id": "S9",
+      "type": "card reference",
+      "title": "Riftbound.gg / retail card text - Rek'Sai, Breacher",
+      "date_consulted": "2026-03-11",
+      "notes": "Breacher a Accelerate, Assault et donne Accelerate aux unites jouees hors de la main."
+    },
+    {
+      "id": "S10",
+      "type": "card text snippet",
+      "title": "Retail/Card snippet - Rek'Sai, Swarm Queen",
+      "date_consulted": "2026-03-11",
+      "notes": "Quand elle attaque, revele les 2 cartes du dessus et peut en jouer une; si c'est une unite, elle peut etre jouee ici."
+    },
+    {
+      "id": "S11",
+      "type": "community thread",
+      "title": "Irelia against Rek'Sai",
+      "date_consulted": "2026-03-11",
+      "notes": "Source recente importante: Draven, Kai'Sa, Viktor cites comme bons contre Rek'Sai; Ahri et Yi soupconnes bons aussi pour leur capacite a tenir."
+    },
+    {
+      "id": "S12",
+      "type": "community thread",
+      "title": "Irelia and Draven Counters",
+      "date_consulted": "2026-03-11",
+      "notes": "Source tres recente affirmant que Rek'Sai est probablement le pire matchup d'Irelia."
+    },
+    {
+      "id": "S13",
+      "type": "community thread",
+      "title": "Rek'Sai (I can't win a single game)",
+      "date_consulted": "2026-03-11",
+      "notes": "Source importante sur la difference entre shell control difficile et shell aggro/midrange plus forgiving."
+    },
+    {
+      "id": "S14",
+      "type": "community thread",
+      "title": "So what are yall running with our Queen Rek'Sai?",
+      "date_consulted": "2026-03-11",
+      "notes": "Phoenix Rek'Sai list recente; losses close to Kai'Sa and Draven; exemples de construction heavy removal."
+    },
+    {
+      "id": "S15",
+      "type": "community thread",
+      "title": "Baited Hook Rek'Sai",
+      "date_consulted": "2026-03-11",
+      "notes": "Source cle pour le shell Hook, sa logique de consistance, et l'idee que Hook rend le matchup Draven winnable."
+    },
+    {
+      "id": "S16",
+      "type": "community thread",
+      "title": "Rek'Sai - Breacher",
+      "date_consulted": "2026-03-11",
+      "notes": "Discussion ancienne mais utile sur Hook dans Rek'Sai et sur la consistance plus haute que Darius Hook."
+    },
+    {
+      "id": "S17",
+      "type": "community deck report",
+      "title": "First Place with budget Rek'Sai at small Skirmish",
+      "date_consulted": "2026-03-11",
+      "notes": "Tres utile pour des conseils de mulligan, de sideboard et de plan de score sur une version tempo oriented."
+    },
+    {
+      "id": "S18",
+      "type": "community thread",
+      "title": "Fellow Viktor players - how are we sideboarding against low-to-the-ground decks like Rek'Sai",
+      "date_consulted": "2026-03-11",
+      "notes": "Support indirect montrant que Rek'Sai peut etre un vrai souci pour des Viktors non prepares."
+    },
+    {
+      "id": "S19",
+      "type": "community thread",
+      "title": "Best of Viktor Las Vegas Regional",
+      "date_consulted": "2026-03-11",
+      "notes": "Anecdote utile sur une game ou Rek'Sai menace un battlefield geant contre Viktor."
+    },
+    {
+      "id": "S20",
+      "type": "news update",
+      "title": "Potential Card Bans: Riftbound Game Director's Update",
+      "date": "2026-03-10",
+      "notes": "Pas de bans annonces; rules update prevue le 30 mars 2026."
+    }
+  ]
+}

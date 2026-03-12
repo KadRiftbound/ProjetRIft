@@ -1,0 +1,1318 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Ezreal complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte janvier-fevrier 2026 pour les tendances et les matchups moins documentes",
+    "methodology": {
+      "approach": [
+        "Croisement des tier lists et guides recents",
+        "Croisement des rapports de tournois Bologna et Las Vegas",
+        "Croisement des discussions de joueurs sur les matchups concrets",
+        "Prudence explicite sur les decks a faible representation ou les matchups a faible volume"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + deck/matchup documente competitivement",
+        "medium": "Consensus partiel ou matchup fortement dependant du pilotage/build",
+        "low": "Peu de donnees directes, lecture de field surtout theorique"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "ezreal_meta_position": {
+      "riftbound_gg_post_vegas": "Tier 1 ceiling, mais reserve aux joueurs investissant beaucoup de reps",
+      "mobalytics": "S-tier",
+      "riftmana_bologna": "Un des decks les plus forts du format, mais lent et exigeant",
+      "riftdecks_spiritforged_meta_share_snapshot": {
+        "ezreal": 3,
+        "draven": 16,
+        "irelia": 10,
+        "viktor": 7,
+        "kai_sa": 18,
+        "master_yi": 6,
+        "azir": 4
+      }
+    },
+    "high_level_summary": [
+      "Ezreal est un deck controle/value/toolbox a plafond tres eleve.",
+      "Il profite d'un moteur de pioche legendaire et de nombreuses cartes qui ciblent les permanents adverses pour doubler les activations utiles.",
+      "Il demande plus de planification que la plupart des decks de la meta.",
+      "En theorie il peut rivaliser avec tout le format; en pratique, son niveau reel depend enormement des reps du pilote."
+    ]
+  },
+  "ezreal_advanced_guide": {
+    "legend": "Ezreal, Prodigal Explorer",
+    "domains": [
+      "Mind",
+      "Chaos"
+    ],
+    "macro_identity": {
+      "archetype": "Controle / value / toolbox / miracle-control",
+      "primary_gameplan": "Ralentir l'adversaire, generer du card advantage via la legende et les pieces violettes, puis basculer vers une position ou chaque tour combine interaction + developpement + progression aux points.",
+      "secondary_gameplan": "Assembler des tours de swing massifs avec reduction de cout, recursion, replay d'unites, et sequences multi-cibles qui epuisent l'adversaire.",
+      "why_the_deck_is_strong": [
+        "Moteur de pioche extremement puissant",
+        "Peut transformer des cartes reactives en progression de plan",
+        "Acces a des tours de swing tres superieurs a la moyenne",
+        "Tres bon deck de punition contre les adversaires qui se commit trop tot ou trop etroitement"
+      ],
+      "why_the_deck_is_hard": [
+        "Nombre de lignes par tour tres eleve",
+        "Gestion fine des runes et de la vitesse de partie",
+        "Beaucoup de decisions a valeur differee",
+        "Le deck punit plus ses propres erreurs que Draven ou Irelia"
+      ]
+    },
+    "competitive_consensus_march_2026": {
+      "consensus_summary": [
+        "Ezreal est l'un des meilleurs decks de mars 2026",
+        "Son plafond justifie un classement Tier 1 / S-tier",
+        "Sa representation brute reste plus basse que celle de Draven ou Kai'Sa parce qu'il est plus difficile a jouer",
+        "Les bons resultats occidentaux recents ont surtout ete portes par des pilotes tres prepares"
+      ],
+      "important_caveat": "Il faut separer le matchup theorique d'Ezreal du matchup pratique moyen en tournoi local. Beaucoup de discussions communautaires soulignent que le deck n'est vraiment 'au top' que lorsqu'il est pilote a un niveau tres eleve."
+    },
+    "core_packages": {
+      "engine_package": [
+        "Ezreal, Prodigy",
+        "Stacked Deck",
+        "Called Shot",
+        "Legend ability support cards that target enemy units or gear"
+      ],
+      "control_package": [
+        "Multi-target or repeat effects",
+        "Mind removal and stat suppression tools",
+        "Chaos interaction and recursion",
+        "Selective bounce/replay tools"
+      ],
+      "swing_package": [
+        "Rhasa the Sunderer",
+        "Replay effects",
+        "Cost reduction sequences",
+        "Late-turn chaining after hand refuel"
+      ],
+      "meta_flex_package": [
+        "Vex as a staple in recent tuned lists",
+        "Pickpocket as a meta snipe in some lists",
+        "Downwell as a reset tool in specific matchups",
+        "Optional Kai'Sa splash considerations in some community experimentation"
+      ]
+    },
+    "advanced_pilot_principles": [
+      {
+        "name": "Do not confuse interaction with progress",
+        "detail": "Beaucoup de mains Ezreal savent interagir; peu savent interagir tout en gagnant du terrain. Chaque carte reactive doit idealement soit proteger tes futurs points, soit t'ouvrir un swing de cartes, soit te rapprocher d'un tour de bascule."
+      },
+      {
+        "name": "Your runes are a resource and a timing statement",
+        "detail": "Sur Ezreal, garder des runes ouvertes n'est pas seulement une question de representation. C'est aussi la promesse d'un tour de double-action: reponse adverse puis developpement ou inversement."
+      },
+      {
+        "name": "Targeting density matters more than raw removal density",
+        "detail": "Ce qui compte n'est pas seulement de tuer ou repousser une unite, mais de maintenir assez de cartes qui ciblent pour faire tourner la legende de maniere fiable sans te transformer en deck 100% reactif."
+      },
+      {
+        "name": "Most games are won before the miracle turn",
+        "detail": "Le gros tour final impressionne, mais il n'arrive correctement que si les 3 ou 4 tours precedents ont ete joues pour conserver la bonne repartition de cartes, runes et tempo."
+      },
+      {
+        "name": "Know when to stop answering everything",
+        "detail": "Une erreur frequente consiste a essayer de repondre a chaque carte adverse. Ezreal gagne souvent davantage en laissant survivre une menace secondaire si cela permet de preparer un tour qui rase la structure entiere du plan adverse."
+      }
+    ],
+    "mulligan_advanced": {
+      "general_rules": [
+        "Chercher une main qui combine soit une piece d'engine, soit une ligne d'interaction precoce, soit une facon credible de ne pas perdre les premiers points.",
+        "Le deck mulligane tres mal les mains purement value sans interaction immediate.",
+        "Le deck mulligane aussi mal les mains purement reactives si elles n'ont aucun chemin vers la pioche ou le swing."
+      ],
+      "high_priority_keeps": [
+        "Main avec interaction precoce + moyen d'alimenter la pioche legendaire",
+        "Main avec Ezreal, Prodigy ou piece engine equivalente + stabilisation minimale",
+        "Main avec bon profil contre le matchup attendu meme si elle est moins explosive"
+      ],
+      "situational_keeps": [
+        {
+          "condition": "contre Draven",
+          "keep": [
+            "interaction precoce",
+            "cartes qui cassent une table trop large",
+            "mains qui evitent de se faire enterrer avant le tour de swing"
+          ]
+        },
+        {
+          "condition": "contre Irelia",
+          "keep": [
+            "reponses a porteur unique",
+            "pieces qui rendent le combat tres inconfortable",
+            "cartes comme Vex dans les builds qui l'emploient"
+          ]
+        },
+        {
+          "condition": "contre Azir",
+          "keep": [
+            "reponses rapides",
+            "tempo immediat",
+            "mains qui n'attendent pas le late game pour faire quelque chose"
+          ]
+        },
+        {
+          "condition": "contre Viktor",
+          "keep": [
+            "pieces d'engine solides",
+            "mains qui font progresser sans trop s'exposer a l'attrition",
+            "developpement qualitatif plutot que quantitatif"
+          ]
+        }
+      ],
+      "hands_to_throw_back": [
+        "Main tres lente sans interaction avant que l'adversaire puisse scorer",
+        "Main pleine de cartes techniquement fortes mais sans coherence de courbe",
+        "Main qui repond mal au matchup concret meme si elle semble puissante en abstrait"
+      ]
+    },
+    "battlefield_and_scoring_philosophy": {
+      "summary": [
+        "Ezreal n'a pas besoin de dominer tous les battlefields tout le temps.",
+        "Le deck prefere souvent ralentir la partie, garder un battlefield contestable et preparer un swing de deux tours plutot qu'un micro-avantage immediat."
+      ],
+      "principles": [
+        "Ne pas se battre pour chaque point si le cout en cartes t'empeche de prendre le controle plus tard.",
+        "Quand tu peux gagner le meme battlefield en depensant une carte de moins au tour suivant, la patience est souvent correcte.",
+        "Le deck adore les plateaux ou l'adversaire a une ou deux pieces centrales a cibler, moins ceux ou il multiplie les menaces moyennes tres vite."
+      ]
+    },
+    "sideboard_philosophy": {
+      "general_rules": [
+        "Le sideboard Ezreal doit etre ajuste a la meta locale plus que beaucoup d'autres decks.",
+        "Les guides communautaires insistent sur le fait qu'il ne faut pas sideboarder en pilotage automatique.",
+        "Le vrai critere n'est pas seulement 'est-ce bon contre X', mais 'est-ce que cela preserve la structure de mon deck dans ce matchup'."
+      ],
+      "core_sideboard_axes": [
+        {
+          "axis": "anti-go-wide",
+          "purpose": "Draven miracle, aurora boards, matchups ou tu peux perdre sur une table trop etalee"
+        },
+        {
+          "axis": "anti-porteur unique / anti-combat",
+          "purpose": "Irelia, Fiora, certains builds Jax/Yi"
+        },
+        {
+          "axis": "anti-engine purple / mirror tech",
+          "purpose": "Ezreal, Sivir miracle, Viktor si la partie se joue a la densite d'interaction"
+        },
+        {
+          "axis": "anti-race / anti-fast pressure",
+          "purpose": "Azir, Annie, Miss Fortune, certaines sorties Kai'Sa"
+        }
+      ],
+      "specific_notes_from_community": [
+        "Pickpocket a ete cite comme meta snipe contre Ezreal/miracle dans certaines versions recentes.",
+        "Downwell a ete mentionne comme utile contre miracle Draven si la table devient trop large, et aussi contre certains plans Aurora.",
+        "Les choix exacts dependent beaucoup du champ attendu et du niveau du pilote."
+      ]
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Over-control early turns",
+        "why_it_loses": "Repondre a tout au debut te laisse parfois sans puissance pour convertir la stabilisation en victoire."
+      },
+      {
+        "mistake": "Playing the deck as pure draw-go",
+        "why_it_loses": "Ezreal gagne en melangeant reponse et developpement. Le jouer comme un simple deck de sorts passif laisse trop de points et de fenetres."
+      },
+      {
+        "mistake": "Using premium interaction on low-value threats",
+        "why_it_loses": "Les cartes premium doivent casser la piece qui transforme vraiment le tour adverse, pas simplement lisser les degats."
+      },
+      {
+        "mistake": "Not mapping the next two turns",
+        "why_it_loses": "Le deck est un deck de sequences. Si tu joues tour par tour sans projection, tu brules tes synergies."
+      },
+      {
+        "mistake": "Tunneling on the miracle finish",
+        "why_it_loses": "Beaucoup de parties se gagnent avec une suite de petits avantages, pas avec un seul tour spectaculaire."
+      },
+      {
+        "mistake": "Mulliganing for greed",
+        "why_it_loses": "Une main 'belle' mais lente tue souvent Ezreal avant qu'il ne commence a resserrer l'etau."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Quand un choix te permet soit de tuer une unite moyenne maintenant, soit de garder une ressource ouverte pour repondre a une piece centrale au prochain tour, la deuxieme ligne est souvent meilleure si tu n'es pas immediatement mort au score.",
+      "Les cartes qui ciblent deux fois ou plusieurs objets adverses ont une valeur qui depasse leur texte brut, car elles simplifient l'activation de la legende.",
+      "En mirror ou contre d'autres decks violets, le tempo de pioche compte moins que la qualite de la fenetre ou tu convertis les cartes.",
+      "Si l'adversaire connait bien Ezreal, il va souvent te forcer a agir trop tot. Il faut donc accepter que certains tours soient volontairement 'sous-joues' pour conserver l'initiative reelle.",
+      "Tes meilleurs tours sont souvent ceux ou l'adversaire pense que tu es encore en mode survie alors que tu pre-assembles deja la bascule."
+    ],
+    "practical_summary": {
+      "best_for": [
+        "Joueurs tres techniques",
+        "Joueurs avec experience de decks toolbox/combo-control dans d'autres TCG",
+        "Meta ou la valeur des decisions et du sideboard est elevee"
+      ],
+      "worst_for": [
+        "Joueurs voulant un deck plug-and-play",
+        "Meta extremement rapide sans preparation",
+        "Pilotes qui preferent des lignes simples et immediates"
+      ],
+      "blind_pick_rating": "Excellent en mains expertes, plus fragile comme blind pick que Draven en mains moyennes"
+    }
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner",
+      "meta_share_percent": 16,
+      "tier_context": "Tier 1",
+      "ezreal_outlook": {
+        "label": "close_even_but_skill_skewed",
+        "estimated_ezreal_winrate_percent": "48-52",
+        "confidence": "medium"
+      },
+      "summary": "Le matchup Draven est l'un des plus debattus. Une partie de la communaute estime que Draven midrange est favori contre Ezreal en pratique, tandis qu'une autre soutient qu'Ezreal a un leger edge theorique s'il est joue a la perfection. Le consensus le plus honnete est donc un matchup proche de l'equilibre, tres deforme par le niveau de pilotage.",
+      "why_matchup_plays_this_way": [
+        "Draven punit severement les mains lentes et les tours de setup trop passifs.",
+        "Ezreal, lui, peut surpasser Draven si la partie se stabilise et s'il trouve des tours de swing propres.",
+        "La difference entre midrange Draven et miracle Draven change aussi la texture du matchup."
+      ],
+      "opponent_plan": [
+        "Prendre l'initiative tot",
+        "Forcer Ezreal a repondre avant qu'il n'assemble sa value",
+        "Transformer la pression de battlefield en trades rentables ou en points"
+      ],
+      "ezreal_plan": [
+        "Ne pas perdre trop de terrain trop tot",
+        "Accepter certains petits points si cela preserve les meilleures cartes de reset ou de swing",
+        "Bousculer Draven une fois qu'il s'etale trop ou qu'il depense ses meilleurs tricks",
+        "Jouer en anticipant si la liste adverse est midrange ou miracle"
+      ],
+      "mulligan_focus": [
+        "Interaction immediate",
+        "Mains qui ne meurent pas sur tempo",
+        "Acces a une bascule de midgame, pas seulement a de la value lente"
+      ],
+      "sideboard_focus": [
+        "Anti-go-wide",
+        "Resets ou outils punissant la largeur de table",
+        "Cartes qui rendent un developpement en chaine de Draven plus maladroit"
+      ],
+      "important_patterns_to_respect": [
+        "Pressure with 2 energy open",
+        "Bascule Brynhir / tempo push",
+        "Miracle turns if the list is purple-heavier",
+        "Large board states that invalidate spot answers"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Prendre trop de retard avant d'installer l'engine",
+        "Depenser les reponses de masse trop tot ou trop tard",
+        "Laisser Draven convertir un board large en suite de trades favorables"
+      ],
+      "variation_notes": [
+        "Contre midrange Draven en mains moyennes, le matchup semble souvent pencher vers Draven.",
+        "Contre miracle Draven, certains joueurs trouvent Ezreal meilleur, d'autres l'inverse selon la configuration du sideboard."
+      ],
+      "source_refs": [
+        "S1",
+        "S2",
+        "S5",
+        "S8",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "tier_context": "Tier 1",
+      "ezreal_outlook": {
+        "label": "paper_slightly_favorable_practice_high_variance",
+        "estimated_ezreal_winrate_percent": "49-53",
+        "confidence": "medium"
+      },
+      "summary": "Sur le papier, plusieurs discussions donnent Ezreal avec un leger edge grace a des pieces comme Vex et a la capacite de rendre les combats d'Irelia tres mauvais. En pratique, beaucoup de joueurs rappellent que ce matchup est extremement exigeant et que la plupart des pilotes Ezreal se font punir s'ils ne connaissent pas parfaitement les timings.",
+      "why_matchup_plays_this_way": [
+        "Irelia menace des tours de score tres efficaces autour d'un porteur protege.",
+        "Ezreal a les outils pour casser ces sequences, mais il doit choisir les bonnes fenetres.",
+        "Le matchup repose sur la precision bien plus que sur la force brute des cartes."
+      ],
+      "opponent_plan": [
+        "Installer un porteur cle",
+        "Menacer des lignes de double-score ou de combat tres proteges",
+        "Forcer Ezreal a depenser ses reponses dans le mauvais ordre"
+      ],
+      "ezreal_plan": [
+        "Preserver les cartes qui rendent un porteur unique mauvais",
+        "Ne pas gaspiller le premium interaction sur des menaces secondaires",
+        "Transformer le matchup en une suite de petits echanges ou Irelia depense plus de ressources qu'elle n'en recupere",
+        "Capitaliser sur Vex et autres cartes qui rendent le combat tres awkward"
+      ],
+      "mulligan_focus": [
+        "Reponses a porteur unique",
+        "Interaction de combat inconfortable",
+        "Main avec une vraie sortie si Irelia ralentit"
+      ],
+      "sideboard_focus": [
+        "Anti-combat",
+        "Bounce/tempo sur porteur",
+        "Outils qui punissent un equip unique ou une prise de battlefield trop engagee"
+      ],
+      "important_patterns_to_respect": [
+        "Protection stack",
+        "Double-score turns",
+        "Guardian Angel and boots style snowball turns",
+        "Defiant Dance / protection sequencing"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Jouer la mauvaise reponse sur la mauvaise menace",
+        "Laisser Irelia prendre un battlefield puis proteger trop facilement son avance",
+        "Sous-evaluer la pression de score alors que la main est encore tres reactive"
+      ],
+      "variation_notes": [
+        "En theorie, Ezreal bien pilote peut etre legerement devant.",
+        "En pratique moyenne de tournoi, beaucoup de joueurs estiment qu'Irelia mange Ezreal mal pilote."
+      ],
+      "source_refs": [
+        "S1",
+        "S6",
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "tier_context": "Tier 1/S",
+      "ezreal_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_ezreal_winrate_percent": "48-51",
+        "confidence": "medium"
+      },
+      "summary": "Kai'Sa est souvent decrite comme correcte a bonne contre Ezreal lorsqu'elle est construite pour le matchup, notamment avec certaines tech cards mentionnees par la communaute. En meme temps, les analyses post-Vegas indiquent que la montee des archetypes miracle rend la tache de Kai'Sa plus difficile en general. Le matchup reste donc tres build-dependent.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa retire les unites proprement et se reconstruit bien.",
+        "Ezreal aime les parties ou il peut grinder et convertir les cartes; Kai'Sa peut parfois l'en empecher via pression/removal suffisamment denses.",
+        "Le matchup change beaucoup selon la vitesse de la liste Kai'Sa et le nombre de techs specifiques."
+      ],
+      "opponent_plan": [
+        "User removal by spells rather than fair combat",
+        "Empêcher Ezreal d'atteindre une table ou une main confortable",
+        "Reprendre le board sans trop s'etaler"
+      ],
+      "ezreal_plan": [
+        "Ne pas sur-investir dans une seule unite ou un seul axe",
+        "Jouer pour la qualite du swing et non pour la quantite de petites interactions",
+        "Exploiter les tours ou Kai'Sa ne peut pas a la fois tuer, scorer et developper"
+      ],
+      "mulligan_focus": [
+        "Mains stables avec vrai plan de progression",
+        "Pas de main trop gourmande",
+        "Valeur donnee aux cartes qui convertissent rapidement un petit avantage"
+      ],
+      "sideboard_focus": [
+        "Tech anti-control / anti-removal si la liste le permet",
+        "Outils qui punissent un removal lineaire ou repetitif",
+        "Cartes capables de redonner le tempo au bon tour"
+      ],
+      "important_patterns_to_respect": [
+        "Spell removal windows",
+        "Stabilization turns",
+        "Tech cards like Scrapper and Assembly Board mentions in community anti-Ez discussion"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Se faire 1 pour 1 jusqu'a l'epuisement sans vrai rebond",
+        "Donner a Kai'Sa le temps d'installer une partie controlee ou elle est aussi confortable que toi",
+        "Ne pas punir les tours faibles de developpement"
+      ],
+      "variation_notes": [
+        "Kai'Sa tunee anti-Ezreal semble au moins correcte, parfois favorable.",
+        "Kai'Sa plus generique laisse davantage de place au plan value d'Ezreal."
+      ],
+      "source_refs": [
+        "S1",
+        "S3",
+        "S11"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "tier_context": "Tier 2",
+      "ezreal_outlook": {
+        "label": "slightly_unfavorable_to_even",
+        "estimated_ezreal_winrate_percent": "47-50",
+        "confidence": "medium"
+      },
+      "summary": "Viktor est souvent cite comme une reponse generale aux decks violets, y compris Ezreal. Les builds controles qui tuent hors combat et punissent les holds rendent le matchup desagreable. Cela dit, la texture exacte depend beaucoup de la version Viktor: token/control, plus board-based, ou anti-purple tres dediee.",
+      "why_matchup_plays_this_way": [
+        "Viktor peut jouer un plan tres peu interactif avec les combats classiques, ce qui prive Ezreal de certaines fenetres de conversion.",
+        "Le deck punit bien les unites assises en backline ou les develops lents.",
+        "Ezreal reste capable de le battre si sa propre engine demarre plus vite et s'il force Viktor a repondre hors rythme."
+      ],
+      "opponent_plan": [
+        "Tuer les pieces cle hors combat",
+        "User de recruits/removal pour ne pas donner de bons echanges",
+        "Transformer la partie en attrition de qualite"
+      ],
+      "ezreal_plan": [
+        "Ne pas se sur-commit sur une unite vulnerable",
+        "Construire la main avant d'entrer dans la zone de pur attrition",
+        "Forcer Viktor a consommer ses meilleurs removals sur des cibles imparfaites"
+      ],
+      "mulligan_focus": [
+        "Engine et progression qualitative",
+        "Main qui ne s'effondre pas sur un removal propre",
+        "Pas de dependence a une seule piece"
+      ],
+      "sideboard_focus": [
+        "Mirror/control tech",
+        "Cartes qui taxent le removal ou punissent l'over-answer",
+        "Outils utiles contre les shells blue/yellow de Viktor"
+      ],
+      "important_patterns_to_respect": [
+        "Rocket hitting Ezreal backline",
+        "Removal loops",
+        "Decree-style control patterns",
+        "Go-wide recruit stabilization"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Rentrer dans une guerre de 1 pour 1 ou Viktor est deja installe",
+        "Laisser Viktor choisir le tempo de chaque tour",
+        "Trop attendre avant de poser une vraie question"
+      ],
+      "variation_notes": [
+        "Contre Viktor pur anti-purple, le matchup se degrade.",
+        "Contre Viktor moins affine, Ezreal peut parfois prendre l'ascendant par densite de cartes."
+      ],
+      "source_refs": [
+        "S1",
+        "S12",
+        "S13"
+      ]
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "tier_context": "Tier 2",
+      "ezreal_outlook": {
+        "label": "slightly_favorable",
+        "estimated_ezreal_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Yi pose des problemes tactiques similaires a certains decks de porteur unique, mais il n'a pas le meme niveau de pression structurelle que les gros decks du format. Ezreal parait legerement devant tant qu'il ne se laisse pas aspirer dans des combats avantageux pour les boosts Calm.",
+      "why_matchup_plays_this_way": [
+        "Yi peut rendre chaque engagement tres risqué si tu joues trop droit.",
+        "Mais Ezreal possede les outils pour casser le tempo de la defense et pour l'emporter sur la duree."
+      ],
+      "opponent_plan": [
+        "Tenir un battlefield avec une menace difficile a punir",
+        "Exploiter les boosts et protections Calm"
+      ],
+      "ezreal_plan": [
+        "Punir les tours ou Yi mise trop sur un seul porteur",
+        "Preferer le tempo et le ciblage intelligent aux combats frontaux",
+        "Faire courir Yi au score et aux ressources"
+      ],
+      "mulligan_focus": [
+        "Interaction souple",
+        "Outils anti-porteur"
+      ],
+      "sideboard_focus": [
+        "Anti-combat / anti-porteur",
+        "Bounce et reponses sur unite unique"
+      ],
+      "important_patterns_to_respect": [
+        "Protection Calm",
+        "En Garde / Discipline style turns"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Entrer dans des combats optimaux pour Yi",
+        "Laisser une seule piece tenir deux cycles de score"
+      ],
+      "variation_notes": [
+        "Confiance moyenne-faible faute de volume direct recent."
+      ],
+      "source_refs": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "tier_context": "Tier 3 by share but real tournament presence",
+      "ezreal_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_ezreal_winrate_percent": "45-49",
+        "confidence": "medium"
+      },
+      "summary": "La communaute signale explicitement qu'Azir peut aller trop vite pour certaines versions d'Ezreal. Des discussions sur la liste d'Alanzq relevent des choix comme Pickpocket pour ameliorer ce matchup, ce qui va dans le sens d'un pairing reellement important et pas totalement confortable.",
+      "why_matchup_plays_this_way": [
+        "Azir peut developper une pression rapide qui reduit la marge de setup d'Ezreal.",
+        "Si Ezreal est force de repondre a tous les petits elements, il n'atteint pas sa zone de confort.",
+        "Le matchup n'est pas desespere, mais il demande d'etre plus immediat que dans d'autres pairings."
+      ],
+      "opponent_plan": [
+        "Mettre un board vite",
+        "Convertir l'equipement/aurora/token pressure avant le late game",
+        "Taxer les removals un par un"
+      ],
+      "ezreal_plan": [
+        "Prioriser la prevention du snowball plutot que la recherche de value parfaite",
+        "Avoir un vrai tour de stabilisation avant que le score ne soit trop haut",
+        "Choisir les cibles qui portent le plan Azir plutot que tout gerer uniformement"
+      ],
+      "mulligan_focus": [
+        "Interaction tot",
+        "Mains qui font quelque chose avant le milieu de partie",
+        "Cartes qui punissent les starts rapides"
+      ],
+      "sideboard_focus": [
+        "Anti-fast pressure",
+        "Reset / tempo cards",
+        "Meta slots comme Pickpocket selon la construction"
+      ],
+      "important_patterns_to_respect": [
+        "Fast board starts",
+        "Aurora or equipment acceleration",
+        "Pressure that goes under pure value plans"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Conserver une main lente sous pretexte qu'elle est forte plus tard",
+        "Repondre aux mauvaises pieces",
+        "Ne pas trouver un point d'inflexion avant 5 ou 6 points adverses"
+      ],
+      "variation_notes": [
+        "Les listes Ezreal techant ce matchup l'ameliorent sensiblement.",
+        "Les listes trop gourmandes en value le rendent plus mauvais."
+      ],
+      "source_refs": [
+        "S8",
+        "S14"
+      ]
+    },
+    {
+      "opponent": "Fiora, Grand Duelist",
+      "meta_share_percent": 3,
+      "tier_context": "Tier 2/3",
+      "ezreal_outlook": {
+        "label": "favorable",
+        "estimated_ezreal_winrate_percent": "55-60",
+        "confidence": "medium"
+      },
+      "summary": "Les retours joueurs recents signalent que Fiora a du mal contre Ezreal, notamment parce que les plans plus fair ou trop porteur-centriques se font bien punir par le ciblage, le bounce et la gestion de rythme d'Ezreal.",
+      "why_matchup_plays_this_way": [
+        "Fiora joue souvent un plan que les decks violets aiment demonter piece par piece.",
+        "Ezreal est particulierement bon pour faire perdre du temps a un deck qui investit sur une ou deux menaces."
+      ],
+      "opponent_plan": [
+        "Installer un porteur equipe et capitaliser sur la protection",
+        "Prendre un avantage de battlefield par une grosse menace plutot que par une large table"
+      ],
+      "ezreal_plan": [
+        "Punir l'investissement sur peu de pieces",
+        "Garder les cartes premium pour la vraie menace",
+        "Transformer chaque all-in adverse en tempo loss"
+      ],
+      "mulligan_focus": [
+        "Interaction contre porteur",
+        "Pas besoin d'une main ultra explosive si elle est propre"
+      ],
+      "sideboard_focus": [
+        "Anti-equipment / anti-porteur unique",
+        "Pas besoin de surcharger en anti-go-wide"
+      ],
+      "important_patterns_to_respect": [
+        "Baited Hook builds",
+        "Voltron turns",
+        "Protection stack around a single carrier"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Sous-estimer une seule piece qui reste trop longtemps",
+        "Gaspiller les meilleures reponses sur des threats secondaires"
+      ],
+      "variation_notes": [
+        "Les Fiora tres tech anti-purple peuvent reduire cet avantage.",
+        "La plupart des versions plus fair restent plutot bonnes pour Ezreal."
+      ],
+      "source_refs": [
+        "S8",
+        "S15"
+      ]
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "tier_context": "Tier 2",
+      "ezreal_outlook": {
+        "label": "slightly_favorable",
+        "estimated_ezreal_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Annie peut voler des parties sur la vitesse et sur les points, mais Ezreal parait mieux arme pour tenir une fois la premiere vague passee. Le vrai danger est de conserver une main trop lente ou trop value.",
+      "why_matchup_plays_this_way": [
+        "Annie te force a prouver que tu peux survivre aux premiers cycles.",
+        "Si tu passes ce cap sans trop de casse, le deck Ezreal reprend souvent le dessus."
+      ],
+      "opponent_plan": [
+        "Prendre rapidement les points",
+        "Maintenir la pression avec les outils Chaos",
+        "Eviter que la partie ne s'etire jusqu'au confort total d'Ezreal"
+      ],
+      "ezreal_plan": [
+        "Prioriser la survie et la reduction du score adverse au debut",
+        "Eviter les mains lentes",
+        "Stabiliser puis renverser sur la qualite des cartes"
+      ],
+      "mulligan_focus": [
+        "Early interaction mandatory",
+        "No greedy hand"
+      ],
+      "sideboard_focus": [
+        "Anti-race",
+        "Cartes qui aident a passer le cap des premiers points"
+      ],
+      "important_patterns_to_respect": [
+        "Fast point scoring",
+        "Midgame finisher turns",
+        "Chaos burst sequences"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Main trop lente",
+        "Vouloir trop vite valoriser l'engine au lieu de stabiliser",
+        "Se faire enfermer par le score"
+      ],
+      "variation_notes": [
+        "Si Annie est plus miracle/combo que pure aggro, le matchup change un peu et devient plus proche d'un duel violet technique."
+      ],
+      "source_refs": [
+        "S3",
+        "S16"
+      ]
+    },
+    {
+      "opponent": "Sivir, Battle Mistress",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 2 by quality, low by share",
+      "ezreal_outlook": {
+        "label": "close_even_mirror_adjacent",
+        "estimated_ezreal_winrate_percent": "49-52",
+        "confidence": "low"
+      },
+      "summary": "Sivir miracle partage des pieces structurelles avec les autres shells violets, ce qui donne un matchup souvent plus proche d'un duel de moteur et de timing que d'un affrontement de table classique.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks peuvent generer des swings violents.",
+        "Le joueur qui force le mieux la mauvaise fenetre adverse prend souvent la partie."
+      ],
+      "opponent_plan": [
+        "Trouver le bon tour de swing miracle/discard",
+        "Punir les mains d'Ezreal qui ne mettent pas assez de pression"
+      ],
+      "ezreal_plan": [
+        "Rester proactif dans la structure, pas seulement reactif",
+        "Garder assez de densite d'interaction pour casser le tour cle"
+      ],
+      "mulligan_focus": [
+        "Engine ou disruption de qualite",
+        "Pas de main molle"
+      ],
+      "sideboard_focus": [
+        "Mirror tech",
+        "Anti-engine purple"
+      ],
+      "important_patterns_to_respect": [
+        "Cannon Barrage packages",
+        "Discard swing turns",
+        "Rhasa style payoff turns"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Laisser Sivir preparer tranquillement le tour miracle",
+        "Confondre un duel de ressources avec un duel de vitesse"
+      ],
+      "variation_notes": [
+        "Faible confiance faute de volume, mais matchup rarement free."
+      ],
+      "source_refs": [
+        "S3",
+        "S17"
+      ]
+    },
+    {
+      "opponent": "Ornn, Fire Below the Mountain",
+      "meta_share_percent": 3,
+      "tier_context": "Rogue",
+      "ezreal_outlook": {
+        "label": "slightly_favorable",
+        "estimated_ezreal_winrate_percent": "53-57",
+        "confidence": "low"
+      },
+      "summary": "Ornn peut rendre certaines parties tres lourdes avec des grosses unites et de l'equipement, mais son volume competitif reste insuffisant pour en faire une menace structurelle majeure pour Ezreal.",
+      "why_matchup_plays_this_way": [
+        "Ezreal aime en principe casser des pieces couteuses ou trop centralisees.",
+        "Ornn peut cependant voler des parties si Ezreal garde une main trop passive."
+      ],
+      "opponent_plan": [
+        "Installer gros corps/equipements",
+        "Transformer la partie en echange de densite brute"
+      ],
+      "ezreal_plan": [
+        "Empecher la vraie piece payoff de vivre",
+        "Ne pas laisser Ornn imposer un rythme de stat-check pur"
+      ],
+      "mulligan_focus": [
+        "Interaction intelligente",
+        "Pas de main full greed"
+      ],
+      "sideboard_focus": [
+        "Anti-big threat",
+        "Anti-equipment"
+      ],
+      "important_patterns_to_respect": [
+        "Single giant carrier",
+        "Counter-heavy hold turns"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Gaspiller le premium interaction avant le vrai payoff",
+        "Attendre trop longtemps"
+      ],
+      "variation_notes": [
+        "Confiance basse."
+      ],
+      "source_refs": [
+        "S3",
+        "S15"
+      ]
+    },
+    {
+      "opponent": "Rek'Sai, Void Burrower",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 3",
+      "ezreal_outlook": {
+        "label": "slightly_unfavorable_to_even",
+        "estimated_ezreal_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Certaines discussions sur les decks anti-spells only Viktor citent Rek'Sai comme un deck qui submerge vite les plans trop reactifs. Par analogie prudente, Ezreal peut egalement souffrir s'il n'est pas arme contre le swarm/recursion rapide.",
+      "why_matchup_plays_this_way": [
+        "Les decks qui vont vite et reviennent bien peuvent mettre Ezreal sous contrainte de densite.",
+        "Sans les bonnes cartes, Ezreal peut se retrouver a repondre sans progresser."
+      ],
+      "opponent_plan": [
+        "Mettre beaucoup de pieces rapidement",
+        "Forcer les reponses une par une"
+      ],
+      "ezreal_plan": [
+        "Chercher les cartes de reset ou de swing de table",
+        "Ne pas se laisser enfermer dans des 1 pour 1 permanents"
+      ],
+      "mulligan_focus": [
+        "Anti-go-wide",
+        "Main qui fait quelque chose tres tot"
+      ],
+      "sideboard_focus": [
+        "Reset tools",
+        "Interaction de masse ou tempo multi-cibles"
+      ],
+      "important_patterns_to_respect": [
+        "Wide boards",
+        "Recursion pressure"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Mains lentes",
+        "Pas assez de largeur dans les reponses"
+      ],
+      "variation_notes": [
+        "Evaluation prudente par manque de data directe."
+      ],
+      "source_refs": [
+        "S13"
+      ]
+    },
+    {
+      "opponent": "Lucian, Purifier",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 2/3",
+      "ezreal_outlook": {
+        "label": "slightly_favorable",
+        "estimated_ezreal_winrate_percent": "53-57",
+        "confidence": "low"
+      },
+      "summary": "Lucian peut etre ennuyeux quand il construit un bon porteur, mais Ezreal a generalement les bons outils pour casser ce style de partie.",
+      "why_matchup_plays_this_way": [
+        "Le plan Lucian reste assez lisible pour un deck de ciblage intelligent.",
+        "La partie devient plus dure seulement si Ezreal laisse le porteur s'installer sans punition."
+      ],
+      "opponent_plan": [
+        "Porter l'avantage via un equip et un porteur central",
+        "Mettre assez de pression pour taxer les removals"
+      ],
+      "ezreal_plan": [
+        "Conserver les cartes premium pour le vrai tour d'equipement",
+        "Ne pas jouer la partie comme si chaque petite unite devait mourir"
+      ],
+      "mulligan_focus": [
+        "Interaction souple"
+      ],
+      "sideboard_focus": [
+        "Anti-equipment / anti-porteur"
+      ],
+      "important_patterns_to_respect": [
+        "Voltron turns",
+        "Tempo point pushes"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Laisser une piece equipee vivre trop longtemps"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S15"
+      ]
+    },
+    {
+      "opponent": "Rumble, Mechanized Menace",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 3",
+      "ezreal_outlook": {
+        "label": "favorable",
+        "estimated_ezreal_winrate_percent": "55-60",
+        "confidence": "low"
+      },
+      "summary": "Rumble est generalement decrit comme une version moins convaincante des plans Fury/Mind que Kai'Sa. Ezreal parait donc structurellement devant si la partie est jouee proprement.",
+      "why_matchup_plays_this_way": [
+        "Le deck est moins affute et moins valide dans la meta",
+        "Ezreal a le temps d'imposer son plan plus souvent que contre Kai'Sa"
+      ],
+      "opponent_plan": [
+        "Poser gros payoffs et removal corrects",
+        "Faire une partie de midrange plus lourde"
+      ],
+      "ezreal_plan": [
+        "Punir les tours de setup",
+        "Jouer autour des grosses menaces plutot que des petites"
+      ],
+      "mulligan_focus": [
+        "Standard stable hand"
+      ],
+      "sideboard_focus": [
+        "Anti-big payoff"
+      ],
+      "important_patterns_to_respect": [
+        "Large Fury/Mind payoff turns"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Greedy keep",
+        "Mauvaise priorisation des cibles"
+      ],
+      "variation_notes": [
+        "Confiance basse."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 3",
+      "ezreal_outlook": {
+        "label": "slightly_favorable",
+        "estimated_ezreal_winrate_percent": "52-57",
+        "confidence": "low"
+      },
+      "summary": "Sett peut gagner sur la table brute, mais Ezreal a souvent assez d'angles pour eviter le stat-check pur si le pilote garde ses nerfs.",
+      "why_matchup_plays_this_way": [
+        "Sett veut souvent te forcer a jouer une partie de board tres concrete.",
+        "Ezreal peut contourner cela par timing et qualite d'interaction."
+      ],
+      "opponent_plan": [
+        "Statlines + buffs + combats forts"
+      ],
+      "ezreal_plan": [
+        "Refuser le duel de taille brute",
+        "Punir les tours ou Sett surexpose une piece"
+      ],
+      "mulligan_focus": [
+        "Interaction flexible"
+      ],
+      "sideboard_focus": [
+        "Anti-big threat"
+      ],
+      "important_patterns_to_respect": [
+        "Punch First / buff combat turns"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Se laisser enfermer dans le combat frontal"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Ahri, Nine-Tailed Fox",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "ezreal_outlook": {
+        "label": "slightly_favorable",
+        "estimated_ezreal_winrate_percent": "53-57",
+        "confidence": "low"
+      },
+      "summary": "Ahri peut voler des points via mobilite et petits edges, mais elle parait moins robuste que les vrais tops du field contre un deck aussi outilleur qu'Ezreal.",
+      "why_matchup_plays_this_way": [
+        "Ahri demande de bien lire les mouvements et les angles de score.",
+        "Ezreal aime justement les parties ou il peut faire payer les engagements tactiques."
+      ],
+      "opponent_plan": [
+        "Angles de score non standards",
+        "Mobility pressure"
+      ],
+      "ezreal_plan": [
+        "Ne pas sur-commit sur un battlefield",
+        "Garder de quoi casser le tour de vol de points"
+      ],
+      "mulligan_focus": [
+        "Main stable"
+      ],
+      "sideboard_focus": [
+        "Tempo flexible"
+      ],
+      "important_patterns_to_respect": [
+        "Mobility score",
+        "Hold/move tricks"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Mauvaise repartition des menaces"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Yasuo, Unforgiven",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "ezreal_outlook": {
+        "label": "slightly_favorable",
+        "estimated_ezreal_winrate_percent": "53-58",
+        "confidence": "low"
+      },
+      "summary": "Yasuo peut voler des games via mobilite, mais manque de validation competititve face aux grands decks du format.",
+      "why_matchup_plays_this_way": [
+        "Ezreal punit les decks a haute finesse mais a consistance moyenne",
+        "Le danger principal reste le tour de vol de partie"
+      ],
+      "opponent_plan": [
+        "Mobility explosif",
+        "Double-score opportuniste"
+      ],
+      "ezreal_plan": [
+        "Respecter la fenetre de mouvement",
+        "Ne pas s'endormir sur la position du score"
+      ],
+      "mulligan_focus": [
+        "Presence et interaction minimale"
+      ],
+      "sideboard_focus": [
+        "Tempo answers"
+      ],
+      "important_patterns_to_respect": [
+        "Windrider turns",
+        "Unexpected mobility lethal"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Oublier de jouer autour du vol de points"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Teemo, Swift Scout",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "ezreal_outlook": {
+        "label": "favorable",
+        "estimated_ezreal_winrate_percent": "56-61",
+        "confidence": "low"
+      },
+      "summary": "Teemo n'apparait pas comme un vrai predateur d'Ezreal dans le field Spiritforged actuel.",
+      "why_matchup_plays_this_way": [
+        "Ezreal a de quoi contenir le chip pressure puis prendre l'ascendant a la carte"
+      ],
+      "opponent_plan": [
+        "Chip damage and trick tempo"
+      ],
+      "ezreal_plan": [
+        "Stabiliser proprement puis imposer la value"
+      ],
+      "mulligan_focus": [
+        "No greedy keep"
+      ],
+      "sideboard_focus": [
+        "Peu de besoin specifique"
+      ],
+      "important_patterns_to_respect": [
+        "Fast nuisance pressure"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Main trop lente"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Lux, Lady of Luminosity",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "ezreal_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_ezreal_winrate_percent": "50-55",
+        "confidence": "low"
+      },
+      "summary": "Lux peut reproduire partiellement un plan de sorts/controle qui rend les parties longues et techniques, mais elle semble moins oppressante que Viktor dans ce role contre Ezreal.",
+      "why_matchup_plays_this_way": [
+        "Controle de sorts contre controle de sorts",
+        "Le plafond strategique d'Ezreal reste tres eleve"
+      ],
+      "opponent_plan": [
+        "Long game with spell density"
+      ],
+      "ezreal_plan": [
+        "Construire une meilleure conversion des cartes, pas juste plus de cartes"
+      ],
+      "mulligan_focus": [
+        "Engine quality"
+      ],
+      "sideboard_focus": [
+        "Control tech"
+      ],
+      "important_patterns_to_respect": [
+        "Long spell attrition"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Jouer la partie trop passivement"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Miss Fortune, Bounty Hunter",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "ezreal_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_ezreal_winrate_percent": "48-51",
+        "confidence": "low"
+      },
+      "summary": "Miss Fortune peut etre plus ennuyeuse qu'il n'y parait car elle peut mettre de la pression sans trop attendre. Toutefois la data reste trop legere pour un verdict dur.",
+      "why_matchup_plays_this_way": [
+        "Les decks agressifs de tempo exposent le point faible traditionnel d'Ezreal: les mains lentes."
+      ],
+      "opponent_plan": [
+        "Race tempo",
+        "Fast pressure windows"
+      ],
+      "ezreal_plan": [
+        "Stabiliser avant de vouloir grinder",
+        "Ne pas donner de points gratuits"
+      ],
+      "mulligan_focus": [
+        "Early interaction mandatory"
+      ],
+      "sideboard_focus": [
+        "Anti-race"
+      ],
+      "important_patterns_to_respect": [
+        "Fast tempo accelerations"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Underestimating speed"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S18"
+      ]
+    },
+    {
+      "opponent": "Renata Glasc, Chem-Baroness",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3 fringe",
+      "ezreal_outlook": {
+        "label": "slightly_favorable",
+        "estimated_ezreal_winrate_percent": "53-58",
+        "confidence": "low"
+      },
+      "summary": "Deck trop rare pour une lecture dure; par defaut Ezreal garde l'avantage de qualite et de souplesse.",
+      "why_matchup_plays_this_way": [
+        "Pas assez de preuves d'un edge structurel contre Ezreal"
+      ],
+      "opponent_plan": [
+        "Value/tempo atypique"
+      ],
+      "ezreal_plan": [
+        "Jouer simple, propre, sans se faire surprendre"
+      ],
+      "mulligan_focus": [
+        "Standard hand"
+      ],
+      "sideboard_focus": [
+        "No extreme changes"
+      ],
+      "important_patterns_to_respect": [
+        "Unexpected niche tech"
+      ],
+      "main_lose_conditions_for_ezreal": [
+        "Mauvaise lecture d'une ligne non standard"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S1"
+      ]
+    }
+  ],
+  "sources": {
+    "S1": {
+      "type": "meta stats",
+      "title": "riftDecks Spiritforged legend metagame",
+      "date_consulted": "2026-03-11",
+      "notes": "Base de meta share pour hiérarchiser les matchups"
+    },
+    "S2": {
+      "type": "guide",
+      "title": "Riftbound.gg - Ezreal, Prodigal Explorer Guide",
+      "date": "2026-03-10",
+      "notes": "Base sur l'identite du deck, sa complexite, ses signatures et ses packages"
+    },
+    "S3": {
+      "type": "tier list",
+      "title": "Mobalytics Riftbound Tier List",
+      "date_consulted": "2026-03-11",
+      "notes": "Classe Ezreal S-tier et resitue les autres legends"
+    },
+    "S4": {
+      "type": "tier list",
+      "title": "Riftbound.gg Post-Vegas Meta Tier List",
+      "date": "2026-03-06",
+      "notes": "Explique qu'Ezreal est Tier 1 de plafond mais tres dur a jouer"
+    },
+    "S5": {
+      "type": "community thread",
+      "title": "Deck against Ezreal",
+      "date": "2026-03",
+      "notes": "Debat sur Draven vs Ezreal, theorie vs pratique, niveau de pilotage"
+    },
+    "S6": {
+      "type": "community thread",
+      "title": "How does Alanzqt's Ezreal list beat Irelia?",
+      "date": "2026-03",
+      "notes": "Montre a quel point le matchup depend des reps"
+    },
+    "S7": {
+      "type": "tournament report",
+      "title": "Rift Mana - Las Vegas Regional Qualifier Tournament Meta Report",
+      "date": "2026-03-02",
+      "notes": "Ezreal comme deck controle/flexible pour joueurs experts, Vex devenue staple"
+    },
+    "S8": {
+      "type": "community thread",
+      "title": "Questions about AlanzQ's Ezreal Winner Deck",
+      "date": "2026-03",
+      "notes": "Pickpocket pour ameliorer Azir, Downwell contre miracle Draven et Aurora"
+    },
+    "S9": {
+      "type": "community thread",
+      "title": "Deck against Ezreal / Irelia discussion",
+      "date": "2026-03",
+      "notes": "Debat sur edge theorique Ezreal contre Irelia grace a Vex"
+    },
+    "S10": {
+      "type": "community discussion",
+      "title": "General anti-Ez / anti-Draven discussions",
+      "date": "2026-03",
+      "notes": "Tension entre lecture theorique et pratique sur Ezreal"
+    },
+    "S11": {
+      "type": "community thread",
+      "title": "Deck contre Ezreal",
+      "date": "2026-03",
+      "notes": "Kai'Sa mentionnee comme bon matchup contre Ezreal avec certaines techs"
+    },
+    "S12": {
+      "type": "community thread",
+      "title": "Viktor matchups guide",
+      "date": "2026-03",
+      "notes": "Viktor comme deck qui cible bien les plans Ezreal"
+    },
+    "S13": {
+      "type": "community thread",
+      "title": "Trying to build the best possible Viktor list against purple",
+      "date": "2026-03",
+      "notes": "Purple decks, dont Ezreal, vus comme cible de certains builds Viktor"
+    },
+    "S14": {
+      "type": "community thread",
+      "title": "Questions about AlanzQ's Ezreal Winner Deck",
+      "date": "2026-03",
+      "notes": "Azir signale comme matchup pouvant aller trop vite pour Ezreal"
+    },
+    "S15": {
+      "type": "community synthesis",
+      "title": "Threads voltron/equipment and rogue matchup discussions",
+      "date_consulted": "2026-03-11",
+      "notes": "Base prudente pour Lucian, Fiora, Ornn, Jax-like patterns"
+    },
+    "S16": {
+      "type": "Rift Mana Bologna Meta Report",
+      "title": "Regional Qualifier Bologna Tournament Meta Report",
+      "date": "2026-02-22",
+      "notes": "Position d'Ezreal dans la meta occidentale et role controle/late value"
+    },
+    "S17": {
+      "type": "community threads",
+      "title": "Sivir miracle / orange Sivir discussions",
+      "date_consulted": "2026-03-11",
+      "notes": "Aide a evaluer la texture du matchup versus autres shells violets"
+    },
+    "S18": {
+      "type": "community/video mention",
+      "title": "Best decks in Spiritforged / Miss Fortune positioning discussions",
+      "date_consulted": "2026-03-11",
+      "notes": "Indications faibles sur Miss Fortune contre les decks midrange/control"
+    },
+    "S19": {
+      "type": "official update",
+      "title": "Potential Card Bans: Riftbound Game Director's Update",
+      "date": "2026-03-10",
+      "notes": "Aucun ban annonce, rules update le 30 mars"
+    }
+  }
+}

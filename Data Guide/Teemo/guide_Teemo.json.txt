@@ -1,0 +1,1110 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Teemo complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte novembre 2025 a mars 2026 pour suivre l'evolution des shells Teemo",
+    "methodology": {
+      "approach": [
+        "Croisement des guides Teemo recents",
+        "Croisement des best-of decklists officiels de Bologna et Vegas",
+        "Croisement des tier lists post-Bologna et post-Vegas",
+        "Croisement des discussions communautaires sur Hidden, Consult the Past, Ember Monk, Nocturne et le shell miracle",
+        "Accent mis sur le pilotage expert, la structure des shells et la logique de matchup, meme si la legende n'est pas un pilier du meta"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + decklist officielle et/ou retour matchup explicite",
+        "medium": "Consensus raisonnable mais sensible au shell, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "teemo_meta_position": {
+      "riftbound_gg_post_bologna": {
+        "tier": "Tier 3",
+        "notes": "Un bon resultat isole a Bologna, mais metrics globales faibles"
+      },
+      "riftbound_gg_post_vegas": {
+        "tier": "Tier 4",
+        "notes": "Le site considere que Teemo performe surtout en copiant les meilleurs packages Chaos plutot qu'en imposant une synergie propre"
+      },
+      "mobalytics_march_2026": {
+        "tier": "C-tier",
+        "notes": "Mobalytics continue a valoriser Hidden, Consult the Past, et le 2-drop garanti depuis la champion zone"
+      },
+      "official_recent_results": [
+        "Bologna: best-of Teemo #71 overall, shell fast-scoring Hidden/gear",
+        "Vegas: best-of Teemo #63 overall, shell Chaos miracle support",
+        "Houston: 64 joueurs Teemo Day 1, 3 Day 2, archetype deja present mais en retrait par rapport aux tops"
+      ],
+      "overall_read": "Teemo n'est pas un deck de volume ni une reference meta en mars 2026. En revanche, la legende reste tres exploitable entre de bonnes mains, surtout si le pilote choisit clairement l'un des vrais shells jouables au lieu de melanger des pieces incompatibles."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et la logique de construction selon la version choisie, plutot qu'un jugement brut de tier list."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Teemo, Swift Scout",
+    "domains": [
+      "Mind",
+      "Chaos"
+    ],
+    "macro_identity": {
+      "archetype_family": "Hidden tempo / hidden value / chaos miracle support",
+      "primary_gameplan": "Utiliser Hidden pour proteger tes cartes importantes, manipuler les batailles de battlefield, forcer l'adversaire a jouer autour d'informations imparfaites, puis convertir ce brouillard tactique en points ou en swing de ressources.",
+      "secondary_gameplan": "Selon le shell: soit jouer Teemo comme moteur de Hidden dans un shell miracle purple, soit comme deck fast-scoring avec gear et pieces de tempo, soit comme hidden-control/value autour de Consult the Past, Ember Monk et des grosses pieces de fin comme Dr. Mundo ou Watcher.",
+      "why_the_legend_is_strong": [
+        "Teemo paye Hidden avec de l'Energy plutot qu'avec du Power, ce qui rend les cartes Hidden beaucoup plus efficaces que sous d'autres legends",
+        "La legende peut remettre un Teemo unite depuis le board ou la Champion Zone en main, ce qui donne de la recursion et de la flexibilite a l'outil Hidden",
+        "Teemo punit tres fort les adversaires qui lisent mal les battlefields ou qui forcent des conquers sans respecter les cartes face cachee",
+        "Quand Teemo touche son bon shell, il transforme les battlefields en probleme d'information autant qu'en probleme de combat"
+      ],
+      "why_the_legend_is_hard": [
+        "Le deck demande une excellente lecture des battlefields et des tempos de reveal",
+        "Les erreurs de sequencing Hidden coutent tres cher",
+        "Teemo n'a pas le droit a beaucoup de keeps approximatifs, surtout hors shell miracle",
+        "Les trois vrais shells jouent des parties tres differentes et se sideboardent differemment"
+      ]
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Chaos/Mind Miracle Support Teemo",
+        "status_march_2026": "Shell de reference actuel",
+        "evidence": [
+          "Best-of Teemo officiel a Vegas",
+          "Riftbound.gg explique que Teemo suit Ezreal en Spiritforged",
+          "Plusieurs joueurs communautaires disent que la meilleure facon de rendre Teemo viable est de brancher le package purple miracle"
+        ],
+        "identity": "Teemo sert ici moins comme coeur d'un deck Hidden pur que comme facon d'ajouter de la pression hidden et des angles de battlefield a un shell Chaos miracle tres efficace. C'est le Teemo le plus 'competitif' de mars 2026, mais aussi celui qui ressemble le plus a un autre deck purple.",
+        "reference_core": [
+          "Called Shot",
+          "Ezreal, Prodigy",
+          "Rhasa the Sunderer",
+          "Scrapheap",
+          "Seal of Discord",
+          "Stacked Deck",
+          "Stupefy",
+          "Switcheroo",
+          "Time Warp",
+          "Traveling Merchant",
+          "Teemo, Scout",
+          "Guerilla Warfare",
+          "Wages of Pain"
+        ],
+        "reference_battlefields": [
+          "Bandle Tree",
+          "Obelisk of Power",
+          "Zaun Warrens"
+        ],
+        "chosen_champion": "Teemo, Scout",
+        "default_for_matchups_below": true
+      },
+      {
+        "name": "Fast-Scoring Hidden/Gear Teemo",
+        "status_march_2026": "Shell reel et distinct",
+        "evidence": [
+          "Best-of Teemo officiel a Bologna",
+          "Riftbound.gg note qu'a Bologna Teemo jouait une liste de score rapide basee sur la gear synergy"
+        ],
+        "identity": "Version plus agressive et plus de tempo pur, centre sur des openings de battlefield tres oppressants, des cartes comme Edge of Night, Pickpocket, Pit Crew, Nocturne et le package Hidden/tempo pour voler les points avant que l'adversaire ne s'installe.",
+        "reference_core": [
+          "Called Shot",
+          "Card Sharp",
+          "Cull",
+          "Dropboarder",
+          "Edge of Night",
+          "Ezreal, Prodigy",
+          "Fight or Flight",
+          "Nocturne, Horrifying",
+          "Pickpocket",
+          "Pit Crew",
+          "Rebuke",
+          "Seal of Discord",
+          "Stacked Deck",
+          "Switcheroo",
+          "Thousand-Tailed Watcher"
+        ],
+        "reference_battlefields": [
+          "Power Nexus",
+          "The Arena's Greatest",
+          "The Candlelit Sanctum"
+        ],
+        "chosen_champion": "Teemo, Scout"
+      },
+      {
+        "name": "Hidden Control/Value Teemo",
+        "status_march_2026": "Shell communautaire encore reel, mais plus fragile dans le meta actuel",
+        "evidence": [
+          "Threads recents sur Ember Monk / Consult the Past / Dr. Mundo",
+          "Conseils communautaires repetes sur Consult the Past, Fight or Flight et Hidden sequencing",
+          "Des joueurs disent explicitement que le build Ember Monk souffre contre le meta actuel mais reste jouable si on accepte son plan"
+        ],
+        "identity": "Version la plus 'Teemo' au sens classique: Hidden value, card flow, bluff, gestion fine des battlefields, puis fin de partie avec Dr. Mundo, Watcher ou des grosses chaines de Fight or Flight. C'est le shell qui exploite le plus la saveur de Teemo, mais pas le plus simple ni le plus stable en mars 2026.",
+        "reference_core": [
+          "Consult the Past",
+          "Ember Monk",
+          "Fight or Flight",
+          "Gust",
+          "Ravenbloom Student",
+          "Stacked Deck",
+          "Stupefy",
+          "Traveling Merchant",
+          "Dr. Mundo, Expert",
+          "Tideturner",
+          "Ride the Wind",
+          "Sprite Call",
+          "Teemo, Scout",
+          "Thousand-Tailed Watcher"
+        ],
+        "reference_battlefields": [
+          "Bandle Tree",
+          "Grove of the God-Willow",
+          "Targon's Peak"
+        ],
+        "chosen_champion": "Teemo, Scout",
+        "important_note": "Ce shell continue d'exister, mais plusieurs joueurs considerent qu'il lutte plus que le shell miracle contre le meta Spiritforged de mars 2026."
+      }
+    ],
+    "rules_and_technical_interactions": {
+      "teemo_hidden_from_champion_zone": true,
+      "explanation": "Les clarifications de regles et discussions communautaires recentes convergent vers le fait qu'une carte avec Hidden peut etre jouee cachee directement depuis la Champion Zone. Dans le cas de Teemo, l'adversaire sait alors qu'il s'agit de Teemo, mais tu economises une etape.",
+      "hidden_control_loss_warning": true,
+      "hidden_control_loss_explanation": "Une carte Hidden peut etre perdue si tu perds le controle du battlefield concerné avant d'avoir le bon timing pour l'utiliser. C'est une des contraintes les plus importantes du pilotage Teemo.",
+      "teemo_scout_role": "Champion cle pour tenir un battlefield ou punir un conquer, notamment grace au bonus de might quand il arrive cache ou au bon timing selon le shell.",
+      "hidden_sequencing_note": "Teemo ne gagne pas parce qu'il cache beaucoup de cartes; il gagne parce qu'il cache la bonne carte, au bon battlefield, contre le bon timing."
+    },
+    "advanced_pilot_principles": [
+      {
+        "name": "Hidden is information asymmetry first, value second",
+        "detail": "Le plus gros avantage de Teemo n'est pas seulement la carte gratuite ou la reaction surprise. C'est le fait que l'adversaire doit deviner si ton hidden represente du draw, du removal, un trick de combat, un pivot de score ou juste du bluff."
+      },
+      {
+        "name": "You are playing the battlefield, not just the cards",
+        "detail": "Teemo est une legende de geometry. Chaque hidden change la valeur d'un battlefield. Il faut penser en 'si l'adversaire conquer ici, que se passe-t-il vraiment ?' plutôt qu'en simple courbe."
+      },
+      {
+        "name": "Do not hide cards you can't afford to lose",
+        "detail": "Une regle de pilotage fondamentale. Si un hidden saute juste parce que tu perds le battlefield sans showdown, tu as souvent perdu une ressource structurelle tres importante."
+      },
+      {
+        "name": "Choose your Teemo shell before you choose your Teemo cards",
+        "detail": "Le plus grand piege de deckbuilding Teemo est de melanger trop de pieces miracle, trop de pieces Ember Monk, trop de pieces Nocturne et trop de cartes de pur hidden bluff. Le deck devient alors incoherent."
+      },
+      {
+        "name": "Consult the Past is often your best early hide in value shells",
+        "detail": "Beaucoup de joueurs Teemo experimentes cachent volontiers Consult the Past tres tot, surtout quand ils n'ont pas besoin de tenir ce hidden pour un gros combat immediat."
+      },
+      {
+        "name": "Miracle-support Teemo should not cosplay pure Hidden Teemo",
+        "detail": "Dans la version Vegas, Teemo est avant tout une extension d'un shell miracle purple. Si tu la pilotes comme un pur deck de mind games, tu perds trop de puissance brute."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "teemo_swift_scout_role": "La legende permet de payer Hidden avec de l'Energy plutot qu'en retournant une rune, ce qui est la cle de toute la competitivite du personnage.",
+      "teemo_scout_role": "Un des meilleurs outils Hidden du deck. Il aide a tenir un front ou a rendre un conquer adverse tres dangereux.",
+      "consult_the_past_role": "Probablement la carte la plus marquee des versions Hidden value/control. Mobalytics la cite explicitement comme une des cartes qui profite le plus de la reduction implicite de cout offerte par la legende.",
+      "guerilla_warfare_role": "Carte importante dans les shells plus Hidden-centric. Elle ajoute de la selection et du burst de valeur a un style deja tres riche en informations partielles.",
+      "ember_monk_role": "Pivot des versions Hidden control/value. Il donne des tours de defense tres delicats a lire et supporte bien les reactions cachees.",
+      "fight_or_flight_role": "Carte extremement importante dans presque toutes les versions. Les joueurs communautaires la decrivent comme incroyable dans Teemo, car elle transforme souvent un battlefield apparemment stable en blowout.",
+      "stacked_deck_role": "Colonne vertebrale commune a beaucoup de versions modernes, y compris les shells miracle-support.",
+      "ezreal_prodigy_role": "Dans les shells Spiritforged les plus performants, Teemo emprunte explicitement Ezreal et une partie de son package.",
+      "seal_of_discord_role": "Autre piece signature des versions miracle-support et de certaines versions fast-scoring.",
+      "nocturne_horrifying_role": "Carte marquee des versions Bologna et de certaines versions Nocturne Teemo. Elle permet des swings de pressure et de ganking tres difficiles a encaisser.",
+      "dr_mundo_expert_role": "Carte recurrente des versions Hidden control/value. Les discussions communautaires disent regulierement qu'il est difficile a gerer pour Kai'Sa et plusieurs decks Aurora.",
+      "thousand_tailed_watcher_role": "Top-end de tempo/control commun a plusieurs versions Teemo.",
+      "pickpocket_role": "Tres visible dans le shell Bologna fast-scoring. Soutient l'idee que Teemo peut jouer un vrai plan de points et de tempo, pas seulement de bluff."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Mixing all Teemo packages together",
+        "why_it_loses": "C'est de loin la plus grosse erreur de construction. Le deck devient une pile de bonnes idees incompatibles."
+      },
+      {
+        "mistake": "Hiding premium cards on unstable battlefields",
+        "why_it_loses": "Si tu perds le front sans showdown, ton hidden peut juste disparaitre. C'est une vraie punition de pilotage."
+      },
+      {
+        "mistake": "Playing Miracle Teemo like a pure hidden bluff deck",
+        "why_it_loses": "Le shell Vegas gagne surtout grace au package purple, Teemo y est un amplificateur, pas l'entiere colonne vertebrale."
+      },
+      {
+        "mistake": "Countering or reacting too mechanically around Consult the Past",
+        "why_it_loses": "Selon la situation, Consult est parfois la meilleure cible a couper, et parfois une mauvaise. Le vrai critere est la texture du board et ta capacite a battre ce qui sera pioche."
+      },
+      {
+        "mistake": "Assuming any turn-2 hidden is automatically correct",
+        "why_it_loses": "Le bon hidden depend du matchup, du battlefield et de la probabilite de perdre le front. Beaucoup de joueurs mettent automatiquement la mauvaise carte."
+      },
+      {
+        "mistake": "Trying to defend every battlefield equally",
+        "why_it_loses": "Teemo gagne souvent parce qu'un front est un piege et l'autre un score, pas parce qu'il tient tout uniformement."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Quand ton front est tres stable, Consult the Past est souvent un meilleur hidden precoce que Fight or Flight.",
+      "Dans les shells control/value, planifie toujours ce qui se passe si tu perds le battlefield avant de cacher une carte importante.",
+      "Si ton adversaire respecte trop tes hidden, tu peux souvent convertir ce respect en points meme sans jamais declencher la carte cachee.",
+      "Dans les shells miracle-support, Teemo est souvent meilleur en tant que menace de timing qu'en tant que moteur principal de value.",
+      "Sigil of the Storm est defendu par certains joueurs Teemo comme meilleur troisieme battlefield quand tu commences et que tu n'es pas dans un shell Nocturne trop particulier."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Chaos/Mind Miracle Support Teemo",
+      "teemo_outlook": {
+        "label": "unfavorable",
+        "estimated_teemo_winrate_percent": "40-46",
+        "confidence": "medium"
+      },
+      "summary": "Le signal recent le plus direct est que Draven est souvent cite comme le pire matchup de Teemo en Spiritforged. Cela colle bien a la structure du pairing: Draven punit les fronts fragiles, les mains lentes et les decks qui doivent gagner un peu plus lentement la guerre de battlefield.",
+      "why_matchup_plays_this_way": [
+        "Draven met de la pression de table avant que beaucoup de lignes Teemo deviennent vraiment oppressantes.",
+        "Les shells Teemo trop lents ou trop orientes bluff donnent a Draven exactement le temps qu'il veut."
+      ],
+      "opponent_plan": [
+        "prendre les premiers points",
+        "forcer Teemo a defendre trop honestement",
+        "faire exploser la valeur des combats"
+      ],
+      "teemo_plan": [
+        "ne pas essayer de tenir tous les fronts",
+        "mettre un vrai hidden sur le front qui compte et accepter parfois de ceder l'autre",
+        "en miracle-support, jouer plus comme un shell purple tempo que comme un pur deck Hidden",
+        "en fast-scoring Bologna, voler les points avant que Draven ne stabilise la largeur"
+      ],
+      "mulligan_focus": [
+        "2-drop ou ligne de debut reelle",
+        "Stacked Deck ou moteur coherent",
+        "pas de hand full late",
+        "pas de hand trop fancy sans vraie presence"
+      ],
+      "sideboard_focus": [
+        "Downwell si accessible dans le shell miracle",
+        "anti-board flex slots",
+        "retirer les cartes trop lentes ou trop cute"
+      ],
+      "battlefield_notes": [
+        "Bandle Tree et Zaun Warrens sont meilleurs si tu peux y tenir un front longtemps.",
+        "Le matchup devient tres mauvais si Draven tient deux battlefields avant ton premier vrai pivot."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "mains lentes",
+        "hidden place sur le mauvais front",
+        "essayer de grind fair contre la meilleure table du format"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "large board tempo",
+        "Brynhir turns",
+        "2 energie ouverte"
+      ],
+      "variation_notes": {
+        "fast_scoring_hidden_gear": "C'est probablement la meilleure version Teemo pour jouer ce matchup de face, car elle accepte plus volontiers la course aux points.",
+        "hidden_control_value": "C'est la plus fragile ici si elle ouvre lentement.",
+        "miracle_support": "Plus de plafond de cartes, mais souvent encore derriere sur le tempo pur."
+      }
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Chaos/Mind Miracle Support Teemo",
+      "teemo_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_teemo_winrate_percent": "44-49",
+        "confidence": "low"
+      },
+      "summary": "Le pairing reste difficile, mais un peu moins 'brutalement lisible' que Midrange Draven. Teemo miracle-support peut parfois lutter sur le meme axe de ressources, meme si Draven reste plus propre globalement.",
+      "why_matchup_plays_this_way": [
+        "Miracle Draven passe aussi par des tours plus lents ou plus setup, ce qui laisse parfois Teemo exister.",
+        "Mais Teemo reste souvent la version inferieure du shell purple si la partie se transforme en pure course au plafond."
+      ],
+      "opponent_plan": [
+        "cycler jusqu'au tour de swing",
+        "punir les fronts trop fragiles"
+      ],
+      "teemo_plan": [
+        "mettre assez de pression de score pour forcer Draven a devier de son timing parfait",
+        "ne pas sous-estimer les propres turns explosifs de Teemo miracle-support",
+        "garder les reponses premium pour le vrai pivot"
+      ],
+      "mulligan_focus": [
+        "moteur coherent",
+        "presence de battlefield",
+        "pas de main full reactive sans close"
+      ],
+      "sideboard_focus": [
+        "anti-miracle flex slots",
+        "Unchecked Power selon build",
+        "removals ou swings plus larges"
+      ],
+      "battlefield_notes": [
+        "Un front tres clairement piege pour l'adversaire vaut souvent mieux que deux fronts moyens."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "jouer trop lentement",
+        "devenir la version low-power du deck purple"
+      ],
+      "important_patterns_to_respect": [
+        "stacking turns",
+        "Rhasa turns",
+        "wide miracle transitions"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Chaos/Mind Miracle Support Teemo",
+      "teemo_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_teemo_winrate_percent": "46-51",
+        "confidence": "low"
+      },
+      "summary": "Le pairing Kai'Sa depend beaucoup du shell. Les discussions plus anciennes le qualifient de difficile pour Teemo classique, alors que des retours recents disent que Nocturne Teemo avec Dr. Mundo peut bien s'en sortir contre Kai'Sa et Yi.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa est excellente pour tuer les bonnes unites et casser les fronts un par un.",
+        "Teemo hidden-control peut souffrir si ses pieces importantes se font retirer proprement.",
+        "Les versions Nocturne/Mundo ou fast scoring peuvent mieux punir le temps de setup de Kai'Sa."
+      ],
+      "opponent_plan": [
+        "garder les battlefields contestables",
+        "tuer les bons porteurs ou les bons fronts",
+        "fermer avec Time Warp ou gros top-end"
+      ],
+      "teemo_plan": [
+        "ne pas s'enfermer dans une partie trop longue si ta version n'est pas miracle-support",
+        "Dr. Mundo est souvent ta meilleure piece de bascule dans les versions qui le jouent",
+        "en miracle-support, forcer Kai'Sa a repondre sur plusieurs axes plutot qu'a un seul"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "main coherente",
+        "pas de keep dependante d'une seule unite"
+      ],
+      "sideboard_focus": [
+        "Dr. Mundo supplementaire selon shell",
+        "Mindsplitter selon versions Hidden value",
+        "retirer les cartes qui n'alignent pas bien contre removal lourd"
+      ],
+      "battlefield_notes": [
+        "Les fronts longs tenus par une seule piece sont souvent mauvais contre Kai'Sa."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "jouer trop tall trop tot",
+        "laisser Kai'Sa choisir tous les removals et tous les points"
+      ],
+      "important_patterns_to_respect": [
+        "Falling Star",
+        "Hextech Ray",
+        "Time Warp"
+      ],
+      "variation_notes": {
+        "hidden_control_value": "Peut etre plutot mauvais si la version n'a pas de vraie piece lourde type Mundo.",
+        "nocturne_or_mundo_subbranch": "C'est la sous-version qui semble la meilleure contre Kai'Sa selon certains retours locaux.",
+        "miracle_support": "Peut maintenir le pairing proche de l'equilibre si le pilote joue vraiment sur le meme axe de ressources."
+      }
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "default_shell": "Chaos/Mind Miracle Support Teemo",
+      "teemo_outlook": {
+        "label": "unfavorable",
+        "estimated_teemo_winrate_percent": "41-47",
+        "confidence": "medium"
+      },
+      "summary": "C'est un des pairings les plus clairement penibles dans les retours de joueurs Teemo. Les decks jaunes, surtout Sett et Viktor, sont cites comme les plus durs; et les threads specifie sur Teemo vs yellow racontent des scenarios ou Viktor rase la table puis retire les grosses pieces proprement.",
+      "why_matchup_plays_this_way": [
+        "Viktor punit la largeur fragile et les fronts moyens de Teemo.",
+        "Il a aussi des removals de qualite et des lignes qui ignorent en partie les petits mind games de Hidden."
+      ],
+      "opponent_plan": [
+        "nettoyer les bons fronts",
+        "gagner par attrition et removals bien calibres"
+      ],
+      "teemo_plan": [
+        "ne pas surdevelopper un front qui perd a Imperial Decree ou Hidden Blade style pressure",
+        "Mindsplitter et Dr. Mundo sont souvent parmi les meilleures cartes contre les versions jaunes",
+        "garder un vrai plan de points, pas seulement de resistance"
+      ],
+      "mulligan_focus": [
+        "2-drop ou ligne de debut reelle",
+        "pas de main lente",
+        "pieces de valeur resilientes"
+      ],
+      "sideboard_focus": [
+        "Mindsplitter",
+        "Dr. Mundo",
+        "retirer les cartes les plus faibles en attrition pure"
+      ],
+      "battlefield_notes": [
+        "Si Viktor te force a tenir les deux fronts avec des petites unites, le matchup glisse vite."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "largeur sans plan",
+        "pas de grosse piece de re-appui",
+        "mauvaise gestion des removals jaunes"
+      ],
+      "important_patterns_to_respect": [
+        "Imperial Decree",
+        "Hidden Blade",
+        "token or recruit stalls",
+        "yellow removal density"
+      ],
+      "variation_notes": {
+        "hidden_control_value": "Souffre beaucoup si elle n'ouvre pas tot.",
+        "miracle_support": "Un peu mieux outille, mais reste generalement derriere.",
+        "fast_scoring_hidden_gear": "Peut voler un match si Viktor stumble, mais structurellement reste sous pression."
+      }
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_share_percent": 5,
+      "default_shell": "Chaos/Mind Miracle Support Teemo",
+      "teemo_outlook": {
+        "label": "unfavorable",
+        "estimated_teemo_winrate_percent": "42-47",
+        "confidence": "medium"
+      },
+      "summary": "Comme Viktor, Sett est cite par des joueurs Teemo comme un des gros pairings jaunes a craindre.",
+      "why_matchup_plays_this_way": [
+        "Sett peut rendre les seuils de combat tres penibles pour les unites moyennes de Teemo.",
+        "Teemo prefere souvent gagner via geographie de battlefield et information imparfaite; Sett aime reduire la partie a la taille et aux buffs."
+      ],
+      "opponent_plan": [
+        "te forcer a jouer des combats honnêtes",
+        "prendre les fronts par taille pure"
+      ],
+      "teemo_plan": [
+        "eviter le pur stat-check",
+        "forcer Sett a naviguer plusieurs menaces de timing plutot qu'une seule grosse table claire",
+        "si possible, passer plus vite en plan de points et de close qu'en plan de grind"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "pas de hand lente",
+        "interaction propre"
+      ],
+      "sideboard_focus": [
+        "Mindsplitter",
+        "big stabilizers",
+        "retirer les cartes trop cute"
+      ],
+      "battlefield_notes": [
+        "Teemo doit souvent accepter qu'un battlefield devienne un piege plutot qu'un front a tenir longtemps."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "jouer la partie de taille pure",
+        "perdre trop de ressources a tenir un mauvais front"
+      ],
+      "important_patterns_to_respect": [
+        "Body buffs",
+        "combat spikes",
+        "single large holders"
+      ]
+    },
+    {
+      "opponent": "Aurora decks",
+      "meta_share_percent": 0,
+      "default_shell": "Hidden Control/Value Teemo",
+      "teemo_outlook": {
+        "label": "favorable",
+        "estimated_teemo_winrate_percent": "55-61",
+        "confidence": "medium"
+      },
+      "summary": "C'est le signal matchup positif le plus clair dans les discussions Teemo. Des joueurs Teemo disent explicitement que leurs matchups les plus faciles sont les decks Aurora, en expliquant qu'ils peuvent prendre beaucoup de points avec les early units puis battre le premier gros tour Aurora avec Dr. Mundo ou Mindsplitter.",
+      "why_matchup_plays_this_way": [
+        "Aurora donne souvent a Teemo le temps de marquer les premiers points.",
+        "Teemo peut aussi retirer l'Aurora de la main avec Mindsplitter ou perturber le premier vrai payoff."
+      ],
+      "opponent_plan": [
+        "survivre jusqu'au premier gros tour Aurora",
+        "stabiliser les battlefields en un seul pivot"
+      ],
+      "teemo_plan": [
+        "marquer vite les premiers points",
+        "ne pas laisser Aurora devenir un reset total du tempo",
+        "Mindsplitter sur Aurora ou sur la vraie carte qui permet le premier gros swing",
+        "Dr. Mundo comme ancre de front dans les versions qui le jouent"
+      ],
+      "mulligan_focus": [
+        "early units",
+        "Consult the Past ou moteur de cartes",
+        "main qui met de vrais points vite"
+      ],
+      "sideboard_focus": [
+        "Mindsplitter",
+        "Dr. Mundo",
+        "retirer les cartes trop lentes ou trop reactives"
+      ],
+      "battlefield_notes": [
+        "Teemo adore les matchups ou l'adversaire lui laisse le temps de transformer un front en front-piege."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "ne pas assez punir l'avant-Aurora",
+        "laisser l'adversaire lancer Aurora a un score encore confortable"
+      ],
+      "important_patterns_to_respect": [
+        "Dazzling Aurora",
+        "Mindsplitter races",
+        "big payoff stabilizers"
+      ],
+      "variation_notes": {
+        "miracle_support": "Toujours bon si la pression est reelle, mais un peu moins naturellement punitif que Hidden control/value.",
+        "fast_scoring_hidden_gear": "Excellent aussi, car il transforme bien les premiers tours en vrais points."
+      }
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Chaos/Mind Miracle Support Teemo",
+      "teemo_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_teemo_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "Le pairing est complique a lire parce que le Teemo post-Vegas ressemble deja partiellement a un Ezreal-bis. Structurellement, si la partie devient juste une guerre de cartes violettes, Ezreal est souvent mieux arme. Teemo doit donc tirer profit de Hidden et de la pression de battlefield pour garder une vraie raison d'exister.",
+      "why_matchup_plays_this_way": [
+        "Ezreal est souvent la version plus coherente du shell purple.",
+        "Teemo doit donc gagner sur la partie 'battlefield and timing' et pas sur la pure course au card advantage."
+      ],
+      "opponent_plan": [
+        "ralentir et gagner a la resource quality",
+        "forcer Teemo a devenir un mauvais Ezreal"
+      ],
+      "teemo_plan": [
+        "creer de la pression ou des fronts pieges",
+        "ne pas accepter la pure guerre de grind",
+        "profiter du fait que Teemo peut encore menacer un hidden qui change la donne"
+      ],
+      "mulligan_focus": [
+        "main proactive",
+        "moteur coherent",
+        "pas de hand full late"
+      ],
+      "sideboard_focus": [
+        "anti-purple flex slots",
+        "retirer les cartes les moins impactantes en mirror-ish grind"
+      ],
+      "battlefield_notes": [
+        "Un battlefield vraiment menacant vaut plus qu'une jolie main sans scoreboard."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "devenir juste un Ezreal moins bon",
+        "ne pas tirer profit de Hidden"
+      ],
+      "important_patterns_to_respect": [
+        "Rhasa turns",
+        "Called Shot loops",
+        "late purple chains"
+      ],
+      "variation_notes": {
+        "fast_scoring_hidden_gear": "Peut etre legerement meilleure ici si elle met assez de clock.",
+        "hidden_control_value": "Peut trop facilement se faire absorber si elle n'a pas de reel angle de close."
+      }
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Fast-Scoring Hidden/Gear Teemo",
+      "teemo_outlook": {
+        "label": "close_even",
+        "estimated_teemo_winrate_percent": "47-52",
+        "confidence": "low"
+      },
+      "summary": "On a peu de retours directs recents sur Teemo vs Irelia en Spiritforged, mais la logique structurelle dit que le pairing depend enormement de la version Teemo. Les builds plus rapides et plus tricky peuvent mieux punir les sorties moyennes d'Irelia que les builds Hidden value lents.",
+      "why_matchup_plays_this_way": [
+        "Irelia punit les fronts mal tenus et les plans trop setup.",
+        "Teemo peut toutefois rendre les conquetes tres dangereuses si le bon hidden est deja en place."
+      ],
+      "opponent_plan": [
+        "tenir un front avec un porteur protege",
+        "convertir vite les battlefields"
+      ],
+      "teemo_plan": [
+        "mettre un vrai hidden sur le front cle",
+        "punir le premier conquer trop ambitieux",
+        "prendre des points ailleurs plutot que tout defendre"
+      ],
+      "mulligan_focus": [
+        "presence early",
+        "carte Hidden utile vite",
+        "pas de main full late"
+      ],
+      "sideboard_focus": [
+        "tempo tools",
+        "anti-porteur flex",
+        "retirer les cartes les plus lentes"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient mauvais si Irelia tient un battlefield gratuitement avec protection."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "trop attendre",
+        "cacher la mauvaise carte sur le mauvais front"
+      ],
+      "important_patterns_to_respect": [
+        "GA/boots lines",
+        "double-score turns",
+        "combat tricks"
+      ],
+      "variation_notes": {
+        "miracle_support": "Un peu moins naturel pour punir Irelia vite.",
+        "fast_scoring_hidden_gear": "Probablement le meilleur shell Teemo pour ce pairing.",
+        "hidden_control_value": "Plus vulnerable aux sorties rapides d'Irelia."
+      }
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 5,
+      "default_shell": "Fast-Scoring Hidden/Gear Teemo",
+      "teemo_outlook": {
+        "label": "close_even",
+        "estimated_teemo_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Annie met la pression sur les keeps lents, mais Teemo a aussi des lignes de score et de defense piegee qui punissent les fronts trop agressifs.",
+      "why_matchup_plays_this_way": [
+        "Annie veut finir avant les gros pivots de valeur.",
+        "Teemo peut inverser un front si le hidden correct est pret."
+      ],
+      "opponent_plan": [
+        "prendre les premiers points vite",
+        "punir les mains setup"
+      ],
+      "teemo_plan": [
+        "mulligan tres agressif",
+        "favoriser la presence de board et les hidden immediatement utiles",
+        "ne pas se raconter l'histoire d'un plan lent si la main ne le supporte pas"
+      ],
+      "mulligan_focus": [
+        "2-drop ou vraie ligne de depart",
+        "interaction immediate",
+        "aucun keep greed"
+      ],
+      "sideboard_focus": [
+        "cartes peu chères",
+        "stabilisation",
+        "retirer le top-end superflu"
+      ],
+      "battlefield_notes": [
+        "Les fronts de pure race sont dangereux si Teemo ne fait rien avant le tour 2-3."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "main lente",
+        "perdre trop de points avant le premier vrai pivot"
+      ],
+      "important_patterns_to_respect": [
+        "fast point starts",
+        "Chaos burst"
+      ]
+    },
+    {
+      "opponent": "Lux / other yellow control shells",
+      "meta_share_percent": 1,
+      "default_shell": "Hidden Control/Value Teemo",
+      "teemo_outlook": {
+        "label": "unfavorable",
+        "estimated_teemo_winrate_percent": "42-47",
+        "confidence": "low"
+      },
+      "summary": "Les retours Teemo recents vont dans le meme sens que contre Viktor: le removal jaune reste un gros probleme, surtout pour les versions Hidden value qui ont besoin que certains fronts vivent assez longtemps.",
+      "why_matchup_plays_this_way": [
+        "Les decks jaunes menacent mieux les fronts de taille moyenne.",
+        "Ils obligent Teemo a prouver que ses hidden generent un swing reel et pas seulement une carte de plus."
+      ],
+      "opponent_plan": [
+        "nettoyer les bonnes pieces",
+        "ne pas se faire pieger par les hidden de faible impact"
+      ],
+      "teemo_plan": [
+        "identifier le front qui vaut vraiment la peine d'etre protege",
+        "ne pas surinvestir des hidden dans un battlefield qui peut sauter proprement"
+      ],
+      "mulligan_focus": [
+        "mains coherentes",
+        "resilience",
+        "pas de hand dependante d'une seule piece"
+      ],
+      "sideboard_focus": [
+        "Mindsplitter",
+        "big finishers resilient",
+        "retirer les cartes trop legeres si elles ne convertissent rien"
+      ],
+      "battlefield_notes": [
+        "Teemo doit souvent rendre un front empoisonne plutot que chercher a tout tenir."
+      ],
+      "main_lose_conditions_for_teemo": [
+        "placements Hidden trop optimistes",
+        "epuisement des ressources sans vrai scoreboard"
+      ],
+      "important_patterns_to_respect": [
+        "yellow hard removal",
+        "front reset turns"
+      ]
+    }
+  ],
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "miracle_support_keep": [
+        "Stacked Deck",
+        "Called Shot si la curve suit",
+        "un 2-drop ou une vraie ligne de debut",
+        "main avec plan de battlefield concret"
+      ],
+      "fast_scoring_hidden_gear_keep": [
+        "Dropboarder",
+        "Pit Crew",
+        "Edge of Night",
+        "Pickpocket",
+        "main qui marque tot"
+      ],
+      "hidden_control_value_keep": [
+        "Consult the Past",
+        "Ember Monk",
+        "Ravenbloom Student",
+        "Fight or Flight si le front semble tenable"
+      ],
+      "ship": [
+        "main full top-end",
+        "main sans debut de partie",
+        "main full bluff sans veritable front a tenir",
+        "main qui perd si l'adversaire te conteste tout de suite"
+      ],
+      "notes": [
+        "Teemo corrige mal les mauvais keeps.",
+        "Choisis d'abord le shell que tu pilotes, puis mulligane selon sa vraie identite."
+      ]
+    },
+    "draven_midrange": {
+      "keep": [
+        "presence early",
+        "Stacked Deck ou equivalent si la main a deja du board",
+        "pas de keep full late"
+      ],
+      "ship": [
+        "main setup-only",
+        "main sans pression"
+      ]
+    },
+    "draven_miracle": {
+      "keep": [
+        "pression reelle",
+        "moteur coherent",
+        "pas de hand sans scoreboard"
+      ],
+      "ship": [
+        "main full reactive sans close",
+        "main lente"
+      ]
+    },
+    "kaisa": {
+      "keep": [
+        "plusieurs menaces imparfaites",
+        "main pas all-in sur une seule unite",
+        "Dr. Mundo si le shell le joue et que la curve suit"
+      ],
+      "ship": [
+        "main trop tall",
+        "main sans tempo"
+      ]
+    },
+    "viktor": {
+      "keep": [
+        "2-drop",
+        "moteur de cartes",
+        "piece lourde resiliente si la main la supporte"
+      ],
+      "ship": [
+        "main lente",
+        "main qui n'existe que si le hidden passe parfaitement"
+      ]
+    },
+    "aurora_decks": {
+      "keep": [
+        "early units",
+        "Consult the Past",
+        "Mindsplitter si le shell le joue",
+        "main qui met vite 2-4 points"
+      ],
+      "ship": [
+        "main trop reactive",
+        "main qui n'attaque pas assez tot"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "draven_midrange": {
+      "in": [
+        "anti-board flex slots",
+        "Downwell si shell miracle",
+        "removals plus larges si disponibles"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "bluffs trop cute"
+      ],
+      "plan": [
+        "Ne pas transformer le matchup en simple grind fair.",
+        "Garder la capacite a voler des points et a pieger un front."
+      ]
+    },
+    "draven_miracle": {
+      "in": [
+        "anti-miracle flex slots",
+        "Unchecked Power selon build",
+        "big punishment cards"
+      ],
+      "out": [
+        "cartes faibles en board pressure"
+      ],
+      "plan": [
+        "Clock plus disruption, pas juste plus de draw."
+      ]
+    },
+    "kaisa": {
+      "in": [
+        "Dr. Mundo supplementaire",
+        "Mindsplitter selon shell",
+        "cartes resilientes"
+      ],
+      "out": [
+        "cartes trop dependantes d'un seul battlefield",
+        "bluffs de faible impact"
+      ],
+      "plan": [
+        "Ne pas tout miser sur une seule unite.",
+        "Faire payer a Kai'Sa ses choix de removal."
+      ]
+    },
+    "viktor": {
+      "in": [
+        "Mindsplitter",
+        "Dr. Mundo",
+        "big resilient closers"
+      ],
+      "out": [
+        "petites cartes de tempo qui n'echangent pas assez bien",
+        "cards too cute"
+      ],
+      "plan": [
+        "Il faut de la resilience et un vrai plan de points, pas juste du hidden trickery."
+      ]
+    },
+    "aurora_decks": {
+      "in": [
+        "Mindsplitter",
+        "Dr. Mundo",
+        "pressure cards"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "reactive-only slots"
+      ],
+      "plan": [
+        "Pousser avant le premier vrai tour Aurora.",
+        "Prendre l'Aurora ou son payoff en main si possible."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "miracle_support_priority": [
+        "Bandle Tree",
+        "Obelisk of Power",
+        "Zaun Warrens"
+      ],
+      "fast_scoring_hidden_gear_priority": [
+        "Power Nexus",
+        "The Arena's Greatest",
+        "The Candlelit Sanctum"
+      ],
+      "hidden_control_value_priority": [
+        "Bandle Tree",
+        "Sigil of the Storm",
+        "Grove of the God-Willow"
+      ],
+      "notes": [
+        "Certains joueurs Teemo soutiennent que Sigil of the Storm est meilleur que Grove of the God-Willow quand on commence, surtout dans les versions non-Nocturne.",
+        "Bandle Tree et Zaun Warrens restent des standards recurrentes pour les versions plus Mind/Chaos controlees."
+      ]
+    },
+    "draven_midrange": {
+      "preferred": [
+        "Bandle Tree",
+        "Zaun Warrens"
+      ],
+      "plan": [
+        "Tu veux un front piege et un front ou tu peux marquer, pas deux fronts moyens."
+      ]
+    },
+    "kaisa": {
+      "preferred": [
+        "Obelisk of Power",
+        "Bandle Tree"
+      ],
+      "plan": [
+        "Evite les fronts tenus par une seule piece indispensable."
+      ]
+    },
+    "viktor": {
+      "preferred": [
+        "Bandle Tree"
+      ],
+      "secondary": [
+        "Sigil of the Storm"
+      ],
+      "plan": [
+        "Les battlefields qui rendent un conquer adverse couteux t'aident davantage que ceux qui demandent une simple presence de table."
+      ]
+    },
+    "aurora_decks": {
+      "preferred": [
+        "Sigil of the Storm",
+        "Bandle Tree"
+      ],
+      "plan": [
+        "Tu veux convertir les premiers conquetes en avance de score avant le premier vrai tour Aurora."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Riftbound.gg - Teemo, Swift Scout Guide",
+      "date": "2026-02-14",
+      "notes": "Guide general sur l'identite Hidden de Teemo; explique aussi que Spiritforged le pousse a emprunter les packages Ezreal/Chaos."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "Riftbound official - The Best Decks out of Bologna",
+      "date": "2026-02-25",
+      "notes": "Best-of Teemo Bologna #71 overall; shell fast-scoring Hidden/gear avec Nocturne, Pickpocket, Edge of Night, etc."
+    },
+    {
+      "id": "S3",
+      "type": "official tournament article",
+      "title": "Riftbound official - Vegas Top Decks",
+      "date": "2026-03-04",
+      "notes": "Best-of Teemo Vegas #63 overall; shell Chaos miracle-support avec Called Shot, Ezreal, Rhasa, Scrapheap, Time Warp."
+    },
+    {
+      "id": "S4",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Bologna",
+      "date": "2026-03-01",
+      "notes": "Teemo place bas avec metrics faibles mais un bon resultat isole."
+    },
+    {
+      "id": "S5",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Vegas",
+      "date": "2026-03-06",
+      "notes": "Teemo classe Tier 4, le site souligne qu'il performe surtout quand il copie les packages Chaos miracle."
+    },
+    {
+      "id": "S6",
+      "type": "tier list",
+      "title": "Mobalytics - Riftbound Tier List",
+      "date_consulted": "2026-03-11",
+      "notes": "Teemo en C-tier, Hidden sans cout de Power, Consult the Past et 2-drop garanti depuis champion zone."
+    },
+    {
+      "id": "S7",
+      "type": "event stats",
+      "title": "Riftbound official - Houston RQ Top Decks",
+      "date": "2025-12-11",
+      "notes": "Contexte competitif initial de Teemo en tournoi majeur."
+    },
+    {
+      "id": "S8",
+      "type": "community thread",
+      "title": "Best and worst Teemo Matchups and how to play them",
+      "date_consulted": "2026-03-11",
+      "notes": "Source tres utile sur yellow decks comme pires matchups et Aurora comme matchup positif."
+    },
+    {
+      "id": "S9",
+      "type": "community thread",
+      "title": "As Teemo what to hide on turn 2?",
+      "date_consulted": "2026-03-11",
+      "notes": "Source utile sur Consult the Past comme hidden precoce frequent mais contextuel."
+    },
+    {
+      "id": "S10",
+      "type": "community thread",
+      "title": "I love Teemo but i can't win a single match",
+      "date_consulted": "2026-03-11",
+      "notes": "Tres utile pour l'etat actuel du shell Ember Monk/Consult et la recommandation de brancher le package miracle purple."
+    },
+    {
+      "id": "S11",
+      "type": "community thread",
+      "title": "Looking for Feedback on Teemo",
+      "date_consulted": "2026-03-11",
+      "notes": "Fight or Flight comme carte cle; Blastcone Fae consideree comme un piege dans Teemo."
+    },
+    {
+      "id": "S12",
+      "type": "community thread",
+      "title": "First Nexus Night Event - Teemo decklist",
+      "date_consulted": "2026-03-11",
+      "notes": "Lecture recente que Draven est un des pires matchups et que Teemo souffre surtout face a la concurrence d'Ezreal."
+    },
+    {
+      "id": "S13",
+      "type": "community thread",
+      "title": "Need help on Teemo vs. yellow deck matchups",
+      "date_consulted": "2026-03-11",
+      "notes": "Support utile sur Viktor/yellow removal comme vraie difficulte structurelle."
+    },
+    {
+      "id": "S14",
+      "type": "community thread",
+      "title": "What decks have good results into Kai'Sa/Yi",
+      "date_consulted": "2026-03-11",
+      "notes": "Retour local selon lequel Nocturne Teemo avec Dr. Mundo performe correctement contre Kai'Sa et Yi."
+    },
+    {
+      "id": "S15",
+      "type": "community thread",
+      "title": "Sigil of the Storm is the Best Battlefield for Teemo when Going First",
+      "date_consulted": "2026-03-11",
+      "notes": "Support utile pour les plans de battlefield et la logique Sigil vs Grove."
+    },
+    {
+      "id": "S16",
+      "type": "community rules thread",
+      "title": "Teemo - Swift Scout Erratae",
+      "date_consulted": "2026-03-11",
+      "notes": "Clarification communautaire sur la possibilite de cacher Teemo directement depuis la Champion Zone."
+    },
+    {
+      "id": "S17",
+      "type": "community thread",
+      "title": "First time ever going to nexus night, bringing this budget Teemo deck",
+      "date_consulted": "2026-03-11",
+      "notes": "Rappel important que les Hidden sont perdus si tu perds le controle du battlefield avant de pouvoir les utiliser."
+    },
+    {
+      "id": "S18",
+      "type": "news update",
+      "title": "Potential Card Bans: Riftbound Game Director's Update",
+      "date": "2026-03-10",
+      "notes": "Pas de bans annonces, discussions en cours, rules update prevue le 30 mars 2026."
+    }
+  ]
+}

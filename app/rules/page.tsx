@@ -2,6 +2,31 @@
 
 import { useState } from 'react';
 import { PageHeader } from '../components/ui/PageHeader';
+import { Button } from '../components/ui/Button';
+import { generateFAQJSON_LD } from '../lib/json-ld';
+
+const FAQ_SCHEMA = generateFAQJSON_LD([
+  {
+    question: "Comment gagner une partie de Riftbound ?",
+    answer: "La partie se termine dès qu'un joueur atteint 8 points de victoire. Ces points s'acquièrent principalement par le contrôle stratégique des Battlefields au début de votre tour."
+  },
+  {
+    question: "Qu'est-ce que le contrôle d'un Battlefield ?",
+    answer: "Contrôler un Battlefield signifie avoir plus de puissance que votre adversaire sur ce lieu au début de votre tour. Le contrôle rapporte 1 point de victoire par tour."
+  },
+  {
+    question: "Comment fonctionnent les domaines dans Riftbound ?",
+    answer: "Chaque carte et légende appartient à un domaine (Fury, Calm, Mind, Body, Chaos, Order). Les domaines déterminent les synergies et les capacités spéciales de vos cartes."
+  },
+  {
+    question: "Quelle est la différence entre unité et champion ?",
+    answer: "Les unités sont des cartes standard de votre deck, tandis que votre Champion est une unité spéciale qui définit vos couleurs de domaine et possède une capacité unique."
+  },
+  {
+    question: "Comment fonctionne le mulligan ?",
+    answer: "Après la drawn initial de 5 cartes, vous pouvez défausser et redessiner autant de fois que vous le souhaitez, mais vous ne pouvez pas garder plus de 2 cartes de votre main initiale."
+  }
+]);
 
 interface RuleSection {
   id: string;
@@ -32,7 +57,7 @@ const SECTIONS: RuleSection[] = [
         subtitle: "Ce que chaque joueur apporte",
         points: [
           "1 Légende : Votre avatar, qui définit vos couleurs de domaine et possède une capacité unique.",
-          "1 Unité Champion : Une unité surpuissante qui commence dans une zone dédiée.",
+          "1 Champion : Une unité surpuissante qui commence dans la Zone Champion (hors plateau).",
           "Deck Principal (40 cartes) : Composé d'unités, de sorts et d'équipements.",
           "Deck de Runes (12 cartes) : Votre moteur de ressources pour l'énergie et la puissance.",
           "3 Battlefields : Des lieux uniques avec des effets qui modifient les règles locales."
@@ -47,7 +72,7 @@ const SECTIONS: RuleSection[] = [
     subsections: [
       {
         subtitle: "Préparation",
-        text: "Mélangez vos deux decks séparément. Votre Champion est placé face visible dans la Zone Champion. Les deux joueurs commencent avec 0 point de victoire."
+        text: "Mélangez vos deux decks séparément. Chaque joueur choisit secrètement 1 Battlefield parmi ses 3. Votre Champion est placé face visible dans la Zone Champion (hors plateau). Les deux joueurs commencent avec 0 point de victoire."
       },
       {
         subtitle: "Main de départ",
@@ -57,10 +82,11 @@ const SECTIONS: RuleSection[] = [
         subtitle: "La Phase de Mulligan",
         text: "Une seule fois par partie, vous pouvez optimiser votre main :",
         points: [
-          "Sélectionnez jusqu'à 2 cartes de votre main actuelle.",
-          "Mettez-les de côté et piochez le même nombre de cartes de votre deck.",
+          " Piochez d'abord 4 cartes.",
+          "Sélectionnez jusqu'à 2 cartes de votre main actuelle et mettez-les de côté.",
+          "Piochez le même nombre de cartes de votre deck.",
           "Placez les cartes écartées sous votre deck (Recyclage).",
-          "Important : On ne remélange jamais le deck après un mulligan, ce qui permet de savoir que ces cartes sont tout en bas."
+          "Important : On ne remélange jamais le deck après un mulligan."
         ]
       }
     ]
@@ -102,7 +128,7 @@ const SECTIONS: RuleSection[] = [
         points: [
           "Exhaustez (inclinez à 90°) n'importe quelle rune de votre pool.",
           "Chaque rune ainsi inclinée génère 1 Énergie générique.",
-          "L'énergie non utilisée est perdue à la fin de la phase de pioche et à la fin du tour."
+          "L'énergie non utilisée est perdue à la fin de la phase de pioche (au début de votre tour)."
         ]
       },
       {
@@ -136,7 +162,7 @@ const SECTIONS: RuleSection[] = [
       },
       {
         subtitle: "4. Pioche (Draw)",
-        text: "Piochez une carte. L'énergie accumulée précédemment mais non dépensée est dissipée."
+        text: "Piochez une carte. L'énergie non utilisée est perdue à la fin de cette phase."
       },
       {
         subtitle: "5. Action (Phase Principale)",
@@ -165,10 +191,11 @@ const SECTIONS: RuleSection[] = [
       },
       {
         subtitle: "Le Showdown",
-        text: "Si l'adversaire possède des unités sur le même Battlefield, il peut choisir de bloquer. Les unités s'infligent mutuellement des dégâts égaux à leur 'Might' (Attaque).",
+        text: "Si l'adversaire possède des unités sur le même Battlefield, il peut choisir de bloquer. Les unités s'infligent mutuellement des dégâts égaux à leur 'Might' (Attaque). L'ATTAQUANT frappe en premier, puis le DÉFENSEUR réplique.",
         points: [
           "Si la Might reçue égale ou dépasse la Power (Défense) de l'unité, elle est envoyée au Trash.",
-          "Si l'attaque n'est pas bloquée, vous conquérez le Battlefield."
+          "Si l'attaque n'est pas bloquée, vous conquérez le Battlefield.",
+          "Les unités survivantes heal de leurs dégâts après le combat."
         ]
       },
       {
@@ -360,14 +387,18 @@ export default function RulesPage() {
                 <p className="text-gray-500 font-medium">Construisez votre premier deck et testez vos connaissances.</p>
               </div>
               <div className="flex gap-4">
-                <a href="/deckbuilder" className="px-8 py-4 bg-white text-black font-black rounded-2xl text-xs tracking-widest hover:scale-105 transition-all shadow-xl">
+                <Button href="/deckbuilder" variant="secondary" size="lg">
                   DECK BUILDER
-                </a>
+                </Button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
+      />
     </div>
   );
 }

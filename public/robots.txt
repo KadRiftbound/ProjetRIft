@@ -1,0 +1,45 @@
+# Riftbound Guide - Robots.txt
+# Optimisé pour Google et IA (ChatGPT, Claude, etc.)
+
+User-agent: *
+Allow: /
+
+# Chemins disallowed
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /deckbuilder?deck=  # URLs de deck dynamiques
+Disallow: /*?utm_*
+Disallow: /*?ref=
+
+# AI Bots - Allow pour indexation IA
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 2
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Bing et autres moteurs
+User-agent: Bingbot
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap
+Sitemap: https://riftbound.fr/sitemap.xml
+Sitemap: https://riftbound.fr/sitemap-legacy.xml
+
+# Crawl-delay pour éviter surcharge
+Crawl-delay: 1

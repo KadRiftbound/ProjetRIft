@@ -1,0 +1,1506 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Azir complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte janvier-fevrier 2026 pour les regionaux chinois et les premiers gros events occidentaux",
+    "methodology": {
+      "approach": [
+        "Croisement des guides Azir recents",
+        "Croisement des decklists officielles Bologna et Vegas",
+        "Croisement des resultats Nanjing, Dalian, Bologna et Vegas",
+        "Croisement des discussions communautaires ciblees sur les sideboards et les matchups",
+        "Confiance explicite reduite quand un pairing repose surtout sur lecture structurelle"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + deck/matchup documente competitivement",
+        "medium": "Consensus raisonnable mais matchup dependant du build, du sideboard ou du niveau de pilotage",
+        "low": "Peu de data directe, lecture surtout theorique ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "azir_meta_position": {
+      "riftdecks_spiritforged": {
+        "meta_share_percent": 4,
+        "tier": "Tier 3",
+        "top8s": 59
+      },
+      "riftbound_gg_post_bologna": "Tier 2",
+      "riftbound_gg_post_vegas": "Tier 2",
+      "bologna_snapshot": {
+        "field_share_percent": 3,
+        "total_picks": 48,
+        "day2_conversion_percent": 4,
+        "non_mirror_winrate_percent": 52.9,
+        "best_finish": "Top 64 / best-of deck #50 overall"
+      },
+      "vegas_snapshot": {
+        "field_share_percent": 3.6,
+        "total_picks": 51,
+        "day2_conversion_percent": 17.6,
+        "non_mirror_winrate_percent": 48.6,
+        "best_finish": "Best-of deck #13 overall"
+      },
+      "china_snapshot": {
+        "nanjing": "Runner-up avec 17 joueurs Azir seulement dans le field",
+        "dalian": "Top 64 seulement, 19 picks, conversion faible"
+      },
+      "overall_read": "Azir n'est pas un deck dominant de volume, mais il a un vrai plafond competitif et un shell stabilise. C'est un deck plus dur et plus polarisant que sa simple part de meta ne le laisse croire."
+    },
+    "high_level_summary": [
+      "Azir est un deck Calm/Order d'equipement et de tokens, structurellement tres different de Viktor ou Leona.",
+      "Le shell competitif de mars 2026 est remarquablement stable entre Bologna et Vegas.",
+      "Le deck gagne en prenant de la place sur la table via des Sand Soldiers, puis en transformant cette largeur en vraies menaces grace aux equips et aux tricks.",
+      "Ses meilleurs matchups sont souvent ceux ou ses tokens et son equipement rendent les removals adverses maladroits ou trop etroits.",
+      "Ses pires matchups sont souvent ceux qui cassent ses breakpoints de combat, punissent la largeur ou ont trop de gear hate/bounce en side."
+    ]
+  },
+  "azir_advanced_guide": {
+    "legend": "Azir, Emperor of the Sands",
+    "domains": [
+      "Calm",
+      "Order"
+    ],
+    "macro_identity": {
+      "archetype": "Tokens equipment midrange / tempo-combat / proactive battlefield pressure",
+      "primary_gameplan": "Jouer un equipement peu cher chaque tour pour activer Azir, generer des Sand Soldiers, puis faire grossir et recycler la table via les equips et les tricks afin de prendre ou tenir les battlefields.",
+      "secondary_gameplan": "Punir les decks qui jouent trop fair ou trop compact en transformant une largeur modeste en grosses attaques a la demande, notamment grace a Azir, Sovereign et Arise!.",
+      "why_the_deck_is_strong": [
+        "Le deck cree de la matiere de table presque gratuitement via les Sand Soldiers.",
+        "Il convertit tres bien les petits equips en vraies menaces.",
+        "Il force l'adversaire a repondre a la fois a la largeur et au porteur principal.",
+        "Il sideboarde bien contre plusieurs decks du field actuel."
+      ],
+      "why_the_deck_is_hard": [
+        "Le deck demande une tres bonne gestion des runes.",
+        "Il faut savoir quand tenir des contres comme Defy/Discipline plutot que se tap out.",
+        "Le placement des equips et la priorite des menaces changent a chaque matchup.",
+        "Le deck a beaucoup de lignes de jeu trompeuses qui ont l'air fortes mais perdent sur un seul bon removal ou side card."
+      ]
+    },
+    "competitive_consensus_march_2026": {
+      "summary": [
+        "Azir a ouvert Spiritforged avec un fort hype, puis a connu une phase de resultats inegaux.",
+        "Les stats globales ne le montrent pas comme un deck oppressant, mais ses meilleurs pilotes ont continue a faire des resultats.",
+        "Le meme shell Calm/Order a porte le best-of deck Azir a Bologna puis a Vegas, ce qui renforce l'idee que la liste est stabilisee.",
+        "Le deck est meilleur entre des mains expertes que ne le suggerent les tier lists les plus seches."
+      ],
+      "important_caveat": "Azir punit tres fort les erreurs de sequence et de sideboard. Un joueur moyen peut facilement avoir l'impression que le deck est sous-puissant alors que beaucoup de parties se perdent surtout sur la gestion des runes, des equips et des contres."
+    },
+    "reference_shell_march_2026": {
+      "name": "Calm Order Azir - Rocklho Bologna/Vegas",
+      "status": "Shell de reference confirme officiellement sur deux gros events",
+      "legend": "Azir, Emperor of the Sands",
+      "champion": "Azir, Sovereign",
+      "battlefields": [
+        "Ornn's Forge",
+        "Trifarian War Camp",
+        "Vilemaw's Lair"
+      ],
+      "rune_pool": {
+        "calm": 6,
+        "order": 6
+      },
+      "core_cards": [
+        "Arise!",
+        "B.F. Sword",
+        "Brutalizer",
+        "Charm",
+        "Cull the Weak",
+        "Deathgrip",
+        "Defy",
+        "Desert's Call",
+        "Discipline",
+        "Doran's Shield",
+        "Eye of the Herald",
+        "Guardian Angel",
+        "Guards!",
+        "Hidden Blade",
+        "Not So Fast",
+        "Sacred Shears",
+        "Salvage"
+      ],
+      "known_sideboard": [
+        "Cull the Weak",
+        "Defy",
+        "Facebreaker",
+        "Salvage",
+        "Wind Wall"
+      ],
+      "important_note": "Le main deck et le sideboard publies pour Bologna et Vegas sont identiques, ce qui est un signal fort de stabilite du shell."
+    },
+    "signature_cards_and_engines": {
+      "azir_emperor_of_the_sands_role": "Pour 1 Energy, Azir peut se tap pour jouer un Sand Soldier 2 Might en base si tu as joue un equipement ce tour. Cela force la liste a jouer beaucoup d'equipements peu chers et recompense les tours disciplinés plutot que les tours trop explosifs.",
+      "azir_sovereign_role": "Champion pivot du deck. C'est un 4-cost 4 Might avec Accelerate qui, quand il attaque, permet de deplacer n'importe quel nombre de tes tokens vers le battlefield attaque. C'est la carte qui transforme souvent une table diffuse en tour de bascule brutal.",
+      "doran_shield_role": "Equip a 1 cout parfait pour activer la legende des le tour 1. Le Tank aide aussi a proteger Azir, Sovereign ou un porteur cle.",
+      "eye_of_the_herald_role": "Autre equip a 1 cout ultra important. Quand l'unite equipee bouge, il cree un Recruit 1 Might, ce qui aide a pousser, a nourrir Cull the Weak, et a rentabiliser Trifarian War Camp.",
+      "brutalizer_role": "Boost de Might tres fort, surtout dans les tours reactifs ou quand tu peux le reequiper sur une autre unite apres un trade.",
+      "sacred_shears_role": "Equip de value engine. Quand l'unite equipee meurt, tu pioches. C'est une des cartes qui aide Azir a ne pas s'essouffler apres les premiers tours.",
+      "b_f_sword_role": "L'equipement le plus violent de la liste, qui transforme un simple Sand Soldier ou Azir, Sovereign en vraie menace a respecter.",
+      "hidden_blade_role": "Carte de skill expression. Elle peut tuer une unite adverse au battlefield au prix de lui donner 2 cartes, ou bien tuer une de tes propres unites pour piocher 2. Son mode Hidden permet aussi d'economiser l'Energy en la bloquant a un seul battlefield.",
+      "cull_the_weak_role": "Une des meilleures cartes de matchup du deck. Excellente contre Draven et Ornn selon les joueurs Azir, utile contre Irelia car elle force des sacrifices sur peu d'unites et se combine tres bien a la creation de Sand Soldiers.",
+      "deserts_call_role": "Moteur de largeur et de pression, indispensable pour rentabiliser tout ce qui te demande une table existante.",
+      "arise_role": "Autre piece de flood de board. C'est a la fois un payoff et une carte de stabilisation/pression selon le timing."
+    },
+    "advanced_pilot_principles": [
+      {
+        "name": "One equipment a turn is usually stronger than a flashy all-in",
+        "detail": "Le deck veut souvent jouer un equipement par tour pour garantir une production reguliere de Sand Soldiers. Surinvestir plusieurs equips dans le meme tour casse souvent ton moteur pour les tours suivants."
+      },
+      {
+        "name": "Do not tap out just because you can",
+        "detail": "Le conseil communautaire le plus repete sur Azir est de ne pas se tap out en permanence. Defy, Discipline, Not So Fast et les autres tricks changent la valeur de toute ta table."
+      },
+      {
+        "name": "Your board is modular, not sacred",
+        "detail": "Les Sand Soldiers et les Recruits sont des ressources. Il est souvent correct de les convertir en cartes, en points ou en tempo plutot que d'essayer de tout garder en vie."
+      },
+      {
+        "name": "Azir wins by making the next combat impossible, not by winning every combat",
+        "detail": "Le deck ne cherche pas seulement a battre la table actuelle. Il cherche a construire une table et une repartition d'equipements qui rendent le prochain tour adverse tres mauvais."
+      },
+      {
+        "name": "Azir Sovereign is a closer, not just a curve play",
+        "detail": "Tu ne dois pas toujours jouer Azir, Sovereign des que possible. Ses meilleurs tours sont ceux ou il convertit deja une table existante en prise de battlefield decisive."
+      },
+      {
+        "name": "Know what you are Defying in each matchup",
+        "detail": "Selon les joueurs Azir, beaucoup de parties se jouent sur la carte precise qu'il faut contrer et non sur le simple fait d'avoir un counter en main."
+      }
+    ],
+    "mulligan_advanced": {
+      "general_rules": [
+        "Mulligan tres fortement pour un equip a 1 cout et un vrai play de tour 2.",
+        "Eye of the Herald et Doran's Shield sont les meilleurs starters generiques.",
+        "Une main Azir sans equip tot est souvent une mauvaise main, meme si elle a de jolies cartes plus tard.",
+        "Le deck supporte mal les mains chargees en tricks sans moteur de board."
+      ],
+      "baseline_priority": [
+        "1-cost equipment",
+        "Turn 2 play",
+        "une ligne de production reguliere de Sand Soldiers",
+        "idealement un trick ou un plan de hold"
+      ],
+      "important_keep_logic": [
+        {
+          "condition": "main generale",
+          "keep": [
+            "Eye of the Herald ou Doran's Shield",
+            "une suite de courbe qui n'oblige pas a se tap out completement",
+            "une ligne vers Ornn's Forge si le battlefield est pertinent"
+          ]
+        },
+        {
+          "condition": "si tu commences avec Eye of the Herald",
+          "keep": [
+            "Cull the Weak est encore meilleur a conserver, car la ligne Eye T1 -> move -> recruit -> conquer -> Cull est tres forte"
+          ]
+        },
+        {
+          "condition": "contre Irelia",
+          "keep": [
+            "Cull the Weak",
+            "Salvage post-side",
+            "main capable de trader aggressivement au game 1"
+          ]
+        },
+        {
+          "condition": "contre Viktor token",
+          "keep": [
+            "mains avec Salvage post-side",
+            "mains qui ne perdent pas sur une seule wipe ou sur l'attrition"
+          ]
+        },
+        {
+          "condition": "contre Kai'Sa spell-heavy",
+          "keep": [
+            "contres et tricks de protection",
+            "main qui ne s'effondre pas sur Bellows Breath ou Icathian Rain"
+          ]
+        }
+      ],
+      "hands_to_throw_back": [
+        "main sans equip a 1 cout",
+        "main full tricks/protection sans board",
+        "main trop lourde qui demande de se tap out plusieurs tours de suite",
+        "main ou la legende ne s'active pas avant trop tard"
+      ]
+    },
+    "battlefield_and_scoring_philosophy": {
+      "ornns_forge": {
+        "role": "Battlefield le plus emblematic du shell",
+        "notes": [
+          "Il rend le premier gear de chaque tour moins cher une fois conquis, ce qui amplifie enormement le plan Azir.",
+          "Il favorise les lignes ou tu actives Azir tout en gardant encore des runes ouvertes."
+        ]
+      },
+      "trifarian_war_camp": {
+        "role": "Battlefield de pression et de conversion de tokens/recruits",
+        "notes": [
+          "Il se combine tres bien avec Eye of the Herald et les tours ou plusieurs petits corps arrivent ensemble."
+        ]
+      },
+      "vilemaws_lair": {
+        "role": "Battlefield de pression plus technique, utile quand ta largeur de board te permet de rendre les combats penibles"
+      },
+      "generic_rules": [
+        "Azir aime les games ou un battlefield est tenu sur la duree par une table modulaire plus que par un seul gros porteur.",
+        "Tu n'es pas oblige de gagner tous les battlefields tout de suite. Souvent, tenir un point de pression proprement tout en gardant tes contres vaut plus qu'une race maladroite.",
+        "Le deck recompense les moves agressifs au game 1 contre certains matchups, car Arise! et la legende permettent de rebound plus facilement que ce que l'adversaire imagine."
+      ]
+    },
+    "sideboard_philosophy": {
+      "general_rules": [
+        "Le sideboard Azir est tres matchup-dependent.",
+        "Le deck n'aime pas sideboarder en pilote automatique, car enlever la mauvaise piece de curve casse vite l'activation reguliere de la legende.",
+        "Les meilleurs side plans conservent toujours le noyau equip + tokens + tricks."
+      ],
+      "known_community_patterns": [
+        {
+          "pattern": "Plus de Salvage contre Viktor token",
+          "why": "Pour mieux tenir l'attrition et convertir tes trades en ressources"
+        },
+        {
+          "pattern": "Plus de counterspells contre spell-spam Kai'Sa",
+          "why": "Pour survivre aux wipes et aux removals de tempo les plus importants"
+        },
+        {
+          "pattern": "Cull the Weak est excellent contre Ornn et Draven",
+          "why": "Le sort punit les boards compacts et exploite bien tes tokens/recruits"
+        },
+        {
+          "pattern": "Contre Irelia post-side",
+          "known_line": {
+            "in": [
+              "2 Salvage",
+              "1 Cull the Weak"
+            ],
+            "out": [
+              "2 Charm",
+              "1 Discipline"
+            ],
+            "optional": {
+              "in": [
+                "2 Facebreaker"
+              ],
+              "out": [
+                "2 Discipline supplementaires"
+              ]
+            }
+          }
+        }
+      ],
+      "anti_azir_cards_you_must_respect": [
+        "Thermo Beam sur les equips",
+        "Brynhir Thundersong contre les strategies equipment-based",
+        "Downwell",
+        "Hard Bargain garde ouvert pour couper Arise!",
+        "Rebuke contre les tokens ou les gros payoffs equip"
+      ]
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Always tapping out",
+        "why_it_loses": "Tu perds tes meilleurs tours de Defy/Discipline et tu offres a l'adversaire les fenetres parfaites pour nettoyer ou casser ton porteur."
+      },
+      {
+        "mistake": "Playing multiple equipments too early",
+        "why_it_loses": "Tu crees moins de Sand Soldiers sur la duree et tu t'exposes a une punition beaucoup plus forte si le porteur tombe."
+      },
+      {
+        "mistake": "Treating every token as precious",
+        "why_it_loses": "Le deck est concu pour recycler et remplacer. Tu dois convertir tes petits corps en cartes, points ou tempo."
+      },
+      {
+        "mistake": "Using Hidden Blade mechanically",
+        "why_it_loses": "La carte peut etre removal, draw engine ou piege de battlefield. Mal utilisee, elle nourrit juste la main adverse sans vrai gain."
+      },
+      {
+        "mistake": "Dropping Azir, Sovereign on curve without a payoff attack",
+        "why_it_loses": "Tu transformes ton meilleur closer en simple 4-drop fair."
+      },
+      {
+        "mistake": "Keeping hands without a one-cost equipment",
+        "why_it_loses": "Tu perds une enorme partie de l'identite du deck avant meme le tour 2."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Quand un equipement a deja fait son travail, pense en termes de reallocation de valeur plutot qu'en termes de protection absolue du premier porteur.",
+      "Hidden Blade sur une de tes propres unites est parfois la meilleure ligne si cela te trouve Arise!, un counter ou la piece de close du matchup.",
+      "Contre les decks qui te battent via wipes, le plus important n'est pas de faire la plus grosse table possible, mais de faire une table suffisante qui ne perd pas tout sur une seule carte.",
+      "Azir aime souvent jouer legerement en avance sur les points puis forcer l'adversaire a venir se battre dans tes tricks, pas l'inverse.",
+      "Si tu sais deja quelle carte tu veux Defy dans le matchup, ta gestion de runes devient beaucoup plus simple."
+    ],
+    "practical_summary": {
+      "best_for": [
+        "joueurs aimant les combats techniques et la gestion de table",
+        "joueurs qui savent sideboarder proprement",
+        "joueurs capables de planifier leur rune economy plusieurs tours a l'avance"
+      ],
+      "worst_for": [
+        "joueurs voulant un deck lineaire",
+        "joueurs qui se tap out trop facilement",
+        "joueurs qui n'aiment pas les mains tres dependantes de l'opening equipment"
+      ],
+      "difficulty_read": "Azir est generalement considere plus difficile qu'un deck comme Viktor, Kai'Sa ou Draven pour un debutant, a cause du mix equipment + counters + battlefield management."
+    }
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "tier_context": "Top deck de volume",
+      "azir_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_azir_winrate_percent": "50-54",
+        "confidence": "medium"
+      },
+      "summary": "Le pairing Midrange Draven n'a pas l'air mauvais pour Azir; plusieurs signaux communautaires vont meme dans le sens d'un matchup penible pour Draven. Azir remplit vite la table, profite tres bien de Hidden Blade et de Cull the Weak, et peut forcer Draven a jouer une partie moins confortable qu'un simple board snowball.",
+      "why_matchup_plays_this_way": [
+        "Draven midrange veut convertir largeur + combat en avalanche.",
+        "Azir produit aussi de la largeur, mais avec plus de modularite grace aux equips et aux tokens.",
+        "Cull the Weak est explicitement cite comme tres bon contre Draven par des joueurs Azir."
+      ],
+      "opponent_plan": [
+        "prendre les points tot",
+        "forcer des combats rentables",
+        "punir les tours ou Azir se tap out"
+      ],
+      "azir_plan": [
+        "faire grossir la table sans s'exposer a un seul blowout",
+        "utiliser Cull the Weak sur les bons tours",
+        "mettre Draven dans des combats ou Hidden Blade et les equips changent toute la math",
+        "ne pas surevaluer la protection d'une seule grosse piece"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment",
+        "Turn 2 play",
+        "Cull the Weak si la main suit",
+        "main capable de mettre de la pression tot"
+      ],
+      "sideboard_focus": [
+        "conserver ou rentrer Cull the Weak",
+        "garder assez de tricks de combat",
+        "respecter Thermo Beam si le Draven peut le sider"
+      ],
+      "battlefield_notes": [
+        "Azir aime les games ou Draven doit venir l'empecher de scorer plutot que les games ou Azir est force de courir apres la table.",
+        "Ornn's Forge aide beaucoup a garder les runes ouvertes contre Draven."
+      ],
+      "main_lose_conditions_for_azir": [
+        "se tap out plusieurs tours de suite",
+        "surinvestir sur un seul porteur",
+        "laisser Draven tenir deux battlefields en meme temps"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight pressure",
+        "Brynhir swings",
+        "Rebuke/Fight or Flight windows selon build",
+        "Thermo Beam post-side"
+      ],
+      "variation_notes": [
+        "Le matchup se deteriore si le Draven side beaucoup de gear hate ou trouve tres tot Brynhir + tempo."
+      ],
+      "source_refs": [
+        "S9",
+        "S12",
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "tier_context": "Top shell miracle/purple-chaos",
+      "azir_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_azir_winrate_percent": "45-49",
+        "confidence": "medium"
+      },
+      "summary": "Miracle Draven attaque mieux les points faibles structurels d'Azir que Midrange Draven. Les joueurs Azir recents disent clairement que le deck perd s'il laisse les miracle shells cycler et poser des grosses menaces cheap comme Rhasa ou Battering Ram. En plus, les conseils anti-Azir recents citent Downwell, Hard Bargain et Thermo Beam comme vrais blowouts.",
+      "why_matchup_plays_this_way": [
+        "Miracle Draven transforme mieux les tours ou Azir se contente de developper.",
+        "Azir a moins de marge pour gagner par simple largeur si l'adversaire peut tout remettre a zero ou sauter devant au timing."
+      ],
+      "opponent_plan": [
+        "cycler plus vite qu'Azir",
+        "punir la table large avec des tours de swing",
+        "rendre les petits edges d'equipement insuffisants"
+      ],
+      "azir_plan": [
+        "jouer plus discipline sur la rune economy",
+        "ne pas faire une table trop large si elle perd a un seul reset",
+        "forcer le miracle shell a depenser ses ressources avant son tour ideal"
+      ],
+      "mulligan_focus": [
+        "opening equipment propre",
+        "main avec pression reelle",
+        "pas de keep purement value"
+      ],
+      "sideboard_focus": [
+        "Wind Wall / Defy",
+        "plus de Salvage si la partie devient une guerre d'attrition",
+        "respect maximal de Downwell et des side wipes"
+      ],
+      "battlefield_notes": [
+        "Il faut eviter de se faire coincer avec une table 'suffisamment large pour perdre a Downwell, mais pas assez forte pour tuer'."
+      ],
+      "main_lose_conditions_for_azir": [
+        "laisser le shell miracle prendre tout son temps",
+        "largeur sans plan de protection",
+        "rune economy trop agressive"
+      ],
+      "important_patterns_to_respect": [
+        "cheap beefy miracle threats",
+        "Downwell",
+        "Hard Bargain on Arise turns",
+        "Thermo Beam on gear-heavy turns"
+      ],
+      "variation_notes": [
+        "Azir peut encore gagner si le deck miracle doit jouer la table trop tot, mais en moyenne le pairing semble un cran en dessous du Draven midrange."
+      ],
+      "source_refs": [
+        "S9",
+        "S12",
+        "S13"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "tier_context": "Tier 1",
+      "azir_outlook": {
+        "label": "unfavorable",
+        "estimated_azir_winrate_percent": "41-46",
+        "confidence": "high"
+      },
+      "summary": "C'est le pairing le plus explicitement mauvais pour Azir dans les discussions recentes. Les joueurs Azir le qualifient de tres dur, surtout post-side a cause d'Adaptatron et des chaines de tricks/GA/Zhonya. Le matchup reste jouable, mais il faut le traiter comme un vrai point faible du deck.",
+      "why_matchup_plays_this_way": [
+        "Irelia casse tres bien les breakpoints de combat d'Azir.",
+        "Ses protections et ses sorties de battlefield rendent les combats token/equipment moins propres.",
+        "Post-side, gear hate et outils supplementaires compliquent encore plus les choses."
+      ],
+      "opponent_plan": [
+        "installer un porteur cle",
+        "jouer autour des combats grace aux tricks",
+        "faire courir Azir entre score et interaction"
+      ],
+      "azir_plan": [
+        "game 1 trader aggressivement car Irelia joue peu d'unites",
+        "utiliser Arise + legende pour rebound apres les trades",
+        "post-side rentrer Salvage et Cull the Weak",
+        "viser les draw engines d'Irelia et forcer la depense de main",
+        "considerer Facebreaker selon le build"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment + curve",
+        "Cull the Weak",
+        "main capable de contester le board tres tot"
+      ],
+      "sideboard_focus": [
+        "in: 2 Salvage, 1 Cull the Weak",
+        "out: 2 Charm, 1 Discipline",
+        "optionnel: 2 Facebreaker pour 2 Discipline supplementaires"
+      ],
+      "battlefield_notes": [
+        "Le matchup se degrade tres vite si Irelia peut tenir un battlefield avec GA/boots sans vraie punition.",
+        "Tu dois souvent accepter des trades moins beaux pour eviter le snowball."
+      ],
+      "main_lose_conditions_for_azir": [
+        "attendre trop longtemps avant d'interagir",
+        "mauvaise priorisation des tricks defensifs",
+        "sous-estimer Adaptatron post-side"
+      ],
+      "important_patterns_to_respect": [
+        "Guardian Angel",
+        "Zhonya's Hourglass",
+        "Boots of Swiftness",
+        "Deflect and other combat tricks",
+        "Adaptatron post-side"
+      ],
+      "variation_notes": [
+        "Le pairing peut remonter legerement si Irelia stumble ou si Azir aligne vite ses Culls, mais il reste structurellement negatif."
+      ],
+      "source_refs": [
+        "S10",
+        "S9",
+        "S17"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "tier_context": "Tier 1/S selon la source",
+      "azir_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_azir_winrate_percent": "47-51",
+        "confidence": "medium"
+      },
+      "summary": "Kai'Sa spell-heavy est l'un des pairings qui demandent le plus de discipline a Azir. Les joueurs Azir recommandent plus de counterspells contre elle, et les retours recents insistent sur le fait qu'Azir perd s'il laisse passer les wipes de type Bellows Breath ou Icathian Rain. Cela dit, le pairing n'a pas l'air desespere si Azir est tune pour les removals.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa tue par sorts au lieu de se battre honnêtement.",
+        "Cela contourne une partie de la force naturelle des equips et des tricks d'Azir.",
+        "Azir peut toutefois punir Kai'Sa si elle n'a pas les bons removals dans la bonne fenetre."
+      ],
+      "opponent_plan": [
+        "nettoyer les bonnes pieces",
+        "empecher Azir de convertir sa largeur en hold stable",
+        "gagner la guerre de runes puis fermer avec Time Warp ou Watcher"
+      ],
+      "azir_plan": [
+        "garder davantage de contres",
+        "ne pas suretaler la table face aux wipes connues",
+        "maintenir assez de pression pour que Kai'Sa ne puisse pas juste tout faire a son rythme"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment",
+        "curve propre",
+        "contre ou tricks defensifs",
+        "pas de keep qui perd a un seul board wipe"
+      ],
+      "sideboard_focus": [
+        "plus de counterspells",
+        "moins de cartes trop lentes ou trop fair",
+        "garder assez de carburant pour repartir apres un wipe"
+      ],
+      "battlefield_notes": [
+        "Azir doit souvent tenir un battlefield de maniere assez minimale plutot que d'essayer de tout verrouiller d'un coup."
+      ],
+      "main_lose_conditions_for_azir": [
+        "suretaler la table",
+        "se tap out sur un tour wipe obvious",
+        "ne pas assez respecter Time Warp en fin de partie"
+      ],
+      "important_patterns_to_respect": [
+        "Bellows Breath",
+        "Icathian Rain",
+        "Falling Star",
+        "Time Warp closes",
+        "spell spam control turns"
+      ],
+      "variation_notes": [
+        "Le pairing semble legerement meilleur pour Kai'Sa si sa liste est tres spell-heavy; il se rapproche de l'equilibre si Azir renforce ses contres et garde un bon rythme de pression."
+      ],
+      "source_refs": [
+        "S9",
+        "S17",
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Token/Unit based",
+      "meta_share_percent": 7,
+      "tier_context": "Tier 2",
+      "azir_outlook": {
+        "label": "favorable",
+        "estimated_azir_winrate_percent": "54-60",
+        "confidence": "medium"
+      },
+      "summary": "Le signal communautaire est plutot net ici: des joueurs Viktor recents disent que le matchup Azir est tres mauvais. Leur probleme principal est qu'Azir produit des unites de taille moyenne via gear + legende, puis Arise! ajoute plusieurs corps supplementaires, ce qui rend la logique de removal/token grinding Viktor beaucoup moins confortable.",
+      "why_matchup_plays_this_way": [
+        "Azir met plus de vraie presence que Viktor ne le souhaiterait.",
+        "Le deck produit des corps multiples qui peuvent devenir soudainement une grosse menace equipee.",
+        "Les removals Viktor ne tradent pas toujours proprement contre un plan aussi modulaire."
+      ],
+      "opponent_plan": [
+        "nettoyer les bonnes unites",
+        "gagner par attrition",
+        "utiliser tokens/recruits pour bait les removals et tenir le score"
+      ],
+      "azir_plan": [
+        "maintenir une pression de table constante",
+        "post-side rentrer plus de Salvage selon version Viktor",
+        "ne pas se laisser enfermer dans un simple 1 pour 1"
+      ],
+      "mulligan_focus": [
+        "opening equipment",
+        "curve stable",
+        "main qui ne s'epuise pas sur l'attrition"
+      ],
+      "sideboard_focus": [
+        "plus de Salvage contre Viktor token",
+        "conserver les menaces qui forcent de vraies reponses",
+        "garder assez de counters pour les tours cles"
+      ],
+      "battlefield_notes": [
+        "Plus Azir peut mettre une pression de battlefield 'reelle' plutot que purement cosmetique, plus le pairing lui est favorable."
+      ],
+      "main_lose_conditions_for_azir": [
+        "gaspiller la pression sur des trades secondaires",
+        "laisser Viktor choisir seul le rythme de la partie"
+      ],
+      "important_patterns_to_respect": [
+        "Imperial Decree style turns",
+        "token stalls",
+        "attrition loops"
+      ],
+      "variation_notes": [
+        "Le pairing semble meilleur contre les versions Viktor plus board-centric que contre les versions hyper spell-control."
+      ],
+      "source_refs": [
+        "S11",
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane - Spell heavy",
+      "meta_share_percent": 7,
+      "tier_context": "Tier 2",
+      "azir_outlook": {
+        "label": "close_even",
+        "estimated_azir_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Le pairing reste jouable, mais il est moins naturellement bon qu'une version token-heavy de Viktor. Azir doit davantage proteger ses gros swings et eviter de perdre la partie sur quelques removals premium parfaitement alignes.",
+      "why_matchup_plays_this_way": [
+        "Spell Viktor a moins de mal a viser les equips ou les porteurs precis.",
+        "Azir garde toutefois assez de largeur et de modularite pour punir les mauvaises sequences."
+      ],
+      "opponent_plan": [
+        "retirer le vrai porteur",
+        "retarder la prise de battlefield",
+        "te faire manquer de carburant"
+      ],
+      "azir_plan": [
+        "ne pas telegraphier la piece qui doit vivre",
+        "etaler la valeur sans suretaler la table",
+        "garder Defy pour la carte qui compte vraiment"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "threat density",
+        "pas de keep all-in"
+      ],
+      "sideboard_focus": [
+        "Salvage si la game s'etire",
+        "maintien d'une bonne densite de contres"
+      ],
+      "battlefield_notes": [
+        "Le matchup tourne beaucoup autour de qui impose le rythme du premier vrai swing."
+      ],
+      "main_lose_conditions_for_azir": [
+        "se tap out au mauvais tour",
+        "trop de valeur concentree sur un seul corps"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal timing",
+        "wipe turns"
+      ],
+      "variation_notes": [
+        "Confiance basse car les retours directs portent surtout sur Viktor token/unit."
+      ],
+      "source_refs": [
+        "S11",
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "tier_context": "Top deck de plafond",
+      "azir_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_azir_winrate_percent": "50-55",
+        "confidence": "medium"
+      },
+      "summary": "Les signaux les plus utiles vont dans le sens d'un pairing au moins correct pour Azir. Cote Ezreal, des joueurs ont explique que Pickpocket pouvait rentrer specialement pour ameliorer le matchup Azir parce que le deck allait un peu trop vite pour Ezreal. Cote Azir, les joueurs reconnaissent quand meme que les miracle decks deviennent terribles si on les laisse cycler completement.",
+      "why_matchup_plays_this_way": [
+        "Azir peut imposer plus de vitesse et de largeur qu'Ezreal ne le prefere.",
+        "Ezreal, lui, a un plafond plus haut si la partie devient une pure guerre de ressources."
+      ],
+      "opponent_plan": [
+        "ralentir puis passer devant a la carte",
+        "faire perdre a Azir trop de matiere pour trop peu de gain",
+        "basculer avec Rhasa et les autres gros tours violets"
+      ],
+      "azir_plan": [
+        "mettre une clock reelle",
+        "ne pas laisser Ezreal grinder gratuit",
+        "conserver Defy pour les vrais tours de swing",
+        "forcer Ezreal a jouer sa value avant son timing ideal"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment",
+        "curve proactive",
+        "main qui ne dépend pas de topdecks lents"
+      ],
+      "sideboard_focus": [
+        "maintenir la pression",
+        "eviter de trop sider en mode fair midrange",
+        "plus de contres si la liste en a besoin"
+      ],
+      "battlefield_notes": [
+        "Le pairing se gagne rarement en courant partout; il se gagne en gardant un battlefield menaçant pendant qu'Ezreal essaie d'assembler ses cartes."
+      ],
+      "main_lose_conditions_for_azir": [
+        "laisser Ezreal tout cycler",
+        "se faire punir par un gros swing sans pressure de points"
+      ],
+      "important_patterns_to_respect": [
+        "Rhasa turns",
+        "purple miracle chains",
+        "late inevitability"
+      ],
+      "variation_notes": [
+        "Le pairing se rapproche de l'equilibre contre un specialiste absolu d'Ezreal ou si Azir stumble sur son opening equipment."
+      ],
+      "source_refs": [
+        "S13",
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Kai'Sa, Daughter of the Void - Spell spam heavy version",
+      "meta_share_percent": 18,
+      "tier_context": "Tier 1/S",
+      "azir_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_azir_winrate_percent": "46-50",
+        "confidence": "medium"
+      },
+      "summary": "Si la Kai'Sa est tres spell-heavy, le pairing s'oriente plutot du mauvais cote pour Azir. Les commentaires Azir recents insistent sur le fait qu'il faut plus de counterspells et qu'Azir perd lorsqu'il laisse passer les wipes clefs.",
+      "why_matchup_plays_this_way": [
+        "Les removals de Kai'Sa contournent en partie la qualite des combats d'Azir.",
+        "Le deck Fury/Mind garde aussi tres bien ses runes, ce qui rend les tours de reprise plus difficiles a punir."
+      ],
+      "opponent_plan": [
+        "removal sur les bons seuils",
+        "limiter la table sans se vider",
+        "Time Warp ou gros top-end pour fermer"
+      ],
+      "azir_plan": [
+        "jouer plus en dents de scie",
+        "ne pas tout donner a un wipe",
+        "forcer Kai'Sa a utiliser des removals inegaux"
+      ],
+      "mulligan_focus": [
+        "equip + counter + curve",
+        "no greedy hand"
+      ],
+      "sideboard_focus": [
+        "plus de contres",
+        "moins de cartes qui n'ont de sens qu'en board fight fair"
+      ],
+      "battlefield_notes": [
+        "Il faut accepter de tenir un battlefield de facon minimale tout en gardant la reponse a Bellows Breath ou Icathian Rain."
+      ],
+      "main_lose_conditions_for_azir": [
+        "suretaler",
+        "ignorer la rune economy adverse"
+      ],
+      "important_patterns_to_respect": [
+        "Bellows Breath",
+        "Icathian Rain",
+        "Falling Star",
+        "Time Warp"
+      ],
+      "variation_notes": [
+        "Version precise is very important here; certaines Kai'Sa plus board-centric sont un peu plus faciles a jouer contre."
+      ],
+      "source_refs": [
+        "S9",
+        "S17"
+      ]
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "tier_context": "Tier 2",
+      "azir_outlook": {
+        "label": "close_even",
+        "estimated_azir_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Matchup de combat et de precision entre deux decks Calm capables de rendre chaque showdown penible. Il y a peu de data directe recente, donc la lecture reste prudente.",
+      "why_matchup_plays_this_way": [
+        "Yi veut tenir un battlefield avec une piece tres protegee.",
+        "Azir prefere jouer plus large et convertir les petits corps en angles d'attaque nombreux."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield avec peu d'investissement",
+        "punir les combats mal calcules"
+      ],
+      "azir_plan": [
+        "forcer Yi a depenser ses protections",
+        "utiliser la largeur plutot qu'un duel de star unit",
+        "eviter les combats trop lisibles"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "main avec tricks",
+        "pas de keep trop lourd"
+      ],
+      "sideboard_focus": [
+        "maintenir la densite de tricks",
+        "eventuellement un peu plus d'interaction de table"
+      ],
+      "battlefield_notes": [
+        "Le matchup recompense les holds et les petits edges sur plusieurs tours."
+      ],
+      "main_lose_conditions_for_azir": [
+        "s'empaler dans un combat ideal pour Yi",
+        "perdre trop de points gratuitement"
+      ],
+      "important_patterns_to_respect": [
+        "Calm protection chains"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "tier_context": "Tier 2/3",
+      "azir_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_azir_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "Annie met la pression sur un des points fragiles d'Azir: les openings sans equipement ou les tours trop tapes out. Si Azir passe le debut de partie sans retard majeur, le pairing redevient beaucoup plus jouable.",
+      "why_matchup_plays_this_way": [
+        "Annie veut prendre le score tres tot.",
+        "Azir a besoin d'un minimum de structure pour que ses tokens et equips deviennent dominants."
+      ],
+      "opponent_plan": [
+        "pression rapide",
+        "taxer les mains lentes",
+        "fermer avant les gros turns Azir"
+      ],
+      "azir_plan": [
+        "mulligan severement les mains lentes",
+        "defendre le score avant la value parfaite",
+        "transformer la partie en board de taille moyenne ou les equips dominent"
+      ],
+      "mulligan_focus": [
+        "1-cost equipment obligatoire",
+        "Turn 2 play",
+        "pas de keep value-only"
+      ],
+      "sideboard_focus": [
+        "plus de stabilisation",
+        "moins de cartes trop gourmandes"
+      ],
+      "battlefield_notes": [
+        "Les battlefields de chip race pure sont les plus dangereux pour Azir dans ce pairing."
+      ],
+      "main_lose_conditions_for_azir": [
+        "main lente",
+        "taper out trop tot",
+        "courir apres le score a partir de trop loin"
+      ],
+      "important_patterns_to_respect": [
+        "fast point starts",
+        "burst finishers"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "opponent": "Lucian, Purifier",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 2/3",
+      "azir_outlook": {
+        "label": "slightly_favorable",
+        "estimated_azir_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Lucian joue aussi autour de l'equipement et de la pression locale, mais Azir semble avoir un plan plus large et plus resilient tant qu'il ne rate pas son depart.",
+      "why_matchup_plays_this_way": [
+        "Lucian concentre souvent davantage la valeur sur moins de pieces.",
+        "Azir peut plus facilement reconstruire apres un trade."
+      ],
+      "opponent_plan": [
+        "prendre les points vite via equipment pressure",
+        "forcer Azir a reagir localement"
+      ],
+      "azir_plan": [
+        "garder la largeur de board",
+        "punir le vrai porteur avec Hidden Blade ou Cull the Weak",
+        "faire parler la superiorite de modularite"
+      ],
+      "mulligan_focus": [
+        "equip + curve",
+        "interaction de table"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "garder assez de pressure de board"
+      ],
+      "battlefield_notes": [
+        "Azir aime les parties ou Lucian doit venir casser la largeur plutot que pousser librement."
+      ],
+      "main_lose_conditions_for_azir": [
+        "retard gratuit aux points",
+        "laisser un porteur equipe vivre trop longtemps"
+      ],
+      "important_patterns_to_respect": [
+        "equipment tempo",
+        "fast point pushes"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "opponent": "Jax, Grandmaster at Arms",
+      "meta_share_percent": 0,
+      "tier_context": "Rogue competitif",
+      "azir_outlook": {
+        "label": "close_even",
+        "estimated_azir_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Le matchup est tres technique et peu documente. Les deux decks jouent equipement + protection, mais Azir gagne plutot via largeur et Jax via modularite/Quick-Draw.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks rendent le combat dur a calculer.",
+        "Azir peut deborder Jax par la quantite, Jax peut punir Azir par la qualite de ses swings."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield avec une piece protegee",
+        "faire parler Quick-Draw et Counter Strike"
+      ],
+      "azir_plan": [
+        "forcer Jax a proteger trop de choses a la fois",
+        "ne pas overcommit sur une seule unite",
+        "garder assez de densite de board pour punir un hold raté"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "curve stable",
+        "tricks defensifs"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "conserver assez de largeur"
+      ],
+      "battlefield_notes": [
+        "Le matchup se joue beaucoup sur le premier gros combat rate par l'un des deux joueurs."
+      ],
+      "main_lose_conditions_for_azir": [
+        "se faire enfermer par une seule grosse piece equipée",
+        "mauvaise priorisation des contres"
+      ],
+      "important_patterns_to_respect": [
+        "Quick-Draw turns",
+        "Counter Strike",
+        "equipment shifts"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3",
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Fiora, Grand Duelist",
+      "meta_share_percent": 3,
+      "tier_context": "Tier 3 / anti-purple flex",
+      "azir_outlook": {
+        "label": "slightly_favorable",
+        "estimated_azir_winrate_percent": "51-55",
+        "confidence": "low"
+      },
+      "summary": "Fiora prefere souvent jouer une menace premium bien soutenue. Azir a des outils corrects contre ce plan, a condition de ne pas lui laisser un porteur geant trop longtemps.",
+      "why_matchup_plays_this_way": [
+        "Azir produit assez de largeur pour ne pas etre force a un simple duel frontal.",
+        "Fiora peut toutefois gagner si elle transforme la partie en guerre de une grosse unite contre plusieurs petites."
+      ],
+      "opponent_plan": [
+        "voltron lines",
+        "protection stack",
+        "gagner sur la qualite du combat"
+      ],
+      "azir_plan": [
+        "Hidden Blade et Cull sur la vraie piece",
+        "ne pas jouer uniquement la taille brute",
+        "faire compter la largeur"
+      ],
+      "mulligan_focus": [
+        "equip + curve",
+        "interaction sur porteur"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "preserver la capacite a flood"
+      ],
+      "battlefield_notes": [
+        "Battlefields qui recompensent la largeur te favorisent."
+      ],
+      "main_lose_conditions_for_azir": [
+        "laisser vivre le mauvais porteur",
+        "survaloriser les petits trades"
+      ],
+      "important_patterns_to_respect": [
+        "equipment stack",
+        "protection turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Sivir, Battle Mistress - Miracle",
+      "meta_share_percent": 3,
+      "tier_context": "Tier 2/3",
+      "azir_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_azir_winrate_percent": "46-50",
+        "confidence": "low"
+      },
+      "summary": "Sivir miracle pose a Azir un probleme comparable aux autres shells miracle: si Azir n'impose pas une vraie clock, les gros turns de value finissent par l'emporter.",
+      "why_matchup_plays_this_way": [
+        "Azir aime attaquer les decks qui doivent se battre sur table.",
+        "Sivir miracle peut parfois assez bien contourner cette logique."
+      ],
+      "opponent_plan": [
+        "stabiliser puis depasser Azir a la carte",
+        "punir les moments ou Azir est full board no answer"
+      ],
+      "azir_plan": [
+        "pression reguliere",
+        "ne pas laisser les tours de value partir sans stress",
+        "garder Defy pour la bonne piece"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "main proactive"
+      ],
+      "sideboard_focus": [
+        "maintenir la clock",
+        "moins de cartes mortes en topdeck"
+      ],
+      "battlefield_notes": [
+        "Si le score reste trop bas trop longtemps, Miracle Sivir devient plus confortable."
+      ],
+      "main_lose_conditions_for_azir": [
+        "clock insuffisante",
+        "surexposition a un gros swing"
+      ],
+      "important_patterns_to_respect": [
+        "Sabotage",
+        "Rhasa",
+        "miracle chains"
+      ],
+      "variation_notes": [
+        "Aurora Sivir peut etre un peu plus simple a lire pour Azir que Miracle pure."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Rumble, Mechanized Menace",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 3",
+      "azir_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_azir_winrate_percent": "45-49",
+        "confidence": "low"
+      },
+      "summary": "Rumble peut submerger la logique de combat d'Azir avec plus de largeur ou de grosses chaines de payoffs successifs.",
+      "why_matchup_plays_this_way": [
+        "Azir aime les echanges ou la qualite de ses tokens et equips compte.",
+        "Rumble peut parfois juste produire trop de volume."
+      ],
+      "opponent_plan": [
+        "wide boards",
+        "successive payoffs",
+        "forcer Azir a repondre trop etroitement"
+      ],
+      "azir_plan": [
+        "ne pas overreact a chaque petite piece",
+        "garder la largeur de board",
+        "punir le vrai payoff"
+      ],
+      "mulligan_focus": [
+        "opening stable",
+        "pas de keep lent"
+      ],
+      "sideboard_focus": [
+        "plus de table interaction",
+        "moins de cartes trop lentes"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient dur si Rumble tient deja deux fronts avant ton premier gros tour Azir."
+      ],
+      "main_lose_conditions_for_azir": [
+        "reponses trop etroites",
+        "retard de points trop rapide"
+      ],
+      "important_patterns_to_respect": [
+        "wide board turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Rek'Sai, Void Burrower",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 3",
+      "azir_outlook": {
+        "label": "close_even",
+        "estimated_azir_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Autre pairing de largeur contre largeur, mais avec plus de recursion et moins d'equipements. La partie tourne souvent autour de qui transforme le mieux sa table moyenne en vrai score.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks peuvent faire beaucoup de presence.",
+        "Azir a plus de modularite d'equipement, Rek'Sai plus de recursion brute."
+      ],
+      "opponent_plan": [
+        "accumuler de la pression",
+        "remettre des corps sur table"
+      ],
+      "azir_plan": [
+        "faire compter les equips plus que la simple largeur",
+        "ne pas perdre Hidden Blade/Cull sur les mauvaises pieces"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "curve stable"
+      ],
+      "sideboard_focus": [
+        "plus de cartes qui convertissent la largeur en vrai swing"
+      ],
+      "battlefield_notes": [
+        "Les petits scores et les tokens valent moins que les swings de hold reussis."
+      ],
+      "main_lose_conditions_for_azir": [
+        "echanges trop lineaires",
+        "pas de pivot de taille ou de draw"
+      ],
+      "important_patterns_to_respect": [
+        "swarm recursion"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S5"
+      ]
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 3",
+      "azir_outlook": {
+        "label": "slightly_favorable",
+        "estimated_azir_winrate_percent": "51-55",
+        "confidence": "low"
+      },
+      "summary": "Sett veut souvent te forcer a jouer une partie de taille brute. Azir sait assez bien contourner cette lecture en distribuant sa menace entre plusieurs corps.",
+      "why_matchup_plays_this_way": [
+        "Sett gagne au stat-check.",
+        "Azir gagne quand la largeur et la modularite des equips rendent le stat-check insuffisant."
+      ],
+      "opponent_plan": [
+        "poser de grosses unites",
+        "te forcer au combat frontal"
+      ],
+      "azir_plan": [
+        "refuser le pur stat-check",
+        "faire compter les tokens, les recruits et la redistribution des equips"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "curved board"
+      ],
+      "sideboard_focus": [
+        "garder assez de tricks pour casser le gros combat cle"
+      ],
+      "battlefield_notes": [
+        "Si Sett verrouille un battlefield avec une seule enorme piece, Azir doit souvent repondre par largeur et non par duel."
+      ],
+      "main_lose_conditions_for_azir": [
+        "jouer trop honnetement les combats"
+      ],
+      "important_patterns_to_respect": [
+        "buff combat spikes"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Ornn, Fire Below the Mountain",
+      "meta_share_percent": 3,
+      "tier_context": "Rogue",
+      "azir_outlook": {
+        "label": "favorable",
+        "estimated_azir_winrate_percent": "54-58",
+        "confidence": "low"
+      },
+      "summary": "Les retours Azir les plus directs mentionnent au contraire que Cull the Weak est excellent contre Ornn. Le deck semble plus lent et plus dependant de pieces lourdes qu'Azir sait souvent contourner.",
+      "why_matchup_plays_this_way": [
+        "Ornn produit de grosses pieces centrales.",
+        "Azir aime punir les boards compacts avec Cull, tokens et width."
+      ],
+      "opponent_plan": [
+        "gros porteurs et equipment heavy",
+        "tenir au stat-check"
+      ],
+      "azir_plan": [
+        "utiliser Cull the Weak",
+        "ne pas laisser un seul gros payoff definir la game",
+        "prendre la course de battlefield avant que la table adverse ne soit trop epaisse"
+      ],
+      "mulligan_focus": [
+        "Cull the Weak",
+        "equip de depart",
+        "curve stable"
+      ],
+      "sideboard_focus": [
+        "conserver Cull",
+        "plus de vitesse que d'anti-control"
+      ],
+      "battlefield_notes": [
+        "Azir prefere jouer avant la grosse stabilisation d'Ornn."
+      ],
+      "main_lose_conditions_for_azir": [
+        "laisser une seule piece dominer trop longtemps"
+      ],
+      "important_patterns_to_respect": [
+        "giant carrier turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Lux, Lady of Luminosity",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "azir_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_azir_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Lux peut reproduire une partie du probleme Kai'Sa/Viktor spell-heavy: bons removals, partie plus lente, et capacite a punir une table trop ambitieuse.",
+      "why_matchup_plays_this_way": [
+        "Azir aime quand l'adversaire doit combattre.",
+        "Lux n'est pas obligee de jouer ce jeu."
+      ],
+      "opponent_plan": [
+        "remove and stall",
+        "gagner a la qualite des sorts"
+      ],
+      "azir_plan": [
+        "preserver les contres",
+        "ne pas suretaler",
+        "mettre juste assez de pressure pour que Lux n'ait pas tout son temps"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "contre/protection"
+      ],
+      "sideboard_focus": [
+        "plus de counters",
+        "plus de Salvage si besoin"
+      ],
+      "battlefield_notes": [
+        "Le matchup tourne vite a la rune economy."
+      ],
+      "main_lose_conditions_for_azir": [
+        "full tap turns",
+        "un seul porteur qui meurt"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal timing"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Ahri, Nine-Tailed Fox",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "azir_outlook": {
+        "label": "slightly_favorable",
+        "estimated_azir_winrate_percent": "51-55",
+        "confidence": "low"
+      },
+      "summary": "Ahri peut voler des points sur la mobilite, mais Azir presente assez de largeur et de modularite pour rendre ces vols moins confortables.",
+      "why_matchup_plays_this_way": [
+        "Ahri gagne par precision et par angles.",
+        "Azir gagne par saturation intelligente de la table."
+      ],
+      "opponent_plan": [
+        "score opportuniste",
+        "deplacement",
+        "faire courir Azir"
+      ],
+      "azir_plan": [
+        "ne pas sur-commit un seul battlefield",
+        "forcer Ahri a respecter plusieurs corps"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "main stable"
+      ],
+      "sideboard_focus": [
+        "tempo flexible"
+      ],
+      "battlefield_notes": [
+        "Bien repartir les equips compte plus qu'augmenter un seul porteur."
+      ],
+      "main_lose_conditions_for_azir": [
+        "donner trop de points gratuits"
+      ],
+      "important_patterns_to_respect": [
+        "mobility score turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S3"
+      ]
+    }
+  ],
+  "sources": {
+    "S1": {
+      "type": "guide",
+      "title": "Riftbound.gg - Azir, Emperor of the Sands Guide",
+      "date": "2026-02-11",
+      "url": "https://riftbound.gg/azir-emperor-of-the-sands-guide/"
+    },
+    "S2": {
+      "type": "guide",
+      "title": "Rift Mana - Azir Emperor of the Sands Deck Guide",
+      "date": "2026-02-11",
+      "url": "https://riftmana.com/calm-order-azir-emperor-of-the-sands-deck-guide/"
+    },
+    "S3": {
+      "type": "official decklist",
+      "title": "Riftbound official - The Best Decks out of Bologna - Rocklho Azir",
+      "date": "2026-02-25",
+      "url": "https://riftbound.leagueoflegends.com/en-us/news/organizedplay/the-best-decks-out-of-bologna/"
+    },
+    "S4": {
+      "type": "official decklist",
+      "title": "Riftbound official - Vegas Top Decks - Rocklho Azir",
+      "date": "2026-03-04",
+      "url": "https://riftbound.leagueoflegends.com/en-us/news/organizedplay/vegas-top-decks/"
+    },
+    "S5": {
+      "type": "meta stats",
+      "title": "RiftDecks - Spiritforged Legends Meta Breakdown",
+      "date_consulted": "2026-03-11",
+      "url": "https://riftdecks.com/legends?metagame_id=2"
+    },
+    "S6": {
+      "type": "event stats",
+      "title": "Riftbound.gg - Bologna Regional Qualifier Results",
+      "date": "2026-03-05",
+      "url": "https://riftbound.gg/bologna-regional-qualifier/"
+    },
+    "S7": {
+      "type": "event stats",
+      "title": "Riftbound.gg - Vegas Regional Qualifier Results",
+      "date": "2026-03-03",
+      "url": "https://riftbound.gg/vegas-regional-qualifier/"
+    },
+    "S8": {
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Vegas",
+      "date": "2026-03-06",
+      "url": "https://riftbound.gg/riftbound-meta-tier-list-best-decks-for-spiritforged-post-vegas-metagame/"
+    },
+    "S9": {
+      "type": "community thread",
+      "title": "[Azir] Looking for the best ways to play this Azir deck",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1r6avc9/azir_looking_for_the_best_ways_to_play_this_azir/"
+    },
+    "S10": {
+      "type": "community thread",
+      "title": "Azir vs Irelia",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rkzely/azir_vs_irelia/"
+    },
+    "S11": {
+      "type": "community thread",
+      "title": "Best of Viktor Las Vegas Regional (19th Place)",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rjh8b1/best_of_viktor_las_vegas_regional_19th_place/"
+    },
+    "S12": {
+      "type": "community thread",
+      "title": "Best decklist to counter Azir and Aurora",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1ri8geb/best_decklist_to_counter_azir_and_aurora/"
+    },
+    "S13": {
+      "type": "community thread",
+      "title": "Questions about AlanzQ's Ezreal Winner Deck",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rdehiq/questions_about_alanzqs_ezreal_winner_deck/"
+    },
+    "S14": {
+      "type": "event stats",
+      "title": "Riftbound.gg - Nanjing Regional Open Results",
+      "date": "2026-02-10",
+      "url": "https://riftbound.gg/nanjing-regional-open-results-popularity-conversion-rate-best-deck-for-every-legend/"
+    },
+    "S15": {
+      "type": "event stats",
+      "title": "Riftbound.gg - Dalian Regional Open Results",
+      "date": "2026-02-03",
+      "url": "https://riftbound.gg/dalian-regional-open-results-popularity-conversion-rate-best-deck-for-every-legend/"
+    },
+    "S16": {
+      "type": "official update",
+      "title": "Potential Card Bans: Riftbound Game Director's Update",
+      "date": "2026-03-10",
+      "url": "https://riftbound.gg/card-bans-riftbound-game-directors-update/"
+    },
+    "S17": {
+      "type": "community thread",
+      "title": "Cool Meta",
+      "date_consulted": "2026-03-11",
+      "url": "https://www.reddit.com/r/riftboundtcg/comments/1rc229z/cool_meta/"
+    }
+  }
+}

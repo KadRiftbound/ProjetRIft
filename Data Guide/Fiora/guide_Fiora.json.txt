@@ -1,0 +1,1174 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Fiora complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte janvier-mars 2026 pour suivre l'evolution des shells Fiora",
+    "methodology": {
+      "approach": [
+        "Croisement du guide Fiora recent et des tier lists chinoises puis occidentales",
+        "Croisement des decklists officielles Bologna et Vegas",
+        "Croisement des decklists Fuzhou/Chengdu publiees en base de donnees",
+        "Croisement des discussions communautaires recentes sur Fiora midrange, Fiora Hook et les plans de sideboard",
+        "Accent mis sur le pilotage expert, la structure des shells et la logique de matchup plutot que sur la seule place dans les tier lists"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + decklist officielle et/ou retour matchup explicite",
+        "medium": "Consensus raisonnable mais sensible au shell, au sideboard ou au niveau du pilote",
+        "low": "Peu de data directe, lecture surtout structurelle ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "fiora_meta_position": {
+      "riftdecks_spiritforged": {
+        "meta_share_percent": 3.5,
+        "tier": "Tier 3",
+        "snapshot_event_context": "Vegas",
+        "decks_indexed": 50
+      },
+      "riftbound_gg_post_chengdu": {
+        "tier": "Tier 1",
+        "notes": "Fiora etait encore vue comme un vrai contender apres les premiers regionaux chinois"
+      },
+      "riftbound_gg_post_chinese_regionals": {
+        "tier": "Tier 2",
+        "notes": "Deux finales et un top 8 en Chine, mais une conversion rate toujours fragile"
+      },
+      "riftbound_gg_post_bologna": {
+        "tier": "Tier 3",
+        "metrics": {
+          "total_picks": 47,
+          "day2_conversion_percent": 6,
+          "non_mirror_winrate_percent": 46.4,
+          "best_finish": "Top 64"
+        },
+        "notes": "Le site considere que la meta occidentale avec plus de gear removal nuit a Fiora"
+      },
+      "riftbound_gg_post_vegas": {
+        "tier": "Tier 3",
+        "metrics": {
+          "total_picks": 50,
+          "day2_conversion_percent": 6,
+          "non_mirror_winrate_percent": 42.7,
+          "best_finish": "9-3-1 / best-of #70 overall"
+        },
+        "notes": "Le site parle d'un complete meltdown en Occident par rapport aux deux finales chinoises"
+      },
+      "major_recent_results": [
+        "Runner-up Fuzhou",
+        "Runner-up Chengdu",
+        "Best-of Bologna #53 overall",
+        "Best-of Vegas #70 overall"
+      ],
+      "overall_read": "Fiora a demarre Spiritforged comme une vraie menace de haut niveau en Chine, puis a recule en Occident a mesure que la meta s'est remplie de purple decks, de gear hate et de removals propres. Cela ne la rend pas mauvaise a piloter; cela veut surtout dire que le shell doit etre choisi avec precision."
+    },
+    "important_user_instruction_applied": {
+      "statement": "Le guide privilegie la qualite de pilotage, les plans de matchup et les structures de deck plutot qu'un simple jugement meta."
+    }
+  },
+  "advanced_guide": {
+    "legend": "Fiora, Grand Duelist",
+    "domains": [
+      "Body",
+      "Order"
+    ],
+    "macro_identity": {
+      "archetype_family": "Tall equipment duelist / battlefield-control midrange / anti-board tech midrange",
+      "primary_gameplan": "Gagner les showdowns avec une ou deux unites premium equipees, atteindre ou depasser 5 Might pour convertir la legende en economie de runes, puis utiliser cette economie pour continuer a jouer des cartes a power cost sans perdre le tempo.",
+      "secondary_gameplan": "Selon le shell: soit jouer un midrange equipment tres propre autour de Lucian, Sett, Fiora, Worthy et des buffs/combat tricks, soit jouer une version plus gear-heavy a la chinoise avec Salvage et plus de grind, soit jouer une version tech anti-field avec Hook ou des slots de sideboard plus lourds contre Draven/Azir.",
+      "why_the_legend_is_strong": [
+        "La legende transforme les seuils de 5 Might en vraie economie de runes",
+        "Les meilleurs porteurs du deck sont naturellement excellents en showdown ou tres difficiles a tuer proprement",
+        "Body/Order donne acces a certains des meilleurs tricks de combat du format",
+        "Le deck force l'adversaire a respecter a la fois le combat, le timing des buffs, et la possibilite d'un holder qui reste vivant plusieurs tours"
+      ],
+      "why_the_legend_is_hard": [
+        "Le deck depend fortement de la qualite de ses equips et de ses porteurs",
+        "Le mulligan est beaucoup moins permissif qu'un deck purple",
+        "La plupart des mauvaises defaites viennent d'un mauvais ciblage des ressources de protection ou d'une mauvaise lecture du scoreboard",
+        "Le deck peut se faire punir fortement si la meta est trop lourde en gear hate ou en removal hors combat"
+      ]
+    },
+    "rules_and_core_interactions": {
+      "legend_text_summary": "La legende de Fiora demande de faire devenir une unite Mighty ou d'atteindre le seuil pertinent de might pour convertir cet avantage en runes recyclees et garder le rythme des cartes a power cost.",
+      "fiora_worthy_summary": "Fiora, Worthy est privilegiee dans beaucoup de listes recentes car elle accelere le deck et donne un angle de close plus agressif. Les retours communautaires soulignent qu'elle peut se ready elle-meme dans certaines configurations.",
+      "fiora_victorious_summary": "Fiora, Victorious reste une excellente chosen champion dans les builds plus midrange/classiques, surtout quand on valorise sa qualite brute et sa capacite a rester une bonne carte meme sans setup ideal.",
+      "important_rules_notes": [
+        "Le deck utilise souvent le recyclage des runes jaunes pour maintenir ses lines de power cost sans se vider completement.",
+        "Le seuil de Might n'est pas seulement un bonus offensif; c'est un test de deckbuilding et de sequencing qui determine la qualite des tours suivants."
+      ]
+    },
+    "distinct_archetypes": [
+      {
+        "name": "Equipment Duelist Midrange Fiora",
+        "status_march_2026": "Shell de reference occidental le plus propre",
+        "evidence": [
+          "Best-of officiel a Bologna",
+          "Best-of officiel a Vegas",
+          "Guide communautaire recent de Fiora Midrange",
+          "Guide Riftbound.gg qui presente la version Spiritforged comme un midrange plus lent et plus supporte"
+        ],
+        "identity": "Version la plus claire a piloter aujourd'hui. Elle joue un petit nombre de tres bons porteurs, beaucoup d'equipements de qualite, des combat tricks premiums et des champions tres forts comme Fiora, Worthy, Fiora, Victorious, Lucian, Merciless et Sett, Brawler. Elle gagne en rendant chaque showdown tres couteux pour l'adversaire.",
+        "reference_core": [
+          "Fiora, Worthy",
+          "Fiora, Victorious",
+          "Lucian, Merciless",
+          "Sett, Brawler",
+          "B.F. Sword",
+          "Doran's Blade",
+          "Hidden Blade",
+          "Punch First",
+          "Riposte",
+          "Challenge",
+          "Unsung Hero",
+          "Pit Rookie",
+          "First Mate",
+          "Warmog's Armor"
+        ],
+        "reference_battlefields": [
+          "Monastery of Hirana",
+          "Sunken Temple",
+          "The Dreaming Tree"
+        ],
+        "chosen_champion_default": "Fiora, Worthy",
+        "default_for_matchups_below": true
+      },
+      {
+        "name": "Gear-Heavy Chinese Fiora",
+        "status_march_2026": "Shell reel, plus grindy, moins populaire en Occident",
+        "evidence": [
+          "Runner-up Fuzhou",
+          "Guide Riftbound.gg mentionnant une finale chinoise autour d'un core OGN-242",
+          "Decklists publiques Fuzhou avec Salvage main deck"
+        ],
+        "identity": "Version plus old-school Body/Order, qui joue encore plus autour des equips, de Salvage et de la valeur generee par des units Mighty. Moins elegante dans les fields pleins de gear hate, mais toujours forte si l'adversaire ne respecte pas l'economie recursive de la version.",
+        "reference_core": [
+          "Fiora, Victorious",
+          "Fiora, Worthy",
+          "Lucian, Merciless",
+          "Sett, Brawler",
+          "B.F. Sword",
+          "Doran's Blade",
+          "Challenge",
+          "Hidden Blade",
+          "Salvage",
+          "Riposte",
+          "Punch First",
+          "Warmog's Armor",
+          "Sabotage"
+        ],
+        "reference_battlefields": [
+          "The Dreaming Tree",
+          "Sunken Temple",
+          "Monastery of Hirana"
+        ],
+        "chosen_champion_default": "Fiora, Victorious",
+        "important_note": "Ce shell est beaucoup plus vulnerable si le metagame joue deja beaucoup de destruction d'equipements. En revanche, il reste plus grindy et plus punitif contre les adversaires qui ne tuent pas proprement les porteurs."
+      },
+      {
+        "name": "Hook / Anti-Field Fiora",
+        "status_march_2026": "Shell communautaire reel et meta-call",
+        "evidence": [
+          "Discussions recentes sur un shell 'designed to win vs Draven'",
+          "Commentaires sur Baited Hook ou tech anti-Draven dans Fiora",
+          "Debats communautaires sur Cannon Barrage, Deathgrip, Akshan, Qiyana et sideboards flexibles"
+        ],
+        "identity": "Version plus explicitement tunee pour certains fields, surtout pour ameliorer Draven et parfois Azir. Elle remplace une partie de la pure elegance midrange par des cartes plus anguleuses mais plus ciblantes. Ce n'est pas la version la plus universelle, mais c'est une vraie branche jouable.",
+        "reference_core": [
+          "Fiora, Worthy",
+          "Lucian, Merciless",
+          "Sett, Brawler",
+          "Baited Hook in some versions",
+          "Cannon Barrage",
+          "Deathgrip",
+          "Akshan, Mischievous",
+          "Qiyana, Victorious",
+          "Challenge",
+          "Punch First",
+          "Riposte",
+          "B.F. Sword"
+        ],
+        "reference_battlefields": [
+          "Monastery of Hirana",
+          "Sunken Temple",
+          "The Dreaming Tree or anti-field swap"
+        ],
+        "chosen_champion_default": "Fiora, Worthy",
+        "important_note": "Le shell Hook/anti-field est moins consensuel et plus polarisant. Il faut le choisir parce qu'on sait pourquoi on le joue, pas juste parce qu'il a des highs."
+      }
+    ],
+    "advanced_pilot_principles": [
+      {
+        "name": "Fiora is a resource deck disguised as a combat deck",
+        "detail": "Le deck donne l'impression de ne gagner que par les showdowns. En realite, il gagne surtout en convertissant les bons showdowns en economie de runes et en tours futurs plus puissants que ceux de l'adversaire."
+      },
+      {
+        "name": "Your best unit surviving is often worth more than winning one extra point now",
+        "detail": "Les meilleurs joueurs Fiora repetent une idee simple: il faut souvent proteger le bon porteur pour le prochain tour plutot que maximiser la might brute du tour en cours."
+      },
+      {
+        "name": "Fiora, Worthy changes the texture of the deck",
+        "detail": "Le choix entre Worthy et Victorious n'est pas cosmetique. Worthy rend le deck plus agressif, plus direct et meilleur pour casser certains boards tot; Victorious donne plus de qualite brute et de confort si la partie devient plus midrange."
+      },
+      {
+        "name": "You are not trying to win every showdown, only the ones that reshape the game",
+        "detail": "Fiora perd quand elle depense Punch First, Riposte et Hidden Blade dans des combats qui ne changent pas le scoreboard ou la structure des fronts."
+      },
+      {
+        "name": "Your mulligan matters because your draw engine is real but inconsistent",
+        "detail": "La communaute recente insiste sur ce point: le deck a besoin de draw additionnel type Qiyana, Unsung Hero ou The Dreaming Tree, mais cela reste moins souple qu'un shell purple. Il faut donc mulligan tres proprement."
+      },
+      {
+        "name": "Adapt the shell to the field, not just the 40-card ideal",
+        "detail": "Akshan contre gears, Qiyana pour draw plus stable, Deathgrip plutot que Call to Glory, Unyielding Spirit contre spell-heavy, Cannon Barrage contre Azir: Fiora recompense beaucoup le metagaming fin."
+      }
+    ],
+    "signature_cards_and_packages": {
+      "fiora_grand_duelist_role": "La legende recompense les unites Mighty et les turns ou les gros power costs ne te ruinent pas economiquement.",
+      "fiora_worthy_role": "Champion privilegie dans beaucoup de listes mars 2026 pour sa vitesse et sa capacite a rendre le deck moins lent. Le guide communautaire la prefere a Victorious dans beaucoup de contexts.",
+      "fiora_victorious_role": "Champion plus old-school, excellent standalone et encore joue dans plusieurs listes officielles ou chinoises.",
+      "bf_sword_role": "L'equipement iconique de la legende. Il convertit immediatement les bonnes unites en vraies menaces de showdown.",
+      "dorans_blade_role": "Starter d'equipement tres propre qui rend les premiers turns beaucoup plus fiables.",
+      "hidden_blade_role": "Carte de skill expression majeure. Peut retirer un bloqueur, forcer un mauvais combat ou soutenir The Dreaming Tree lines.",
+      "riposte_role": "Une des meilleures cartes du deck. Elle gagne les combats qui comptent et augmente fortement le cout de chaque interaction adverse.",
+      "punch_first_role": "Toujours bonne, souvent l'un des meilleurs spells a garder au mulligan contre tempo decks.",
+      "challenge_role": "Remplie deux roles: retirer la bonne piece tempo au bon moment et ouvrir un battlefield ou un holder peut survivre.",
+      "call_to_glory_role": "Moins populaire que Punch First, mais defendue par certains joueurs pour sa flexibilite, son surprise factor et sa synergie avec The Dreaming Tree.",
+      "deathgrip_role": "Tech recente qui donne draw, may buff, et une facon de tuer certaines grosses unites Mighty ou de convertir des boards compliques.",
+      "unsung_hero_role": "One of the best supporting bodies in the western midrange shells. Il aide a garder la pression sans exiger trop d'energy supplementaire.",
+      "qiyana_victorious_role": "Tech de draw et de Deflect defendue dans les listes communautaires recentes; meilleure contre certains decks rouges/purple, moins bonne contre Annie et parfois Kai'Sa.",
+      "akshan_mischievous_role": "Autre tech majeure. Meilleur quand le field contient plus de gears, d'Azir, d'Irelia ou de shells qui exigent du gear hate.",
+      "salvage_role": "Marqueur fort des shells gear-heavy. Donne du grind, mais devient plus fragile si le metagame est deja plein de ways to punish gears.",
+      "unyielding_spirit_role": "Sideboard cle contre Kai'Sa, Viktor et autres decks heavy-spell selon plusieurs retours recents.",
+      "cannon_barrage_role": "Tech specifique mentionnee pour mieux jouer Azir et certaines largeurs."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Playing Fiora like a generic Body midrange pile",
+        "why_it_loses": "La legende et les champions demandent une vraie logique de porteur, de seuils de might et de conservation des bonnes ressources."
+      },
+      {
+        "mistake": "Over-committing gear onto the wrong unit",
+        "why_it_loses": "C'est l'une des facons les plus rapides de perdre contre les decks avec removal propre ou tempo bounce."
+      },
+      {
+        "mistake": "Using Riposte and Punch First for cosmetic combat wins",
+        "why_it_loses": "Ces cartes doivent gagner les combats qui changent le scoreboard ou la survie du bon porteur."
+      },
+      {
+        "mistake": "Keeping hands that have no real early shape",
+        "why_it_loses": "Fiora n'a pas le luxe de partir de tres loin puis de tout reparer a la pioche."
+      },
+      {
+        "mistake": "Not changing the shell when the field changes",
+        "why_it_loses": "La communaute recente insiste justement sur le fait que Qiyana, Akshan, Deathgrip, Unyielding Spirit et Cannon Barrage sont de vrais meta slots, pas des caprices."
+      },
+      {
+        "mistake": "Treating The Dreaming Tree as the only battlefield plan",
+        "why_it_loses": "The Dreaming Tree est excellent, mais certains matchups, surtout Irelia, l'exploitent tres bien aussi."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Un bon porteur vivant pour le tour suivant vaut souvent plus qu'un front gagne avec toutes tes ressources depensees.",
+      "Si tu joues Fiora, Worthy, pense toujours a ce que ton tour de re-attaque ou de pression supplementaire va realement acheter sur le scoreboard.",
+      "Qiyana n'est pas juste une carte de draw: son Deflect change aussi la maniere dont certains rouges/purple peuvent ou non te punir.",
+      "Challenge est souvent meilleur quand il tue une piece tempo sans protection que quand il essaye de gagner un gros combat deja telegraphe.",
+      "Dans les fields pleins d'Azir et de Draven, Cannon Barrage et Deathgrip ont une vraie justification, pas seulement une valeur surprise."
+    ]
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Kai'Sa, Daughter of the Void",
+      "meta_share_percent": 18,
+      "default_shell": "Equipment Duelist Midrange Fiora",
+      "fiora_outlook": {
+        "label": "slightly_favorable",
+        "estimated_fiora_winrate_percent": "52-57",
+        "confidence": "medium"
+      },
+      "summary": "Le signal communautaire recent va plutot dans le sens d'un bon matchup pour Fiora contre Kai'Sa, a condition de bien gerer la protection des porteurs. Le guide Fiora Midrange dit explicitement que le matchup contre les spell-damage decks lui semble bon, et des joueurs recommandent Ruin Runner ou Unyielding Spirit comme bons outils si on veut encore l'ameliorer.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa veut tuer proprement les bonnes unites et eviter les combats fair.",
+        "Fiora peut rendre ces removals maladroits si ses unites restent hors des bons breakpoints ou si Deflect et Riposte changent la fenetre de kill."
+      ],
+      "opponent_plan": [
+        "retirer les bons porteurs hors combat",
+        "laisser Fiora investir au mauvais moment",
+        "stabiliser puis fermer avec Time Warp ou top-end"
+      ],
+      "fiora_plan": [
+        "ne pas telegraphier trop tot l'unique piece importante",
+        "utiliser Deflect, Riposte et Unyielding Spirit pour casser le tempo des kill spells",
+        "forcer Kai'Sa a depenser trop pour un seul corps",
+        "garder la pression de scoreboard suffisamment reelle"
+      ],
+      "mulligan_focus": [
+        "equipement de depart",
+        "porteur early",
+        "Punch First souvent bon",
+        "main qui ne depend pas d'un seul topdeck"
+      ],
+      "sideboard_focus": [
+        "Ruin Runner selon build",
+        "Unyielding Spirit",
+        "Deathgrip dans certaines listes",
+        "retirer les cartes trop lentes"
+      ],
+      "battlefield_notes": [
+        "Sunken Temple et Monastery of Hirana donnent de bons angles de prise puis de re-pression.",
+        "Les longs holds a une seule unite sans couverture restent dangereux."
+      ],
+      "main_lose_conditions_for_fiora": [
+        "surinvestir sur une seule unite sans protection",
+        "ne pas respecter les removals hors combat",
+        "mains lentes ou sans early body"
+      ],
+      "important_patterns_to_respect": [
+        "Falling Star",
+        "Hextech Ray",
+        "Piercing Light",
+        "Time Warp"
+      ],
+      "variation_notes": {
+        "gear_heavy_chinese": "Peut etre plus forte si Kai'Sa n'a pas assez de gear hate, mais plus punissable si elle tue proprement les holders.",
+        "hook_anti_field": "Pas specialement necessaire ici; la version midrange propre suffit souvent."
+      },
+      "source_refs": [
+        "S7",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "default_shell": "Equipment Duelist Midrange Fiora",
+      "fiora_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_fiora_winrate_percent": "50-55",
+        "confidence": "medium"
+      },
+      "summary": "Les retours communautaires recents rapprochent Viktor de Kai'Sa dans la famille 'spell-heavy / removal-heavy decks' que Fiora peut bien jouer si elle protege correctement ses unites. Unyielding Spirit est regulierement citee comme sideboard fort ici.",
+      "why_matchup_plays_this_way": [
+        "Viktor veut casser ton porteur puis te gagner a l'attrition.",
+        "Fiora peut punir cela si elle fait payer chaque removal et conserve l'avantage de combat sur les fronts."
+      ],
+      "opponent_plan": [
+        "tuer les bons holders",
+        "gagner a la resource quality",
+        "forcer Fiora a trop s'etaler"
+      ],
+      "fiora_plan": [
+        "ne pas donner des removals trop propres",
+        "forcer Viktor a interagir sous tes conditions de showdown",
+        "garder des cartes de protection pour les vraies pieces",
+        "ne pas laisser la partie devenir une pure guerre d'attrition sans scoreboard"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "porteur early",
+        "pas de hand full top-end",
+        "Riposte et Punch First souvent excellentes"
+      ],
+      "sideboard_focus": [
+        "Unyielding Spirit",
+        "Ruin Runner selon shell",
+        "Akshan si la version Viktor a des equips ou des outils a cibler",
+        "retirer les cartes les moins efficaces en attrition"
+      ],
+      "battlefield_notes": [
+        "The Dreaming Tree peut etre tres forte si tu es devant, mais le matchup se gagne surtout sur la qualite des trades et des protections."
+      ],
+      "main_lose_conditions_for_fiora": [
+        "investir trop sur une seule piece",
+        "laisser Viktor choisir seul le rythme de la partie",
+        "manque de clock"
+      ],
+      "important_patterns_to_respect": [
+        "hard removal timing",
+        "token stalls",
+        "value loops"
+      ],
+      "variation_notes": {
+        "gear_heavy_chinese": "Peut mieux grinder si Viktor ne punit pas assez les equips, mais reste plus vulnerable au tempo de removal.",
+        "hook_anti_field": "Peut etre un peu moins elegant ici que le midrange pur."
+      },
+      "source_refs": [
+        "S7",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "default_shell": "Hook / Anti-Field Fiora",
+      "fiora_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_fiora_winrate_percent": "47-51",
+        "confidence": "medium"
+      },
+      "summary": "Le pairing Draven midrange est l'un des grands points de tension du deck. Les sources recentes convergent sur l'idee qu'il n'est pas naturellement favorable, mais qu'il est clairement jouable, surtout avec Fiora, Worthy, de grosses Ripostes, du Salvage ou un shell Hook plus specialise. Plusieurs joueurs disent explicitement que Hook a ete pense pour ameliorer Draven.",
+      "why_matchup_plays_this_way": [
+        "Draven met naturellement plus de pression de table et punit les unites equipées mal protegees.",
+        "Fiora peut cependant casser les maths de combat si elle force Draven a se battre sur le mauvais front et au mauvais timing."
+      ],
+      "opponent_plan": [
+        "prendre les points tot",
+        "forcer des showdowns rentables",
+        "tirer de la value sur les petites unites et les combats"
+      ],
+      "fiora_plan": [
+        "ne pas jouer un combat fair si le scoreboard n'en a pas besoin",
+        "utiliser Worthy pour accelerer les bons tours et mettre Draven sous pression",
+        "Cannon Barrage, Deathgrip ou Hook selon version pour punir ses boards les plus confortables",
+        "conserver Riposte pour le vrai turn pivot, pas pour le premier trade venu"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "porteur early",
+        "Punch First ou Challenge",
+        "main avec vrai front contestable"
+      ],
+      "sideboard_focus": [
+        "Cannon Barrage",
+        "Deathgrip selon version",
+        "Hook package si c'est ton shell",
+        "Sabotage supplementaire selon liste"
+      ],
+      "battlefield_notes": [
+        "Monastery et Sunken Temple restent bons, mais le plus important est de ne pas laisser Draven rentabiliser deux fronts sans pression retour."
+      ],
+      "main_lose_conditions_for_fiora": [
+        "offrir des combats gratuits",
+        "surinvestir un porteur sans couverture",
+        "laisser Draven remplir la main et la table en meme temps"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight",
+        "Brynhir turns",
+        "2 energie ouverte",
+        "tempo pressure sur large board"
+      ],
+      "variation_notes": {
+        "equipment_duelist_midrange": "Jouable, mais demande un pilotage tres propre.",
+        "gear_heavy_chinese": "Peut mieux grinder certaines sorties, mais plus vulnerable si Draven punit les equips.",
+        "hook_anti_field": "C'est la version la plus explicitement defendue pour ameliorer ce pairing."
+      },
+      "source_refs": [
+        "S8",
+        "S9",
+        "S12",
+        "S13"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "default_shell": "Hook / Anti-Field Fiora",
+      "fiora_outlook": {
+        "label": "unfavorable",
+        "estimated_fiora_winrate_percent": "43-48",
+        "confidence": "low"
+      },
+      "summary": "Le signal direct est plus faible que pour Midrange Draven, mais les discussions recentes laissent entendre que Miracle est plus dur pour Fiora: moins de showdowns simples a gagner, plus de value loops, plus de turns ou un seul porteur ne suffit plus.",
+      "why_matchup_plays_this_way": [
+        "Miracle Draven demande a Fiora de clock vite ou de casser plusieurs sources de value a la fois.",
+        "Le shell duelist classique n'est pas toujours fait pour cela."
+      ],
+      "opponent_plan": [
+        "cycler et accumuler la value",
+        "punir les boards compacts ou les porteurs trop identifiables"
+      ],
+      "fiora_plan": [
+        "garder une vraie pression de scoreboard",
+        "ne pas devenir un simple deck fair midrange",
+        "tech plus agressive ou plus disruptive si le field local est tres miracle"
+      ],
+      "mulligan_focus": [
+        "main proactive",
+        "pas de keep lent",
+        "carte de pressure plus piece de protection"
+      ],
+      "sideboard_focus": [
+        "Sabotage",
+        "anti-miracle flex slots",
+        "retirer les cartes trop fair"
+      ],
+      "battlefield_notes": [
+        "Le matchup se degrade si Fiora accepte une partie trop longue sans vraie clock."
+      ],
+      "main_lose_conditions_for_fiora": [
+        "pas assez de score",
+        "mains lentes",
+        "surestimer la qualite d'un seul gros front"
+      ],
+      "important_patterns_to_respect": [
+        "stacking turns",
+        "resource loops",
+        "wide tempo resets"
+      ],
+      "variation_notes": {
+        "hook_anti_field": "Toujours la meilleure chance si tu veux specialement respecter Draven miracle.",
+        "gear_heavy_chinese": "Moins bien alignee si le miracle deck a beaucoup de ways de contourner le combat."
+      },
+      "source_refs": [
+        "S8",
+        "S12"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "default_shell": "Equipment Duelist Midrange Fiora",
+      "fiora_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_fiora_winrate_percent": "50-55",
+        "confidence": "medium"
+      },
+      "summary": "Les sources recentes suggerent que Fiora a de vrais outils contre Irelia. Challenge est explicitement cite comme excellent contre Kai'Sa, Irelia et Draven si l'adversaire joue pour le tempo sans protection. Akshan est egalement mentionne comme ameliorant Irelia directement, et Sabotage est cite comme side card utile contre Irelia.",
+      "why_matchup_plays_this_way": [
+        "Irelia veut tenir un front avec une piece protegee et gagner sur des maths de combat tres fines.",
+        "Fiora peut souvent jouer une version encore plus violente de ce jeu si elle choisit les bonnes fenetres."
+      ],
+      "opponent_plan": [
+        "installer un porteur",
+        "forcer des combats sous protection",
+        "profiter de Dreaming Tree et des boots/GA lines"
+      ],
+      "fiora_plan": [
+        "Challenge sur les pieces tempo sans couverture",
+        "garder Punch First pour les vrais breakpoints",
+        "Sabotage si la version l'utilise pour casser les non-unit cards critiques",
+        "Akshan dans les fields ou Irelia et Azir sont nombreux"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "Challenge",
+        "Punch First",
+        "porteur early"
+      ],
+      "sideboard_focus": [
+        "Akshan",
+        "Sabotage",
+        "Deathgrip dans certaines versions",
+        "retirer les cartes les moins propres si le matchup devient tres finesse"
+      ],
+      "battlefield_notes": [
+        "The Dreaming Tree est excellente mais dangereuse car Irelia l'utilise aussi tres bien.",
+        "Le matchup se gagne souvent en choisissant quel front doit devenir vrai."
+      ],
+      "main_lose_conditions_for_fiora": [
+        "attaquer trop telegraphe",
+        "gaspiller Punch First",
+        "laisser Irelia garder un porteur gratuit"
+      ],
+      "important_patterns_to_respect": [
+        "GA and boots lines",
+        "Defiant Dance tempo",
+        "Dreaming Tree value races"
+      ],
+      "variation_notes": {
+        "gear_heavy_chinese": "Toujours jouable si Salvage garde le grind, mais attention au gear hate post-side.",
+        "hook_anti_field": "Pas necessaire sauf si le field demande plus de cartes mortes contre Draven que contre Irelia."
+      },
+      "source_refs": [
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "default_shell": "Hook / Anti-Field Fiora",
+      "fiora_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_fiora_winrate_percent": "45-49",
+        "confidence": "medium"
+      },
+      "summary": "Azir revient comme un pairing plus penible pour Fiora. Le guide communautaire recent dit explicitement avoir ajoute Cannon Barrage parce que le matchup Azir peut etre difficile, et Akshan est aussi cite comme ameliorant Azir directement.",
+      "why_matchup_plays_this_way": [
+        "Azir peut aller plus large que Fiora et rendre certaines cartes de duel trop etroites.",
+        "Fiora doit identifier la vraie piece qui transforme la largeur en vraie pressure, sinon elle se fait user."
+      ],
+      "opponent_plan": [
+        "mettre de la largeur et des equips",
+        "tenir puis deborder les fronts"
+      ],
+      "fiora_plan": [
+        "ne pas combattre chaque token",
+        "viser la piece qui genere recruits ou qui donne la vraie traction",
+        "Cannon Barrage sur les tours ou Azir se croit en securite",
+        "Akshan si le field Azir est reel"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "porteur early",
+        "Challenge si la ligne existe",
+        "pas de hand trop lente"
+      ],
+      "sideboard_focus": [
+        "Cannon Barrage",
+        "Akshan",
+        "removals plus larges si disponibles"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient bien meilleur si Fiora empeche Azir de transformer sa largeur en prise gratuite de battlefield."
+      ],
+      "main_lose_conditions_for_fiora": [
+        "reponses trop etroites",
+        "laisser vivre le bon generateur",
+        "perdre le score trop tot"
+      ],
+      "important_patterns_to_respect": [
+        "Azir Sovereign turns",
+        "Arise",
+        "token plus equipment transitions"
+      ],
+      "variation_notes": {
+        "equipment_duelist_midrange": "Jouable mais demande plus de precision sur les cibles.",
+        "hook_anti_field": "Souvent la meilleure version si ton local est plein d'Azir et de Draven."
+      },
+      "source_refs": [
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "default_shell": "Equipment Duelist Midrange Fiora",
+      "fiora_outlook": {
+        "label": "close_even_to_slightly_unfavorable",
+        "estimated_fiora_winrate_percent": "47-51",
+        "confidence": "low"
+      },
+      "summary": "Le meilleur signal recent est indirect mais utile: Qiyana est dite moins bonne contre Annie, et certains joueurs listent Annie parmi les decks qui tuent bien les unites en base, ce qui rend Unyielding Spirit plus interessante. Cela suggere un pairing ou Fiora peut gagner, mais ou elle doit respecter davantage le tempo adverse que contre Kai'Sa ou Viktor.",
+      "why_matchup_plays_this_way": [
+        "Annie veut jouer devant au score et forcer Fiora a se battre dans le mauvais tempo.",
+        "Fiora veut imposer un ou deux showdowns de qualite et garder un holder vivant."
+      ],
+      "opponent_plan": [
+        "prendre vite les points",
+        "forcer Fiora a depenser ses protections en defense"
+      ],
+      "fiora_plan": [
+        "mulligan pour une vraie courbe",
+        "ne pas garder une main purement value",
+        "garder assez de tricks pour punir une overextension d'Annie sans lui donner tout le scoreboard"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "porteur precoce",
+        "interaction cheap"
+      ],
+      "sideboard_focus": [
+        "Unyielding Spirit si la version Annie est tres spell-heavy",
+        "retirer les cartes les plus lentes",
+        "garder la densite de menace"
+      ],
+      "battlefield_notes": [
+        "Les fronts de pure race sont un peu moins bons pour Fiora si sa main commence lentement."
+      ],
+      "main_lose_conditions_for_fiora": [
+        "main lente",
+        "pas de porteur avant que le score s'emballe",
+        "depenses de tricks trop defensives trop tot"
+      ],
+      "important_patterns_to_respect": [
+        "fast point starts",
+        "Fight or Flight",
+        "Ride the Wind or miracle-annie closes depending shell"
+      ],
+      "variation_notes": {
+        "gear_heavy_chinese": "Peut etre un peu trop lent si le field Annie est rapide.",
+        "hook_anti_field": "Peut surprendre, mais n'est pas la raison principale d'exister du shell."
+      },
+      "source_refs": [
+        "S7",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Rek'Sai, Void Burrower",
+      "meta_share_percent": 2,
+      "default_shell": "Equipment Duelist Midrange Fiora",
+      "fiora_outlook": {
+        "label": "slightly_favorable",
+        "estimated_fiora_winrate_percent": "51-55",
+        "confidence": "low"
+      },
+      "summary": "Les retours communautaires recents placent parfois Rek'Sai parmi les decks qui tuent bien les unites en base, donc il faut respecter ce point. Mais structurellement, Fiora aime plutot les matchups ou une ou deux pieces de bonne qualite peuvent rendre les conquetes adverses couteuses.",
+      "why_matchup_plays_this_way": [
+        "Rek'Sai veut conquerir repetitivement et garder ses unites en vie.",
+        "Fiora est justement bonne pour rendre un conquer tres couteux quand le holder est bien equipe et bien protege."
+      ],
+      "opponent_plan": [
+        "prendre le front puis tirer de la value de la legende",
+        "punir les mains trop lentes"
+      ],
+      "fiora_plan": [
+        "gagner les showdowns vraiment importants",
+        "ne pas laisser Rek'Sai transformer le premier conquer en moteur gratuit",
+        "Unyielding Spirit ou protections similaires si la version adverse tue beaucoup en base"
+      ],
+      "mulligan_focus": [
+        "equip de depart",
+        "porteur stable",
+        "pas de hand full late"
+      ],
+      "sideboard_focus": [
+        "Unyielding Spirit selon texture",
+        "anti-conquer tempo cards"
+      ],
+      "battlefield_notes": [
+        "Le matchup est meilleur si Fiora impose tres vite un front que Rek'Sai ne peut pas conquer proprement."
+      ],
+      "main_lose_conditions_for_fiora": [
+        "main lente",
+        "laisser Rek'Sai prendre deux bons conquers gratuits",
+        "protection mal sequencee"
+      ],
+      "important_patterns_to_respect": [
+        "Void Rush",
+        "repeated conquer engines",
+        "big reveal turns"
+      ],
+      "variation_notes": {
+        "hook_anti_field": "Pas necessaire mais jouable si ton shell est deja configure pour des turns plus tempo."
+      },
+      "source_refs": [
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "default_shell": "Equipment Duelist Midrange Fiora",
+      "fiora_outlook": {
+        "label": "close_even",
+        "estimated_fiora_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Le pairing oppose la qualite des showdowns de Fiora au plafond de cartes d'Ezreal. Le signal direct est faible, mais le deck Fiora midrange communautaire est explicitement presente comme un deck pour 'challenge the Dravens and Irelias of the world', pas comme un deck naturellement taille pour grinder les purple decks sans adaptation.",
+      "why_matchup_plays_this_way": [
+        "Ezreal a plus de plafond de grind et de recursion.",
+        "Fiora a plus de capacite a rendre un showdown decisif."
+      ],
+      "opponent_plan": [
+        "ralentir puis gagner a la carte",
+        "forcer Fiora a jouer trop vite ses tricks"
+      ],
+      "fiora_plan": [
+        "maintenir une vraie pression de scoreboard",
+        "ne pas laisser Ezreal jouer une partie purement lente",
+        "garder Riposte et Punch First pour les fronts qui comptent reellement"
+      ],
+      "mulligan_focus": [
+        "equipement de depart",
+        "porteur early",
+        "main proactive"
+      ],
+      "sideboard_focus": [
+        "Sabotage",
+        "Unyielding Spirit selon build",
+        "retirer les cartes mortes si Ezreal combat peu"
+      ],
+      "battlefield_notes": [
+        "Le matchup se gagne plus souvent sur le tempo de battlefield que sur la pure qualite de main."
+      ],
+      "main_lose_conditions_for_fiora": [
+        "donner trop de temps",
+        "devenir un midrange fair sans pressure",
+        "surestimer la value brute de ses cartes"
+      ],
+      "important_patterns_to_respect": [
+        "Rhasa turns",
+        "Called Shot loops",
+        "late purple chains"
+      ],
+      "variation_notes": {
+        "gear_heavy_chinese": "Peut un peu mieux grinder, mais aussi offrir plus de bonnes cibles si Ezreal est bien prepare."
+      },
+      "source_refs": [
+        "S7",
+        "S8"
+      ]
+    }
+  ],
+  "mulligan_by_matchup": {
+    "general_blind": {
+      "equipment_duelist_midrange_keep": [
+        "Doran's Blade",
+        "B.F. Sword si la main a deja un body coherent",
+        "Pit Rookie",
+        "Unsung Hero",
+        "Lucian, Merciless",
+        "Fiora, Worthy si la curve suit",
+        "Punch First souvent keepable"
+      ],
+      "gear_heavy_chinese_keep": [
+        "Doran's Blade",
+        "Salvage si le reste de la main est deja stable",
+        "Fiora, Victorious ou Worthy selon version",
+        "porteur early plus equip"
+      ],
+      "hook_anti_field_keep": [
+        "main deja fonctionnelle avant de garder Hook",
+        "starter plus equip plus interaction",
+        "Cannon Barrage seulement si le pairing le justifie et que la courbe tient"
+      ],
+      "ship": [
+        "main sans equip de depart ni vrai porteur",
+        "main full top-end",
+        "main full tricks sans corps",
+        "main qui suppose des topdecks parfaits"
+      ],
+      "notes": [
+        "Fiora mulligan pour une main structurellement propre, pas pour la beaute brute des cartes.",
+        "Une main moyenne avec equip plus body vaut souvent mieux qu'une main plus puissante mais incoherente."
+      ]
+    },
+    "kaisa": {
+      "keep": [
+        "equip de depart",
+        "porteur early",
+        "Riposte ou Punch First selon texture",
+        "pas de hand all-in sur une seule grosse unite"
+      ],
+      "ship": [
+        "main lente",
+        "main trop dependante d'un seul porteur",
+        "main sans pression early"
+      ]
+    },
+    "draven_midrange": {
+      "keep": [
+        "equip de depart",
+        "porteur early",
+        "Punch First",
+        "Challenge",
+        "Cannon Barrage ou Deathgrip seulement si le reste suit"
+      ],
+      "ship": [
+        "main lente",
+        "main greed",
+        "main sans vrai front contestable"
+      ]
+    },
+    "irelia": {
+      "keep": [
+        "Challenge",
+        "Punch First",
+        "equip de depart",
+        "porteur early"
+      ],
+      "ship": [
+        "main trop lourde",
+        "main sans bonne fenetre de tempo"
+      ]
+    },
+    "azir": {
+      "keep": [
+        "equip de depart",
+        "porteur early",
+        "Challenge",
+        "Cannon Barrage si le reste est fonctionnel"
+      ],
+      "ship": [
+        "main de duel pur sans adaptation a la largeur",
+        "main lente"
+      ]
+    },
+    "viktor": {
+      "keep": [
+        "equip de depart",
+        "porteur stable",
+        "Riposte ou Punch First",
+        "main proactive"
+      ],
+      "ship": [
+        "main full top-end",
+        "main qui n'existe que si un seul porteur vit trop longtemps"
+      ]
+    }
+  },
+  "sideboard_by_matchup": {
+    "general_shell_rules": {
+      "equipment_duelist_midrange": {
+        "identity": "Preserver la densite de porteurs, d'equipements et de tricks qui gagnent vraiment les showdowns.",
+        "dont_do": [
+          "retirer trop de pression pour devenir un deck reactif mou",
+          "rentrer trop de tech et perdre ton plan principal"
+        ]
+      },
+      "gear_heavy_chinese": {
+        "identity": "Assumer un plan plus grindy et plus equip-dense, mais respecter fortement le field si le gear hate est present.",
+        "dont_do": [
+          "sider comme si les equips etaient toujours gratuits a garder",
+          "sous-estimer les cartes qui punissent Salvage lines"
+        ]
+      },
+      "hook_anti_field": {
+        "identity": "Rester un deck de battlefield pressure et de porteurs, pas un deck gimmick qui attend juste Hook.",
+        "dont_do": [
+          "tout miser sur Hook",
+          "retirer trop de qualite brute pour des cartes trop anguleuses"
+        ]
+      }
+    },
+    "kaisa": {
+      "in": [
+        "Unyielding Spirit",
+        "Ruin Runner selon build",
+        "Deathgrip selon liste"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "equipements les plus maladroits dans les versions trop heavy"
+      ],
+      "plan": [
+        "Faire payer chaque removal.",
+        "Conserver la clock au lieu de devenir purement reactif."
+      ]
+    },
+    "viktor": {
+      "in": [
+        "Unyielding Spirit",
+        "Akshan si pertinent",
+        "cartes resilientes"
+      ],
+      "out": [
+        "surplus de cartes trop conditionnelles",
+        "les pires top-end si la curve est lourde"
+      ],
+      "plan": [
+        "Ne pas s'etaler inutilement.",
+        "Faire en sorte que chaque removal Viktor coute vraiment quelque chose."
+      ]
+    },
+    "draven_midrange": {
+      "in": [
+        "Cannon Barrage",
+        "Deathgrip",
+        "Sabotage supplementaire selon liste",
+        "Hook package si c'est la version choisie"
+      ],
+      "out": [
+        "cartes les plus lentes",
+        "surplus d'equipements si l'adversaire en punit trop"
+      ],
+      "plan": [
+        "Preserver le plan de pressure tout en mieux gerant la largeur et les bons turns Draven."
+      ]
+    },
+    "irelia": {
+      "in": [
+        "Akshan",
+        "Sabotage",
+        "Deathgrip selon build"
+      ],
+      "out": [
+        "cartes trop lentes",
+        "techs inutiles contre peu de vraies cibles"
+      ],
+      "plan": [
+        "Garder la qualite des combats et la densite de porteurs.",
+        "Ne pas trop ralentir le deck."
+      ]
+    },
+    "azir": {
+      "in": [
+        "Cannon Barrage",
+        "Akshan",
+        "removals plus larges si disponibles"
+      ],
+      "out": [
+        "cartes trop etroites contre la largeur",
+        "surplus de pure duel cards"
+      ],
+      "plan": [
+        "Viser les generateurs de vraie traction, pas tous les tokens."
+      ]
+    }
+  },
+  "battlefield_plan_by_matchup": {
+    "general_default": {
+      "equipment_duelist_midrange_priority": [
+        "Monastery of Hirana",
+        "Sunken Temple",
+        "The Dreaming Tree"
+      ],
+      "gear_heavy_chinese_priority": [
+        "The Dreaming Tree",
+        "Sunken Temple",
+        "Monastery of Hirana"
+      ],
+      "hook_anti_field_priority": [
+        "Monastery of Hirana",
+        "Sunken Temple",
+        "The Dreaming Tree or anti-field swap"
+      ],
+      "notes": [
+        "Monastery of Hirana et Sunken Temple restent les fronts les plus naturellement favorables a une logique de porteur plus equip.",
+        "The Dreaming Tree donne beaucoup au deck, mais certains matchups s'en servent aussi tres bien contre toi."
+      ]
+    },
+    "kaisa": {
+      "preferred": [
+        "Sunken Temple",
+        "Monastery of Hirana"
+      ],
+      "plan": [
+        "Tu veux un front ou ton porteur peut survivre avec couverture, pas juste gagner un combat puis mourir."
+      ]
+    },
+    "draven_midrange": {
+      "preferred": [
+        "Monastery of Hirana",
+        "Sunken Temple"
+      ],
+      "plan": [
+        "Le but est de rendre le bon front tres couteux a conquerir, pas de te battre partout."
+      ]
+    },
+    "irelia": {
+      "preferred": [
+        "Monastery of Hirana",
+        "Sunken Temple"
+      ],
+      "secondary": [
+        "The Dreaming Tree avec prudence"
+      ],
+      "plan": [
+        "Ne donne pas gratuitement a Irelia un front ou son porteur devient intouchable."
+      ]
+    },
+    "azir": {
+      "preferred": [
+        "Sunken Temple",
+        "Monastery of Hirana"
+      ],
+      "plan": [
+        "Tu veux un front ou un bon holder vaut plus qu'une simple largeur de tokens."
+      ]
+    },
+    "viktor": {
+      "preferred": [
+        "The Dreaming Tree",
+        "Sunken Temple"
+      ],
+      "plan": [
+        "Tree est excellente si tu es deja devant, mais ne la traite pas comme une solution magique si Viktor peut encore choisir tous les trades."
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "guide",
+      "title": "Riftbound.gg - Fiora, Grand Duelist Guide",
+      "date": "2026-02-19",
+      "notes": "Guide principal sur l'identite Body/Order de Fiora, sa version Spiritforged plus lente et plus supporte que dans Origins, et sa place dans la meta."
+    },
+    {
+      "id": "S2",
+      "type": "official tournament article",
+      "title": "Riftbound official - The Best Decks out of Bologna",
+      "date": "2026-02-25",
+      "notes": "Best-of Fiora Bologna #53 overall; shell equipment duelist midrange occidental."
+    },
+    {
+      "id": "S3",
+      "type": "official tournament article",
+      "title": "Riftbound official - Vegas Top Decks",
+      "date": "2026-03-04",
+      "notes": "Best-of Fiora Vegas #70 overall; liste encore proche du shell equipment duelist midrange."
+    },
+    {
+      "id": "S4",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Chengdu",
+      "date": "2026-02-17",
+      "notes": "Fiora Tier 1 apres les regionaux chinois."
+    },
+    {
+      "id": "S5",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Global Release & Post Chinese Regionals",
+      "date": "2026-02-28",
+      "notes": "Fiora Tier 2, deux finales et un top 8 en Chine."
+    },
+    {
+      "id": "S6",
+      "type": "tier list",
+      "title": "Riftbound.gg - Spiritforged Tier List Post-Bologna",
+      "date": "2026-03-01",
+      "notes": "Fiora Tier 3; le site pointe le gear hate occidental."
+    },
+    {
+      "id": "S7",
+      "type": "community guide",
+      "title": "Fiora Midrange Guide",
+      "date_consulted": "2026-03-11",
+      "notes": "Source communautaire tres utile sur la preference Worthy vs Victorious, les techs Qiyana/Akshan/Deathgrip/Unyielding Spirit et plusieurs matchups."
+    },
+    {
+      "id": "S8",
+      "type": "community thread",
+      "title": "Spiritforged Fiora - how are people building her now?",
+      "date_consulted": "2026-03-11",
+      "notes": "Source importante sur le shell tech anti-Draven et sur la fragilite structurelle de Fiora dans le meta miracle."
+    },
+    {
+      "id": "S9",
+      "type": "community thread",
+      "title": "This new Fiora list feels designed to win vs Draven",
+      "date_consulted": "2026-03-11",
+      "notes": "Support direct pour le shell anti-field / anti-Draven."
+    },
+    {
+      "id": "S10",
+      "type": "community thread",
+      "title": "Thoughts on switching back to Fiora from Irelia",
+      "date_consulted": "2026-03-11",
+      "notes": "Comparaison utile contre Kai'Sa, Viktor et certains decks qui tuent les unites en base."
+    },
+    {
+      "id": "S11",
+      "type": "meta stats",
+      "title": "RiftDecks - Spiritforged Legends Meta Breakdown",
+      "date_consulted": "2026-03-11",
+      "notes": "Snapshot Fiora autour de 3.5% et Tier 3."
+    },
+    {
+      "id": "S12",
+      "type": "community thread",
+      "title": "Fiora vs Draven post-Vegas",
+      "date_consulted": "2026-03-11",
+      "notes": "Retour prudent sur la jouabilite du pairing Draven et sur les adaptations necessaires."
+    },
+    {
+      "id": "S13",
+      "type": "community discussion",
+      "title": "Anti-Draven Fiora tech aggregation",
+      "date_consulted": "2026-03-11",
+      "notes": "Resume des options Cannon Barrage, Hook, Deathgrip et sideboard shifts."
+    },
+    {
+      "id": "S14",
+      "type": "news update",
+      "title": "Potential Card Bans: Riftbound Game Director's Update",
+      "date": "2026-03-10",
+      "notes": "Pas de bans annonces; rules update prevue le 30 mars 2026."
+    }
+  ]
+}

@@ -1,0 +1,1572 @@
+{
+  "generated_for": "Utilisateur ChatGPT",
+  "generated_at_utc": "2026-03-11",
+  "language": "fr",
+  "format_version": "1.0",
+  "title": "Guide Kai'Sa complet - Riftbound Spiritforged - Mars 2026",
+  "scope": {
+    "game": "Riftbound: League of Legends TCG",
+    "format": "Constructed - Spiritforged",
+    "timeframe": "Mars 2026, avec contexte fevrier-mars 2026 pour les resultats et les discussions matchup",
+    "methodology": {
+      "approach": [
+        "Croisement des tier lists recentes",
+        "Croisement des best-of lists officielles de Bologna et Vegas",
+        "Croisement des guides Kai'Sa recents",
+        "Croisement des discussions communautaires ciblees sur les sideboards et les matchups",
+        "Confiance reduite explicitement pour les pairings peu documentes"
+      ],
+      "confidence_scale": {
+        "high": "Plusieurs sources recentes convergentes + deck/matchup documente competitivement",
+        "medium": "Consensus raisonnable mais matchup dependant du build, du sideboard ou du niveau de pilotage",
+        "low": "Peu de data directe, lecture surtout theorique ou locale"
+      }
+    }
+  },
+  "meta_context": {
+    "official_state_march_2026": {
+      "banlist_status": "Aucun changement de banlist annonce au moment de la compilation",
+      "official_commentary": "Des bans potentiels sont discutes, mais rien n'etait annonce au 10 mars 2026",
+      "next_rules_update_announced_for": "2026-03-30"
+    },
+    "kaisa_meta_position": {
+      "riftdecks_spiritforged": {
+        "meta_share_percent": 18,
+        "tier": "Tier 1",
+        "top8s": 162
+      },
+      "mobalytics_march_2026": "S-tier",
+      "riftbound_gg_march_6_2026": "Tier 2",
+      "bologna_snapshot": {
+        "field_share_percent": 11,
+        "day2_conversion_percent": 19,
+        "non_mirror_winrate_percent": 50.4,
+        "best_finish": "Top 16 / #9 overall best-of deck"
+      },
+      "vegas_snapshot": {
+        "legend_rank": "1 / 97 Kai'Sa players",
+        "overall_finish": "#11 overall"
+      }
+    },
+    "high_level_summary": [
+      "Kai'Sa reste un des decks de reference du format, mais sa lecture publique depend fortement de la source.",
+      "Les sources basees sur la puissance brute et la flexibilite de deckbuilding la gardent tres haut.",
+      "Les lectures plus sensibles au field concret de mars 2026 la mettent un cran derriere Draven et Irelia, principalement a cause du poids du matchup Irelia et de la pression miracle globale.",
+      "Le shell de reference actuel est un Kai'Sa Fury/Mind de controle par les sorts, pas un deck de combat fair."
+    ]
+  },
+  "kaisa_advanced_guide": {
+    "legend": "Kai'Sa, Daughter of the Void",
+    "domains": [
+      "Fury",
+      "Mind"
+    ],
+    "macro_identity": {
+      "archetype": "Spell-control / tempo-control / late-game battlefield closer",
+      "primary_gameplan": "Nettoyer les pieces adverses via des sorts tres efficaces grace a la reduction implicite de Power de la legende, conserver ses runes plus longtemps que l'adversaire, puis refermer la partie via des swings de battlefield ou Time Warp.",
+      "secondary_gameplan": "Utiliser de petites unites fonctionnelles, souvent mediocres en combat pur mais excellentes en utilite, pour gratter les points necessaires jusqu'au tour de bascule.",
+      "why_the_deck_is_strong": [
+        "La legende rend les removals a Power tres superieurs a leur cout apparent.",
+        "Le shell Fury/Mind offre a la fois removal, stabilisation, finishers et outils de clock comme Time Warp.",
+        "Kai'Sa est extremement bonne pour garder ses runes disponibles plus longtemps que l'adversaire.",
+        "Elle peut gagner en controlant la table sans devoir remporter un grand nombre de combats classiques."
+      ],
+      "why_the_deck_is_hard": [
+        "Le deck est souvent percu comme un simple pile de removals, alors qu'il demande une vraie lecture du score et des battlefields.",
+        "Il faut savoir quelles menaces tuer, lesquelles ignorer, et quand commencer a jouer vers Time Warp.",
+        "Les mauvaises mains ou les keep greed sont lourdement punis.",
+        "Le deck sideboarde beaucoup selon le matchup concret et non selon des automatismes."
+      ]
+    },
+    "competitive_consensus_march_2026": {
+      "summary": [
+        "Kai'Sa est encore un deck majeur de Spiritforged.",
+        "Le shell de reference est aujourd'hui le shell spell-control Fury/Mind.",
+        "Le deck garde un tres bon profil contre une large partie du field fair et contre plusieurs shells miracle qui jouent beaucoup la table.",
+        "Le vrai point de tension de mars 2026 est surtout Irelia et, plus largement, les decks qui rendent ses seuils de removal tres mal alignes."
+      ],
+      "important_caveat": "Le deck n'est pas sous-joue au point d'etre rogue, mais il n'est plus l'evidence absolue d'Origins. Son niveau reel depend beaucoup de la qualite du tuning et de la lecture des matchups."
+    },
+    "reference_shell_march_2026": {
+      "bologna_best_of": {
+        "event_anchor": "Bologna best-of Kai'Sa (#9 overall)",
+        "legend": "Kai'Sa, Daughter of the Void",
+        "champion": "Kai'Sa, Survivor",
+        "battlefields": [
+          "Obelisk of Power",
+          "The Arena's Greatest",
+          "Void Gate"
+        ],
+        "rune_pool": {
+          "fury": 7,
+          "mind": 5
+        },
+        "main_deck_core": [
+          "Bellows Breath",
+          "Falling Star",
+          "Ferrous Forerunner",
+          "Get Excited!",
+          "Hextech Ray",
+          "Lecturing Yordle",
+          "Piercing Light",
+          "Plundering Poro",
+          "Pouty Poro",
+          "Progress Day",
+          "Retreat",
+          "Singularity",
+          "Stupefy",
+          "Thousand-Tailed Watcher",
+          "Time Warp",
+          "Watchful Sentry"
+        ],
+        "known_sideboard": [
+          "Brynhir Thundersong",
+          "Ferrous Forerunner",
+          "Smoke Screen",
+          "Thermo Beam"
+        ]
+      },
+      "vegas_best_of": {
+        "event_anchor": "Vegas best-of Kai'Sa (#11 overall)",
+        "battlefields": [
+          "Obelisk of Power",
+          "The Arena's Greatest",
+          "The Candlelit Sanctum"
+        ],
+        "main_deck_core": [
+          "Bellows Breath",
+          "Falling Star",
+          "Ferrous Forerunner",
+          "Hextech Ray",
+          "Lecturing Yordle",
+          "Noxus Hopeful",
+          "Piercing Light",
+          "Plundering Poro",
+          "Pouty Poro",
+          "Progress Day",
+          "Rocket Barrage",
+          "Singularity",
+          "Stupefy",
+          "Thousand-Tailed Watcher",
+          "Time Warp",
+          "Watchful Sentry"
+        ]
+      },
+      "current_common_core_takeaways": [
+        "Le coeur du deck est tres stable entre Bologna et Vegas.",
+        "La version actuelle prefere des sorts et des unites utilitaires plutot qu'un plan de combat brut.",
+        "Time Warp est toujours un payoff cle meme si on ne le lance pas a chaque partie.",
+        "Le sideboard pivote surtout entre Brynhir, Forerunner, Thermo Beam, tech anti-Irelia et tech anti-miracle."
+      ]
+    },
+    "signature_cards_and_packages": {
+      "kaisa_survivor_role": "Champion de reference en une seule copie dans beaucoup de listes competitives. Le guide Riftbound.gg souligne meme que Kai'Sa est une des legends qui utilise le moins son champion en quantite brute.",
+      "hextech_ray_role": "Removal efficient qui profite enormement du texte de la legende.",
+      "falling_star_role": "Piece majeure pour gagner les echanges de tempo et punir les menaces plus grosses.",
+      "stupefy_role": "Gestion des petites et moyennes menaces, essentielle pour lisser les premiers tours.",
+      "piercing_light_role": "Autre removal de table qui permet de rester efficient sans surexposer ses runes.",
+      "singularity_role": "Top-end removal / tempo swing dans les versions controle plus lourdes.",
+      "watchful_sentry_role": "Petit corps fonctionnel typique de Kai'Sa moderne: utile plus pour ce qu'il permet que pour sa force de combat pure.",
+      "plundering_poro_role": "Piece de score et de ressource utile pour preparer les gros tours.",
+      "pouty_poro_role": "2-drop defensif utilitaire qui colle bien a un plan evitant le combat, souvent decrit comme un 7e ou 8e deux-drop plus qu'un vrai pilier absolu.",
+      "noxus_hopeful_role": "Alternative ou complement plus agressif/solide selon les builds et les matchups.",
+      "smoke_screen_role": "Tech peu chere tres efficace dans Kai'Sa; plusieurs joueurs recents la jugent superieure a Frigid Touch pour ce que le deck veut faire, meme si certaines listes reduisent sa place selon le meta.",
+      "ferrous_forerunner_role": "Carte de sideboard de combat/boardfight, bonne contre des decks jaunes ou non-Chaos, mais souvent mauvaise contre purple car elle devient une cible ideale pour Rebuke / Fight or Flight.",
+      "brynhir_thundersong_role": "Tech majeure contre Irelia et plus generalement contre certains decks purple ou de combat structures autour d'une grosse tenue de battlefield.",
+      "rocket_barrage_role": "Tech devenue plus populaire pour toucher certaines pieces en base, casser des equipements ou punir Ezreal / Draven / Herders / Irelia dans des fenetres specifiques.",
+      "unchecked_power_role": "Tech de sideboard recente citee contre miracle decks, Irelia et Aurora decks.",
+      "time_warp_role": "Carte de fermeture de partie la plus importante du deck. Plusieurs joueurs soulignent qu'elle peut faire passer d'un board state 'contestable' a une fin de game immediate en transformant 4 points en 8, ou 6 en 8, tout en retirant la possibilite de reponse du tour suivant."
+    },
+    "advanced_pilot_principles": [
+      {
+        "name": "Kai'Sa is not a spell-flurry deck",
+        "detail": "Plusieurs joueurs experimentes rappellent qu'en pratique Kai'Sa ne lance pas tant de sorts par tour que cela. Tu joues souvent 1 ou 2 sorts, mais tu veux que chacun soit beaucoup plus efficace que sa ligne de texte brute."
+      },
+      {
+        "name": "Control the board, not every unit",
+        "detail": "Tu n'as pas besoin de tuer tout ce que l'adversaire pose. Tu as besoin d'empecher les bonnes pieces de scorer ou de transformer un battlefield en verrou."
+      },
+      {
+        "name": "Your legend is a rune-preservation engine",
+        "detail": "Le vrai pouvoir de Kai'Sa n'est pas seulement la value, c'est la capacite a garder des runes quand l'adversaire se vide pour rester a flot. C'est ce qui rend Progress Day, Singularity, Watcher et Time Warp si effrayants apres quelques tours."
+      },
+      {
+        "name": "Battlefield pressure is often indirect",
+        "detail": "Kai'Sa gagne souvent un battlefield parce qu'elle a tue le bon porteur, pas parce qu'elle a gagne un enorme combat. Il faut raisonner en 'qui peut encore tenir/scorer ici' plus qu'en 'qui est plus fort sur table'."
+      },
+      {
+        "name": "Know when the game becomes a Time Warp game",
+        "detail": "Certaines parties se gagnent presque exclusivement parce que tu as reconnu assez tot que ton vrai objectif etait d'atteindre un seuil de points et de runes pour fermer avec Time Warp. Si tu le vois trop tard, tu depenses tes ressources au mauvais endroit."
+      },
+      {
+        "name": "Do not force fair combat when the deck is built to avoid it",
+        "detail": "La version actuelle de Kai'Sa essaie souvent d'eviter les combats classiques. Beaucoup de mauvais pilots viennent du reflexe de jouer la partie comme un deck Fury fair, alors que le deck moderne prefere le removal et le score fonctionnel."
+      }
+    ],
+    "mulligan_advanced": {
+      "general_rules": [
+        "Chercher un debut de partie capable soit de contester les premiers points, soit de lisser jusqu'au premier gros pivot de removal.",
+        "Les mains purement value sans interaction immediate sont generalement mauvaises.",
+        "Les mains purement reactives sans progression de pioche ou sans menace de fermeture peuvent aussi etre piegeuses."
+      ],
+      "baseline_priority": [
+        "au moins un 2-drop ou une ligne d'ouverture credible",
+        "au moins un removal bien calibre",
+        "une piece de progression ou de swing comme Progress Day, Watcher ou Time Warp selon le reste de la main",
+        "idealement une mana/rune curve compatible avec Obelisk lines"
+      ],
+      "important_keep_logic": [
+        {
+          "condition": "main generale avec Obelisk going second",
+          "keep": [
+            "double 2-drop",
+            "ou Kai'Sa T1 en low-removal matchup",
+            "ou une ligne menant a Progress Day / Singularity / Forerunner tres tot"
+          ]
+        },
+        {
+          "condition": "contre Irelia",
+          "keep": [
+            "high damage spells",
+            "Brynhir post-side",
+            "Time Warp lines",
+            "Get Excited package si joue",
+            "cartes capables de casser le premier vrai porteur"
+          ]
+        },
+        {
+          "condition": "contre yellow tokens / non-purple board decks",
+          "keep": [
+            "Ferrous Forerunner",
+            "board interaction",
+            "Noxus Hopeful ou 2-drops robustes"
+          ]
+        },
+        {
+          "condition": "contre miracle / purple",
+          "keep": [
+            "Brynhir selon version",
+            "Unchecked Power si sidee",
+            "mains qui tiennent les premiers points sans devenir trop fair"
+          ]
+        }
+      ],
+      "hands_to_throw_back": [
+        "main tres lente sans 2-drop ni removal precoce",
+        "main qui suppose que l'adversaire te laissera atteindre 6-8 runes sans pression",
+        "main ultra reactive qui ne contient aucun chemin vers card flow ou fermeture",
+        "main dependante d'un seul gros spell sans support"
+      ]
+    },
+    "battlefield_and_scoring_philosophy": {
+      "obelisk_of_power": {
+        "role": "Battlefield le plus discute dans Kai'Sa actuelle",
+        "why_it_matters": [
+          "Accelere la partie vers la zone ou Kai'Sa controle mieux le tempo",
+          "autorise des sequences T1 Kai'Sa, double 2-drop going second, ou ramp vers Progress Day / Singularity / Forerunner plus vite",
+          "ameliore indirectement Time Warp en rapprochant plus tot la partie du seuil de fermeture"
+        ]
+      },
+      "the_arenas_greatest": {
+        "role": "Battlefield utilitaire qui favorise la bonne utilisation des petites unites fonctionnelles et des tours de board control"
+      },
+      "void_gate_or_candlelit_sanctum": {
+        "role": "Slots de battlefield flex selon build et lecture meta; Bologna et Vegas ne jouent pas exactement le meme troisieme choix"
+      },
+      "generic_rules": [
+        "Tu n'es pas forcee de tenir tous les battlefields en meme temps.",
+        "Un petit score pris avec une unite disposable et un removal bien place vaut souvent mieux qu'un combat fair expose.",
+        "Kai'Sa aime les parties ou un battlefield reste contestable tant qu'elle garde plus de runes que l'adversaire."
+      ]
+    },
+    "sideboard_philosophy": {
+      "general_rules": [
+        "Le sideboard Kai'Sa est moins statique qu'il n'y parait.",
+        "Il faut sideboarder contre le vrai plan adverse, pas seulement contre le nom du deck.",
+        "Le deck accepte volontiers de side out certains 2-drops parce que la legende garantit deja un T1 Kai'Sa worst-case."
+      ],
+      "known_community_patterns": [
+        {
+          "pattern": "Brynhir Thundersong",
+          "use_cases": [
+            "Irelia",
+            "purple decks en general",
+            "situations ou l'on veut forcer des depenses de main enormes pour tenir un battlefield"
+          ]
+        },
+        {
+          "pattern": "Ferrous Forerunner",
+          "use_cases": [
+            "yellow token decks",
+            "non-purple control decks",
+            "matchups de board fight"
+          ],
+          "avoid_when": [
+            "contre purple / Chaos decks avec Rebuke ou Fight or Flight"
+          ]
+        },
+        {
+          "pattern": "Unchecked Power",
+          "use_cases": [
+            "miracle decks",
+            "Irelia",
+            "Aurora decks"
+          ]
+        },
+        {
+          "pattern": "Get Excited / extra high-damage package",
+          "use_cases": [
+            "Irelia",
+            "matchups ou les seuils de Might deviennent artificiellement difficiles a atteindre"
+          ]
+        },
+        {
+          "pattern": "Rocket Barrage",
+          "use_cases": [
+            "Irelia",
+            "Ezreal",
+            "Draven",
+            "Herders / gear cleanup / base snipes"
+          ]
+        }
+      ]
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Treating Kai'Sa like a fair Fury deck",
+        "why_it_loses": "Le deck moderne veut eviter le combat plus qu'il ne veut le gagner honnêtement."
+      },
+      {
+        "mistake": "Over-answering the board too early",
+        "why_it_loses": "Tu arrives ensuite sans vrai pivot contre les menaces qui comptent et sans capacité a fermer."
+      },
+      {
+        "mistake": "Holding Time Warp as a luxury instead of planning around it",
+        "why_it_loses": "Time Warp change la clock de tout le deck. Si tu n'anticipes pas ses lignes, tu gaspilles des tours entiers."
+      },
+      {
+        "mistake": "Playing Forerunner into purple too casually",
+        "why_it_loses": "Contre Chaos, elle devient trop souvent une cible parfaite pour des swings de tempo catastrophiques."
+      },
+      {
+        "mistake": "Keeping too many cute spells",
+        "why_it_loses": "Le deck ne veut pas un catalogue de réponses théoriques; il veut les bonnes réponses pour ce pairing."
+      },
+      {
+        "mistake": "Trying to make every removal line perfect against Irelia",
+        "why_it_loses": "Cette obsession fait perdre trop de tempo. Il faut souvent jouer vers Brynhir, high-damage windows et Time Warp."
+      }
+    ],
+    "micro_tips_hyper_advanced": [
+      "Le deck ne veut pas toujours tuer la menace la plus grosse; il veut souvent tuer celle qui empeche ton prochain score ou ton prochain hold.",
+      "Contre Irelia, si tu ne peux pas vraiment tuer la piece, attend parfois la vraie fenetre au lieu de jeter un removal qui se fera juste deflecter ou outgrow.",
+      "Time Warp ne 'vole' pas juste un point; elle retire a l'adversaire sa meilleure chance de reorganisation, ce qui est encore plus fort que son texte ne le suggere.",
+      "Smoke Screen est meilleure que beaucoup de joueurs ne le pensent parce qu'elle colle au profil de cout et de tempo de Kai'Sa.",
+      "Pouty Poro n'est pas la meilleure unite du deck; c'est un outil de courbe et de survie de tempo dans un meta bourre de removal cible.",
+      "Si ton plan post-side devient trop fair, tu as probablement trop sideboarde."
+    ],
+    "practical_summary": {
+      "best_for": [
+        "joueurs aimant les decks controle/tempo a decisions fines",
+        "joueurs capables de planifier les tours Time Warp",
+        "joueurs qui acceptent de gagner des parties sans combattre 'honnetement'"
+      ],
+      "worst_for": [
+        "joueurs voulant un deck Fury agressif et lineaire",
+        "joueurs qui surreagissent a chaque menace",
+        "joueurs qui gardent trop souvent des mains lentes"
+      ],
+      "blind_pick_rating": "Toujours tres bon, mais moins universel que dans Origins a cause du poids d'Irelia et de la sophistication du meta miracle"
+    }
+  },
+  "matchups_detailed": [
+    {
+      "opponent": "Draven, Glorious Executioner - Midrange",
+      "meta_share_percent": 16,
+      "tier_context": "Top deck de volume",
+      "kaisa_outlook": {
+        "label": "favorable",
+        "estimated_kaisa_winrate_percent": "54-58",
+        "confidence": "medium"
+      },
+      "summary": "C'est probablement le matchup important le plus naturellement bon pour Kai'Sa. Les guides recents de Kai'Sa insistent sur le fait que le shell control-heavy centré sur le removal par sorts est justement une bonne maniere de combattre Draven, et la communaute recente lit globalement Kai'Sa comme bonne contre les decks midrange qui jouent plus la table que la recursion pure.",
+      "why_matchup_plays_this_way": [
+        "Draven midrange veut convertir des combats et de la presence large en avantage.",
+        "Kai'Sa retire les unites via des sorts plutot que via des combats, ce qui coupe une partie du snowball naturel de Draven.",
+        "Le deck garde aussi mieux ses runes, ce qui lui permet de rester reactive plus longtemps."
+      ],
+      "opponent_plan": [
+        "prendre l'initiative tot",
+        "forcer des combats et des conquetes propres",
+        "taxer les mains lentes ou trop value"
+      ],
+      "kaisa_plan": [
+        "eviter le combat fair",
+        "nettoyer les bons porteurs et les pieces qui permettent de tenir un battlefield",
+        "conserver assez de runes pour qu'un tour Draven ne convertisse jamais tout son board",
+        "fermer avant que les gros finishers red/fury ne remettent la pression"
+      ],
+      "mulligan_focus": [
+        "2-drops fonctionnels",
+        "removals precoces",
+        "main qui garde le score proche",
+        "Time Warp keep possible si la courbe suit"
+      ],
+      "sideboard_focus": [
+        "Brynhir si le build la joue",
+        "pas trop de Forerunner si la liste Draven est clairement Chaos-lourde",
+        "tools de nettoyage de table selon version"
+      ],
+      "battlefield_notes": [
+        "Tu n'as pas besoin de gagner tous les combats, seulement de rendre les battlefields ingagnables pour les bonnes pieces.",
+        "Obelisk est excellent si tu peux convertir l'acceleration plus vite que Draven."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "main trop lente",
+        "jouer la partie comme un duel de board pur",
+        "laisser Draven etablir deux battlefields a la fois"
+      ],
+      "important_patterns_to_respect": [
+        "Fight or Flight pressure",
+        "Brynhir turns",
+        "2 energie ouverte",
+        "tempo pushes sur table large"
+      ],
+      "variation_notes": [
+        "Plus Draven est pur midrange, plus Kai'Sa aime le pairing."
+      ],
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3",
+        "S8",
+        "S14"
+      ]
+    },
+    {
+      "opponent": "Draven, Glorious Executioner - Miracle",
+      "meta_share_percent": 16,
+      "tier_context": "Top shell violet/chaos",
+      "kaisa_outlook": {
+        "label": "close_even",
+        "estimated_kaisa_winrate_percent": "49-52",
+        "confidence": "medium"
+      },
+      "summary": "Le signal recent est plutot rassurant pour Kai'Sa: des joueurs Kai'Sa recents qualifient le matchup miracle de 'very reasonable' parce que ces decks jouent beaucoup a la table et que Kai'Sa sait tres bien tuer ce qui s'y trouve. Le pairing reste cependant beaucoup plus explosif et dangereux que Midrange Draven.",
+      "why_matchup_plays_this_way": [
+        "Miracle Draven garde un plafond de swings plus eleve que midrange pur.",
+        "Mais il expose aussi davantage de pieces de table et de fenetres de nettoyage que Kai'Sa sait exploiter.",
+        "Le matchup tourne beaucoup autour de la qualite des removals et de la gestion du premier gros turn miracle."
+      ],
+      "opponent_plan": [
+        "assembler une table ou un tour de swing massif",
+        "forcer Kai'Sa a repondre trop finement",
+        "voler des points avant la fermeture Time Warp"
+      ],
+      "kaisa_plan": [
+        "ne pas tomber dans des 1 pour 1 repetitifs si la table va de toute facon s'etaler ensuite",
+        "garder les removals premium pour les vraies pieces de conversion",
+        "jouer vers le tour ou le board adverse devient trop cher a reconstruire"
+      ],
+      "mulligan_focus": [
+        "interaction early",
+        "mains stables et pas greed",
+        "Time Warp si la main peut tenir jusqu'a elle"
+      ],
+      "sideboard_focus": [
+        "Unchecked Power selon build",
+        "Brynhir dans certains plans",
+        "retirer les cartes qui n'alignent pas bien contre des tours explosifs"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient mauvais si Miracle Draven tient deux battlefields sans s'exposer aux removals."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "reponse trop etroite",
+        "retard trop rapide au score",
+        "sous-estimer un seul tour d'explosion"
+      ],
+      "important_patterns_to_respect": [
+        "stacking turns",
+        "Called Shot / purple sequencing",
+        "board plus burst pressure"
+      ],
+      "variation_notes": [
+        "Le matchup parait plus jouable que son image publique, mais reste tres sensible au niveau des deux pilotes."
+      ],
+      "source_refs": [
+        "S8",
+        "S14"
+      ]
+    },
+    {
+      "opponent": "Irelia, Blade Dancer",
+      "meta_share_percent": 10,
+      "tier_context": "Tier 1",
+      "kaisa_outlook": {
+        "label": "unfavorable",
+        "estimated_kaisa_winrate_percent": "43-48",
+        "confidence": "high"
+      },
+      "summary": "C'est le matchup qui revient le plus souvent comme probleme structurel de Kai'Sa en mars 2026. Les discussions recentes de joueurs Kai'Sa le disent tres dur, souvent 'always a beating' sans techs dediees, meme si certains joueurs de la deck channel estiment qu'on peut remonter vers 50/50 avec la bonne construction et le bon plan.",
+      "why_matchup_plays_this_way": [
+        "Irelia fait naturellement sortir les menaces hors des seuils de removal de Kai'Sa via les micro-buffs et la protection.",
+        "Dreaming Tree et Sunken Temple sont cites comme des battlefields particulierement difficiles pour Kai'Sa dans ce pairing.",
+        "Le matchup punit a la fois la precision technique et le deckbuilding trop oriente anti-Draven."
+      ],
+      "opponent_plan": [
+        "installer un porteur cle",
+        "faire exploser la math de removal par des boosts et protections",
+        "prendre l'avantage de battlefield avant que Time Warp devienne credible"
+      ],
+      "kaisa_plan": [
+        "jouer vers Time Warp beaucoup plus que dans d'autres matchups",
+        "introduire Brynhir Thundersong post-side",
+        "utiliser les cartes high damage ou Get Excited packages pour punir les vraies fenetres",
+        "tuer Stellacorn tres tot si possible",
+        "accepter de donner parfois un point pour epuiser la main Irelia et reprendre l'autre battlefield"
+      ],
+      "mulligan_focus": [
+        "high damage spells",
+        "Time Warp lines",
+        "Brynhir post-side",
+        "mains qui ne restent pas mortes sur un porteur unique"
+      ],
+      "sideboard_focus": [
+        "Brynhir Thundersong",
+        "Get Excited package si disponible",
+        "Rocket Barrage / Thermo Beam selon liste",
+        "Unchecked Power dans certaines versions"
+      ],
+      "battlefield_notes": [
+        "Dreaming Tree et Sunken Temple sont souvent cites comme compliques.",
+        "Obelisk est le battlefield ou le matchup parait le moins mauvais.",
+        "Si Irelia tient un battlefield protegee trop tot, la partie glisse tres vite."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "tenter des removals qui ne tuent pas reellement",
+        "perdre trop de tempo a vouloir tout jouer autour de tout",
+        "laisser Stellacorn snowballer",
+        "ne pas planifier Time Warp assez tot"
+      ],
+      "important_patterns_to_respect": [
+        "Stellacorn draws",
+        "Deflects and combat tricks",
+        "micro-stat boosts that break removal thresholds",
+        "Guardian Angel / boots lines",
+        "double-score pressure"
+      ],
+      "variation_notes": [
+        "Le matchup peut remonter si Kai'Sa est fortement tech pour lui, mais cela deteriore souvent d'autres pairings."
+      ],
+      "source_refs": [
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "opponent": "Viktor, Herald of the Arcane",
+      "meta_share_percent": 7,
+      "tier_context": "Tier 2",
+      "kaisa_outlook": {
+        "label": "slightly_favorable",
+        "estimated_kaisa_winrate_percent": "54-58",
+        "confidence": "medium"
+      },
+      "summary": "Le signal direct venant du camp Viktor est que Kai'Sa est un matchup difficile pour lui et qu'il faut souvent accepter d'en perdre la majorite. Viktor peut gagner un Bo3, mais la perception de base est que Kai'Sa part legerement devant.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa tue tres bien les unites et gere efficacement les petits et moyens develops.",
+        "Viktor peut grinder, mais il doit souvent bait les removals avec des recruits ou des pieces imparfaites pour ne pas se faire asphyxier.",
+        "Le deck Kai'Sa impose aussi une clock de score reelle via Time Warp meme quand il a l'air purement reactif."
+      ],
+      "opponent_plan": [
+        "baiter les removals avec des recruits ou des cibles faibles",
+        "jouer des grosses unites awkward a traiter",
+        "rattraper Kai'Sa sur la guerre de ressources"
+      ],
+      "kaisa_plan": [
+        "ne pas depenser les meilleurs removals sur les mauvaises cibles",
+        "rester efficace sur le board sans trop t'exposer a une guerre d'attrition pure",
+        "jouer le score de maniere a rendre le double conquer final ou Time Warp credible"
+      ],
+      "mulligan_focus": [
+        "interaction de courbe",
+        "mains avec progression de cartes",
+        "pas de main trop reactive sans close"
+      ],
+      "sideboard_focus": [
+        "Forerunner peut etre bon contre certaines versions non-Chaos",
+        "garder assez de density de removals qui nettoient les vrais body builders",
+        "techs anti-value selon build local"
+      ],
+      "battlefield_notes": [
+        "Viktor veut souvent t'epuiser sur un battlefield puis voler le second; Time Warp change fortement cette dynamique.",
+        "Les petits scores pris tot avec des unites disposable comptent beaucoup."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "utiliser trop tot les removals premium",
+        "laisser Viktor gagner la bataille de ressources",
+        "se faire enfermer dans un 1 pour 1 sans fin"
+      ],
+      "important_patterns_to_respect": [
+        "big units awkward to kill",
+        "recruit baiting",
+        "unit-heavy Viktor versions",
+        "double conquer closes"
+      ],
+      "variation_notes": [
+        "Les versions Viktor plus board-centric semblent un peu meilleures contre Kai'Sa que les versions trop spell-only."
+      ],
+      "source_refs": [
+        "S10",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Ezreal, Prodigal Explorer",
+      "meta_share_percent": 3,
+      "tier_context": "Top deck de plafond",
+      "kaisa_outlook": {
+        "label": "close_even",
+        "estimated_kaisa_winrate_percent": "49-53",
+        "confidence": "low"
+      },
+      "summary": "Le pairing contre Ezreal n'est pas aussi bien documente que Draven ou Irelia, mais structurellement il oppose deux decks tres bons pour conserver leurs ressources. Kai'Sa a l'avantage de removals tres efficients et d'une clock plus directe via Time Warp, tandis qu'Ezreal a un plafond de grind plus eleve.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa aime tuer les pieces de board et fermer avant que l'adversaire ne prenne trop de cartes d'avance.",
+        "Ezreal aime les parties ou il peut transformer la lenteur apparente du matchup en chaine de value."
+      ],
+      "opponent_plan": [
+        "ralentir puis gagner a la carte",
+        "forcer Kai'Sa a depenser ses removals sans progresser",
+        "basculer avec un gros tour purple"
+      ],
+      "kaisa_plan": [
+        "ne pas trop attendre avant de convertir un petit avantage en pression de points",
+        "jouer vers Time Warp dans les parties ou le board se fige",
+        "forcer Ezreal a repondre a plus d'un probleme a la fois"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "engine raisonnable plus interaction",
+        "pas de keep full late"
+      ],
+      "sideboard_focus": [
+        "tech anti-miracle ou anti-purple selon construction",
+        "Brynhir dans certains plans",
+        "retirer les cartes de board fight qui alignent mal"
+      ],
+      "battlefield_notes": [
+        "Un battlefield contestable mais non perdu peut suffire si tu gardes l'avance en runes."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "laisser Ezreal stabiliser completement",
+        "se faire depasser a la carte sans vraie pression de score",
+        "mains trop passives"
+      ],
+      "important_patterns_to_respect": [
+        "late purple chains",
+        "big miracle turns",
+        "Rhasa / recursion payoff turns"
+      ],
+      "variation_notes": [
+        "Le matchup penche probablement selon la version exacte d'Ezreal et le niveau des deux joueurs."
+      ],
+      "source_refs": [
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Master Yi, Wuju Bladesman",
+      "meta_share_percent": 6,
+      "tier_context": "Tier 2",
+      "kaisa_outlook": {
+        "label": "slightly_unfavorable",
+        "estimated_kaisa_winrate_percent": "45-49",
+        "confidence": "medium"
+      },
+      "summary": "Plusieurs discussions recentes autour de Kai'Sa citent Master Yi comme un matchup brutal ou naturellement inconfortable, en partie pour les memes raisons qu'Irelia: pression de scoreboard tot et protection qui casse la propreté des removals.",
+      "why_matchup_plays_this_way": [
+        "Yi peut scorer tot avec peu de ressources.",
+        "Les protections Calm rendent certains removals ou combats de Kai'Sa plus maladroits.",
+        "Kai'Sa doit souvent choisir entre gerer le porteur ou rattraper le score."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield avec une piece bien protegee",
+        "forcer Kai'Sa a depenser trop pour chaque point",
+        "prendre assez d'avance pour rendre Time Warp trop tardive"
+      ],
+      "kaisa_plan": [
+        "cibler les vraies pieces de tenue de battlefield",
+        "garder les removals premium pour les vraies fenetres",
+        "ne pas perdre plusieurs tours a courir derriere un score deja parti"
+      ],
+      "mulligan_focus": [
+        "interaction de combat",
+        "2-drops utiles",
+        "pas de keep all-in sur le late"
+      ],
+      "sideboard_focus": [
+        "Brynhir selon plan",
+        "tools anti-porteur si disponibles",
+        "cartes qui ne se font pas annuler trop facilement par un simple trick"
+      ],
+      "battlefield_notes": [
+        "Le matchup se degrade tres vite si Yi tient un battlefield en te forcant a jouer hors tempo."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "retard gratuit sur les points",
+        "reponses mal alignees contre Calm",
+        "surreaction a une menace secondaire"
+      ],
+      "important_patterns_to_respect": [
+        "Calm protection chains",
+        "single carrier holds",
+        "free early scoring"
+      ],
+      "variation_notes": [
+        "Confiance moyenne-faible faute de resultats match-up explicites, mais le signal communautaire reste plutot negatif pour Kai'Sa."
+      ],
+      "source_refs": [
+        "S9",
+        "S3"
+      ]
+    },
+    {
+      "opponent": "Azir, Emperor of the Sands",
+      "meta_share_percent": 4,
+      "tier_context": "Tier 3 par share mais vrai deck de field",
+      "kaisa_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_kaisa_winrate_percent": "50-54",
+        "confidence": "low"
+      },
+      "summary": "Azir pose a Kai'Sa le probleme classique des decks larges: beaucoup de pieces, beaucoup de pression sur le score, et pas toujours une ou deux cibles evidentes a tuer. Kai'Sa garde toutefois beaucoup d'outils pour nettoyer les porteurs et transformer les petits scores en course Time Warp.",
+      "why_matchup_plays_this_way": [
+        "Azir peut aller plus large que Kai'Sa ne le prefere.",
+        "Mais il reste sensible aux removals bien cibles et aux tours ou sa menace principale tombe."
+      ],
+      "opponent_plan": [
+        "mettre beaucoup de presence",
+        "forcer des removals un par un",
+        "scorer avant la zone de confort de Kai'Sa"
+      ],
+      "kaisa_plan": [
+        "identifier le vrai payoff plutot que tout tuer uniformement",
+        "stabiliser a un score jouable puis refermer avec Watcher ou Time Warp",
+        "sider plus large si l'adversaire est tres token-heavy"
+      ],
+      "mulligan_focus": [
+        "early interaction",
+        "main qui fait quelque chose avant le midgame",
+        "pas de keep purement greedy"
+      ],
+      "sideboard_focus": [
+        "Forerunner si le matchup le justifie",
+        "anti-go-wide modere",
+        "retraits des cartes trop etroites"
+      ],
+      "battlefield_notes": [
+        "Azir gagne quand tu joues le matchup comme si toute unite avait la meme importance."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "main lente",
+        "reponses trop etroites",
+        "laisser un vrai payoff vivre un tour de trop"
+      ],
+      "important_patterns_to_respect": [
+        "wide pressure",
+        "equipment/token snowball",
+        "movement tricks"
+      ],
+      "variation_notes": [
+        "Le pairing devient un peu meilleur si Kai'Sa a deja ajuste son side contre les decks jaunes/tokens."
+      ],
+      "source_refs": [
+        "S8",
+        "S11"
+      ]
+    },
+    {
+      "opponent": "Annie, Dark Child",
+      "meta_share_percent": 3,
+      "tier_context": "Tier 2/3",
+      "kaisa_outlook": {
+        "label": "close_even",
+        "estimated_kaisa_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Annie attaque un point faible evident de Kai'Sa: les mains lentes et les tours de setup. En contrepartie, si Kai'Sa traverse la premiere phase sans trop de degats, elle reprend souvent la course sur la qualite des cartes.",
+      "why_matchup_plays_this_way": [
+        "Annie essaie de gagner avant que les removals et Time Warp ne remettent la game a zero.",
+        "Kai'Sa essaie de transformer la partie en echange de cartes ou Annie depense trop de vitesse pour trop peu de tenue."
+      ],
+      "opponent_plan": [
+        "prendre les points tres vite",
+        "punir les mains full value",
+        "forcer Kai'Sa a se defendre avant de respirer"
+      ],
+      "kaisa_plan": [
+        "mulligan tres agressivement contre les mains lentes",
+        "accepter des trades de cartes moches si cela sauvegarde le score",
+        "fermer des que la partie devient stable"
+      ],
+      "mulligan_focus": [
+        "2-drops",
+        "interaction precoce",
+        "aucun keep trop lent"
+      ],
+      "sideboard_focus": [
+        "anti-race",
+        "retirer les cartes trop lentes",
+        "plus de table interaction si nécessaire"
+      ],
+      "battlefield_notes": [
+        "Les battlefields rapides et ouverts a la course sont mauvais si ta main ne fait rien avant le tour 3."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "main lente",
+        "sous-estimer la vitesse de score",
+        "garder Progress Day / top-end sans early"
+      ],
+      "important_patterns_to_respect": [
+        "fast point starts",
+        "Chaos burst",
+        "midgame finisher turns"
+      ],
+      "variation_notes": [
+        "Plus Annie est pure aggro, plus le matchup devient une question de mulligan."
+      ],
+      "source_refs": [
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Sivir, Battle Mistress",
+      "meta_share_percent": 3,
+      "tier_context": "Miracle ou Aurora",
+      "kaisa_outlook": {
+        "label": "slightly_favorable",
+        "estimated_kaisa_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Kai'Sa a des arguments evidents contre Sivir miracle: removal propre, preservation des runes et capacite a tuer les pieces de table des shells miracle. Aurora Sivir peut etre un peu plus penible parce qu'elle pose de vrais corps plus vite.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa aime les decks qui jouent suffisamment la table pour que ses removals convertissent.",
+        "Sivir miracle peut toutefois depasser Kai'Sa si le tour de swing arrive sans assez de pression adverse."
+      ],
+      "opponent_plan": [
+        "stabiliser puis faire exploser un tour de value",
+        "ou, en Aurora, installer un gros board premium"
+      ],
+      "kaisa_plan": [
+        "ne pas laisser un battlefield devenir gratuit",
+        "conserver ses removals premium pour les vraies pieces de conversion",
+        "Time Warp avant que le shell miracle n'assemble trop de cartes"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "pas de keep purement late",
+        "interaction adaptee au shell probable"
+      ],
+      "sideboard_focus": [
+        "tech anti-miracle",
+        "Unchecked Power selon build",
+        "plus de board interaction contre Aurora"
+      ],
+      "battlefield_notes": [
+        "Aurora Sivir oblige souvent Kai'Sa a respecter plus la table; Miracle Sivir oblige plus a respecter le timing."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "laisser un gros turn miracle partir sans stress",
+        "garder des removals mal alignes contre le shell reel"
+      ],
+      "important_patterns_to_respect": [
+        "Sabotage turns",
+        "big Body thresholds",
+        "Rhasa or miracle payoffs"
+      ],
+      "variation_notes": [
+        "Plus Sivir est Aurora, plus le matchup se rapproche de l'equilibre."
+      ],
+      "source_refs": [
+        "S2",
+        "S8",
+        "S1"
+      ]
+    },
+    {
+      "opponent": "Fiora, Grand Duelist",
+      "meta_share_percent": 3,
+      "tier_context": "Tier 2/3",
+      "kaisa_outlook": {
+        "label": "slightly_favorable",
+        "estimated_kaisa_winrate_percent": "53-57",
+        "confidence": "low"
+      },
+      "summary": "Fiora joue souvent un plan que Kai'Sa comprend bien: un nombre reduit de porteurs de qualite. Cela convient en general assez bien aux removals de Kai'Sa, a condition de ne pas gaspiller ses meilleures reponses sur les mauvaises pieces.",
+      "why_matchup_plays_this_way": [
+        "Le deck Fiora concentre souvent beaucoup de valeur sur peu de corps.",
+        "Kai'Sa punit bien cette structure quand ses removals restent alignes."
+      ],
+      "opponent_plan": [
+        "installer un porteur equipe",
+        "gagner a la qualite du combat",
+        "forcer des reponses inefficaces"
+      ],
+      "kaisa_plan": [
+        "garder les removals premium pour la vraie menace",
+        "eviter de jouer un board fight trop fair",
+        "fermer une fois la premiere grosse piece tombee"
+      ],
+      "mulligan_focus": [
+        "removal propre",
+        "main stable",
+        "pas de keep trop orienté anti-largeur"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "retirer les cartes les moins bien alignees contre protections/equipements"
+      ],
+      "battlefield_notes": [
+        "Un seul battlefield bien gere suffit souvent si Fiora ne trouve pas son gros porteur."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "reponse gaspillee",
+        "laisser vivre un porteur equipe trop longtemps"
+      ],
+      "important_patterns_to_respect": [
+        "voltron turns",
+        "protection stack",
+        "equipment scaling"
+      ],
+      "variation_notes": [
+        "Les versions Fiora plus dediees anti-purple resserrent un peu le pairing."
+      ],
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "opponent": "Jax, Grandmaster at Arms",
+      "meta_share_percent": 0,
+      "tier_context": "Rogue competitif",
+      "kaisa_outlook": {
+        "label": "slightly_favorable",
+        "estimated_kaisa_winrate_percent": "53-57",
+        "confidence": "low"
+      },
+      "summary": "Jax peut rendre les combats infernaux, mais Kai'Sa joue justement une version du jeu qui contourne beaucoup de cette complexite en tuant par sorts plutot qu'en negociant chaque showdown.",
+      "why_matchup_plays_this_way": [
+        "Jax veut tirer profit de la modularite de l'equipement et des protections.",
+        "Kai'Sa veut casser la piece ou le porteur qui fait vraiment compter cette modularite."
+      ],
+      "opponent_plan": [
+        "tenir un battlefield avec porteur + protection",
+        "rendre la math de combat impossible"
+      ],
+      "kaisa_plan": [
+        "ne pas s'obstiner a jouer la partie sur la pile de tricks",
+        "tuer la bonne unite au bon moment",
+        "preserver la pression de score"
+      ],
+      "mulligan_focus": [
+        "removal de qualite",
+        "main pas trop lente",
+        "cartes qui punissent un vrai porteur"
+      ],
+      "sideboard_focus": [
+        "Forerunner en general moins prioritaire ici",
+        "tech anti-porteur et anti-gear selon build"
+      ],
+      "battlefield_notes": [
+        "Si Jax tient trop longtemps un battlefield sous protection, Time Warp devient le vrai plan de sortie."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "jouer trop fair les combats",
+        "viser les mauvaises cibles"
+      ],
+      "important_patterns_to_respect": [
+        "Quick-Draw turns",
+        "equipment modularity",
+        "protection windows"
+      ],
+      "variation_notes": [
+        "Faible confiance faute de grosses donnees directes, mais le plan Kai'Sa a naturellement du jeu ici."
+      ],
+      "source_refs": [
+        "S1",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Lucian, Purifier",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 2/3",
+      "kaisa_outlook": {
+        "label": "slightly_favorable",
+        "estimated_kaisa_winrate_percent": "53-57",
+        "confidence": "low"
+      },
+      "summary": "Lucian combine base pressure et equipement, mais reste assez lisible pour un deck de removals comme Kai'Sa si elle ne garde pas une main trop molle.",
+      "why_matchup_plays_this_way": [
+        "Lucian pousse par une ou deux vraies pieces.",
+        "Kai'Sa prefere justement casser une structure compacte plutot qu'une table infiniment large."
+      ],
+      "opponent_plan": [
+        "prendre des points vite",
+        "s'appuyer sur un porteur equipe",
+        "forcer des reponses immediates"
+      ],
+      "kaisa_plan": [
+        "nettoyer le vrai porteur",
+        "ne pas perdre trop de points gratuits au debut",
+        "revenir sur la qualite des removals"
+      ],
+      "mulligan_focus": [
+        "2-drop utile",
+        "removal sur le premier porteur",
+        "main pas full late"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "maintenir assez de tempo"
+      ],
+      "battlefield_notes": [
+        "Le matchup se complique si Lucian peut appuyer un battlefield sans perdre sa piece centrale."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "retard immediat aux points",
+        "mauvaise priorisation des menaces"
+      ],
+      "important_patterns_to_respect": [
+        "equipment tempo",
+        "base stacking",
+        "fast point pushes"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Rumble, Mechanized Menace",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 3",
+      "kaisa_outlook": {
+        "label": "close_even",
+        "estimated_kaisa_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Rumble met surtout a l'epreuve la largeur et la densite de reponses de Kai'Sa. Le pairing n'est pas tres documente, mais structurellement il demande de ne pas s'installer trop lentement.",
+      "why_matchup_plays_this_way": [
+        "Rumble peut aligner plusieurs menaces successives.",
+        "Kai'Sa a les removals pour repondre, mais pas toujours la marge pour tout couvrir si elle a garde une main trop lente."
+      ],
+      "opponent_plan": [
+        "aller large puis transformer la largeur en payoffs",
+        "forcer du 1 pour 1 permanent"
+      ],
+      "kaisa_plan": [
+        "identifier les vraies pieces de conversion",
+        "eviter les echanges trop fins si une reponse plus large est possible",
+        "Time Warp pour retirer le temps au deck adverse"
+      ],
+      "mulligan_focus": [
+        "interaction precoce",
+        "mains avec plan board + close"
+      ],
+      "sideboard_focus": [
+        "anti-largeur",
+        "retirer les cartes trop etroites"
+      ],
+      "battlefield_notes": [
+        "Deux battlefields ouverts a la largeur deviennent dangereux rapidement."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "main lente",
+        "reponses un par un sans pivot"
+      ],
+      "important_patterns_to_respect": [
+        "wide board turns",
+        "large payoffs"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S2",
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Rek'Sai, Void Burrower",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 3",
+      "kaisa_outlook": {
+        "label": "close_even",
+        "estimated_kaisa_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Rek'Sai pose a Kai'Sa un probleme analogue a d'autres decks de largeur et recursion: trop de petites obligations de reponse, pas assez de vraies cibles premium.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa aime les matchups ou un removal bien place change completement le tour.",
+        "Rek'Sai peut faire en sorte qu'aucun removal ne semble suffisant a lui seul."
+      ],
+      "opponent_plan": [
+        "accumuler largeur et recursion",
+        "forcer des removals un par un"
+      ],
+      "kaisa_plan": [
+        "chercher les vraies pieces de payoff",
+        "ne pas perdre le score en voulant tout nettoyer"
+      ],
+      "mulligan_focus": [
+        "interaction precoce",
+        "main qui ne fait pas rien avant turn 3"
+      ],
+      "sideboard_focus": [
+        "anti-go-wide",
+        "cartes plus larges si disponibles"
+      ],
+      "battlefield_notes": [
+        "Le matchup devient dangereux si Rek'Sai tient deja le score quand tu trouves enfin ton pivot."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "reponses trop etroites",
+        "retard de scoreboard"
+      ],
+      "important_patterns_to_respect": [
+        "void recursion",
+        "swarm pressure"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Lux, Lady of Luminosity",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "kaisa_outlook": {
+        "label": "close_even_to_slightly_favorable",
+        "estimated_kaisa_winrate_percent": "50-54",
+        "confidence": "low"
+      },
+      "summary": "Lux ressemble a un controle/removal moins oppressant que les meilleures versions de Viktor. Kai'Sa devrait garder un peu de jeu grace a sa propre efficience de sorts et a Time Warp.",
+      "why_matchup_plays_this_way": [
+        "Les deux decks peuvent jouer une partie lente.",
+        "Kai'Sa a toutefois un mode de fermeture plus brutal si elle conserve assez de runes."
+      ],
+      "opponent_plan": [
+        "gagner par removal et value",
+        "ralentir la table"
+      ],
+      "kaisa_plan": [
+        "ne pas surexposer ses rares bonnes unites",
+        "garder assez de progression pour forcer Lux a repondre"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "pas de main uniquement board-fight"
+      ],
+      "sideboard_focus": [
+        "retirer les cartes mal alignees contre controle pur",
+        "garder les pieces de close"
+      ],
+      "battlefield_notes": [
+        "Le matchup se joue beaucoup sur qui transforme le mieux une partie lente en vraie clock."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "ne pas convertir sa meilleure economie de runes en vrai plan de victoire"
+      ],
+      "important_patterns_to_respect": [
+        "kill spell timing",
+        "long attrition"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S8",
+        "S10"
+      ]
+    },
+    {
+      "opponent": "Ahri, Nine-Tailed Fox",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "kaisa_outlook": {
+        "label": "slightly_favorable",
+        "estimated_kaisa_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Ahri peut voler des points, mais offre aussi souvent des cibles lisibles a un deck de removals comme Kai'Sa.",
+      "why_matchup_plays_this_way": [
+        "Ahri gagne par mouvement et petits angles.",
+        "Kai'Sa gagne si elle ne donne pas trop de points gratuits et tue les bonnes pieces."
+      ],
+      "opponent_plan": [
+        "score opportuniste",
+        "mobilite",
+        "faire courir Kai'Sa"
+      ],
+      "kaisa_plan": [
+        "ne pas sur-commit un battlefield",
+        "conserver les removals pour les pieces qui ouvrent vraiment le score"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "interaction early"
+      ],
+      "sideboard_focus": [
+        "peu de changements, surtout du tempo flexible"
+      ],
+      "battlefield_notes": [
+        "La repartition des pieces est plus importante que la taille brute ici."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "laisser des points gratuits",
+        "mauvaise lecture des pivots de mouvement"
+      ],
+      "important_patterns_to_respect": [
+        "mobility score turns"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Yasuo, Unforgiven",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "kaisa_outlook": {
+        "label": "slightly_favorable",
+        "estimated_kaisa_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Yasuo peut voler des parties via mobilite et tempo, mais reste moins stable qu'un Kai'Sa bien pilote sur un tournoi long.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa n'aime pas perdre des points gratuits, mais aime beaucoup les decks qui exposent une ou deux pieces importantes.",
+        "Yasuo manque aussi d'un vrai grind comparable a Kai'Sa."
+      ],
+      "opponent_plan": [
+        "vol de points",
+        "tempo explosif"
+      ],
+      "kaisa_plan": [
+        "respecter les fenetres de vol de partie",
+        "ne pas s'endormir sur le score",
+        "convertir la meilleure economie de runes"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "presence early"
+      ],
+      "sideboard_focus": [
+        "tempo answers",
+        "pas trop de greed"
+      ],
+      "battlefield_notes": [
+        "Si Yasuo te fait courir, Time Warp perd beaucoup en qualite."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "oublier de jouer autour de la mobilite",
+        "main trop lente"
+      ],
+      "important_patterns_to_respect": [
+        "unexpected mobility lethal"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Teemo, Swift Scout",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "kaisa_outlook": {
+        "label": "favorable",
+        "estimated_kaisa_winrate_percent": "55-60",
+        "confidence": "low"
+      },
+      "summary": "Teemo n'apparait pas comme un vrai predateur de Kai'Sa en Spiritforged. Le matchup punit surtout les keeps trop greeds.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa a assez d'outils pour contenir la nuisance tempo puis reprendre completement la partie."
+      ],
+      "opponent_plan": [
+        "chip pressure",
+        "tempo leger"
+      ],
+      "kaisa_plan": [
+        "respecter les premiers points",
+        "ne pas garder de mains mortes"
+      ],
+      "mulligan_focus": [
+        "aucun keep greed",
+        "interaction early"
+      ],
+      "sideboard_focus": [
+        "peu de changements necessaires"
+      ],
+      "battlefield_notes": [
+        "Les parties longues et propres te favorisent massivement."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "main trop lente"
+      ],
+      "important_patterns_to_respect": [
+        "chip pressure"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Miss Fortune, Bounty Hunter",
+      "meta_share_percent": 1,
+      "tier_context": "Tier 3",
+      "kaisa_outlook": {
+        "label": "close_even",
+        "estimated_kaisa_winrate_percent": "48-52",
+        "confidence": "low"
+      },
+      "summary": "Miss Fortune peut punir les mains lentes et les battlefields trop ouverts, mais reste moins stable que Kai'Sa sur la duree.",
+      "why_matchup_plays_this_way": [
+        "MF gagne vite quand Kai'Sa ne fait rien.",
+        "Kai'Sa gagne si elle transforme la partie en ressources plutot qu'en pure race."
+      ],
+      "opponent_plan": [
+        "pression rapide",
+        "acceleration de score"
+      ],
+      "kaisa_plan": [
+        "stabiliser sans trop attendre",
+        "garder les removals pour les vraies menaces de conversion"
+      ],
+      "mulligan_focus": [
+        "interaction early",
+        "pas de keep value-only"
+      ],
+      "sideboard_focus": [
+        "anti-race",
+        "retirer les cartes trop lentes"
+      ],
+      "battlefield_notes": [
+        "Les battlefields ou MF convertit le tempo immediatement sont les plus dangereux."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "retard immediat au score"
+      ],
+      "important_patterns_to_respect": [
+        "tempo spikes",
+        "fast scoring"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Sett, The Boss",
+      "meta_share_percent": 2,
+      "tier_context": "Tier 3",
+      "kaisa_outlook": {
+        "label": "slightly_favorable",
+        "estimated_kaisa_winrate_percent": "51-55",
+        "confidence": "low"
+      },
+      "summary": "Sett veut souvent reduire la partie a une question de taille et de combats. Kai'Sa est bonne pour refuser exactement cela quand ses removals restent bien calibres.",
+      "why_matchup_plays_this_way": [
+        "Le deck Sett gagne si la math est purement frontale.",
+        "Kai'Sa gagne si elle contourne la math par des sorts et une meilleure economie de runes."
+      ],
+      "opponent_plan": [
+        "poser de grosses unites",
+        "t'imposer des combats"
+      ],
+      "kaisa_plan": [
+        "eviter les combats fair inutiles",
+        "garder le removal pour les vraies pieces de seuil",
+        "Time Warp avant le vrai stat-check final"
+      ],
+      "mulligan_focus": [
+        "removals bien calibres",
+        "mains stables"
+      ],
+      "sideboard_focus": [
+        "garder les removals de gros corps",
+        "retirer les cartes trop conditionnelles"
+      ],
+      "battlefield_notes": [
+        "Ne laisse pas Sett transformer un battlefield en mur de taille pure."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "mauvaise calibration des removals",
+        "jouer la partie trop honnêtement"
+      ],
+      "important_patterns_to_respect": [
+        "buff combat spikes"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S8"
+      ]
+    },
+    {
+      "opponent": "Ornn, Fire Below the Mountain",
+      "meta_share_percent": 3,
+      "tier_context": "Rogue",
+      "kaisa_outlook": {
+        "label": "slightly_favorable",
+        "estimated_kaisa_winrate_percent": "52-56",
+        "confidence": "low"
+      },
+      "summary": "Ornn peut faire grossir un porteur ou une piece d'equipement au-dela des limites confortables, mais il reste en general plus lent et plus lisible qu'un vrai top-tier.",
+      "why_matchup_plays_this_way": [
+        "Kai'Sa prefere les adversaires qui exposent peu de pieces importantes.",
+        "Ornn en expose souvent une ou deux tres centrales."
+      ],
+      "opponent_plan": [
+        "gros porteur",
+        "equipement lourd",
+        "valeur tardive"
+      ],
+      "kaisa_plan": [
+        "ne pas rater la vraie piece de payoff",
+        "jouer le score si le board devient trop epais"
+      ],
+      "mulligan_focus": [
+        "main stable",
+        "removal sur gros seuils"
+      ],
+      "sideboard_focus": [
+        "anti-porteur",
+        "anti-equipement si la liste en a"
+      ],
+      "battlefield_notes": [
+        "Le matchup se complique si une seule grosse piece verrouille deja le bon battlefield."
+      ],
+      "main_lose_conditions_for_kaisa": [
+        "reponse depensee trop tot",
+        "laisser un payoff vivre trop longtemps"
+      ],
+      "important_patterns_to_respect": [
+        "single giant carrier"
+      ],
+      "variation_notes": [
+        "Faible confiance."
+      ],
+      "source_refs": [
+        "S1"
+      ]
+    }
+  ],
+  "sources": {
+    "S1": {
+      "type": "guide",
+      "title": "Riftbound.gg - Kai'Sa, Daughter of the Void Guide",
+      "date": "2026-02-19",
+      "notes": "Base sur l'identite controle par sorts, le role de la legende, la faible utilisation du champion en copies, et l'evolution du shell Spiritforged"
+    },
+    "S2": {
+      "type": "tier list",
+      "title": "Mobalytics - Riftbound Tier List",
+      "date_consulted": "2026-03-11",
+      "notes": "Classe Kai'Sa en S-tier et resitue le noyau Hextech Ray / Falling Star / Stupefy / Singularity / Time Warp / Watcher"
+    },
+    "S3": {
+      "type": "tier list",
+      "title": "Riftbound.gg - Meta Legend Tier List",
+      "date": "2026-03-06",
+      "notes": "Place Kai'Sa en Tier 2 dans la lecture post-Vegas du site"
+    },
+    "S4": {
+      "type": "official tournament decklist",
+      "title": "Riftbound official - Vegas Top Decks - Aggresia Kai'Sa",
+      "date": "2026-03-04",
+      "notes": "Best-of Kai'Sa de Vegas, #11 overall, liste spell-control proche de Bologna"
+    },
+    "S5": {
+      "type": "official tournament decklist",
+      "title": "Riftbound official - The Best Decks out of Bologna - Fisica Kai'Sa",
+      "date": "2026-02-25",
+      "notes": "Best-of Kai'Sa de Bologna, #9 overall"
+    },
+    "S6": {
+      "type": "event stats",
+      "title": "Riftbound.gg - Bologna Regional Qualifier Results",
+      "date": "2026-03-05",
+      "notes": "11% du field, 19% de conversion Day 2, 50.4% de winrate hors miroir"
+    },
+    "S7": {
+      "type": "decklist mirror / transcription",
+      "title": "Rift Mana - Metal Cards Legend Winner Decklists Bologna Regional Qualifier",
+      "date": "2026-02-22",
+      "notes": "Transcription lisible du best-of Kai'Sa Bologna avec sideboard"
+    },
+    "S8": {
+      "type": "community thread",
+      "title": "Playing Kaisa in Set 2",
+      "date_consulted": "2026-03-11",
+      "notes": "Source cle pour Obelisk, Pouty Poro, Forerunner, Smoke Screen, Time Warp, Unchecked Power et lectures de matchup recents"
+    },
+    "S9": {
+      "type": "community thread",
+      "title": "Is Kai'Sa vs Irelia fundamentally unfavored?",
+      "date_consulted": "2026-03-11",
+      "notes": "Source cle pour la difficulte du matchup Irelia, les techs Brynhir, Get Excited, Rocket Barrage, la question des battlefields et la possibilite de remonter vers 50/50 avec tech"
+    },
+    "S10": {
+      "type": "community thread",
+      "title": "Genuinely how can I beat Kai'sa with a Viktor?",
+      "date_consulted": "2026-03-11",
+      "notes": "Point de vue Viktor sur le matchup Kai'Sa, utile pour evaluer la direction du pairing"
+    },
+    "S11": {
+      "type": "meta stats",
+      "title": "RiftDecks - Spiritforged Legends Meta Breakdown",
+      "date_consulted": "2026-03-11",
+      "notes": "Metashare globale Spiritforged, Kai'Sa a 18% dans le snapshot consulte"
+    },
+    "S12": {
+      "type": "official / news aggregation",
+      "title": "Potential Card Bans: Game Director Update",
+      "date": "2026-03-10",
+      "notes": "Aucun ban annonce, rules update prevue le 30 mars 2026"
+    },
+    "S13": {
+      "type": "official article",
+      "title": "State of the Game, February 2026",
+      "date": "2026-02-04",
+      "notes": "Contexte officiel plus large sur la philosophie d'intervention et le meta apres Origins"
+    },
+    "S14": {
+      "type": "community meta discussion",
+      "title": "The entire Spiritforged meta revolves around Draven",
+      "date_consulted": "2026-03-11",
+      "notes": "Source communautaire secondaire, utile surtout comme lecture de perception du matchup Draven"
+    }
+  }
+}

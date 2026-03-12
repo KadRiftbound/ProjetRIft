@@ -90,37 +90,38 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <PageHeader
-          eyebrow="Card Archive"
-          title="Base de"
-          titleAccent="Données"
-          description="Explorez l'intégralité des cartes Origins et Spiritforged. Filtrez par domaine, rareté ou type pour trouver votre prochaine carte maîtresse."
-          className="mb-16"
-          align="left"
-          accentClassName="text-rift-blue italic"
-          eyebrowClassName="bg-rift-blue/10 border-rift-blue/20"
-        />
+        {/* Enhanced Description as Title */}
+        <div className="mb-4">
+          <h1 className="text-2xl font-black uppercase tracking-wide leading-tight">
+            <span className="text-rift-blue">Explorez</span> les cartes{' '}
+            <span className="text-white">Origins</span> &{' '}
+            <span className="text-rift-gold">Spiritforged</span>
+          </h1>
+          <p className="text-sm text-gray-400 mt-1">
+            <span className="text-white font-semibold">Filtrez</span> par domaine, rareté ou type
+          </p>
+        </div>
         
-        {/* Search & Filters UI */}
-        <CardPanel className="p-8 mb-12 bg-white/5 border-white/10 backdrop-blur-xl">
-          <div className="grid md:grid-cols-4 gap-6">
+        {/* Search & Filters UI - Compact */}
+        <CardPanel className="p-3 mb-4 bg-white/5 border-white/10 backdrop-blur-xl">
+          <div className="grid md:grid-cols-4 gap-4">
             <div className="md:col-span-1">
-              <label className="block text-xs font-bold text-gray-300 uppercase tracking-widest mb-3 px-2">Recherche</label>
+              <label className="block text-[10px] font-bold text-gray-300 uppercase tracking-widest mb-2 px-1">Recherche</label>
               <input
                 type="text"
                 placeholder="Nom de la carte..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:border-rift-blue focus:outline-none transition-all text-sm"
+                className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:border-rift-blue focus:outline-none transition-all text-xs"
               />
             </div>
             
             <div>
-              <label className="block text-xs font-bold text-gray-300 uppercase tracking-widest mb-3 px-2">Domaine</label>
+              <label className="block text-[10px] font-bold text-gray-300 uppercase tracking-widest mb-2 px-1">Domaine</label>
               <select 
                 value={domainFilter}
                 onChange={(e) => setDomainFilter(e.target.value)}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer text-sm"
+                className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer text-xs"
               >
                 <option value="" className="bg-rift-dark">Tous</option>
                 {domains.map(domain => (
@@ -130,11 +131,11 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
             </div>
             
             <div>
-              <label className="block text-xs font-bold text-gray-300 uppercase tracking-widest mb-3 px-2">Type</label>
+              <label className="block text-[10px] font-bold text-gray-300 uppercase tracking-widest mb-2 px-1">Type</label>
               <select 
                 value={typeFilter}
                 onChange={(e) => setTypeFilter(e.target.value)}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer text-sm"
+                className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer text-xs"
               >
                 <option value="" className="bg-rift-dark">Tous</option>
                 {types.map(type => (
@@ -144,11 +145,11 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
             </div>
             
             <div>
-              <label className="block text-xs font-bold text-gray-300 uppercase tracking-widest mb-3 px-2">Rareté</label>
+              <label className="block text-[10px] font-bold text-gray-300 uppercase tracking-widest mb-2 px-1">Rareté</label>
               <select 
                 value={rarityFilter}
                 onChange={(e) => setRarityFilter(e.target.value)}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer text-sm"
+                className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:border-rift-blue focus:outline-none appearance-none cursor-pointer text-xs"
               >
                 <option value="" className="bg-rift-dark">Toutes</option>
                 <option value="Champion" className="bg-rift-dark">Champion</option>
@@ -162,9 +163,9 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
         </CardPanel>
 
         {/* Results count */}
-        <div className="flex items-center gap-4 mb-8 px-4">
-          <Badge className="text-rift-gold border-rift-gold/30 bg-rift-gold/10">
-            {filteredCards.length} Cartes identifiées
+        <div className="flex items-center gap-3 mb-3 px-1">
+          <Badge className="text-rift-gold border-rift-gold/30 bg-rift-gold/10 text-[10px]">
+            {filteredCards.length} cartes
           </Badge>
           <div className="flex-1 h-px bg-white/5" />
         </div>
@@ -173,26 +174,19 @@ export default function CardsClient({ initialCards }: { initialCards: any[] }) {
         {filteredCards.length === 0 ? (
           <EmptyState message="Aucune carte trouvée pour cette sélection." />
         ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-2">
             {filteredCards.map((card: any) => (
               <Link 
                 key={card.id} 
                 href={`/cards/${card.id}`}
-                className="group relative"
+                className="group relative block"
               >
-                <div className="aspect-[3/4.2] rounded-2xl overflow-hidden bg-rift-dark-secondary border-2 border-white/5 group-hover:border-rift-blue/50 transition-all duration-500 shadow-xl">
+                <div className="aspect-[3/4.2] overflow-hidden bg-rift-dark-secondary border border-white/5 group-hover:border-rift-blue/60 transition-all duration-200 shadow-md group-hover:shadow-xl group-hover:shadow-rift-blue/20">
                   <img
                     src={card.images?.[0]?.medium || '/placeholder.png'}
                     alt={card.name}
-                    className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity" />
-                  
-                  {/* Domain tag removed to keep visuals minimal */}
-                </div>
-                <div className="mt-3 px-1">
-                  <p className="font-bold text-xs text-white truncate group-hover:text-rift-blue transition-colors uppercase tracking-tight">{card.name}</p>
-                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">{card.rarity}</p>
                 </div>
               </Link>
             ))}
