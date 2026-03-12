@@ -9,6 +9,16 @@ export interface LegendGuide {
     energy: number;
   };
   mulligan?: string;
+  /** Mulligan avancé par matchup si disponible */
+  advancedMulligan?: {
+    general?: string;
+    byOpponent?: {
+      opponent: string;
+      keep?: string[];
+      ship?: string[];
+      notes?: string[];
+    }[];
+  };
   strategy?: {
     early: string;
     mid: string;
@@ -24,6 +34,8 @@ export interface LegendGuide {
     description: string;
     coreCards: string[];
     strategy: string;
+    mulligan?: string;
+    notes?: string[];
   }[];
   synergies: {
     cardName: string;
@@ -930,14 +942,13 @@ export const LEGEND_GUIDES: Record<string, LegendGuide> = {
 
 export function getLegendGuide(legendId: string): LegendGuide | null {
   const id = legendId.toUpperCase();
-  // Check exact ID or OGN equivalent if applicable
   const found = LEGEND_GUIDES[id];
   if (found) return found;
-  
-  // Fallback for different sets of same legend if necessary
   return null;
 }
 
 export function getAllLegendGuides(): LegendGuide[] {
   return Object.values(LEGEND_GUIDES);
 }
+
+

@@ -25,3 +25,9 @@ Acces guide complet "mis a jour apres chaque tournoi majeur"?
 
 
 
+
+
+Occupe toi de toutes les légendes une par une. Guide simplifié lisible et condensé.
+
+Puis sur la page guide complet de la légende : les variantes de deck, mulligan avancé avec tous les matchups détaillés quand on a la data. Guide pour les différentes listes si la légende a plusieurs "decklist"
+
